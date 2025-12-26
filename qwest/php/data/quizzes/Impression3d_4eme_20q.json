@@ -1,0 +1,488 @@
+{
+    "name": "Impression3d_4eme_20q",
+    "modifyCode": "3VSAYCF4",
+    "playCode": "RCNJV9",
+    "data": {
+        "id": "mjm7pu53knhxeg8bw",
+        "name": "Impression3d_4eme_20q",
+        "questions": [
+            {
+                "id": "mjm7p9apyx294n86w",
+                "type": "multiple",
+                "question": "\u00c0 quoi sert principalement un logiciel de tranchage (slicer) comme Cura ?",
+                "time": 35,
+                "answers": [
+                    {
+                        "text": "Transformer un mod\u00e8le 3D en couches et g\u00e9n\u00e9rer du G-code",
+                        "correct": true
+                    },
+                    {
+                        "text": "Peindre la pi\u00e8ce en couleurs automatiquement",
+                        "correct": false
+                    },
+                    {
+                        "text": "Refroidir l\u2019imprimante pendant l\u2019impression",
+                        "correct": false
+                    },
+                    {
+                        "text": "Nettoyer le plateau \u00e0 la place de l\u2019utilisateur",
+                        "correct": false
+                    }
+                ],
+                "imageUrl": "https:\/\/commons.wikimedia.org\/wiki\/Special:FilePath\/Cura_4.13.0_Screenshot.png?width=500"
+            },
+            {
+                "id": "mjm7p9api9v0til7m",
+                "type": "truefalse",
+                "question": "En impression 3D FDM, on d\u00e9pose du plastique fondu couche par couche.",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ],
+                "imageUrl": "https:\/\/commons.wikimedia.org\/wiki\/Special:FilePath\/FDM_printing_diagram.svg?width=500"
+            },
+            {
+                "id": "mjm7p9apbbbe7uyjl",
+                "type": "multiple",
+                "question": "Quel type de fichier envoie-t-on le plus souvent \u00e0 une imprimante 3D FDM pour lancer l\u2019impression ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Un fichier G-code",
+                        "correct": true
+                    },
+                    {
+                        "text": "Une photo .JPG",
+                        "correct": false
+                    },
+                    {
+                        "text": "Un document .DOCX",
+                        "correct": false
+                    },
+                    {
+                        "text": "Une musique .MP3",
+                        "correct": false
+                    }
+                ],
+                "imageUrl": "https:\/\/commons.wikimedia.org\/wiki\/Special:FilePath\/Letter_W%2C_example_for_G-code.svg?width=500"
+            },
+            {
+                "id": "mjm7p9aps8oeepw7z",
+                "type": "order",
+                "question": "Ordonne les \u00e9tapes (de la conception \u00e0 l\u2019impression) :",
+                "time": 55,
+                "answers": [
+                    {
+                        "text": "Concevoir \/ dessiner la pi\u00e8ce (CAO)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Exporter le mod\u00e8le en STL",
+                        "correct": true
+                    },
+                    {
+                        "text": "Ouvrir le STL dans un slicer et r\u00e9gler les param\u00e8tres",
+                        "correct": true
+                    },
+                    {
+                        "text": "G\u00e9n\u00e9rer le G-code",
+                        "correct": true
+                    },
+                    {
+                        "text": "Lancer l\u2019impression sur l\u2019imprimante",
+                        "correct": true
+                    }
+                ],
+                "imageUrl": "https:\/\/commons.wikimedia.org\/wiki\/Special:FilePath\/The_differences_between_CAD_and_STL_Models.svg?width=500"
+            },
+            {
+                "id": "mjm7p9apv2jgemua8",
+                "type": "multiple",
+                "question": "Un fichier STL contient surtout\u2026",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "La forme (g\u00e9om\u00e9trie) de la pi\u00e8ce en 3D",
+                        "correct": true
+                    },
+                    {
+                        "text": "La temp\u00e9rature exacte de la buse",
+                        "correct": false
+                    },
+                    {
+                        "text": "La couleur finale de la pi\u00e8ce (peinture)",
+                        "correct": false
+                    },
+                    {
+                        "text": "Le nom de l\u2019\u00e9l\u00e8ve qui imprime",
+                        "correct": false
+                    }
+                ],
+                "imageUrl": "https:\/\/commons.wikimedia.org\/wiki\/Special:FilePath\/STL-file.jpg?width=500"
+            },
+            {
+                "id": "mjm7p9aple0zfl0t1",
+                "type": "multiple",
+                "question": "Quelle est la fonction de la buse (nozzle) ?",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "Faire sortir le plastique fondu pour former les couches",
+                        "correct": true
+                    },
+                    {
+                        "text": "Refroidir la pi\u00e8ce avec de l\u2019air froid",
+                        "correct": false
+                    },
+                    {
+                        "text": "D\u00e9couper le filament en morceaux",
+                        "correct": false
+                    },
+                    {
+                        "text": "Mesurer la taille de la pi\u00e8ce automatiquement",
+                        "correct": false
+                    }
+                ],
+                "imageUrl": "https:\/\/commons.wikimedia.org\/wiki\/Special:FilePath\/Hardened_Steel_3D_Printing_Nozzle.jpg?width=500"
+            },
+            {
+                "id": "mjm7p9appp7q460xc",
+                "type": "truefalse",
+                "question": "La buse et la t\u00eate d\u2019impression peuvent \u00eatre tr\u00e8s chaudes : on \u00e9vite de les toucher pendant et juste apr\u00e8s l\u2019impression.",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ],
+                "imageUrl": "https:\/\/commons.wikimedia.org\/wiki\/Special:FilePath\/ISO_7010_W017.svg?width=500"
+            },
+            {
+                "id": "mjm7p9apdr687zhkt",
+                "type": "order",
+                "question": "Ordonne le trajet du filament (du d\u00e9part \u00e0 l\u2019arriv\u00e9e) :",
+                "time": 50,
+                "answers": [
+                    {
+                        "text": "Bobine de filament",
+                        "correct": true
+                    },
+                    {
+                        "text": "Extrudeur (pignon\/moteur qui pousse le filament)",
+                        "correct": true
+                    },
+                    {
+                        "text": "T\u00eate chauffante (hotend)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Buse (nozzle)",
+                        "correct": true
+                    },
+                    {
+                        "text": "D\u00e9p\u00f4t sur le plateau pour former la pi\u00e8ce",
+                        "correct": true
+                    }
+                ],
+                "imageUrl": "https:\/\/commons.wikimedia.org\/wiki\/Special:FilePath\/3D_Printer_Extruder.svg?width=500"
+            },
+            {
+                "id": "mjm7p9ap6pqqa0p6b",
+                "type": "multiple",
+                "question": "Si la buse est TROP LOIN du plateau, la premi\u00e8re couche\u2026",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "adh\u00e8re mal et peut se d\u00e9coller",
+                        "correct": true
+                    },
+                    {
+                        "text": "devient automatiquement plus solide",
+                        "correct": false
+                    },
+                    {
+                        "text": "refroidit plus vite sans probl\u00e8me",
+                        "correct": false
+                    },
+                    {
+                        "text": "se peint toute seule en couleur",
+                        "correct": false
+                    }
+                ],
+                "imageUrl": "https:\/\/commons.wikimedia.org\/wiki\/Special:FilePath\/3D_printing_calibration_build_plate_first_layer_gap.png?width=500"
+            },
+            {
+                "id": "mjm7p9apumbkuqvo3",
+                "type": "multiple",
+                "question": "Que signifie \u00ab infill \u00bb dans les r\u00e9glages d\u2019impression 3D ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Le remplissage int\u00e9rieur de la pi\u00e8ce (densit\u00e9)",
+                        "correct": true
+                    },
+                    {
+                        "text": "La vitesse du ventilateur",
+                        "correct": false
+                    },
+                    {
+                        "text": "Le nom du fichier imprim\u00e9",
+                        "correct": false
+                    },
+                    {
+                        "text": "La couleur de l\u2019\u00e9cran de l\u2019imprimante",
+                        "correct": false
+                    }
+                ],
+                "imageUrl": "https:\/\/commons.wikimedia.org\/wiki\/Special:FilePath\/Infill_density.jpg?width=500"
+            },
+            {
+                "id": "mjm7p9apvoj94jn14",
+                "type": "truefalse",
+                "question": "En g\u00e9n\u00e9ral, augmenter l\u2019infill rend la pi\u00e8ce plus solide, mais augmente aussi le temps et la quantit\u00e9 de filament.",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ],
+                "imageUrl": "https:\/\/commons.wikimedia.org\/wiki\/Special:FilePath\/3D_printing_functional_prototypes.jpg?width=500"
+            },
+            {
+                "id": "mjm7p9apzm2uuv6sj",
+                "type": "multiple",
+                "question": "\u00c0 quoi servent les \u00ab supports \u00bb en impression 3D ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Soutenir les parties en surplomb pendant l\u2019impression",
+                        "correct": true
+                    },
+                    {
+                        "text": "Acc\u00e9l\u00e9rer Internet sur l\u2019imprimante",
+                        "correct": false
+                    },
+                    {
+                        "text": "Charger la batterie de l\u2019imprimante",
+                        "correct": false
+                    },
+                    {
+                        "text": "Changer automatiquement la couleur du filament",
+                        "correct": false
+                    }
+                ],
+                "imageUrl": "https:\/\/commons.wikimedia.org\/wiki\/Special:FilePath\/Support_structure_in_3D_printing.jpg?width=500"
+            },
+            {
+                "id": "mjm7p9apyz1vgsbhq",
+                "type": "truefalse",
+                "question": "Les supports sont g\u00e9n\u00e9ralement retir\u00e9s (enlev\u00e9s) apr\u00e8s l\u2019impression.",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ],
+                "imageUrl": "https:\/\/commons.wikimedia.org\/wiki\/Special:FilePath\/Example_of_3D_printer_support_material.jpg?width=500"
+            },
+            {
+                "id": "mjm7p9ap0qnlweqlw",
+                "type": "multiple",
+                "question": "Quel r\u00e9glage influence surtout la finesse des \u00ab marches \u00bb visibles sur les c\u00f4t\u00e9s (qualit\u00e9 en hauteur) ?",
+                "time": 35,
+                "answers": [
+                    {
+                        "text": "La hauteur de couche (layer height)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Le format du c\u00e2ble d\u2019alimentation",
+                        "correct": false
+                    },
+                    {
+                        "text": "La langue du menu de l\u2019imprimante",
+                        "correct": false
+                    },
+                    {
+                        "text": "Le nombre de boutons sur l\u2019\u00e9cran",
+                        "correct": false
+                    }
+                ],
+                "imageUrl": "https:\/\/commons.wikimedia.org\/wiki\/Special:FilePath\/Microscopic_investigation_3D_printed_artwork.jpg?width=500"
+            },
+            {
+                "id": "mjm7p9apose3gjbf5",
+                "type": "freetext",
+                "question": "Quel plastique (1 mot) est souvent utilis\u00e9 en classe car il est assez facile \u00e0 imprimer ?",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "PLA",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "PLA",
+                    "pla",
+                    "Pla"
+                ],
+                "imageUrl": "https:\/\/commons.wikimedia.org\/wiki\/Special:FilePath\/3D_Printing_Materials_%2816837486456%29.jpg?width=500"
+            },
+            {
+                "id": "mjm7p9ap2y4asu5o0",
+                "type": "multiple",
+                "question": "Pourquoi ajoute-t-on parfois un \u00ab brim \u00bb ou un \u00ab raft \u00bb ?",
+                "time": 35,
+                "answers": [
+                    {
+                        "text": "Pour am\u00e9liorer l\u2019adh\u00e9rence au plateau et \u00e9viter le d\u00e9collement",
+                        "correct": true
+                    },
+                    {
+                        "text": "Pour rendre la pi\u00e8ce transparente",
+                        "correct": false
+                    },
+                    {
+                        "text": "Pour imprimer sans filament",
+                        "correct": false
+                    },
+                    {
+                        "text": "Pour remplacer le plateau par du carton",
+                        "correct": false
+                    }
+                ],
+                "imageUrl": "https:\/\/commons.wikimedia.org\/wiki\/Special:FilePath\/3D_printing_calibration_3D_printer_build_plate_adhesion.svg?width=500"
+            },
+            {
+                "id": "mjm7p9api7m8st3x2",
+                "type": "multiple",
+                "question": "Dans un rep\u00e8re X, Y, Z, quel axe correspond \u00e0 la hauteur (monter\/descendre) ?",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "L\u2019axe Z",
+                        "correct": true
+                    },
+                    {
+                        "text": "L\u2019axe X",
+                        "correct": false
+                    },
+                    {
+                        "text": "L\u2019axe Y",
+                        "correct": false
+                    },
+                    {
+                        "text": "L\u2019axe W",
+                        "correct": false
+                    }
+                ],
+                "imageUrl": "https:\/\/commons.wikimedia.org\/wiki\/Special:FilePath\/3D_coordinate_system.svg?width=500"
+            },
+            {
+                "id": "mjm7p9aptynwe7uw8",
+                "type": "multiple",
+                "question": "\u00c0 quoi sert principalement le ventilateur de refroidissement de pi\u00e8ce (part cooling) ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Refroidir rapidement le plastique d\u00e9pos\u00e9 pour mieux tenir la forme",
+                        "correct": true
+                    },
+                    {
+                        "text": "Chauffer le filament avant la buse",
+                        "correct": false
+                    },
+                    {
+                        "text": "Mesurer la longueur du filament sur la bobine",
+                        "correct": false
+                    },
+                    {
+                        "text": "Couper la pi\u00e8ce en deux \u00e0 la fin",
+                        "correct": false
+                    }
+                ],
+                "imageUrl": "https:\/\/commons.wikimedia.org\/wiki\/Special:FilePath\/3D_printing_calibration_part-cooling_fan_airflow.svg?width=500"
+            },
+            {
+                "id": "mjm7p9apqx8hxpdhd",
+                "type": "multiple",
+                "question": "Quel type de moteur permet des d\u00e9placements pr\u00e9cis \u00ab par pas \u00bb sur beaucoup d\u2019imprimantes 3D ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Un moteur pas \u00e0 pas (stepper motor)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Un moteur \u00e0 vapeur",
+                        "correct": false
+                    },
+                    {
+                        "text": "Un moteur \u00e0 r\u00e9action",
+                        "correct": false
+                    },
+                    {
+                        "text": "Un moteur solaire",
+                        "correct": false
+                    }
+                ],
+                "imageUrl": "https:\/\/commons.wikimedia.org\/wiki\/Special:FilePath\/Stepper_motor_1.png?width=500"
+            },
+            {
+                "id": "mjm7p9api8l8cj805",
+                "type": "freetext",
+                "question": "Comment s\u2019appelle l\u2019op\u00e9ration (2 \u00e0 3 mots) pour r\u00e9gler le plateau afin qu\u2019il soit \u00e0 la bonne hauteur partout ?",
+                "time": 35,
+                "answers": [
+                    {
+                        "text": "nivellement du plateau",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "nivellement du plateau",
+                    "nivellement",
+                    "mise \u00e0 niveau du plateau",
+                    "mise \u00e0 niveau",
+                    "reglage du plateau",
+                    "r\u00e9glage du plateau",
+                    "calibrage du plateau",
+                    "calibration du plateau",
+                    "bed leveling",
+                    "bed levelling"
+                ],
+                "imageUrl": "https:\/\/commons.wikimedia.org\/wiki\/Special:FilePath\/3D_printing_calibration_build_plate_levelling.svg?width=500"
+            }
+        ],
+        "modifyCode": "3VSAYCF4",
+        "playCode": "RCNJV9",
+        "createdAt": 1766713693143,
+        "lastModified": 1766713693143
+    },
+    "lastModified": 1766713693,
+    "questionCount": 20
+}

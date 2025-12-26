@@ -1,0 +1,1265 @@
+// ============================================
+// MODULE: CONTROL PANEL (Pilotage)
+// Description: Interface de pilotage de la partie pour le professeur
+// ============================================
+
+(function() {
+    'use strict';
+
+    // État du contrôle
+    const CONTROL_STATE = {
+        sessionId: null,
+        playCode: null,
+        quizData: null,
+        schoolName: '',
+        manualMode: false,
+        showTop3: true,
+        customTime: null,
+        isPaused: false,
+        currentQuestion: -1,
+        players: [],
+        eventSource: null,
+        autoNextTimer: null,
+        autoNextTimestamp: null,
+        autoNextQuestionPending: false,
+        autoNextCheckInterval: null,
+        sseEnabled: false  // Flag pour désactiver complètement le SSE
+    };
+
+    // ========================================
+    // MODALE PERSONNALISÉE
+    // ========================================
+    
+    function showCustomAlert(title, message, icon = '✅') {
+        // Créer la modale
+        const modalHTML = `
+            <div class="custom-alert-overlay" onclick="closeCustomAlert()">
+                <div class="custom-alert-box" onclick="event.stopPropagation()">
+                    <div class="custom-alert-icon">${icon}</div>
+                    <h3 class="custom-alert-title">${title}</h3>
+                    <p class="custom-alert-message">${message}</p>
+                    <button class="custom-alert-btn" onclick="closeCustomAlert()">OK</button>
+                </div>
+            </div>
+        `;
+        
+        // Supprimer l'ancienne modale si elle existe
+        const oldModal = document.getElementById('custom-alert');
+        if (oldModal) oldModal.remove();
+        
+        // Ajouter la nouvelle
+        const modalDiv = document.createElement('div');
+        modalDiv.id = 'custom-alert';
+        modalDiv.innerHTML = modalHTML;
+        document.body.appendChild(modalDiv);
+    }
+    
+    window.closeCustomAlert = function() {
+        const modal = document.getElementById('custom-alert');
+        if (modal) modal.remove();
+    };
+    
+    function showCustomConfirm(title, message, onConfirm, icon = '❓') {
+        // Créer la modale
+        const modalHTML = `
+            <div class="custom-alert-overlay" onclick="closeCustomConfirm(false)">
+                <div class="custom-alert-box" onclick="event.stopPropagation()">
+                    <div class="custom-alert-icon">${icon}</div>
+                    <h3 class="custom-alert-title">${title}</h3>
+                    <p class="custom-alert-message">${message}</p>
+                    <div class="custom-alert-buttons">
+                        <button class="custom-alert-btn-secondary" onclick="closeCustomConfirm(false)">Annuler</button>
+                        <button class="custom-alert-btn" onclick="closeCustomConfirm(true)">Confirmer</button>
+                    </div>
+                </div>
+            </div>
+        `;
+        
+        // Supprimer l'ancienne modale si elle existe
+        const oldModal = document.getElementById('custom-confirm');
+        if (oldModal) oldModal.remove();
+        
+        // Ajouter la nouvelle
+        const modalDiv = document.createElement('div');
+        modalDiv.id = 'custom-confirm';
+        modalDiv.innerHTML = modalHTML;
+        document.body.appendChild(modalDiv);
+        
+        // Stocker le callback
+        window._confirmCallback = onConfirm;
+    }
+    
+    window.closeCustomConfirm = function(confirmed) {
+        // Récupérer les valeurs AVANT de supprimer la modale
+        const inputValue = document.getElementById('new-score-input')?.value;
+        
+        const modal = document.getElementById('custom-confirm');
+        if (modal) modal.remove();
+        
+        if (window._confirmCallback) {
+            // Passer la valeur au callback si elle existe
+            if (inputValue !== undefined) {
+                window._confirmCallbackData = inputValue;
+            }
+            window._confirmCallback(confirmed);
+            window._confirmCallback = null;
+            window._confirmCallbackData = null;
+        }
+    };
+
+    // ========================================
+    // OUVRIR LE PANNEAU DE CONTRÔLE
+    // ========================================
+    
+    function openControlPanel() {
+        if (APP_STATE.questions.length === 0) {
+            alert('⚠️ Vous devez d\'abord créer des questions.');
+            return;
+        }
+
+        const modal = document.getElementById('control-modal');
+        const panel = modal.querySelector('.control-panel');
+        
+        // Générer un nouveau code de partie unique
+        const newPlayCode = generatePlayCode();
+        
+        // Initialiser l'état
+        CONTROL_STATE.playCode = newPlayCode;
+        CONTROL_STATE.quizData = {
+            questions: APP_STATE.questions,
+            name: document.getElementById('quiz-name-input')?.value || 'Mon Quiz'
+        };
+        CONTROL_STATE.sessionId = newPlayCode;
+        CONTROL_STATE.manualMode = false;
+        CONTROL_STATE.showTop3 = true;
+        
+        // Afficher directement l'interface de pilotage
+        showControlInterface();
+        
+        modal.classList.add('active');
+    }
+
+    async function closeControlPanel() {
+        // Fermer la popup IMMÉDIATEMENT pour ne pas bloquer l'interface
+        document.getElementById('control-modal').classList.remove('active');
+        
+        // Réinitialiser l'état local immédiatement
+        const playCodeToCleanup = CONTROL_STATE.playCode;
+        
+        CONTROL_STATE.playCode = null;
+        CONTROL_STATE.quizData = null;
+        CONTROL_STATE.players = [];
+        CONTROL_STATE.currentQuestion = -1;
+        CONTROL_STATE.isPaused = false;
+        
+        // Arrêter le flux SSE immédiatement
+        if (CONTROL_STATE.eventSource) {
+            console.log('🔴 PROF: Fermeture du SSE...');
+            CONTROL_STATE.sseEnabled = false;
+            CONTROL_STATE.eventSource.onerror = null;
+            CONTROL_STATE.eventSource.onmessage = null;
+            CONTROL_STATE.eventSource.close();
+            CONTROL_STATE.eventSource = null;
+        }
+        
+        // Faire le reste en ARRIÈRE-PLAN (non bloquant)
+        if (playCodeToCleanup) {
+            (async () => {
+                try {
+                    // Envoyer end_game aux élèves
+                    await fetch('php/control.php', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                        body: new URLSearchParams({
+                            action: 'end_game',
+                            playCode: playCodeToCleanup
+                        })
+                    });
+                    
+                    console.log('🏁 PROF: Partie terminée (arrière-plan)');
+                    
+                    // Attendre que les élèves reçoivent l'événement
+                    await new Promise(resolve => setTimeout(resolve, 2000));
+                    
+                    // Cleanup de la session
+                    await fetch('php/control.php', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                        body: new URLSearchParams({
+                            action: 'cleanup_session',
+                            playCode: playCodeToCleanup
+                        })
+                    });
+                    
+                    console.log('🧹 PROF: Nettoyage terminé (arrière-plan)');
+                    
+                } catch (error) {
+                    console.error('Erreur cleanup arrière-plan:', error);
+                }
+            })();
+        }
+    }
+
+    // ========================================
+    // CRÉER LA SESSION CÔTÉ SERVEUR
+    // ========================================
+    
+    async function createSessionOnServer() {
+        // Lire les valeurs des checkboxes MAINTENANT
+        const checkManual = document.getElementById('manual-mode-check');
+        const checkTop3 = document.getElementById('show-top3-check');
+        
+        CONTROL_STATE.manualMode = checkManual ? checkManual.checked : false;
+        CONTROL_STATE.showTop3 = checkTop3 ? checkTop3.checked : true;
+        
+        console.log('🟢 PROF: Création de session côté serveur', {
+            playCode: CONTROL_STATE.playCode,
+            quizData: CONTROL_STATE.quizData,
+            manualMode: CONTROL_STATE.manualMode,
+            showTop3: CONTROL_STATE.showTop3
+        });
+        
+        try {
+            const response = await fetch('php/control.php', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: new URLSearchParams({
+                    action: 'create_session',
+                    playCode: CONTROL_STATE.playCode,
+                    quizData: JSON.stringify(CONTROL_STATE.quizData),
+                    manualMode: CONTROL_STATE.manualMode ? '1' : '0',
+                    showTop3: CONTROL_STATE.showTop3 ? '1' : '0'
+                })
+            });
+            
+            const result = await response.json();
+            console.log('🟢 PROF: Réponse création session', result);
+            
+            if (result.success) {
+                console.log('✅ PROF: Session créée avec succès, connexion SSE...');
+                // Connecter au flux SSE
+                connectControlStream();
+            } else {
+                console.error('❌ PROF: Échec création session', result.message);
+                alert('❌ Erreur : ' + result.message);
+            }
+            
+        } catch (error) {
+            console.error('❌ PROF: Erreur création session:', error);
+            alert('❌ Erreur de connexion au serveur');
+        }
+    }
+
+    // ========================================
+    // INTERFACE DE PILOTAGE
+    // ========================================
+    
+    function showControlInterface() {
+        const panel = document.querySelector('.control-panel');
+        
+        // Afficher le code dans le header de la modale
+        const codeDisplay = document.getElementById('control-code-display');
+        codeDisplay.innerHTML = `
+            <button class="btn-copy-header" onclick="copyToClipboard('${CONTROL_STATE.playCode}')">
+                📋 Copier
+            </button>
+            <div class="code-info">
+                <span class="code-label">Code :</span>
+                <span class="code-value">${CONTROL_STATE.playCode}</span>
+            </div>
+        `;
+        
+        panel.innerHTML = `
+            <div class="control-interface">
+                <!-- Options de jeu -->
+                <div class="control-section">
+                    <h4>⚙️ Options de jeu</h4>
+                    <div class="control-options">
+                        <label class="control-checkbox">
+                            <input type="checkbox" 
+                                   id="manual-mode-check" 
+                                   ${CONTROL_STATE.manualMode ? 'checked' : ''}
+                                   onchange="toggleManualMode()">
+                            <span>Mode manuel (avancer les questions manuellement)</span>
+                        </label>
+                        
+                        <label class="control-checkbox">
+                            <input type="checkbox" 
+                                   id="show-top3-check" 
+                                   ${CONTROL_STATE.showTop3 ? 'checked' : ''}
+                                   onchange="toggleShowTop3()">
+                            <span>Afficher le Top 3 après chaque question</span>
+                        </label>
+                        
+                        <label class="control-checkbox control-checkbox-inline">
+                            <input type="checkbox" 
+                                   id="custom-time-check">
+                            <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                                <span>Forcer temps par question à :</span>
+                                <input type="number" 
+                                       id="custom-time-input" 
+                                       class="time-input-inline"
+                                       value="30" 
+                                       min="5" 
+                                       max="300">
+                                <span class="time-unit">secondes</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                
+                <!-- Participants -->
+                <div class="control-section">
+                    <div class="section-header">
+                        <h4>👥 Participants connectés : <span id="control-player-count">0</span></h4>
+                        <button class="btn-small" onclick="refreshPlayers()">🔄 Actualiser</button>
+                    </div>
+                    <div id="control-players-list" class="control-players-list">
+                        <div class="empty-list">Aucun joueur pour le moment</div>
+                    </div>
+                </div>
+                
+                <!-- Contrôles -->
+                <div class="control-section">
+                    <h4>🎛️ Contrôles</h4>
+                    <div class="control-buttons">
+                        <button id="btn-start-game" class="btn-control btn-success" onclick="startGame()">
+                            ▶️ Lancer la partie
+                        </button>
+                        <button id="btn-pause-game" class="btn-control btn-warning" onclick="pauseGame()" disabled>
+                            ⏸️ Pause
+                        </button>
+                        <button id="btn-next-question" class="btn-control btn-primary" onclick="nextQuestion()" disabled>
+                            ⏭️ Question suivante
+                        </button>
+                        <button id="btn-end-game" class="btn-control btn-danger" onclick="endGame()" disabled>
+                            ⏹️ Terminer
+                        </button>
+                        <button class="btn-control btn-info" onclick="showGradingTable()" style="grid-column: span 2;">
+                            📊 Tableau de suivi complet
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Progress -->
+                <div class="control-section">
+                    <h4>📊 Progression</h4>
+                    <div class="question-progress-bar">
+                        <div class="progress-fill" id="question-progress" style="width: 0%"></div>
+                    </div>
+                    <p class="progress-text">
+                        Question <span id="current-q-num">0</span> / <span id="total-q-num">${APP_STATE.questions.length}</span>
+                    </p>
+                </div>
+            </div>
+        `;
+        
+        // Mettre à jour le total de questions
+        document.getElementById('total-q-num').textContent = APP_STATE.questions.length;
+        
+        // Créer la session côté serveur
+        createSessionOnServer();
+    }
+
+    function toggleManualMode() {
+        const checkbox = document.getElementById('manual-mode-check');
+        CONTROL_STATE.manualMode = checkbox.checked;
+    }
+
+    function toggleShowTop3() {
+        const checkbox = document.getElementById('show-top3-check');
+        CONTROL_STATE.showTop3 = checkbox.checked;
+    }
+    
+    // ========================================
+    // CONNEXION AU FLUX SSE (CONTRÔLE)
+    // ========================================
+    
+    function connectControlStream() {
+        const url = `php/control.php?action=stream&playCode=${CONTROL_STATE.playCode}`;
+        
+        console.log('🟢 PROF: Connexion SSE vers:', url);
+        CONTROL_STATE.eventSource = new EventSource(url);
+        CONTROL_STATE.sseEnabled = true;  // Activer le flag
+        
+        CONTROL_STATE.eventSource.addEventListener('connected', function(event) {
+            console.log('✅ PROF: SSE connecté:', event.data);
+        });
+        
+        CONTROL_STATE.eventSource.addEventListener('players', function(event) {
+            const data = JSON.parse(event.data);
+            console.log('🟢 PROF: Mise à jour joueurs:', data.players.length);
+            updateControlPlayersList(data.players);
+        });
+        
+        CONTROL_STATE.eventSource.addEventListener('results', function(event) {
+            const data = JSON.parse(event.data);
+            console.log('🟢 PROF: Résultats reçus pour question', data.questionIndex);
+            
+            // En mode automatique, passer à la question suivante après 10 secondes
+            if (!CONTROL_STATE.manualMode) {
+                console.log('⏰ PROF: Passage auto à la question suivante dans 10s');
+                
+                // Utiliser un système de timestamp au lieu de setTimeout
+                CONTROL_STATE.autoNextTimestamp = Date.now() + 10000;
+                CONTROL_STATE.autoNextQuestionPending = true;
+                
+                // Vérifier régulièrement si c'est le moment de passer
+                if (!CONTROL_STATE.autoNextCheckInterval) {
+                    CONTROL_STATE.autoNextCheckInterval = setInterval(() => {
+                        if (CONTROL_STATE.autoNextQuestionPending && 
+                            !CONTROL_STATE.isPaused && 
+                            Date.now() >= CONTROL_STATE.autoNextTimestamp) {
+                            
+                            CONTROL_STATE.autoNextQuestionPending = false;
+                            console.log('⏰ PROF: Lancement auto de la question suivante');
+                            nextQuestion();
+                        }
+                    }, 500);
+                }
+            }
+        });
+        
+        CONTROL_STATE.eventSource.addEventListener('answers', function(event) {
+            const data = JSON.parse(event.data);
+            updateAnswersCount(data);
+        });
+        
+        CONTROL_STATE.eventSource.addEventListener('error', function(event) {
+            // Ignorer si SSE désactivé
+            if (!CONTROL_STATE.sseEnabled) {
+                return;
+            }
+            
+            // Ignorer complètement les erreurs si pas d'EventSource actif
+            if (!CONTROL_STATE.eventSource) {
+                return;
+            }
+            
+            // Si connexion fermée, c'est normal (timeout serveur), le navigateur va reconnecter
+            if (CONTROL_STATE.eventSource.readyState === EventSource.CLOSED) {
+                console.log('🔄 PROF: SSE fermé par le serveur, reconnexion automatique...');
+                return;
+            }
+            
+            // Si en cours de connexion, c'est normal
+            if (CONTROL_STATE.eventSource.readyState === EventSource.CONNECTING) {
+                console.log('🔄 PROF: SSE en cours de reconnexion...');
+                return;
+            }
+            
+            // Seulement logger les vraies erreurs inattendues
+            console.warn('⚠️ PROF: Problème SSE mineur (reconnexion auto)');
+        });
+        
+        CONTROL_STATE.eventSource.onerror = function(error) {
+            // Ignorer si SSE désactivé
+            if (!CONTROL_STATE.sseEnabled) {
+                return;
+            }
+            
+            // Ignorer si pas d'EventSource actif
+            if (!CONTROL_STATE.eventSource) {
+                return;
+            }
+            
+            // Ignorer les erreurs si déjà fermé ou en reconnexion
+            const state = CONTROL_STATE.eventSource.readyState;
+            if (state === EventSource.CLOSED || state === EventSource.CONNECTING) {
+                return;
+            }
+            
+            // Seulement logger si vraiment problématique
+            console.warn('⚠️ PROF: Reconnexion SSE en cours...');
+        };
+    }
+
+    function updateControlPlayersList(players) {
+        // Vérifier si les données ont réellement changé
+        const currentPlayersJSON = JSON.stringify(CONTROL_STATE.players || []);
+        const newPlayersJSON = JSON.stringify(players || []);
+        
+        if (currentPlayersJSON === newPlayersJSON) {
+            // Aucun changement, ne rien faire
+            return;
+        }
+        
+        CONTROL_STATE.players = players;
+        
+        const list = document.getElementById('control-players-list');
+        const count = document.getElementById('control-player-count');
+        
+        if (!list || !count) return;
+        
+        count.textContent = players.length;
+        
+        if (players.length === 0) {
+            list.innerHTML = '<div class="empty-list">Aucun joueur pour le moment</div>';
+            return;
+        }
+        
+        let html = '';
+        players.forEach((player, index) => {
+            const statusClass = player.connected ? 'connected' : 'disconnected';
+            const statusIcon = player.connected ? '🟢' : '🔴';
+            
+            // Calculer le nombre de bonnes réponses
+            const totalQuestions = CONTROL_STATE.quizData?.questions?.length || 0;
+            let correctAnswers = 0;
+            if (player.answers) {
+                Object.values(player.answers).forEach(answer => {
+                    if (answer.correct) correctAnswers++;
+                });
+            }
+            
+            html += `
+                <div class="control-player-item ${statusClass}">
+                    <span class="player-status">${statusIcon}</span>
+                    <span class="player-nick">${player.nickname}</span>
+                    <span class="player-progress">✓ ${correctAnswers}/${totalQuestions}</span>
+                    <span class="player-score" id="score-${index}">${player.score || 0} pts</span>
+                    <div class="player-actions">
+                        <button class="btn-icon" onclick="editPlayerScore('${player.nickname}', ${index})" title="Modifier score">
+                            ✏️
+                        </button>
+                        <button class="btn-icon btn-danger" onclick="removePlayer('${player.nickname}')" title="Supprimer">
+                            🗑️
+                        </button>
+                    </div>
+                </div>
+            `;
+        });
+        
+        list.innerHTML = html;
+    }
+
+    function updateAnswersCount(data) {
+        // Mettre à jour le compteur de réponses en temps réel
+        // (Affichage optionnel pendant qu'une question est active)
+    }
+    
+    async function editPlayerScore(nickname, index) {
+        const currentScore = CONTROL_STATE.players[index].score || 0;
+        
+        console.log('✏️ PROF: Édition score pour', nickname, 'index', index, 'score actuel', currentScore);
+        
+        showCustomConfirm(
+            'Modifier le score',
+            `<input type="number" id="new-score-input" value="${currentScore}" min="0" style="width: 100%; padding: 10px; font-size: 18px; border: 2px solid var(--primary); border-radius: 8px; margin-top: 10px;">`,
+            async (confirmed) => {
+                if (!confirmed) return;
+                
+                // Utiliser la valeur sauvegardée par closeCustomConfirm
+                const newScore = parseInt(window._confirmCallbackData || 0);
+                
+                console.log('📤 PROF: Envoi update score:', {
+                    playCode: CONTROL_STATE.playCode,
+                    nickname: nickname,
+                    score: newScore
+                });
+                
+                try {
+                    const response = await fetch('php/control.php', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                        body: new URLSearchParams({
+                            action: 'update_player_score',
+                            playCode: CONTROL_STATE.playCode,
+                            nickname: nickname,
+                            score: newScore
+                        })
+                    });
+                    
+                    const result = await response.json();
+                    console.log('📥 PROF: Réponse update score:', result);
+                    
+                    if (result.success) {
+                        // Mise à jour visuelle immédiate
+                        CONTROL_STATE.players[index].score = newScore;
+                        document.getElementById(`score-${index}`).textContent = `${newScore} pts`;
+                        console.log('✅ PROF: Score mis à jour localement');
+                    } else {
+                        console.error('❌ PROF: Échec update score');
+                    }
+                } catch (error) {
+                    console.error('❌ Erreur mise à jour score:', error);
+                }
+            },
+            '✏️'
+        );
+    }
+    
+    async function removePlayer(nickname) {
+        showCustomConfirm(
+            'Supprimer le joueur ?',
+            `Voulez-vous vraiment supprimer ${nickname} de la partie ?`,
+            async (confirmed) => {
+                if (!confirmed) return;
+                
+                try {
+                    const response = await fetch('php/control.php', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                        body: new URLSearchParams({
+                            action: 'remove_player',
+                            playCode: CONTROL_STATE.playCode,
+                            nickname: nickname
+                        })
+                    });
+                    
+                    const result = await response.json();
+                    if (result.success) {
+                        console.log('✅ PROF: Joueur supprimé');
+                    }
+                } catch (error) {
+                    console.error('❌ Erreur suppression joueur:', error);
+                }
+            },
+            '⚠️'
+        );
+    }
+    
+    window.editPlayerScore = editPlayerScore;
+    window.removePlayer = removePlayer;
+
+    // ========================================
+    // ACTIONS DE CONTRÔLE
+    // ========================================
+    
+    async function startGame() {
+        if (CONTROL_STATE.players.length === 0) {
+            showCustomConfirm(
+                'Aucun joueur connecté',
+                'Aucun élève n\'a rejoint la partie. Voulez-vous quand même la lancer ?',
+                async (confirmed) => {
+                    if (confirmed) {
+                        await launchGame();
+                    }
+                },
+                '⚠️'
+            );
+            return;
+        }
+        
+        await launchGame();
+    }
+    
+    async function launchGame() {
+        try {
+            // Lire les valeurs des checkboxes MAINTENANT (pas à l'ouverture)
+            const checkManual = document.getElementById('manual-mode-check');
+            const checkTop3 = document.getElementById('show-top3-check');
+            const checkCustomTime = document.getElementById('custom-time-check');
+            const inputCustomTime = document.getElementById('custom-time-input');
+            
+            CONTROL_STATE.manualMode = checkManual ? checkManual.checked : false;
+            CONTROL_STATE.showTop3 = checkTop3 ? checkTop3.checked : true;
+            
+            // Lire le temps personnalisé si la case est cochée
+            if (checkCustomTime && checkCustomTime.checked && inputCustomTime) {
+                CONTROL_STATE.customTime = parseInt(inputCustomTime.value) || 30;
+                console.log('⏱️ PROF: Temps personnalisé activé:', CONTROL_STATE.customTime, 'secondes');
+            } else {
+                CONTROL_STATE.customTime = null;
+                console.log('⏱️ PROF: Temps personnalisé désactivé');
+            }
+            
+            console.log('🎮 PROF: Lancement avec manualMode =', CONTROL_STATE.manualMode);
+            
+            const response = await fetch('php/control.php', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: new URLSearchParams({
+                    action: 'start_game',
+                    playCode: CONTROL_STATE.playCode,
+                    manualMode: CONTROL_STATE.manualMode ? '1' : '0',
+                    showTop3: CONTROL_STATE.showTop3 ? '1' : '0'
+                })
+            });
+            
+            const result = await response.json();
+            
+            if (result.success) {
+                // Désactiver le bouton start et activer les autres
+                const btnStart = document.getElementById('btn-start-game');
+                const btnPause = document.getElementById('btn-pause-game');
+                const btnEnd = document.getElementById('btn-end-game');
+                const checkManual = document.getElementById('manual-mode-check');
+                const checkTop3 = document.getElementById('show-top3-check');
+                const checkCustomTime = document.getElementById('custom-time-check');
+                
+                if (btnStart) btnStart.disabled = true;
+                if (btnPause) btnPause.disabled = false;
+                if (btnEnd) btnEnd.disabled = false;
+                
+                // Désactiver les options
+                if (checkManual) checkManual.disabled = true;
+                if (checkTop3) checkTop3.disabled = true;
+                if (checkCustomTime) checkCustomTime.disabled = true;
+                
+                // Lancer la première question (toujours, même en mode manuel)
+                setTimeout(() => {
+                    nextQuestion();
+                    
+                    // Toujours activer le bouton "Question suivante" pour permettre au prof d'avancer
+                    document.getElementById('btn-next-question').disabled = false;
+                }, 3000);
+            }
+            
+        } catch (error) {
+            console.error('Erreur démarrage:', error);
+            alert('❌ Erreur lors du démarrage');
+        }
+    }
+
+    async function pauseGame() {
+        CONTROL_STATE.isPaused = !CONTROL_STATE.isPaused;
+        
+        const btn = document.getElementById('btn-pause-game');
+        
+        if (btn) {
+            if (CONTROL_STATE.isPaused) {
+                btn.textContent = '▶️ Reprendre';
+            } else {
+                btn.textContent = '⏸️ Pause';
+            }
+        }
+        
+        // Notifier le serveur
+        await fetch('php/control.php', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: new URLSearchParams({
+                action: 'pause_game',
+                playCode: CONTROL_STATE.playCode,
+                paused: CONTROL_STATE.isPaused ? '1' : '0'
+            })
+        });
+    }
+
+    async function nextQuestion() {
+        if (CONTROL_STATE.isPaused) {
+            alert('⚠️ La partie est en pause');
+            return;
+        }
+        
+        CONTROL_STATE.currentQuestion++;
+        
+        if (CONTROL_STATE.currentQuestion >= APP_STATE.questions.length) {
+            // Fin naturelle de la partie - pas de confirmation
+            endGame(true);
+            return;
+        }
+        
+        try {
+            const params = {
+                action: 'next_question',
+                playCode: CONTROL_STATE.playCode,
+                questionIndex: CONTROL_STATE.currentQuestion,
+                customTime: CONTROL_STATE.customTime // Toujours envoyer (peut être null)
+            };
+            
+            console.log('🎯 PROF: Envoi nextQuestion avec params:', params);
+            
+            const response = await fetch('php/control.php', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: new URLSearchParams(params)
+            });
+            
+            const result = await response.json();
+            
+            if (result.success) {
+                // Mettre à jour la progression
+                updateQuestionProgress();
+            }
+            
+        } catch (error) {
+            console.error('Erreur question suivante:', error);
+        }
+    }
+
+    function updateQuestionProgress() {
+        const currentNum = CONTROL_STATE.currentQuestion + 1;
+        const total = APP_STATE.questions.length;
+        const percentage = (currentNum / total) * 100;
+        
+        document.getElementById('current-q-num').textContent = currentNum;
+        document.getElementById('question-progress').style.width = percentage + '%';
+    }
+
+    async function endGame(skipConfirm = false) {
+        if (!skipConfirm) {
+            showCustomConfirm(
+                'Terminer la partie ?',
+                'Voulez-vous vraiment terminer la partie maintenant ? Les résultats finaux seront envoyés aux élèves.',
+                async (confirmed) => {
+                    if (!confirmed) return;
+                    await executeEndGame();
+                },
+                '⚠️'
+            );
+            return;
+        }
+        
+        await executeEndGame();
+    }
+    
+    async function executeEndGame() {
+        try {
+            // Fermer le SSE prof avant de terminer
+            if (CONTROL_STATE.eventSource) {
+                console.log('🔴 PROF: Fermeture du SSE...');
+                
+                // DÉSACTIVER LE FLAG EN PREMIER
+                CONTROL_STATE.sseEnabled = false;
+                
+                // Retirer les listeners pour éviter les erreurs
+                CONTROL_STATE.eventSource.onerror = null;
+                CONTROL_STATE.eventSource.onmessage = null;
+                
+                // Fermer la connexion
+                CONTROL_STATE.eventSource.close();
+                
+                // Supprimer la référence
+                CONTROL_STATE.eventSource = null;
+                
+                console.log('✅ PROF: SSE fermé proprement');
+            }
+            
+            const response = await fetch('php/control.php', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: new URLSearchParams({
+                    action: 'end_game',
+                    playCode: CONTROL_STATE.playCode
+                })
+            });
+            
+            const result = await response.json();
+            
+            console.log('🏁 PROF: Réponse end_game:', result);
+            
+            if (result.success) {
+                console.log('✅ PROF: Partie terminée avec succès');
+                
+                // Désactiver tous les boutons
+                const btnPause = document.getElementById('btn-pause-game');
+                const btnNext = document.getElementById('btn-next-question');
+                const btnEnd = document.getElementById('btn-end-game');
+                const btnStart = document.getElementById('btn-start-game');
+                
+                if (btnPause) {
+                    btnPause.disabled = true;
+                    btnPause.style.opacity = '0.4';
+                    btnPause.style.cursor = 'not-allowed';
+                }
+                if (btnNext) {
+                    btnNext.disabled = true;
+                    btnNext.style.opacity = '0.4';
+                    btnNext.style.cursor = 'not-allowed';
+                }
+                if (btnEnd) {
+                    btnEnd.disabled = true;
+                    btnEnd.style.opacity = '0.4';
+                    btnEnd.style.cursor = 'not-allowed';
+                }
+                if (btnStart) {
+                    btnStart.disabled = true;
+                    btnStart.style.opacity = '0.4';
+                    btnStart.style.cursor = 'not-allowed';
+                }
+                
+                showCustomAlert('Partie terminée !', 'La partie est maintenant terminée. Les résultats finaux ont été envoyés aux élèves.', '🎉');
+            } else {
+                console.error('❌ PROF: Erreur end_game:', result.message || 'Aucun message');
+                showCustomAlert('Erreur', 'Une erreur est survenue lors de la fin de partie.', '❌');
+            }
+            
+        } catch (error) {
+            console.error('Erreur fin de partie:', error);
+        }
+    }
+
+    function refreshPlayers() {
+        // Force un refresh de la liste
+        connectControlStream();
+    }
+
+    function showFullScoreboard() {
+        // Ouvrir une popup avec le tableau complet des scores
+        const scoreboard = document.createElement('div');
+        scoreboard.className = 'scoreboard-modal';
+        scoreboard.innerHTML = `
+            <div class="scoreboard-content">
+                <div class="scoreboard-header">
+                    <h3>📊 Tableau complet des scores</h3>
+                    <button class="close-btn" onclick="this.closest('.scoreboard-modal').remove()">×</button>
+                </div>
+                <div class="scoreboard-body">
+                    <table class="scoreboard-table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Joueur</th>
+                                <th>Collège</th>
+                                <th>Score</th>
+                            </tr>
+                        </thead>
+                        <tbody id="scoreboard-tbody">
+                            ${generateScoreboardRows()}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        `;
+        document.body.appendChild(scoreboard);
+    }
+
+    function generateScoreboardRows() {
+        if (CONTROL_STATE.players.length === 0) {
+            return '<tr><td colspan="4" style="text-align:center">Aucun joueur</td></tr>';
+        }
+        
+        // Trier par score
+        const sorted = [...CONTROL_STATE.players].sort((a, b) => b.score - a.score);
+        
+        return sorted.map((player, index) => `
+            <tr>
+                <td>${index + 1}</td>
+                <td>${player.nickname}</td>
+                <td>${player.schoolName}</td>
+                <td><strong>${player.score}</strong></td>
+            </tr>
+        `).join('');
+    }
+
+    function showGradingTable() {
+        const totalQuestions = CONTROL_STATE.quizData?.questions?.length || 0;
+        
+        // Calculer les stats pour chaque joueur
+        const playersData = CONTROL_STATE.players.map(player => {
+            let correctAnswers = 0;
+            if (player.answers) {
+                Object.values(player.answers).forEach(answer => {
+                    if (answer.correct) correctAnswers++;
+                });
+            }
+            
+            // Calcul de la note sur 20
+            const grade = totalQuestions > 0 ? ((correctAnswers / totalQuestions) * 20).toFixed(1) : '0.0';
+            
+            return {
+                nickname: player.nickname,
+                correctAnswers: correctAnswers,
+                totalQuestions: totalQuestions,
+                score: player.score || 0,
+                grade: grade
+            };
+        });
+        
+        // Trier par nombre de bonnes réponses (puis par score)
+        playersData.sort((a, b) => {
+            if (b.correctAnswers !== a.correctAnswers) {
+                return b.correctAnswers - a.correctAnswers;
+            }
+            return b.score - a.score;
+        });
+        
+        // Créer la modale
+        const modalHTML = `
+            <div class="custom-alert-overlay grading-overlay" onclick="closeGradingTable(event)">
+                <div class="grading-modal" onclick="event.stopPropagation()">
+                    <div class="grading-header">
+                        <h3>📊 Tableau de suivi complet</h3>
+                        <button class="close-btn" onclick="closeGradingTable()">×</button>
+                    </div>
+                    <div class="grading-body">
+                        <div class="grading-actions">
+                            <button class="btn-secondary" onclick="exportGradingCSV()">📥 Exporter CSV</button>
+                            <button class="btn-secondary" onclick="printGradingTable()">🖨️ Imprimer</button>
+                        </div>
+                        <table class="grading-table" id="grading-table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Élève</th>
+                                    <th>Réussite</th>
+                                    <th>Score</th>
+                                    <th>Note /20</th>
+                                </tr>
+                            </thead>
+                            <tbody id="grading-table-body">
+                                ${playersData.map((player, index) => `
+                                    <tr>
+                                        <td>${index + 1}</td>
+                                        <td class="student-name">${player.nickname}</td>
+                                        <td class="success-rate">
+                                            <span class="success-badge">${player.correctAnswers}/${player.totalQuestions}</span>
+                                            <span class="success-percent">${totalQuestions > 0 ? Math.round((player.correctAnswers / player.totalQuestions) * 100) : 0}%</span>
+                                        </td>
+                                        <td class="score-cell">${player.score} pts</td>
+                                        <td class="grade-cell">
+                                            <span class="grade-value">${player.grade}</span>
+                                        </td>
+                                    </tr>
+                                `).join('')}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        `;
+        
+        // Supprimer l'ancienne modale si elle existe
+        const oldModal = document.getElementById('grading-modal');
+        if (oldModal) oldModal.remove();
+        
+        // Ajouter la nouvelle
+        const modalDiv = document.createElement('div');
+        modalDiv.id = 'grading-modal';
+        modalDiv.innerHTML = modalHTML;
+        document.body.appendChild(modalDiv);
+        
+        // Démarrer la mise à jour en temps réel
+        startGradingTableUpdates();
+    }
+    
+    let gradingUpdateInterval = null;
+    
+    function startGradingTableUpdates() {
+        // Nettoyer l'ancien interval s'il existe
+        if (gradingUpdateInterval) {
+            clearInterval(gradingUpdateInterval);
+        }
+        
+        // Mettre à jour toutes les 2 secondes
+        gradingUpdateInterval = setInterval(() => {
+            const modal = document.getElementById('grading-modal');
+            if (!modal) {
+                // La modale est fermée, arrêter les mises à jour
+                clearInterval(gradingUpdateInterval);
+                gradingUpdateInterval = null;
+                return;
+            }
+            
+            updateGradingTableContent();
+        }, 2000);
+    }
+    
+    function updateGradingTableContent() {
+        const tbody = document.getElementById('grading-table-body');
+        if (!tbody) return;
+        
+        const totalQuestions = CONTROL_STATE.quizData?.questions?.length || 0;
+        
+        // Recalculer les données
+        const playersData = CONTROL_STATE.players.map(player => {
+            let correctAnswers = 0;
+            if (player.answers) {
+                Object.values(player.answers).forEach(answer => {
+                    if (answer.correct) correctAnswers++;
+                });
+            }
+            
+            const grade = totalQuestions > 0 ? ((correctAnswers / totalQuestions) * 20).toFixed(1) : '0.0';
+            
+            return {
+                nickname: player.nickname,
+                correctAnswers: correctAnswers,
+                totalQuestions: totalQuestions,
+                score: player.score || 0,
+                grade: grade
+            };
+        });
+        
+        // Trier
+        playersData.sort((a, b) => {
+            if (b.correctAnswers !== a.correctAnswers) {
+                return b.correctAnswers - a.correctAnswers;
+            }
+            return b.score - a.score;
+        });
+        
+        // Mettre à jour le contenu
+        tbody.innerHTML = playersData.map((player, index) => `
+            <tr>
+                <td>${index + 1}</td>
+                <td class="student-name">${player.nickname}</td>
+                <td class="success-rate">
+                    <span class="success-badge">${player.correctAnswers}/${player.totalQuestions}</span>
+                    <span class="success-percent">${totalQuestions > 0 ? Math.round((player.correctAnswers / player.totalQuestions) * 100) : 0}%</span>
+                </td>
+                <td class="score-cell">${player.score} pts</td>
+                <td class="grade-cell">
+                    <span class="grade-value">${player.grade}</span>
+                </td>
+            </tr>
+        `).join('');
+    }
+    
+    window.closeGradingTable = function(event) {
+        if (event) event.stopPropagation();
+        
+        // Arrêter les mises à jour
+        if (gradingUpdateInterval) {
+            clearInterval(gradingUpdateInterval);
+            gradingUpdateInterval = null;
+        }
+        
+        const modal = document.getElementById('grading-modal');
+        if (modal) modal.remove();
+    };
+    
+    window.exportGradingCSV = function() {
+        const totalQuestions = CONTROL_STATE.quizData?.questions?.length || 0;
+        
+        // En-tête CSV
+        let csv = '#,Élève,Bonnes réponses,Total questions,Pourcentage,Score,Note /20\n';
+        
+        // Calculer les données
+        const playersData = CONTROL_STATE.players.map(player => {
+            let correctAnswers = 0;
+            if (player.answers) {
+                Object.values(player.answers).forEach(answer => {
+                    if (answer.correct) correctAnswers++;
+                });
+            }
+            
+            const grade = totalQuestions > 0 ? ((correctAnswers / totalQuestions) * 20).toFixed(1) : '0.0';
+            
+            return {
+                nickname: player.nickname,
+                correctAnswers: correctAnswers,
+                score: player.score || 0,
+                grade: grade
+            };
+        });
+        
+        // Trier
+        playersData.sort((a, b) => {
+            if (b.correctAnswers !== a.correctAnswers) {
+                return b.correctAnswers - a.correctAnswers;
+            }
+            return b.score - a.score;
+        });
+        
+        // Ajouter les données
+        playersData.forEach((player, index) => {
+            const percent = totalQuestions > 0 ? Math.round((player.correctAnswers / totalQuestions) * 100) : 0;
+            csv += `${index + 1},"${player.nickname}",${player.correctAnswers},${totalQuestions},${percent}%,${player.score},${player.grade}\n`;
+        });
+        
+        // Télécharger
+        const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `suivi_qwest_${new Date().toISOString().split('T')[0]}.csv`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    };
+    
+    window.printGradingTable = function() {
+        // Récupérer le contenu du tableau
+        const table = document.getElementById('grading-table');
+        if (!table) return;
+        
+        // Créer une fenêtre d'impression avec uniquement le tableau
+        const printWindow = window.open('', '', 'height=600,width=800');
+        printWindow.document.write('<html><head><title>Tableau de suivi - Qwest</title>');
+        printWindow.document.write('<style>');
+        printWindow.document.write(`
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+                padding: 20px;
+            }
+            h1 {
+                text-align: center;
+                color: #333;
+                margin-bottom: 30px;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 0 auto;
+            }
+            thead {
+                background: #4F46E5;
+                color: white;
+            }
+            th, td {
+                padding: 12px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+            }
+            th {
+                font-weight: 700;
+            }
+            tbody tr:hover {
+                background: #f5f5f5;
+            }
+            .success-badge {
+                background: #E0E7FF;
+                color: #4338CA;
+                padding: 4px 8px;
+                border-radius: 4px;
+                font-weight: 700;
+                font-size: 14px;
+                margin-right: 8px;
+            }
+            .success-percent {
+                color: #666;
+                font-size: 14px;
+            }
+            .student-name {
+                font-weight: 600;
+            }
+            .score-cell {
+                font-weight: 700;
+                color: #4F46E5;
+            }
+            .grade-value {
+                font-weight: 700;
+                font-size: 16px;
+                color: #059669;
+            }
+            @media print {
+                body {
+                    padding: 0;
+                }
+            }
+        `);
+        printWindow.document.write('</style></head><body>');
+        printWindow.document.write('<h1>📊 Tableau de suivi complet - Qwest</h1>');
+        printWindow.document.write(table.outerHTML);
+        printWindow.document.write('</body></html>');
+        printWindow.document.close();
+        printWindow.focus();
+        
+        // Attendre que la page soit chargée puis imprimer
+        setTimeout(() => {
+            printWindow.print();
+            printWindow.close();
+        }, 250);
+    };
+
+    // ========================================
+    // EXPORT VERS GLOBAL
+    // ========================================
+    
+    window.openControlPanel = openControlPanel;
+    window.closeControlPanel = closeControlPanel;
+    window.startGame = startGame;
+    window.pauseGame = pauseGame;
+    window.nextQuestion = nextQuestion;
+    window.endGame = endGame;
+    window.refreshPlayers = refreshPlayers;
+    window.showFullScoreboard = showFullScoreboard;
+    window.showGradingTable = showGradingTable;
+    window.toggleManualMode = toggleManualMode;
+    window.toggleShowTop3 = toggleShowTop3;
+
+})();

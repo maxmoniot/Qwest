@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qwest - Quiz Interactif</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/modals.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/game.css">
+    <link rel="stylesheet" href="css/control.css">
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
+<body>
+    <!-- PAGE D'ACCUEIL -->
+    <div id="home-page" class="page active">
+        <div class="home-container">
+            <div class="logo-container">
+                <h1 class="app-title">Qwest</h1>
+                <p class="app-subtitle">Quiz interactif en temps réel</p>
+            </div>
+            
+            <div class="code-input-container">
+                <input type="text" 
+                       id="quiz-code-input" 
+                       placeholder="Entrer le code..." 
+                       autocomplete="off"
+                       maxlength="20">
+                <button id="join-btn" onclick="handleCodeInput()">
+                    Rejoindre
+                </button>
+            </div>
+            
+            <a href="#" class="teacher-link" onclick="showTeacherPassword(event)">
+                Créer un questionnaire
+            </a>
+            
+            <div id="teacher-password-container" style="display: none;">
+                <input type="password" 
+                       id="teacher-password-input" 
+                       placeholder="Mot de passe enseignant..." 
+                       autocomplete="off"
+                       oninput="checkTeacherPasswordInput()">
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE CRÉATION QUESTIONNAIRE (Prof) -->
+    <div id="create-page" class="page">
+        <div class="header">
+            <div class="header-left">
+                <h2><span class="app-title clickable-logo" onclick="showPage('home-page')" title="Retour à l'accueil">Qwest</span> 📝 Création de questionnaire</h2>
+            </div>
+            <div class="header-right">
+                <button class="btn-help" onclick="openHelpModal()" title="Astuce IA">
+                    ?
+                </button>
+                <button class="btn-secondary" onclick="showPage('home-page')">
+                    🏠 Accueil
+                </button>
+                <button class="btn-primary" onclick="openSaveQuizModal()">
+                    💾 Sauvegarder
+                </button>
+                <button class="btn-primary" onclick="openLoadQuizModal()">
+                    📂 Charger
+                </button>
+            </div>
+        </div>
+
+        <div class="create-container">
+            <!-- Barre d'outils -->
+            <div class="toolbar">
+                <div class="toolbar-section">
+                    <button class="btn-add-question" onclick="addQuestion()">
+                        ➕ Ajouter une question
+                    </button>
+                    <span class="question-count">
+                        Questions : <span id="question-count">0</span> / 150
+                    </span>
+                    <button id="undo-btn" class="btn-history" onclick="undoAction()" disabled title="Annuler">
+                        ↶
+                    </button>
+                    <button id="redo-btn" class="btn-history" onclick="redoAction()" disabled title="Répéter">
+                        ↷
+                    </button>
+                </div>
+                
+                <button id="pilot-btn" class="btn-pilot" onclick="openControlPanel()" style="display: none;">
+                    🚀 Piloter
+                </button>
+            </div>
+
+            <!-- Liste des questions -->
+            <div id="questions-list" class="questions-list">
+                <div class="empty-state">
+                    <p>📋 Aucune question pour le moment</p>
+                    <p>Cliquez sur "Ajouter une question" pour commencer</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE PARTIE (Élève) -->
+    <div id="game-page" class="page">
+        <div class="game-container">
+            <!-- Le contenu sera généré dynamiquement -->
+        </div>
+    </div>
+
+    <!-- MODAL: Ajouter une question -->
+    <div id="add-question-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>➕ Nouvelle question</h3>
+                <button class="close-btn" onclick="closeAddQuestionModal()">×</button>
+            </div>
+            <div class="modal-body">
+                <p>Choisissez le type de question :</p>
+                <div class="question-type-grid">
+                    <button class="question-type-btn" onclick="createQuestion('multiple')">
+                        <span class="type-icon">☑️</span>
+                        <span class="type-name">Choix multiple</span>
+                        <span class="type-desc">4 réponses possibles</span>
+                    </button>
+                    <button class="question-type-btn" onclick="createQuestion('truefalse')">
+                        <span class="type-icon">✓✗</span>
+                        <span class="type-name">Vrai / Faux</span>
+                        <span class="type-desc">2 réponses possibles</span>
+                    </button>
+                    <button class="question-type-btn" onclick="createQuestion('order')">
+                        <span class="type-icon">🔢</span>
+                        <span class="type-name">Remettre dans l'ordre</span>
+                        <span class="type-desc">Ordonner les éléments</span>
+                    </button>
+                    <button class="question-type-btn" onclick="createQuestion('freetext')">
+                        <span class="type-icon">✍️</span>
+                        <span class="type-name">Réponse libre</span>
+                        <span class="type-desc">Réponse textuelle</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL: Éditer une question -->
+    <div id="edit-question-modal" class="modal">
+        <div class="modal-content modal-large">
+            <div class="modal-header">
+                <h3 id="edit-modal-title">✏️ Éditer la question</h3>
+                <button class="close-btn" onclick="closeEditQuestionModal()">×</button>
+            </div>
+            <div class="modal-body">
+                <div id="edit-question-content">
+                    <!-- Le contenu sera généré dynamiquement -->
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-secondary" onclick="closeEditQuestionModal()">Annuler</button>
+                <button class="btn-primary" onclick="saveEditedQuestion()">Enregistrer</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL: Sauvegarder questionnaire -->
+    <div id="save-quiz-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>💾 Sauvegarder le questionnaire</h3>
+                <button class="close-btn" onclick="closeSaveQuizModal()">×</button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>Nom du questionnaire :</label>
+                    <input type="text" 
+                           id="quiz-name-input" 
+                           placeholder="Mon super quiz..."
+                           maxlength="50">
+                </div>
+
+                <div class="form-group">
+                    <label>Captcha de sécurité :</label>
+                    <div class="captcha-container">
+                        <span id="captcha-question"></span>
+                        <input type="number" 
+                               id="captcha-answer-input" 
+                               placeholder="Réponse">
+                    </div>
+                </div>
+
+                <div id="save-message" class="message-box"></div>
+
+                <div id="save-success-display" style="display: none;">
+                    <div class="success-message">
+                        ✅ Questionnaire sauvegardé avec succès !
+                    </div>
+                    
+                    <div class="code-box" style="margin-top: 20px;">
+                        <h4>🔑 Code de modification</h4>
+                        <div class="code-display">
+                            <input type="text" id="modify-code-display" readonly>
+                            <button class="btn-copy" onclick="copyCode('modify-code-display')">
+                                📋 Copier
+                            </button>
+                        </div>
+                        <p class="code-info">
+                            ⚠️ <strong>Conservez précieusement ce code !</strong><br>
+                            Il vous permettra de modifier ce questionnaire à l'avenir.
+                        </p>
+                    </div>
+                    
+                    <div class="action-buttons">
+                        <button class="btn-launch" onclick="closeSaveQuizModal(); openControlPanel();">
+                            🚀 Piloter la partie
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer" id="save-modal-footer">
+                <button class="btn-primary" onclick="confirmSaveQuiz()">💾 Sauvegarder en ligne</button>
+                <button class="btn-secondary" onclick="exportQuizLocally()">📥 Exporter localement</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL: Charger questionnaire -->
+    <div id="load-quiz-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>📂 Charger un questionnaire</h3>
+                <button class="close-btn" onclick="closeLoadQuizModal()">×</button>
+            </div>
+            <div class="modal-body">
+                <div class="import-section">
+                    <button class="btn-primary btn-import" onclick="importQuizLocally()">
+                        📤 Importer un fichier
+                    </button>
+                    <input type="file" id="import-file-input" accept=".json" style="display: none;" onchange="handleImportFile(event)">
+                </div>
+                
+                <hr class="modal-separator">
+                
+                <div class="form-group">
+                    <label>Rechercher un questionnaire en ligne :</label>
+                    <input type="text" 
+                           id="search-quiz-input" 
+                           placeholder="Nom du questionnaire..."
+                           onkeyup="filterQuizList()">
+                </div>
+
+                <div id="quiz-list" class="quiz-list">
+                    <div class="loading">Chargement...</div>
+                </div>
+
+                <div id="load-message" class="message-box"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL: Pilotage de la partie -->
+    <div id="control-modal" class="modal">
+        <div class="modal-content modal-large">
+            <div class="modal-header">
+                <h3>🎮 Pilotage de la partie</h3>
+                <div id="control-code-display" class="control-code-header">
+                    <!-- Code inséré dynamiquement -->
+                </div>
+                <button class="close-btn" onclick="closeControlPanel()">×</button>
+            </div>
+            <div class="modal-body">
+                <div class="control-panel">
+                    <!-- Contenu dynamique -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL: Astuce IA -->
+    <div id="help-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>💡 Astuce</h3>
+                <button class="close-btn" onclick="closeHelpModal()">×</button>
+            </div>
+            <div class="modal-body">
+                <div class="help-content">
+                    <p class="help-intro">
+                        <strong>Gagnez un temps précieux !</strong> Utilisez une IA (comme ChatGPT, Claude, etc.) pour générer automatiquement vos questionnaires au bon format.
+                    </p>
+                    
+                    <div class="help-steps">
+                        <div class="help-step">
+                            <span class="step-number">1</span>
+                            <div class="step-content">
+                                <strong>Téléchargez le fichier de format ci-dessous</strong>
+                            </div>
+                        </div>
+                        
+                        <div class="help-step">
+                            <span class="step-number">2</span>
+                            <div class="step-content">
+                                <strong>Envoyez-le à votre IA préférée</strong>
+                            </div>
+                        </div>
+                        
+                        <div class="help-step">
+                            <span class="step-number">3</span>
+                            <div class="step-content">
+                                <strong>Demandez-lui de créer votre questionnaire</strong>
+                            </div>
+                        </div>
+                        
+                        <div class="help-step">
+                            <span class="step-number">4</span>
+                            <div class="step-content">
+                                <strong>Importez le fichier généré dans Qwest</strong>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="btn-download-format" onclick="downloadFormatFile()">
+                        📥 Télécharger le fichier de format
+                    </button>
+                    
+                    <div class="help-note">
+                        💡 Vous pouvez demander à l'IA de créer des questions de différents types (choix multiple, vrai/faux, ordre) et même de varier les temps par question !
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL: Galerie d'images -->
+    <div id="image-gallery-modal" class="modal">
+        <div class="modal-content modal-large">
+            <div class="modal-header">
+                <h3>🖼️ Choisir une image</h3>
+                <button class="btn-url-image" onclick="openUrlImagePrompt()">
+                    🔗 Ou entrez l'URL d'une image
+                </button>
+                <button class="close-btn" onclick="closeImageGallery()">×</button>
+            </div>
+            <div class="modal-body">
+                <div class="gallery-search">
+                    <input type="text" 
+                           id="gallery-search-input" 
+                           placeholder="Rechercher des images (ex: science, histoire, nature...)"
+                           onkeypress="handleSearchInput(event)">
+                    <button class="btn-search-gallery" onclick="handleSearchButton()">
+                        🔍 Rechercher
+                    </button>
+                </div>
+                
+                <div id="gallery-results" class="gallery-results">
+                    <!-- Images chargées dynamiquement -->
+                </div>
+                
+                <div id="gallery-pagination" class="gallery-pagination">
+                    <!-- Pagination chargée dynamiquement -->
+                </div>
+                
+                <div class="gallery-credits">
+                    Images fournies par <a href="https://pixabay.com/" target="_blank" rel="noopener">Pixabay</a> - Libres de droits
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chargement des scripts -->
+    <script src="js/config.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/profanityFilter.js"></script>
+    <script src="js/animals.js"></script>
+    <script src="js/sessionManager.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/history.js"></script>
+    <script src="js/questions.js"></script>
+    <script src="js/saveLoad.js"></script>
+    <script src="js/importExport.js"></script>
+    <script src="js/dragDrop.js"></script>
+    <script src="js/help.js"></script>
+    <script src="js/imageGallery.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/control.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

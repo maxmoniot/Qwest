@@ -1,0 +1,485 @@
+{
+    "name": "CapteursActionneurs_4e_20q",
+    "modifyCode": "GMWJH5YK",
+    "playCode": "X73JK3",
+    "data": {
+        "id": "mjm6wrzzrs10lr4mg",
+        "name": "CapteursActionneurs_4e_20q",
+        "questions": [
+            {
+                "id": "mjm6w2v31pxw0q8eq",
+                "type": "multiple",
+                "question": "Ce composant sert principalement \u00e0 mesurer :",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "La luminosit\u00e9",
+                        "correct": true
+                    },
+                    {
+                        "text": "La distance",
+                        "correct": false
+                    },
+                    {
+                        "text": "La vitesse de rotation",
+                        "correct": false
+                    },
+                    {
+                        "text": "La pression d'un liquide",
+                        "correct": false
+                    }
+                ],
+                "imageUrl": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/4\/4e\/LDR07_Light-dependent_CdS_photoresistor.jpg\/500px-LDR07_Light-dependent_CdS_photoresistor.jpg"
+            },
+            {
+                "id": "mjm6w2v3wykqpf1i8",
+                "type": "multiple",
+                "question": "Ce composant est surtout un capteur de :",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "Temp\u00e9rature",
+                        "correct": true
+                    },
+                    {
+                        "text": "Lumi\u00e8re",
+                        "correct": false
+                    },
+                    {
+                        "text": "Distance",
+                        "correct": false
+                    },
+                    {
+                        "text": "Position angulaire",
+                        "correct": false
+                    }
+                ],
+                "imageUrl": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/f\/fe\/NTC_Thermistor.jpg\/500px-NTC_Thermistor.jpg"
+            },
+            {
+                "id": "mjm6w2v38022bubl3",
+                "type": "multiple",
+                "question": "Ce capteur est souvent utilis\u00e9 pour mesurer :",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "Une distance",
+                        "correct": true
+                    },
+                    {
+                        "text": "Une intensit\u00e9 lumineuse",
+                        "correct": false
+                    },
+                    {
+                        "text": "Une temp\u00e9rature",
+                        "correct": false
+                    },
+                    {
+                        "text": "Un niveau sonore",
+                        "correct": false
+                    }
+                ],
+                "imageUrl": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/2\/20\/HC_SR04_Ultrasonic_sensor_1480322_3_4_HDR_Enhancer.jpg\/500px-HC_SR04_Ultrasonic_sensor_1480322_3_4_HDR_Enhancer.jpg"
+            },
+            {
+                "id": "mjm6w2v31pode3imk",
+                "type": "truefalse",
+                "question": "Un moteur \u00e9lectrique est un actionneur : il transforme de l'\u00e9nergie \u00e9lectrique en mouvement.",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ],
+                "imageUrl": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/8\/85\/Dcmotor.jpg\/500px-Dcmotor.jpg"
+            },
+            {
+                "id": "mjm6w2v3nvtdcz2h4",
+                "type": "multiple",
+                "question": "Quel est l'avantage principal d'un servomoteur dans un syst\u00e8me (ex : robot) ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Il permet de contr\u00f4ler une position (angle) de fa\u00e7on pr\u00e9cise",
+                        "correct": true
+                    },
+                    {
+                        "text": "Il mesure la temp\u00e9rature",
+                        "correct": false
+                    },
+                    {
+                        "text": "Il stocke l'\u00e9nergie",
+                        "correct": false
+                    },
+                    {
+                        "text": "Il produit de la lumi\u00e8re",
+                        "correct": false
+                    }
+                ],
+                "imageUrl": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/4\/41\/Servo.jpg"
+            },
+            {
+                "id": "mjm6w2v3t4nztl8g2",
+                "type": "truefalse",
+                "question": "Dans la cha\u00eene d'information, la fonction \u00ab acqu\u00e9rir \u00bb se fait avant la fonction \u00ab traiter \u00bb.",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ],
+                "imageUrl": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/1\/12\/Arduino_uno_r3.jpg\/500px-Arduino_uno_r3.jpg"
+            },
+            {
+                "id": "mjm6w2v3vdp85hcmn",
+                "type": "multiple",
+                "question": "Ces composants sont des actionneurs. Lequel produit un mouvement ?",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "Un moteur",
+                        "correct": true
+                    },
+                    {
+                        "text": "Une thermistance (NTC)",
+                        "correct": false
+                    },
+                    {
+                        "text": "Une photor\u00e9sistance (LDR)",
+                        "correct": false
+                    },
+                    {
+                        "text": "Un capteur PIR",
+                        "correct": false
+                    }
+                ],
+                "imageUrl": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/f\/f6\/Electric_motors_en.jpg"
+            },
+            {
+                "id": "mjm6w2v3ywy1fflrd",
+                "type": "multiple",
+                "question": "Quel \u00e9l\u00e9ment appartient plut\u00f4t \u00e0 la cha\u00eene d'\u00e9nergie ?",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "Alimenter (source d'\u00e9nergie)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Acqu\u00e9rir (capteur)",
+                        "correct": false
+                    },
+                    {
+                        "text": "Traiter (microcontr\u00f4leur)",
+                        "correct": false
+                    },
+                    {
+                        "text": "Communiquer (affichage)",
+                        "correct": false
+                    }
+                ],
+                "imageUrl": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/e\/e5\/6_most_common_battery_types-1.jpg\/500px-6_most_common_battery_types-1.jpg"
+            },
+            {
+                "id": "mjm6w2v3wr9tfqk77",
+                "type": "order",
+                "question": "Ordonne les fonctions de la cha\u00eene d'\u00e9nergie (du d\u00e9but vers la fin) :",
+                "time": 45,
+                "answers": [
+                    {
+                        "text": "Alimenter",
+                        "correct": true
+                    },
+                    {
+                        "text": "Distribuer",
+                        "correct": true
+                    },
+                    {
+                        "text": "Convertir",
+                        "correct": true
+                    },
+                    {
+                        "text": "Transmettre",
+                        "correct": true
+                    },
+                    {
+                        "text": "Agir",
+                        "correct": true
+                    }
+                ],
+                "imageUrl": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/b\/bc\/Gearmotors.jpg\/500px-Gearmotors.jpg"
+            },
+            {
+                "id": "mjm6w2v3ioir6uxip",
+                "type": "multiple",
+                "question": "Le r\u00f4le principal d'un relais est de :",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Commander un circuit de puissance avec un faible signal",
+                        "correct": true
+                    },
+                    {
+                        "text": "Mesurer la distance",
+                        "correct": false
+                    },
+                    {
+                        "text": "\u00c9clairer",
+                        "correct": false
+                    },
+                    {
+                        "text": "Stocker de l'\u00e9nergie",
+                        "correct": false
+                    }
+                ],
+                "imageUrl": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/2\/24\/Relay.jpg"
+            },
+            {
+                "id": "mjm6w2v38n22ojpr1",
+                "type": "truefalse",
+                "question": "Un potentiom\u00e8tre peut fournir une information analogique (valeur variable).",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ],
+                "imageUrl": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/b\/b5\/Potentiometer.jpg\/500px-Potentiometer.jpg"
+            },
+            {
+                "id": "mjm6w2v3h8gnrcc10",
+                "type": "multiple",
+                "question": "Un bouton poussoir est g\u00e9n\u00e9ralement un capteur :",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "TOR (tout ou rien)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Analogique (valeur continue)",
+                        "correct": false
+                    },
+                    {
+                        "text": "D'\u00e9nergie",
+                        "correct": false
+                    },
+                    {
+                        "text": "D'action",
+                        "correct": false
+                    }
+                ],
+                "imageUrl": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/e\/ea\/Push_button_switch.jpg\/500px-Push_button_switch.jpg"
+            },
+            {
+                "id": "mjm6w2v385vf8js10",
+                "type": "multiple",
+                "question": "Ce composant transforme principalement l'\u00e9nergie \u00e9lectrique en :",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "Lumi\u00e8re",
+                        "correct": true
+                    },
+                    {
+                        "text": "Mouvement",
+                        "correct": false
+                    },
+                    {
+                        "text": "Information de distance",
+                        "correct": false
+                    },
+                    {
+                        "text": "Pression d'air",
+                        "correct": false
+                    }
+                ],
+                "imageUrl": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/b\/bb\/Red_LED..jpg\/500px-Red_LED..jpg"
+            },
+            {
+                "id": "mjm6w2v3odrq3d059",
+                "type": "multiple",
+                "question": "Ce composant sert \u00e0 :",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "Produire un son (alerte)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Mesurer la temp\u00e9rature",
+                        "correct": false
+                    },
+                    {
+                        "text": "Mesurer la luminosit\u00e9",
+                        "correct": false
+                    },
+                    {
+                        "text": "Transformer l'\u00e9nergie hydraulique en mouvement",
+                        "correct": false
+                    }
+                ],
+                "imageUrl": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/d\/d3\/2007-07-24_Piezoelectric_buzzer.jpg\/500px-2007-07-24_Piezoelectric_buzzer.jpg"
+            },
+            {
+                "id": "mjm6w2v3t98suofef",
+                "type": "truefalse",
+                "question": "Un moteur pas \u00e0 pas tourne en effectuant des pas discrets (mouvement par \u00e9tapes).",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ],
+                "imageUrl": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/c\/cf\/Stepper_motor.jpg\/500px-Stepper_motor.jpg"
+            },
+            {
+                "id": "mjm6w2v3yi4o8dif3",
+                "type": "multiple",
+                "question": "Pour alimenter un syst\u00e8me autonome en \u00e9nergie renouvelable, le meilleur choix est :",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "Un panneau solaire",
+                        "correct": true
+                    },
+                    {
+                        "text": "Un servomoteur",
+                        "correct": false
+                    },
+                    {
+                        "text": "Un buzzer",
+                        "correct": false
+                    },
+                    {
+                        "text": "Un relais",
+                        "correct": false
+                    }
+                ],
+                "imageUrl": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/e\/e1\/Solar_panels_on_a_roof.jpg\/500px-Solar_panels_on_a_roof.jpg"
+            },
+            {
+                "id": "mjm6w2v3r2u6dm5sh",
+                "type": "multiple",
+                "question": "Ce capteur est couramment utilis\u00e9 pour d\u00e9tecter :",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "Un mouvement \/ une pr\u00e9sence",
+                        "correct": true
+                    },
+                    {
+                        "text": "La luminosit\u00e9",
+                        "correct": false
+                    },
+                    {
+                        "text": "La distance par ultrasons",
+                        "correct": false
+                    },
+                    {
+                        "text": "La tension d'une pile",
+                        "correct": false
+                    }
+                ],
+                "imageUrl": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/d\/d5\/PIR_Sensor_Visonic_Next%2BMCW.jpg\/500px-PIR_Sensor_Visonic_Next%2BMCW.jpg"
+            },
+            {
+                "id": "mjm6w2v3wsm9djigj",
+                "type": "multiple",
+                "question": "Ce composant est un actionneur : il transforme une \u00e9nergie en mouvement lin\u00e9aire. C'est un :",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "V\u00e9rin hydraulique",
+                        "correct": true
+                    },
+                    {
+                        "text": "Capteur de lumi\u00e8re (LDR)",
+                        "correct": false
+                    },
+                    {
+                        "text": "Relais",
+                        "correct": false
+                    },
+                    {
+                        "text": "Panneau solaire",
+                        "correct": false
+                    }
+                ],
+                "imageUrl": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/f\/f4\/Hydraulic_Cylinder_Hoses.JPG\/500px-Hydraulic_Cylinder_Hoses.JPG"
+            },
+            {
+                "id": "mjm6w2v375cm8pooo",
+                "type": "multiple",
+                "question": "Ce composant est aussi un actionneur. Il fonctionne le plus souvent gr\u00e2ce \u00e0 :",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "De l'air comprim\u00e9 (pneumatique)",
+                        "correct": true
+                    },
+                    {
+                        "text": "La lumi\u00e8re",
+                        "correct": false
+                    },
+                    {
+                        "text": "La temp\u00e9rature",
+                        "correct": false
+                    },
+                    {
+                        "text": "Des ultrasons",
+                        "correct": false
+                    }
+                ],
+                "imageUrl": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/d\/d9\/8-stage_single-acting_air_cylinder,_Ergo-Help.jpg\/500px-8-stage_single-acting_air_cylinder,_Ergo-Help.jpg"
+            },
+            {
+                "id": "mjm6w2v3qg9093tpy",
+                "type": "freetext",
+                "question": "Comment s'appelle l'actionneur qui attire un noyau (ou une tige) quand on alimente une bobine ?",
+                "time": 35,
+                "answers": [
+                    {
+                        "text": "sol\u00e9no\u00efde",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "solenoide",
+                    "sol\u00e9no\u00efde",
+                    "solenoid",
+                    "\u00e9lectroaimant",
+                    "electroaimant"
+                ],
+                "imageUrl": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/f\/f5\/Solenoide.jpg\/500px-Solenoide.jpg"
+            }
+        ],
+        "modifyCode": "GMWJH5YK",
+        "playCode": "X73JK3",
+        "createdAt": 1766712337343,
+        "lastModified": 1766712337343
+    },
+    "lastModified": 1766712337,
+    "questionCount": 20
+}

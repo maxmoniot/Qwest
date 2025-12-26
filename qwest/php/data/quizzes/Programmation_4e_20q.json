@@ -1,0 +1,457 @@
+{
+    "name": "Programmation_4e_20q",
+    "modifyCode": "RARUK9L9",
+    "playCode": "N2RJY4",
+    "data": {
+        "id": "mjm8wyxbw8ompswiq",
+        "name": "Programmation_4e_20q",
+        "questions": [
+            {
+                "id": "mjm8wa0egup61oxml",
+                "type": "multiple",
+                "question": "Une boucle \u00ab r\u00e9p\u00e9ter 5 fois \u00bb sert \u00e0 :",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "R\u00e9p\u00e9ter 5 fois les blocs plac\u00e9s \u00e0 l\u2019int\u00e9rieur",
+                        "correct": true
+                    },
+                    {
+                        "text": "Attendre 5 secondes",
+                        "correct": false
+                    },
+                    {
+                        "text": "Effacer 5 sprites",
+                        "correct": false
+                    },
+                    {
+                        "text": "Cr\u00e9er 5 variables",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mjm8wa0ed9wvxh6tg",
+                "type": "truefalse",
+                "question": "Dans un programme, l\u2019ordre des instructions est important : changer l\u2019ordre peut changer le r\u00e9sultat.",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mjm8wa0e1iqejmxao",
+                "type": "multiple",
+                "question": "Une condition en programmation, c\u2019est :",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Une question qui peut \u00eatre vraie ou fausse",
+                        "correct": true
+                    },
+                    {
+                        "text": "Un c\u00e2ble qui relie l\u2019ordinateur \u00e0 Internet",
+                        "correct": false
+                    },
+                    {
+                        "text": "Un dessin fait par le sprite",
+                        "correct": false
+                    },
+                    {
+                        "text": "Une couleur de bloc dans Scratch",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mjm8wa0exfobj1zhn",
+                "type": "order",
+                "question": "Ordonne les \u00e9tapes pour un programme qui dit \u00ab Bonjour \u00bb, attend 1 seconde, puis dit \u00ab Au revoir \u00bb :",
+                "time": 55,
+                "answers": [
+                    {
+                        "text": "D\u00e9marrer (ex : \u00ab quand drapeau vert cliqu\u00e9 \u00bb)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Dire \u00ab Bonjour \u00bb",
+                        "correct": true
+                    },
+                    {
+                        "text": "Attendre 1 seconde",
+                        "correct": true
+                    },
+                    {
+                        "text": "Dire \u00ab Au revoir \u00bb",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "id": "mjm8wa0ekgd0s28gn",
+                "type": "multiple",
+                "question": "On a un programme : \u00ab si score > 10 alors dire \u2018Gagn\u00e9 !\u2019 \u00bb. Si score = 12, que se passe-t-il ?",
+                "time": 35,
+                "answers": [
+                    {
+                        "text": "Le programme dit \u00ab Gagn\u00e9 ! \u00bb",
+                        "correct": true
+                    },
+                    {
+                        "text": "Le programme dit \u00ab Perdu ! \u00bb",
+                        "correct": false
+                    },
+                    {
+                        "text": "Le programme recommence automatiquement",
+                        "correct": false
+                    },
+                    {
+                        "text": "Le score devient 0",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mjm8wa0ebtgktsv6i",
+                "type": "multiple",
+                "question": "\u00c0 quoi sert un bloc \u00ab si touche Espace press\u00e9e alors \u2026 \u00bb (dans Scratch) ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Faire une action seulement quand l\u2019\u00e9l\u00e8ve appuie sur Espace",
+                        "correct": true
+                    },
+                    {
+                        "text": "Allumer l\u2019ordinateur",
+                        "correct": false
+                    },
+                    {
+                        "text": "Changer la couleur du clavier",
+                        "correct": false
+                    },
+                    {
+                        "text": "Cr\u00e9er une nouvelle sc\u00e8ne",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mjm8wa0e3j2btwtum",
+                "type": "truefalse",
+                "question": "Une boucle \u00ab pour toujours \u00bb peut continuer jusqu\u2019\u00e0 ce qu\u2019on arr\u00eate le programme.",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mjm8wa0excbd9hy86",
+                "type": "order",
+                "question": "Dans un algorigramme, mets ces \u00e9l\u00e9ments dans l\u2019ordre le plus logique :",
+                "time": 55,
+                "answers": [
+                    {
+                        "text": "D\u00e9but",
+                        "correct": true
+                    },
+                    {
+                        "text": "Entr\u00e9e : demander une information (ex : un nombre)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Traitement : faire un calcul \/ une action",
+                        "correct": true
+                    },
+                    {
+                        "text": "Sortie : afficher un r\u00e9sultat",
+                        "correct": true
+                    },
+                    {
+                        "text": "Fin",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "id": "mjm8wa0eca7oylkxc",
+                "type": "multiple",
+                "question": "Dans un algorigramme, la forme qui repr\u00e9sente une d\u00e9cision (Oui\/Non) est g\u00e9n\u00e9ralement :",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Un losange",
+                        "correct": true
+                    },
+                    {
+                        "text": "Un rectangle",
+                        "correct": false
+                    },
+                    {
+                        "text": "Un cercle",
+                        "correct": false
+                    },
+                    {
+                        "text": "Un triangle",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mjm8wa0e0o4sjamk4",
+                "type": "multiple",
+                "question": "Une variable sert surtout \u00e0 :",
+                "time": 35,
+                "answers": [
+                    {
+                        "text": "Stocker une information qui peut changer (ex : score)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Dessiner automatiquement un sprite",
+                        "correct": false
+                    },
+                    {
+                        "text": "Acc\u00e9l\u00e9rer Internet",
+                        "correct": false
+                    },
+                    {
+                        "text": "Remplacer la souris",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mjm8wa0euzje8hf8y",
+                "type": "multiple",
+                "question": "Pourquoi met-on souvent \u00ab mettre score \u00e0 0 \u00bb au d\u00e9but d\u2019un jeu ?",
+                "time": 35,
+                "answers": [
+                    {
+                        "text": "Pour repartir de z\u00e9ro \u00e0 chaque nouvelle partie",
+                        "correct": true
+                    },
+                    {
+                        "text": "Pour emp\u00eacher le score d\u2019augmenter",
+                        "correct": false
+                    },
+                    {
+                        "text": "Pour supprimer les sprites",
+                        "correct": false
+                    },
+                    {
+                        "text": "Pour rendre l\u2019\u00e9cran plus lumineux",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mjm8wa0e0ghl1rjjq",
+                "type": "freetext",
+                "question": "Comment appelle-t-on une instruction qui permet de r\u00e9p\u00e9ter des actions ? (1 mot)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "boucle",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "boucle",
+                    "boucles",
+                    "loop",
+                    "loops"
+                ]
+            },
+            {
+                "id": "mjm8wa0e97xjysxa9",
+                "type": "freetext",
+                "question": "Quel mot-cl\u00e9 utilise-t-on le plus souvent pour une condition en Scratch ? (1 mot)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "si",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "si",
+                    "if"
+                ]
+            },
+            {
+                "id": "mjm8wa0ezhvv89nu2",
+                "type": "multiple",
+                "question": "Quel bloc correspond \u00e0 l\u2019id\u00e9e \u00ab avancer de 10 pas \u00bb (d\u00e9placer un sprite) ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Avancer de 10 pas",
+                        "correct": true
+                    },
+                    {
+                        "text": "Mettre x \u00e0 10",
+                        "correct": false
+                    },
+                    {
+                        "text": "Dire 10",
+                        "correct": false
+                    },
+                    {
+                        "text": "Attendre 10 secondes",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mjm8wa0etvcdxfiss",
+                "type": "truefalse",
+                "question": "Une variable peut changer pendant l\u2019ex\u00e9cution d\u2019un programme (par exemple, le score qui augmente).",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mjm8wa0en211x2r6p",
+                "type": "order",
+                "question": "Ordonne ce petit algorithme pour compter de 1 \u00e0 3 \u00e0 l\u2019\u00e9cran :",
+                "time": 60,
+                "answers": [
+                    {
+                        "text": "Mettre n \u00e0 1",
+                        "correct": true
+                    },
+                    {
+                        "text": "R\u00e9p\u00e9ter 3 fois",
+                        "correct": true
+                    },
+                    {
+                        "text": "Dire n",
+                        "correct": true
+                    },
+                    {
+                        "text": "Ajouter 1 \u00e0 n",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "id": "mjm8wa0ea2usbuijz",
+                "type": "multiple",
+                "question": "Le bloc \u00ab si \u2026 alors \/ sinon \u00bb sert \u00e0 :",
+                "time": 35,
+                "answers": [
+                    {
+                        "text": "Choisir entre 2 actions selon que la condition est vraie ou fausse",
+                        "correct": true
+                    },
+                    {
+                        "text": "R\u00e9p\u00e9ter une action exactement 2 fois",
+                        "correct": false
+                    },
+                    {
+                        "text": "Effacer automatiquement le projet",
+                        "correct": false
+                    },
+                    {
+                        "text": "Cr\u00e9er un nouveau sprite",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mjm8wa0exjyzpt8jq",
+                "type": "multiple",
+                "question": "Dans Scratch, \u00ab r\u00e9p\u00e9ter jusqu\u2019\u00e0 (condition) \u00bb s\u2019arr\u00eate quand :",
+                "time": 35,
+                "answers": [
+                    {
+                        "text": "La condition devient vraie",
+                        "correct": true
+                    },
+                    {
+                        "text": "La condition devient fausse",
+                        "correct": false
+                    },
+                    {
+                        "text": "On a r\u00e9p\u00e9t\u00e9 exactement 10 fois",
+                        "correct": false
+                    },
+                    {
+                        "text": "Le sprite change de costume",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mjm8wa0eva5suqd6j",
+                "type": "truefalse",
+                "question": "Si on met une boucle \u00ab r\u00e9p\u00e9ter 3 fois \u00bb \u00e0 l\u2019int\u00e9rieur d\u2019une boucle \u00ab r\u00e9p\u00e9ter 2 fois \u00bb, certaines actions peuvent se r\u00e9p\u00e9ter 6 fois au total.",
+                "time": 35,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mjm8wa0ezgnrqddca",
+                "type": "multiple",
+                "question": "Ton programme ne se lance pas quand tu cliques sur le drapeau vert. Quelle cause est la PLUS probable ?",
+                "time": 40,
+                "answers": [
+                    {
+                        "text": "Il manque le bloc de d\u00e9marrage (ex : \u00ab quand drapeau vert cliqu\u00e9 \u00bb)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Le sprite est trop grand",
+                        "correct": false
+                    },
+                    {
+                        "text": "La variable score est d\u00e9j\u00e0 \u00e0 0",
+                        "correct": false
+                    },
+                    {
+                        "text": "Le programme a trop de couleurs",
+                        "correct": false
+                    }
+                ]
+            }
+        ],
+        "modifyCode": "RARUK9L9",
+        "playCode": "N2RJY4",
+        "createdAt": 1766715705551,
+        "lastModified": 1766715705551
+    },
+    "lastModified": 1766715705,
+    "questionCount": 20
+}

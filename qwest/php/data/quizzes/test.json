@@ -1,0 +1,99 @@
+{
+    "name": "test",
+    "modifyCode": "5PDYS23K",
+    "playCode": "M7CWVB",
+    "data": {
+        "id": "mjm6icetblrlsiv12",
+        "name": "test",
+        "questions": [
+            {
+                "id": "mjm5vzxa41ix993wv",
+                "type": "multiple",
+                "question": "cocher le a",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "a",
+                        "correct": true
+                    },
+                    {
+                        "text": "b",
+                        "correct": false
+                    },
+                    {
+                        "text": "c",
+                        "correct": false
+                    },
+                    {
+                        "text": "d",
+                        "correct": false
+                    }
+                ],
+                "imageUrl": "https:\/\/pixabay.com\/get\/gd2f0367bef511f18e6938f0bf61cc234ffb1d3643396afc01df42cf60d9d446bc7b123357844a952a3201951a654bb8f8e21eedcec47e0ed83745581a5b50589_640.png"
+            },
+            {
+                "id": "mjm5x2pgiw5khosxp",
+                "type": "truefalse",
+                "question": "la r\u00e9ponse est vraie",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ],
+                "imageUrl": "https:\/\/www.dr-spitalier.com\/wp-content\/uploads\/2017\/02\/VRAI-FAUX.jpg"
+            },
+            {
+                "id": "mjm5xkyoq2ctn9ddj",
+                "type": "order",
+                "question": ">",
+                "time": 40,
+                "answers": [
+                    {
+                        "text": "1",
+                        "order": 1
+                    },
+                    {
+                        "text": "2",
+                        "order": 2
+                    },
+                    {
+                        "text": "3",
+                        "order": 3
+                    },
+                    {
+                        "text": "4",
+                        "order": 4
+                    }
+                ],
+                "imageUrl": "https:\/\/pixabay.com\/get\/g78ec5e9c3ded429363ad09ffc53c97aa61c271b426d8381805c6336793c90ac61127704a80b4c14518d760ba68b9627a_640.jpg"
+            },
+            {
+                "id": "mjm5y9p1onbz71mxj",
+                "type": "freetext",
+                "question": "La r\u00e9ponse est libre",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Libre",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [],
+                "imageUrl": "https:\/\/pixabay.com\/get\/g766ebad6bdb05d6d0b19fa445a5964f93836b49212ed5f75221e762c70b3afabd9537adf3b8b53a73e186d2e6cf63e2355619279b8f53fceb678694077278603_640.jpg"
+            }
+        ],
+        "modifyCode": "BAEWXHGU",
+        "playCode": "M7CWVB",
+        "createdAt": 1766711663957,
+        "lastModified": 1766711663957
+    },
+    "lastModified": 1766711669,
+    "questionCount": 4
+}

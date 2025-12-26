@@ -1,0 +1,485 @@
+{
+    "name": "ReseauInformatique_4e_20q",
+    "modifyCode": "SFFXUQN5",
+    "playCode": "WGB6LC",
+    "data": {
+        "id": "mjm718tfv3ry3p5cb",
+        "name": "ReseauInformatique_4e_20q",
+        "questions": [
+            {
+                "id": "mjm70lq9b2fmgty1l",
+                "type": "multiple",
+                "question": "\u00c0 quoi sert principalement une adresse IP sur un r\u00e9seau ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Identifier un appareil sur le r\u00e9seau",
+                        "correct": true
+                    },
+                    {
+                        "text": "Rendre l'image plus nette",
+                        "correct": false
+                    },
+                    {
+                        "text": "Augmenter la capacit\u00e9 de la batterie",
+                        "correct": false
+                    },
+                    {
+                        "text": "Mesurer la temp\u00e9rature du routeur",
+                        "correct": false
+                    }
+                ],
+                "imageUrl": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/7\/74\/Ipv4_address.svg\/500px-Ipv4_address.svg.png"
+            },
+            {
+                "id": "mjm70lq9uijngs2dn",
+                "type": "multiple",
+                "question": "Quel mat\u00e9riel relie le r\u00e9seau local (maison\/\u00e9tablissement) \u00e0 Internet le plus souvent ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Un routeur (box Internet)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Un clavier",
+                        "correct": false
+                    },
+                    {
+                        "text": "Un \u00e9cran",
+                        "correct": false
+                    },
+                    {
+                        "text": "Un c\u00e2ble USB",
+                        "correct": false
+                    }
+                ],
+                "imageUrl": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/c\/c3\/Home_Gateway_and_Wi-Fi_Router.jpg\/500px-Home_Gateway_and_Wi-Fi_Router.jpg"
+            },
+            {
+                "id": "mjm70lq944ho8rejg",
+                "type": "multiple",
+                "question": "\u00c0 quoi sert principalement un switch (commutateur) ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Connecter plusieurs appareils sur le m\u00eame r\u00e9seau local",
+                        "correct": true
+                    },
+                    {
+                        "text": "Cr\u00e9er une page web",
+                        "correct": false
+                    },
+                    {
+                        "text": "Stocker des fichiers comme un disque dur",
+                        "correct": false
+                    },
+                    {
+                        "text": "Fabriquer de l'\u00e9lectricit\u00e9",
+                        "correct": false
+                    }
+                ],
+                "imageUrl": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/c\/c2\/ZyXEL_desktop_Ethernet_switch.jpg\/500px-ZyXEL_desktop_Ethernet_switch.jpg"
+            },
+            {
+                "id": "mjm70lq9ug34f8l99",
+                "type": "truefalse",
+                "question": "Un serveur fournit des services (fichiers, site web, messagerie\u2026) \u00e0 d'autres appareils appel\u00e9s clients.",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ],
+                "imageUrl": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/1\/1e\/Computer_server_rack.jpg\/500px-Computer_server_rack.jpg"
+            },
+            {
+                "id": "mjm70lq9rrn7nsgav",
+                "type": "multiple",
+                "question": "La passerelle (gateway) d'un ordinateur sert surtout \u00e0 :",
+                "time": 35,
+                "answers": [
+                    {
+                        "text": "Envoyer les donn\u00e9es vers d'autres r\u00e9seaux (ex : Internet)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Augmenter la luminosit\u00e9 de l'\u00e9cran",
+                        "correct": false
+                    },
+                    {
+                        "text": "Mesurer la temp\u00e9rature du PC",
+                        "correct": false
+                    },
+                    {
+                        "text": "Remplacer l'adresse IP",
+                        "correct": false
+                    }
+                ],
+                "imageUrl": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/c\/c3\/Home_Gateway_and_Wi-Fi_Router.jpg\/500px-Home_Gateway_and_Wi-Fi_Router.jpg"
+            },
+            {
+                "id": "mjm70lq93kpho1rzr",
+                "type": "multiple",
+                "question": "La commande \u00ab ping \u00bb sert \u00e0 :",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Tester si une machine est joignable sur le r\u00e9seau",
+                        "correct": true
+                    },
+                    {
+                        "text": "Installer un programme",
+                        "correct": false
+                    },
+                    {
+                        "text": "Changer le mot de passe Wi\u2011Fi",
+                        "correct": false
+                    },
+                    {
+                        "text": "Cr\u00e9er une adresse IP",
+                        "correct": false
+                    }
+                ],
+                "imageUrl": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/c\/cf\/Cmd-ping.png\/500px-Cmd-ping.png"
+            },
+            {
+                "id": "mjm70lq9khz08nm0z",
+                "type": "order",
+                "question": "Ordonne ces \u00e9tapes de d\u00e9pannage si \u00ab Internet ne marche pas \u00bb sur un poste :",
+                "time": 50,
+                "answers": [
+                    {
+                        "text": "V\u00e9rifier le c\u00e2ble \/ le Wi\u2011Fi (connexion physique)",
+                        "correct": true
+                    },
+                    {
+                        "text": "V\u00e9rifier l'adresse IP obtenue (et la passerelle)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Ping de la passerelle (ex : box\/routeur)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Ping d'un site (ex : 8.8.8.8 ou un nom de domaine)",
+                        "correct": true
+                    }
+                ],
+                "imageUrl": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/1\/11\/Ethernet_Connection.jpg\/500px-Ethernet_Connection.jpg"
+            },
+            {
+                "id": "mjm70lq943c63c07e",
+                "type": "freetext",
+                "question": "Quelle commande (1 mot) permet souvent de tester rapidement la connexion \u00e0 une autre machine sur le r\u00e9seau ?",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "ping",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "ping",
+                    "PING",
+                    "Ping"
+                ],
+                "imageUrl": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/c\/cf\/Cmd-ping.png\/500px-Cmd-ping.png"
+            },
+            {
+                "id": "mjm70lq961r632hwg",
+                "type": "multiple",
+                "question": "Dans un r\u00e9seau, DHCP sert \u00e0 :",
+                "time": 35,
+                "answers": [
+                    {
+                        "text": "Attribuer automatiquement une adresse IP aux appareils",
+                        "correct": true
+                    },
+                    {
+                        "text": "Refroidir le serveur",
+                        "correct": false
+                    },
+                    {
+                        "text": "Cr\u00e9er un c\u00e2ble RJ45",
+                        "correct": false
+                    },
+                    {
+                        "text": "Bloquer les ondes Wi\u2011Fi",
+                        "correct": false
+                    }
+                ],
+                "imageUrl": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/3\/31\/DHCP_Server.png\/500px-DHCP_Server.png"
+            },
+            {
+                "id": "mjm70lq9oj6224zkd",
+                "type": "multiple",
+                "question": "\u00c0 quoi sert DNS ?",
+                "time": 35,
+                "answers": [
+                    {
+                        "text": "Transformer un nom de domaine (ex : www...) en adresse IP",
+                        "correct": true
+                    },
+                    {
+                        "text": "Donner de l'\u00e9nergie au PC",
+                        "correct": false
+                    },
+                    {
+                        "text": "Mesurer la vitesse du ventilateur",
+                        "correct": false
+                    },
+                    {
+                        "text": "Connecter un c\u00e2ble USB",
+                        "correct": false
+                    }
+                ],
+                "imageUrl": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/d\/d2\/DNS_schema.svg\/500px-DNS_schema.svg.png"
+            },
+            {
+                "id": "mjm70lq9fvm1kuoci",
+                "type": "multiple",
+                "question": "Quel est le connecteur le plus courant d'un c\u00e2ble r\u00e9seau Ethernet (sur un PC) ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "RJ45",
+                        "correct": true
+                    },
+                    {
+                        "text": "HDMI",
+                        "correct": false
+                    },
+                    {
+                        "text": "Jack audio",
+                        "correct": false
+                    },
+                    {
+                        "text": "USB\u2011C",
+                        "correct": false
+                    }
+                ],
+                "imageUrl": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/4\/42\/RJ%EF%BC%8D45_Connector.jpg\/500px-RJ%EF%BC%8D45_Connector.jpg"
+            },
+            {
+                "id": "mjm70lq983446fmer",
+                "type": "truefalse",
+                "question": "Un c\u00e2ble Ethernet (RJ45) permet une connexion filaire au r\u00e9seau.",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ],
+                "imageUrl": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/d\/d1\/CAT5e_Cable.jpg\/500px-CAT5e_Cable.jpg"
+            },
+            {
+                "id": "mjm70lq93x5c2knm0",
+                "type": "multiple",
+                "question": "Sur un r\u00e9seau local, un switch oriente les donn\u00e9es surtout gr\u00e2ce \u00e0 :",
+                "time": 35,
+                "answers": [
+                    {
+                        "text": "L'adresse MAC",
+                        "correct": true
+                    },
+                    {
+                        "text": "La temp\u00e9rature du c\u00e2ble",
+                        "correct": false
+                    },
+                    {
+                        "text": "La couleur du bo\u00eetier",
+                        "correct": false
+                    },
+                    {
+                        "text": "Le niveau de batterie",
+                        "correct": false
+                    }
+                ],
+                "imageUrl": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/c\/c2\/ZyXEL_desktop_Ethernet_switch.jpg\/500px-ZyXEL_desktop_Ethernet_switch.jpg"
+            },
+            {
+                "id": "mjm70lq9mqzahkf47",
+                "type": "multiple",
+                "question": "Une adresse MAC correspond plut\u00f4t \u00e0 :",
+                "time": 35,
+                "answers": [
+                    {
+                        "text": "Un identifiant mat\u00e9riel de la carte r\u00e9seau",
+                        "correct": true
+                    },
+                    {
+                        "text": "Le nom du professeur",
+                        "correct": false
+                    },
+                    {
+                        "text": "Le mot de passe Wi\u2011Fi",
+                        "correct": false
+                    },
+                    {
+                        "text": "La vitesse du ventilateur",
+                        "correct": false
+                    }
+                ],
+                "imageUrl": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/9\/9e\/Network_card.jpg\/500px-Network_card.jpg"
+            },
+            {
+                "id": "mjm70lq9qymqhr3ew",
+                "type": "truefalse",
+                "question": "Deux appareils sur le m\u00eame r\u00e9seau local peuvent communiquer sans passer par Internet.",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ],
+                "imageUrl": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/3\/30\/Traditional_client-server_diagram.svg\/500px-Traditional_client-server_diagram.svg.png"
+            },
+            {
+                "id": "mjm70lq9bbd8g40uy",
+                "type": "order",
+                "question": "Ordonne le trajet le plus simple d'une donn\u00e9e pour aller d'un PC vers Internet (cas classique) :",
+                "time": 45,
+                "answers": [
+                    {
+                        "text": "PC (terminal)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Switch (r\u00e9seau local)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Routeur \/ box (passerelle)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Internet",
+                        "correct": true
+                    }
+                ],
+                "imageUrl": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/c\/c3\/Home_Gateway_and_Wi-Fi_Router.jpg\/500px-Home_Gateway_and_Wi-Fi_Router.jpg"
+            },
+            {
+                "id": "mjm70lq9yuv6gvt8j",
+                "type": "multiple",
+                "question": "Quelle adresse est typiquement \u00ab priv\u00e9e \u00bb (r\u00e9seau local) dans une maison\/\u00e9tablissement ?",
+                "time": 35,
+                "answers": [
+                    {
+                        "text": "192.168.1.10",
+                        "correct": true
+                    },
+                    {
+                        "text": "8.8.8.8",
+                        "correct": false
+                    },
+                    {
+                        "text": "1.1.1.1",
+                        "correct": false
+                    },
+                    {
+                        "text": "208.67.222.222",
+                        "correct": false
+                    }
+                ],
+                "imageUrl": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/7\/74\/Ipv4_address.svg\/500px-Ipv4_address.svg.png"
+            },
+            {
+                "id": "mjm70lq9phm9j2d5l",
+                "type": "multiple",
+                "question": "Dans une adresse IPv4 comme 192.168.1.10, les \u00ab points \u00bb s\u00e9parent :",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "4 nombres (4 octets) qui composent l'adresse",
+                        "correct": true
+                    },
+                    {
+                        "text": "4 mots de passe",
+                        "correct": false
+                    },
+                    {
+                        "text": "4 r\u00e9seaux diff\u00e9rents",
+                        "correct": false
+                    },
+                    {
+                        "text": "4 ports USB",
+                        "correct": false
+                    }
+                ],
+                "imageUrl": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/7\/74\/Ipv4_address.svg\/500px-Ipv4_address.svg.png"
+            },
+            {
+                "id": "mjm70lq9riblnauux",
+                "type": "multiple",
+                "question": "\u00c0 quoi sert un num\u00e9ro de port (ex : 80, 443) ?",
+                "time": 35,
+                "answers": [
+                    {
+                        "text": "Identifier le service\/application sur la machine",
+                        "correct": true
+                    },
+                    {
+                        "text": "Indiquer la longueur du c\u00e2ble RJ45",
+                        "correct": false
+                    },
+                    {
+                        "text": "Choisir la couleur du Wi\u2011Fi",
+                        "correct": false
+                    },
+                    {
+                        "text": "Mesurer la puissance \u00e9lectrique du routeur",
+                        "correct": false
+                    }
+                ],
+                "imageUrl": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/1\/1e\/Computer_server_rack.jpg\/500px-Computer_server_rack.jpg"
+            },
+            {
+                "id": "mjm70lq9x335z7ffq",
+                "type": "freetext",
+                "question": "Comment s'appelle l'appareil qui relie un r\u00e9seau local \u00e0 Internet (1 mot) ?",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "routeur",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "routeur",
+                    "router",
+                    "box",
+                    "box internet",
+                    "box-internet",
+                    "modem routeur",
+                    "modem-routeur"
+                ],
+                "imageUrl": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/c\/c3\/Home_Gateway_and_Wi-Fi_Router.jpg\/500px-Home_Gateway_and_Wi-Fi_Router.jpg"
+            }
+        ],
+        "modifyCode": "SFFXUQN5",
+        "playCode": "WGB6LC",
+        "createdAt": 1766712545763,
+        "lastModified": 1766712545763
+    },
+    "lastModified": 1766712545,
+    "questionCount": 20
+}
