@@ -56,6 +56,10 @@ switch ($action) {
         streamControl();
         break;
     
+    case 'get_control_state':
+        getControlState();
+        break;
+    
     default:
         echo json_encode(['success' => false, 'message' => 'Action inconnue']);
         break;
@@ -67,7 +71,11 @@ function createSession() {
     $manualMode = $_POST['manualMode'] ?? '0';
     $showTop3 = $_POST['showTop3'] ?? '1';
     
-    error_log("CREATE_SESSION: playCode=$playCode");
+    error_log("CREATE_SESSION: playCode=$playCode (avant conversion)");
+    
+    // Convertir en majuscules immédiatement
+    $playCode = strtoupper(trim($playCode));
+    error_log("CREATE_SESSION: playCode=$playCode (après conversion)");
     
     $session = [
         'playCode' => $playCode,
@@ -77,13 +85,14 @@ function createSession() {
         'state' => 'waiting',
         'currentQuestion' => -1,
         'players' => [],
+        'questions' => json_decode($quizData, true)['questions'] ?? [],  // IMPORTANT : ajouter les questions
         'usedAnimals' => [],  // Liste des animaux déjà proposés
         'createdAt' => time()
     ];
     
-    $filePath = SESSIONS_DIR . '/' . $playCode . '.json';
-    file_put_contents($filePath, json_encode($session));
-    error_log("CREATE_SESSION: Session créée dans $filePath");
+    // Utiliser saveSession pour avoir la conversion en majuscules cohérente
+    saveSession($playCode, $session);
+    error_log("CREATE_SESSION: Session créée pour $playCode");
     
     echo json_encode(['success' => true]);
 }
@@ -224,6 +233,23 @@ function streamControl() {
     echo "data: " . json_encode(['message' => 'Connected']) . "\n\n";
     flush();
     
+    // Envoyer immédiatement la liste des joueurs
+    $session = loadSession($playCode);
+    if ($session) {
+        $allPlayers = $session['players'] ?? [];
+        foreach ($allPlayers as &$player) {
+            $timeSinceLastPing = time() - ($player['lastPing'] ?? 0);
+            if ($timeSinceLastPing >= 60) {
+                $player['connected'] = false;
+            }
+        }
+        unset($player);
+        
+        echo "event: players\n";
+        echo "data: " . json_encode(['players' => array_values($allPlayers)]) . "\n\n";
+        flush();
+    }
+    
     $lastResultsSent = -1;
     
     while (true) {
@@ -281,13 +307,16 @@ function streamControl() {
             }
         }
         
-        sleep(2);
+        // Polling rapide pour réactivité maximale
+        sleep(1);
         
         if (connection_aborted()) break;
     }
 }
 
 function loadSession($playCode) {
+    // Convertir en majuscules pour éviter les problèmes de casse
+    $playCode = strtoupper(trim($playCode));
     $file = SESSIONS_DIR . '/' . $playCode . '.json';
     if (file_exists($file)) {
         return json_decode(file_get_contents($file), true);
@@ -296,6 +325,8 @@ function loadSession($playCode) {
 }
 
 function saveSession($playCode, $session) {
+    // Convertir en majuscules pour cohérence
+    $playCode = strtoupper(trim($playCode));
     file_put_contents(SESSIONS_DIR . '/' . $playCode . '.json', json_encode($session));
 }
 
@@ -357,5 +388,55 @@ function removePlayer() {
     
     saveSession($playCode, $session);
     echo json_encode(['success' => true]);
+}
+
+function getControlState() {
+    $playCode = $_GET['playCode'] ?? '';
+    
+    error_log("GET_CONTROL_STATE: playCode=$playCode");
+    
+    if (empty($playCode)) {
+        error_log("GET_CONTROL_STATE: playCode vide");
+        echo json_encode(['success' => false, 'message' => 'playCode manquant']);
+        return;
+    }
+    
+    $session = loadSession($playCode);
+    
+    if (!$session) {
+        error_log("GET_CONTROL_STATE: Session introuvable pour $playCode");
+        error_log("GET_CONTROL_STATE: Fichiers disponibles: " . implode(', ', array_map('basename', glob(SESSIONS_DIR . '/*.json'))));
+        echo json_encode(['success' => false, 'message' => 'Session introuvable']);
+        return;
+    }
+    
+    error_log("GET_CONTROL_STATE: Session trouvée, state=" . ($session['state'] ?? 'unknown'));
+    
+    // Récupérer TOUS les joueurs avec mise à jour du statut connected
+    $allPlayers = $session['players'] ?? [];
+    
+    foreach ($allPlayers as &$player) {
+        $timeSinceLastPing = time() - ($player['lastPing'] ?? 0);
+        if ($timeSinceLastPing >= 60) {
+            $player['connected'] = false;
+        }
+    }
+    unset($player);
+    
+    $response = [
+        'success' => true,
+        'players' => array_values($allPlayers),
+        'state' => $session['state'] ?? 'waiting',
+        'currentQuestion' => $session['currentQuestion'] ?? -1,
+        'paused' => $session['paused'] ?? false
+    ];
+    
+    // Si des résultats sont disponibles
+    if (isset($session['questionCompletedTime']) && isset($session['currentQuestion'])) {
+        $response['resultsAvailable'] = true;
+        $response['questionIndex'] = $session['currentQuestion'];
+    }
+    
+    echo json_encode($response);
 }
 ?>

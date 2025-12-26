@@ -19,6 +19,9 @@
     async function showStudentJoinPage(playCode, quizName, totalQuestions = 0) {
         const gameContainer = document.querySelector('.game-container');
         
+        // Réinitialiser la sélection d'animal
+        selectedAnimal = null;
+        
         // Initialiser la session élève avec le playCode et totalQuestions
         initStudentSession(playCode, { name: quizName, totalQuestions: totalQuestions });
         
@@ -53,7 +56,7 @@
         
         animals.forEach((animal, index) => {
             html += `
-                <button class="animal-btn" data-animal="${animal}" onclick="selectAnimal('${animal}')">
+                <button type="button" class="animal-btn" data-animal="${animal.replace(/"/g, '&quot;')}">
                     <span class="animal-emoji">${animal.split(' ')[0]}</span>
                     <span class="animal-name">${animal.split(' ')[1]}</span>
                 </button>
@@ -65,7 +68,7 @@
                         <p class="animal-info">Ton pseudo sera ton animal 🦁</p>
                     </div>
                     
-                    <button id="join-game-btn" class="btn-join-game" onclick="confirmJoinGame()" disabled>
+                    <button id="join-game-btn" class="btn-join-game" disabled>
                         🚀 Rejoindre la partie
                     </button>
                 </div>
@@ -74,6 +77,17 @@
         
         gameContainer.innerHTML = html;
         showPage('game-page');
+        
+        // Ajouter les event listeners APRÈS avoir créé le HTML
+        document.querySelectorAll('.animal-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const animal = this.getAttribute('data-animal');
+                selectAnimal(animal);
+            });
+        });
+        
+        // Event listener pour le bouton rejoindre
+        document.getElementById('join-game-btn').addEventListener('click', confirmJoinGame);
     }
 
     let selectedAnimal = null;
@@ -86,8 +100,11 @@
             btn.classList.remove('selected');
         });
         
-        // Ajouter la sélection
-        event.target.closest('.animal-btn').classList.add('selected');
+        // Trouver le bon bouton avec data-animal et ajouter la sélection
+        const targetBtn = document.querySelector(`.animal-btn[data-animal="${animal}"]`);
+        if (targetBtn) {
+            targetBtn.classList.add('selected');
+        }
         
         checkJoinButtonState();
     }
@@ -169,7 +186,10 @@
             `;
         });
         
-        playersList.innerHTML = html;
+        // Ne mettre à jour que si le contenu a changé (évite le clignotement)
+        if (playersList.innerHTML !== html) {
+            playersList.innerHTML = html;
+        }
     }
 
     // ========================================
@@ -261,9 +281,9 @@
                     originalIndex: index
                 })).sort(() => Math.random() - 0.5);
                 
-                shuffledAnswers.forEach(item => {
+                shuffledAnswers.forEach((item, displayIndex) => {
                     html += `
-                        <button class="answer-btn" onclick="selectAnswer(${item.originalIndex})">
+                        <button type="button" class="answer-btn" data-answer-index="${item.originalIndex}">
                             ${item.answer.text}
                         </button>
                     `;
@@ -309,6 +329,16 @@
         `;
         
         gameContainer.innerHTML = html;
+        
+        // Ajouter les event listeners pour les boutons de réponse
+        if (question.type === 'multiple' || question.type === 'truefalse') {
+            document.querySelectorAll('.answer-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const answerIndex = parseInt(this.getAttribute('data-answer-index'));
+                    selectAnswer(answerIndex);
+                });
+            });
+        }
         
         // Démarrer le timer
         startQuestionTimer(question.time);
@@ -764,24 +794,36 @@
         
         // Démarrer le compte à rebours seulement en mode automatique
         if (!data.manualMode) {
+            // Arrêter l'intervalle existant si présent
+            if (countdownState.interval) {
+                clearInterval(countdownState.interval);
+                countdownState.interval = null;
+            }
+            
+            // Initialiser le compte à rebours
             countdownState.remaining = 10;
             countdownState.isPaused = false;
             
-            const countdownEl = document.getElementById('countdown-next');
-        
-            if (countdownState.interval) {
-                clearInterval(countdownState.interval);
-            }
+            // Fonction pour mettre à jour l'affichage
+            const updateCountdown = () => {
+                const countdownEl = document.getElementById('countdown-next');
+                if (countdownEl) {
+                    countdownEl.textContent = countdownState.remaining;
+                }
+            };
             
+            // Première mise à jour immédiate pour afficher 10
+            updateCountdown();
+            
+            // Puis décrémenter chaque seconde
             countdownState.interval = setInterval(() => {
                 if (countdownState.isPaused) {
                     return; // Ne rien faire si en pause
                 }
                 
                 countdownState.remaining--;
-                if (countdownEl) {
-                    countdownEl.textContent = countdownState.remaining;
-                }
+                updateCountdown();
+                
                 if (countdownState.remaining <= 0) {
                     clearInterval(countdownState.interval);
                     countdownState.interval = null;

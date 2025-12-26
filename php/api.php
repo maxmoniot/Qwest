@@ -333,6 +333,9 @@ function checkGameExists() {
             return;
         }
         
+        // Normaliser en majuscules pour éviter les problèmes de casse
+        $playCode = strtoupper($playCode);
+        
         // Chercher dans les sessions actives (pas dans les quizzes sauvegardés)
         $sessionFile = __DIR__ . '/data/sessions/' . $playCode . '.json';
         
@@ -366,10 +369,10 @@ function checkGameExists() {
  * Obtenir 3 animaux uniques pour un joueur
  */
 function getUniqueAnimals() {
-    define('SESSIONS_DIR', __DIR__ . '/data/sessions');
+    // Utiliser la constante définie au début du fichier
+    $sessionsDir = __DIR__ . '/data/sessions';
     
-    // Liste complète de 120 animaux
-// Liste complète de 120 animaux UNIQUES
+    // Liste complète de 120 animaux UNIQUES
 $ALL_ANIMALS = [
     // Mammifères terrestres (30)
     '🦁 Lion', '🐯 Tigre', '🐻 Ours', '🐼 Panda', '🦊 Renard',
@@ -422,7 +425,10 @@ $ALL_ANIMALS = [
         return;
     }
     
-    $sessionFile = SESSIONS_DIR . '/' . $playCode . '.json';
+    // Normaliser en majuscules pour cohérence
+    $playCode = strtoupper(trim($playCode));
+    
+    $sessionFile = $sessionsDir . '/' . $playCode . '.json';
     
     if (!file_exists($sessionFile)) {
         sendJSON([

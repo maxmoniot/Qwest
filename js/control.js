@@ -18,12 +18,10 @@
         isPaused: false,
         currentQuestion: -1,
         players: [],
-        eventSource: null,
         autoNextTimer: null,
         autoNextTimestamp: null,
         autoNextQuestionPending: false,
-        autoNextCheckInterval: null,
-        sseEnabled: false  // Flag pour désactiver complètement le SSE
+        autoNextCheckInterval: null
     };
 
     // ========================================
@@ -152,14 +150,11 @@
         CONTROL_STATE.currentQuestion = -1;
         CONTROL_STATE.isPaused = false;
         
-        // Arrêter le flux SSE immédiatement
-        if (CONTROL_STATE.eventSource) {
-            console.log('🔴 PROF: Fermeture du SSE...');
-            CONTROL_STATE.sseEnabled = false;
-            CONTROL_STATE.eventSource.onerror = null;
-            CONTROL_STATE.eventSource.onmessage = null;
-            CONTROL_STATE.eventSource.close();
-            CONTROL_STATE.eventSource = null;
+        // Arrêter le polling immédiatement
+        if (controlPollingInterval) {
+            console.log('🔴 PROF: Arrêt du polling...');
+            clearInterval(controlPollingInterval);
+            controlPollingInterval = null;
         }
         
         // Faire le reste en ARRIÈRE-PLAN (non bloquant)
@@ -376,102 +371,8 @@
     // ========================================
     
     function connectControlStream() {
-        const url = `php/control.php?action=stream&playCode=${CONTROL_STATE.playCode}`;
-        
-        console.log('🟢 PROF: Connexion SSE vers:', url);
-        CONTROL_STATE.eventSource = new EventSource(url);
-        CONTROL_STATE.sseEnabled = true;  // Activer le flag
-        
-        CONTROL_STATE.eventSource.addEventListener('connected', function(event) {
-            console.log('✅ PROF: SSE connecté:', event.data);
-        });
-        
-        CONTROL_STATE.eventSource.addEventListener('players', function(event) {
-            const data = JSON.parse(event.data);
-            console.log('🟢 PROF: Mise à jour joueurs:', data.players.length);
-            updateControlPlayersList(data.players);
-        });
-        
-        CONTROL_STATE.eventSource.addEventListener('results', function(event) {
-            const data = JSON.parse(event.data);
-            console.log('🟢 PROF: Résultats reçus pour question', data.questionIndex);
-            
-            // En mode automatique, passer à la question suivante après 10 secondes
-            if (!CONTROL_STATE.manualMode) {
-                console.log('⏰ PROF: Passage auto à la question suivante dans 10s');
-                
-                // Utiliser un système de timestamp au lieu de setTimeout
-                CONTROL_STATE.autoNextTimestamp = Date.now() + 10000;
-                CONTROL_STATE.autoNextQuestionPending = true;
-                
-                // Vérifier régulièrement si c'est le moment de passer
-                if (!CONTROL_STATE.autoNextCheckInterval) {
-                    CONTROL_STATE.autoNextCheckInterval = setInterval(() => {
-                        if (CONTROL_STATE.autoNextQuestionPending && 
-                            !CONTROL_STATE.isPaused && 
-                            Date.now() >= CONTROL_STATE.autoNextTimestamp) {
-                            
-                            CONTROL_STATE.autoNextQuestionPending = false;
-                            console.log('⏰ PROF: Lancement auto de la question suivante');
-                            nextQuestion();
-                        }
-                    }, 500);
-                }
-            }
-        });
-        
-        CONTROL_STATE.eventSource.addEventListener('answers', function(event) {
-            const data = JSON.parse(event.data);
-            updateAnswersCount(data);
-        });
-        
-        CONTROL_STATE.eventSource.addEventListener('error', function(event) {
-            // Ignorer si SSE désactivé
-            if (!CONTROL_STATE.sseEnabled) {
-                return;
-            }
-            
-            // Ignorer complètement les erreurs si pas d'EventSource actif
-            if (!CONTROL_STATE.eventSource) {
-                return;
-            }
-            
-            // Si connexion fermée, c'est normal (timeout serveur), le navigateur va reconnecter
-            if (CONTROL_STATE.eventSource.readyState === EventSource.CLOSED) {
-                console.log('🔄 PROF: SSE fermé par le serveur, reconnexion automatique...');
-                return;
-            }
-            
-            // Si en cours de connexion, c'est normal
-            if (CONTROL_STATE.eventSource.readyState === EventSource.CONNECTING) {
-                console.log('🔄 PROF: SSE en cours de reconnexion...');
-                return;
-            }
-            
-            // Seulement logger les vraies erreurs inattendues
-            console.warn('⚠️ PROF: Problème SSE mineur (reconnexion auto)');
-        });
-        
-        CONTROL_STATE.eventSource.onerror = function(error) {
-            // Ignorer si SSE désactivé
-            if (!CONTROL_STATE.sseEnabled) {
-                return;
-            }
-            
-            // Ignorer si pas d'EventSource actif
-            if (!CONTROL_STATE.eventSource) {
-                return;
-            }
-            
-            // Ignorer les erreurs si déjà fermé ou en reconnexion
-            const state = CONTROL_STATE.eventSource.readyState;
-            if (state === EventSource.CLOSED || state === EventSource.CONNECTING) {
-                return;
-            }
-            
-            // Seulement logger si vraiment problématique
-            console.warn('⚠️ PROF: Reconnexion SSE en cours...');
-        };
+        console.log('🟢 PROF: Démarrage du polling');
+        startControlPolling();
     }
 
     function updateControlPlayersList(players) {
@@ -808,23 +709,12 @@
     async function executeEndGame() {
         try {
             // Fermer le SSE prof avant de terminer
-            if (CONTROL_STATE.eventSource) {
-                console.log('🔴 PROF: Fermeture du SSE...');
-                
-                // DÉSACTIVER LE FLAG EN PREMIER
-                CONTROL_STATE.sseEnabled = false;
-                
-                // Retirer les listeners pour éviter les erreurs
-                CONTROL_STATE.eventSource.onerror = null;
-                CONTROL_STATE.eventSource.onmessage = null;
-                
-                // Fermer la connexion
-                CONTROL_STATE.eventSource.close();
-                
-                // Supprimer la référence
-                CONTROL_STATE.eventSource = null;
-                
-                console.log('✅ PROF: SSE fermé proprement');
+            // Arrêter le polling
+            if (controlPollingInterval) {
+                console.log('🔴 PROF: Arrêt du polling...');
+                clearInterval(controlPollingInterval);
+                controlPollingInterval = null;
+                console.log('✅ PROF: Polling arrêté');
             }
             
             const response = await fetch('php/control.php', {
@@ -1245,6 +1135,80 @@
             printWindow.close();
         }, 250);
     };
+
+    // ========================================
+    // POLLING PROF (remplace SSE)
+    // ========================================
+    
+    let controlPollingInterval = null;
+    let lastControlState = null;
+    let lastResultsQuestionIndex = -1;
+    
+    function startControlPolling() {
+        console.log('🔄 PROF: Démarrage du polling (1 requête/seconde)');
+        
+        // Arrêter le polling existant si présent
+        if (controlPollingInterval) {
+            clearInterval(controlPollingInterval);
+        }
+        
+        const poll = async () => {
+            if (!CONTROL_STATE.playCode) {
+                return;
+            }
+            
+            try {
+                const response = await fetch(`php/control.php?action=get_control_state&playCode=${CONTROL_STATE.playCode}`);
+                const data = await response.json();
+                
+                if (!data.success) {
+                    console.error('❌ PROF: Erreur polling:', data.message);
+                    return;
+                }
+                
+                // Mise à jour de la liste des joueurs
+                if (data.players) {
+                    updateControlPlayersList(data.players);
+                }
+                
+                // Détecter si des résultats sont disponibles
+                if (data.resultsAvailable && data.questionIndex !== lastResultsQuestionIndex) {
+                    console.log('🟢 PROF: Résultats reçus pour question', data.questionIndex);
+                    lastResultsQuestionIndex = data.questionIndex;
+                    
+                    // En mode automatique, passer à la question suivante après 10 secondes
+                    if (!CONTROL_STATE.manualMode) {
+                        console.log('⏰ PROF: Passage auto à la question suivante dans 10s');
+                        
+                        CONTROL_STATE.autoNextTimestamp = Date.now() + 10000;
+                        CONTROL_STATE.autoNextQuestionPending = true;
+                        
+                        if (!CONTROL_STATE.autoNextCheckInterval) {
+                            CONTROL_STATE.autoNextCheckInterval = setInterval(() => {
+                                if (CONTROL_STATE.autoNextQuestionPending && 
+                                    !CONTROL_STATE.isPaused && 
+                                    Date.now() >= CONTROL_STATE.autoNextTimestamp) {
+                                    
+                                    CONTROL_STATE.autoNextQuestionPending = false;
+                                    console.log('⏰ PROF: Lancement auto de la question suivante');
+                                    nextQuestion();
+                                }
+                            }, 500);
+                        }
+                    }
+                }
+                
+            } catch (error) {
+                console.error('❌ PROF: Erreur polling:', error);
+            }
+        };
+        
+        // Première requête immédiate
+        poll();
+        
+        // Puis toutes les secondes
+        controlPollingInterval = setInterval(poll, 1000);
+    }
 
     // ========================================
     // EXPORT VERS GLOBAL

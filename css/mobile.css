@@ -203,6 +203,25 @@
         grid-template-columns: 1fr;
     }
     
+    /* Animal grid - adaptation mobile */
+    .animal-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+    }
+    
+    .animal-btn {
+        padding: var(--space-md);
+        width: 100%;
+    }
+    
+    .animal-emoji {
+        font-size: 40px;
+    }
+    
+    .animal-name {
+        font-size: 16px;
+    }
+    
     /* Codes */
     .code-display {
         flex-direction: column;
@@ -225,6 +244,20 @@
     
     .app-subtitle {
         font-size: 14px;
+    }
+    
+    /* Countdown screen - centrage mobile */
+    .countdown-screen {
+        padding: var(--space-lg);
+        text-align: center;
+    }
+    
+    .countdown-screen h2 {
+        font-size: 32px;
+    }
+    
+    .countdown-number {
+        font-size: 80px;
     }
     
     /* Spacing */

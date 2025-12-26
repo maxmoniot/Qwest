@@ -16,13 +16,13 @@
         playerAnimal: '',
         isHost: false,
         gameState: 'waiting', // waiting, playing, finished
-        currentQuestion: 0,
+        currentQuestion: -1,
         score: 0,
         answers: [],
-        eventSource: null,
-        reconnectAttempts: 0,
-        lastPing: Date.now(),
-        wasKicked: false  // Flag pour empêcher reconnexion après kicked
+        wasKicked: false,  // Flag pour empêcher reconnexion après kicked
+        isPaused: false,  // État de pause
+        lastResultsHash: null,  // Hash des derniers résultats pour éviter doublons
+        lastDisplayedResultsQuestion: null  // Index de la dernière question dont les résultats ont été affichés
     };
 
     // Liste des collèges (exemples)
@@ -59,7 +59,7 @@
         SESSION_STATE.sessionId = playCode;
         SESSION_STATE.isHost = false;
         SESSION_STATE.gameState = 'waiting';
-        SESSION_STATE.currentQuestion = 0;
+        SESSION_STATE.currentQuestion = -1;  // -1 = aucune question encore affichée
         SESSION_STATE.score = 0;
         SESSION_STATE.answers = [];
     }
@@ -114,158 +114,17 @@
     }
 
     /**
-     * Connecter au flux d'événements serveur (SSE)
+     * Connecter au système de polling (remplace le SSE)
      */
     function connectToEventStream() {
-        const url = `php/game.php?action=stream&playCode=${SESSION_STATE.playCode}&nickname=${encodeURIComponent(SESSION_STATE.playerNickname)}`;
-        
-        console.log('🔵 Connexion SSE vers:', url);
-        SESSION_STATE.eventSource = new EventSource(url);
-
-        SESSION_STATE.eventSource.addEventListener('connected', function(event) {
-            console.log('✅ SSE connecté:', event.data);
-            SESSION_STATE.reconnectAttempts = 0;
-        });
-
-        SESSION_STATE.eventSource.addEventListener('error', function(event) {
-            // Ne pas logger les erreurs de reconnexion normales
-            if (SESSION_STATE.eventSource.readyState === EventSource.CONNECTING) {
-                // Reconnexion en cours, c'est normal
-                return;
-            }
-            if (SESSION_STATE.eventSource.readyState === EventSource.CLOSED) {
-                // Fermé par le serveur (timeout), reconnexion auto
-                console.log('🔄 SSE fermé par timeout serveur, reconnexion...');
-                return;
-            }
-            // Seulement logger les vraies erreurs
-            console.warn('⚠️ SSE: Problème de connexion', event);
-        });
-
-        SESSION_STATE.eventSource.onmessage = function(event) {
-            try {
-                const data = JSON.parse(event.data);
-                handleGameEvent(data);
-            } catch (error) {
-                console.error('Erreur parsing événement:', error);
-            }
-        };
-
-        SESSION_STATE.eventSource.onerror = function(error) {
-            // ReadyState: 0 = CONNECTING, 1 = OPEN, 2 = CLOSED
-            const state = SESSION_STATE.eventSource.readyState;
-            
-            if (state === EventSource.CONNECTING) {
-                // Reconnexion en cours, c'est normal
-                return;
-            }
-            
-            if (state === EventSource.CLOSED) {
-                // Ne pas reconnecter si le joueur a été kicked
-                if (SESSION_STATE.wasKicked) {
-                    console.log('🚫 Pas de reconnexion : joueur supprimé');
-                    return;
-                }
-                
-                // Connexion fermée, tenter de reconnecter
-                if (SESSION_STATE.reconnectAttempts < 5) {
-                    SESSION_STATE.reconnectAttempts++;
-                    console.log(`🔄 Tentative de reconnexion ${SESSION_STATE.reconnectAttempts}/5`);
-                    setTimeout(() => {
-                        connectToEventStream();
-                    }, 2000 * SESSION_STATE.reconnectAttempts);
-                } else {
-                    console.error('❌ Échec reconnexion après 5 tentatives');
-                }
-            }
-        };
-
-        SESSION_STATE.eventSource.addEventListener('players', function(event) {
-            const data = JSON.parse(event.data);
-            updatePlayersList(data.players);
-            
-            // Mettre à jour le score si on est sur la page de résultats
-            const resultsScreen = document.querySelector('.results-screen');
-            if (resultsScreen) {
-                const myData = data.players.find(p => p.nickname === SESSION_STATE.playerNickname);
-                if (myData) {
-                    console.log('🔄 Mise à jour score temps réel:', myData.score);
-                    
-                    // Mettre à jour le score affiché
-                    const scoreElement = document.querySelector('.score-value');
-                    if (scoreElement) {
-                        scoreElement.textContent = `${myData.score || 0} pts`;
-                    }
-                    
-                    // Recalculer la position
-                    const sortedPlayers = [...data.players].sort((a, b) => (b.score || 0) - (a.score || 0));
-                    const myPosition = sortedPlayers.findIndex(p => p.nickname === SESSION_STATE.playerNickname) + 1;
-                    const positionElement = document.querySelector('.position-value');
-                    if (positionElement) {
-                        positionElement.textContent = `#${myPosition}`;
-                    }
-                }
-            }
-        });
-
-        SESSION_STATE.eventSource.addEventListener('start', function(event) {
-            const data = JSON.parse(event.data);
-            startGame(data);
-        });
-
-        SESSION_STATE.eventSource.addEventListener('question', function(event) {
-            const data = JSON.parse(event.data);
-            console.log('🎯 ÉLÈVE: Nouvelle question reçue (index:', data.index, ')');
-            
-            // Si on reçoit une nouvelle question, on affiche immédiatement
-            // Même si on était sur la page de résultats
-            showQuestion(data);
-        });
-
-        SESSION_STATE.eventSource.addEventListener('results', function(event) {
-            const data = JSON.parse(event.data);
-            showResults(data);
-        });
-
-        SESSION_STATE.eventSource.addEventListener('end', function(event) {
-            const data = JSON.parse(event.data);
-            endGame(data);
-        });
-
-        SESSION_STATE.eventSource.addEventListener('pause', function(event) {
-            const data = JSON.parse(event.data);
-            console.log('⏸️ ÉLÈVE: Pause', data.paused ? 'activée' : 'désactivée');
-            if (window.handlePause) {
-                window.handlePause(data.paused);
-            }
-        });
-        
-        SESSION_STATE.eventSource.addEventListener('kicked', function(event) {
-            const data = JSON.parse(event.data);
-            console.log('🚫 ÉLÈVE: Retiré de la partie');
-            
-            // Marquer comme kicked pour empêcher reconnexion
-            SESSION_STATE.wasKicked = true;
-            
-            // Fermer le SSE pour éviter la reconnexion
-            if (SESSION_STATE.eventSource) {
-                SESSION_STATE.eventSource.close();
-                SESSION_STATE.eventSource = null;
-            }
-            
-            // Alerter et rediriger
-            alert('Vous avez été retiré de la partie par le professeur.');
-            window.location.href = 'index.html';
-        });
-
-        // Ping régulier pour maintenir la connexion
-        setInterval(() => {
-            sendPing();
-        }, CONFIG.PING_INTERVAL);
+        console.log('🔵 Démarrage du polling élève');
+        startPolling();
     }
 
+    // Note: Le ping est maintenant géré par le polling via get_state
+
     /**
-     * Gérer les événements de jeu
+     * Gérer les événements de jeu (fonction gardée pour compatibilité mais plus utilisée avec polling)
      */
     function handleGameEvent(data) {
         SESSION_STATE.lastPing = Date.now();
@@ -397,17 +256,35 @@
         }
     }
 
-    function showQuestion(data) {
-        console.log('📩 ÉLÈVE: Reçu événement question', data);
+    function showQuestion(questionData) {
+        console.log('📩 ÉLÈVE: Reçu événement question', questionData);
+        
+        // Le format peut varier selon la source (SSE vs polling)
+        // Format polling: {index, data, startTime}
+        // Format attendu par displayQuestion: {index, question}
+        
+        let formattedData;
+        
+        if (questionData.data) {
+            // Format polling: adapter la structure
+            formattedData = {
+                index: questionData.index,
+                question: questionData.data
+            };
+            console.log('🔄 ÉLÈVE: Format adapté de polling vers display');
+        } else {
+            // Format déjà correct
+            formattedData = questionData;
+        }
         
         // Mettre à jour l'index de la question actuelle
-        if (data.index !== undefined) {
-            SESSION_STATE.currentQuestion = data.index;
+        if (formattedData.index !== undefined) {
+            SESSION_STATE.currentQuestion = formattedData.index;
             console.log('🔄 ÉLÈVE: currentQuestion mis à jour:', SESSION_STATE.currentQuestion);
         }
         
         if (window.displayQuestion) {
-            window.displayQuestion(data);
+            window.displayQuestion(formattedData);
         } else {
             console.error('❌ displayQuestion non défini !');
         }
@@ -465,12 +342,167 @@
     }
 
     // ========================================
+    // POLLING (FALLBACK SI SSE NE FONCTIONNE PAS)
+    // ========================================
+    
+    let pollingInterval = null;
+    let lastStateHash = null;
+    
+    function startPolling() {
+        console.log('🔄 Démarrage du mode polling (1 requête/seconde)');
+        SESSION_STATE.usingPolling = true;
+        
+        // Arrêter le polling existant si présent
+        if (pollingInterval) {
+            clearInterval(pollingInterval);
+        }
+        
+        // Fonction de polling
+        const poll = async () => {
+            if (!SESSION_STATE.playCode || !SESSION_STATE.playerNickname) {
+                return;
+            }
+            
+            try {
+                const response = await fetch(`php/game.php?action=get_state&playCode=${SESSION_STATE.playCode}&nickname=${encodeURIComponent(SESSION_STATE.playerNickname)}`);
+                const data = await response.json();
+                
+                if (!data.success) {
+                    if (data.kicked) {
+                        console.log('🚫 Joueur retiré de la partie');
+                        SESSION_STATE.wasKicked = true;
+                        if (pollingInterval) {
+                            clearInterval(pollingInterval);
+                        }
+                        alert('Vous avez été retiré de la partie par le professeur.');
+                        window.location.href = 'index.html';
+                    }
+                    return;
+                }
+                
+                // Détecter les changements
+                const stateHash = JSON.stringify({
+                    state: data.state,
+                    players: data.players.length,
+                    currentQuestion: data.currentQuestion,
+                    paused: data.paused
+                });
+                
+                // Mise à jour des joueurs
+                if (data.players) {
+                    updatePlayersList(data.players);
+                    
+                    // Mettre à jour le score si on est sur la page de résultats
+                    const resultsScreen = document.querySelector('.results-screen');
+                    if (resultsScreen) {
+                        const myData = data.players.find(p => p.nickname === SESSION_STATE.playerNickname);
+                        if (myData) {
+                            // Mettre à jour le score affiché
+                            const scoreElement = document.querySelector('.score-value');
+                            if (scoreElement) {
+                                scoreElement.textContent = `${myData.score || 0} pts`;
+                            }
+                            
+                            // Recalculer la position
+                            const sortedPlayers = [...data.players].sort((a, b) => (b.score || 0) - (a.score || 0));
+                            const myPosition = sortedPlayers.findIndex(p => p.nickname === SESSION_STATE.playerNickname) + 1;
+                            const positionElement = document.querySelector('.position-value');
+                            if (positionElement) {
+                                positionElement.textContent = `#${myPosition}`;
+                            }
+                        }
+                    }
+                }
+                
+                // Démarrage du jeu + première question
+                if (data.state === 'playing') {
+                    // Si on a une question à afficher
+                    if (data.question) {
+                        // Vérifier si c'est une nouvelle question (différente de celle actuellement affichée)
+                        if (data.currentQuestion !== SESSION_STATE.currentQuestion) {
+                            console.log('📩 Polling: Nouvelle question détectée', data.currentQuestion);
+                            SESSION_STATE.currentQuestion = data.currentQuestion;
+                            showQuestion(data.question);
+                        }
+                    } 
+                    // Sinon, si c'est le premier passage en 'playing', afficher le compte à rebours
+                    else if (!lastStateHash || !lastStateHash.includes('"state":"playing"')) {
+                        console.log('🎮 Polling: Démarrage du jeu détecté (compte à rebours)');
+                        startGame(data);
+                    }
+                }
+                
+                // Résultats disponibles
+                if (data.results) {
+                    const questionIndex = data.results.questionIndex;
+                    
+                    console.log('📊 Polling: Résultats détectés', {
+                        questionIndex: questionIndex,
+                        hasTop3: !!data.results.top3,
+                        lastDisplayedQuestion: SESSION_STATE.lastDisplayedResultsQuestion
+                    });
+                    
+                    // N'afficher les résultats qu'une seule fois par question
+                    // (ignorer les mises à jour de score qui changeraient le hash)
+                    if (SESSION_STATE.lastDisplayedResultsQuestion !== questionIndex) {
+                        console.log('✅ Polling: Nouveaux résultats pour question', questionIndex);
+                        SESSION_STATE.lastDisplayedResultsQuestion = questionIndex;
+                        showResults(data.results);
+                    } else {
+                        console.log('⏭️ Polling: Résultats déjà affichés pour cette question');
+                    }
+                }
+                
+                // Pause
+                if (data.paused !== SESSION_STATE.isPaused) {
+                    SESSION_STATE.isPaused = data.paused;
+                    if (window.handlePause) {
+                        window.handlePause(data.paused);
+                    }
+                }
+                
+                // Fin du jeu
+                if (data.state === 'finished') {
+                    console.log('🏁 Polling: État finished détecté', {
+                        hasFinalResults: !!data.finalResults,
+                        finalResults: data.finalResults
+                    });
+                    
+                    if (pollingInterval) {
+                        clearInterval(pollingInterval);
+                        console.log('🛑 Polling: Intervalle arrêté');
+                    }
+                    
+                    // Envoyer les résultats finaux (même s'ils sont vides)
+                    endGame(data.finalResults || {});
+                }
+                
+                lastStateHash = stateHash;
+                
+            } catch (error) {
+                console.error('❌ Erreur polling:', error);
+            }
+        };
+        
+        // Première requête immédiate
+        poll();
+        
+        // Puis toutes les secondes
+        pollingInterval = setInterval(poll, 1000);
+    }
+
+    // ========================================
     // DÉCONNEXION AUTOMATIQUE
     // ========================================
     
     // Marquer comme déconnecté quand on ferme l'onglet
     window.addEventListener('beforeunload', function() {
         if (SESSION_STATE.playCode && SESSION_STATE.playerNickname) {
+            // Arrêter le polling
+            if (pollingInterval) {
+                clearInterval(pollingInterval);
+            }
+            
             // Envoi synchrone pour garantir l'exécution
             const data = new URLSearchParams({
                 action: 'leave',

@@ -1,0 +1,38 @@
+# Configuration Apache pour Qwest
+
+# Activer la réécriture d'URL
+RewriteEngine On
+
+# Empêcher l'accès direct au dossier php/data
+RewriteRule ^php/data - [F,L]
+
+# Forcer HTTPS (décommenter en production)
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+# Compression
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
+</IfModule>
+
+# Cache navigateur
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/css "access plus 1 week"
+    ExpiresByType application/javascript "access plus 1 week"
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 1 month"
+</IfModule>
+
+# Sécurité
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+</IfModule>
+
+# Interdire le listing des répertoires
+Options -Indexes
+
+# Page d'erreur personnalisée
+ErrorDocument 404 /index.html

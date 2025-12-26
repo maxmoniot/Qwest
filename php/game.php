@@ -46,6 +46,10 @@ switch ($action) {
         streamEvents();
         break;
     
+    case 'get_state':
+        getGameState();
+        break;
+    
     default:
         echo json_encode([
             'success' => false,
@@ -66,6 +70,7 @@ function joinGame() {
     $nickname = isset($_POST['nickname']) ? trim($_POST['nickname']) : '';
     
     error_log("JOIN: playCode=$playCode, nickname=$nickname");
+    error_log("JOIN: SESSIONS_DIR=" . SESSIONS_DIR);
     
     if (empty($playCode) || empty($nickname)) {
         error_log("JOIN: Données manquantes");
@@ -73,12 +78,23 @@ function joinGame() {
         return;
     }
     
+    // Vérifier que le dossier existe
+    if (!is_dir(SESSIONS_DIR)) {
+        error_log("JOIN: ERREUR - Le dossier sessions n'existe pas!");
+        echo json_encode(['success' => false, 'message' => 'Erreur serveur - dossier sessions manquant']);
+        return;
+    }
+    
+    // Lister tous les fichiers de session pour debug
+    $files = glob(SESSIONS_DIR . '/*.json');
+    error_log("JOIN: Fichiers de session disponibles: " . implode(', ', array_map('basename', $files)));
+    
     // Charger ou créer la session
     $session = loadSession($playCode);
     error_log("JOIN: Session " . ($session ? "trouvée" : "introuvable") . " pour code $playCode");
     
     if (!$session) {
-        echo json_encode(['success' => false, 'message' => 'Session introuvable']);
+        echo json_encode(['success' => false, 'message' => 'Code de partie invalide. Vérifiez que la partie a bien été créée.']);
         return;
     }
     
@@ -292,6 +308,17 @@ function streamEvents() {
     echo "data: " . json_encode(['message' => 'Connected']) . "\n\n";
     flush();
     
+    // Envoyer immédiatement la liste des joueurs
+    $session = loadSession($playCode);
+    if ($session) {
+        $connectedPlayers = array_filter($session['players'], function($p) {
+            return $p['connected'] && (time() - $p['lastPing'] < PING_TIMEOUT);
+        });
+        echo "event: players\n";
+        echo "data: " . json_encode(['players' => array_values($connectedPlayers)]) . "\n\n";
+        flush();
+    }
+    
     // Boucle infinie pour envoyer les mises à jour
     $lastState = null;
     $lastPlayerCount = 0;
@@ -429,8 +456,8 @@ function streamEvents() {
             }
         }
         
-        // Ping toutes les 2 secondes
-        sleep(2);
+        // Ping toutes les 1 seconde pour réactivité maximale
+        sleep(1);
         
         // Timeout de 5 minutes
         if (connection_aborted()) {
@@ -652,6 +679,8 @@ function calculateFinalResults($session) {
  * Charger une session
  */
 function loadSession($playCode) {
+    // Convertir en majuscules pour éviter les problèmes de casse
+    $playCode = strtoupper(trim($playCode));
     $file = SESSIONS_DIR . '/' . $playCode . '.json';
     
     if (!file_exists($file)) {
@@ -663,9 +692,105 @@ function loadSession($playCode) {
 }
 
 /**
+ * Obtenir l'état actuel du jeu (pour polling)
+ */
+function getGameState() {
+    $playCode = isset($_GET['playCode']) ? trim($_GET['playCode']) : '';
+    $nickname = isset($_GET['nickname']) ? trim($_GET['nickname']) : '';
+    
+    error_log("GET_STATE: playCode=$playCode, nickname=$nickname");
+    
+    if (empty($playCode) || empty($nickname)) {
+        error_log("GET_STATE: Paramètres manquants");
+        echo json_encode(['success' => false, 'message' => 'Paramètres manquants']);
+        return;
+    }
+    
+    $session = loadSession($playCode);
+    
+    if (!$session) {
+        error_log("GET_STATE: Session introuvable pour $playCode");
+        echo json_encode(['success' => false, 'message' => 'Session introuvable']);
+        return;
+    }
+    
+    error_log("GET_STATE: Session trouvée, state=" . ($session['state'] ?? 'none') . ", currentQuestion=" . ($session['currentQuestion'] ?? 'none'));
+    
+    // Vérifier si le joueur existe
+    $playerExists = false;
+    $playerIndex = -1;
+    
+    foreach ($session['players'] as $index => $player) {
+        if ($player['nickname'] === $nickname) {
+            $playerExists = true;
+            $playerIndex = $index;
+            break;
+        }
+    }
+    
+    if (!$playerExists) {
+        error_log("GET_STATE: Joueur $nickname non trouvé (kicked)");
+        echo json_encode(['success' => false, 'message' => 'Joueur non trouvé', 'kicked' => true]);
+        return;
+    }
+    
+    // Mettre à jour le ping
+    $session['players'][$playerIndex]['lastPing'] = time();
+    saveSession($playCode, $session);
+    
+    // Récupérer les joueurs connectés
+    $connectedPlayers = array_filter($session['players'], function($p) {
+        return $p['connected'] && (time() - $p['lastPing'] < PING_TIMEOUT);
+    });
+    
+    // Préparer la réponse
+    $response = [
+        'success' => true,
+        'state' => $session['state'],
+        'paused' => $session['paused'] ?? false,
+        'players' => array_values($connectedPlayers),
+        'currentQuestion' => $session['currentQuestion'] ?? -1
+    ];
+    
+    // Si une question est active, inclure ses données
+    if ($session['state'] === 'playing' && isset($session['currentQuestion'])) {
+        $qIndex = $session['currentQuestion'];
+        error_log("GET_STATE: Question active détectée, index=$qIndex");
+        if (isset($session['questions'][$qIndex])) {
+            $response['question'] = [
+                'index' => $qIndex,
+                'data' => $session['questions'][$qIndex],
+                'startTime' => $session['questionStartTime'] ?? time()
+            ];
+            error_log("GET_STATE: Question incluse dans réponse");
+        } else {
+            error_log("GET_STATE: ERREUR - question index $qIndex n'existe pas dans session");
+        }
+    }
+    
+    // Si des résultats sont disponibles
+    if (isset($session['questionCompletedTime']) && isset($session['currentQuestion'])) {
+        $qIndex = $session['currentQuestion'];
+        $results = calculateQuestionResults($session, $qIndex);
+        $response['results'] = $results;
+        error_log("GET_STATE: Résultats inclus pour question $qIndex");
+    }
+    
+    // Si le jeu est terminé
+    if ($session['state'] === 'finished') {
+        $response['finalResults'] = calculateFinalResults($session);
+        error_log("GET_STATE: Résultats finaux inclus");
+    }
+    
+    echo json_encode($response);
+}
+
+/**
  * Sauvegarder une session
  */
 function saveSession($playCode, $session) {
+    // Convertir en majuscules pour cohérence
+    $playCode = strtoupper(trim($playCode));
     $file = SESSIONS_DIR . '/' . $playCode . '.json';
     file_put_contents($file, json_encode($session, JSON_PRETTY_PRINT));
 }
