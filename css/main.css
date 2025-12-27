@@ -304,6 +304,26 @@ body {
     box-shadow: var(--shadow-md);
 }
 
+.btn-thanks {
+    padding: var(--space-sm) var(--space-md);
+    background: #FFE5EC;
+    color: #FF1744;
+    border: 2px solid #FFB3C1;
+    border-radius: var(--radius-md);
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--transition-base);
+    min-width: 44px;
+}
+
+.btn-thanks:hover {
+    background: #FFD1DC;
+    border-color: #FF8FA3;
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
+}
+
 .create-container {
     padding: var(--space-lg);
     max-width: 1200px;
@@ -1012,6 +1032,92 @@ button {
 }
 
 #help-modal .close-btn {
+    position: absolute;
+    right: var(--space-lg);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* ========================================
+   MODALE REMERCIEMENTS
+   ======================================== */
+
+.thanks-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xl);
+}
+
+.thanks-section {
+    padding: var(--space-lg);
+    border-radius: var(--radius-lg);
+    background: var(--gray-50);
+}
+
+.thanks-section h4 {
+    font-size: 20px;
+    color: var(--gray-900);
+    margin-bottom: var(--space-md);
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.thanks-section p {
+    font-size: 16px;
+    color: var(--gray-700);
+    line-height: 1.6;
+    margin-bottom: var(--space-md);
+}
+
+.thanks-beta {
+    border-left: 4px solid #FFB3C1;
+}
+
+.beta-testers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+}
+
+.tester-name {
+    padding: var(--space-sm) var(--space-md);
+    background: linear-gradient(135deg, #FFE5EC 0%, #FFD1DC 100%);
+    color: #C2185B;
+    border-radius: var(--radius-full);
+    font-weight: 600;
+    font-size: 15px;
+    border: 2px solid #FFB3C1;
+}
+
+.thanks-creation {
+    border-left: 4px solid var(--primary);
+    background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%);
+}
+
+.creation-text {
+    text-align: center;
+    font-size: 17px;
+    line-height: 1.8;
+    color: var(--gray-800);
+    margin: 0;
+}
+
+.creation-text strong {
+    color: var(--primary-dark);
+    font-size: 18px;
+}
+
+#thanks-modal .modal-header {
+    justify-content: center;
+    position: relative;
+}
+
+#thanks-modal .modal-header h3 {
+    text-align: center;
+}
+
+#thanks-modal .close-btn {
     position: absolute;
     right: var(--space-lg);
     top: 50%;

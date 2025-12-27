@@ -78,16 +78,25 @@
         gameContainer.innerHTML = html;
         showPage('game-page');
         
-        // Ajouter les event listeners APRÈS avoir créé le HTML
-        document.querySelectorAll('.animal-btn').forEach(btn => {
-            btn.addEventListener('click', function() {
-                const animal = this.getAttribute('data-animal');
-                selectAnimal(animal);
+        // IMPORTANT : Nettoyer toute sélection/focus résiduel
+        setTimeout(() => {
+            // Retirer TOUTES les classes selected qui pourraient avoir été ajoutées
+            document.querySelectorAll('.animal-btn').forEach(btn => {
+                btn.classList.remove('selected');
+                btn.blur(); // Forcer la perte de focus
             });
-        });
-        
-        // Event listener pour le bouton rejoindre
-        document.getElementById('join-game-btn').addEventListener('click', confirmJoinGame);
+            
+            // Ajouter les event listeners APRÈS avoir créé le HTML
+            document.querySelectorAll('.animal-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const animal = this.getAttribute('data-animal');
+                    selectAnimal(animal);
+                });
+            });
+            
+            // Event listener pour le bouton rejoindre
+            document.getElementById('join-game-btn').addEventListener('click', confirmJoinGame);
+        }, 0);
     }
 
     let selectedAnimal = null;
@@ -234,15 +243,41 @@
     
     function displayQuestion(data) {
         console.log('🎯 ÉLÈVE: Affichage question', data);
+        console.log('🔍 countdownState avant nettoyage:', countdownState);
+        
+        // Arrêter le compte à rebours des résultats s'il tourne encore
+        if (countdownState && countdownState.interval) {
+            clearInterval(countdownState.interval);
+            countdownState.interval = null;
+            countdownState.remaining = 10;
+            console.log('⏹️ Compte à rebours des résultats arrêté et réinitialisé');
+        }
+        
+        // Arrêter aussi le timer de question précédent si existe
+        if (timerState && timerState.interval) {
+            clearInterval(timerState.interval);
+            timerState.interval = null;
+            console.log('⏹️ Timer de question précédente arrêté');
+        }
         
         currentQuestionData = data;
-        questionStartTime = Date.now();
+        
+        // Utiliser le startTime du serveur si disponible (pour la synchronisation lors de reconnexion)
+        // startTime est un timestamp Unix en secondes, on le convertit en millisecondes
+        if (data.startTime) {
+            questionStartTime = data.startTime * 1000; // Convertir secondes -> millisecondes
+            console.log('⏱️ Utilisation du startTime serveur:', new Date(questionStartTime).toISOString());
+        } else {
+            questionStartTime = Date.now();
+            console.log('⏱️ Utilisation de l\'heure locale');
+        }
+        
         hasAnswered = false;
         
         const gameContainer = document.querySelector('.game-container');
         const question = data.question;
         const questionNumber = data.index + 1;
-        const totalQuestions = APP_STATE.questions?.length || 1;
+        const totalQuestions = SESSION_STATE.quizData?.totalQuestions || SESSION_STATE.quizData?.questions?.length || 1;
         
         let html = `
             <div class="question-screen">
@@ -330,15 +365,24 @@
         
         gameContainer.innerHTML = html;
         
-        // Ajouter les event listeners pour les boutons de réponse
-        if (question.type === 'multiple' || question.type === 'truefalse') {
+        // IMPORTANT : Nettoyer et ajouter les event listeners avec un léger délai
+        setTimeout(() => {
+            // Retirer toute sélection/focus résiduel
             document.querySelectorAll('.answer-btn').forEach(btn => {
-                btn.addEventListener('click', function() {
-                    const answerIndex = parseInt(this.getAttribute('data-answer-index'));
-                    selectAnswer(answerIndex);
-                });
+                btn.classList.remove('selected');
+                btn.blur();
             });
-        }
+            
+            // Ajouter les event listeners pour les boutons de réponse
+            if (question.type === 'multiple' || question.type === 'truefalse') {
+                document.querySelectorAll('.answer-btn').forEach(btn => {
+                    btn.addEventListener('click', function() {
+                        const answerIndex = parseInt(this.getAttribute('data-answer-index'));
+                        selectAnswer(answerIndex);
+                    });
+                });
+            }
+        }, 0);
         
         // Démarrer le timer
         startQuestionTimer(question.time);
@@ -377,13 +421,33 @@
         const timerBar = document.getElementById('timer-bar');
         const timerText = document.getElementById('timer-text');
         
-        timerState.remaining = duration;
+        // Calculer le temps déjà écoulé depuis le début de la question
+        const elapsedSeconds = Math.floor((Date.now() - questionStartTime) / 1000);
+        const remainingTime = Math.max(0, duration - elapsedSeconds);
+        
+        console.log(`⏱️ Timer: durée=${duration}s, écoulé=${elapsedSeconds}s, restant=${remainingTime}s`);
+        
+        timerState.remaining = remainingTime;
         timerState.duration = duration;
         timerState.isPaused = false;
-        timerBar.style.width = '100%';
+        
+        // Calculer le pourcentage initial
+        const initialPercentage = (remainingTime / duration) * 100;
+        timerBar.style.width = initialPercentage + '%';
+        
+        // Changer la couleur si déjà proche de la fin
+        if (remainingTime <= 5) {
+            timerBar.style.background = 'var(--error)';
+        }
         
         if (timerState.interval) {
             clearInterval(timerState.interval);
+        }
+        
+        // Si le temps est déjà écoulé, soumettre immédiatement
+        if (remainingTime <= 0 && !hasAnswered) {
+            autoSubmitNoAnswer();
+            return;
         }
         
         timerState.interval = setInterval(() => {
@@ -541,11 +605,32 @@
         }
         container.innerHTML = `
             <div class="answer-feedback">
-                <div class="feedback-icon">✓</div>
                 <div class="feedback-text">${message}</div>
                 <div class="feedback-subtext">En attente des autres joueurs...</div>
+                <div id="stuck-warning" style="display: none; margin-top: 20px; padding: 15px; background: #fff3cd; border: 2px solid #ffc107; border-radius: 8px; color: #856404;">
+                    ⚠️ Cela prend plus de temps que prévu...<br>
+                    <small>Le professeur peut débloquer la situation avec le bouton "Resynchroniser"</small>
+                </div>
             </div>
         `;
+        
+        // Détection de blocage prolongé (30 secondes)
+        const stuckTimeout = setTimeout(() => {
+            const warning = document.getElementById('stuck-warning');
+            if (warning) {
+                warning.style.display = 'block';
+                console.warn('⚠️ ÉLÈVE: Bloqué depuis 30s sur "Réponse enregistrée"');
+            }
+        }, 30000);
+        
+        // Nettoyer le timeout si on quitte cette page
+        const observer = new MutationObserver(() => {
+            if (!document.getElementById('answers-container')) {
+                clearTimeout(stuckTimeout);
+                observer.disconnect();
+            }
+        });
+        observer.observe(document.body, { childList: true, subtree: true });
     }
 
     // ========================================
@@ -553,10 +638,131 @@
     // ========================================
     
     function initializeOrderDragDrop() {
-        const items = document.querySelectorAll('.order-item');
+        const container = document.querySelector('.order-container');
+        if (!container) return;
+        
+        const items = container.querySelectorAll('.order-item');
+        
+        // Variables pour le drag tactile
         let draggedItem = null;
+        let placeholder = null;
+        let offsetY = 0;
+        let originalWidth = 0;
         
         items.forEach(item => {
+            // Support tactile (mobile)
+            item.addEventListener('touchstart', function(e) {
+                draggedItem = this;
+                const touch = e.touches[0];
+                const rect = this.getBoundingClientRect();
+                
+                // Calculer l'offset entre le doigt et le haut de l'élément
+                offsetY = touch.clientY - rect.top;
+                originalWidth = rect.width;
+                
+                // Créer un placeholder
+                placeholder = document.createElement('div');
+                placeholder.className = 'order-item-placeholder';
+                placeholder.style.height = rect.height + 'px';
+                placeholder.style.margin = window.getComputedStyle(this).margin;
+                placeholder.style.visibility = 'hidden';
+                
+                // Insérer le placeholder à la place de l'élément
+                this.parentNode.insertBefore(placeholder, this);
+                
+                // Passer l'élément en position fixed pour qu'il suive le doigt
+                this.style.position = 'fixed';
+                this.style.width = originalWidth + 'px';
+                this.style.left = rect.left + 'px';
+                this.style.top = rect.top + 'px';
+                this.style.margin = '0';
+                this.style.zIndex = '1000';
+                this.classList.add('dragging');
+                
+                e.preventDefault();
+            }, { passive: false });
+            
+            item.addEventListener('touchmove', function(e) {
+                if (!draggedItem || draggedItem !== this) return;
+                
+                e.preventDefault();
+                const touch = e.touches[0];
+                
+                // Déplacer l'élément pour qu'il suive le doigt
+                this.style.top = (touch.clientY - offsetY) + 'px';
+                
+                // Trouver sur quel élément on est
+                const otherItems = Array.from(container.querySelectorAll('.order-item:not(.dragging)'));
+                
+                let targetItem = null;
+                let insertBefore = true;
+                
+                for (let otherItem of otherItems) {
+                    const rect = otherItem.getBoundingClientRect();
+                    const middle = rect.top + rect.height / 2;
+                    
+                    if (touch.clientY < middle) {
+                        targetItem = otherItem;
+                        insertBefore = true;
+                        break;
+                    }
+                }
+                
+                // Déplacer le placeholder
+                if (targetItem) {
+                    container.insertBefore(placeholder, targetItem);
+                } else {
+                    // Ajouter à la fin
+                    container.appendChild(placeholder);
+                }
+            }, { passive: false });
+            
+            item.addEventListener('touchend', function(e) {
+                if (draggedItem === this) {
+                    e.preventDefault();
+                    
+                    // Remettre l'élément à sa position normale
+                    this.style.position = '';
+                    this.style.width = '';
+                    this.style.left = '';
+                    this.style.top = '';
+                    this.style.margin = '';
+                    this.style.zIndex = '';
+                    this.classList.remove('dragging');
+                    
+                    // Remplacer le placeholder par l'élément réel
+                    if (placeholder && placeholder.parentNode) {
+                        placeholder.parentNode.insertBefore(this, placeholder);
+                        placeholder.remove();
+                    }
+                    
+                    draggedItem = null;
+                    placeholder = null;
+                }
+            }, { passive: false });
+            
+            item.addEventListener('touchcancel', function(e) {
+                if (draggedItem === this) {
+                    // Même chose que touchend
+                    this.style.position = '';
+                    this.style.width = '';
+                    this.style.left = '';
+                    this.style.top = '';
+                    this.style.margin = '';
+                    this.style.zIndex = '';
+                    this.classList.remove('dragging');
+                    
+                    if (placeholder && placeholder.parentNode) {
+                        placeholder.parentNode.insertBefore(this, placeholder);
+                        placeholder.remove();
+                    }
+                    
+                    draggedItem = null;
+                    placeholder = null;
+                }
+            }, { passive: false });
+            
+            // Support souris (desktop) - pour rétrocompatibilité
             item.addEventListener('dragstart', function(e) {
                 draggedItem = this;
                 setTimeout(() => this.classList.add('dragging'), 0);
@@ -568,11 +774,11 @@
             
             item.addEventListener('dragover', function(e) {
                 e.preventDefault();
-                const afterElement = getDragAfterElement(this.parentElement, e.clientY);
+                const afterElement = getDragAfterElement(container, e.clientY);
                 if (afterElement == null) {
-                    this.parentElement.appendChild(draggedItem);
+                    container.appendChild(draggedItem);
                 } else {
-                    this.parentElement.insertBefore(draggedItem, afterElement);
+                    container.insertBefore(draggedItem, afterElement);
                 }
             });
         });
@@ -660,6 +866,18 @@
                         </div>
                     </div>
                 </div>
+                
+                ${!isCorrect && data.question ? `
+                    <div class="wrong-answer-explanation">
+                        <div class="question-reminder">
+                            <strong>Question :</strong> ${data.question.question}
+                        </div>
+                        <div class="correct-answer-display">
+                            <strong>La bonne réponse était :</strong><br>
+                            ${formatCorrectAnswer(data.question, data.correctAnswer)}
+                        </div>
+                    </div>
+                ` : ''}
         `;
         
         // Top 5 des plus rapides
@@ -705,25 +923,6 @@
         console.log('📊 ÉLÈVE: Affichage résultats', data);
         console.log('🔍 data.manualMode =', data.manualMode, ', type =', typeof data.manualMode);
         
-        // Vérifier si c'est la dernière question
-        const totalQuestions = SESSION_STATE.quizData?.totalQuestions || SESSION_STATE.quizData?.questions?.length || 0;
-        
-        // Si totalQuestions est 0, on ne peut pas savoir, donc on affiche le Top 3
-        if (totalQuestions > 0) {
-            const isLastQuestion = data.questionIndex >= (totalQuestions - 1);
-            
-            console.log(`🔍 Question ${data.questionIndex + 1}/${totalQuestions}, dernière=${isLastQuestion}`);
-            
-            if (isLastQuestion) {
-                // Dernière question : afficher directement les résultats finaux
-                console.log('🏁 ÉLÈVE: Dernière question, affichage résultats finaux');
-                displayFinalResults(data);
-                return;
-            }
-        } else {
-            console.warn('⚠️ ÉLÈVE: totalQuestions inconnu, affichage Top 3 par défaut');
-        }
-        
         const gameContainer = document.querySelector('.game-container');
         
         // Debug complet des données reçues
@@ -742,6 +941,10 @@
             console.error('❌ Aucun joueur dans les résultats');
             return;
         }
+        
+        // Vérifier si c'est la dernière question
+        const totalQuestions = SESSION_STATE.quizData?.totalQuestions || SESSION_STATE.quizData?.questions?.length || 0;
+        const isLastQuestion = totalQuestions > 0 && data.questionIndex >= (totalQuestions - 1);
         
         // Trouver ma position et mon score
         const myData = players.find(p => p.nickname === SESSION_STATE.playerNickname);
@@ -775,8 +978,12 @@
                 
                 <div class="waiting-next">
                     ${data.manualMode ? 
-                        '<p>🎯 En attente du professeur pour la prochaine question...</p>' :
-                        '<p>⏳ Prochaine question dans <span id="countdown-next">10</span>s...</p>'
+                        (isLastQuestion ? 
+                            '<p>🏁 En attente du professeur pour le podium final...</p>' :
+                            '<p>🎯 En attente du professeur pour la prochaine question...</p>') :
+                        (isLastQuestion ?
+                            '<p>🏁 Podium final dans <span id="countdown-next">10</span>s...</p>' :
+                            '<p>⏳ Prochaine question dans <span id="countdown-next">10</span>s...</p>')
                     }
                     <div class="dots-loader">
                         <span></span><span></span><span></span>
@@ -929,6 +1136,9 @@
             countdownState.interval = null;
         }
         
+        // Stocker les données complètes pour le récapitulatif
+        window.finalResultsData = data;
+        
         // Utiliser allPlayers si disponible
         const players = data.allPlayers || data.players || [];
         
@@ -989,6 +1199,9 @@
                     </div>
                     
                     <div class="ranking-actions" style="margin-top: var(--space-lg);">
+                        <button class="btn-secondary" onclick="showMyRecap()" style="margin-bottom: var(--space-md);">
+                            📊 Récap de mon parcours
+                        </button>
                         <button class="btn-secondary" onclick="showFullRanking()">
                             📋 Voir le classement complet
                         </button>
@@ -1065,12 +1278,245 @@
     }
 
     // ========================================
+    // HELPER: FORMATER LA BONNE RÉPONSE
+    // ========================================
+    
+    function formatCorrectAnswer(question, correctAnswer) {
+        switch(question.type) {
+            case 'multiple':
+            case 'truefalse':
+                if (question.answers[correctAnswer]) {
+                    return `<span class="correct-answer-text">${question.answers[correctAnswer].text}</span>`;
+                }
+                return 'Non disponible';
+            
+            case 'order':
+                if (Array.isArray(correctAnswer)) {
+                    return correctAnswer.map((text, i) => 
+                        `<div>${i + 1}. ${text}</div>`
+                    ).join('');
+                }
+                return 'Non disponible';
+            
+            case 'freetext':
+                return `<span class="correct-answer-text">${correctAnswer}</span>`;
+            
+            default:
+                return 'Non disponible';
+        }
+    }
+    
+    // ========================================
+    // RÉCAPITULATIF DU PARCOURS
+    // ========================================
+    
+    function showMyRecap() {
+        const data = window.finalResultsData;
+        
+        if (!data || !data.questionsWithAnswers) {
+            alert('Données non disponibles');
+            return;
+        }
+        
+        const questions = data.questionsWithAnswers;
+        const myPlayer = (data.allPlayers || data.players || []).find(p => 
+            p.nickname === SESSION_STATE.playerNickname
+        );
+        
+        if (!myPlayer) {
+            alert('Impossible de trouver tes réponses');
+            return;
+        }
+        
+        const myAnswers = myPlayer.answers || {};
+        
+        // Créer la modale
+        let html = `
+            <div class="modal-overlay" onclick="closeMyRecap()">
+                <div class="modal-content recap-modal" onclick="event.stopPropagation()">
+                    <div class="modal-header">
+                        <h3>📊 Récapitulatif de mon parcours</h3>
+                        <button class="modal-close" onclick="closeMyRecap()">✕</button>
+                    </div>
+                    
+                    <div class="recap-content">
+                        <div class="recap-summary">
+                            <div class="recap-stat">
+                                <strong>Score total :</strong> ${myPlayer.score || 0} points
+                            </div>
+                            <div class="recap-stat">
+                                <strong>Questions répondues :</strong> ${Object.keys(myAnswers).length} / ${questions.length}
+                            </div>
+                        </div>
+        `;
+        
+        // Parcourir toutes les questions
+        questions.forEach((q, index) => {
+            const myAnswer = myAnswers[index];
+            const isCorrect = myAnswer ? (myAnswer.correct || false) : false;
+            const hasAnswered = myAnswer !== undefined;
+            
+            html += `
+                <div class="recap-question ${isCorrect ? 'correct' : (hasAnswered ? 'incorrect' : 'not-answered')}">
+                    <div class="recap-question-number">Question ${index + 1}</div>
+                    <div class="recap-question-text">${q.question}</div>
+            `;
+            
+            if (!hasAnswered) {
+                html += `<div class="recap-no-answer">❌ Non répondu</div>`;
+            } else {
+                // Afficher la réponse de l'élève
+                html += `<div class="recap-user-answer">`;
+                
+                if (isCorrect) {
+                    html += `<div class="recap-answer-label correct-label">✅ Ta réponse (correcte) :</div>`;
+                } else {
+                    html += `<div class="recap-answer-label wrong-label">❌ Ta réponse :</div>`;
+                }
+                
+                html += `<div class="recap-answer-value ${isCorrect ? 'correct-value' : 'wrong-value'}">`;
+                html += formatUserAnswer(q, myAnswer);
+                html += `</div></div>`;
+                
+                // Si incorrect, afficher la bonne réponse
+                if (!isCorrect) {
+                    html += `
+                        <div class="recap-correct-answer">
+                            <div class="recap-answer-label correct-label">✅ Bonne réponse :</div>
+                            <div class="recap-answer-value correct-value">
+                                ${formatCorrectAnswerForRecap(q)}
+                            </div>
+                        </div>
+                    `;
+                }
+                
+                // Afficher les points gagnés
+                const points = myAnswer.points || 0;
+                if (points > 0) {
+                    html += `<div class="recap-points">🎯 +${points} points</div>`;
+                } else {
+                    html += `<div class="recap-points">0 point</div>`;
+                }
+            }
+            
+            html += `</div>`;
+        });
+        
+        html += `
+                    </div>
+                </div>
+            </div>
+        `;
+        
+        // Ajouter au body
+        const modalDiv = document.createElement('div');
+        modalDiv.id = 'my-recap-modal';
+        modalDiv.innerHTML = html;
+        document.body.appendChild(modalDiv);
+    }
+    
+    function formatUserAnswer(question, answer) {
+        // La structure de answer stockée côté serveur est :
+        // { questionIndex: number, answer: '{"index":1}', timeSpent: number, correct: bool, points: number }
+        // Où answer.answer est une CHAÎNE JSON qu'il faut parser
+        
+        console.log('🔍 formatUserAnswer appelé:', { questionType: question.type, answer });
+        
+        // Parser la réponse si c'est une chaîne JSON
+        let parsedAnswer = answer;
+        if (answer.answer && typeof answer.answer === 'string') {
+            try {
+                parsedAnswer = JSON.parse(answer.answer);
+                console.log('✅ Réponse parsée:', parsedAnswer);
+            } catch (e) {
+                console.error('❌ Erreur parsing JSON:', e);
+                return 'Réponse non valide';
+            }
+        }
+        
+        switch(question.type) {
+            case 'multiple':
+            case 'truefalse':
+                // Vérifier d'abord si parsedAnswer a directement index
+                if (parsedAnswer.index !== undefined && question.answers[parsedAnswer.index]) {
+                    return question.answers[parsedAnswer.index].text;
+                }
+                console.warn('❌ Impossible de formater la réponse multiple/truefalse:', parsedAnswer);
+                return 'Réponse non valide';
+            
+            case 'order':
+                // Vérifier si parsedAnswer a directement order
+                if (Array.isArray(parsedAnswer.order)) {
+                    return parsedAnswer.order.map((text, i) => 
+                        `<div>${i + 1}. ${text}</div>`
+                    ).join('');
+                }
+                console.warn('❌ Impossible de formater la réponse order:', parsedAnswer);
+                return 'Réponse non valide';
+            
+            case 'freetext':
+                // Vérifier si parsedAnswer a directement freetext
+                if (parsedAnswer.freetext) {
+                    return parsedAnswer.freetext;
+                }
+                console.warn('❌ Impossible de formater la réponse freetext:', parsedAnswer);
+                return 'Réponse vide';
+            
+            default:
+                return 'Type inconnu';
+        }
+    }
+    
+    function formatCorrectAnswerForRecap(question) {
+        const correctAnswer = question.correctAnswer;
+        
+        switch(question.type) {
+            case 'multiple':
+            case 'truefalse':
+                if (correctAnswer && correctAnswer.text) {
+                    return correctAnswer.text;
+                }
+                return 'Non disponible';
+            
+            case 'order':
+                if (Array.isArray(correctAnswer)) {
+                    return correctAnswer.map((text, i) => 
+                        `<div>${i + 1}. ${text}</div>`
+                    ).join('');
+                }
+                return 'Non disponible';
+            
+            case 'freetext':
+                if (correctAnswer && correctAnswer.text) {
+                    let result = correctAnswer.text;
+                    if (correctAnswer.acceptedAnswers && correctAnswer.acceptedAnswers.length > 0) {
+                        result += '<br><small>(Réponses acceptées : ' + correctAnswer.acceptedAnswers.join(', ') + ')</small>';
+                    }
+                    return result;
+                }
+                return 'Non disponible';
+            
+            default:
+                return 'Type inconnu';
+        }
+    }
+    
+    function closeMyRecap() {
+        const modal = document.getElementById('my-recap-modal');
+        if (modal) {
+            modal.remove();
+        }
+    }
+
+    // ========================================
     // EXPORT VERS GLOBAL
     // ========================================
     
     window.showStudentJoinPage = showStudentJoinPage;
     window.selectAnimal = selectAnimal;
     window.confirmJoinGame = confirmJoinGame;
+    window.showMyRecap = showMyRecap;
+    window.closeMyRecap = closeMyRecap;
     window.updateWaitingRoom = updateWaitingRoom;
     window.handleGameStart = handleGameStart;
     window.displayQuestion = displayQuestion;

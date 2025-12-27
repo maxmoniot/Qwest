@@ -60,6 +60,10 @@ switch ($action) {
         getControlState();
         break;
     
+    case 'force_question_complete':
+        forceQuestionComplete();
+        break;
+    
     default:
         echo json_encode(['success' => false, 'message' => 'Action inconnue']);
         break;
@@ -385,6 +389,51 @@ function removePlayer() {
     }));
     
     error_log("REMOVE_PLAYER: Après - " . count($session['players']) . " joueurs");
+    
+    // Recalculer si tous les joueurs restants ont répondu à la question actuelle
+    if (isset($session['currentQuestion']) && $session['currentQuestion'] >= 0 && $session['state'] === 'playing') {
+        $questionIndex = $session['currentQuestion'];
+        $allAnswered = true;
+        $connectedPlayers = 0;
+        
+        foreach ($session['players'] as $player) {
+            if ($player['connected'] && (time() - $player['lastPing'] < 30)) {
+                $connectedPlayers++;
+                if (!isset($player['answers'][$questionIndex])) {
+                    $allAnswered = false;
+                }
+            }
+        }
+        
+        // Si après la suppression, tous les joueurs restants ont répondu, activer questionCompleted
+        if ($allAnswered && $connectedPlayers > 0 && !isset($session['questionCompleted'])) {
+            error_log("REMOVE_PLAYER: Tous les joueurs restants ont répondu Q$questionIndex, activation questionCompleted");
+            $session['questionCompleted'] = true;
+            $session['questionCompletedTime'] = time();
+        }
+    }
+    
+    saveSession($playCode, $session);
+    echo json_encode(['success' => true]);
+}
+
+function forceQuestionComplete() {
+    $playCode = $_POST['playCode'] ?? '';
+    $questionIndex = intval($_POST['questionIndex'] ?? -1);
+    
+    error_log("FORCE_QUESTION_COMPLETE: playCode=$playCode, questionIndex=$questionIndex");
+    
+    $session = loadSession($playCode);
+    if (!$session) {
+        echo json_encode(['success' => false, 'message' => 'Session introuvable']);
+        return;
+    }
+    
+    // Forcer la question comme complétée
+    $session['questionCompleted'] = true;
+    $session['questionCompletedTime'] = time();
+    
+    error_log("FORCE_QUESTION_COMPLETE: Question $questionIndex marquée comme complétée");
     
     saveSession($playCode, $session);
     echo json_encode(['success' => true]);

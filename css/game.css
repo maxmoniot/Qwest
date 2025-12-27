@@ -358,6 +358,7 @@
     margin-bottom: var(--space-lg);
     box-shadow: var(--shadow-md);
     text-align: center;
+    overflow: visible; /* Assurer que le contenu déborde si nécessaire */
 }
 
 .question-image {
@@ -375,7 +376,11 @@
 .question-text {
     font-size: 28px;
     color: var(--gray-900);
-    line-height: 1.4;
+    line-height: 1.5;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal; /* Permettre le retour à la ligne */
+    max-width: 100%;
 }
 
 .answers-container {
@@ -452,11 +457,18 @@
     gap: var(--space-md);
     cursor: grab;
     transition: var(--transition-base);
+    touch-action: none; /* Important pour le drag tactile */
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 .order-item.dragging {
-    opacity: 0.5;
+    opacity: 0.8;
     cursor: grabbing;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+    transform: scale(1.02);
+    border-color: var(--primary);
+    background: var(--primary-light);
 }
 
 .order-item:hover {
@@ -465,14 +477,22 @@
 }
 
 .drag-handle {
-    font-size: 20px;
+    font-size: 24px;
     color: var(--gray-400);
+    cursor: grab;
+    padding: var(--space-sm);
+}
+
+.order-item.dragging .drag-handle {
+    cursor: grabbing;
 }
 
 .order-text {
     flex: 1;
     font-weight: 600;
     color: var(--gray-900);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .btn-validate-order {
@@ -957,6 +977,10 @@
 }
 
 .modal-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1451,11 +1475,19 @@
 .question-result-centered {
     display: flex;
     justify-content: center;
-    margin-bottom: var(--space-lg);
+    margin-bottom: var(--space-md);
 }
 
 .question-result {
     max-width: 500px;
+}
+
+.question-result.incorrect {
+    padding: var(--space-md);
+}
+
+.question-result.incorrect .result-icon {
+    font-size: 2rem;
 }
 
 /* Top 5 */
@@ -1509,4 +1541,208 @@
 /* Pseudo à gauche */
 .my-stats-row {
     grid-template-columns: auto 1fr 1fr;
+}
+
+
+/* ========================================
+   EXPLICATION MAUVAISE RÉPONSE
+   ======================================== */
+
+.wrong-answer-explanation {
+    margin-top: var(--space-lg);
+    padding: var(--space-lg);
+    background: #fff3cd;
+    border: 2px solid #ffc107;
+    border-radius: var(--radius-lg);
+    text-align: left;
+}
+
+.question-reminder {
+    margin-bottom: var(--space-md);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.question-reminder strong {
+    color: var(--gray-900);
+    display: block;
+    margin-bottom: var(--space-sm);
+}
+
+.correct-answer-display {
+    padding: var(--space-md);
+    background: #d4edda;
+    border: 2px solid #28a745;
+    border-radius: var(--radius-md);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.correct-answer-display strong {
+    color: #155724;
+    display: block;
+    margin-bottom: var(--space-sm);
+}
+
+.correct-answer-text {
+    color: #155724;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+/* ========================================
+   RÉCAPITULATIF MODAL
+   ======================================== */
+
+.recap-modal {
+    max-width: 700px;
+    max-height: 85vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.recap-content {
+    padding: var(--space-lg);
+    flex: 1;
+    overflow-y: auto;
+}
+
+.recap-summary {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    margin-bottom: var(--space-xl);
+}
+
+.recap-stat {
+    padding: var(--space-md);
+    background: var(--gray-50);
+    border-radius: var(--radius-md);
+    font-size: 16px;
+}
+
+.recap-stat strong {
+    color: var(--primary);
+}
+
+.recap-question {
+    margin-bottom: var(--space-lg);
+    padding: var(--space-lg);
+    border-radius: var(--radius-lg);
+    border: 3px solid;
+    background: white;
+}
+
+.recap-question.correct {
+    border-color: #28a745;
+    background: #f8fff9;
+}
+
+.recap-question.incorrect {
+    border-color: #dc3545;
+    background: #fff8f8;
+}
+
+.recap-question.not-answered {
+    border-color: #6c757d;
+    background: #f8f9fa;
+}
+
+.recap-question-number {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: var(--space-sm);
+}
+
+.recap-question-text {
+    font-weight: 600;
+    margin-bottom: var(--space-lg);
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--gray-900);
+}
+
+.recap-no-answer {
+    padding: var(--space-md);
+    background: #f8f9fa;
+    border-radius: var(--radius-md);
+    color: #6c757d;
+    font-weight: 600;
+    text-align: center;
+}
+
+.recap-user-answer,
+.recap-correct-answer {
+    margin-bottom: var(--space-md);
+}
+
+.recap-answer-label {
+    font-weight: 700;
+    margin-bottom: var(--space-sm);
+    font-size: 14px;
+}
+
+.recap-answer-label.correct-label {
+    color: #28a745;
+}
+
+.recap-answer-label.wrong-label {
+    color: #dc3545;
+}
+
+.recap-answer-value {
+    padding: var(--space-md);
+    border-radius: var(--radius-md);
+    font-size: 16px;
+    line-height: 1.6;
+    border: 2px solid;
+}
+
+.recap-answer-value.correct-value {
+    background: #d4edda;
+    border-color: #28a745;
+    color: #155724;
+}
+
+.recap-answer-value.wrong-value {
+    background: #f8d7da;
+    border-color: #dc3545;
+    color: #721c24;
+}
+
+.recap-points {
+    margin-top: var(--space-md);
+    padding: var(--space-sm) var(--space-md);
+    background: var(--primary-light);
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    color: var(--primary-dark);
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Mobile responsive pour le récap */
+@media (max-width: 480px) {
+    .recap-modal {
+        max-width: 95vw;
+        max-height: 90vh;
+    }
+    
+    .recap-content {
+        padding: var(--space-md);
+    }
+    
+    .recap-question {
+        padding: var(--space-md);
+    }
+    
+    .recap-question-text {
+        font-size: 16px;
+    }
+    
+    .recap-answer-value {
+        font-size: 14px;
+    }
 }

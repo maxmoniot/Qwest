@@ -283,12 +283,69 @@
     
     /* Question card */
     .question-header {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: var(--space-sm);
+    }
+    
+    .player-nickname-display {
+        flex: 1 1 auto;
+        min-width: 120px;
+        margin-bottom: 0;
+        text-align: left;
+        font-size: 1rem;
+    }
+    
+    .question-progress {
+        flex: 0 0 auto;
+        font-size: 0.9rem;
+    }
+    
+    .question-timer {
+        flex: 0 0 auto;
+    }
+    
+    .timer-bar {
+        width: 80px !important;
+    }
+    
+    /* Stats de résultats - responsive */
+    .my-stats-row {
+        flex-wrap: wrap;
+        gap: var(--space-sm);
+    }
+    
+    .my-stats-row .my-nickname {
+        flex: 1 1 100%;
+        font-size: 1.2rem;
+        text-align: center;
+        word-break: break-word;
+        overflow-wrap: break-word;
+        max-width: 100%;
+        padding: var(--space-sm);
+    }
+    
+    .my-stats-row .my-score,
+    .my-stats-row .my-position {
+        flex: 1 1 calc(50% - var(--space-sm));
+        min-width: 0;
+    }
+    
+    .question-content {
+        padding: var(--space-md);
+        max-height: none; /* Pas de limitation de hauteur */
+        overflow: visible;
     }
     
     .question-text {
-        font-size: 14px;
+        font-size: 18px;
+        line-height: 1.6;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        white-space: normal;
+        max-width: 100%;
     }
     
     /* Buttons */
@@ -372,6 +429,26 @@
     /* Feedback tactile */
     button:active {
         transform: scale(0.95);
+    }
+}
+
+/* ========================================
+   PETITS TÉLÉPHONES (480px et moins)
+   ======================================== */
+
+@media (max-width: 480px) {
+    .question-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .player-nickname-display,
+    .question-progress {
+        text-align: center;
+    }
+    
+    .question-timer {
+        justify-content: center;
     }
 }
 

@@ -258,20 +258,22 @@
 
     function showQuestion(questionData) {
         console.log('📩 ÉLÈVE: Reçu événement question', questionData);
+        console.log('📩 Stack trace:', new Error().stack);
         
         // Le format peut varier selon la source (SSE vs polling)
         // Format polling: {index, data, startTime}
-        // Format attendu par displayQuestion: {index, question}
+        // Format attendu par displayQuestion: {index, question, startTime}
         
         let formattedData;
         
         if (questionData.data) {
-            // Format polling: adapter la structure
+            // Format polling: adapter la structure MAIS conserver startTime
             formattedData = {
                 index: questionData.index,
-                question: questionData.data
+                question: questionData.data,
+                startTime: questionData.startTime // IMPORTANT : conserver le timestamp du serveur
             };
-            console.log('🔄 ÉLÈVE: Format adapté de polling vers display');
+            console.log('🔄 ÉLÈVE: Format adapté de polling vers display (startTime conservé)');
         } else {
             // Format déjà correct
             formattedData = questionData;
@@ -279,8 +281,8 @@
         
         // Mettre à jour l'index de la question actuelle
         if (formattedData.index !== undefined) {
+            console.log(`🔄 ÉLÈVE: Changement currentQuestion: ${SESSION_STATE.currentQuestion} -> ${formattedData.index}`);
             SESSION_STATE.currentQuestion = formattedData.index;
-            console.log('🔄 ÉLÈVE: currentQuestion mis à jour:', SESSION_STATE.currentQuestion);
         }
         
         if (window.displayQuestion) {
@@ -420,9 +422,15 @@
                     if (data.question) {
                         // Vérifier si c'est une nouvelle question (différente de celle actuellement affichée)
                         if (data.currentQuestion !== SESSION_STATE.currentQuestion) {
-                            console.log('📩 Polling: Nouvelle question détectée', data.currentQuestion);
+                            console.log('📩 Polling: Nouvelle question détectée', {
+                                serveurQuestion: data.currentQuestion, 
+                                clientQuestion: SESSION_STATE.currentQuestion,
+                                timestamp: new Date().toISOString()
+                            });
                             SESSION_STATE.currentQuestion = data.currentQuestion;
                             showQuestion(data.question);
+                        } else {
+                            console.log('⏭️ Polling: Question inchangée, pas de mise à jour');
                         }
                     } 
                     // Sinon, si c'est le premier passage en 'playing', afficher le compte à rebours

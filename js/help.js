@@ -25,6 +25,24 @@
     }
 
     // ========================================
+    // GESTION DE LA MODAL REMERCIEMENTS
+    // ========================================
+    
+    function openThanksModal() {
+        const modal = document.getElementById('thanks-modal');
+        if (modal) {
+            modal.classList.add('active');
+        }
+    }
+
+    function closeThanksModal() {
+        const modal = document.getElementById('thanks-modal');
+        if (modal) {
+            modal.classList.remove('active');
+        }
+    }
+
+    // ========================================
     // TÉLÉCHARGEMENT DU FICHIER FORMAT
     // ========================================
     
@@ -64,6 +82,8 @@
     
     window.openHelpModal = openHelpModal;
     window.closeHelpModal = closeHelpModal;
+    window.openThanksModal = openThanksModal;
+    window.closeThanksModal = closeThanksModal;
     window.downloadFormatFile = downloadFormatFile;
 
 })();

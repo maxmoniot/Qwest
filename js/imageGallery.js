@@ -1,6 +1,7 @@
 // ============================================
-// MODULE: IMAGE GALLERY (Pixabay)
-// Description: Gestion de la galerie d'images avec recherche Pixabay
+// MODULE: IMAGE GALLERY (Wikimedia Commons)
+// Description: Gestion de la galerie d'images avec recherche Wikimedia Commons
+// URLs PERMANENTES - ILLIMITÉ - Parfait pour l'éducation !
 // ============================================
 
 (function() {
@@ -10,20 +11,20 @@
     // CONFIGURATION
     // ========================================
     
-    const PIXABAY_CONFIG = {
-        apiKey: '53901925-e66128e69e09c6bd7a19784bb',
-        apiUrl: 'https://pixabay.com/api/',
+    const WIKIMEDIA_CONFIG = {
+        apiUrl: 'https://commons.wikimedia.org/w/api.php',
         perPage: 12,
-        imageType: 'photo,illustration',
-        safesearch: true
+        thumbSize: 400 // Taille des miniatures
     };
 
     let galleryState = {
         currentPage: 1,
         currentQuery: '',
-        totalHits: 0,
+        totalResults: 0,
+        offset: 0,
         selectedImageUrl: null,
-        onSelectCallback: null
+        onSelectCallback: null,
+        cachedResults: [] // Cache pour la pagination
     };
 
     // ========================================
@@ -34,12 +35,14 @@
         galleryState.onSelectCallback = onSelectCallback;
         galleryState.currentPage = 1;
         galleryState.currentQuery = '';
+        galleryState.offset = 0;
+        galleryState.cachedResults = [];
         
         const modal = document.getElementById('image-gallery-modal');
         if (modal) {
             modal.classList.add('active');
             // Charger les images populaires par défaut
-            searchImages('nature landscape');
+            searchImages('education science');
         }
     }
 
@@ -67,32 +70,69 @@
         
         // Si toujours vide, recherche par défaut
         if (!query) {
-            query = 'education learning';
+            query = 'education science';
+        }
+        
+        // Si nouvelle recherche, réinitialiser
+        if (query !== galleryState.currentQuery) {
+            galleryState.currentPage = 1;
+            galleryState.offset = 0;
+            galleryState.cachedResults = [];
         }
         
         galleryState.currentQuery = query;
         galleryState.currentPage = page;
+        galleryState.offset = (page - 1) * WIKIMEDIA_CONFIG.perPage;
         
         // Afficher loading
         resultsContainer.innerHTML = '<div class="gallery-loading">🔍 Recherche en cours...</div>';
         paginationContainer.innerHTML = '';
         
         try {
-            const url = `${PIXABAY_CONFIG.apiUrl}?key=${PIXABAY_CONFIG.apiKey}&q=${encodeURIComponent(query)}&page=${page}&per_page=${PIXABAY_CONFIG.perPage}&image_type=${PIXABAY_CONFIG.imageType}&safesearch=${PIXABAY_CONFIG.safesearch}&lang=fr`;
+            // Utiliser l'API de recherche de Wikimedia Commons
+            // On cherche dans les images (File:) avec la query
+            const url = `${WIKIMEDIA_CONFIG.apiUrl}?` + new URLSearchParams({
+                action: 'query',
+                format: 'json',
+                generator: 'search',
+                gsrsearch: `File: ${query}`,
+                gsrnamespace: '6', // Namespace 6 = File
+                gsrlimit: WIKIMEDIA_CONFIG.perPage,
+                gsroffset: galleryState.offset,
+                prop: 'imageinfo|info',
+                iiprop: 'url|size|extmetadata',
+                iiurlwidth: WIKIMEDIA_CONFIG.thumbSize,
+                inprop: 'url',
+                origin: '*'
+            });
             
             const response = await fetch(url);
             const data = await response.json();
             
-            if (data.hits && data.hits.length > 0) {
-                galleryState.totalHits = data.totalHits;
-                renderGalleryResults(data.hits);
-                renderPagination();
+            if (data.query && data.query.pages) {
+                const pages = Object.values(data.query.pages);
+                
+                // Filtrer les pages qui ont des imageinfo valides
+                const validImages = pages.filter(page => 
+                    page.imageinfo && 
+                    page.imageinfo[0] && 
+                    page.imageinfo[0].thumburl &&
+                    page.imageinfo[0].url
+                );
+                
+                if (validImages.length > 0) {
+                    galleryState.totalResults = data.query.searchinfo?.totalhits || validImages.length;
+                    renderGalleryResults(validImages);
+                    renderPagination();
+                } else {
+                    resultsContainer.innerHTML = '<div class="gallery-empty">😕 Aucune image trouvée. Essayez un autre mot-clé.</div>';
+                }
             } else {
                 resultsContainer.innerHTML = '<div class="gallery-empty">😕 Aucune image trouvée. Essayez un autre mot-clé.</div>';
             }
             
         } catch (error) {
-            console.error('Erreur recherche Pixabay:', error);
+            console.error('Erreur recherche Wikimedia:', error);
             resultsContainer.innerHTML = '<div class="gallery-error">❌ Erreur de connexion. Vérifiez votre connexion internet.</div>';
         }
     }
@@ -107,18 +147,33 @@
         let html = '<div class="gallery-grid">';
         
         images.forEach(image => {
+            const imageInfo = image.imageinfo[0];
+            
+            // URL permanente de l'image en taille réelle
+            const imageUrl = imageInfo.url;
+            
+            // URL de la miniature pour l'affichage
+            const thumbUrl = imageInfo.thumburl;
+            
+            // Récupérer le titre et l'auteur depuis les métadonnées
+            const metadata = imageInfo.extmetadata || {};
+            const title = image.title.replace('File:', '').replace(/\.\w+$/, '').replace(/_/g, ' ');
+            const artist = metadata.Artist?.value ? 
+                stripHtmlTags(metadata.Artist.value).substring(0, 30) : 
+                'Wikimedia Commons';
+            
             // Échapper correctement l'URL pour éviter les problèmes avec les apostrophes
-            const escapedUrl = image.webformatURL.replace(/'/g, "\\'");
-            const escapedTags = escapeHtml(image.tags).replace(/'/g, "\\'");
+            const escapedUrl = imageUrl.replace(/'/g, "\\'");
+            const escapedTitle = escapeHtml(title).replace(/'/g, "\\'");
             
             html += `
-                <div class="gallery-item" onclick="selectImage('${escapedUrl}', '${escapedTags}')">
-                    <img src="${image.previewURL}" alt="${escapeHtml(image.tags)}" loading="lazy">
+                <div class="gallery-item" onclick="selectImage('${escapedUrl}', '${escapedTitle}')">
+                    <img src="${thumbUrl}" alt="${escapeHtml(title)}" loading="lazy">
                     <div class="gallery-item-overlay">
                         <button class="btn-select-image">✓ Sélectionner</button>
                     </div>
                     <div class="gallery-item-info">
-                        <span class="gallery-item-author">📷 ${escapeHtml(image.user)}</span>
+                        <span class="gallery-item-author">📷 ${escapeHtml(artist)}</span>
                     </div>
                 </div>
             `;
@@ -134,13 +189,8 @@
     
     function renderPagination() {
         const container = document.getElementById('gallery-pagination');
-        const totalPages = Math.ceil(galleryState.totalHits / PIXABAY_CONFIG.perPage);
         const currentPage = galleryState.currentPage;
-        
-        if (totalPages <= 1) {
-            container.innerHTML = '';
-            return;
-        }
+        const hasMoreResults = galleryState.totalResults > (currentPage * WIKIMEDIA_CONFIG.perPage);
         
         // Échapper la query pour éviter les problèmes avec les apostrophes
         const escapedQuery = galleryState.currentQuery.replace(/'/g, "\\'");
@@ -155,10 +205,10 @@
         }
         
         // Info page
-        html += `<span class="pagination-info">Page ${currentPage} / ${Math.min(totalPages, 10)}</span>`;
+        html += `<span class="pagination-info">Page ${currentPage}</span>`;
         
-        // Bouton suivant (limiter à 10 pages pour éviter abus API)
-        if (currentPage < totalPages && currentPage < 10) {
+        // Bouton suivant
+        if (hasMoreResults && currentPage < 20) {
             html += `<button class="btn-pagination" onclick="searchImages('${escapedQuery}', ${currentPage + 1})">Suivant →</button>`;
         } else {
             html += `<button class="btn-pagination" disabled>Suivant →</button>`;
@@ -166,7 +216,10 @@
         
         html += '</div>';
         
-        html += `<div class="pagination-results">📊 ${galleryState.totalHits} images trouvées</div>`;
+        const resultText = galleryState.totalResults > 0 ? 
+            `📊 ${galleryState.totalResults} images trouvées` : 
+            '📊 Images disponibles';
+        html += `<div class="pagination-results">${resultText}</div>`;
         
         container.innerHTML = html;
     }
@@ -208,6 +261,12 @@
         const div = document.createElement('div');
         div.textContent = text;
         return div.innerHTML;
+    }
+    
+    function stripHtmlTags(html) {
+        const tmp = document.createElement('div');
+        tmp.innerHTML = html;
+        return tmp.textContent || tmp.innerText || '';
     }
 
     // ========================================

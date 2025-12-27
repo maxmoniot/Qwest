@@ -232,6 +232,11 @@
             
             if (result.success) {
                 console.log('✅ PROF: Session créée avec succès, connexion SSE...');
+                
+                // Activer le bouton Projection dès que la session est créée
+                const btnProjection = document.getElementById('btn-projection');
+                if (btnProjection) btnProjection.disabled = false;
+                
                 // Connecter au flux SSE
                 connectControlStream();
             } else {
@@ -307,7 +312,12 @@
                 <div class="control-section">
                     <div class="section-header">
                         <h4>👥 Participants connectés : <span id="control-player-count">0</span></h4>
-                        <button class="btn-small" onclick="refreshPlayers()">🔄 Actualiser</button>
+                        <div class="section-header-buttons">
+                            <button class="btn-small" onclick="refreshPlayers()">🔄 Actualiser</button>
+                            <button id="btn-resync" class="btn-small" onclick="forceResync()" disabled title="Force les élèves à se resynchroniser en cas de blocage">
+                                🔄 Resynchroniser
+                            </button>
+                        </div>
                     </div>
                     <div id="control-players-list" class="control-players-list">
                         <div class="empty-list">Aucun joueur pour le moment</div>
@@ -316,7 +326,12 @@
                 
                 <!-- Contrôles -->
                 <div class="control-section">
-                    <h4>🎛️ Contrôles</h4>
+                    <div class="section-header">
+                        <h4>🎛️ Contrôles</h4>
+                        <button id="btn-projection" class="btn-small btn-projection" onclick="openProjectionMode()" disabled title="Mode projection pour afficher aux élèves">
+                            📽️ Projection
+                        </button>
+                    </div>
                     <div class="control-buttons">
                         <button id="btn-start-game" class="btn-control btn-success" onclick="startGame()">
                             ▶️ Lancer la partie
@@ -338,7 +353,12 @@
                 
                 <!-- Progress -->
                 <div class="control-section">
-                    <h4>📊 Progression</h4>
+                    <div class="section-header">
+                        <h4>📊 Progression</h4>
+                        <button id="btn-preview-question" class="btn-small btn-preview" onclick="toggleQuestionPreview()" disabled title="Aperçu de la question en cours">
+                            👁️ Aperçu question en cours
+                        </button>
+                    </div>
                     <div class="question-progress-bar">
                         <div class="progress-fill" id="question-progress" style="width: 0%"></div>
                     </div>
@@ -585,6 +605,7 @@
                 const btnStart = document.getElementById('btn-start-game');
                 const btnPause = document.getElementById('btn-pause-game');
                 const btnEnd = document.getElementById('btn-end-game');
+                const btnProjection = document.getElementById('btn-projection');
                 const checkManual = document.getElementById('manual-mode-check');
                 const checkTop3 = document.getElementById('show-top3-check');
                 const checkCustomTime = document.getElementById('custom-time-check');
@@ -592,6 +613,11 @@
                 if (btnStart) btnStart.disabled = true;
                 if (btnPause) btnPause.disabled = false;
                 if (btnEnd) btnEnd.disabled = false;
+                if (btnProjection) btnProjection.disabled = false;
+                
+                // Activer le bouton de resynchronisation
+                const btnResync = document.getElementById('btn-resync');
+                if (btnResync) btnResync.disabled = false;
                 
                 // Désactiver les options
                 if (checkManual) checkManual.disabled = true;
@@ -644,6 +670,13 @@
             return;
         }
         
+        // IMPORTANT : Annuler le passage automatique en attente
+        // Si le prof clique manuellement, on ne veut pas que le timer auto lance la question suivante
+        if (CONTROL_STATE.autoNextQuestionPending) {
+            console.log('🛑 PROF: Annulation du passage auto (clic manuel)');
+            CONTROL_STATE.autoNextQuestionPending = false;
+        }
+        
         CONTROL_STATE.currentQuestion++;
         
         if (CONTROL_STATE.currentQuestion >= APP_STATE.questions.length) {
@@ -687,6 +720,12 @@
         
         document.getElementById('current-q-num').textContent = currentNum;
         document.getElementById('question-progress').style.width = percentage + '%';
+        
+        // Activer le bouton d'aperçu si une question est en cours
+        const btnPreview = document.getElementById('btn-preview-question');
+        if (btnPreview && CONTROL_STATE.currentQuestion >= 0) {
+            btnPreview.disabled = false;
+        }
     }
 
     async function endGame(skipConfirm = false) {
@@ -770,6 +809,11 @@
             console.error('Erreur fin de partie:', error);
         }
     }
+    
+    // Fonction appelée depuis la projection pour terminer directement (confirmation déjà faite)
+    window.executeEndGameFromProjection = async function() {
+        await executeEndGame();
+    };
 
     function refreshPlayers() {
         // Force un refresh de la liste
@@ -881,7 +925,7 @@
                             </thead>
                             <tbody id="grading-table-body">
                                 ${playersData.map((player, index) => `
-                                    <tr>
+                                    <tr class="clickable-row" onclick="showPlayerRecap('${player.nickname.replace(/'/g, "\\'")}')">
                                         <td>${index + 1}</td>
                                         <td class="student-name">${player.nickname}</td>
                                         <td class="success-rate">
@@ -971,9 +1015,9 @@
             return b.score - a.score;
         });
         
-        // Mettre à jour le contenu
+        // Mettre à jour le contenu avec classe clickable-row et data-nickname
         tbody.innerHTML = playersData.map((player, index) => `
-            <tr>
+            <tr class="clickable-row" data-nickname="${player.nickname.replace(/"/g, '&quot;')}">
                 <td>${index + 1}</td>
                 <td class="student-name">${player.nickname}</td>
                 <td class="success-rate">
@@ -986,6 +1030,16 @@
                 </td>
             </tr>
         `).join('');
+        
+        // Réattacher les event listeners
+        tbody.querySelectorAll('.clickable-row').forEach(row => {
+            row.addEventListener('click', function() {
+                const nickname = this.getAttribute('data-nickname');
+                if (nickname) {
+                    window.showPlayerRecap(nickname);
+                }
+            });
+        });
     }
     
     window.closeGradingTable = function(event) {
@@ -1001,11 +1055,192 @@
         if (modal) modal.remove();
     };
     
+    // ========================================
+    // RÉCAPITULATIF D'UN JOUEUR
+    // ========================================
+    
+    window.showPlayerRecap = function(nickname) {
+        // Trouver le joueur
+        const player = CONTROL_STATE.players.find(p => p.nickname === nickname);
+        if (!player) {
+            alert('Joueur introuvable');
+            return;
+        }
+        
+        const questions = CONTROL_STATE.quizData?.questions || [];
+        const answers = player.answers || {};
+        
+        // Créer la modale de récapitulatif (similaire au récap élève)
+        let html = `
+            <div class="modal-overlay" onclick="closePlayerRecap()">
+                <div class="modal-content recap-modal" onclick="event.stopPropagation()">
+                    <div class="modal-header">
+                        <h3>📊 Récapitulatif - ${nickname}</h3>
+                        <button class="modal-close" onclick="closePlayerRecap()">✕</button>
+                    </div>
+                    
+                    <div class="recap-content">
+                        <div class="recap-summary">
+                            <div class="recap-stat">
+                                <strong>Score total :</strong> ${player.score || 0} points
+                            </div>
+                            <div class="recap-stat">
+                                <strong>Questions répondues :</strong> ${Object.keys(answers).length} / ${questions.length}
+                            </div>
+                        </div>
+        `;
+        
+        // Parcourir toutes les questions
+        questions.forEach((q, index) => {
+            const answer = answers[index];
+            const isCorrect = answer ? (answer.correct || false) : false;
+            const hasAnswered = answer !== undefined;
+            
+            html += `
+                <div class="recap-question ${isCorrect ? 'correct' : (hasAnswered ? 'incorrect' : 'not-answered')}">
+                    <div class="recap-question-number">Question ${index + 1}</div>
+                    <div class="recap-question-text">${q.question}</div>
+            `;
+            
+            if (!hasAnswered) {
+                html += `<div class="recap-no-answer">❌ Non répondu</div>`;
+            } else {
+                // Parser la réponse si c'est une chaîne JSON
+                let parsedAnswer = answer;
+                if (answer.answer && typeof answer.answer === 'string') {
+                    try {
+                        const answerData = JSON.parse(answer.answer);
+                        parsedAnswer = { ...answer, ...answerData };
+                    } catch (e) {
+                        console.error('Erreur parsing réponse:', e);
+                    }
+                }
+                
+                // Afficher la réponse de l'élève
+                html += `<div class="recap-user-answer">`;
+                
+                if (isCorrect) {
+                    html += `<div class="recap-answer-label correct-label">✅ Réponse (correcte) :</div>`;
+                } else {
+                    html += `<div class="recap-answer-label wrong-label">❌ Réponse :</div>`;
+                }
+                
+                html += `<div class="recap-answer-value ${isCorrect ? 'correct-value' : 'wrong-value'}">`;
+                html += formatAnswerForRecap(q, parsedAnswer);
+                html += `</div></div>`;
+                
+                // Si incorrect, afficher la bonne réponse
+                if (!isCorrect) {
+                    html += `
+                        <div class="recap-correct-answer">
+                            <div class="recap-answer-label correct-label">✅ Bonne réponse :</div>
+                            <div class="recap-answer-value correct-value">
+                                ${formatCorrectAnswerForRecap(q)}
+                            </div>
+                        </div>
+                    `;
+                }
+                
+                // Afficher les points gagnés
+                const points = answer.points || 0;
+                if (points > 0) {
+                    html += `<div class="recap-points">🎯 +${points} points</div>`;
+                } else {
+                    html += `<div class="recap-points">0 point</div>`;
+                }
+            }
+            
+            html += `</div>`;
+        });
+        
+        html += `
+                    </div>
+                </div>
+            </div>
+        `;
+        
+        // Ajouter au body
+        const modalDiv = document.createElement('div');
+        modalDiv.id = 'player-recap-modal';
+        modalDiv.innerHTML = html;
+        document.body.appendChild(modalDiv);
+    };
+    
+    window.closePlayerRecap = function() {
+        const modal = document.getElementById('player-recap-modal');
+        if (modal) modal.remove();
+    };
+    
+    // Fonctions utilitaires pour formater les réponses
+    function formatAnswerForRecap(question, answer) {
+        switch(question.type) {
+            case 'multiple':
+            case 'truefalse':
+                if (answer.index !== undefined && question.answers[answer.index]) {
+                    return question.answers[answer.index].text;
+                }
+                return 'Réponse non valide';
+            
+            case 'order':
+                if (Array.isArray(answer.order)) {
+                    return answer.order.map((text, i) => 
+                        `<div>${i + 1}. ${text}</div>`
+                    ).join('');
+                }
+                return 'Réponse non valide';
+            
+            case 'freetext':
+                if (answer.freetext) {
+                    return answer.freetext;
+                }
+                return 'Réponse vide';
+            
+            default:
+                return 'Type inconnu';
+        }
+    }
+    
+    function formatCorrectAnswerForRecap(question) {
+        switch(question.type) {
+            case 'multiple':
+            case 'truefalse':
+                const correctAnswer = question.answers.find(a => a.correct);
+                if (correctAnswer) {
+                    return correctAnswer.text;
+                }
+                return 'Non disponible';
+            
+            case 'order':
+                // Trier par ordre
+                const sortedAnswers = [...question.answers].sort((a, b) => a.order - b.order);
+                return sortedAnswers.map((answer, i) => 
+                    `<div>${i + 1}. ${answer.text}</div>`
+                ).join('');
+            
+            case 'freetext':
+                let result = question.answers[0].text;
+                if (question.acceptedAnswers && question.acceptedAnswers.length > 0) {
+                    result += '<br><small>(Variantes acceptées : ' + question.acceptedAnswers.join(', ') + ')</small>';
+                }
+                return result;
+            
+            default:
+                return 'Non disponible';
+        }
+    }
+    
     window.exportGradingCSV = function() {
         const totalQuestions = CONTROL_STATE.quizData?.questions?.length || 0;
+        const questions = CONTROL_STATE.quizData?.questions || [];
         
-        // En-tête CSV
-        let csv = '#,Élève,Bonnes réponses,Total questions,Pourcentage,Score,Note /20\n';
+        // En-tête CSV avec colonnes pour chaque question
+        let csv = '#,Élève,Bonnes réponses,Total questions,Pourcentage,Score,Note /20';
+        
+        // Ajouter une colonne pour chaque question
+        questions.forEach((q, index) => {
+            csv += `,Q${index + 1} Réponse,Q${index + 1} Correct`;
+        });
+        csv += '\n';
         
         // Calculer les données
         const playersData = CONTROL_STATE.players.map(player => {
@@ -1022,7 +1257,8 @@
                 nickname: player.nickname,
                 correctAnswers: correctAnswers,
                 score: player.score || 0,
-                grade: grade
+                grade: grade,
+                answers: player.answers || {}
             };
         });
         
@@ -1037,7 +1273,57 @@
         // Ajouter les données
         playersData.forEach((player, index) => {
             const percent = totalQuestions > 0 ? Math.round((player.correctAnswers / totalQuestions) * 100) : 0;
-            csv += `${index + 1},"${player.nickname}",${player.correctAnswers},${totalQuestions},${percent}%,${player.score},${player.grade}\n`;
+            csv += `${index + 1},"${player.nickname}",${player.correctAnswers},${totalQuestions},${percent}%,${player.score},${player.grade}`;
+            
+            // Ajouter la réponse pour chaque question
+            questions.forEach((q, qIndex) => {
+                const answer = player.answers[qIndex];
+                let answerText = 'Non répondu';
+                let isCorrect = 'Non';
+                
+                if (answer) {
+                    isCorrect = answer.correct ? 'Oui' : 'Non';
+                    
+                    // Parser la réponse si nécessaire
+                    let parsedAnswer = answer;
+                    if (answer.answer && typeof answer.answer === 'string') {
+                        try {
+                            const answerData = JSON.parse(answer.answer);
+                            parsedAnswer = { ...answer, ...answerData };
+                        } catch (e) {
+                            // Garder l'answer original
+                        }
+                    }
+                    
+                    // Formater la réponse selon le type
+                    switch(q.type) {
+                        case 'multiple':
+                        case 'truefalse':
+                            if (parsedAnswer.index !== undefined && q.answers[parsedAnswer.index]) {
+                                answerText = q.answers[parsedAnswer.index].text;
+                            }
+                            break;
+                        
+                        case 'order':
+                            if (Array.isArray(parsedAnswer.order)) {
+                                answerText = parsedAnswer.order.join(' → ');
+                            }
+                            break;
+                        
+                        case 'freetext':
+                            if (parsedAnswer.freetext) {
+                                answerText = parsedAnswer.freetext;
+                            }
+                            break;
+                    }
+                }
+                
+                // Échapper les guillemets dans la réponse
+                answerText = answerText.replace(/"/g, '""');
+                csv += `,"${answerText}",${isCorrect}`;
+            });
+            
+            csv += '\n';
         });
         
         // Télécharger
@@ -1209,6 +1495,285 @@
         // Puis toutes les secondes
         controlPollingInterval = setInterval(poll, 1000);
     }
+    
+    // ========================================
+    // RESYNCHRONISATION D'URGENCE
+    // ========================================
+    
+    window.forceResync = async function() {
+        if (!confirm('🔄 Forcer la resynchronisation ?\n\nCela va forcer l\'affichage des résultats actuels pour tous les élèves.\nUtilisez ceci uniquement si les élèves sont bloqués.')) {
+            return;
+        }
+        
+        try {
+            // Marquer la question actuelle comme complétée
+            const response = await fetch('php/control.php', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: new URLSearchParams({
+                    action: 'force_question_complete',
+                    playCode: CONTROL_STATE.playCode,
+                    questionIndex: CONTROL_STATE.currentQuestion
+                })
+            });
+            
+            const result = await response.json();
+            
+            if (result.success) {
+                console.log('✅ Resynchronisation forcée avec succès');
+                alert('✅ Resynchronisation effectuée !\nLes élèves devraient maintenant voir les résultats.');
+            } else {
+                alert('❌ Erreur lors de la resynchronisation');
+            }
+            
+        } catch (error) {
+            console.error('❌ Erreur resynchronisation:', error);
+            alert('❌ Erreur lors de la resynchronisation');
+        }
+    };
+
+    // ========================================
+    // MODE PROJECTION
+    // ========================================
+    
+    let projectionWindow = null;
+    let projectionUpdateInterval = null;
+    
+    function openProjectionMode() {
+        // Créer l'URL avec les paramètres
+        const projectionURL = 'projection.html?code=' + CONTROL_STATE.playCode + '&total=' + APP_STATE.questions.length;
+        
+        // Ouvrir dans un nouvel onglet
+        projectionWindow = window.open(projectionURL, '_blank');
+        
+        if (!projectionWindow) {
+            alert('❌ Impossible d\'ouvrir la projection. Vérifiez que les popups ne sont pas bloquées.');
+            return;
+        }
+        
+        console.log('📽️ PROJECTION: Fenêtre ouverte, démarrage des mises à jour...');
+        
+        // Attendre que le document soit chargé avant de démarrer
+        setTimeout(() => {
+            startProjectionUpdates();
+            
+            // Première mise à jour immédiate
+            setTimeout(() => {
+                console.log('📽️ PROJECTION: Première mise à jour...');
+                updateProjectionWindow();
+            }, 100);
+        }, 1000);
+        
+        // Gérer la fermeture
+        const checkClosed = setInterval(() => {
+            if (projectionWindow.closed) {
+                clearInterval(checkClosed);
+                stopProjectionUpdates();
+            }
+        }, 1000);
+    }
+    
+    function startProjectionUpdates() {
+        console.log('📽️ PROJECTION: Démarrage du polling (toutes les 500ms)');
+        projectionUpdateInterval = setInterval(() => {
+            updateProjectionWindow();
+        }, 500);
+    }
+    
+    function stopProjectionUpdates() {
+        if (projectionUpdateInterval) {
+            clearInterval(projectionUpdateInterval);
+            projectionUpdateInterval = null;
+        }
+    }
+    
+    function updateProjectionWindow() {
+        if (!projectionWindow || projectionWindow.closed) {
+            stopProjectionUpdates();
+            return;
+        }
+        
+        // Récupérer l'état du jeu via le serveur
+        fetch('php/control.php?action=get_control_state&playCode=' + CONTROL_STATE.playCode)
+            .then(res => res.json())
+            .then(result => {
+                if (!result.success) {
+                    console.error('❌ PROJECTION: Erreur API', result);
+                    return;
+                }
+                
+                console.log('📽️ PROJECTION: État reçu', result);
+                
+                // Préparer les données de base
+                const data = {
+                    playCode: CONTROL_STATE.playCode,
+                    state: result.state,
+                    currentQuestion: result.currentQuestion,
+                    playersCount: result.players.length,
+                    participants: result.players,
+                    manualMode: CONTROL_STATE.manualMode,
+                    paused: result.paused || false,
+                    screen: 'waiting',
+                    questions: APP_STATE.questions
+                };
+                
+                // Détecter l'écran actuel selon l'état du serveur
+                if (result.state === 'ended') {
+                    console.log('📽️ PROJECTION: Affichage écran final');
+                    data.screen = 'final';
+                } else if (result.state === 'showing_top3' || result.state === 'showing_results') {
+                    console.log('📽️ PROJECTION: Affichage top3');
+                    data.screen = 'top3';
+                    // Trier les joueurs par score
+                    const sortedPlayers = result.players.slice().sort((a, b) => b.score - a.score);
+                    data.top3 = sortedPlayers.slice(0, 3);
+                } else if (result.state === 'playing' && result.currentQuestion >= 0) {
+                    console.log('📽️ PROJECTION: Affichage question', result.currentQuestion);
+                    data.screen = 'question';
+                } else {
+                    console.log('📽️ PROJECTION: En attente');
+                }
+                
+                // Envoyer à la fenêtre de projection
+                if (projectionWindow && projectionWindow.updateProjection) {
+                    projectionWindow.updateProjection(data);
+                } else {
+                    console.warn('⚠️ PROJECTION: updateProjection non disponible');
+                }
+            })
+            .catch(err => {
+                console.error('❌ PROJECTION: Erreur mise à jour:', err);
+            });
+    }
+    
+    // ========================================
+    // APERÇU DE LA QUESTION EN COURS
+    // ========================================
+    
+    function toggleQuestionPreview() {
+        const existingPreview = document.getElementById('question-preview-overlay');
+        
+        if (existingPreview) {
+            closeQuestionPreview();
+            return;
+        }
+        
+        // Récupérer la question actuelle
+        const currentQuestionIndex = CONTROL_STATE.currentQuestion;
+        if (currentQuestionIndex < 0 || !CONTROL_STATE.quizData?.questions) {
+            return;
+        }
+        
+        const question = CONTROL_STATE.quizData.questions[currentQuestionIndex];
+        if (!question) return;
+        
+        // Créer l'overlay d'aperçu
+        const overlay = document.createElement('div');
+        overlay.id = 'question-preview-overlay';
+        overlay.className = 'question-preview-overlay';
+        overlay.onclick = closeQuestionPreview;
+        
+        // Générer le contenu selon le type de question
+        let answersHTML = '';
+        
+        switch(question.type) {
+            case 'multiple':
+            case 'truefalse':
+                answersHTML = '<div class="preview-answers">';
+                question.answers.forEach((answer, index) => {
+                    const correctClass = answer.correct ? 'preview-correct' : '';
+                    answersHTML += `
+                        <div class="preview-answer ${correctClass}">
+                            <span class="preview-answer-label">${String.fromCharCode(65 + index)}</span>
+                            <span class="preview-answer-text">${answer.text}</span>
+                            ${answer.correct ? '<span class="preview-check">✓</span>' : ''}
+                        </div>
+                    `;
+                });
+                answersHTML += '</div>';
+                break;
+                
+            case 'order':
+                answersHTML = '<div class="preview-answers preview-order">';
+                answersHTML += '<p class="preview-instruction">Ordre correct :</p>';
+                question.answers
+                    .sort((a, b) => a.order - b.order)
+                    .forEach((answer, index) => {
+                        answersHTML += `
+                            <div class="preview-order-item">
+                                <span class="preview-order-num">${index + 1}.</span>
+                                <span>${answer.text}</span>
+                            </div>
+                        `;
+                    });
+                answersHTML += '</div>';
+                break;
+                
+            case 'freetext':
+                answersHTML = '<div class="preview-answers preview-freetext">';
+                answersHTML += '<p class="preview-instruction">Réponses acceptées :</p>';
+                answersHTML += `<div class="preview-freetext-main">✓ ${question.answers[0].text}</div>`;
+                if (question.acceptedAnswers && question.acceptedAnswers.length > 0) {
+                    question.acceptedAnswers.forEach(variant => {
+                        answersHTML += `<div class="preview-freetext-variant">✓ ${variant}</div>`;
+                    });
+                }
+                answersHTML += `<p class="preview-case-info">${question.caseSensitive ? '⚠️ Sensible à la casse' : 'ℹ️ Insensible à la casse'}</p>`;
+                answersHTML += '</div>';
+                break;
+        }
+        
+        overlay.innerHTML = `
+            <div class="question-preview-card" onclick="event.stopPropagation()">
+                <div class="preview-header">
+                    <h3>👁️ Aperçu de la question ${currentQuestionIndex + 1}</h3>
+                    <button class="preview-close" onclick="closeQuestionPreview()">×</button>
+                </div>
+                <div class="preview-body">
+                    ${question.imageUrl ? `
+                        <div class="preview-image">
+                            <img src="${question.imageUrl}" alt="Image de la question">
+                        </div>
+                    ` : ''}
+                    <div class="preview-question">
+                        ${question.question}
+                    </div>
+                    ${answersHTML}
+                    <div class="preview-meta">
+                        <span class="preview-time">⏱️ ${question.time}s</span>
+                        <span class="preview-type">${getQuestionTypeLabel(question.type)}</span>
+                    </div>
+                </div>
+            </div>
+        `;
+        
+        document.body.appendChild(overlay);
+        
+        // Animation d'entrée
+        setTimeout(() => {
+            overlay.classList.add('active');
+        }, 10);
+    }
+    
+    function closeQuestionPreview() {
+        const overlay = document.getElementById('question-preview-overlay');
+        if (overlay) {
+            overlay.classList.remove('active');
+            setTimeout(() => {
+                overlay.remove();
+            }, 300);
+        }
+    }
+    
+    function getQuestionTypeLabel(type) {
+        const labels = {
+            'multiple': '☑️ Choix multiple',
+            'truefalse': '✓✗ Vrai/Faux',
+            'order': '🔢 Ordre',
+            'freetext': '✍️ Réponse libre'
+        };
+        return labels[type] || type;
+    }
 
     // ========================================
     // EXPORT VERS GLOBAL
@@ -1225,5 +1790,8 @@
     window.showGradingTable = showGradingTable;
     window.toggleManualMode = toggleManualMode;
     window.toggleShowTop3 = toggleShowTop3;
+    window.toggleQuestionPreview = toggleQuestionPreview;
+    window.closeQuestionPreview = closeQuestionPreview;
+    window.openProjectionMode = openProjectionMode;
 
 })();

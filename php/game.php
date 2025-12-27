@@ -273,6 +273,19 @@ function submitAnswer() {
             $afterScores[] = "{$p['nickname']}:" . ($p['score'] ?? 0);
         }
         error_log("Q$questionIndex|CALC|" . implode("|", $afterScores));
+    } else {
+        // Log pour debugging : qui n'a pas encore répondu ?
+        $notAnswered = [];
+        foreach ($session['players'] as $player) {
+            if ($player['connected'] && (time() - $player['lastPing'] < 30)) {
+                if (!isset($player['answers'][$questionIndex])) {
+                    $notAnswered[] = $player['nickname'];
+                }
+            }
+        }
+        if (count($notAnswered) > 0) {
+            error_log("SUBMIT: En attente de: " . implode(", ", $notAnswered));
+        }
     }
     
     saveSession($playCode, $session);
@@ -636,6 +649,7 @@ function calculateQuestionResults(&$session, $questionIndex) {
     $result = [
         'questionIndex' => $questionIndex,
         'correctAnswer' => $correctAnswer,
+        'question' => $question, // Ajouter la question complète
         'top3' => $top3,
         'allPlayers' => $playersCopy,
         'manualMode' => $manualMode,
@@ -663,11 +677,57 @@ function calculateFinalResults($session) {
     // La partie a commencé si currentQuestion >= 0 (au moins la première question lancée)
     $gameStarted = isset($session['currentQuestion']) && $session['currentQuestion'] >= 0;
     
+    // Préparer toutes les questions avec leurs réponses correctes
+    $questionsWithAnswers = [];
+    if (isset($session['quizData']['questions'])) {
+        foreach ($session['quizData']['questions'] as $index => $question) {
+            // Déterminer la bonne réponse selon le type
+            $correctAnswer = null;
+            switch ($question['type']) {
+                case 'multiple':
+                case 'truefalse':
+                    foreach ($question['answers'] as $answerIndex => $answer) {
+                        if ($answer['correct']) {
+                            $correctAnswer = [
+                                'index' => $answerIndex,
+                                'text' => $answer['text']
+                            ];
+                            break;
+                        }
+                    }
+                    break;
+                
+                case 'order':
+                    $correctAnswer = array_map(function($a) { 
+                        return $a['text']; 
+                    }, $question['answers']);
+                    break;
+                    
+                case 'freetext':
+                    $correctAnswer = [
+                        'text' => $question['answers'][0]['text'],
+                        'acceptedAnswers' => $question['acceptedAnswers'] ?? []
+                    ];
+                    break;
+            }
+            
+            $questionsWithAnswers[] = [
+                'index' => $index,
+                'type' => $question['type'],
+                'question' => $question['question'],
+                'imageUrl' => $question['imageUrl'] ?? null,
+                'answers' => $question['answers'],
+                'correctAnswer' => $correctAnswer
+            ];
+        }
+    }
+    
     return [
         'players' => $players,
         'totalQuestions' => $session['currentQuestion'],
         'gameStarted' => $gameStarted,
-        'currentQuestion' => $session['currentQuestion']
+        'currentQuestion' => $session['currentQuestion'],
+        'questionsWithAnswers' => $questionsWithAnswers
     ];
 }
 

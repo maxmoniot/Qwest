@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qwest - Mode Projection</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: white;
+            overflow: hidden;
+        }
+        
+        .projection-container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            padding: 20px;
+        }
+        
+        .projection-controls {
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            padding: 15px 20px;
+            border-radius: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .projection-controls-left {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .projection-code {
+            font-size: 20px;
+            font-weight: 700;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 10px 20px;
+            border-radius: 8px;
+        }
+        
+        .projection-info {
+            display: flex;
+            gap: 15px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        
+        .projection-info-item {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 8px 16px;
+            border-radius: 6px;
+        }
+        
+        .projection-btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .projection-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+        
+        .projection-btn.btn-success {
+            background: rgba(76, 175, 80, 0.8);
+            border-color: rgba(76, 175, 80, 1);
+        }
+        
+        .projection-btn.btn-danger {
+            background: rgba(244, 67, 54, 0.8);
+            border-color: rgba(244, 67, 54, 1);
+        }
+        
+        .projection-btn:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+        }
+        
+        .projection-content {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: auto;
+        }
+        
+        .projection-waiting {
+            text-align: center;
+        }
+        
+        .projection-waiting h1 {
+            font-size: 72px;
+            margin-bottom: 20px;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+        
+        .projection-waiting p {
+            font-size: 32px;
+            opacity: 0.9;
+        }
+        
+        .projection-question-screen {
+            background: white;
+            color: #212121;
+            border-radius: 24px;
+            padding: 40px;
+            width: 90%;
+            max-width: 1400px;
+            max-height: 85vh;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        
+        .projection-question-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #e0e0e0;
+            flex-shrink: 0;
+        }
+        
+        .projection-question-number {
+            font-size: 20px;
+            font-weight: 600;
+            color: #757575;
+        }
+        
+        .projection-timer {
+            font-size: 28px;
+            font-weight: 700;
+            color: #2196F3;
+        }
+        
+        .projection-question-image {
+            margin-bottom: 20px;
+            border-radius: 16px;
+            overflow: hidden;
+            flex-shrink: 0;
+            max-height: 250px;
+        }
+        
+        .projection-question-image img {
+            width: 100%;
+            height: 100%;
+            max-height: 250px;
+            object-fit: contain;
+        }
+        
+        .projection-question-text {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            flex-shrink: 0;
+        }
+        
+        .projection-answers {
+            display: grid;
+            gap: 15px;
+            flex: 1;
+            min-height: 0;
+            align-content: start;
+        }
+        
+        .projection-answers.grid-2 {
+            grid-template-columns: 1fr 1fr;
+        }
+        
+        .projection-answers.grid-4 {
+            grid-template-columns: 1fr 1fr;
+        }
+        
+        .projection-answer {
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 16px;
+            font-size: 22px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            border: 4px solid #e0e0e0;
+        }
+        
+        .projection-answer-label {
+            width: 45px;
+            height: 45px;
+            background: #2196F3;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+        
+        .projection-order-instruction,
+        .projection-freetext-instruction {
+            font-size: 28px;
+            color: #757575;
+            margin-bottom: 20px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+        
+        .projection-top3 {
+            text-align: center;
+            color: white;
+        }
+        
+        .projection-top3 h1 {
+            font-size: 64px;
+            margin-bottom: 40px;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+        
+        .projection-podium {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            gap: 30px;
+            margin-top: 60px;
+        }
+        
+        .projection-podium-place {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 30px;
+            min-width: 250px;
+            text-align: center;
+        }
+        
+        .projection-podium-place.first {
+            order: 2;
+            transform: scale(1.1);
+            background: rgba(255, 215, 0, 0.3);
+        }
+        
+        .projection-podium-place.second {
+            order: 1;
+        }
+        
+        .projection-podium-place.third {
+            order: 3;
+        }
+        
+        .projection-podium-medal {
+            font-size: 80px;
+            margin-bottom: 20px;
+        }
+        
+        .projection-podium-name {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        .projection-podium-score {
+            font-size: 48px;
+            font-weight: 700;
+            color: #FFD700;
+        }
+        
+        .projection-final {
+            text-align: center;
+            color: white;
+        }
+        
+        .projection-final h1 {
+            font-size: 72px;
+            margin-bottom: 20px;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+        
+        .projection-final p {
+            font-size: 36px;
+            opacity: 0.9;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .projection-question-screen {
+            animation: fadeIn 0.5s ease;
+        }
+        
+        /* Modale de confirmation */
+        .projection-modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(4px);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 10000;
+        }
+        
+        .projection-modal-overlay.active {
+            display: flex;
+        }
+        
+        .projection-modal {
+            background: white;
+            color: #212121;
+            border-radius: 16px;
+            padding: 40px;
+            max-width: 500px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+        }
+        
+        .projection-modal-icon {
+            font-size: 64px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .projection-modal-title {
+            font-size: 28px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        
+        .projection-modal-message {
+            font-size: 18px;
+            text-align: center;
+            color: #616161;
+            margin-bottom: 30px;
+        }
+        
+        .projection-modal-buttons {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .projection-modal-btn {
+            flex: 1;
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .projection-modal-btn-secondary {
+            background: #e0e0e0;
+            color: #212121;
+        }
+        
+        .projection-modal-btn-secondary:hover {
+            background: #bdbdbd;
+        }
+        
+        .projection-modal-btn-primary {
+            background: #f44336;
+            color: white;
+        }
+        
+        .projection-modal-btn-primary:hover {
+            background: #d32f2f;
+        }
+        
+        /* Modale liste des participants */
+        .projection-participants-modal {
+            max-width: 600px;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+        
+        .projection-participants-list {
+            display: grid;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        
+        .projection-participant-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            background: #f5f5f5;
+            border-radius: 8px;
+            border-left: 4px solid #2196F3;
+        }
+        
+        .projection-participant-item.disconnected {
+            opacity: 0.5;
+            border-left-color: #f44336;
+        }
+        
+        .projection-participant-name {
+            font-size: 18px;
+            font-weight: 600;
+        }
+        
+        .projection-participant-status {
+            font-size: 14px;
+            color: #616161;
+        }
+    </style>
+</head>
+<body>
+    <div class="projection-container">
+        <div class="projection-controls">
+            <div class="projection-controls-left">
+                <div class="projection-code">Code : <span id="proj-code">Chargement...</span></div>
+                <div class="projection-info">
+                    <div class="projection-info-item" onclick="showParticipantsModal()" style="cursor: pointer;" title="Cliquez pour voir la liste">
+                        👥 <span id="proj-players">0</span> connectés
+                    </div>
+                    <div class="projection-info-item">📊 Q <span id="proj-progress">0/0</span></div>
+                </div>
+                <button class="projection-btn btn-success" onclick="projStartGame()" id="proj-btn-start">▶️ Lancer la partie</button>
+                <button class="projection-btn" onclick="projPauseGame()" id="proj-btn-pause" disabled>⏸️ Pause</button>
+                <button class="projection-btn" onclick="projNextQuestion()" id="proj-btn-next" disabled>⏭️ Question suivante</button>
+                <button class="projection-btn" onclick="projEndGame()" id="proj-btn-end" disabled>⏹️ Terminer</button>
+            </div>
+            <button class="projection-btn btn-danger" onclick="closeProjection()">❌ Quitter la projection</button>
+        </div>
+        <div class="projection-content" id="proj-content">
+            <div class="projection-waiting">
+                <h1>⏳ En attente</h1>
+                <p>Cliquez sur "Lancer la partie" pour commencer</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modale de confirmation -->
+    <div class="projection-modal-overlay" id="confirm-modal">
+        <div class="projection-modal">
+            <div class="projection-modal-icon">⚠️</div>
+            <h3 class="projection-modal-title">Terminer la partie ?</h3>
+            <p class="projection-modal-message">Voulez-vous vraiment terminer la partie maintenant ? Les résultats finaux seront envoyés aux élèves.</p>
+            <div class="projection-modal-buttons">
+                <button class="projection-modal-btn projection-modal-btn-secondary" onclick="closeConfirmModal()">Annuler</button>
+                <button class="projection-modal-btn projection-modal-btn-primary" onclick="confirmEndGame()">Confirmer</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modale liste des participants -->
+    <div class="projection-modal-overlay" id="participants-modal">
+        <div class="projection-modal projection-participants-modal">
+            <div class="projection-modal-icon">👥</div>
+            <h3 class="projection-modal-title">Participants connectés</h3>
+            <div class="projection-participants-list" id="participants-list">
+                <!-- Liste générée dynamiquement -->
+            </div>
+            <div class="projection-modal-buttons" style="margin-top: 30px;">
+                <button class="projection-modal-btn projection-modal-btn-secondary" onclick="closeParticipantsModal()" style="width: 100%;">Fermer</button>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Récupérer les infos depuis l'URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const playCode = urlParams.get('code');
+        const totalQuestions = parseInt(urlParams.get('total')) || 0;
+        
+        console.log('📽️ PROJECTION: Démarrage avec code=' + playCode + ', total=' + totalQuestions);
+        
+        // Afficher le code immédiatement
+        document.getElementById('proj-code').textContent = playCode || 'N/A';
+        
+        // État de la projection
+        let projectionState = {
+            currentScreen: 'waiting',
+            questionData: null,
+            top3Data: null,
+            questions: [],
+            lastScreenKey: null,
+            participants: []
+        };
+        
+        // Fonctions de contrôle
+        function projStartGame() {
+            window.opener.startGame();
+        }
+        
+        function projPauseGame() {
+            window.opener.pauseGame();
+        }
+        
+        function projNextQuestion() {
+            window.opener.nextQuestion();
+        }
+        
+        function projEndGame() {
+            // Afficher la modale de confirmation locale
+            document.getElementById('confirm-modal').classList.add('active');
+        }
+        
+        function closeConfirmModal() {
+            document.getElementById('confirm-modal').classList.remove('active');
+        }
+        
+        function confirmEndGame() {
+            // Fermer la modale locale
+            closeConfirmModal();
+            
+            // Appeler la fonction dans l'onglet parent qui va gérer la vraie fin
+            if (window.opener && window.opener.executeEndGameFromProjection) {
+                window.opener.executeEndGameFromProjection();
+            }
+        }
+        
+        function showParticipantsModal() {
+            const modal = document.getElementById('participants-modal');
+            const list = document.getElementById('participants-list');
+            
+            // Générer la liste
+            let html = '';
+            if (projectionState.participants.length === 0) {
+                html = '<p style="text-align: center; color: #616161; padding: 20px;">Aucun participant pour le moment</p>';
+            } else {
+                projectionState.participants.forEach(participant => {
+                    const isConnected = participant.connected;
+                    html += '<div class="projection-participant-item ' + (isConnected ? '' : 'disconnected') + '">';
+                    html += '<div>';
+                    html += '<div class="projection-participant-name">' + participant.nickname + '</div>';
+                    html += '<div class="projection-participant-status">';
+                    html += isConnected ? '🟢 Connecté' : '🔴 Déconnecté';
+                    html += ' • ' + participant.score + ' pts';
+                    html += '</div>';
+                    html += '</div>';
+                    html += '</div>';
+                });
+            }
+            
+            list.innerHTML = html;
+            modal.classList.add('active');
+        }
+        
+        function closeParticipantsModal() {
+            document.getElementById('participants-modal').classList.remove('active');
+        }
+        
+        function closeProjection() {
+            window.close();
+        }
+        
+        // Fonction de mise à jour appelée depuis la fenêtre parent
+        window.updateProjection = function(data) {
+            console.log('📽️ PROJECTION: Données reçues', data);
+            
+            const content = document.getElementById('proj-content');
+            const btnStart = document.getElementById('proj-btn-start');
+            const btnPause = document.getElementById('proj-btn-pause');
+            const btnNext = document.getElementById('proj-btn-next');
+            const btnEnd = document.getElementById('proj-btn-end');
+            const playersCount = document.getElementById('proj-players');
+            const progress = document.getElementById('proj-progress');
+            
+            // Stocker les questions
+            if (data.questions && data.questions.length > 0) {
+                projectionState.questions = data.questions;
+            }
+            
+            // Stocker la liste des participants
+            if (data.participants) {
+                projectionState.participants = data.participants;
+            }
+            
+            // Mise à jour des infos (sans clignotement)
+            if (playersCount.textContent !== String(data.playersCount || 0)) {
+                playersCount.textContent = data.playersCount || 0;
+            }
+            const newProgress = (data.currentQuestion + 1) + '/' + totalQuestions;
+            if (progress.textContent !== newProgress) {
+                progress.textContent = newProgress;
+            }
+            
+            // Mise à jour des boutons
+            if (data.state === 'waiting') {
+                btnStart.disabled = false;
+                btnPause.disabled = true;
+                btnNext.disabled = true;
+                btnEnd.disabled = true;
+            } else {
+                btnStart.disabled = true;
+                btnPause.disabled = false;
+                btnNext.disabled = data.manualMode ? false : true;
+                btnEnd.disabled = false;
+                
+                // Mettre à jour le texte du bouton pause/reprendre
+                if (data.paused) {
+                    btnPause.innerHTML = '▶️ Reprendre';
+                } else {
+                    btnPause.innerHTML = '⏸️ Pause';
+                }
+            }
+            
+            console.log('📽️ PROJECTION: Affichage écran -', data.screen);
+            
+            // Ne mettre à jour le contenu QUE si l'écran ou la question a changé
+            const screenKey = data.screen + '-' + (data.currentQuestion || 0);
+            if (projectionState.lastScreenKey !== screenKey) {
+                projectionState.lastScreenKey = screenKey;
+                
+                // Affichage selon le type
+                if (data.screen === 'question' && data.currentQuestion >= 0) {
+                    const question = projectionState.questions[data.currentQuestion];
+                    if (question) {
+                        console.log('📽️ PROJECTION: Rendu question', question);
+                        content.innerHTML = renderQuestion(question, data.currentQuestion, totalQuestions);
+                    }
+                } else if (data.screen === 'top3' && data.top3) {
+                    console.log('📽️ PROJECTION: Rendu top3', data.top3);
+                    content.innerHTML = renderTop3(data.top3);
+                } else if (data.screen === 'final') {
+                    console.log('📽️ PROJECTION: Rendu final');
+                    content.innerHTML = renderFinal();
+                } else {
+                    console.log('📽️ PROJECTION: En attente');
+                    content.innerHTML = '<div class="projection-waiting"><h1>⏳ En attente</h1><p>Cliquez sur "Lancer la partie" pour commencer</p></div>';
+                }
+            }
+        };
+        
+        function renderQuestion(question, index, total) {
+            let answersHTML = '';
+            let answersClass = 'grid-4';
+            
+            if (question.type === 'truefalse') {
+                answersClass = 'grid-2';
+            }
+            
+            if (question.type === 'multiple' || question.type === 'truefalse') {
+                answersHTML = '<div class="projection-answers ' + answersClass + '">';
+                question.answers.forEach((answer, i) => {
+                    answersHTML += '<div class="projection-answer">';
+                    answersHTML += '<div class="projection-answer-label">' + String.fromCharCode(65 + i) + '</div>';
+                    answersHTML += '<div>' + answer.text + '</div>';
+                    answersHTML += '</div>';
+                });
+                answersHTML += '</div>';
+            } else if (question.type === 'order') {
+                answersHTML = '<p class="projection-order-instruction">Remettre les éléments dans le bon ordre</p>';
+                answersHTML += '<div class="projection-answers">';
+                question.answers.forEach((answer, i) => {
+                    answersHTML += '<div class="projection-answer">';
+                    answersHTML += '<div class="projection-answer-label">' + (i + 1) + '</div>';
+                    answersHTML += '<div>' + answer.text + '</div>';
+                    answersHTML += '</div>';
+                });
+                answersHTML += '</div>';
+            } else if (question.type === 'freetext') {
+                answersHTML = '<p class="projection-freetext-instruction">Les élèves doivent saisir leur réponse</p>';
+            }
+            
+            let html = '<div class="projection-question-screen">';
+            html += '<div class="projection-question-header">';
+            html += '<div class="projection-question-number">Question ' + (index + 1) + ' / ' + total + '</div>';
+            html += '<div class="projection-timer">⏱️ ' + question.time + 's</div>';
+            html += '</div>';
+            
+            if (question.imageUrl) {
+                html += '<div class="projection-question-image">';
+                html += '<img src="' + question.imageUrl + '" alt="Image de la question">';
+                html += '</div>';
+            }
+            
+            html += '<div class="projection-question-text">' + question.question + '</div>';
+            html += answersHTML;
+            html += '</div>';
+            
+            return html;
+        }
+        
+        function renderTop3(players) {
+            if (!players || players.length === 0) {
+                return '<div class="projection-waiting"><h1>📊 Résultats</h1><p>Aucun score pour le moment</p></div>';
+            }
+            
+            const medals = ['🥇', '🥈', '🥉'];
+            const classes = ['first', 'second', 'third'];
+            
+            let html = '<div class="projection-top3"><h1>🏆 Top 3</h1><div class="projection-podium">';
+            
+            players.slice(0, 3).forEach((player, index) => {
+                html += '<div class="projection-podium-place ' + classes[index] + '">';
+                html += '<div class="projection-podium-medal">' + medals[index] + '</div>';
+                html += '<div class="projection-podium-name">' + player.nickname + '</div>';
+                html += '<div class="projection-podium-score">' + player.score + ' pts</div>';
+                html += '</div>';
+            });
+            
+            html += '</div></div>';
+            return html;
+        }
+        
+        function renderFinal() {
+            return '<div class="projection-final"><h1>🎉 Partie terminée !</h1><p>Bravo à tous les participants !</p></div>';
+        }
+    </script>
+</body>
+</html>
