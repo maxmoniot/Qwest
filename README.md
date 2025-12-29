@@ -320,7 +320,7 @@ Vérifiez que les popups ne sont pas bloquées par votre navigateur.
 
 **Créé pour l'éducation**
 
-Application développée pour un usage pédagogique en collège.
+Application développée par Max et codée par Claude.ai pour un usage pédagogique en collège.
 - Design mobile-first et accessible
 - Sans publicité ni tracking
 - Open source et gratuit
@@ -328,5 +328,5 @@ Application développée pour un usage pédagogique en collège.
 
 ---
 
-**Version actuelle** : 1.0  
-**Dernière mise à jour** : Décembre 2024
+**Version actuelle** : 1.7  
+**Dernière mise à jour** : Décembre 2025
