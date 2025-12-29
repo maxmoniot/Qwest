@@ -7,6 +7,23 @@
    ======================================== */
 
 @media (max-width: 768px) {
+    /* Bouton de fermeture adapté à la hauteur du code en mobile */
+    .close-btn {
+        width: 32px;
+        height: 32px;
+        font-size: 18px;
+        position: relative;
+        z-index: 10;
+        box-shadow: 0 2px 8px rgba(244, 67, 54, 0.4);
+    }
+    
+    /* Ajustement spécifique pour le control-modal */
+    #control-modal .modal-header .close-btn {
+        width: 28px;
+        height: 28px;
+        font-size: 16px;
+    }
+    
     /* Typography */
     .app-title {
         font-size: 48px;
@@ -472,44 +489,99 @@
         margin: 0;
     }
     
-    /* ===== 1) HEADER : Bouton "Je participe aussi" à la ligne ===== */
+    /* ===== 1) HEADER : Titre + Code + Croix sur la même ligne ===== */
     #control-modal .modal-header {
+        display: flex;
         flex-wrap: wrap;
         padding: var(--space-sm);
+        padding-top: var(--space-md); /* Petite marge en haut */
         gap: var(--space-xs);
+        position: relative;
+        align-items: center;
     }
     
-    /* Titre et code sur la première ligne */
+    /* Titre plus gros et visible */
     #control-modal .modal-header h3 {
         font-size: 16px;
+        font-weight: 700;
         flex: 1 1 auto;
         margin: 0;
+        order: 1;
+        min-width: 0;
     }
     
+    /* Code et Croix à droite sur la même ligne */
     #control-modal .modal-header-actions {
         flex: 0 0 auto;
         margin: 0;
+        order: 2;
     }
     
-    /* Bouton "Je participe aussi" à la ligne suivante */
+    #control-modal .modal-header .close-btn {
+        position: relative !important;
+        top: auto !important;
+        right: auto !important;
+        width: 32px !important;
+        height: 32px !important;
+        min-width: 32px !important;
+        max-width: 32px !important;
+        min-height: 32px !important;
+        max-height: 32px !important;
+        font-size: 18px !important;
+        flex-shrink: 0;
+        margin: 0 0 0 var(--space-xs) !important;
+        padding: 0 !important;
+        order: 3;
+        line-height: 32px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    
+    /* Code plus gros et plus visible */
+    #control-modal .control-code-header .code-info {
+        padding: 6px 12px !important;
+        font-size: 15px !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        height: 32px !important;
+        box-sizing: border-box !important;
+        border: 2px solid rgba(33, 150, 243, 0.5) !important;
+        border-radius: 8px !important;
+    }
+    
+    #control-modal .control-code-header .code-label {
+        font-size: 13px;
+        font-weight: 600;
+    }
+    
+    #control-modal .control-code-header .code-value {
+        font-size: 16px;
+        font-weight: 700;
+    }
+    
+    /* Bouton "Je participe aussi" à la ligne suivante sur toute la largeur */
     #control-modal .modal-header button.btn-secondary {
-        flex-basis: 100%;
+        flex: 1 1 100%;
         width: 100%;
         margin: var(--space-xs) 0 0 0 !important;
         font-size: 13px;
-        order: 3;
-    }
-    
-    /* Bouton fermer toujours en haut à droite */
-    #control-modal .modal-header .close-btn {
-        position: absolute;
-        top: var(--space-sm);
-        right: var(--space-sm);
+        order: 4;
     }
     
     /* Sections */
     .control-section {
         padding: var(--space-sm);
+    }
+    
+    /* Supprimer le padding-top du modal-body pour éviter l'espace vide */
+    #control-modal .modal-body {
+        padding-top: 0 !important;
+    }
+    
+    /* Enlever la marge au-dessus de la première section */
+    #control-modal .modal-body .control-interface > .control-section:first-child {
+        margin-top: 0 !important;
     }
     
     .control-section h4,
