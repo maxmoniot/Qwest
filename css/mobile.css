@@ -35,14 +35,34 @@
     .header-left,
     .header-right {
         width: 100%;
+        flex-wrap: nowrap; /* Forcer les boutons sur une seule ligne */
+        gap: 4px; /* Petit espace entre les boutons */
     }
     
-    .header-right {
-        justify-content: stretch;
-    }
-    
+    /* Règle générale pour tous les boutons */
     .header-right button {
-        flex: 1;
+        min-width: 0;
+        padding: var(--space-sm);
+        font-size: 14px;
+    }
+    
+    /* Boutons ? et ❤️ : largeur MINIMALE fixe */
+    .header-right .btn-help,
+    .header-right .btn-thanks {
+        flex: 0 0 44px !important; /* Largeur fixe de 44px seulement */
+        width: 44px !important;
+        min-width: 44px !important;
+        max-width: 44px !important;
+        padding: var(--space-xs) 0 !important;
+        font-size: 16px !important;
+    }
+    
+    /* Boutons Sauvegarder et Charger : GRANDS, prennent tout l'espace restant */
+    .header-right .btn-primary {
+        flex: 1 1 0 !important; /* Grandissent équitablement pour remplir */
+        min-width: 0 !important;
+        width: auto !important;
+        padding: var(--space-sm) var(--space-xs) !important;
     }
     
     /* Toolbar */
@@ -429,6 +449,201 @@
     /* Feedback tactile */
     button:active {
         transform: scale(0.95);
+    }
+}
+
+/* ========================================
+   POPUP PILOTER - MOBILE
+   ======================================== */
+
+@media (max-width: 768px) {
+    /* Masquer texte desktop, afficher texte mobile */
+    .btn-text-desktop {
+        display: none;
+    }
+    
+    .btn-text-mobile {
+        display: inline;
+    }
+    
+    /* Modal plus petite */
+    #control-modal .modal-content {
+        max-width: 100%;
+        margin: 0;
+    }
+    
+    /* ===== 1) HEADER : Bouton "Je participe aussi" à la ligne ===== */
+    #control-modal .modal-header {
+        flex-wrap: wrap;
+        padding: var(--space-sm);
+        gap: var(--space-xs);
+    }
+    
+    /* Titre et code sur la première ligne */
+    #control-modal .modal-header h3 {
+        font-size: 16px;
+        flex: 1 1 auto;
+        margin: 0;
+    }
+    
+    #control-modal .modal-header-actions {
+        flex: 0 0 auto;
+        margin: 0;
+    }
+    
+    /* Bouton "Je participe aussi" à la ligne suivante */
+    #control-modal .modal-header button.btn-secondary {
+        flex-basis: 100%;
+        width: 100%;
+        margin: var(--space-xs) 0 0 0 !important;
+        font-size: 13px;
+        order: 3;
+    }
+    
+    /* Bouton fermer toujours en haut à droite */
+    #control-modal .modal-header .close-btn {
+        position: absolute;
+        top: var(--space-sm);
+        right: var(--space-sm);
+    }
+    
+    /* Sections */
+    .control-section {
+        padding: var(--space-sm);
+    }
+    
+    .control-section h4,
+    .section-title {
+        font-size: 14px !important;
+    }
+    
+    /* ===== 2) PARTICIPANTS : Boutons "actualiser" et "resynchroniser" à la ligne ===== */
+    .section-header {
+        flex-wrap: wrap;
+        gap: var(--space-xs);
+    }
+    
+    /* Titre de section sur toute la largeur */
+    .section-header h4,
+    .section-header .section-title {
+        flex-basis: 100%;
+        width: 100%;
+        margin-bottom: 0 !important;
+    }
+    
+    /* En mobile : masquer les boutons du section-header (desktop) */
+    .section-header-buttons-desktop {
+        display: none !important;
+    }
+    
+    /* En mobile : afficher les boutons du section-content (mobile) */
+    .section-header-buttons-mobile {
+        display: flex !important;
+        gap: var(--space-xs);
+        margin-bottom: var(--space-md);
+        width: 100%;
+    }
+    
+    .section-header-buttons-mobile button {
+        flex: 1 1 0;
+        min-width: 0;
+        font-size: 11px;
+        padding: var(--space-xs) 4px;
+        white-space: nowrap;
+    }
+    
+    /* Bouton Projection pleine largeur */
+    .section-header > button.btn-projection,
+    .section-header > button.btn-preview {
+        width: 100%;
+        margin-top: var(--space-xs);
+        font-size: 12px;
+        flex-basis: 100%;
+    }
+    
+    /* Liste joueurs */
+    .control-players-list {
+        max-height: 180px;
+    }
+    
+    .control-player-item {
+        font-size: 12px;
+        padding: var(--space-xs);
+    }
+    
+    /* ===== 3) CONTRÔLES : Nouvelle disposition des boutons ===== */
+    .control-buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-xs);
+    }
+    
+    /* Première ligne : Lancer (renommé) et Terminer côte à côte */
+    #btn-start-game {
+        grid-column: 1;
+        grid-row: 1;
+        font-size: 12px !important;
+        padding: var(--space-sm) 2px !important;
+        white-space: normal;
+        min-height: 48px;
+    }
+    
+    #btn-end-game {
+        grid-column: 2;
+        grid-row: 1;
+        font-size: 12px !important;
+        padding: var(--space-sm) 2px !important;
+        white-space: normal;
+        min-height: 48px;
+    }
+    
+    /* Deuxième ligne : Suivante et Pause côte à côte */
+    #btn-next-question {
+        grid-column: 1;
+        grid-row: 2;
+        font-size: 11px !important;
+        padding: var(--space-sm) 2px !important;
+        white-space: normal;
+        min-height: 48px;
+        line-height: 1.2;
+    }
+    
+    #btn-pause-game {
+        grid-column: 2;
+        grid-row: 2;
+        font-size: 11px !important;
+        padding: var(--space-sm) 2px !important;
+        white-space: normal;
+        min-height: 48px;
+        line-height: 1.2;
+    }
+    
+    /* Troisième ligne : Tableau de suivi complet sur toute la largeur */
+    .control-buttons .btn-info {
+        grid-column: 1 / -1;
+        grid-row: 3;
+        width: 100%;
+        font-size: 12px !important;
+        padding: var(--space-md) var(--space-sm) !important;
+        white-space: normal;
+        min-height: 48px;
+    }
+    
+    /* Changer texte "Lancer la partie" en "Lancer" en mobile */
+    #btn-start-game {
+        font-size: 12px !important;
+    }
+    
+    #btn-start-game::before {
+        content: "▶️ Lancer";
+    }
+    
+    #btn-start-game {
+        font-size: 0 !important;
+    }
+    
+    #btn-start-game::before {
+        font-size: 12px;
     }
 }
 

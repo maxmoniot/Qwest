@@ -72,7 +72,7 @@
     // COPIE DANS LE PRESSE-PAPIER
     // ========================================
     
-    function copyToClipboard(text) {
+    function copyToClipboard(text, sourceElement) {
         // Créer un élément temporaire
         const temp = document.createElement('textarea');
         temp.value = text;
@@ -86,6 +86,30 @@
         
         try {
             document.execCommand('copy');
+            
+            // Feedback visuel
+            if (sourceElement) {
+                const originalBg = sourceElement.style.backgroundColor;
+                const originalTransition = sourceElement.style.transition;
+                
+                // Animation flash vert
+                sourceElement.style.transition = 'background-color 0.3s ease';
+                sourceElement.style.backgroundColor = '#4CAF50';
+                
+                // Afficher "✓ Copié !"
+                const originalText = sourceElement.innerHTML;
+                sourceElement.innerHTML = '✓ Copié !';
+                
+                // Retour à la normale après 1 seconde
+                setTimeout(() => {
+                    sourceElement.style.backgroundColor = originalBg;
+                    sourceElement.innerHTML = originalText;
+                    setTimeout(() => {
+                        sourceElement.style.transition = originalTransition;
+                    }, 300);
+                }, 1000);
+            }
+            
             return true;
         } catch (err) {
             return false;

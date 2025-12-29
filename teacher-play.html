@@ -270,6 +270,88 @@
             border-color: var(--primary-dark, #5568d3);
             transform: scale(1.05);
         }
+        
+        /* ========================================
+           MOBILE - Optimisation teacher-controls
+           ======================================== */
+        
+        @media (max-width: 768px) {
+            .teacher-controls {
+                padding: 10px;
+                margin: 10px;
+                flex-direction: column;
+                gap: 6px;
+                position: relative;
+            }
+            
+            .teacher-controls-left {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 6px;
+                width: 100%;
+            }
+            
+            /* Ligne 1 : Code sur toute la largeur */
+            .teacher-code {
+                grid-column: 1 / -1;
+                font-size: 14px;
+                padding: 6px 12px;
+            }
+            
+            /* Ligne 2 : Info connectés + progression */
+            .teacher-info {
+                grid-column: 1 / -1;
+                display: flex;
+                gap: 6px;
+                font-size: 14px;
+            }
+            
+            .teacher-info-item {
+                flex: 1;
+                padding: 6px 8px;
+                font-size: 12px;
+                text-align: center;
+            }
+            
+            /* Ligne 3 : Lancer sur toute la largeur */
+            #teacher-btn-start {
+                grid-column: 1 / -1;
+                font-size: 12px;
+                padding: 8px 4px;
+            }
+            
+            /* Ligne 4 : Question suivante + Pause côte à côte */
+            #teacher-btn-next {
+                grid-column: 1;
+                font-size: 11px;
+                padding: 8px 2px;
+                white-space: normal;
+                line-height: 1.2;
+            }
+            
+            #teacher-btn-pause {
+                grid-column: 2;
+                font-size: 11px;
+                padding: 8px 2px;
+            }
+            
+            /* Ligne 5 : Terminer sur toute la largeur */
+            #teacher-btn-end {
+                grid-column: 1 / -1;
+                font-size: 12px;
+                padding: 8px 4px;
+            }
+            
+            /* Bouton Quitter en position absolue en haut à droite */
+            .teacher-btn.btn-danger {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                padding: 6px 10px;
+                font-size: 11px;
+                z-index: 10;
+            }
+        }
     </style>
 </head>
 <body>
@@ -285,8 +367,8 @@
                     <div class="teacher-info-item">📊 Q <span id="teacher-progress">0/0</span></div>
                 </div>
                 <button class="teacher-btn btn-success" onclick="teacherStartGame()" id="teacher-btn-start">▶️ Lancer la partie</button>
-                <button class="teacher-btn" onclick="teacherPauseGame()" id="teacher-btn-pause" disabled>⏸️ Pause</button>
                 <button class="teacher-btn" onclick="teacherNextQuestion()" id="teacher-btn-next" disabled>⏭️ Question suivante</button>
+                <button class="teacher-btn" onclick="teacherPauseGame()" id="teacher-btn-pause" disabled>⏸️ Pause</button>
                 <button class="teacher-btn" onclick="teacherEndGame()" id="teacher-btn-end" disabled>⏹️ Terminer</button>
             </div>
             <button class="teacher-btn btn-danger" onclick="window.close()">❌ Quitter</button>

@@ -1,5 +1,5 @@
 {
-    "playCode": "2SMNAL",
+    "playCode": "TKUWVM",
     "quizData": {
         "questions": [
             {
@@ -93,12 +93,12 @@
     "currentQuestion": 0,
     "players": [
         {
-            "nickname": "\ud83d\udc08\u200d\u2b1b Chat noir",
+            "nickname": "\ud83e\udda6 Loutre",
             "score": 0,
             "answers": [],
-            "connected": false,
-            "lastPing": 1766969020,
-            "joinedAt": 1766969005
+            "connected": true,
+            "lastPing": 1767034282,
+            "joinedAt": 1767034271
         }
     ],
     "questions": [
@@ -186,12 +186,15 @@
         }
     ],
     "usedAnimals": [
-        "\ud83e\udda1 Blaireau",
-        "\ud83d\udc08\u200d\u2b1b Chat noir",
-        "\ud83d\udc33 Cachalot"
+        "\ud83e\udda6 Loutre",
+        "\ud83e\udd98 Wallaby",
+        "\ud83d\udc19 Pieuvre",
+        "\ud83e\udd86 Canard",
+        "\ud83e\udeb3 Cafard",
+        "\ud83e\udd99 Lama"
     ],
-    "createdAt": 1766969002,
-    "startTime": 1766969013,
-    "questionStartTime": 1766969017,
+    "createdAt": 1767034193,
+    "startTime": 1767034273,
+    "questionStartTime": 1767034277,
     "questionCompleted": false
 }

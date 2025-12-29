@@ -296,10 +296,7 @@
         // Afficher le code dans le header de la modale
         const codeDisplay = document.getElementById('control-code-display');
         codeDisplay.innerHTML = `
-            <button class="btn-copy-header" onclick="copyToClipboard('${CONTROL_STATE.playCode}')">
-                📋 Copier
-            </button>
-            <div class="code-info">
+            <div class="code-info" onclick="copyToClipboard('${CONTROL_STATE.playCode}', this)" style="cursor: pointer; padding: var(--space-sm); border-radius: var(--radius-md); transition: background-color 0.3s;" title="Cliquer pour copier">
                 <span class="code-label">Code :</span>
                 <span class="code-value">${CONTROL_STATE.playCode}</span>
             </div>
@@ -308,114 +305,143 @@
         panel.innerHTML = `
             <div class="control-interface">
                 <!-- Options de jeu -->
-                <div class="control-section">
-                    <h4>⚙️ Options de jeu</h4>
-                    <div class="control-options">
-                        <label class="control-checkbox">
-                            <input type="checkbox" 
-                                   id="manual-mode-check" 
-                                   ${CONTROL_STATE.manualMode ? 'checked' : ''}
-                                   onchange="toggleManualMode()">
-                            <span>Mode manuel (avancer manuellement)</span>
-                        </label>
-                        
-                        <label class="control-checkbox">
-                            <input type="checkbox" 
-                                   id="show-top3-check" 
-                                   ${CONTROL_STATE.showTop3 ? 'checked' : ''}
-                                   onchange="toggleShowTop3()">
-                            <span>Afficher le Top 3 après chaque question</span>
-                        </label>
-                        
-                        <label class="control-checkbox control-checkbox-inline">
-                            <input type="checkbox" 
-                                   id="custom-time-check">
-                            <div class="checkbox-inline-content">
-                                <span>Forcer temps par question à :</span>
-                                <input type="number" 
-                                       id="custom-time-input" 
-                                       class="time-input-inline"
-                                       value="30" 
-                                       min="5" 
-                                       max="300">
-                                <span class="time-unit">s</span>
-                            </div>
-                        </label>
-                        
-                        <label class="control-checkbox control-checkbox-inline">
-                            <input type="checkbox" 
-                                   id="limit-questions-check">
-                            <div class="checkbox-inline-content">
-                                <span>Limiter à</span>
-                                <input type="number" 
-                                       id="limit-questions-input" 
-                                       class="time-input-inline"
-                                       value="10" 
-                                       min="1" 
-                                       max="${APP_STATE.questions.length}">
-                                <span class="time-unit">questions <span class="option-hint">(aléatoires)</span></span>
-                            </div>
-                        </label>
+                <div class="control-section collapsible collapsed">
+                    <h4 class="section-title" onclick="toggleSection(this)">
+                        <span class="collapse-icon">▶</span>
+                        ⚙️ Options de jeu
+                    </h4>
+                    <div class="section-content">
+                        <div class="control-options">
+                            <label class="control-checkbox">
+                                <input type="checkbox" 
+                                       id="manual-mode-check" 
+                                       ${CONTROL_STATE.manualMode ? 'checked' : ''}
+                                       onchange="toggleManualMode()">
+                                <span>Mode manuel (avancer manuellement)</span>
+                            </label>
+                            
+                            <label class="control-checkbox">
+                                <input type="checkbox" 
+                                       id="show-top3-check" 
+                                       ${CONTROL_STATE.showTop3 ? 'checked' : ''}
+                                       onchange="toggleShowTop3()">
+                                <span>Afficher le Top 3 après chaque question</span>
+                            </label>
+                            
+                            <label class="control-checkbox control-checkbox-inline">
+                                <input type="checkbox" 
+                                       id="custom-time-check">
+                                <div class="checkbox-inline-content">
+                                    <span>Forcer temps par question à :</span>
+                                    <input type="number" 
+                                           id="custom-time-input" 
+                                           class="time-input-inline"
+                                           value="30" 
+                                           min="5" 
+                                           max="300">
+                                    <span class="time-unit">s</span>
+                                </div>
+                            </label>
+                            
+                            <label class="control-checkbox control-checkbox-inline">
+                                <input type="checkbox" 
+                                       id="limit-questions-check">
+                                <div class="checkbox-inline-content">
+                                    <span>Limiter à</span>
+                                    <input type="number" 
+                                           id="limit-questions-input" 
+                                           class="time-input-inline"
+                                           value="10" 
+                                           min="1" 
+                                           max="${APP_STATE.questions.length}">
+                                    <span class="time-unit">questions <span class="option-hint">(aléatoires)</span></span>
+                                </div>
+                            </label>
+                        </div>
                     </div>
                 </div>
                 
                 <!-- Participants -->
-                <div class="control-section">
+                <div class="control-section collapsible collapsed">
                     <div class="section-header">
-                        <h4>👥 Participants connectés : <span id="control-player-count">0</span></h4>
-                        <div class="section-header-buttons">
+                        <h4 class="section-title" onclick="toggleSection(this)">
+                            <span class="collapse-icon">▶</span>
+                            👥 Participants connectés : <span id="control-player-count">0</span>
+                        </h4>
+                        <!-- Boutons visibles en desktop même si replié -->
+                        <div class="section-header-buttons section-header-buttons-desktop">
                             <button class="btn-small" onclick="refreshPlayers()">🔄 Actualiser</button>
                             <button id="btn-resync" class="btn-small" onclick="forceResync()" disabled title="Force les élèves à se resynchroniser en cas de blocage">
                                 🔄 Resynchroniser
                             </button>
                         </div>
                     </div>
-                    <div id="control-players-list" class="control-players-list">
-                        <div class="empty-list">Aucun joueur pour le moment</div>
+                    <div class="section-content">
+                        <!-- Boutons visibles en mobile seulement si déplié -->
+                        <div class="section-header-buttons section-header-buttons-mobile">
+                            <button class="btn-small" onclick="refreshPlayers()">🔄 Actualiser</button>
+                            <button id="btn-resync-mobile" class="btn-small" onclick="forceResync()" disabled title="Force les élèves à se resynchroniser en cas de blocage">
+                                🔄 Resynchroniser
+                            </button>
+                        </div>
+                        <div id="control-players-list" class="control-players-list">
+                            <div class="empty-list">Aucun joueur pour le moment</div>
+                        </div>
                     </div>
                 </div>
                 
                 <!-- Contrôles -->
-                <div class="control-section">
+                <div class="control-section collapsible">
                     <div class="section-header">
-                        <h4>🎛️ Contrôles</h4>
+                        <h4 class="section-title" onclick="toggleSection(this)">
+                            <span class="collapse-icon">▶</span>
+                            🎛️ Contrôles
+                        </h4>
                         <button id="btn-projection" class="btn-small btn-projection" onclick="openProjectionMode()" disabled title="Mode projection pour afficher aux élèves">
                             📽️ Projection
                         </button>
                     </div>
-                    <div class="control-buttons">
-                        <button id="btn-start-game" class="btn-control btn-success" onclick="startGame()">
-                            ▶️ Lancer la partie
-                        </button>
-                        <button id="btn-pause-game" class="btn-control btn-warning" onclick="pauseGame()" disabled>
-                            ⏸️ Pause
-                        </button>
-                        <button id="btn-next-question" class="btn-control btn-primary" onclick="nextQuestion()" disabled>
-                            ⏭️ Question suivante
-                        </button>
-                        <button id="btn-end-game" class="btn-control btn-danger" onclick="endGame()" disabled>
-                            ⏹️ Terminer
-                        </button>
-                        <button class="btn-control btn-info" onclick="showGradingTable()" style="grid-column: span 2;">
-                            📊 Tableau de suivi complet
-                        </button>
+                    <div class="section-content">
+                        <div class="control-buttons">
+                            <button id="btn-start-game" class="btn-control btn-success" onclick="startGame()">
+                                ▶️ Lancer la partie
+                            </button>
+                            <button id="btn-end-game" class="btn-control btn-danger" onclick="endGame()" disabled>
+                                ⏹️ Terminer
+                            </button>
+                            <button id="btn-next-question" class="btn-control btn-primary" onclick="nextQuestion()" disabled>
+                                <span class="btn-text-desktop">⏭️ Question suivante</span>
+                                <span class="btn-text-mobile">⏭️ Suivante</span>
+                            </button>
+                            <button id="btn-pause-game" class="btn-control btn-warning" onclick="pauseGame()" disabled>
+                                ⏸️ Pause
+                            </button>
+                            <button class="btn-control btn-info" onclick="showGradingTable()">
+                                📊 Tableau de suivi complet
+                            </button>
+                        </div>
                     </div>
                 </div>
                 
                 <!-- Progress -->
-                <div class="control-section">
+                <div class="control-section collapsible">
                     <div class="section-header">
-                        <h4>📊 Progression</h4>
+                        <h4 class="section-title" onclick="toggleSection(this)">
+                            <span class="collapse-icon">▶</span>
+                            📊 Progression
+                        </h4>
                         <button id="btn-preview-question" class="btn-small btn-preview" onclick="toggleQuestionPreview()" disabled title="Aperçu de la question en cours">
                             👁️ Aperçu question en cours
                         </button>
                     </div>
-                    <div class="question-progress-bar">
-                        <div class="progress-fill" id="question-progress" style="width: 0%"></div>
+                    <div class="section-content">
+                        <div class="question-progress-bar">
+                            <div class="progress-fill" id="question-progress" style="width: 0%"></div>
+                        </div>
+                        <p class="progress-text">
+                            Question <span id="current-q-num">0</span> / <span id="total-q-num">${APP_STATE.questions.length}</span>
+                        </p>
                     </div>
-                    <p class="progress-text">
-                        Question <span id="current-q-num">0</span> / <span id="total-q-num">${APP_STATE.questions.length}</span>
-                    </p>
                 </div>
             </div>
         `;
@@ -427,6 +453,11 @@
     function toggleManualMode() {
         const checkbox = document.getElementById('manual-mode-check');
         CONTROL_STATE.manualMode = checkbox.checked;
+    }
+    
+    function toggleSection(titleElement) {
+        const section = titleElement.closest('.control-section');
+        section.classList.toggle('collapsed');
     }
 
     function toggleShowTop3() {
@@ -702,9 +733,11 @@
                 if (btnEnd) btnEnd.disabled = false;
                 if (btnProjection) btnProjection.disabled = false;
                 
-                // Activer le bouton de resynchronisation
+                // Activer les boutons de resynchronisation (desktop et mobile)
                 const btnResync = document.getElementById('btn-resync');
+                const btnResyncMobile = document.getElementById('btn-resync-mobile');
                 if (btnResync) btnResync.disabled = false;
+                if (btnResyncMobile) btnResyncMobile.disabled = false;
                 
                 // Désactiver les options
                 if (checkManual) checkManual.disabled = true;
@@ -1904,6 +1937,7 @@
     window.showGradingTable = showGradingTable;
     window.toggleManualMode = toggleManualMode;
     window.toggleShowTop3 = toggleShowTop3;
+    window.toggleSection = toggleSection;
     window.toggleQuestionPreview = toggleQuestionPreview;
     window.closeQuestionPreview = closeQuestionPreview;
     window.openProjectionMode = openProjectionMode;

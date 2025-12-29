@@ -185,11 +185,79 @@
     border: 2px solid var(--gray-200);
 }
 
+/* Système de collapse */
+.control-section.collapsible .section-title {
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.2s;
+    outline: none; /* Enlever le trait bleu au clic */
+    border: none; /* Pas de bordure */
+    text-decoration: none; /* Pas de soulignement */
+    border-bottom: none !important; /* Forcer pas de bordure en bas */
+}
+
+.control-section.collapsible .section-title:hover {
+    color: var(--primary);
+}
+
+.control-section.collapsible .section-title:focus {
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+.collapse-icon {
+    display: inline-block;
+    transition: transform 0.3s ease;
+    font-size: 12px;
+}
+
+/* Section OUVERTE = triangle vers le bas */
+.control-section.collapsible:not(.collapsed) .collapse-icon {
+    transform: rotate(90deg);
+}
+
+/* Section REPLIÉE = triangle vers la droite (pas de rotation) */
+.control-section.collapsible.collapsed .collapse-icon {
+    transform: rotate(0deg);
+}
+
+.control-section .section-content {
+    max-height: 2000px;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    opacity: 1;
+}
+
+.control-section.collapsed .section-content {
+    max-height: 0;
+    opacity: 0;
+}
+
+.control-section.collapsed h4 {
+    margin-bottom: 0;
+}
+
 .section-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: var(--space-md);
+    border: none;
+    border-bottom: none !important;
+}
+
+/* En desktop : boutons dans section-header visibles, ceux dans section-content cachés */
+.section-header-buttons-desktop {
+    display: flex;
+    gap: var(--space-sm);
+}
+
+.section-header-buttons-mobile {
+    display: none !important;
 }
 
 .section-header-buttons {
@@ -285,6 +353,11 @@
     gap: var(--space-md);
 }
 
+/* Tableau de suivi complet sur toute la largeur */
+.control-buttons .btn-info {
+    grid-column: 1 / -1;
+}
+
 .btn-control {
     padding: var(--space-md) var(--space-lg);
     border: none;
@@ -343,6 +416,15 @@
 
 .btn-control.btn-info:hover:not(:disabled) {
     background: #0284C7;
+}
+
+/* Gestion texte desktop/mobile sur les boutons */
+.btn-text-mobile {
+    display: none;
+}
+
+.btn-text-desktop {
+    display: inline;
 }
 
 /* ========================================
