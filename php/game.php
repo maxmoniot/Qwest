@@ -428,18 +428,25 @@ function streamEvents() {
             static $lastQuestionSent = -1;
             static $lastResultsSent = -1;
             
-            if ($currentQ !== $lastQuestionSent && isset($session['quizData']['questions'][$currentQ])) {
-                $question = $session['quizData']['questions'][$currentQ];
+            // Utiliser $session['questions'] si disponible (questions limitées), sinon quizData
+            $questions = $session['questions'] ?? $session['quizData']['questions'] ?? [];
+            
+            if ($currentQ !== $lastQuestionSent && isset($questions[$currentQ])) {
+                $question = $questions[$currentQ];
                 
                 // Utiliser customTime si défini, sinon le temps de la question
                 $questionTime = isset($session['customTime']) ? $session['customTime'] : $question['time'];
                 $question['time'] = $questionTime;
                 
+                // Calculer le nombre total de questions
+                $totalQuestions = count($questions);
+                
                 echo "event: question\n";
                 echo "data: " . json_encode([
                     'index' => $currentQ,
                     'question' => $question,
-                    'startTime' => $session['questionStartTime'] ?? time()
+                    'startTime' => $session['questionStartTime'] ?? time(),
+                    'totalQuestions' => $totalQuestions
                 ]) . "\n\n";
                 flush();
                 
@@ -646,6 +653,10 @@ function calculateQuestionResults(&$session, $questionIndex) {
     error_log("RESULTS: manualMode dans session = " . ($manualMode ? 'true' : 'false'));
     error_log("RESULTS: Type de manualMode = " . gettype($manualMode));
     
+    // Déterminer si c'est la dernière question
+    $totalQuestions = count($session['questions'] ?? $session['quizData']['questions'] ?? []);
+    $isLastQuestion = ($questionIndex + 1) >= $totalQuestions;
+    
     $result = [
         'questionIndex' => $questionIndex,
         'correctAnswer' => $correctAnswer,
@@ -654,7 +665,9 @@ function calculateQuestionResults(&$session, $questionIndex) {
         'allPlayers' => $playersCopy,
         'manualMode' => $manualMode,
         'questionStats' => $questionStats,
-        'top5Fastest' => $top5Fastest
+        'top5Fastest' => $top5Fastest,
+        'isLastQuestion' => $isLastQuestion,
+        'totalQuestions' => $totalQuestions
     ];
     
     error_log("RESULTS: Envoi au client manualMode = " . json_encode($result['manualMode']));
@@ -816,13 +829,18 @@ function getGameState() {
     if ($session['state'] === 'playing' && isset($session['currentQuestion'])) {
         $qIndex = $session['currentQuestion'];
         error_log("GET_STATE: Question active détectée, index=$qIndex");
-        if (isset($session['questions'][$qIndex])) {
+        
+        // Utiliser $session['questions'] si disponible (questions limitées), sinon quizData
+        $questions = $session['questions'] ?? $session['quizData']['questions'] ?? [];
+        
+        if (isset($questions[$qIndex])) {
             $response['question'] = [
                 'index' => $qIndex,
-                'data' => $session['questions'][$qIndex],
-                'startTime' => $session['questionStartTime'] ?? time()
+                'data' => $questions[$qIndex],
+                'startTime' => $session['questionStartTime'] ?? time(),
+                'totalQuestions' => count($questions)
             ];
-            error_log("GET_STATE: Question incluse dans réponse");
+            error_log("GET_STATE: Question incluse dans réponse (totalQuestions=" . count($questions) . ")");
         } else {
             error_log("GET_STATE: ERREUR - question index $qIndex n'existe pas dans session");
         }

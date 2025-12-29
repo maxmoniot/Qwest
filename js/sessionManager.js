@@ -260,6 +260,15 @@
         console.log('📩 ÉLÈVE: Reçu événement question', questionData);
         console.log('📩 Stack trace:', new Error().stack);
         
+        // Mettre à jour totalQuestions si fourni
+        if (questionData.totalQuestions) {
+            if (!SESSION_STATE.quizData) {
+                SESSION_STATE.quizData = {};
+            }
+            SESSION_STATE.quizData.totalQuestions = questionData.totalQuestions;
+            console.log('📊 ÉLÈVE: Total questions mis à jour:', questionData.totalQuestions);
+        }
+        
         // Le format peut varier selon la source (SSE vs polling)
         // Format polling: {index, data, startTime}
         // Format attendu par displayQuestion: {index, question, startTime}
@@ -267,13 +276,14 @@
         let formattedData;
         
         if (questionData.data) {
-            // Format polling: adapter la structure MAIS conserver startTime
+            // Format polling: adapter la structure MAIS conserver startTime ET totalQuestions
             formattedData = {
                 index: questionData.index,
                 question: questionData.data,
-                startTime: questionData.startTime // IMPORTANT : conserver le timestamp du serveur
+                startTime: questionData.startTime, // IMPORTANT : conserver le timestamp du serveur
+                totalQuestions: questionData.totalQuestions // IMPORTANT : transférer le total
             };
-            console.log('🔄 ÉLÈVE: Format adapté de polling vers display (startTime conservé)');
+            console.log('🔄 ÉLÈVE: Format adapté de polling vers display (startTime et totalQuestions conservés)');
         } else {
             // Format déjà correct
             formattedData = questionData;

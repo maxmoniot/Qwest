@@ -1,0 +1,194 @@
+{
+    "playCode": "QKLBG3",
+    "quizData": {
+        "questions": [
+            {
+                "id": "mjm5vzxa41ix993wv",
+                "type": "multiple",
+                "question": "cocher le a",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "a",
+                        "correct": true
+                    },
+                    {
+                        "text": "b",
+                        "correct": false
+                    },
+                    {
+                        "text": "c",
+                        "correct": false
+                    },
+                    {
+                        "text": "d",
+                        "correct": false
+                    }
+                ],
+                "imageUrl": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/1\/18\/Ornamental_Alphabet_-_16th_Century.svg"
+            },
+            {
+                "id": "mjm5x2pgiw5khosxp",
+                "type": "truefalse",
+                "question": "la r\u00e9ponse est vraie",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ],
+                "imageUrl": "https:\/\/www.dr-spitalier.com\/wp-content\/uploads\/2017\/02\/VRAI-FAUX.jpg"
+            },
+            {
+                "id": "mjm5xkyoq2ctn9ddj",
+                "type": "order",
+                "question": ">",
+                "time": 40,
+                "answers": [
+                    {
+                        "text": "1",
+                        "order": 1
+                    },
+                    {
+                        "text": "2",
+                        "order": 2
+                    },
+                    {
+                        "text": "3",
+                        "order": 3
+                    },
+                    {
+                        "text": "4",
+                        "order": 4
+                    }
+                ],
+                "imageUrl": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/2\/28\/2018_01_Croissant_IMG_0685.JPG"
+            },
+            {
+                "id": "mjm5y9p1onbz71mxj",
+                "type": "freetext",
+                "question": "La r\u00e9ponse est libre",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Libre",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [],
+                "imageUrl": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/a\/a7\/Eug%C3%A8ne_Delacroix_-_La_libert%C3%A9_guidant_le_peuple.jpg"
+            }
+        ],
+        "name": "Mon Quiz"
+    },
+    "manualMode": false,
+    "showTop3": true,
+    "state": "waiting",
+    "currentQuestion": -1,
+    "players": [
+        {
+            "nickname": "\ud83d\udc25 Caneton",
+            "score": 0,
+            "answers": [],
+            "connected": false,
+            "lastPing": 1766968822,
+            "joinedAt": 1766968813
+        }
+    ],
+    "questions": [
+        {
+            "id": "mjm5vzxa41ix993wv",
+            "type": "multiple",
+            "question": "cocher le a",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "a",
+                    "correct": true
+                },
+                {
+                    "text": "b",
+                    "correct": false
+                },
+                {
+                    "text": "c",
+                    "correct": false
+                },
+                {
+                    "text": "d",
+                    "correct": false
+                }
+            ],
+            "imageUrl": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/1\/18\/Ornamental_Alphabet_-_16th_Century.svg"
+        },
+        {
+            "id": "mjm5x2pgiw5khosxp",
+            "type": "truefalse",
+            "question": "la r\u00e9ponse est vraie",
+            "time": 20,
+            "answers": [
+                {
+                    "text": "Vrai",
+                    "correct": true
+                },
+                {
+                    "text": "Faux",
+                    "correct": false
+                }
+            ],
+            "imageUrl": "https:\/\/www.dr-spitalier.com\/wp-content\/uploads\/2017\/02\/VRAI-FAUX.jpg"
+        },
+        {
+            "id": "mjm5xkyoq2ctn9ddj",
+            "type": "order",
+            "question": ">",
+            "time": 40,
+            "answers": [
+                {
+                    "text": "1",
+                    "order": 1
+                },
+                {
+                    "text": "2",
+                    "order": 2
+                },
+                {
+                    "text": "3",
+                    "order": 3
+                },
+                {
+                    "text": "4",
+                    "order": 4
+                }
+            ],
+            "imageUrl": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/2\/28\/2018_01_Croissant_IMG_0685.JPG"
+        },
+        {
+            "id": "mjm5y9p1onbz71mxj",
+            "type": "freetext",
+            "question": "La r\u00e9ponse est libre",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "Libre",
+                    "correct": true
+                }
+            ],
+            "caseSensitive": false,
+            "acceptedAnswers": [],
+            "imageUrl": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/a\/a7\/Eug%C3%A8ne_Delacroix_-_La_libert%C3%A9_guidant_le_peuple.jpg"
+        }
+    ],
+    "usedAnimals": [
+        "\ud83d\udc25 Caneton",
+        "\ud83d\udc01 Souris",
+        "\ud83e\udda2 Cygne"
+    ],
+    "createdAt": 1766968803
+}

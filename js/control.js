@@ -137,6 +137,42 @@
         modal.classList.add('active');
     }
 
+    function openTeacherPlay() {
+        if (!CONTROL_STATE.playCode) {
+            alert('⚠️ Aucune partie en cours');
+            return;
+        }
+        
+        // Ouvrir teacher-play.html dans un nouvel onglet avec le code
+        teacherWindow = window.open(`teacher-play.html?code=${CONTROL_STATE.playCode}`, '_blank');
+        
+        if (!teacherWindow) {
+            alert('❌ Impossible d\'ouvrir la fenêtre. Vérifiez que les popups ne sont pas bloquées.');
+        } else {
+            console.log('👨‍🏫 TEACHER: Fenêtre ouverte');
+            
+            // Démarrer les updates si pas déjà en cours (au cas où projection n'est pas ouverte)
+            if (!projectionUpdateInterval) {
+                console.log('👨‍🏫 TEACHER: Démarrage des mises à jour...');
+                setTimeout(() => {
+                    startProjectionUpdates();
+                    setTimeout(() => {
+                        updateProjectionWindow();
+                    }, 100);
+                }, 1000);
+            }
+            
+            // Gérer la fermeture
+            const checkClosed = setInterval(() => {
+                if (teacherWindow.closed) {
+                    clearInterval(checkClosed);
+                    teacherWindow = null;
+                    console.log('👨‍🏫 TEACHER: Fenêtre fermée');
+                }
+            }, 1000);
+        }
+    }
+
     async function closeControlPanel() {
         // Fermer la popup IMMÉDIATEMENT pour ne pas bloquer l'interface
         document.getElementById('control-modal').classList.remove('active');
@@ -209,7 +245,7 @@
         
         console.log('🟢 PROF: Création de session côté serveur', {
             playCode: CONTROL_STATE.playCode,
-            quizData: CONTROL_STATE.quizData,
+            questionsCount: APP_STATE.questions.length,
             manualMode: CONTROL_STATE.manualMode,
             showTop3: CONTROL_STATE.showTop3
         });
@@ -280,7 +316,7 @@
                                    id="manual-mode-check" 
                                    ${CONTROL_STATE.manualMode ? 'checked' : ''}
                                    onchange="toggleManualMode()">
-                            <span>Mode manuel (avancer les questions manuellement)</span>
+                            <span>Mode manuel (avancer manuellement)</span>
                         </label>
                         
                         <label class="control-checkbox">
@@ -294,7 +330,7 @@
                         <label class="control-checkbox control-checkbox-inline">
                             <input type="checkbox" 
                                    id="custom-time-check">
-                            <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                            <div class="checkbox-inline-content">
                                 <span>Forcer temps par question à :</span>
                                 <input type="number" 
                                        id="custom-time-input" 
@@ -302,7 +338,22 @@
                                        value="30" 
                                        min="5" 
                                        max="300">
-                                <span class="time-unit">secondes</span>
+                                <span class="time-unit">s</span>
+                            </div>
+                        </label>
+                        
+                        <label class="control-checkbox control-checkbox-inline">
+                            <input type="checkbox" 
+                                   id="limit-questions-check">
+                            <div class="checkbox-inline-content">
+                                <span>Limiter à</span>
+                                <input type="number" 
+                                       id="limit-questions-input" 
+                                       class="time-input-inline"
+                                       value="10" 
+                                       min="1" 
+                                       max="${APP_STATE.questions.length}">
+                                <span class="time-unit">questions <span class="option-hint">(aléatoires)</span></span>
                             </div>
                         </label>
                     </div>
@@ -369,10 +420,7 @@
             </div>
         `;
         
-        // Mettre à jour le total de questions
-        document.getElementById('total-q-num').textContent = APP_STATE.questions.length;
-        
-        // Créer la session côté serveur
+        // Créer la session côté serveur (qui va aussi mettre à jour le nombre de questions)
         createSessionOnServer();
     }
 
@@ -572,6 +620,8 @@
             const checkTop3 = document.getElementById('show-top3-check');
             const checkCustomTime = document.getElementById('custom-time-check');
             const inputCustomTime = document.getElementById('custom-time-input');
+            const checkLimitQuestions = document.getElementById('limit-questions-check');
+            const limitQuestionsInput = document.getElementById('limit-questions-input');
             
             CONTROL_STATE.manualMode = checkManual ? checkManual.checked : false;
             CONTROL_STATE.showTop3 = checkTop3 ? checkTop3.checked : true;
@@ -585,7 +635,41 @@
                 console.log('⏱️ PROF: Temps personnalisé désactivé');
             }
             
-            console.log('🎮 PROF: Lancement avec manualMode =', CONTROL_STATE.manualMode);
+            // Gérer la limitation des questions MAINTENANT (au lancement)
+            let questionsToUse = APP_STATE.questions;
+            
+            if (checkLimitQuestions && checkLimitQuestions.checked) {
+                const limit = parseInt(limitQuestionsInput.value) || 10;
+                if (limit < APP_STATE.questions.length) {
+                    // Mélanger et prendre les N premières
+                    const shuffled = [...APP_STATE.questions].sort(() => Math.random() - 0.5);
+                    questionsToUse = shuffled.slice(0, limit);
+                    console.log(`🎲 PROF: ${limit} questions sélectionnées aléatoirement sur ${APP_STATE.questions.length}`);
+                }
+            }
+            
+            // Mettre à jour quizData avec les questions sélectionnées
+            CONTROL_STATE.quizData.questions = questionsToUse;
+            
+            // Mettre à jour le nombre de questions affiché
+            const totalQNum = document.getElementById('total-q-num');
+            if (totalQNum) {
+                totalQNum.textContent = questionsToUse.length;
+            }
+            
+            // Mettre à jour les questions sur le serveur SANS toucher aux joueurs
+            await fetch('php/control.php', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: new URLSearchParams({
+                    action: 'update_questions',
+                    playCode: CONTROL_STATE.playCode,
+                    questions: JSON.stringify(questionsToUse),
+                    quizData: JSON.stringify(CONTROL_STATE.quizData)
+                })
+            });
+            
+            console.log('🎮 PROF: Lancement avec', questionsToUse.length, 'questions, manualMode =', CONTROL_STATE.manualMode);
             
             const response = await fetch('php/control.php', {
                 method: 'POST',
@@ -609,6 +693,9 @@
                 const checkManual = document.getElementById('manual-mode-check');
                 const checkTop3 = document.getElementById('show-top3-check');
                 const checkCustomTime = document.getElementById('custom-time-check');
+                const checkLimitQuestions = document.getElementById('limit-questions-check');
+                const inputLimitQuestions = document.getElementById('limit-questions-input');
+                const inputCustomTime = document.getElementById('custom-time-input');
                 
                 if (btnStart) btnStart.disabled = true;
                 if (btnPause) btnPause.disabled = false;
@@ -623,6 +710,9 @@
                 if (checkManual) checkManual.disabled = true;
                 if (checkTop3) checkTop3.disabled = true;
                 if (checkCustomTime) checkCustomTime.disabled = true;
+                if (checkLimitQuestions) checkLimitQuestions.disabled = true;
+                if (inputLimitQuestions) inputLimitQuestions.disabled = true;
+                if (inputCustomTime) inputCustomTime.disabled = true;
                 
                 // Lancer la première question (toujours, même en mode manuel)
                 setTimeout(() => {
@@ -679,8 +769,12 @@
         
         CONTROL_STATE.currentQuestion++;
         
-        if (CONTROL_STATE.currentQuestion >= APP_STATE.questions.length) {
+        // Utiliser le nombre de questions réellement jouées (limitées)
+        const totalQuestions = CONTROL_STATE.quizData?.questions?.length || APP_STATE.questions.length;
+        
+        if (CONTROL_STATE.currentQuestion >= totalQuestions) {
             // Fin naturelle de la partie - pas de confirmation
+            console.log('🏁 PROF: Fin de partie atteinte (question', CONTROL_STATE.currentQuestion, '>=', totalQuestions, ')');
             endGame(true);
             return;
         }
@@ -715,10 +809,11 @@
 
     function updateQuestionProgress() {
         const currentNum = CONTROL_STATE.currentQuestion + 1;
-        const total = APP_STATE.questions.length;
+        const total = CONTROL_STATE.quizData?.questions?.length || APP_STATE.questions.length;
         const percentage = (currentNum / total) * 100;
         
         document.getElementById('current-q-num').textContent = currentNum;
+        document.getElementById('total-q-num').textContent = total;
         document.getElementById('question-progress').style.width = percentage + '%';
         
         // Activer le bouton d'aperçu si une question est en cours
@@ -1538,10 +1633,12 @@
     
     let projectionWindow = null;
     let projectionUpdateInterval = null;
+    let teacherWindow = null;
     
     function openProjectionMode() {
-        // Créer l'URL avec les paramètres
-        const projectionURL = 'projection.html?code=' + CONTROL_STATE.playCode + '&total=' + APP_STATE.questions.length;
+        // Créer l'URL avec les paramètres - utiliser les questions de la session en cours
+        const totalQuestions = CONTROL_STATE.quizData?.questions.length || APP_STATE.questions.length;
+        const projectionURL = 'projection.html?code=' + CONTROL_STATE.playCode + '&total=' + totalQuestions;
         
         // Ouvrir dans un nouvel onglet
         projectionWindow = window.open(projectionURL, '_blank');
@@ -1588,7 +1685,11 @@
     }
     
     function updateProjectionWindow() {
-        if (!projectionWindow || projectionWindow.closed) {
+        // Arrêter seulement si TOUTES les fenêtres sont fermées
+        const projectionClosed = !projectionWindow || projectionWindow.closed;
+        const teacherClosed = !teacherWindow || teacherWindow.closed;
+        
+        if (projectionClosed && teacherClosed) {
             stopProjectionUpdates();
             return;
         }
@@ -1604,7 +1705,7 @@
                 
                 console.log('📽️ PROJECTION: État reçu', result);
                 
-                // Préparer les données de base
+                // Préparer les données de base - utiliser les questions de la session en cours
                 const data = {
                     playCode: CONTROL_STATE.playCode,
                     state: result.state,
@@ -1614,7 +1715,7 @@
                     manualMode: CONTROL_STATE.manualMode,
                     paused: result.paused || false,
                     screen: 'waiting',
-                    questions: APP_STATE.questions
+                    questions: CONTROL_STATE.quizData?.questions || APP_STATE.questions
                 };
                 
                 // Détecter l'écran actuel selon l'état du serveur
@@ -1634,11 +1735,23 @@
                     console.log('📽️ PROJECTION: En attente');
                 }
                 
-                // Envoyer à la fenêtre de projection
-                if (projectionWindow && projectionWindow.updateProjection) {
+                // Envoyer à la fenêtre de projection si ouverte
+                if (projectionWindow && !projectionWindow.closed && projectionWindow.updateProjection) {
                     projectionWindow.updateProjection(data);
-                } else {
+                } else if (!projectionClosed) {
                     console.warn('⚠️ PROJECTION: updateProjection non disponible');
+                }
+                
+                // Envoyer aussi à la fenêtre teacher si ouverte
+                console.log('👨‍🏫 DEBUG: teacherWindow =', teacherWindow);
+                console.log('👨‍🏫 DEBUG: teacherWindow.closed =', teacherWindow ? teacherWindow.closed : 'N/A');
+                console.log('👨‍🏫 DEBUG: teacherWindow.updateTeacher =', teacherWindow ? teacherWindow.updateTeacher : 'N/A');
+                
+                if (teacherWindow && !teacherWindow.closed && teacherWindow.updateTeacher) {
+                    console.log('👨‍🏫 CONTROL: Appel de teacherWindow.updateTeacher()');
+                    teacherWindow.updateTeacher(data);
+                } else {
+                    console.log('👨‍🏫 CONTROL: teacherWindow non disponible');
                 }
             })
             .catch(err => {
@@ -1780,6 +1893,7 @@
     // ========================================
     
     window.openControlPanel = openControlPanel;
+    window.openTeacherPlay = openTeacherPlay;
     window.closeControlPanel = closeControlPanel;
     window.startGame = startGame;
     window.pauseGame = pauseGame;

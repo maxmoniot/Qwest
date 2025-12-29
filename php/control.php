@@ -64,6 +64,10 @@ switch ($action) {
         forceQuestionComplete();
         break;
     
+    case 'update_questions':
+        updateQuestions();
+        break;
+    
     default:
         echo json_encode(['success' => false, 'message' => 'Action inconnue']);
         break;
@@ -123,6 +127,44 @@ function startGame() {
         echo json_encode(['success' => true]);
     } else {
         echo json_encode(['success' => false]);
+    }
+}
+
+function updateQuestions() {
+    $playCode = $_POST['playCode'] ?? '';
+    $questionsJson = $_POST['questions'] ?? '';
+    $quizDataJson = $_POST['quizData'] ?? '';
+    
+    $session = loadSession($playCode);
+    
+    if ($session) {
+        // Mettre à jour les questions sans toucher aux joueurs
+        if ($questionsJson) {
+            $questions = json_decode($questionsJson, true);
+            $session['questions'] = $questions;
+            // Mettre à jour aussi dans quizData pour cohérence
+            if (!isset($session['quizData'])) {
+                $session['quizData'] = [];
+            }
+            $session['quizData']['questions'] = $questions;
+        }
+        
+        // Mettre à jour quizData si fourni (écrase la mise à jour précédente)
+        if ($quizDataJson) {
+            $session['quizData'] = json_decode($quizDataJson, true);
+            // Synchroniser questions
+            if (isset($session['quizData']['questions'])) {
+                $session['questions'] = $session['quizData']['questions'];
+            }
+        }
+        
+        saveSession($playCode, $session);
+        
+        error_log("UPDATE_QUESTIONS: Questions mises à jour pour $playCode, " . count($session['questions']) . " questions");
+        
+        echo json_encode(['success' => true]);
+    } else {
+        echo json_encode(['success' => false, 'message' => 'Session not found']);
     }
 }
 

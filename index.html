@@ -11,12 +11,12 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/modals.css">
-    <link rel="stylesheet" href="css/gallery.css">
-    <link rel="stylesheet" href="css/game.css">
-    <link rel="stylesheet" href="css/control.css">
-    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/main.css?v=14">
+    <link rel="stylesheet" href="css/modals.css?v=14">
+    <link rel="stylesheet" href="css/gallery.css?v=14">
+    <link rel="stylesheet" href="css/game.css?v=14">
+    <link rel="stylesheet" href="css/control.css?v=14">
+    <link rel="stylesheet" href="css/mobile.css?v=14">
 </head>
 <body>
     <!-- PAGE D'ACCUEIL -->
@@ -271,8 +271,13 @@
         <div class="modal-content modal-large">
             <div class="modal-header">
                 <h3>🎮 Pilotage de la partie</h3>
-                <div id="control-code-display" class="control-code-header">
-                    <!-- Code inséré dynamiquement -->
+                <button class="btn-secondary btn-small" onclick="openTeacherPlay()" title="Participer à la partie" style="margin-left: var(--space-md);">
+                    🎯 Je participe aussi !
+                </button>
+                <div class="modal-header-actions">
+                    <div id="control-code-display" class="control-code-header">
+                        <!-- Code inséré dynamiquement -->
+                    </div>
                 </div>
                 <button class="close-btn" onclick="closeControlPanel()">×</button>
             </div>

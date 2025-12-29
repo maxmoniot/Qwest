@@ -277,33 +277,36 @@
         const gameContainer = document.querySelector('.game-container');
         const question = data.question;
         const questionNumber = data.index + 1;
-        const totalQuestions = SESSION_STATE.quizData?.totalQuestions || SESSION_STATE.quizData?.questions?.length || 1;
+        // Priorité: totalQuestions depuis data (envoyé par le serveur), puis SESSION_STATE
+        const totalQuestions = data.totalQuestions || SESSION_STATE.quizData?.totalQuestions || SESSION_STATE.quizData?.questions?.length || 1;
+        
+        console.log('📊 ÉLÈVE: totalQuestions =', totalQuestions, '(data:', data.totalQuestions, ', session:', SESSION_STATE.quizData?.totalQuestions, ')');
         
         let html = `
             <div class="question-screen">
-                <div class="question-header">
-                    <div class="player-nickname-display">
-                        ${SESSION_STATE.playerNickname}
-                    </div>
-                    <div class="question-progress">
-                        Question ${questionNumber} / ${totalQuestions}
-                    </div>
-                    <div class="question-timer">
-                        <div class="timer-bar" id="timer-bar"></div>
-                        <span id="timer-text">${question.time}s</span>
-                    </div>
-                </div>
-                
-                <div class="question-content">
-                    ${question.imageUrl ? `
-                        <div class="question-image">
-                            <img src="${question.imageUrl}" alt="Image de la question">
+                <div class="question-screen-inner">
+                    <div class="question-header">
+                        <div class="player-nickname-display">
+                            ${SESSION_STATE.playerNickname}
                         </div>
-                    ` : ''}
-                    <h2 class="question-text">${question.question}</h2>
-                </div>
-                
-                <div class="answers-container" id="answers-container">
+                        <div class="question-progress">
+                            Question ${questionNumber} / ${totalQuestions}
+                        </div>
+                        <div class="question-timer">
+                            <div class="timer-bar" id="timer-bar"></div>
+                            <span id="timer-text">${question.time}s</span>
+                        </div>
+                    </div>
+                    
+                    <div class="question-content">
+                        ${question.imageUrl ? `
+                            <div class="question-image">
+                                <img src="${question.imageUrl}" alt="Image de la question">
+                            </div>
+                        ` : ''}
+                        <h2 class="question-text">${question.question}</h2>
+                        
+                        <div class="answers-container" id="answers-container">
         `;
         
         // Générer les réponses selon le type
@@ -359,15 +362,31 @@
         }
         
         html += `
+                    </div>
                 </div>
+            </div>
             </div>
         `;
         
         gameContainer.innerHTML = html;
         
+        // Forcer la perte de focus de tout élément actif
+        if (document.activeElement) {
+            document.activeElement.blur();
+        }
+        
+        // NETTOYER IMMÉDIATEMENT toute sélection résiduelle
+        document.querySelectorAll('.answer-btn').forEach(btn => {
+            btn.classList.remove('selected');
+            btn.blur();
+        });
+        
         // IMPORTANT : Nettoyer et ajouter les event listeners avec un léger délai
         setTimeout(() => {
-            // Retirer toute sélection/focus résiduel
+            // Retirer ENCORE toute sélection/focus résiduel (double sécurité)
+            if (document.activeElement) {
+                document.activeElement.blur();
+            }
             document.querySelectorAll('.answer-btn').forEach(btn => {
                 btn.classList.remove('selected');
                 btn.blur();
@@ -382,7 +401,7 @@
                     });
                 });
             }
-        }, 0);
+        }, 100); // Augmenter à 100ms pour mobile
         
         // Démarrer le timer
         startQuestionTimer(question.time);
@@ -942,9 +961,11 @@
             return;
         }
         
-        // Vérifier si c'est la dernière question
-        const totalQuestions = SESSION_STATE.quizData?.totalQuestions || SESSION_STATE.quizData?.questions?.length || 0;
-        const isLastQuestion = totalQuestions > 0 && data.questionIndex >= (totalQuestions - 1);
+        // Vérifier si c'est la dernière question - PRIORITÉ aux données serveur
+        const totalQuestions = data.totalQuestions || SESSION_STATE.quizData?.totalQuestions || SESSION_STATE.quizData?.questions?.length || 0;
+        const isLastQuestion = data.isLastQuestion !== undefined ? data.isLastQuestion : (totalQuestions > 0 && data.questionIndex >= (totalQuestions - 1));
+        
+        console.log('📊 ÉLÈVE: isLastQuestion =', isLastQuestion, '(data:', data.isLastQuestion, ', calculated:', data.questionIndex, '>=', totalQuestions - 1, ')');
         
         // Trouver ma position et mon score
         const myData = players.find(p => p.nickname === SESSION_STATE.playerNickname);

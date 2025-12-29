@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qwest - Participation Enseignant</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/modals.css">
+    <link rel="stylesheet" href="css/game.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            overflow-x: hidden;
+            overflow-y: hidden; /* Empêcher le scroll vertical */
+        }
+        
+        .teacher-container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh; /* Hauteur fixe = hauteur de la fenêtre */
+            overflow: hidden; /* Pas de scroll */
+        }
+        
+        /* Copie du header projection */
+        .teacher-controls {
+            position: sticky;
+            top: 0;
+            z-index: 200000; /* PLUS ÉLEVÉ que pause-overlay (100000) */
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            padding: 15px 20px;
+            border-radius: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px 20px 20px 20px;
+            flex-shrink: 0; /* Ne pas rétrécir */
+        }
+        
+        .teacher-controls-left {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .teacher-code {
+            font-size: 20px;
+            font-weight: 700;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 10px 20px;
+            border-radius: 8px;
+            color: white; /* Garder le header en blanc */
+        }
+        
+        .teacher-info {
+            display: flex;
+            gap: 15px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        
+        .teacher-info-item {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 8px 16px;
+            border-radius: 6px;
+            color: white; /* Garder le header en blanc */
+        }
+        
+        .teacher-btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .teacher-btn:hover:not(:disabled) {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+        
+        .teacher-btn.btn-success {
+            background: rgba(76, 175, 80, 0.8);
+            border-color: rgba(76, 175, 80, 1);
+        }
+        
+        .teacher-btn.btn-danger {
+            background: rgba(244, 67, 54, 0.8);
+            border-color: rgba(244, 67, 54, 1);
+        }
+        
+        .teacher-btn:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+        }
+        
+        /* Zone de jeu élève */
+        #game-container {
+            flex: 1;
+            padding: 0 20px 20px 20px;
+            overflow-y: auto; /* Scroll uniquement dans le container */
+            overflow-x: hidden;
+        }
+        
+        /* FORCER TOUT LE TEXTE EN NOIR dans le game-container */
+        #game-container,
+        #game-container * {
+            color: #212121 !important;
+        }
+        
+        /* EXCEPTIONS : éléments qui DOIVENT être blancs */
+        /* Compte à rebours "La partie commence" */
+        #game-container .waiting-countdown h1,
+        #game-container .waiting-countdown .countdown-number {
+            color: white !important;
+        }
+        
+        /* Boutons - garder le texte blanc UNIQUEMENT sur fond coloré */
+        #game-container .btn:not(.btn-secondary),
+        #game-container .btn-validate,
+        #game-container .order-validate-btn {
+            color: white !important;
+        }
+        
+        /* Boutons classement en gris clair avec texte NOIR */
+        #game-container .btn-secondary,
+        #game-container button[onclick*="classement"],
+        #game-container button[onclick*="parcours"] {
+            background: #e0e0e0 !important;
+            color: #212121 !important;
+            border-color: #bdbdbd !important;
+        }
+        
+        #game-container button[onclick*="classement"]:hover,
+        #game-container button[onclick*="parcours"]:hover {
+            background: #d0d0d0 !important;
+        }
+        
+        /* Modale participants */
+        .teacher-modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(4px);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 300000;
+        }
+        
+        .teacher-modal-overlay.active {
+            display: flex;
+        }
+        
+        .teacher-modal {
+            background: white;
+            color: #212121;
+            border-radius: 16px;
+            padding: 40px;
+            max-width: 600px;
+            max-height: 80vh;
+            overflow-y: auto;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+        }
+        
+        .teacher-modal-icon {
+            font-size: 64px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .teacher-modal-title {
+            font-size: 28px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 15px;
+            color: #212121;
+        }
+        
+        .teacher-participants-list {
+            display: grid;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        
+        .teacher-participant-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            background: #f5f5f5;
+            border-radius: 8px;
+            border-left: 4px solid #2196F3;
+        }
+        
+        .teacher-participant-item.disconnected {
+            opacity: 0.5;
+            border-left-color: #f44336;
+        }
+        
+        .teacher-participant-name {
+            font-size: 18px;
+            font-weight: 600;
+            color: #212121;
+        }
+        
+        .teacher-participant-status {
+            font-size: 14px;
+            color: #616161;
+        }
+        
+        .teacher-modal-btn {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            background: #e0e0e0;
+            color: #212121;
+            margin-top: 30px;
+            transition: all 0.2s;
+        }
+        
+        .teacher-modal-btn:hover {
+            background: #bdbdbd;
+        }
+        
+        /* RÉDUIRE LA TAILLE DE TOUT pour teacher-play uniquement */
+        #game-container .question-screen {
+            transform: scale(0.85);
+            transform-origin: top center;
+        }
+        
+        .question-result-icon {
+            filter: none !important;
+        }
+        
+        /* Gestion des pages (nécessaire pour showPage) */
+        .page {
+            display: none;
+        }
+        
+        .page.active {
+            display: block;
+        }
+        
+        /* Style pour la sélection d'animal */
+        .animal-btn.selected {
+            background: var(--primary, #667eea);
+            color: white;
+            border-color: var(--primary-dark, #5568d3);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="teacher-container">
+        <!-- Header avec contrôles (copié de projection) -->
+        <div class="teacher-controls">
+            <div class="teacher-controls-left">
+                <div class="teacher-code">Code : <span id="teacher-code">---</span></div>
+                <div class="teacher-info">
+                    <div class="teacher-info-item" onclick="showTeacherParticipantsModal()" style="cursor: pointer;" title="Cliquez pour voir la liste">
+                        👥 <span id="teacher-players">0</span> connectés
+                    </div>
+                    <div class="teacher-info-item">📊 Q <span id="teacher-progress">0/0</span></div>
+                </div>
+                <button class="teacher-btn btn-success" onclick="teacherStartGame()" id="teacher-btn-start">▶️ Lancer la partie</button>
+                <button class="teacher-btn" onclick="teacherPauseGame()" id="teacher-btn-pause" disabled>⏸️ Pause</button>
+                <button class="teacher-btn" onclick="teacherNextQuestion()" id="teacher-btn-next" disabled>⏭️ Question suivante</button>
+                <button class="teacher-btn" onclick="teacherEndGame()" id="teacher-btn-end" disabled>⏹️ Terminer</button>
+            </div>
+            <button class="teacher-btn btn-danger" onclick="window.close()">❌ Quitter</button>
+        </div>
+        
+        <!-- Zone de jeu élève -->
+        <div id="game-container" class="game-container"></div>
+    </div>
+    
+    <!-- Pages cachées nécessaires pour game.js -->
+    <div id="game-page" class="page active"></div>
+    <div id="home-page" class="page"></div>
+    <div id="create-page" class="page"></div>
+    
+    <!-- Modale liste des participants -->
+    <div class="teacher-modal-overlay" id="teacher-participants-modal">
+        <div class="teacher-modal">
+            <div class="teacher-modal-icon">👥</div>
+            <h3 class="teacher-modal-title">Participants connectés</h3>
+            <div class="teacher-participants-list" id="teacher-participants-list">
+                <!-- Liste générée dynamiquement -->
+            </div>
+            <button class="teacher-modal-btn" onclick="closeTeacherParticipantsModal()">Fermer</button>
+        </div>
+    </div>
+    
+    <!-- Initialiser APP_STATE pour éviter les erreurs -->
+    <script>
+        window.APP_STATE = {
+            currentPage: 'game-page',
+            questions: [],
+            isModified: false
+        };
+    </script>
+    
+    <script src="js/utils.js"></script>
+    <script src="js/sessionManager.js"></script>
+    <script src="js/game.js"></script>
+    <script>
+        let teacherPlayCode = null;
+        let teacherTotalQuestions = 0;
+        let teacherPollingInterval = null;
+        let teacherParticipants = []; // Stocker les participants
+        
+        // Fonctions pour la modale participants
+        function showTeacherParticipantsModal() {
+            const modal = document.getElementById('teacher-participants-modal');
+            const list = document.getElementById('teacher-participants-list');
+            
+            // Générer la liste
+            let html = '';
+            if (teacherParticipants.length === 0) {
+                html = '<p style="text-align: center; color: #616161; padding: 20px;">Aucun participant pour le moment</p>';
+            } else {
+                teacherParticipants.forEach(participant => {
+                    const isConnected = participant.connected;
+                    html += '<div class="teacher-participant-item ' + (isConnected ? '' : 'disconnected') + '">';
+                    html += '<div>';
+                    html += '<div class="teacher-participant-name">' + participant.nickname + '</div>';
+                    html += '<div class="teacher-participant-status">';
+                    html += isConnected ? '🟢 Connecté' : '🔴 Déconnecté';
+                    html += ' • ' + participant.score + ' pts';
+                    html += '</div>';
+                    html += '</div>';
+                    html += '</div>';
+                });
+            }
+            
+            list.innerHTML = html;
+            modal.classList.add('active');
+        }
+        
+        function closeTeacherParticipantsModal() {
+            document.getElementById('teacher-participants-modal').classList.remove('active');
+        }
+        
+        // Récupérer le code de partie depuis l'URL
+        const urlParams = new URLSearchParams(window.location.search);
+        teacherPlayCode = urlParams.get('code');
+        
+        if (!teacherPlayCode) {
+            alert('❌ Aucun code de partie fourni');
+            window.close();
+        } else {
+            document.getElementById('teacher-code').textContent = teacherPlayCode;
+            
+            // Charger les infos initiales
+            fetch(`php/api.php?action=check_game&code=${teacherPlayCode}`)
+                .then(response => response.json())
+                .then(data => {
+                    console.log('✅ Infos partie reçues:', data);
+                    if (data.success && data.exists) {
+                        teacherTotalQuestions = data.totalQuestions;
+                        document.getElementById('teacher-progress').textContent = `0/${teacherTotalQuestions}`;
+                        
+                        console.log('📝 Appel de showStudentJoinPage...');
+                        // Afficher la page de sélection d'animal
+                        window.showStudentJoinPage(teacherPlayCode, data.quizName || 'Quiz', data.totalQuestions);
+                        
+                        console.log('✅ Page teacher initialisée, en attente des updates depuis window.opener');
+                    } else {
+                        alert('❌ Partie introuvable');
+                        window.close();
+                    }
+                })
+                .catch(error => {
+                    console.error('Erreur:', error);
+                    alert('❌ Erreur de connexion');
+                    window.close();
+                });
+        }
+        
+        // Fonction de mise à jour appelée depuis la fenêtre parent (comme projection)
+        window.updateTeacher = function(data) {
+            console.log('👨‍🏫 TEACHER: updateTeacher appelé avec:', data);
+            
+            const btnStart = document.getElementById('teacher-btn-start');
+            const btnPause = document.getElementById('teacher-btn-pause');
+            const btnNext = document.getElementById('teacher-btn-next');
+            const btnEnd = document.getElementById('teacher-btn-end');
+            const players = document.getElementById('teacher-players');
+            const progress = document.getElementById('teacher-progress');
+            
+            // Mettre à jour le nombre de joueurs
+            if (players) {
+                const newCount = String(data.playersCount || 0);
+                if (players.textContent !== newCount) {
+                    console.log('👨‍🏫 TEACHER: Mise à jour joueurs:', players.textContent, '=>', newCount);
+                    players.textContent = newCount;
+                }
+            }
+            
+            // Mettre à jour la liste des participants
+            if (data.participants) {
+                teacherParticipants = data.participants;
+            }
+            
+            // Mettre à jour la progression
+            if (progress) {
+                const newProgress = (data.currentQuestion + 1) + '/' + teacherTotalQuestions;
+                if (progress.textContent !== newProgress) {
+                    console.log('👨‍🏫 TEACHER: Mise à jour progression:', progress.textContent, '=>', newProgress);
+                    progress.textContent = newProgress;
+                }
+            }
+            
+            // Mise à jour des boutons
+            console.log('👨‍🏫 TEACHER: État du jeu:', data.state);
+            if (data.state === 'waiting') {
+                if (btnStart) btnStart.disabled = false;
+                if (btnPause) btnPause.disabled = true;
+                if (btnNext) btnNext.disabled = true;
+                if (btnEnd) btnEnd.disabled = true;
+            } else {
+                if (btnStart) btnStart.disabled = true;
+                if (btnPause) btnPause.disabled = false;
+                if (btnNext) btnNext.disabled = false;
+                if (btnEnd) btnEnd.disabled = false;
+                
+                // Mettre à jour le texte du bouton pause/reprendre
+                if (btnPause) {
+                    if (data.paused) {
+                        btnPause.innerHTML = '▶️ Reprendre';
+                    } else {
+                        btnPause.innerHTML = '⏸️ Pause';
+                    }
+                }
+            }
+            console.log('👨‍🏫 TEACHER: Boutons mis à jour');
+        };
+        
+        // Fonctions de contrôle (appellent window.opener comme projection)
+        function teacherStartGame() {
+            if (window.opener && window.opener.startGame) {
+                window.opener.startGame();
+            }
+        }
+        
+        function teacherPauseGame() {
+            if (window.opener && window.opener.pauseGame) {
+                window.opener.pauseGame();
+            }
+        }
+        
+        function teacherNextQuestion() {
+            if (window.opener && window.opener.nextQuestion) {
+                window.opener.nextQuestion();
+            }
+        }
+        
+        function teacherEndGame() {
+            if (confirm('⚠️ Terminer la partie maintenant ?')) {
+                if (window.opener && window.opener.executeEndGameFromProjection) {
+                    window.opener.executeEndGameFromProjection();
+                }
+            }
+        }
+    </script>
+</body>
+</html>

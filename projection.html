@@ -518,7 +518,14 @@
         }
         
         function projNextQuestion() {
-            window.opener.nextQuestion();
+            console.log('📽️ PROJECTION: Clic sur Question suivante');
+            if (window.opener && window.opener.nextQuestion) {
+                console.log('📽️ PROJECTION: Appel de window.opener.nextQuestion()');
+                window.opener.nextQuestion();
+            } else {
+                console.error('📽️ PROJECTION: window.opener.nextQuestion() non disponible !');
+                alert('❌ Impossible de passer à la question suivante. Assurez-vous que le panneau de pilotage est ouvert.');
+            }
         }
         
         function projEndGame() {
@@ -615,7 +622,8 @@
             } else {
                 btnStart.disabled = true;
                 btnPause.disabled = false;
-                btnNext.disabled = data.manualMode ? false : true;
+                // Activer "Question suivante" pendant toute la partie (pas seulement en mode manuel)
+                btnNext.disabled = false;
                 btnEnd.disabled = false;
                 
                 // Mettre à jour le texte du bouton pause/reprendre
