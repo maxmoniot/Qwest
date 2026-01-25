@@ -1052,15 +1052,14 @@ button {
     padding: var(--space-lg);
     border-radius: var(--radius-lg);
     background: var(--gray-50);
+    text-align: center;
 }
 
 .thanks-section h4 {
     font-size: 20px;
     color: var(--gray-900);
     margin-bottom: var(--space-md);
-    display: flex;
-    align-items: center;
-    gap: var(--space-sm);
+    justify-content: center;
 }
 
 .thanks-section p {
@@ -1068,16 +1067,18 @@ button {
     color: var(--gray-700);
     line-height: 1.6;
     margin-bottom: var(--space-md);
+    text-align: center;
 }
 
 .thanks-beta {
-    border-left: 4px solid #FFB3C1;
+    border-top: 4px solid #FFB3C1;
 }
 
 .beta-testers {
     display: flex;
     flex-wrap: wrap;
     gap: var(--space-sm);
+    justify-content: center;
 }
 
 .tester-name {
@@ -1088,24 +1089,6 @@ button {
     font-weight: 600;
     font-size: 15px;
     border: 2px solid #FFB3C1;
-}
-
-.thanks-creation {
-    border-left: 4px solid var(--primary);
-    background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%);
-}
-
-.creation-text {
-    text-align: center;
-    font-size: 17px;
-    line-height: 1.8;
-    color: var(--gray-800);
-    margin: 0;
-}
-
-.creation-text strong {
-    color: var(--primary-dark);
-    font-size: 18px;
 }
 
 #thanks-modal .modal-header {
@@ -1122,6 +1105,45 @@ button {
     right: var(--space-lg);
     top: 50%;
     transform: translateY(-50%);
+}
+
+/* Section soutien */
+.thanks-support {
+    border-top: 4px solid #FF6B6B;
+    background: linear-gradient(135deg, #FFF5F5 0%, #FFE3E3 100%);
+    text-align: center;
+}
+
+.thanks-support .support-text {
+    font-size: 16px;
+    color: var(--gray-700);
+    line-height: 1.8;
+}
+
+.btn-support {
+    display: inline-block;
+    background: linear-gradient(135deg, #FF6B6B 0%, #EE5A5A 100%);
+    color: white;
+    padding: var(--space-md) var(--space-xl);
+    border-radius: var(--radius-full);
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    margin: var(--space-md) 0;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+}
+
+.btn-support:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 107, 107, 0.5);
+    background: linear-gradient(135deg, #FF5252 0%, #E53935 100%);
+}
+
+.thanks-emoji {
+    font-size: 18px;
+    margin-top: var(--space-sm);
+    margin-bottom: 0 !important;
 }
 
 /* Modale Alert personnalisée */
