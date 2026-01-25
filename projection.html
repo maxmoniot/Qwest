@@ -304,6 +304,173 @@
             opacity: 0.9;
         }
         
+        /* Classement général entre les questions */
+        .projection-ranking {
+            width: 90%;
+            max-width: 1200px;
+            max-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            color: white;
+        }
+        
+        .projection-ranking-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .projection-ranking-header h1 {
+            font-size: 56px;
+            margin-bottom: 10px;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+        
+        .projection-ranking-header .question-info {
+            font-size: 24px;
+            opacity: 0.9;
+        }
+        
+        .projection-ranking-content {
+            display: flex;
+            gap: 40px;
+            flex: 1;
+            min-height: 0;
+        }
+        
+        /* Podium à gauche */
+        .projection-ranking-podium {
+            flex: 0 0 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .ranking-podium-container {
+            display: flex;
+            align-items: flex-end;
+            gap: 15px;
+        }
+        
+        .ranking-podium-place {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 20px;
+            text-align: center;
+            min-width: 120px;
+        }
+        
+        .ranking-podium-place.first {
+            order: 2;
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.4), rgba(255, 193, 7, 0.3));
+            transform: scale(1.15);
+            min-width: 140px;
+        }
+        
+        .ranking-podium-place.second {
+            order: 1;
+            background: linear-gradient(135deg, rgba(192, 192, 192, 0.3), rgba(158, 158, 158, 0.2));
+        }
+        
+        .ranking-podium-place.third {
+            order: 3;
+            background: linear-gradient(135deg, rgba(205, 127, 50, 0.3), rgba(139, 90, 43, 0.2));
+        }
+        
+        .ranking-podium-medal {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+        
+        .ranking-podium-name {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 130px;
+        }
+        
+        .ranking-podium-score {
+            font-size: 28px;
+            font-weight: 700;
+            color: #FFD700;
+        }
+        
+        .ranking-podium-place.second .ranking-podium-score {
+            color: #C0C0C0;
+        }
+        
+        .ranking-podium-place.third .ranking-podium-score {
+            color: #CD7F32;
+        }
+        
+        /* Liste des autres joueurs à droite */
+        .projection-ranking-list {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 20px;
+            overflow-y: auto;
+        }
+        
+        .ranking-list-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .ranking-list-item {
+            display: flex;
+            align-items: center;
+            padding: 12px 15px;
+            margin-bottom: 8px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 10px;
+            transition: background 0.2s;
+        }
+        
+        .ranking-list-item:hover {
+            background: rgba(255, 255, 255, 0.15);
+        }
+        
+        .ranking-list-position {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: 700;
+            margin-right: 15px;
+        }
+        
+        .ranking-list-name {
+            flex: 1;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        
+        .ranking-list-score {
+            font-size: 22px;
+            font-weight: 700;
+            color: #FFD700;
+        }
+        
+        .ranking-list-empty {
+            text-align: center;
+            padding: 40px;
+            opacity: 0.7;
+            font-size: 18px;
+        }
+        
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
@@ -448,6 +615,7 @@
                 <button class="projection-btn btn-success" onclick="projStartGame()" id="proj-btn-start">▶️ Lancer la partie</button>
                 <button class="projection-btn" onclick="projPauseGame()" id="proj-btn-pause" disabled>⏸️ Pause</button>
                 <button class="projection-btn" onclick="projNextQuestion()" id="proj-btn-next" disabled>⏭️ Question suivante</button>
+                <button class="projection-btn" onclick="projResyncAll()" id="proj-btn-resync" disabled title="Forcer la resynchronisation de tous les élèves">🔄 Resynchroniser</button>
                 <button class="projection-btn" onclick="projEndGame()" id="proj-btn-end" disabled>⏹️ Terminer</button>
             </div>
             <button class="projection-btn btn-danger" onclick="closeProjection()">❌ Quitter la projection</button>
@@ -491,7 +659,8 @@
         // Récupérer les infos depuis l'URL
         const urlParams = new URLSearchParams(window.location.search);
         const playCode = urlParams.get('code');
-        const totalQuestions = parseInt(urlParams.get('total')) || 0;
+        // totalQuestions sera mis à jour dynamiquement quand les données arrivent
+        let totalQuestions = parseInt(urlParams.get('total')) || 0;
         
         console.log('📽️ PROJECTION: Démarrage avec code=' + playCode + ', total=' + totalQuestions);
         
@@ -547,6 +716,38 @@
             }
         }
         
+        // Resynchroniser tous les élèves
+        async function projResyncAll() {
+            if (!confirm('🔄 Forcer la resynchronisation ?\n\nCela va forcer l\'affichage des résultats actuels pour tous les élèves.\nUtilisez ceci uniquement si les élèves sont bloqués.')) {
+                return;
+            }
+            
+            try {
+                const response = await fetch('php/control.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                    body: new URLSearchParams({
+                        action: 'force_question_complete',
+                        playCode: playCode,
+                        questionIndex: projectionState.currentQuestion
+                    })
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    console.log('✅ Resynchronisation forcée avec succès');
+                    alert('✅ Resynchronisation effectuée !\nLes élèves devraient maintenant voir les résultats.');
+                } else {
+                    alert('❌ Erreur lors de la resynchronisation');
+                }
+                
+            } catch (error) {
+                console.error('❌ Erreur resynchronisation:', error);
+                alert('❌ Erreur lors de la resynchronisation');
+            }
+        }
+        
         function showParticipantsModal() {
             const modal = document.getElementById('participants-modal');
             const list = document.getElementById('participants-list');
@@ -590,11 +791,18 @@
             const btnStart = document.getElementById('proj-btn-start');
             const btnPause = document.getElementById('proj-btn-pause');
             const btnNext = document.getElementById('proj-btn-next');
+            const btnResync = document.getElementById('proj-btn-resync');
             const btnEnd = document.getElementById('proj-btn-end');
             const playersCount = document.getElementById('proj-players');
             const progress = document.getElementById('proj-progress');
             
-            // Stocker les questions
+            // Mettre à jour le nombre total de questions dès qu'on le reçoit
+            if (data.totalQuestions && data.totalQuestions > 0) {
+                totalQuestions = data.totalQuestions;
+                console.log('📽️ PROJECTION: Total questions mis à jour:', totalQuestions);
+            }
+            
+            // Stocker les questions si présentes
             if (data.questions && data.questions.length > 0) {
                 projectionState.questions = data.questions;
             }
@@ -602,6 +810,11 @@
             // Stocker la liste des participants
             if (data.participants) {
                 projectionState.participants = data.participants;
+            }
+            
+            // Stocker la question courante pour la resync
+            if (data.currentQuestion !== undefined) {
+                projectionState.currentQuestion = data.currentQuestion;
             }
             
             // Mise à jour des infos (sans clignotement)
@@ -618,12 +831,14 @@
                 btnStart.disabled = false;
                 btnPause.disabled = true;
                 btnNext.disabled = true;
+                btnResync.disabled = true;
                 btnEnd.disabled = true;
             } else {
                 btnStart.disabled = true;
                 btnPause.disabled = false;
                 // Activer "Question suivante" pendant toute la partie (pas seulement en mode manuel)
                 btnNext.disabled = false;
+                btnResync.disabled = false;
                 btnEnd.disabled = false;
                 
                 // Mettre à jour le texte du bouton pause/reprendre
@@ -648,9 +863,16 @@
                         console.log('📽️ PROJECTION: Rendu question', question);
                         content.innerHTML = renderQuestion(question, data.currentQuestion, totalQuestions);
                     }
+                } else if (data.screen === 'ranking' && data.allPlayers) {
+                    // NOUVEAU : Affichage du classement général
+                    console.log('📽️ PROJECTION: Rendu classement général', data.allPlayers);
+                    content.innerHTML = renderRanking(data.allPlayers, data.currentQuestion, totalQuestions);
                 } else if (data.screen === 'top3' && data.top3) {
                     console.log('📽️ PROJECTION: Rendu top3', data.top3);
                     content.innerHTML = renderTop3(data.top3);
+                } else if (data.screen === 'final' && data.allPlayers) {
+                    console.log('📽️ PROJECTION: Rendu final avec classement');
+                    content.innerHTML = renderFinalRanking(data.allPlayers);
                 } else if (data.screen === 'final') {
                     console.log('📽️ PROJECTION: Rendu final');
                     content.innerHTML = renderFinal();
@@ -735,6 +957,124 @@
         
         function renderFinal() {
             return '<div class="projection-final"><h1>🎉 Partie terminée !</h1><p>Bravo à tous les participants !</p></div>';
+        }
+        
+        function renderRanking(players, questionIndex, total) {
+            if (!players || players.length === 0) {
+                return '<div class="projection-waiting"><h1>📊 Classement</h1><p>Aucun score pour le moment</p></div>';
+            }
+            
+            const medals = ['🥇', '🥈', '🥉'];
+            const classes = ['first', 'second', 'third'];
+            const top3 = players.slice(0, 3);
+            const others = players.slice(3);
+            
+            let html = '<div class="projection-ranking">';
+            
+            // Header
+            html += '<div class="projection-ranking-header">';
+            html += '<h1>📊 Classement général</h1>';
+            html += '<div class="question-info">Après la question ' + (questionIndex + 1) + ' / ' + total + '</div>';
+            html += '</div>';
+            
+            html += '<div class="projection-ranking-content">';
+            
+            // Podium top 3
+            html += '<div class="projection-ranking-podium">';
+            html += '<div class="ranking-podium-container">';
+            top3.forEach((player, index) => {
+                html += '<div class="ranking-podium-place ' + classes[index] + '">';
+                html += '<div class="ranking-podium-medal">' + medals[index] + '</div>';
+                html += '<div class="ranking-podium-name">' + escapeHtml(player.nickname) + '</div>';
+                html += '<div class="ranking-podium-score">' + (player.score || 0) + '</div>';
+                html += '</div>';
+            });
+            html += '</div>';
+            html += '</div>';
+            
+            // Liste des autres joueurs
+            html += '<div class="projection-ranking-list">';
+            html += '<div class="ranking-list-title">Autres participants</div>';
+            
+            if (others.length === 0) {
+                html += '<div class="ranking-list-empty">Pas d\'autres participants</div>';
+            } else {
+                others.forEach((player, index) => {
+                    html += '<div class="ranking-list-item">';
+                    html += '<div class="ranking-list-position">' + (index + 4) + '</div>';
+                    html += '<div class="ranking-list-name">' + escapeHtml(player.nickname) + '</div>';
+                    html += '<div class="ranking-list-score">' + (player.score || 0) + ' pts</div>';
+                    html += '</div>';
+                });
+            }
+            
+            html += '</div>';
+            html += '</div>';
+            html += '</div>';
+            
+            return html;
+        }
+        
+        function renderFinalRanking(players) {
+            if (!players || players.length === 0) {
+                return '<div class="projection-final"><h1>🎉 Partie terminée !</h1><p>Bravo à tous les participants !</p></div>';
+            }
+            
+            const medals = ['🥇', '🥈', '🥉'];
+            const classes = ['first', 'second', 'third'];
+            const top3 = players.slice(0, 3);
+            const others = players.slice(3);
+            
+            let html = '<div class="projection-ranking">';
+            
+            // Header
+            html += '<div class="projection-ranking-header">';
+            html += '<h1>🎉 Classement final</h1>';
+            html += '<div class="question-info">Bravo à tous les participants !</div>';
+            html += '</div>';
+            
+            html += '<div class="projection-ranking-content">';
+            
+            // Podium top 3
+            html += '<div class="projection-ranking-podium">';
+            html += '<div class="ranking-podium-container">';
+            top3.forEach((player, index) => {
+                html += '<div class="ranking-podium-place ' + classes[index] + '">';
+                html += '<div class="ranking-podium-medal">' + medals[index] + '</div>';
+                html += '<div class="ranking-podium-name">' + escapeHtml(player.nickname) + '</div>';
+                html += '<div class="ranking-podium-score">' + (player.score || 0) + '</div>';
+                html += '</div>';
+            });
+            html += '</div>';
+            html += '</div>';
+            
+            // Liste des autres joueurs
+            html += '<div class="projection-ranking-list">';
+            html += '<div class="ranking-list-title">Autres participants</div>';
+            
+            if (others.length === 0) {
+                html += '<div class="ranking-list-empty">Pas d\'autres participants</div>';
+            } else {
+                others.forEach((player, index) => {
+                    html += '<div class="ranking-list-item">';
+                    html += '<div class="ranking-list-position">' + (index + 4) + '</div>';
+                    html += '<div class="ranking-list-name">' + escapeHtml(player.nickname) + '</div>';
+                    html += '<div class="ranking-list-score">' + (player.score || 0) + ' pts</div>';
+                    html += '</div>';
+                });
+            }
+            
+            html += '</div>';
+            html += '</div>';
+            html += '</div>';
+            
+            return html;
+        }
+        
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
         }
     </script>
 </body>

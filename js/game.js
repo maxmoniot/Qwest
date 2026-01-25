@@ -8,9 +8,146 @@
 
     // Variables de jeu
     let currentQuestionData = null;
-    let questionStartTime = null;
+    let questionStartTime = null;        // Pour le calcul des POINTS (heure locale d'affichage)
+    let serverQuestionStartTime = null;  // Pour le TIMER visuel (heure serveur, reconnexion)
     let hasAnswered = false;
     let answerTimeout = null;
+
+    // ========================================
+    // AJUSTEMENT DYNAMIQUE DE LA MISE EN PAGE
+    // ========================================
+    
+    /**
+     * Ajuste dynamiquement la mise en page pour que tout soit visible sans scroll
+     * Principe : Le texte de la question prend sa taille naturelle, 
+     * puis l'image et les réponses se partagent l'espace restant
+     */
+    function adjustQuestionLayout() {
+        const questionScreen = document.querySelector('.question-screen');
+        const questionContent = document.querySelector('.question-content');
+        const questionHeader = document.querySelector('.question-header');
+        const questionText = document.querySelector('.question-text');
+        const questionImage = document.querySelector('.question-image');
+        const answersContainer = document.querySelector('.answers-container') || 
+                                 document.querySelector('.order-container')?.parentElement ||
+                                 document.querySelector('.freetext-container')?.parentElement;
+        
+        if (!questionScreen || !questionContent || !questionText) return;
+        
+        // Hauteur totale disponible (viewport)
+        const viewportHeight = window.innerHeight;
+        
+        // Padding du conteneur principal
+        const screenStyle = window.getComputedStyle(questionScreen);
+        const screenPaddingTop = parseFloat(screenStyle.paddingTop) || 0;
+        const screenPaddingBottom = parseFloat(screenStyle.paddingBottom) || 0;
+        
+        // Hauteur du header
+        const headerHeight = questionHeader ? questionHeader.offsetHeight : 0;
+        
+        // Padding du content
+        const contentStyle = window.getComputedStyle(questionContent);
+        const contentPaddingTop = parseFloat(contentStyle.paddingTop) || 0;
+        const contentPaddingBottom = parseFloat(contentStyle.paddingBottom) || 0;
+        
+        // Gaps entre éléments (approximation)
+        const gaps = 20;
+        
+        // Hauteur disponible pour le contenu (image + texte + réponses)
+        const availableHeight = viewportHeight - screenPaddingTop - screenPaddingBottom 
+                                - headerHeight - contentPaddingTop - contentPaddingBottom - gaps;
+        
+        // ÉTAPE 1 : Laisser le texte prendre sa taille naturelle
+        questionText.style.maxHeight = 'none';
+        questionText.style.overflow = 'visible';
+        const textHeight = questionText.scrollHeight;
+        
+        // ÉTAPE 2 : Calculer l'espace restant pour image et réponses
+        let remainingHeight = availableHeight - textHeight - 10; // 10px de marge
+        
+        // Si le texte prend plus de 40% de l'écran, on le limite et on force un affichage compact
+        const maxTextHeight = availableHeight * 0.4;
+        if (textHeight > maxTextHeight) {
+            // Réduire la taille de police du texte pour qu'il rentre
+            const currentFontSize = parseFloat(window.getComputedStyle(questionText).fontSize);
+            const ratio = maxTextHeight / textHeight;
+            const newFontSize = Math.max(14, currentFontSize * ratio * 0.95); // Min 14px
+            questionText.style.fontSize = newFontSize + 'px';
+            remainingHeight = availableHeight - maxTextHeight - 10;
+        }
+        
+        // ÉTAPE 3 : Répartir l'espace restant entre image et réponses
+        if (questionImage && answersContainer) {
+            // Avec image : 30% image, 70% réponses de l'espace restant
+            const imageMaxHeight = Math.max(50, remainingHeight * 0.3);
+            const answersMinHeight = Math.max(100, remainingHeight * 0.65);
+            
+            questionImage.style.maxHeight = imageMaxHeight + 'px';
+            questionImage.style.minHeight = '0';
+            
+            const imgElement = questionImage.querySelector('img');
+            if (imgElement) {
+                imgElement.style.maxHeight = (imageMaxHeight - 10) + 'px';
+            }
+            
+            answersContainer.style.minHeight = answersMinHeight + 'px';
+            answersContainer.style.maxHeight = answersMinHeight + 'px';
+            
+        } else if (answersContainer) {
+            // Sans image : tout l'espace pour les réponses
+            answersContainer.style.minHeight = Math.max(150, remainingHeight - 20) + 'px';
+            answersContainer.style.maxHeight = (remainingHeight - 20) + 'px';
+        }
+        
+        // ÉTAPE 4 : Ajuster les boutons de réponse pour qu'ils se partagent l'espace
+        const answerBtns = document.querySelectorAll('.answer-btn');
+        if (answerBtns.length > 0 && answersContainer) {
+            const containerHeight = parseFloat(answersContainer.style.maxHeight) || answersContainer.offsetHeight;
+            const gap = 8; // gap entre boutons
+            const totalGaps = (answerBtns.length - 1) * gap;
+            const btnHeight = Math.max(40, (containerHeight - totalGaps) / answerBtns.length);
+            
+            answerBtns.forEach(btn => {
+                btn.style.height = btnHeight + 'px';
+                btn.style.minHeight = btnHeight + 'px';
+                btn.style.maxHeight = btnHeight + 'px';
+                
+                // Ajuster la taille de police si le texte est long
+                const btnText = btn.textContent.trim();
+                if (btnText.length > 50) {
+                    btn.style.fontSize = '14px';
+                } else if (btnText.length > 30) {
+                    btn.style.fontSize = '16px';
+                }
+            });
+        }
+        
+        // ÉTAPE 5 : S'assurer que le conteneur principal ne déborde pas
+        questionContent.style.overflow = 'hidden';
+        
+        console.log('📐 Layout ajusté:', {
+            viewport: viewportHeight,
+            available: availableHeight,
+            text: textHeight,
+            remaining: remainingHeight
+        });
+    }
+    
+    // Ré-ajuster lors du redimensionnement
+    window.addEventListener('resize', () => {
+        if (document.querySelector('.question-screen')) {
+            adjustQuestionLayout();
+        }
+    });
+    
+    // Ré-ajuster lors du changement d'orientation (mobile)
+    window.addEventListener('orientationchange', () => {
+        setTimeout(() => {
+            if (document.querySelector('.question-screen')) {
+                adjustQuestionLayout();
+            }
+        }, 100);
+    });
 
     // ========================================
     // PAGE DE SÉLECTION (Collège + Animal)
@@ -25,10 +162,29 @@
         // Initialiser la session élève avec le playCode et totalQuestions
         initStudentSession(playCode, { name: quizName, totalQuestions: totalQuestions });
         
+        // Générer ou récupérer un identifiant unique pour ce poste
+        // Cet identifiant persiste entre les onglets et les rafraîchissements
+        let deviceId = null;
+        try {
+            deviceId = localStorage.getItem('qwest_device_id');
+            if (!deviceId) {
+                // Générer un nouvel identifiant unique
+                deviceId = 'dev_' + Date.now() + '_' + Math.random().toString(36).substring(2, 15);
+                localStorage.setItem('qwest_device_id', deviceId);
+            }
+        } catch (e) {
+            // localStorage non disponible, on continue sans
+            console.log('⚠️ localStorage non disponible');
+        }
+        
         // Obtenir 3 animaux UNIQUES depuis le serveur
         let animals = [];
         try {
-            const response = await fetch(`php/api.php?action=get_animals&code=${playCode}`);
+            let url = `php/api.php?action=get_animals&code=${playCode}`;
+            if (deviceId) {
+                url += `&deviceId=${encodeURIComponent(deviceId)}`;
+            }
+            const response = await fetch(url);
             const result = await response.json();
             if (result.success) {
                 animals = result.animals;
@@ -65,12 +221,8 @@
         
         html += `
                         </div>
-                        <p class="animal-info">Ton pseudo sera ton animal 🦁</p>
+                        <p class="animal-info">Clique sur ton avatar pour rejoindre 🎮</p>
                     </div>
-                    
-                    <button id="join-game-btn" class="btn-join-game" disabled>
-                        🚀 Rejoindre la partie
-                    </button>
                 </div>
             </div>
         `;
@@ -87,20 +239,57 @@
             });
             
             // Ajouter les event listeners APRÈS avoir créé le HTML
+            // Cliquer sur un animal rejoint directement la partie
             document.querySelectorAll('.animal-btn').forEach(btn => {
                 btn.addEventListener('click', function() {
                     const animal = this.getAttribute('data-animal');
-                    selectAnimal(animal);
+                    selectAnimalAndJoin(animal, this);
                 });
             });
-            
-            // Event listener pour le bouton rejoindre
-            document.getElementById('join-game-btn').addEventListener('click', confirmJoinGame);
         }, 0);
     }
 
     let selectedAnimal = null;
 
+    // Nouvelle fonction : sélectionner l'animal ET rejoindre la partie directement
+    async function selectAnimalAndJoin(animal, btnElement) {
+        // Éviter les double-clics
+        if (selectedAnimal !== null) return;
+        
+        selectedAnimal = animal;
+        
+        // Feedback visuel immédiat
+        btnElement.classList.add('selected');
+        btnElement.innerHTML = '⏳ Connexion...';
+        
+        // Désactiver tous les boutons
+        document.querySelectorAll('.animal-btn').forEach(btn => {
+            btn.disabled = true;
+            btn.style.pointerEvents = 'none';
+        });
+        
+        // Enregistrer les infos (sans collège)
+        setPlayerInfo('', animal);
+        
+        // Rejoindre la session
+        const success = await joinSession();
+        
+        if (success) {
+            // Afficher la salle d'attente
+            showWaitingRoom();
+        } else {
+            // Réactiver les boutons en cas d'échec
+            selectedAnimal = null;
+            btnElement.classList.remove('selected');
+            btnElement.innerHTML = animal;
+            document.querySelectorAll('.animal-btn').forEach(btn => {
+                btn.disabled = false;
+                btn.style.pointerEvents = 'auto';
+            });
+        }
+    }
+
+    // Garder selectAnimal pour compatibilité mais ne plus l'utiliser
     function selectAnimal(animal) {
         selectedAnimal = animal;
         
@@ -114,13 +303,6 @@
         if (targetBtn) {
             targetBtn.classList.add('selected');
         }
-        
-        checkJoinButtonState();
-    }
-
-    function checkJoinButtonState() {
-        const joinBtn = document.getElementById('join-game-btn');
-        joinBtn.disabled = selectedAnimal === null;
     }
 
     async function confirmJoinGame() {
@@ -262,15 +444,25 @@
         
         currentQuestionData = data;
         
-        // Utiliser le startTime du serveur si disponible (pour la synchronisation lors de reconnexion)
-        // startTime est un timestamp Unix en secondes, on le convertit en millisecondes
+        // IMPORTANT : Pour le calcul des POINTS, on utilise TOUJOURS l'heure LOCALE
+        // Cela garantit que le temps de réponse est mesuré depuis le moment où
+        // l'élève VOIT la question, pas depuis le lancement côté serveur.
+        // Ainsi, un délai réseau ne pénalise pas les élèves.
+        const localStartTime = Date.now();
+        questionStartTime = localStartTime;
+        
+        // Pour le TIMER visuel : utiliser le startTime serveur si disponible
+        // Cela permet d'afficher le temps restant correct lors d'une reconnexion
         if (data.startTime) {
-            questionStartTime = data.startTime * 1000; // Convertir secondes -> millisecondes
-            console.log('⏱️ Utilisation du startTime serveur:', new Date(questionStartTime).toISOString());
+            serverQuestionStartTime = data.startTime * 1000;
+            const elapsedOnServer = Math.round((localStartTime - serverQuestionStartTime) / 1000);
+            console.log('⏱️ startTime serveur:', new Date(serverQuestionStartTime).toISOString());
+            console.log('⏱️ Temps déjà écoulé côté serveur:', elapsedOnServer + 's');
         } else {
-            questionStartTime = Date.now();
-            console.log('⏱️ Utilisation de l\'heure locale');
+            serverQuestionStartTime = localStartTime;
         }
+        
+        console.log('⏱️ Heure locale (pour calcul points):', new Date(localStartTime).toISOString());
         
         hasAnswered = false;
         
@@ -381,6 +573,11 @@
             btn.blur();
         });
         
+        // AJUSTEMENT DYNAMIQUE : S'assurer que tout est visible sans scroll
+        requestAnimationFrame(() => {
+            adjustQuestionLayout();
+        });
+        
         // IMPORTANT : Nettoyer et ajouter les event listeners avec un léger délai
         setTimeout(() => {
             // Retirer ENCORE toute sélection/focus résiduel (double sécurité)
@@ -401,6 +598,9 @@
                     });
                 });
             }
+            
+            // Re-ajuster après les listeners (au cas où)
+            adjustQuestionLayout();
         }, 100); // Augmenter à 100ms pour mobile
         
         // Démarrer le timer
@@ -440,11 +640,12 @@
         const timerBar = document.getElementById('timer-bar');
         const timerText = document.getElementById('timer-text');
         
-        // Calculer le temps déjà écoulé depuis le début de la question
-        const elapsedSeconds = Math.floor((Date.now() - questionStartTime) / 1000);
+        // Pour le timer VISUEL : utiliser le temps serveur (important pour reconnexion)
+        // Cela affiche le temps restant réel de la question
+        const elapsedSeconds = Math.floor((Date.now() - serverQuestionStartTime) / 1000);
         const remainingTime = Math.max(0, duration - elapsedSeconds);
         
-        console.log(`⏱️ Timer: durée=${duration}s, écoulé=${elapsedSeconds}s, restant=${remainingTime}s`);
+        console.log(`⏱️ Timer visuel: durée=${duration}s, écoulé=${elapsedSeconds}s, restant=${remainingTime}s`);
         
         timerState.remaining = remainingTime;
         timerState.duration = duration;
@@ -633,19 +834,40 @@
             </div>
         `;
         
-        // Détection de blocage prolongé (30 secondes)
+        // NOUVEAU : Démarrer le watchdog anti-blocage
+        // Calculer le temps de fin théorique de la question
+        if (currentQuestionData && currentQuestionData.question) {
+            const questionTime = currentQuestionData.question.time || 30;
+            const expectedEndTime = questionStartTime + (questionTime * 1000);
+            
+            console.log('🐕 ÉLÈVE: Démarrage watchdog', {
+                questionIndex: SESSION_STATE.currentQuestion,
+                questionTime,
+                expectedEndTime: new Date(expectedEndTime).toISOString()
+            });
+            
+            // Démarrer le watchdog pour vérifier si on reste bloqué
+            if (window.startWatchdog) {
+                window.startWatchdog(SESSION_STATE.currentQuestion, expectedEndTime);
+            }
+        }
+        
+        // Fallback : Détection de blocage prolongé (20 secondes, réduit de 30)
         const stuckTimeout = setTimeout(() => {
             const warning = document.getElementById('stuck-warning');
-            if (warning) {
+            if (warning && warning.style.display === 'none') {
                 warning.style.display = 'block';
-                console.warn('⚠️ ÉLÈVE: Bloqué depuis 30s sur "Réponse enregistrée"');
+                console.warn('⚠️ ÉLÈVE: Bloqué depuis 20s sur "Réponse enregistrée"');
             }
-        }, 30000);
+        }, 20000);
         
         // Nettoyer le timeout si on quitte cette page
         const observer = new MutationObserver(() => {
             if (!document.getElementById('answers-container')) {
                 clearTimeout(stuckTimeout);
+                if (window.stopWatchdog) {
+                    window.stopWatchdog();
+                }
                 observer.disconnect();
             }
         });
@@ -941,6 +1163,12 @@
     function displayQuestionResults(data) {
         console.log('📊 ÉLÈVE: Affichage résultats', data);
         console.log('🔍 data.manualMode =', data.manualMode, ', type =', typeof data.manualMode);
+        
+        // NOUVEAU : Arrêter le watchdog, on a reçu les résultats
+        if (window.stopWatchdog) {
+            window.stopWatchdog();
+            console.log('🐕 ÉLÈVE: Watchdog arrêté (résultats reçus)');
+        }
         
         const gameContainer = document.querySelector('.game-container');
         

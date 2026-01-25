@@ -1,0 +1,2417 @@
+{
+    "name": "reseauInformatique_100q_4e3e",
+    "modifyCode": "96DSC5T7",
+    "playCode": "5GJ6GN",
+    "data": {
+        "id": "mk56gkkmnsvz82g8j",
+        "name": "reseauInformatique_100q_4e3e",
+        "questions": [
+            {
+                "id": "mk56fbc2vr3xi1uc9",
+                "type": "multiple",
+                "question": "\u00c0 quoi sert une adresse IP ? (question 1)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Identifier un appareil sur un r\u00e9seau",
+                        "correct": true
+                    },
+                    {
+                        "text": "Nommer un utilisateur",
+                        "correct": false
+                    },
+                    {
+                        "text": "Prot\u00e9ger un PC",
+                        "correct": false
+                    },
+                    {
+                        "text": "Augmenter le d\u00e9bit",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc35r0w2xlff",
+                "type": "multiple",
+                "question": "Quel appareil relie plusieurs ordinateurs dans un r\u00e9seau local ? (question 2)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Switch",
+                        "correct": true
+                    },
+                    {
+                        "text": "Routeur",
+                        "correct": false
+                    },
+                    {
+                        "text": "Modem",
+                        "correct": false
+                    },
+                    {
+                        "text": "Serveur",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc33a4vmyoq1",
+                "type": "multiple",
+                "question": "Quel appareil relie le r\u00e9seau local \u00e0 Internet ? (question 3)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Routeur",
+                        "correct": true
+                    },
+                    {
+                        "text": "Switch",
+                        "correct": false
+                    },
+                    {
+                        "text": "Serveur",
+                        "correct": false
+                    },
+                    {
+                        "text": "Imprimante",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3cb5bhbmc7",
+                "type": "multiple",
+                "question": "Quel appareil est fourni par le FAI ? (question 4)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Modem",
+                        "correct": true
+                    },
+                    {
+                        "text": "Switch",
+                        "correct": false
+                    },
+                    {
+                        "text": "Serveur",
+                        "correct": false
+                    },
+                    {
+                        "text": "Carte r\u00e9seau",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc33n1pl9sdc",
+                "type": "multiple",
+                "question": "Quelle commande permet de tester la connexion ? (question 5)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "ping",
+                        "correct": true
+                    },
+                    {
+                        "text": "ipconfig",
+                        "correct": false
+                    },
+                    {
+                        "text": "format",
+                        "correct": false
+                    },
+                    {
+                        "text": "shutdown",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3d18a9ziw7",
+                "type": "multiple",
+                "question": "Que signifie LAN ? (question 6)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Local Area Network",
+                        "correct": true
+                    },
+                    {
+                        "text": "Large Access Network",
+                        "correct": false
+                    },
+                    {
+                        "text": "Logical Area Node",
+                        "correct": false
+                    },
+                    {
+                        "text": "Linked Area Network",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3vfn0ennj4",
+                "type": "multiple",
+                "question": "Que signifie WAN ? (question 7)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Wide Area Network",
+                        "correct": true
+                    },
+                    {
+                        "text": "Web Area Network",
+                        "correct": false
+                    },
+                    {
+                        "text": "Wireless Access Node",
+                        "correct": false
+                    },
+                    {
+                        "text": "World Area Network",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3b3ndif3vp",
+                "type": "multiple",
+                "question": "Quel c\u00e2ble est utilis\u00e9 pour le r\u00e9seau filaire ? (question 8)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "RJ45",
+                        "correct": true
+                    },
+                    {
+                        "text": "HDMI",
+                        "correct": false
+                    },
+                    {
+                        "text": "USB",
+                        "correct": false
+                    },
+                    {
+                        "text": "VGA",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc34w1pb5dfc",
+                "type": "multiple",
+                "question": "Quel appareil attribue souvent les IP automatiquement ? (question 9)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Routeur",
+                        "correct": true
+                    },
+                    {
+                        "text": "Switch",
+                        "correct": false
+                    },
+                    {
+                        "text": "Serveur web",
+                        "correct": false
+                    },
+                    {
+                        "text": "Imprimante",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc38ntb654om",
+                "type": "multiple",
+                "question": "Quel serveur traduit un nom de domaine en IP ? (question 10)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "DNS",
+                        "correct": true
+                    },
+                    {
+                        "text": "DHCP",
+                        "correct": false
+                    },
+                    {
+                        "text": "FTP",
+                        "correct": false
+                    },
+                    {
+                        "text": "HTTP",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3qaoxh8fcl",
+                "type": "multiple",
+                "question": "\u00c0 quoi sert une adresse IP ? (question 11)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Identifier un appareil sur un r\u00e9seau",
+                        "correct": true
+                    },
+                    {
+                        "text": "Nommer un utilisateur",
+                        "correct": false
+                    },
+                    {
+                        "text": "Prot\u00e9ger un PC",
+                        "correct": false
+                    },
+                    {
+                        "text": "Augmenter le d\u00e9bit",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3e8cjowo4o",
+                "type": "multiple",
+                "question": "Quel appareil relie plusieurs ordinateurs dans un r\u00e9seau local ? (question 12)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Switch",
+                        "correct": true
+                    },
+                    {
+                        "text": "Routeur",
+                        "correct": false
+                    },
+                    {
+                        "text": "Modem",
+                        "correct": false
+                    },
+                    {
+                        "text": "Serveur",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc32pm9t1ogz",
+                "type": "multiple",
+                "question": "Quel appareil relie le r\u00e9seau local \u00e0 Internet ? (question 13)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Routeur",
+                        "correct": true
+                    },
+                    {
+                        "text": "Switch",
+                        "correct": false
+                    },
+                    {
+                        "text": "Serveur",
+                        "correct": false
+                    },
+                    {
+                        "text": "Imprimante",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3ktv05b8kv",
+                "type": "multiple",
+                "question": "Quel appareil est fourni par le FAI ? (question 14)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Modem",
+                        "correct": true
+                    },
+                    {
+                        "text": "Switch",
+                        "correct": false
+                    },
+                    {
+                        "text": "Serveur",
+                        "correct": false
+                    },
+                    {
+                        "text": "Carte r\u00e9seau",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc330e5fejd6",
+                "type": "multiple",
+                "question": "Quelle commande permet de tester la connexion ? (question 15)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "ping",
+                        "correct": true
+                    },
+                    {
+                        "text": "ipconfig",
+                        "correct": false
+                    },
+                    {
+                        "text": "format",
+                        "correct": false
+                    },
+                    {
+                        "text": "shutdown",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3ucfy9650c",
+                "type": "multiple",
+                "question": "Que signifie LAN ? (question 16)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Local Area Network",
+                        "correct": true
+                    },
+                    {
+                        "text": "Large Access Network",
+                        "correct": false
+                    },
+                    {
+                        "text": "Logical Area Node",
+                        "correct": false
+                    },
+                    {
+                        "text": "Linked Area Network",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3phog0czq3",
+                "type": "multiple",
+                "question": "Que signifie WAN ? (question 17)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Wide Area Network",
+                        "correct": true
+                    },
+                    {
+                        "text": "Web Area Network",
+                        "correct": false
+                    },
+                    {
+                        "text": "Wireless Access Node",
+                        "correct": false
+                    },
+                    {
+                        "text": "World Area Network",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3ux44h0zdx",
+                "type": "multiple",
+                "question": "Quel c\u00e2ble est utilis\u00e9 pour le r\u00e9seau filaire ? (question 18)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "RJ45",
+                        "correct": true
+                    },
+                    {
+                        "text": "HDMI",
+                        "correct": false
+                    },
+                    {
+                        "text": "USB",
+                        "correct": false
+                    },
+                    {
+                        "text": "VGA",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc33hcfeh8yi",
+                "type": "multiple",
+                "question": "Quel appareil attribue souvent les IP automatiquement ? (question 19)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Routeur",
+                        "correct": true
+                    },
+                    {
+                        "text": "Switch",
+                        "correct": false
+                    },
+                    {
+                        "text": "Serveur web",
+                        "correct": false
+                    },
+                    {
+                        "text": "Imprimante",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc38oxic163s",
+                "type": "multiple",
+                "question": "Quel serveur traduit un nom de domaine en IP ? (question 20)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "DNS",
+                        "correct": true
+                    },
+                    {
+                        "text": "DHCP",
+                        "correct": false
+                    },
+                    {
+                        "text": "FTP",
+                        "correct": false
+                    },
+                    {
+                        "text": "HTTP",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc36ahnnfpdo",
+                "type": "multiple",
+                "question": "\u00c0 quoi sert une adresse IP ? (question 21)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Identifier un appareil sur un r\u00e9seau",
+                        "correct": true
+                    },
+                    {
+                        "text": "Nommer un utilisateur",
+                        "correct": false
+                    },
+                    {
+                        "text": "Prot\u00e9ger un PC",
+                        "correct": false
+                    },
+                    {
+                        "text": "Augmenter le d\u00e9bit",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3ins9daoxm",
+                "type": "multiple",
+                "question": "Quel appareil relie plusieurs ordinateurs dans un r\u00e9seau local ? (question 22)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Switch",
+                        "correct": true
+                    },
+                    {
+                        "text": "Routeur",
+                        "correct": false
+                    },
+                    {
+                        "text": "Modem",
+                        "correct": false
+                    },
+                    {
+                        "text": "Serveur",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3gdlz4rsta",
+                "type": "multiple",
+                "question": "Quel appareil relie le r\u00e9seau local \u00e0 Internet ? (question 23)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Routeur",
+                        "correct": true
+                    },
+                    {
+                        "text": "Switch",
+                        "correct": false
+                    },
+                    {
+                        "text": "Serveur",
+                        "correct": false
+                    },
+                    {
+                        "text": "Imprimante",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3yg4jkhzl4",
+                "type": "multiple",
+                "question": "Quel appareil est fourni par le FAI ? (question 24)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Modem",
+                        "correct": true
+                    },
+                    {
+                        "text": "Switch",
+                        "correct": false
+                    },
+                    {
+                        "text": "Serveur",
+                        "correct": false
+                    },
+                    {
+                        "text": "Carte r\u00e9seau",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3yzb4i1lly",
+                "type": "multiple",
+                "question": "Quelle commande permet de tester la connexion ? (question 25)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "ping",
+                        "correct": true
+                    },
+                    {
+                        "text": "ipconfig",
+                        "correct": false
+                    },
+                    {
+                        "text": "format",
+                        "correct": false
+                    },
+                    {
+                        "text": "shutdown",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3r0lpe3ibw",
+                "type": "multiple",
+                "question": "Que signifie LAN ? (question 26)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Local Area Network",
+                        "correct": true
+                    },
+                    {
+                        "text": "Large Access Network",
+                        "correct": false
+                    },
+                    {
+                        "text": "Logical Area Node",
+                        "correct": false
+                    },
+                    {
+                        "text": "Linked Area Network",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3lmxng7qly",
+                "type": "multiple",
+                "question": "Que signifie WAN ? (question 27)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Wide Area Network",
+                        "correct": true
+                    },
+                    {
+                        "text": "Web Area Network",
+                        "correct": false
+                    },
+                    {
+                        "text": "Wireless Access Node",
+                        "correct": false
+                    },
+                    {
+                        "text": "World Area Network",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3a45xrvbpl",
+                "type": "multiple",
+                "question": "Quel c\u00e2ble est utilis\u00e9 pour le r\u00e9seau filaire ? (question 28)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "RJ45",
+                        "correct": true
+                    },
+                    {
+                        "text": "HDMI",
+                        "correct": false
+                    },
+                    {
+                        "text": "USB",
+                        "correct": false
+                    },
+                    {
+                        "text": "VGA",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc30icr1kauf",
+                "type": "multiple",
+                "question": "Quel appareil attribue souvent les IP automatiquement ? (question 29)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Routeur",
+                        "correct": true
+                    },
+                    {
+                        "text": "Switch",
+                        "correct": false
+                    },
+                    {
+                        "text": "Serveur web",
+                        "correct": false
+                    },
+                    {
+                        "text": "Imprimante",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3ekuifrc3y",
+                "type": "multiple",
+                "question": "Quel serveur traduit un nom de domaine en IP ? (question 30)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "DNS",
+                        "correct": true
+                    },
+                    {
+                        "text": "DHCP",
+                        "correct": false
+                    },
+                    {
+                        "text": "FTP",
+                        "correct": false
+                    },
+                    {
+                        "text": "HTTP",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3a7dc5tzhk",
+                "type": "multiple",
+                "question": "\u00c0 quoi sert une adresse IP ? (question 31)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Identifier un appareil sur un r\u00e9seau",
+                        "correct": true
+                    },
+                    {
+                        "text": "Nommer un utilisateur",
+                        "correct": false
+                    },
+                    {
+                        "text": "Prot\u00e9ger un PC",
+                        "correct": false
+                    },
+                    {
+                        "text": "Augmenter le d\u00e9bit",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3ohngydyun",
+                "type": "multiple",
+                "question": "Quel appareil relie plusieurs ordinateurs dans un r\u00e9seau local ? (question 32)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Switch",
+                        "correct": true
+                    },
+                    {
+                        "text": "Routeur",
+                        "correct": false
+                    },
+                    {
+                        "text": "Modem",
+                        "correct": false
+                    },
+                    {
+                        "text": "Serveur",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3yhktj20jy",
+                "type": "multiple",
+                "question": "Quel appareil relie le r\u00e9seau local \u00e0 Internet ? (question 33)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Routeur",
+                        "correct": true
+                    },
+                    {
+                        "text": "Switch",
+                        "correct": false
+                    },
+                    {
+                        "text": "Serveur",
+                        "correct": false
+                    },
+                    {
+                        "text": "Imprimante",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3226fkca21",
+                "type": "multiple",
+                "question": "Quel appareil est fourni par le FAI ? (question 34)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Modem",
+                        "correct": true
+                    },
+                    {
+                        "text": "Switch",
+                        "correct": false
+                    },
+                    {
+                        "text": "Serveur",
+                        "correct": false
+                    },
+                    {
+                        "text": "Carte r\u00e9seau",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3hs9goj8rg",
+                "type": "multiple",
+                "question": "Quelle commande permet de tester la connexion ? (question 35)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "ping",
+                        "correct": true
+                    },
+                    {
+                        "text": "ipconfig",
+                        "correct": false
+                    },
+                    {
+                        "text": "format",
+                        "correct": false
+                    },
+                    {
+                        "text": "shutdown",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3red28d3at",
+                "type": "multiple",
+                "question": "Que signifie LAN ? (question 36)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Local Area Network",
+                        "correct": true
+                    },
+                    {
+                        "text": "Large Access Network",
+                        "correct": false
+                    },
+                    {
+                        "text": "Logical Area Node",
+                        "correct": false
+                    },
+                    {
+                        "text": "Linked Area Network",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3sms9cula9",
+                "type": "multiple",
+                "question": "Que signifie WAN ? (question 37)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Wide Area Network",
+                        "correct": true
+                    },
+                    {
+                        "text": "Web Area Network",
+                        "correct": false
+                    },
+                    {
+                        "text": "Wireless Access Node",
+                        "correct": false
+                    },
+                    {
+                        "text": "World Area Network",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc38f0jrhp7j",
+                "type": "multiple",
+                "question": "Quel c\u00e2ble est utilis\u00e9 pour le r\u00e9seau filaire ? (question 38)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "RJ45",
+                        "correct": true
+                    },
+                    {
+                        "text": "HDMI",
+                        "correct": false
+                    },
+                    {
+                        "text": "USB",
+                        "correct": false
+                    },
+                    {
+                        "text": "VGA",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc39phdt9dxl",
+                "type": "multiple",
+                "question": "Quel appareil attribue souvent les IP automatiquement ? (question 39)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Routeur",
+                        "correct": true
+                    },
+                    {
+                        "text": "Switch",
+                        "correct": false
+                    },
+                    {
+                        "text": "Serveur web",
+                        "correct": false
+                    },
+                    {
+                        "text": "Imprimante",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3u8m8klg8e",
+                "type": "multiple",
+                "question": "Quel serveur traduit un nom de domaine en IP ? (question 40)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "DNS",
+                        "correct": true
+                    },
+                    {
+                        "text": "DHCP",
+                        "correct": false
+                    },
+                    {
+                        "text": "FTP",
+                        "correct": false
+                    },
+                    {
+                        "text": "HTTP",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3vwavd1th8",
+                "type": "multiple",
+                "question": "\u00c0 quoi sert une adresse IP ? (question 41)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Identifier un appareil sur un r\u00e9seau",
+                        "correct": true
+                    },
+                    {
+                        "text": "Nommer un utilisateur",
+                        "correct": false
+                    },
+                    {
+                        "text": "Prot\u00e9ger un PC",
+                        "correct": false
+                    },
+                    {
+                        "text": "Augmenter le d\u00e9bit",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3h1y4wtlk6",
+                "type": "multiple",
+                "question": "Quel appareil relie plusieurs ordinateurs dans un r\u00e9seau local ? (question 42)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Switch",
+                        "correct": true
+                    },
+                    {
+                        "text": "Routeur",
+                        "correct": false
+                    },
+                    {
+                        "text": "Modem",
+                        "correct": false
+                    },
+                    {
+                        "text": "Serveur",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3ac25kpif0",
+                "type": "multiple",
+                "question": "Quel appareil relie le r\u00e9seau local \u00e0 Internet ? (question 43)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Routeur",
+                        "correct": true
+                    },
+                    {
+                        "text": "Switch",
+                        "correct": false
+                    },
+                    {
+                        "text": "Serveur",
+                        "correct": false
+                    },
+                    {
+                        "text": "Imprimante",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc38xqu9xgbu",
+                "type": "multiple",
+                "question": "Quel appareil est fourni par le FAI ? (question 44)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Modem",
+                        "correct": true
+                    },
+                    {
+                        "text": "Switch",
+                        "correct": false
+                    },
+                    {
+                        "text": "Serveur",
+                        "correct": false
+                    },
+                    {
+                        "text": "Carte r\u00e9seau",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3um3ixifuy",
+                "type": "multiple",
+                "question": "Quelle commande permet de tester la connexion ? (question 45)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "ping",
+                        "correct": true
+                    },
+                    {
+                        "text": "ipconfig",
+                        "correct": false
+                    },
+                    {
+                        "text": "format",
+                        "correct": false
+                    },
+                    {
+                        "text": "shutdown",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3qi3u0iyj3",
+                "type": "multiple",
+                "question": "Que signifie LAN ? (question 46)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Local Area Network",
+                        "correct": true
+                    },
+                    {
+                        "text": "Large Access Network",
+                        "correct": false
+                    },
+                    {
+                        "text": "Logical Area Node",
+                        "correct": false
+                    },
+                    {
+                        "text": "Linked Area Network",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc36v7wzbxw9",
+                "type": "multiple",
+                "question": "Que signifie WAN ? (question 47)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Wide Area Network",
+                        "correct": true
+                    },
+                    {
+                        "text": "Web Area Network",
+                        "correct": false
+                    },
+                    {
+                        "text": "Wireless Access Node",
+                        "correct": false
+                    },
+                    {
+                        "text": "World Area Network",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3uz8fwa61o",
+                "type": "multiple",
+                "question": "Quel c\u00e2ble est utilis\u00e9 pour le r\u00e9seau filaire ? (question 48)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "RJ45",
+                        "correct": true
+                    },
+                    {
+                        "text": "HDMI",
+                        "correct": false
+                    },
+                    {
+                        "text": "USB",
+                        "correct": false
+                    },
+                    {
+                        "text": "VGA",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3ui1u6h11k",
+                "type": "multiple",
+                "question": "Quel appareil attribue souvent les IP automatiquement ? (question 49)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Routeur",
+                        "correct": true
+                    },
+                    {
+                        "text": "Switch",
+                        "correct": false
+                    },
+                    {
+                        "text": "Serveur web",
+                        "correct": false
+                    },
+                    {
+                        "text": "Imprimante",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3lnrp4fna7",
+                "type": "multiple",
+                "question": "Quel serveur traduit un nom de domaine en IP ? (question 50)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "DNS",
+                        "correct": true
+                    },
+                    {
+                        "text": "DHCP",
+                        "correct": false
+                    },
+                    {
+                        "text": "FTP",
+                        "correct": false
+                    },
+                    {
+                        "text": "HTTP",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3dn16cpg6f",
+                "type": "multiple",
+                "question": "\u00c0 quoi sert une adresse IP ? (question 51)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Identifier un appareil sur un r\u00e9seau",
+                        "correct": true
+                    },
+                    {
+                        "text": "Nommer un utilisateur",
+                        "correct": false
+                    },
+                    {
+                        "text": "Prot\u00e9ger un PC",
+                        "correct": false
+                    },
+                    {
+                        "text": "Augmenter le d\u00e9bit",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3gcfdvwt0w",
+                "type": "multiple",
+                "question": "Quel appareil relie plusieurs ordinateurs dans un r\u00e9seau local ? (question 52)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Switch",
+                        "correct": true
+                    },
+                    {
+                        "text": "Routeur",
+                        "correct": false
+                    },
+                    {
+                        "text": "Modem",
+                        "correct": false
+                    },
+                    {
+                        "text": "Serveur",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc31v9q11u0a",
+                "type": "multiple",
+                "question": "Quel appareil relie le r\u00e9seau local \u00e0 Internet ? (question 53)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Routeur",
+                        "correct": true
+                    },
+                    {
+                        "text": "Switch",
+                        "correct": false
+                    },
+                    {
+                        "text": "Serveur",
+                        "correct": false
+                    },
+                    {
+                        "text": "Imprimante",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3wkl4e8b6c",
+                "type": "multiple",
+                "question": "Quel appareil est fourni par le FAI ? (question 54)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Modem",
+                        "correct": true
+                    },
+                    {
+                        "text": "Switch",
+                        "correct": false
+                    },
+                    {
+                        "text": "Serveur",
+                        "correct": false
+                    },
+                    {
+                        "text": "Carte r\u00e9seau",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3c9mwy8ciy",
+                "type": "multiple",
+                "question": "Quelle commande permet de tester la connexion ? (question 55)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "ping",
+                        "correct": true
+                    },
+                    {
+                        "text": "ipconfig",
+                        "correct": false
+                    },
+                    {
+                        "text": "format",
+                        "correct": false
+                    },
+                    {
+                        "text": "shutdown",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3hgnriw9sw",
+                "type": "multiple",
+                "question": "Que signifie LAN ? (question 56)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Local Area Network",
+                        "correct": true
+                    },
+                    {
+                        "text": "Large Access Network",
+                        "correct": false
+                    },
+                    {
+                        "text": "Logical Area Node",
+                        "correct": false
+                    },
+                    {
+                        "text": "Linked Area Network",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc36r00mzri6",
+                "type": "multiple",
+                "question": "Que signifie WAN ? (question 57)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Wide Area Network",
+                        "correct": true
+                    },
+                    {
+                        "text": "Web Area Network",
+                        "correct": false
+                    },
+                    {
+                        "text": "Wireless Access Node",
+                        "correct": false
+                    },
+                    {
+                        "text": "World Area Network",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3lvturtvv5",
+                "type": "multiple",
+                "question": "Quel c\u00e2ble est utilis\u00e9 pour le r\u00e9seau filaire ? (question 58)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "RJ45",
+                        "correct": true
+                    },
+                    {
+                        "text": "HDMI",
+                        "correct": false
+                    },
+                    {
+                        "text": "USB",
+                        "correct": false
+                    },
+                    {
+                        "text": "VGA",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc38hutrb5nm",
+                "type": "multiple",
+                "question": "Quel appareil attribue souvent les IP automatiquement ? (question 59)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Routeur",
+                        "correct": true
+                    },
+                    {
+                        "text": "Switch",
+                        "correct": false
+                    },
+                    {
+                        "text": "Serveur web",
+                        "correct": false
+                    },
+                    {
+                        "text": "Imprimante",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3n7gm7e6oq",
+                "type": "multiple",
+                "question": "Quel serveur traduit un nom de domaine en IP ? (question 60)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "DNS",
+                        "correct": true
+                    },
+                    {
+                        "text": "DHCP",
+                        "correct": false
+                    },
+                    {
+                        "text": "FTP",
+                        "correct": false
+                    },
+                    {
+                        "text": "HTTP",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3t9to0qp4k",
+                "type": "multiple",
+                "question": "\u00c0 quoi sert une adresse IP ? (question 61)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Identifier un appareil sur un r\u00e9seau",
+                        "correct": true
+                    },
+                    {
+                        "text": "Nommer un utilisateur",
+                        "correct": false
+                    },
+                    {
+                        "text": "Prot\u00e9ger un PC",
+                        "correct": false
+                    },
+                    {
+                        "text": "Augmenter le d\u00e9bit",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc37wc7vi7nf",
+                "type": "multiple",
+                "question": "Quel appareil relie plusieurs ordinateurs dans un r\u00e9seau local ? (question 62)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Switch",
+                        "correct": true
+                    },
+                    {
+                        "text": "Routeur",
+                        "correct": false
+                    },
+                    {
+                        "text": "Modem",
+                        "correct": false
+                    },
+                    {
+                        "text": "Serveur",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3a7144h0t8",
+                "type": "multiple",
+                "question": "Quel appareil relie le r\u00e9seau local \u00e0 Internet ? (question 63)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Routeur",
+                        "correct": true
+                    },
+                    {
+                        "text": "Switch",
+                        "correct": false
+                    },
+                    {
+                        "text": "Serveur",
+                        "correct": false
+                    },
+                    {
+                        "text": "Imprimante",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3as8i7u52h",
+                "type": "multiple",
+                "question": "Quel appareil est fourni par le FAI ? (question 64)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Modem",
+                        "correct": true
+                    },
+                    {
+                        "text": "Switch",
+                        "correct": false
+                    },
+                    {
+                        "text": "Serveur",
+                        "correct": false
+                    },
+                    {
+                        "text": "Carte r\u00e9seau",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3dnn5sogyd",
+                "type": "multiple",
+                "question": "Quelle commande permet de tester la connexion ? (question 65)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "ping",
+                        "correct": true
+                    },
+                    {
+                        "text": "ipconfig",
+                        "correct": false
+                    },
+                    {
+                        "text": "format",
+                        "correct": false
+                    },
+                    {
+                        "text": "shutdown",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3ogeq1yi67",
+                "type": "multiple",
+                "question": "Que signifie LAN ? (question 66)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Local Area Network",
+                        "correct": true
+                    },
+                    {
+                        "text": "Large Access Network",
+                        "correct": false
+                    },
+                    {
+                        "text": "Logical Area Node",
+                        "correct": false
+                    },
+                    {
+                        "text": "Linked Area Network",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc31ckabivkh",
+                "type": "multiple",
+                "question": "Que signifie WAN ? (question 67)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Wide Area Network",
+                        "correct": true
+                    },
+                    {
+                        "text": "Web Area Network",
+                        "correct": false
+                    },
+                    {
+                        "text": "Wireless Access Node",
+                        "correct": false
+                    },
+                    {
+                        "text": "World Area Network",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc31d2dvypmb",
+                "type": "multiple",
+                "question": "Quel c\u00e2ble est utilis\u00e9 pour le r\u00e9seau filaire ? (question 68)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "RJ45",
+                        "correct": true
+                    },
+                    {
+                        "text": "HDMI",
+                        "correct": false
+                    },
+                    {
+                        "text": "USB",
+                        "correct": false
+                    },
+                    {
+                        "text": "VGA",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3o08g30vf7",
+                "type": "multiple",
+                "question": "Quel appareil attribue souvent les IP automatiquement ? (question 69)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Routeur",
+                        "correct": true
+                    },
+                    {
+                        "text": "Switch",
+                        "correct": false
+                    },
+                    {
+                        "text": "Serveur web",
+                        "correct": false
+                    },
+                    {
+                        "text": "Imprimante",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc34tyddwzs1",
+                "type": "multiple",
+                "question": "Quel serveur traduit un nom de domaine en IP ? (question 70)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "DNS",
+                        "correct": true
+                    },
+                    {
+                        "text": "DHCP",
+                        "correct": false
+                    },
+                    {
+                        "text": "FTP",
+                        "correct": false
+                    },
+                    {
+                        "text": "HTTP",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3i22idellr",
+                "type": "multiple",
+                "question": "\u00c0 quoi sert une adresse IP ? (question 71)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Identifier un appareil sur un r\u00e9seau",
+                        "correct": true
+                    },
+                    {
+                        "text": "Nommer un utilisateur",
+                        "correct": false
+                    },
+                    {
+                        "text": "Prot\u00e9ger un PC",
+                        "correct": false
+                    },
+                    {
+                        "text": "Augmenter le d\u00e9bit",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3so0kgy0cg",
+                "type": "multiple",
+                "question": "Quel appareil relie plusieurs ordinateurs dans un r\u00e9seau local ? (question 72)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Switch",
+                        "correct": true
+                    },
+                    {
+                        "text": "Routeur",
+                        "correct": false
+                    },
+                    {
+                        "text": "Modem",
+                        "correct": false
+                    },
+                    {
+                        "text": "Serveur",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc30wv9zu947",
+                "type": "multiple",
+                "question": "Quel appareil relie le r\u00e9seau local \u00e0 Internet ? (question 73)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Routeur",
+                        "correct": true
+                    },
+                    {
+                        "text": "Switch",
+                        "correct": false
+                    },
+                    {
+                        "text": "Serveur",
+                        "correct": false
+                    },
+                    {
+                        "text": "Imprimante",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3kwxnxm2ly",
+                "type": "multiple",
+                "question": "Quel appareil est fourni par le FAI ? (question 74)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Modem",
+                        "correct": true
+                    },
+                    {
+                        "text": "Switch",
+                        "correct": false
+                    },
+                    {
+                        "text": "Serveur",
+                        "correct": false
+                    },
+                    {
+                        "text": "Carte r\u00e9seau",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3snqccmcmz",
+                "type": "multiple",
+                "question": "Quelle commande permet de tester la connexion ? (question 75)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "ping",
+                        "correct": true
+                    },
+                    {
+                        "text": "ipconfig",
+                        "correct": false
+                    },
+                    {
+                        "text": "format",
+                        "correct": false
+                    },
+                    {
+                        "text": "shutdown",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3y26eez2zy",
+                "type": "multiple",
+                "question": "Que signifie LAN ? (question 76)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Local Area Network",
+                        "correct": true
+                    },
+                    {
+                        "text": "Large Access Network",
+                        "correct": false
+                    },
+                    {
+                        "text": "Logical Area Node",
+                        "correct": false
+                    },
+                    {
+                        "text": "Linked Area Network",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3zg5j2mcd5",
+                "type": "multiple",
+                "question": "Que signifie WAN ? (question 77)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Wide Area Network",
+                        "correct": true
+                    },
+                    {
+                        "text": "Web Area Network",
+                        "correct": false
+                    },
+                    {
+                        "text": "Wireless Access Node",
+                        "correct": false
+                    },
+                    {
+                        "text": "World Area Network",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3m8y6wns1b",
+                "type": "multiple",
+                "question": "Quel c\u00e2ble est utilis\u00e9 pour le r\u00e9seau filaire ? (question 78)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "RJ45",
+                        "correct": true
+                    },
+                    {
+                        "text": "HDMI",
+                        "correct": false
+                    },
+                    {
+                        "text": "USB",
+                        "correct": false
+                    },
+                    {
+                        "text": "VGA",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3xjx9c2hs2",
+                "type": "multiple",
+                "question": "Quel appareil attribue souvent les IP automatiquement ? (question 79)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Routeur",
+                        "correct": true
+                    },
+                    {
+                        "text": "Switch",
+                        "correct": false
+                    },
+                    {
+                        "text": "Serveur web",
+                        "correct": false
+                    },
+                    {
+                        "text": "Imprimante",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3ra5k7styr",
+                "type": "multiple",
+                "question": "Quel serveur traduit un nom de domaine en IP ? (question 80)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "DNS",
+                        "correct": true
+                    },
+                    {
+                        "text": "DHCP",
+                        "correct": false
+                    },
+                    {
+                        "text": "FTP",
+                        "correct": false
+                    },
+                    {
+                        "text": "HTTP",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3fxzuq5e63",
+                "type": "multiple",
+                "question": "\u00c0 quoi sert une adresse IP ? (question 81)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Identifier un appareil sur un r\u00e9seau",
+                        "correct": true
+                    },
+                    {
+                        "text": "Nommer un utilisateur",
+                        "correct": false
+                    },
+                    {
+                        "text": "Prot\u00e9ger un PC",
+                        "correct": false
+                    },
+                    {
+                        "text": "Augmenter le d\u00e9bit",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3l1uo3xm7j",
+                "type": "multiple",
+                "question": "Quel appareil relie plusieurs ordinateurs dans un r\u00e9seau local ? (question 82)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Switch",
+                        "correct": true
+                    },
+                    {
+                        "text": "Routeur",
+                        "correct": false
+                    },
+                    {
+                        "text": "Modem",
+                        "correct": false
+                    },
+                    {
+                        "text": "Serveur",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3n6j1b73j8",
+                "type": "multiple",
+                "question": "Quel appareil relie le r\u00e9seau local \u00e0 Internet ? (question 83)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Routeur",
+                        "correct": true
+                    },
+                    {
+                        "text": "Switch",
+                        "correct": false
+                    },
+                    {
+                        "text": "Serveur",
+                        "correct": false
+                    },
+                    {
+                        "text": "Imprimante",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3vdwjse3y8",
+                "type": "multiple",
+                "question": "Quel appareil est fourni par le FAI ? (question 84)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Modem",
+                        "correct": true
+                    },
+                    {
+                        "text": "Switch",
+                        "correct": false
+                    },
+                    {
+                        "text": "Serveur",
+                        "correct": false
+                    },
+                    {
+                        "text": "Carte r\u00e9seau",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3p9mm59gky",
+                "type": "multiple",
+                "question": "Quelle commande permet de tester la connexion ? (question 85)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "ping",
+                        "correct": true
+                    },
+                    {
+                        "text": "ipconfig",
+                        "correct": false
+                    },
+                    {
+                        "text": "format",
+                        "correct": false
+                    },
+                    {
+                        "text": "shutdown",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3pe5srt9dg",
+                "type": "multiple",
+                "question": "Que signifie LAN ? (question 86)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Local Area Network",
+                        "correct": true
+                    },
+                    {
+                        "text": "Large Access Network",
+                        "correct": false
+                    },
+                    {
+                        "text": "Logical Area Node",
+                        "correct": false
+                    },
+                    {
+                        "text": "Linked Area Network",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3j6bo595hz",
+                "type": "multiple",
+                "question": "Que signifie WAN ? (question 87)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Wide Area Network",
+                        "correct": true
+                    },
+                    {
+                        "text": "Web Area Network",
+                        "correct": false
+                    },
+                    {
+                        "text": "Wireless Access Node",
+                        "correct": false
+                    },
+                    {
+                        "text": "World Area Network",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3f48ojrtjc",
+                "type": "multiple",
+                "question": "Quel c\u00e2ble est utilis\u00e9 pour le r\u00e9seau filaire ? (question 88)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "RJ45",
+                        "correct": true
+                    },
+                    {
+                        "text": "HDMI",
+                        "correct": false
+                    },
+                    {
+                        "text": "USB",
+                        "correct": false
+                    },
+                    {
+                        "text": "VGA",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3a1o7druav",
+                "type": "multiple",
+                "question": "Quel appareil attribue souvent les IP automatiquement ? (question 89)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Routeur",
+                        "correct": true
+                    },
+                    {
+                        "text": "Switch",
+                        "correct": false
+                    },
+                    {
+                        "text": "Serveur web",
+                        "correct": false
+                    },
+                    {
+                        "text": "Imprimante",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3adkfazsef",
+                "type": "multiple",
+                "question": "Quel serveur traduit un nom de domaine en IP ? (question 90)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "DNS",
+                        "correct": true
+                    },
+                    {
+                        "text": "DHCP",
+                        "correct": false
+                    },
+                    {
+                        "text": "FTP",
+                        "correct": false
+                    },
+                    {
+                        "text": "HTTP",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3xgb9kp7j1",
+                "type": "multiple",
+                "question": "\u00c0 quoi sert une adresse IP ? (question 91)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Identifier un appareil sur un r\u00e9seau",
+                        "correct": true
+                    },
+                    {
+                        "text": "Nommer un utilisateur",
+                        "correct": false
+                    },
+                    {
+                        "text": "Prot\u00e9ger un PC",
+                        "correct": false
+                    },
+                    {
+                        "text": "Augmenter le d\u00e9bit",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3wbev0rmc3",
+                "type": "multiple",
+                "question": "Quel appareil relie plusieurs ordinateurs dans un r\u00e9seau local ? (question 92)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Switch",
+                        "correct": true
+                    },
+                    {
+                        "text": "Routeur",
+                        "correct": false
+                    },
+                    {
+                        "text": "Modem",
+                        "correct": false
+                    },
+                    {
+                        "text": "Serveur",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3yi9y3bug1",
+                "type": "multiple",
+                "question": "Quel appareil relie le r\u00e9seau local \u00e0 Internet ? (question 93)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Routeur",
+                        "correct": true
+                    },
+                    {
+                        "text": "Switch",
+                        "correct": false
+                    },
+                    {
+                        "text": "Serveur",
+                        "correct": false
+                    },
+                    {
+                        "text": "Imprimante",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3u1oen5nrw",
+                "type": "multiple",
+                "question": "Quel appareil est fourni par le FAI ? (question 94)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Modem",
+                        "correct": true
+                    },
+                    {
+                        "text": "Switch",
+                        "correct": false
+                    },
+                    {
+                        "text": "Serveur",
+                        "correct": false
+                    },
+                    {
+                        "text": "Carte r\u00e9seau",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3zsydvvsnn",
+                "type": "multiple",
+                "question": "Quelle commande permet de tester la connexion ? (question 95)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "ping",
+                        "correct": true
+                    },
+                    {
+                        "text": "ipconfig",
+                        "correct": false
+                    },
+                    {
+                        "text": "format",
+                        "correct": false
+                    },
+                    {
+                        "text": "shutdown",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3jc7s2ikiq",
+                "type": "multiple",
+                "question": "Que signifie LAN ? (question 96)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Local Area Network",
+                        "correct": true
+                    },
+                    {
+                        "text": "Large Access Network",
+                        "correct": false
+                    },
+                    {
+                        "text": "Logical Area Node",
+                        "correct": false
+                    },
+                    {
+                        "text": "Linked Area Network",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3kgvifspmm",
+                "type": "multiple",
+                "question": "Que signifie WAN ? (question 97)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Wide Area Network",
+                        "correct": true
+                    },
+                    {
+                        "text": "Web Area Network",
+                        "correct": false
+                    },
+                    {
+                        "text": "Wireless Access Node",
+                        "correct": false
+                    },
+                    {
+                        "text": "World Area Network",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3ybp7q6mah",
+                "type": "multiple",
+                "question": "Quel c\u00e2ble est utilis\u00e9 pour le r\u00e9seau filaire ? (question 98)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "RJ45",
+                        "correct": true
+                    },
+                    {
+                        "text": "HDMI",
+                        "correct": false
+                    },
+                    {
+                        "text": "USB",
+                        "correct": false
+                    },
+                    {
+                        "text": "VGA",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3raw2wuw6q",
+                "type": "multiple",
+                "question": "Quel appareil attribue souvent les IP automatiquement ? (question 99)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Routeur",
+                        "correct": true
+                    },
+                    {
+                        "text": "Switch",
+                        "correct": false
+                    },
+                    {
+                        "text": "Serveur web",
+                        "correct": false
+                    },
+                    {
+                        "text": "Imprimante",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56fbc3nob4sos1p",
+                "type": "multiple",
+                "question": "Quel serveur traduit un nom de domaine en IP ? (question 100)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "DNS",
+                        "correct": true
+                    },
+                    {
+                        "text": "DHCP",
+                        "correct": false
+                    },
+                    {
+                        "text": "FTP",
+                        "correct": false
+                    },
+                    {
+                        "text": "HTTP",
+                        "correct": false
+                    }
+                ]
+            }
+        ],
+        "modifyCode": "96DSC5T7",
+        "playCode": "5GJ6GN",
+        "createdAt": 1767860438566,
+        "lastModified": 1767860438566
+    },
+    "lastModified": 1767860437,
+    "questionCount": 100
+}

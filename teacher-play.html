@@ -492,6 +492,12 @@
             const players = document.getElementById('teacher-players');
             const progress = document.getElementById('teacher-progress');
             
+            // Mettre à jour le nombre total de questions dès qu'on le reçoit
+            if (data.totalQuestions && data.totalQuestions > 0) {
+                teacherTotalQuestions = data.totalQuestions;
+                console.log('👨‍🏫 TEACHER: Nombre de questions mis à jour:', teacherTotalQuestions);
+            }
+            
             // Mettre à jour le nombre de joueurs
             if (players) {
                 const newCount = String(data.playersCount || 0);

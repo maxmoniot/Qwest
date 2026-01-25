@@ -512,6 +512,13 @@
                 });
             }
             
+            // Bouton de resync TOUJOURS VISIBLE
+            // Plus visible (warning) si l'élève est déconnecté
+            const resyncButtonClass = !player.connected ? 'btn-warning' : 'btn-secondary';
+            const resyncButton = `<button class="btn-icon ${resyncButtonClass}" onclick="reconnectPlayer('${player.nickname}')" title="Resynchroniser cet élève">
+                    🔄
+                </button>`;
+            
             html += `
                 <div class="control-player-item ${statusClass}">
                     <span class="player-status">${statusIcon}</span>
@@ -519,6 +526,7 @@
                     <span class="player-progress">✓ ${correctAnswers}/${totalQuestions}</span>
                     <span class="player-score" id="score-${index}">${player.score || 0} pts</span>
                     <div class="player-actions">
+                        ${resyncButton}
                         <button class="btn-icon" onclick="editPlayerScore('${player.nickname}', ${index})" title="Modifier score">
                             ✏️
                         </button>
@@ -589,6 +597,52 @@
         );
     }
     
+    /**
+     * Resynchroniser un joueur déconnecté individuellement
+     */
+    async function reconnectPlayer(nickname) {
+        console.log('🔄 PROF: Tentative de resynchronisation de', nickname);
+        
+        try {
+            const response = await fetch('php/game.php', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: new URLSearchParams({
+                    action: 'reconnect_player',
+                    playCode: CONTROL_STATE.playCode,
+                    nickname: nickname
+                })
+            });
+            
+            const result = await response.json();
+            
+            if (result.success && result.online) {
+                // L'élève est vraiment en ligne
+                console.log('✅ PROF: Joueur en ligne et resynchronisé');
+                showCustomAlert(
+                    'Resynchronisation réussie', 
+                    `${nickname} est en ligne et a été resynchronisé avec succès.`, 
+                    '✅'
+                );
+            } else if (!result.online) {
+                // L'élève est hors ligne
+                console.warn('⚠️ PROF: Joueur hors ligne');
+                const timeSince = result.timeSinceLastPing || 'inconnu';
+                showCustomAlert(
+                    'Élève hors ligne', 
+                    `${nickname} ne répond pas (hors ligne depuis ${timeSince}s).\n\nDemandez-lui de :\n• Vérifier sa connexion WiFi\n• Rafraîchir la page (F5)`, 
+                    '⚠️'
+                );
+            } else {
+                console.error('❌ PROF: Échec resynchronisation:', result.message);
+                showCustomAlert('Échec', 'Impossible de resynchroniser le joueur. Réessayez ou utilisez le bouton de resynchronisation globale.', '❌');
+            }
+        } catch (error) {
+            console.error('❌ PROF: Erreur resynchronisation:', error);
+            showCustomAlert('Erreur', 'Erreur de connexion au serveur.', '❌');
+        }
+    }
+    
     async function removePlayer(nickname) {
         showCustomConfirm(
             'Supprimer le joueur ?',
@@ -621,6 +675,7 @@
     
     window.editPlayerScore = editPlayerScore;
     window.removePlayer = removePlayer;
+    window.reconnectPlayer = reconnectPlayer;
 
     // ========================================
     // ACTIONS DE CONTRÔLE
@@ -672,10 +727,37 @@
             if (checkLimitQuestions && checkLimitQuestions.checked) {
                 const limit = parseInt(limitQuestionsInput.value) || 10;
                 if (limit < APP_STATE.questions.length) {
-                    // Mélanger et prendre les N premières
-                    const shuffled = [...APP_STATE.questions].sort(() => Math.random() - 0.5);
-                    questionsToUse = shuffled.slice(0, limit);
-                    console.log(`🎲 PROF: ${limit} questions sélectionnées aléatoirement sur ${APP_STATE.questions.length}`);
+                    // 1. D'abord, dédupliquer les questions basé sur leur texte
+                    const seenQuestions = new Set();
+                    const uniqueQuestions = APP_STATE.questions.filter(q => {
+                        const key = q.question.trim().toLowerCase();
+                        if (seenQuestions.has(key)) {
+                            console.log(`🎲 PROF: Question en doublon ignorée: "${q.question.substring(0, 30)}..."`);
+                            return false;
+                        }
+                        seenQuestions.add(key);
+                        return true;
+                    });
+                    
+                    if (uniqueQuestions.length < APP_STATE.questions.length) {
+                        console.log(`🎲 PROF: ${APP_STATE.questions.length - uniqueQuestions.length} doublon(s) supprimé(s)`);
+                    }
+                    
+                    // 2. Copier le tableau pour ne pas modifier l'original
+                    const shuffled = [...uniqueQuestions];
+                    
+                    // 3. Algorithme de Fisher-Yates pour un vrai mélange aléatoire
+                    // (plus fiable que sort(() => Math.random() - 0.5))
+                    for (let i = shuffled.length - 1; i > 0; i--) {
+                        const j = Math.floor(Math.random() * (i + 1));
+                        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+                    }
+                    
+                    // 4. Prendre les N premières questions
+                    const actualLimit = Math.min(limit, shuffled.length);
+                    questionsToUse = shuffled.slice(0, actualLimit);
+                    console.log(`🎲 PROF: ${actualLimit} questions sélectionnées aléatoirement sur ${uniqueQuestions.length} uniques`);
+                    console.log(`🎲 PROF: Questions sélectionnées : ${questionsToUse.map(q => q.question.substring(0, 25) + '...').join(', ')}`);
                 }
             }
             
@@ -1557,6 +1639,7 @@
     let controlPollingInterval = null;
     let lastControlState = null;
     let lastResultsQuestionIndex = -1;
+    let autoResyncTriggered = {}; // Track par questionIndex pour éviter de déclencher plusieurs fois
     
     function startControlPolling() {
         console.log('🔄 PROF: Démarrage du polling (1 requête/seconde)');
@@ -1583,6 +1666,59 @@
                 // Mise à jour de la liste des joueurs
                 if (data.players) {
                     updateControlPlayersList(data.players);
+                }
+                
+                // ========================================
+                // RESYNCHRONISATION AUTOMATIQUE
+                // ========================================
+                // Si le temps est écoulé depuis 5+ secondes et que la question n'est pas complétée,
+                // forcer automatiquement la completion (pour éviter que toute la classe reste bloquée)
+                if (data.state === 'playing' && 
+                    data.currentQuestion >= 0 && 
+                    data.timeElapsed !== undefined && 
+                    data.questionTime !== undefined && 
+                    !data.questionCompleted &&
+                    !CONTROL_STATE.isPaused) {
+                    
+                    const timeOverdue = data.timeElapsed - data.questionTime;
+                    
+                    // Si le temps est dépassé de plus de 3 secondes (cohérent avec serveur)
+                    if (timeOverdue >= 3) {
+                        // Vérifier qu'on n'a pas déjà déclenché la resync pour cette question
+                        if (!autoResyncTriggered[data.currentQuestion]) {
+                            autoResyncTriggered[data.currentQuestion] = true;
+                            
+                            console.log('⏰ PROF: RESYNC AUTO - Temps écoulé depuis ' + timeOverdue + 's, forçage de la question ' + data.currentQuestion);
+                            
+                            // Appeler forceQuestionComplete automatiquement
+                            try {
+                                const resyncResponse = await fetch('php/control.php', {
+                                    method: 'POST',
+                                    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                                    body: new URLSearchParams({
+                                        action: 'force_question_complete',
+                                        playCode: CONTROL_STATE.playCode,
+                                        questionIndex: data.currentQuestion
+                                    })
+                                });
+                                
+                                const resyncResult = await resyncResponse.json();
+                                
+                                if (resyncResult.success) {
+                                    console.log('✅ PROF: RESYNC AUTO réussie pour Q' + data.currentQuestion);
+                                } else {
+                                    console.error('❌ PROF: RESYNC AUTO échouée');
+                                }
+                            } catch (error) {
+                                console.error('❌ PROF: Erreur RESYNC AUTO:', error);
+                            }
+                        }
+                    } else {
+                        // Log uniquement si on approche de la deadline
+                        if (timeOverdue >= 0 && timeOverdue < 3) {
+                            console.log('⏰ PROF: Temps écoulé, resync auto dans ' + (3 - timeOverdue) + 's si pas de réponses');
+                        }
+                    }
                 }
                 
                 // Détecter si des résultats sont disponibles
@@ -1620,8 +1756,8 @@
         // Première requête immédiate
         poll();
         
-        // Puis toutes les secondes
-        controlPollingInterval = setInterval(poll, 1000);
+        // Puis toutes les 2 secondes (au lieu de 1s)
+        controlPollingInterval = setInterval(poll, 2000);
     }
     
     // ========================================
@@ -1704,10 +1840,10 @@
     }
     
     function startProjectionUpdates() {
-        console.log('📽️ PROJECTION: Démarrage du polling (toutes les 500ms)');
+        console.log('📽️ PROJECTION: Démarrage du polling (toutes les 1.5s au lieu de 500ms)');
         projectionUpdateInterval = setInterval(() => {
             updateProjectionWindow();
-        }, 500);
+        }, 1500);
     }
     
     function stopProjectionUpdates() {
@@ -1727,6 +1863,21 @@
             return;
         }
         
+        // Calculer le nombre de questions prévu (tenant compte de la limite si cochée)
+        let plannedQuestionCount = APP_STATE.questions.length;
+        const checkLimitQuestions = document.getElementById('limit-questions-check');
+        const limitQuestionsInput = document.getElementById('limit-questions-input');
+        
+        if (checkLimitQuestions && checkLimitQuestions.checked && limitQuestionsInput) {
+            const limit = parseInt(limitQuestionsInput.value) || 10;
+            plannedQuestionCount = Math.min(limit, APP_STATE.questions.length);
+        }
+        
+        // Si la partie a déjà commencé, utiliser le nombre réel de questions
+        if (CONTROL_STATE.quizData?.questions?.length) {
+            plannedQuestionCount = CONTROL_STATE.quizData.questions.length;
+        }
+        
         // Récupérer l'état du jeu via le serveur
         fetch('php/control.php?action=get_control_state&playCode=' + CONTROL_STATE.playCode)
             .then(res => res.json())
@@ -1736,7 +1887,8 @@
                     return;
                 }
                 
-                console.log('📽️ PROJECTION: État reçu', result);
+                console.log('📽️ PROJECTION: État reçu', result.state, 'Q' + result.currentQuestion, 
+                    result.questionCompleted ? '✅completed' : '', result.resultsAvailable ? '📊results' : '');
                 
                 // Préparer les données de base - utiliser les questions de la session en cours
                 const data = {
@@ -1748,18 +1900,24 @@
                     manualMode: CONTROL_STATE.manualMode,
                     paused: result.paused || false,
                     screen: 'waiting',
-                    questions: CONTROL_STATE.quizData?.questions || APP_STATE.questions
+                    questions: CONTROL_STATE.quizData?.questions || APP_STATE.questions,
+                    totalQuestions: plannedQuestionCount // NOUVEAU : Toujours envoyer le nombre prévu
                 };
                 
                 // Détecter l'écran actuel selon l'état du serveur
-                if (result.state === 'ended') {
+                if (result.state === 'finished' || result.state === 'ended') {
                     console.log('📽️ PROJECTION: Affichage écran final');
                     data.screen = 'final';
-                } else if (result.state === 'showing_top3' || result.state === 'showing_results') {
-                    console.log('📽️ PROJECTION: Affichage top3');
-                    data.screen = 'top3';
-                    // Trier les joueurs par score
-                    const sortedPlayers = result.players.slice().sort((a, b) => b.score - a.score);
+                    // Envoyer le classement final complet
+                    const sortedPlayers = result.players.slice().sort((a, b) => (b.score || 0) - (a.score || 0));
+                    data.allPlayers = sortedPlayers;
+                } else if (result.questionCompleted || result.resultsAvailable) {
+                    // NOUVEAU : Détecter la phase "résultats" via questionCompleted
+                    console.log('📽️ PROJECTION: Affichage classement général');
+                    data.screen = 'ranking';
+                    // Trier TOUS les joueurs par score
+                    const sortedPlayers = result.players.slice().sort((a, b) => (b.score || 0) - (a.score || 0));
+                    data.allPlayers = sortedPlayers;
                     data.top3 = sortedPlayers.slice(0, 3);
                 } else if (result.state === 'playing' && result.currentQuestion >= 0) {
                     console.log('📽️ PROJECTION: Affichage question', result.currentQuestion);

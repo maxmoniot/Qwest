@@ -9,6 +9,12 @@ header('Access-Control-Allow-Origin: *');
 
 define('SESSIONS_DIR', __DIR__ . '/data/sessions');
 
+// Timeouts - cohérents avec game.php
+define('PING_TIMEOUT', 120); // 120 secondes - Tolérance pour connexions instables
+define('VISUAL_DISCONNECT_THRESHOLD', 10); // 10 secondes - Détection rapide pour le prof
+define('QUESTION_TIMEOUT_GRACE', 3); // Marge de grâce après fin du timer
+define('ACTIVE_PLAYER_THRESHOLD', 60); // Seuil pour considérer un joueur comme "actif"
+
 // Créer les dossiers si nécessaires
 if (!file_exists(__DIR__ . '/data')) {
     mkdir(__DIR__ . '/data', 0755, true);
@@ -364,16 +370,247 @@ function loadSession($playCode) {
     // Convertir en majuscules pour éviter les problèmes de casse
     $playCode = strtoupper(trim($playCode));
     $file = SESSIONS_DIR . '/' . $playCode . '.json';
-    if (file_exists($file)) {
-        return json_decode(file_get_contents($file), true);
+    
+    if (!file_exists($file)) {
+        return null;
     }
-    return null;
+    
+    $content = @file_get_contents($file);
+    if ($content === false) {
+        return null;
+    }
+    
+    $data = json_decode($content, true);
+    if ($data === null && json_last_error() !== JSON_ERROR_NONE) {
+        error_log("CONTROL LOAD_SESSION: Erreur JSON pour $playCode: " . json_last_error_msg());
+        return null;
+    }
+    
+    return $data;
+}
+
+/**
+ * Charge et verrouille une session pour modification
+ */
+function loadSessionForUpdate($playCode) {
+    $playCode = strtoupper(trim($playCode));
+    $file = SESSIONS_DIR . '/' . $playCode . '.json';
+    
+    if (!file_exists($file)) {
+        return [null, null];
+    }
+    
+    $fp = @fopen($file, 'r+');
+    if (!$fp) {
+        error_log("CONTROL LOAD_SESSION_UPDATE: Impossible d'ouvrir $playCode");
+        return [null, null];
+    }
+    
+    // Attendre le verrou avec timeout
+    $lockAcquired = false;
+    $startTime = time();
+    while (!$lockAcquired && (time() - $startTime) < 5) {
+        if (flock($fp, LOCK_EX | LOCK_NB)) {
+            $lockAcquired = true;
+        } else {
+            usleep(50000);
+        }
+    }
+    
+    if (!$lockAcquired) {
+        flock($fp, LOCK_EX);
+        error_log("CONTROL LOAD_SESSION_UPDATE: Verrou forcé après timeout pour $playCode");
+    }
+    
+    $content = stream_get_contents($fp);
+    if (empty($content)) {
+        flock($fp, LOCK_UN);
+        fclose($fp);
+        return [null, null];
+    }
+    
+    $data = json_decode($content, true);
+    if ($data === null && json_last_error() !== JSON_ERROR_NONE) {
+        error_log("CONTROL LOAD_SESSION_UPDATE: Erreur JSON pour $playCode");
+        flock($fp, LOCK_UN);
+        fclose($fp);
+        return [null, null];
+    }
+    
+    return [$data, $fp];
+}
+
+/**
+ * Sauvegarde une session et libère le verrou
+ */
+function saveSessionAndUnlock($playCode, $session, $fp = null) {
+    $playCode = strtoupper(trim($playCode));
+    $file = SESSIONS_DIR . '/' . $playCode . '.json';
+    
+    $content = json_encode($session);
+    
+    if ($fp) {
+        fseek($fp, 0);
+        ftruncate($fp, 0);
+        fwrite($fp, $content);
+        fflush($fp);
+        flock($fp, LOCK_UN);
+        fclose($fp);
+    } else {
+        $tmpFile = $file . '.tmp.' . getmypid();
+        if (file_put_contents($tmpFile, $content) !== false) {
+            rename($tmpFile, $file);
+        }
+    }
 }
 
 function saveSession($playCode, $session) {
-    // Convertir en majuscules pour cohérence
-    $playCode = strtoupper(trim($playCode));
-    file_put_contents(SESSIONS_DIR . '/' . $playCode . '.json', json_encode($session));
+    saveSessionAndUnlock($playCode, $session, null);
+}
+
+/**
+ * NOUVEAU : Vérifier et forcer automatiquement la completion d'une question
+ * Version pour control.php
+ */
+function checkAndForceQuestionCompletionControl(&$session) {
+    if (isset($session['questionCompleted']) && $session['questionCompleted']) {
+        return false;
+    }
+    
+    if ($session['state'] !== 'playing') {
+        return false;
+    }
+    
+    $questionIndex = $session['currentQuestion'] ?? -1;
+    if ($questionIndex < 0) {
+        return false;
+    }
+    
+    $questions = $session['questions'] ?? $session['quizData']['questions'] ?? [];
+    if (!isset($questions[$questionIndex])) {
+        return false;
+    }
+    
+    $questionTime = $session['customTime'] ?? $questions[$questionIndex]['time'] ?? 30;
+    $questionStartTime = $session['questionStartTime'] ?? 0;
+    
+    if ($questionStartTime === 0) {
+        return false;
+    }
+    
+    $timeElapsed = time() - $questionStartTime;
+    
+    // Forcer si temps écoulé + marge de grâce
+    if ($timeElapsed >= ($questionTime + QUESTION_TIMEOUT_GRACE)) {
+        error_log("CONTROL_AUTO_COMPLETE: Q$questionIndex timeout ({$timeElapsed}s >= {$questionTime}s + " . QUESTION_TIMEOUT_GRACE . "s)");
+        
+        $session['questionCompleted'] = true;
+        $session['questionCompletedTime'] = time();
+        
+        // Calculer les scores
+        calculateQuestionScores($session, $questionIndex);
+        
+        return true;
+    }
+    
+    return false;
+}
+
+/**
+ * Calculer les scores pour une question
+ * (Copie depuis game.php pour éviter dépendances circulaires)
+ */
+function calculateQuestionScores(&$session, $questionIndex) {
+    $question = $session['quizData']['questions'][$questionIndex];
+    
+    // Déterminer la bonne réponse
+    $correctAnswer = null;
+    switch ($question['type']) {
+        case 'multiple':
+        case 'truefalse':
+            foreach ($question['answers'] as $index => $answer) {
+                if ($answer['correct']) {
+                    $correctAnswer = $index;
+                    break;
+                }
+            }
+            break;
+        
+        case 'order':
+            $correctAnswer = array_map(function($a) { return $a['text']; }, $question['answers']);
+            break;
+            
+        case 'freetext':
+            $correctAnswer = $question['answers'][0]['text'];
+            break;
+    }
+    
+    // Calculer les scores
+    foreach ($session['players'] as &$player) {
+        if (isset($player['answers'][$questionIndex])) {
+            $playerAnswer = json_decode($player['answers'][$questionIndex]['answer'], true);
+            $timeSpent = $player['answers'][$questionIndex]['timeSpent'];
+            $isCorrect = false;
+            
+            // Vérifier si correct
+            switch ($question['type']) {
+                case 'multiple':
+                case 'truefalse':
+                    $isCorrect = isset($playerAnswer['index']) && $playerAnswer['index'] === $correctAnswer;
+                    break;
+                
+                case 'order':
+                    $isCorrect = isset($playerAnswer['order']) && $playerAnswer['order'] === $correctAnswer;
+                    break;
+                    
+                case 'freetext':
+                    if (isset($playerAnswer['freetext'])) {
+                        $userAnswer = $playerAnswer['freetext'];
+                        $caseSensitive = $question['caseSensitive'] ?? false;
+                        
+                        if (!$caseSensitive) {
+                            $userAnswer = mb_strtolower(trim($userAnswer), 'UTF-8');
+                            $correctAnswer = mb_strtolower(trim($correctAnswer), 'UTF-8');
+                        } else {
+                            $userAnswer = trim($userAnswer);
+                            $correctAnswer = trim($correctAnswer);
+                        }
+                        
+                        $isCorrect = ($userAnswer === $correctAnswer);
+                        
+                        if (!$isCorrect && isset($question['acceptedAnswers'])) {
+                            foreach ($question['acceptedAnswers'] as $alternative) {
+                                $alternativeToCheck = $caseSensitive ? trim($alternative) : mb_strtolower(trim($alternative), 'UTF-8');
+                                if ($userAnswer === $alternativeToCheck) {
+                                    $isCorrect = true;
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                    break;
+            }
+            
+            // Calculer les points
+            if ($isCorrect) {
+                $timeBonus = max(0, round(1000 - ($timeSpent / 100)));
+                $oldScore = $player['score'] ?? 0;
+                $player['score'] = $oldScore + $timeBonus;
+                $player['answers'][$questionIndex]['correct'] = true;
+                $player['answers'][$questionIndex]['points'] = $timeBonus;
+                
+                error_log("FORCE_CALC: {$player['nickname']} correct Q{$questionIndex}, +{$timeBonus} pts, total=" . $player['score']);
+            } else {
+                $player['answers'][$questionIndex]['correct'] = false;
+                $player['answers'][$questionIndex]['points'] = 0;
+                
+                error_log("FORCE_CALC: {$player['nickname']} incorrect Q{$questionIndex}");
+            }
+        } else {
+            error_log("FORCE_CALC: {$player['nickname']} n'a pas répondu à Q{$questionIndex}");
+        }
+    }
+    unset($player);
 }
 
 function updatePlayerScore() {
@@ -439,7 +676,7 @@ function removePlayer() {
         $connectedPlayers = 0;
         
         foreach ($session['players'] as $player) {
-            if ($player['connected'] && (time() - $player['lastPing'] < 30)) {
+            if ($player['connected'] && (time() - $player['lastPing'] < ACTIVE_PLAYER_THRESHOLD)) {
                 $connectedPlayers++;
                 if (!isset($player['answers'][$questionIndex])) {
                     $allAnswered = false;
@@ -448,10 +685,13 @@ function removePlayer() {
         }
         
         // Si après la suppression, tous les joueurs restants ont répondu, activer questionCompleted
-        if ($allAnswered && $connectedPlayers > 0 && !isset($session['questionCompleted'])) {
+        if ($allAnswered && $connectedPlayers > 0 && !($session['questionCompleted'] ?? false)) {
             error_log("REMOVE_PLAYER: Tous les joueurs restants ont répondu Q$questionIndex, activation questionCompleted");
             $session['questionCompleted'] = true;
             $session['questionCompletedTime'] = time();
+            
+            // Calculer aussi les scores
+            calculateQuestionScores($session, $questionIndex);
         }
     }
     
@@ -470,6 +710,11 @@ function forceQuestionComplete() {
         echo json_encode(['success' => false, 'message' => 'Session introuvable']);
         return;
     }
+    
+    // IMPORTANT : Calculer les scores AVANT de marquer comme complétée
+    // Sinon les réponses apparaissent toutes comme fausses dans le Top 3
+    error_log("FORCE_QUESTION_COMPLETE: Calcul des scores pour Q$questionIndex");
+    calculateQuestionScores($session, $questionIndex);
     
     // Forcer la question comme complétée
     $session['questionCompleted'] = true;
@@ -503,24 +748,77 @@ function getControlState() {
     
     error_log("GET_CONTROL_STATE: Session trouvée, state=" . ($session['state'] ?? 'unknown'));
     
+    // NOUVEAU : Vérifier automatiquement si le temps est écoulé et forcer la completion
+    $wasForced = checkAndForceQuestionCompletionControl($session);
+    if ($wasForced) {
+        error_log("GET_CONTROL_STATE: Question auto-complétée par timeout");
+    }
+    
     // Récupérer TOUS les joueurs avec mise à jour du statut connected
     $allPlayers = $session['players'] ?? [];
+    $statusChanged = false;
     
-    foreach ($allPlayers as &$player) {
+    // Recalculer le statut de connexion pour chaque joueur
+    foreach ($allPlayers as $index => &$player) {
         $timeSinceLastPing = time() - ($player['lastPing'] ?? 0);
-        if ($timeSinceLastPing >= 60) {
-            $player['connected'] = false;
+        
+        // Calculer le nouveau statut
+        $newConnectedStatus = ($timeSinceLastPing < VISUAL_DISCONNECT_THRESHOLD);
+        
+        // Détecter si le statut a changé
+        if (($player['connected'] ?? false) !== $newConnectedStatus) {
+            $statusChanged = true;
+            error_log("GET_CONTROL_STATE: Statut changé pour {$player['nickname']}: " . 
+                     ($newConnectedStatus ? "déconnecté → connecté" : "connecté → déconnecté") . 
+                     " (lastPing il y a {$timeSinceLastPing}s)");
         }
+        
+        // Mettre à jour le statut
+        $player['connected'] = $newConnectedStatus;
+        
+        // Info de debug pour le prof
+        $player['timeSinceLastPing'] = $timeSinceLastPing;
     }
     unset($player);
+    
+    // Sauvegarder la session si le statut a changé OU si une question a été auto-complétée
+    if ($statusChanged || $wasForced) {
+        $session['players'] = $allPlayers;
+        saveSession($playCode, $session);
+        error_log("GET_CONTROL_STATE: Session sauvegardée (statut=" . ($statusChanged ? 'Y' : 'N') . ", wasForced=" . ($wasForced ? 'Y' : 'N') . ")");
+    }
     
     $response = [
         'success' => true,
         'players' => array_values($allPlayers),
         'state' => $session['state'] ?? 'waiting',
         'currentQuestion' => $session['currentQuestion'] ?? -1,
-        'paused' => $session['paused'] ?? false
+        'paused' => $session['paused'] ?? false,
+        'questionCompleted' => $session['questionCompleted'] ?? false
     ];
+    
+    // Ajouter les infos de timing pour la resync automatique
+    if (isset($session['questionStartTime']) && isset($session['currentQuestion']) && $session['currentQuestion'] >= 0) {
+        $response['questionStartTime'] = $session['questionStartTime'];
+        $response['timeElapsed'] = time() - $session['questionStartTime'];
+        
+        // Déterminer le temps alloué pour cette question
+        $questionIndex = $session['currentQuestion'];
+        $questionTime = 30; // Défaut
+        
+        // Utiliser customTime si défini
+        if (isset($session['customTime']) && $session['customTime'] > 0) {
+            $questionTime = $session['customTime'];
+        } 
+        // Sinon utiliser le temps de la question
+        else if (isset($session['quizData']['questions'][$questionIndex]['time'])) {
+            $questionTime = $session['quizData']['questions'][$questionIndex]['time'];
+        }
+        
+        $response['questionTime'] = $questionTime;
+        
+        error_log("GET_CONTROL_STATE: Q{$questionIndex} - timeElapsed=" . $response['timeElapsed'] . "s, questionTime={$questionTime}s, completed=" . ($session['questionCompleted'] ?? false ? 'true' : 'false'));
+    }
     
     // Si des résultats sont disponibles
     if (isset($session['questionCompletedTime']) && isset($session['currentQuestion'])) {

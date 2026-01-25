@@ -317,20 +317,21 @@
     flex-direction: column;
 }
 
-/* VERSION CSS : v14.0 - Hover désactivé sur mobile */
+/* VERSION CSS : v16.0 - Ajustement dynamique JavaScript */
+/* Hover désactivé sur mobile */
 /* Indicateur retiré */
 
-/* PC : TOUT en proportions - Plus de pixels fixes */
+/* PC : Layout de base, ajustement dynamique par JS */
 @media (min-width: 769px) {
     .question-screen {
         height: 100vh;
         width: 100vw;
         margin: 0;
-        padding: 2vh 2vw;
+        padding: 1.5vh 2vw;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         overflow: hidden;
     }
     
@@ -338,16 +339,17 @@
     .question-screen-inner {
         width: 90vw;
         max-width: 1200px;
-        height: 90vh;
+        height: 96vh;
         display: flex;
         flex-direction: column;
-        gap: 1vh;
+        gap: 0.5vh;
     }
     
-    /* HEADER - 8% de la hauteur */
+    /* HEADER - Taille fixe compacte */
     .question-header {
-        height: 8%;
-        flex-shrink: 0;
+        flex: 0 0 auto;
+        height: 6vh;
+        min-height: 40px;
         background: rgba(255, 255, 255, 0.95);
         padding: 0 2%;
         border-radius: 12px 12px 0 0;
@@ -359,7 +361,7 @@
     
     .player-nickname-display,
     .question-progress {
-        font-size: 1.2vw;
+        font-size: clamp(12px, 1.2vw, 18px);
         font-weight: 600;
         color: #212121;
     }
@@ -372,21 +374,22 @@
     
     .timer-bar {
         width: 6vw;
-        height: 0.4vh;
+        height: 0.5vh;
+        min-height: 4px;
     }
     
     #timer-text {
-        font-size: 1.2vw;
+        font-size: clamp(12px, 1.2vw, 18px);
         font-weight: 700;
         color: #212121;
     }
     
-    /* CONTENT - 92% de la hauteur */
+    /* CONTENT - Contient tout le reste */
     .question-content {
-        height: 92%;
-        flex-shrink: 0;
+        flex: 1 1 auto;
+        min-height: 0;
         background: rgba(255, 255, 255, 0.95);
-        padding: 3% 2%;
+        padding: 2vh 2vw;
         border-radius: 0 0 12px 12px;
         box-shadow: 0 4px 12px rgba(0,0,0,0.15);
         display: flex;
@@ -394,59 +397,58 @@
         overflow: hidden;
     }
     
-    /* IMAGE - 35% de content avec padding interne */
+    /* IMAGE - Taille contrôlée par JS */
     .question-image {
-        height: 35%;
-        flex-shrink: 0;
+        flex: 0 0 auto;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 1.5% 0;
-        margin-bottom: 1%;
+        padding: 0.5vh 0;
+        margin-bottom: 1vh;
+        overflow: hidden;
     }
     
     .question-image img {
-        max-height: 95%;
-        max-width: 95%;
+        max-height: 100%;
+        max-width: 100%;
         height: auto;
         width: auto;
         object-fit: contain;
         border-radius: 8px;
     }
     
-    /* TEXTE - 13% de content */
+    /* TEXTE - Taille naturelle, ajusté par JS si nécessaire */
     .question-text {
-        height: 13%;
-        flex-shrink: 0;
-        font-size: 1.4vw;
+        flex: 0 0 auto;
+        font-size: clamp(16px, 1.6vw, 28px);
         font-weight: 700;
-        line-height: 1.2;
+        line-height: 1.3;
         color: #212121;
         text-align: center;
-        margin: 0 0 1% 0;
-        overflow-y: auto;
-        overflow-x: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        margin: 0 auto 1.5vh auto;
+        padding: 0 2%;
+        max-width: 95%;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
     }
     
-    /* RÉPONSES - 48% de content */
+    /* RÉPONSES - Taille contrôlée par JS */
     .answers-container {
-        height: 48%;
-        flex-shrink: 0;
+        flex: 1 1 auto;
+        min-height: 100px;
         display: flex;
         flex-direction: column;
-        gap: 1%;
+        gap: 0.8vh;
         overflow: hidden;
     }
     
-    /* Choix multiple / Vrai-Faux - Se partagent l'espace */
+    /* Boutons de réponse - Taille contrôlée par JS */
     .answer-btn {
-        flex: 1;
-        min-height: 0;
-        padding: 1% 2%;
-        font-size: 1.1vw;
+        flex: 1 1 0;
+        min-height: 40px;
+        padding: 1vh 2vw;
+        font-size: clamp(14px, 1.1vw, 20px);
         font-weight: 600;
         line-height: 1.2;
         white-space: normal;
@@ -455,97 +457,85 @@
         align-items: center;
         justify-content: center;
         text-align: center;
+        overflow: hidden;
     }
     
     /* Questions d'ordre */
     .order-container {
-        height: 100%;
+        flex: 1 1 auto;
+        min-height: 0;
         display: flex;
         flex-direction: column;
-        gap: 1%;
+        gap: 0.6vh;
         overflow: hidden;
     }
     
     .order-item {
-        flex: 1;
+        flex: 1 1 0;
         min-height: 0;
-        padding: 1% 2%;
+        padding: 0.8vh 1.5vw;
         display: flex;
         align-items: center;
-        gap: 1%;
+        gap: 1vw;
     }
     
     .order-text {
-        font-size: 1vw;
+        font-size: clamp(12px, 1vw, 18px);
         font-weight: 600;
         line-height: 1.2;
         flex: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     
     .drag-handle {
-        font-size: 1.5vw;
+        font-size: clamp(16px, 1.5vw, 24px);
         flex-shrink: 0;
     }
     
     .btn-validate-order {
-        flex-shrink: 0;
-        height: 6%;
-        padding: 0 3%;
-        font-size: 1.2vw;
+        flex: 0 0 auto;
+        height: 5vh;
+        min-height: 36px;
+        padding: 0 3vw;
+        font-size: clamp(14px, 1.2vw, 20px);
         font-weight: 700;
-        margin-top: 1%;
+        margin-top: 1vh;
     }
     
     /* Réponse libre */
     .freetext-container {
-        height: 100%;
+        flex: 1 1 auto;
+        min-height: 0;
         display: flex;
         flex-direction: column;
-        gap: 2%;
+        gap: 1vh;
     }
     
     .freetext-input {
-        flex: 1;
-        min-height: 0;
-        font-size: 1.3vw;
-        padding: 2%;
+        flex: 1 1 auto;
+        min-height: 8vh;
+        font-size: clamp(14px, 1.3vw, 22px);
+        padding: 1.5vh 1.5vw;
         resize: none;
         font-weight: 500;
         line-height: 1.4;
     }
     
     .freetext-counter {
-        flex-shrink: 0;
-        font-size: 1vw;
+        flex: 0 0 auto;
+        font-size: clamp(11px, 1vw, 16px);
         text-align: right;
         color: #757575;
     }
     
     .btn-validate-freetext {
-        flex-shrink: 0;
-        height: 8%;
-        padding: 0 3%;
-        font-size: 1.4vw;
+        flex: 0 0 auto;
+        height: 6vh;
+        min-height: 40px;
+        padding: 0 3vw;
+        font-size: clamp(14px, 1.4vw, 22px);
         font-weight: 700;
-    }
-    
-    /* Scrollbars minimalistes */
-    .question-text::-webkit-scrollbar {
-        width: 0.3vw;
-    }
-    
-    .question-text::-webkit-scrollbar-track {
-        background: rgba(0,0,0,0.05);
-        border-radius: 3px;
-    }
-    
-    .question-text::-webkit-scrollbar-thumb {
-        background: rgba(0,0,0,0.2);
-        border-radius: 3px;
-    }
-    
-    .question-text::-webkit-scrollbar-thumb:hover {
-        background: rgba(0,0,0,0.3);
     }
 }
 
@@ -587,77 +577,195 @@
 }
 
 /* ========================================
-   MOBILE - Règles pour petits écrans
+   MOBILE - Règles pour petits écrans (v16.0)
    ======================================== */
 
 @media (max-width: 768px) {
     .question-screen {
-        min-height: 100vh;
-        padding: var(--space-lg);
+        height: 100vh;
+        height: 100dvh; /* Dynamic viewport height pour mobile */
+        padding: 2vw;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    
+    .question-screen-inner {
+        flex: 1 1 auto;
+        min-height: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5vw;
+    }
+    
+    .question-header {
+        flex: 0 0 auto;
+        background: white;
+        padding: 2.5vw 3vw;
+        border-radius: var(--radius-lg);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: var(--shadow-md);
+    }
+    
+    .player-nickname-display {
+        font-size: clamp(12px, 3.5vw, 16px);
+        font-weight: 600;
+    }
+    
+    .question-progress {
+        font-size: clamp(12px, 3.5vw, 16px);
+        font-weight: 700;
+    }
+    
+    .question-timer {
+        display: flex;
+        align-items: center;
+        gap: 2vw;
+    }
+    
+    .timer-bar {
+        width: 15vw;
+        height: 1.2vw;
+        min-height: 5px;
+    }
+    
+    #timer-text {
+        font-size: clamp(12px, 3.5vw, 16px);
+        font-weight: 700;
     }
     
     .question-content {
+        flex: 1 1 auto;
+        min-height: 0;
         background: white;
-        padding: var(--space-xl);
+        padding: 3vw;
         border-radius: var(--radius-lg);
-        margin-bottom: var(--space-lg);
         box-shadow: var(--shadow-md);
-        text-align: center;
         display: flex;
         flex-direction: column;
+        overflow: hidden;
     }
     
+    /* IMAGE - Taille contrôlée par JS */
     .question-image {
-        margin-bottom: var(--space-lg);
-        flex-shrink: 0;
+        flex: 0 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2vw;
+        overflow: hidden;
     }
     
     .question-image img {
         max-width: 100%;
-        width: auto;
-        max-height: 40vh;
+        max-height: 100%;
         height: auto;
+        width: auto;
         border-radius: var(--radius-md);
         box-shadow: var(--shadow-sm);
         object-fit: contain;
     }
     
+    /* TEXTE - Taille naturelle, ajusté par JS si nécessaire */
     .question-text {
-        font-size: 20px;
+        flex: 0 0 auto;
+        font-size: clamp(16px, 4.5vw, 24px);
+        font-weight: 700;
         color: var(--gray-900);
-        line-height: 1.4;
+        line-height: 1.35;
+        text-align: center;
         word-wrap: break-word;
         overflow-wrap: break-word;
-        white-space: normal;
-        max-width: 100%;
-        margin-bottom: var(--space-lg);
-        flex-shrink: 0;
+        hyphens: auto;
+        margin-bottom: 3vw;
+        padding: 0 1vw;
     }
     
+    /* RÉPONSES - Taille contrôlée par JS */
     .answers-container {
+        flex: 1 1 auto;
+        min-height: 100px;
         display: flex;
         flex-direction: column;
-        gap: var(--space-md);
-        max-width: 600px;
-        margin: 0 auto;
-        width: 100%;
-        flex-shrink: 0;
+        gap: 2vw;
+        overflow: hidden;
     }
     
     .answer-btn {
-        padding: var(--space-lg);
-        font-size: 16px;
+        flex: 1 1 0;
+        min-height: 0;
+        padding: 2.5vw 3vw;
+        font-size: clamp(14px, 4vw, 18px);
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        line-height: 1.25;
+        word-wrap: break-word;
+    }
+    
+    .order-container {
+        flex: 1 1 auto;
+        min-height: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5vw;
+        overflow: hidden;
     }
     
     .order-item {
-        padding: var(--space-md);
-        font-size: 15px;
+        flex: 1 1 0;
+        min-height: 0;
+        padding: 2vw 3vw;
+        font-size: clamp(13px, 3.5vw, 16px);
+        display: flex;
+        align-items: center;
+    }
+    
+    .order-text {
+        flex: 1;
+        line-height: 1.25;
+        overflow: hidden;
+    }
+    
+    .btn-validate-order {
+        flex: 0 0 auto;
+        min-height: 44px;
+        padding: 2.5vw 5vw;
+        font-size: clamp(14px, 4vw, 18px);
+        margin-top: 2vw;
+    }
+    
+    .freetext-container {
+        flex: 1 1 auto;
+        min-height: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
     }
     
     .freetext-input {
-        font-size: 16px;
-        padding: var(--space-md);
-        min-height: 120px;
+        flex: 1 1 auto;
+        min-height: 15vh;
+        font-size: clamp(14px, 4vw, 18px);
+        padding: 3vw;
+        resize: none;
+        line-height: 1.4;
+    }
+    
+    .freetext-counter {
+        flex: 0 0 auto;
+        font-size: clamp(11px, 3vw, 14px);
+    }
+    
+    .btn-validate-freetext {
+        flex: 0 0 auto;
+        min-height: 48px;
+        padding: 3vw 5vw;
+        font-size: clamp(15px, 4.5vw, 20px);
     }
 }
 
@@ -2038,64 +2146,80 @@
 }
 
 /* ========================================
-   MOBILE - ADAPTATION DES QUESTIONS
+   MOBILE - ADAPTATION DES QUESTIONS (v15.0)
    ======================================== */
 
 @media (max-width: 768px) {
     .question-screen {
-        padding: var(--space-md);
+        padding: 2vw;
     }
     
     .question-header {
-        padding: var(--space-md);
-        margin-bottom: var(--space-md);
-        flex-wrap: wrap;
-        gap: var(--space-sm);
+        padding: 2.5vw 3vw;
+        margin-bottom: 0;
+        flex-wrap: nowrap;
+        gap: 2vw;
     }
     
     .player-nickname-display {
-        font-size: 14px;
+        font-size: clamp(11px, 3vw, 14px);
     }
     
     .question-progress {
-        font-size: 14px;
+        font-size: clamp(11px, 3vw, 14px);
     }
     
     .question-content {
-        padding: var(--space-lg);
-        margin-bottom: var(--space-md);
+        padding: 3vw;
+        margin-bottom: 0;
     }
     
     .question-image img {
-        max-height: 30vh;
+        max-height: 22vh;
     }
     
     .question-text {
-        font-size: 20px;
-        margin-bottom: var(--space-md);
+        font-size: clamp(15px, 4.2vw, 22px);
+        margin-bottom: 2.5vw;
     }
     
     .answer-btn {
-        font-size: 16px;
-        padding: var(--space-md);
+        font-size: clamp(13px, 3.8vw, 17px);
+        padding: 2.5vw 3vw;
     }
     
     .timer-bar {
-        width: 100px;
+        width: 12vw;
     }
 }
 
-/* Smartphones en portrait */
+/* Smartphones en portrait - Plus compact */
 @media (max-width: 480px) {
+    .question-screen {
+        padding: 1.5vw;
+    }
+    
+    .question-header {
+        padding: 2vw 2.5vw;
+    }
+    
     .question-image img {
-        max-height: 25vh;
+        max-height: 18vh;
     }
     
     .question-text {
-        font-size: 18px;
+        font-size: clamp(14px, 4vw, 20px);
+        line-height: 1.3;
+        margin-bottom: 2vw;
     }
     
     .answer-btn {
-        font-size: 15px;
+        font-size: clamp(13px, 3.6vw, 16px);
+        padding: 2vw 2.5vw;
+    }
+    
+    .answers-container {
+        gap: 1.5vw;
+        min-height: 25vh;
     }
 }

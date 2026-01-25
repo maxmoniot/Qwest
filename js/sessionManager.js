@@ -22,7 +22,8 @@
         wasKicked: false,  // Flag pour empêcher reconnexion après kicked
         isPaused: false,  // État de pause
         lastResultsHash: null,  // Hash des derniers résultats pour éviter doublons
-        lastDisplayedResultsQuestion: null  // Index de la dernière question dont les résultats ont été affichés
+        lastDisplayedResultsQuestion: null,  // Index de la dernière question dont les résultats ont été affichés
+        pendingAnswers: []  // Réponses en attente de renvoi après déconnexion
     };
 
     // Liste des collèges (exemples)
@@ -174,6 +175,7 @@
      */
     async function submitAnswer(answer, timeSpent) {
         console.log('📤 ÉLÈVE: Envoi réponse', { answer, timeSpent, questionIndex: SESSION_STATE.currentQuestion });
+        
         try {
             const response = await fetch('php/game.php', {
                 method: 'POST',
@@ -189,14 +191,314 @@
             });
 
             const result = await response.json();
-            console.log('✅ ÉLÈVE: Réponse envoyée, résultat:', result);
-            return result.success;
+            
+            if (result.success) {
+                console.log('✅ ÉLÈVE: Réponse envoyée avec succès');
+                return true;
+            } else {
+                console.warn('⚠️ ÉLÈVE: Échec envoi réponse (serveur)');
+                // Stocker pour renvoi ultérieur
+                storePendingAnswer(answer, timeSpent, SESSION_STATE.currentQuestion);
+                return false;
+            }
 
         } catch (error) {
-            console.error('❌ ÉLÈVE: Erreur envoi réponse:', error);
+            console.error('❌ ÉLÈVE: Erreur envoi réponse (réseau):', error);
+            // Stocker pour renvoi ultérieur
+            storePendingAnswer(answer, timeSpent, SESSION_STATE.currentQuestion);
             return false;
         }
     }
+    
+    /**
+     * Stocker une réponse en attente de renvoi
+     */
+    function storePendingAnswer(answer, timeSpent, questionIndex) {
+        const pending = {
+            questionIndex: questionIndex,
+            answer: answer,
+            timeSpent: timeSpent,
+            timestamp: Date.now()
+        };
+        
+        // Éviter les doublons
+        const exists = SESSION_STATE.pendingAnswers.some(p => p.questionIndex === questionIndex);
+        if (!exists) {
+            SESSION_STATE.pendingAnswers.push(pending);
+            console.log('💾 ÉLÈVE: Réponse stockée pour renvoi ultérieur', pending);
+            
+            // Afficher un message à l'élève
+            showConnectionWarning();
+        }
+    }
+    
+    /**
+     * Renvoyer les réponses en attente après reconnexion
+     */
+    async function retryPendingAnswers() {
+        if (SESSION_STATE.pendingAnswers.length === 0) {
+            return;
+        }
+        
+        console.log('🔄 ÉLÈVE: Renvoi de', SESSION_STATE.pendingAnswers.length, 'réponse(s) en attente');
+        
+        const toRetry = [...SESSION_STATE.pendingAnswers];
+        SESSION_STATE.pendingAnswers = [];
+        
+        for (const pending of toRetry) {
+            try {
+                const response = await fetch('php/game.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                    body: new URLSearchParams({
+                        action: 'answer',
+                        playCode: SESSION_STATE.playCode,
+                        nickname: SESSION_STATE.playerNickname,
+                        questionIndex: pending.questionIndex,
+                        answer: JSON.stringify(pending.answer),
+                        timeSpent: pending.timeSpent
+                    })
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    console.log('✅ ÉLÈVE: Réponse renvoyée avec succès', pending.questionIndex);
+                } else {
+                    console.warn('⚠️ ÉLÈVE: Échec renvoi, remise en attente', pending.questionIndex);
+                    SESSION_STATE.pendingAnswers.push(pending);
+                }
+            } catch (error) {
+                console.error('❌ ÉLÈVE: Erreur renvoi, remise en attente', error);
+                SESSION_STATE.pendingAnswers.push(pending);
+            }
+        }
+        
+        if (SESSION_STATE.pendingAnswers.length > 0) {
+            console.warn('⚠️ ÉLÈVE:', SESSION_STATE.pendingAnswers.length, 'réponse(s) encore en attente');
+        } else {
+            console.log('✅ ÉLÈVE: Toutes les réponses en attente ont été envoyées');
+            hideConnectionWarning();
+            
+            // IMPORTANT : Forcer une synchronisation immédiate de l'état du jeu
+            // pour récupérer les résultats/état actuel qu'on a manqués pendant la déconnexion
+            console.log('🔄 ÉLÈVE: Synchronisation de l\'état du jeu...');
+            await forceSyncGameState();
+        }
+    }
+    
+    /**
+     * Forcer une synchronisation immédiate de l'état du jeu
+     * Utilisé après reconnexion pour récupérer l'état manqué pendant la déconnexion
+     */
+    async function forceSyncGameState() {
+        try {
+            const response = await fetch(`php/game.php?action=get_state&playCode=${SESSION_STATE.playCode}&nickname=${encodeURIComponent(SESSION_STATE.playerNickname)}`);
+            const data = await response.json();
+            
+            if (!data.success) {
+                console.warn('⚠️ ÉLÈVE: Échec sync état');
+                return;
+            }
+            
+            console.log('✅ ÉLÈVE: État du jeu synchronisé', {
+                state: data.state,
+                currentQuestion: data.currentQuestion,
+                hasResults: !!data.results
+            });
+            
+            // Si des résultats sont disponibles et qu'on ne les a pas affichés
+            if (data.results) {
+                const questionIndex = data.results.questionIndex;
+                if (SESSION_STATE.lastDisplayedResultsQuestion !== questionIndex) {
+                    console.log('📊 ÉLÈVE: Affichage des résultats manqués (question', questionIndex, ')');
+                    SESSION_STATE.lastDisplayedResultsQuestion = questionIndex;
+                    if (window.showResults) {
+                        showResults(data.results);
+                    }
+                }
+            }
+            
+            // Si une nouvelle question est disponible
+            if (data.state === 'playing' && data.question) {
+                if (data.currentQuestion !== SESSION_STATE.currentQuestion) {
+                    console.log('📩 ÉLÈVE: Affichage de la question manquée (question', data.currentQuestion, ')');
+                    SESSION_STATE.currentQuestion = data.currentQuestion;
+                    if (window.showQuestion) {
+                        showQuestion(data.question);
+                    }
+                }
+            }
+            
+        } catch (error) {
+            console.error('❌ ÉLÈVE: Erreur sync état:', error);
+        }
+    }
+    
+    /**
+     * Afficher un avertissement de connexion
+     */
+    function showConnectionWarning() {
+        // Éviter les doublons
+        if (document.getElementById('connection-warning')) return;
+        
+        const warning = document.createElement('div');
+        warning.id = 'connection-warning';
+        warning.style.cssText = `
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #ff9800;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            z-index: 10000;
+            font-weight: 600;
+            font-size: 16px;
+            animation: slideDown 0.3s ease;
+        `;
+        warning.innerHTML = '⚠️ Connexion instable. Ta réponse sera envoyée automatiquement.';
+        document.body.appendChild(warning);
+    }
+    
+    /**
+     * Masquer l'avertissement de connexion
+     */
+    function hideConnectionWarning() {
+        const warning = document.getElementById('connection-warning');
+        if (warning) {
+            warning.remove();
+        }
+    }
+    
+    // ========================================
+    // NOUVEAU : WATCHDOG ANTI-BLOCAGE
+    // ========================================
+    // Ce système vérifie si l'élève est bloqué sur "En attente des autres joueurs"
+    // et demande activement au serveur de vérifier le timeout
+    
+    /**
+     * Démarrer le watchdog quand l'élève a répondu
+     * Le watchdog vérifie périodiquement si la question devrait être terminée
+     */
+    function startWatchdog(questionIndex, expectedEndTime) {
+        // Arrêter tout watchdog précédent
+        stopWatchdog();
+        
+        watchdogAttempts = 0;
+        
+        // Calculer le délai avant la première vérification
+        // On attend 5 secondes après la fin théorique du timer
+        const delay = Math.max(5000, (expectedEndTime - Date.now()) + 5000);
+        
+        console.log(`🐕 WATCHDOG: Démarré pour Q${questionIndex}, vérification dans ${Math.round(delay/1000)}s`);
+        
+        watchdogTimer = setTimeout(() => {
+            checkWatchdog(questionIndex);
+        }, delay);
+    }
+    
+    /**
+     * Arrêter le watchdog
+     */
+    function stopWatchdog() {
+        if (watchdogTimer) {
+            clearTimeout(watchdogTimer);
+            watchdogTimer = null;
+        }
+        watchdogAttempts = 0;
+    }
+    
+    /**
+     * Vérifier si on est toujours bloqué et demander une resync
+     */
+    async function checkWatchdog(questionIndex) {
+        // Vérifier qu'on est bien sur l'écran d'attente
+        const feedbackScreen = document.querySelector('.answer-feedback');
+        if (!feedbackScreen) {
+            console.log('🐕 WATCHDOG: Plus sur l\'écran d\'attente, arrêt');
+            stopWatchdog();
+            return;
+        }
+        
+        watchdogAttempts++;
+        console.log(`🐕 WATCHDOG: Vérification #${watchdogAttempts} pour Q${questionIndex}`);
+        
+        try {
+            // Appeler l'API pour forcer la vérification du timeout
+            const response = await fetch(`php/game.php?action=check_question_timeout&playCode=${SESSION_STATE.playCode}&nickname=${encodeURIComponent(SESSION_STATE.playerNickname)}&questionIndex=${questionIndex}`);
+            const data = await response.json();
+            
+            console.log('🐕 WATCHDOG: Réponse serveur', data);
+            
+            if (data.success && data.questionCompleted) {
+                // La question est maintenant complétée, afficher les résultats
+                console.log('🐕 WATCHDOG: Question complétée, affichage des résultats');
+                stopWatchdog();
+                
+                if (data.results && window.displayQuestionResults) {
+                    // Mettre à jour l'index de la dernière question affichée
+                    SESSION_STATE.lastDisplayedResultsQuestion = data.results.questionIndex;
+                    window.displayQuestionResults(data.results);
+                }
+            } else if (watchdogAttempts < WATCHDOG_MAX_ATTEMPTS) {
+                // Réessayer dans 5 secondes
+                console.log(`🐕 WATCHDOG: Pas encore complétée, nouvelle tentative dans 5s`);
+                watchdogTimer = setTimeout(() => {
+                    checkWatchdog(questionIndex);
+                }, 5000);
+            } else {
+                // Après plusieurs tentatives, afficher un message
+                console.warn('🐕 WATCHDOG: Max tentatives atteint, affichage du message');
+                const stuckWarning = document.getElementById('stuck-warning');
+                if (stuckWarning) {
+                    stuckWarning.style.display = 'block';
+                    stuckWarning.innerHTML = `
+                        ⚠️ La synchronisation prend du temps...<br>
+                        <small>Le professeur peut utiliser le bouton "Resynchroniser" pour débloquer.</small>
+                        <br><br>
+                        <button onclick="manualResyncRequest()" style="padding: 8px 16px; background: #ffc107; border: none; border-radius: 4px; cursor: pointer;">
+                            🔄 Demander une resync
+                        </button>
+                    `;
+                }
+            }
+        } catch (error) {
+            console.error('🐕 WATCHDOG: Erreur', error);
+            
+            if (watchdogAttempts < WATCHDOG_MAX_ATTEMPTS) {
+                watchdogTimer = setTimeout(() => {
+                    checkWatchdog(questionIndex);
+                }, 5000);
+            }
+        }
+    }
+    
+    /**
+     * Demande manuelle de resync par l'élève
+     */
+    window.manualResyncRequest = async function() {
+        console.log('🔄 ÉLÈVE: Demande manuelle de resync');
+        
+        try {
+            const response = await fetch(`php/game.php?action=check_question_timeout&playCode=${SESSION_STATE.playCode}&nickname=${encodeURIComponent(SESSION_STATE.playerNickname)}&questionIndex=${SESSION_STATE.currentQuestion}`);
+            const data = await response.json();
+            
+            if (data.success && data.questionCompleted && data.results) {
+                SESSION_STATE.lastDisplayedResultsQuestion = data.results.questionIndex;
+                if (window.displayQuestionResults) {
+                    window.displayQuestionResults(data.results);
+                }
+            } else {
+                alert('⏳ Le serveur n\'a pas encore les résultats. Attendez que le professeur utilise le bouton "Resynchroniser".');
+            }
+        } catch (error) {
+            console.error('Erreur resync manuelle:', error);
+            alert('❌ Erreur de connexion. Réessayez.');
+        }
+    };
 
     /**
      * Quitter la session
@@ -359,15 +661,115 @@
     
     let pollingInterval = null;
     let lastStateHash = null;
+    let consecutiveFailures = 0;
+    let isReconnecting = false;
+    
+    // Constantes pour la récupération automatique
+    const RECONNECT_THRESHOLD = 3;       // Tentatives avant reconnexion
+    const MAX_RECONNECT_ATTEMPTS = 5;    // Tentatives max de reconnexion
+    const HARD_RESET_THRESHOLD = 15;     // Tentatives avant reset complet
+    const STALE_CONNECTION_TIMEOUT = 10000; // 10 secondes sans réponse = bloqué
+    const RECOVERY_RETRY_DELAY = 1000;   // 1 seconde entre tentatives de récupération
+    
+    let reconnectAttempts = 0;
+    let lastSuccessfulPoll = Date.now();
+    
+    // Variables pour le watchdog anti-blocage
+    let watchdogTimer = null;
+    let watchdogAttempts = 0;
+    const WATCHDOG_MAX_ATTEMPTS = 3;
+    
+    // Vérifier si on est bloqué depuis trop longtemps
+    function checkForStaleConnection() {
+        const timeSinceSuccess = Date.now() - lastSuccessfulPoll;
+        if (timeSinceSuccess > STALE_CONNECTION_TIMEOUT && !isReconnecting) {
+            console.log('⚠️ Connexion bloquée depuis', Math.round(timeSinceSuccess/1000), 's - tentative de récupération');
+            attemptRecovery();
+        }
+    }
+    
+    // Tentative de récupération automatique
+    async function attemptRecovery() {
+        if (isReconnecting || SESSION_STATE.wasKicked) return;
+        
+        isReconnecting = true;
+        reconnectAttempts++;
+        
+        console.log('🔄 Tentative de récupération', reconnectAttempts, '/', MAX_RECONNECT_ATTEMPTS);
+        
+        hideConnectionWarning();
+        
+        try {
+            const joinResponse = await fetch('php/game.php', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: new URLSearchParams({
+                    action: 'join',
+                    playCode: SESSION_STATE.playCode,
+                    nickname: SESSION_STATE.playerNickname
+                })
+            });
+            
+            const joinResult = await joinResponse.json();
+            
+            if (joinResult.success) {
+                console.log('✅ Récupération réussie - reconnecté');
+                consecutiveFailures = 0;
+                reconnectAttempts = 0;
+                lastSuccessfulPoll = Date.now();
+                isReconnecting = false;
+                retryPendingAnswers();
+                return true;
+            } else {
+                console.log('⚠️ Join échoué:', joinResult.message);
+            }
+        } catch (error) {
+            console.error('❌ Erreur lors de la récupération:', error);
+        }
+        
+        isReconnecting = false;
+        
+        if (reconnectAttempts >= MAX_RECONNECT_ATTEMPTS) {
+            console.log('❌ Récupération impossible après', reconnectAttempts, 'tentatives');
+            showPersistentError();
+        } else {
+            setTimeout(() => attemptRecovery(), RECOVERY_RETRY_DELAY);
+        }
+        
+        return false;
+    }
+    
+    // Afficher une erreur persistante avec option de rafraîchissement
+    function showPersistentError() {
+        if (document.getElementById('persistent-error')) return;
+        
+        const errorDiv = document.createElement('div');
+        errorDiv.id = 'persistent-error';
+        errorDiv.style.cssText = 'position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);background:#fff;padding:30px;border-radius:15px;box-shadow:0 10px 40px rgba(0,0,0,0.3);text-align:center;z-index:10000;max-width:90%;';
+        errorDiv.innerHTML = `
+            <div style="font-size:48px;margin-bottom:15px;">📡</div>
+            <h2 style="color:#d32f2f;margin-bottom:15px;">Connexion perdue</h2>
+            <p style="color:#666;margin-bottom:20px;">La connexion avec le serveur a été interrompue.<br>Clique sur le bouton pour te reconnecter.</p>
+            <button onclick="location.reload()" style="background:#4CAF50;color:white;border:none;padding:15px 30px;border-radius:10px;font-size:18px;cursor:pointer;font-weight:bold;">
+                🔄 Reconnecter
+            </button>
+        `;
+        document.body.appendChild(errorDiv);
+    }
     
     function startPolling() {
-        console.log('🔄 Démarrage du mode polling (1 requête/seconde)');
+        console.log('🔄 Démarrage du mode polling adaptatif');
         SESSION_STATE.usingPolling = true;
+        consecutiveFailures = 0;
+        reconnectAttempts = 0;
+        lastSuccessfulPoll = Date.now();
         
-        // Arrêter le polling existant si présent
         if (pollingInterval) {
             clearInterval(pollingInterval);
         }
+        
+        // Vérification périodique de connexion bloquée (toutes les 5s)
+        setInterval(checkForStaleConnection, 5000);
         
         // Fonction de polling
         const poll = async () => {
@@ -376,21 +778,39 @@
             }
             
             try {
-                const response = await fetch(`php/game.php?action=get_state&playCode=${SESSION_STATE.playCode}&nickname=${encodeURIComponent(SESSION_STATE.playerNickname)}`);
+                const controller = new AbortController();
+                const timeoutId = setTimeout(() => controller.abort(), 5000); // Timeout 5s
+                
+                const response = await fetch(
+                    `php/game.php?action=get_state&playCode=${SESSION_STATE.playCode}&nickname=${encodeURIComponent(SESSION_STATE.playerNickname)}`,
+                    { signal: controller.signal }
+                );
+                clearTimeout(timeoutId);
+                
                 const data = await response.json();
                 
                 if (!data.success) {
-                    if (data.kicked) {
-                        console.log('🚫 Joueur retiré de la partie');
-                        SESSION_STATE.wasKicked = true;
-                        if (pollingInterval) {
-                            clearInterval(pollingInterval);
+                    consecutiveFailures++;
+                    console.log('⚠️ Échec polling:', data.message, '(', consecutiveFailures, 'consécutifs)');
+                    
+                    if (data.kicked && !SESSION_STATE.wasKicked) {
+                        if (consecutiveFailures >= RECONNECT_THRESHOLD && !isReconnecting) {
+                            attemptRecovery();
                         }
-                        alert('Vous avez été retiré de la partie par le professeur.');
-                        window.location.href = 'index.html';
                     }
                     return;
                 }
+                
+                // Succès !
+                lastSuccessfulPoll = Date.now();
+                
+                if (consecutiveFailures > 0) {
+                    console.log('✅ Connexion rétablie (après', consecutiveFailures, 'échecs)');
+                    hideConnectionWarning();
+                    retryPendingAnswers();
+                }
+                consecutiveFailures = 0;
+                reconnectAttempts = 0;
                 
                 // Détecter les changements
                 const stateHash = JSON.stringify({
@@ -505,8 +925,8 @@
         // Première requête immédiate
         poll();
         
-        // Puis toutes les secondes
-        pollingInterval = setInterval(poll, 1000);
+        // Puis toutes les 2 secondes (au lieu de 1s) - RÉDUCTION DE 50%
+        pollingInterval = setInterval(poll, 2000); // 2 secondes pour limiter les requêtes
     }
 
     // ========================================
@@ -545,5 +965,7 @@
     window.leaveSession = leaveSession;
     window.getSchools = getSchools;
     window.getSessionState = getSessionState;
+    window.startWatchdog = startWatchdog;
+    window.stopWatchdog = stopWatchdog;
 
 })();

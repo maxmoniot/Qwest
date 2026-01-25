@@ -342,11 +342,14 @@ function checkGameExists() {
         if (file_exists($sessionFile)) {
             $session = json_decode(file_get_contents($sessionFile), true);
             
+            // Utiliser les questions limitées si elles existent, sinon les questions originales
+            $questions = $session['questions'] ?? $session['quizData']['questions'] ?? [];
+            
             sendJSON([
                 'success' => true,
                 'exists' => true,
                 'quizName' => isset($session['quizData']['name']) ? $session['quizData']['name'] : 'Quiz',
-                'totalQuestions' => isset($session['quizData']['questions']) ? count($session['quizData']['questions']) : 0
+                'totalQuestions' => count($questions)
             ]);
             return;
         }
@@ -438,25 +441,140 @@ $ALL_ANIMALS = [
         return;
     }
     
-    $session = json_decode(file_get_contents($sessionFile), true);
-    $usedAnimals = $session['usedAnimals'] ?? [];
+    // Créer une empreinte unique du poste
+    // Priorité : deviceId (depuis localStorage) > IP réelle (X-Forwarded-For) > IP directe
+    $deviceId = $_GET['deviceId'] ?? null;
     
-    // Animaux disponibles (pas encore utilisés)
-    $available = array_values(array_diff($ALL_ANIMALS, $usedAnimals));
+    if ($deviceId && strlen($deviceId) > 10) {
+        // Utiliser le deviceId fourni par le client (le plus fiable)
+        $deviceHash = md5($playCode . '|' . $deviceId);
+    } else {
+        // Fallback : utiliser l'IP
+        // Essayer X-Forwarded-For d'abord (contient souvent l'IP interne via le proxy)
+        $clientIP = $_SERVER['HTTP_X_FORWARDED_FOR'] ?? $_SERVER['REMOTE_ADDR'] ?? 'unknown';
+        // Si X-Forwarded-For contient plusieurs IPs, prendre la première (IP du client)
+        if (strpos($clientIP, ',') !== false) {
+            $clientIP = trim(explode(',', $clientIP)[0]);
+        }
+        $deviceHash = md5($playCode . '|' . $clientIP);
+    }
     
-    // Si moins de 3 disponibles, réinitialiser
+    // VERROUILLAGE du fichier pour éviter les conflits de concurrence
+    $fp = fopen($sessionFile, 'r+');
+    if (!$fp) {
+        sendJSON(['success' => false, 'message' => 'Erreur fichier']);
+        return;
+    }
+    
+    // Attendre le verrou exclusif (max 5 secondes)
+    if (!flock($fp, LOCK_EX)) {
+        fclose($fp);
+        sendJSON(['success' => false, 'message' => 'Serveur occupé, réessayez']);
+        return;
+    }
+    
+    // Lire la session
+    $content = stream_get_contents($fp);
+    $session = json_decode($content, true);
+    
+    // Vérifier si ce poste a déjà des pseudos attribués pour cette partie
+    $deviceAnimals = $session['deviceAnimals'] ?? [];
+    
+    if (isset($deviceAnimals[$deviceHash])) {
+        // Ce poste a déjà des pseudos attribués -> les retourner
+        $selected = $deviceAnimals[$deviceHash]['animals'];
+        
+        // Vérifier que ces pseudos ne sont pas déjà pris par quelqu'un d'autre
+        $confirmedAnimals = [];
+        if (isset($session['players']) && is_array($session['players'])) {
+            foreach ($session['players'] as $player) {
+                if (isset($player['nickname'])) {
+                    $confirmedAnimals[] = $player['nickname'];
+                }
+            }
+        }
+        
+        // Filtrer les pseudos déjà confirmés par d'autres
+        $stillAvailable = array_values(array_diff($selected, $confirmedAnimals));
+        
+        if (count($stillAvailable) > 0) {
+            // Au moins un pseudo est encore disponible
+            flock($fp, LOCK_UN);
+            fclose($fp);
+            
+            sendJSON([
+                'success' => true,
+                'animals' => $stillAvailable
+            ]);
+            return;
+        }
+        // Sinon, tous les pseudos ont été pris -> en attribuer de nouveaux
+    }
+    
+    // Récupérer les animaux déjà CONFIRMÉS (joueurs inscrits)
+    $confirmedAnimals = [];
+    if (isset($session['players']) && is_array($session['players'])) {
+        foreach ($session['players'] as $player) {
+            if (isset($player['nickname'])) {
+                $confirmedAnimals[] = $player['nickname'];
+            }
+        }
+    }
+    
+    // Récupérer les réservations temporaires (propositions en attente d'autres postes)
+    $pendingReservations = $session['pendingAnimals'] ?? [];
+    $now = time();
+    $RESERVATION_TIMEOUT = 60; // 60 secondes pour choisir
+    
+    // Nettoyer les réservations expirées
+    $validReservations = [];
+    foreach ($pendingReservations as $animal => $timestamp) {
+        if (($now - $timestamp) < $RESERVATION_TIMEOUT) {
+            $validReservations[$animal] = $timestamp;
+        }
+    }
+    
+    // Animaux indisponibles = confirmés + réservés temporairement par d'autres
+    $unavailable = array_merge($confirmedAnimals, array_keys($validReservations));
+    
+    // Animaux disponibles
+    $available = array_values(array_diff($ALL_ANIMALS, $unavailable));
+    
+    // Si moins de 3 disponibles, nettoyer les réservations et réessayer
     if (count($available) < 3) {
-        $usedAnimals = [];
-        $available = $ALL_ANIMALS;
+        $validReservations = []; // Libérer toutes les réservations
+        $available = array_values(array_diff($ALL_ANIMALS, $confirmedAnimals));
+        
+        // Si toujours pas assez (120 joueurs!), réutiliser tout
+        if (count($available) < 3) {
+            $available = $ALL_ANIMALS;
+        }
     }
     
     // Sélectionner 3 aléatoirement
     shuffle($available);
     $selected = array_slice($available, 0, 3);
     
-    // Marquer comme utilisés
-    $session['usedAnimals'] = array_merge($usedAnimals, $selected);
-    file_put_contents($sessionFile, json_encode($session, JSON_PRETTY_PRINT));
+    // Marquer comme réservés temporairement (avec timestamp)
+    foreach ($selected as $animal) {
+        $validReservations[$animal] = $now;
+    }
+    $session['pendingAnimals'] = $validReservations;
+    
+    // Enregistrer les pseudos attribués à ce poste
+    $deviceAnimals[$deviceHash] = [
+        'animals' => $selected,
+        'timestamp' => $now
+    ];
+    $session['deviceAnimals'] = $deviceAnimals;
+    
+    // Écrire et libérer le verrou
+    fseek($fp, 0);
+    ftruncate($fp, 0);
+    fwrite($fp, json_encode($session, JSON_PRETTY_PRINT));
+    fflush($fp);
+    flock($fp, LOCK_UN);
+    fclose($fp);
     
     sendJSON([
         'success' => true,

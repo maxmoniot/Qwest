@@ -1,0 +1,2252 @@
+{
+    "name": "CultureGenerale_100q_6e",
+    "modifyCode": "7YTPPHHV",
+    "playCode": "ZY2PG2",
+    "data": {
+        "id": "mk56h7yntbyk6ooni",
+        "name": "CultureGenerale_100q_6e",
+        "questions": [
+            {
+                "id": "mk56gs5o8g5na43hk",
+                "type": "multiple",
+                "question": "Quelle est la capitale de la France ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Paris",
+                        "correct": true
+                    },
+                    {
+                        "text": "Lyon",
+                        "correct": false
+                    },
+                    {
+                        "text": "Marseille",
+                        "correct": false
+                    },
+                    {
+                        "text": "Toulouse",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5o1mlyglkpp",
+                "type": "multiple",
+                "question": "Quel oc\u00e9an borde la c\u00f4te ouest de l'Afrique ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Oc\u00e9an Indien",
+                        "correct": false
+                    },
+                    {
+                        "text": "Oc\u00e9an Pacifique",
+                        "correct": false
+                    },
+                    {
+                        "text": "Oc\u00e9an Atlantique",
+                        "correct": true
+                    },
+                    {
+                        "text": "Oc\u00e9an Arctique",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5p8uzy764fd",
+                "type": "multiple",
+                "question": "Dans quel continent se trouve l'\u00c9gypte ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Europe",
+                        "correct": false
+                    },
+                    {
+                        "text": "Afrique",
+                        "correct": true
+                    },
+                    {
+                        "text": "Asie",
+                        "correct": false
+                    },
+                    {
+                        "text": "Am\u00e9rique",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5p8og3n0qfa",
+                "type": "multiple",
+                "question": "Quel est le plus long fleuve de France (m\u00e9tropole) ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "La Seine",
+                        "correct": false
+                    },
+                    {
+                        "text": "La Loire",
+                        "correct": true
+                    },
+                    {
+                        "text": "Le Rh\u00f4ne",
+                        "correct": false
+                    },
+                    {
+                        "text": "La Garonne",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pg8elm7c8t",
+                "type": "multiple",
+                "question": "Quel pays a pour capitale Madrid ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Italie",
+                        "correct": false
+                    },
+                    {
+                        "text": "Espagne",
+                        "correct": true
+                    },
+                    {
+                        "text": "Portugal",
+                        "correct": false
+                    },
+                    {
+                        "text": "Gr\u00e8ce",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pkz0eqhc1p",
+                "type": "multiple",
+                "question": "Quelle montagne est la plus haute des Alpes ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Mont Blanc",
+                        "correct": true
+                    },
+                    {
+                        "text": "Everest",
+                        "correct": false
+                    },
+                    {
+                        "text": "Kilimandjaro",
+                        "correct": false
+                    },
+                    {
+                        "text": "V\u00e9suve",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5p0091o222r",
+                "type": "multiple",
+                "question": "Quel est le nom de la mer au sud de la France ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Mer Noire",
+                        "correct": false
+                    },
+                    {
+                        "text": "Mer Rouge",
+                        "correct": false
+                    },
+                    {
+                        "text": "Mer M\u00e9diterran\u00e9e",
+                        "correct": true
+                    },
+                    {
+                        "text": "Mer Baltique",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pu2kadu4v4",
+                "type": "multiple",
+                "question": "Sur une carte, que repr\u00e9sente g\u00e9n\u00e9ralement la couleur bleue ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Les montagnes",
+                        "correct": false
+                    },
+                    {
+                        "text": "Les for\u00eats",
+                        "correct": false
+                    },
+                    {
+                        "text": "L'eau (mers, lacs, rivi\u00e8res)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Les routes",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pbm288sdxe",
+                "type": "multiple",
+                "question": "Quel est le point cardinal oppos\u00e9 au nord ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Est",
+                        "correct": false
+                    },
+                    {
+                        "text": "Sud",
+                        "correct": true
+                    },
+                    {
+                        "text": "Ouest",
+                        "correct": false
+                    },
+                    {
+                        "text": "Nord-Est",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pcgrybddof",
+                "type": "multiple",
+                "question": "Quelle est la capitale de l'Italie ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Rome",
+                        "correct": true
+                    },
+                    {
+                        "text": "Venise",
+                        "correct": false
+                    },
+                    {
+                        "text": "Milan",
+                        "correct": false
+                    },
+                    {
+                        "text": "Naples",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5prsgaot097",
+                "type": "multiple",
+                "question": "Quel grand fleuve traverse Paris ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Le Rh\u00f4ne",
+                        "correct": false
+                    },
+                    {
+                        "text": "La Seine",
+                        "correct": true
+                    },
+                    {
+                        "text": "La Loire",
+                        "correct": false
+                    },
+                    {
+                        "text": "La Garonne",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pav1worltm",
+                "type": "multiple",
+                "question": "Quelle est la capitale du Royaume-Uni ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Dublin",
+                        "correct": false
+                    },
+                    {
+                        "text": "Londres",
+                        "correct": true
+                    },
+                    {
+                        "text": "\u00c9dimbourg",
+                        "correct": false
+                    },
+                    {
+                        "text": "Cardiff",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5p10idmkjpq",
+                "type": "multiple",
+                "question": "En France, quel est le nom de la f\u00eate nationale ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Le 1er mai",
+                        "correct": false
+                    },
+                    {
+                        "text": "Le 14 juillet",
+                        "correct": true
+                    },
+                    {
+                        "text": "Le 11 novembre",
+                        "correct": false
+                    },
+                    {
+                        "text": "Le 8 mai",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pd1qv02eyb",
+                "type": "multiple",
+                "question": "Quel est le r\u00f4le principal du maire d'une commune ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Commander l'arm\u00e9e",
+                        "correct": false
+                    },
+                    {
+                        "text": "G\u00e9rer la commune avec le conseil municipal",
+                        "correct": true
+                    },
+                    {
+                        "text": "R\u00e9diger les lois",
+                        "correct": false
+                    },
+                    {
+                        "text": "Diriger l'Union europ\u00e9enne",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5p1zwdokqhn",
+                "type": "truefalse",
+                "question": "L'Assembl\u00e9e nationale fait partie du Parlement fran\u00e7ais.",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5phmab0qarg",
+                "type": "truefalse",
+                "question": "Le drapeau fran\u00e7ais est bleu, blanc, rouge.",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5phu5lj2on6",
+                "type": "truefalse",
+                "question": "La devise de la R\u00e9publique fran\u00e7aise est \u00ab Libert\u00e9, \u00c9galit\u00e9, Fraternit\u00e9 \u00bb.",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pn5ydlnx7j",
+                "type": "multiple",
+                "question": "Quel est le num\u00e9ro d'urgence europ\u00e9en ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "15",
+                        "correct": false
+                    },
+                    {
+                        "text": "17",
+                        "correct": false
+                    },
+                    {
+                        "text": "18",
+                        "correct": false
+                    },
+                    {
+                        "text": "112",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pr4w00wmms",
+                "type": "multiple",
+                "question": "Quel service d'urgence contacte-t-on pour le SAMU ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "15",
+                        "correct": true
+                    },
+                    {
+                        "text": "17",
+                        "correct": false
+                    },
+                    {
+                        "text": "18",
+                        "correct": false
+                    },
+                    {
+                        "text": "112",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5p18r170ass",
+                "type": "truefalse",
+                "question": "La carte d'identit\u00e9 fran\u00e7aise est obligatoire \u00e0 12 ans.",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": false
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5p3o53wh3al",
+                "type": "multiple",
+                "question": "\u00c0 quelle p\u00e9riode appartient l'Antiquit\u00e9 ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Avant l'invention de l'\u00e9criture",
+                        "correct": false
+                    },
+                    {
+                        "text": "De l'invention de l'\u00e9criture \u00e0 la chute de l'Empire romain d'Occident",
+                        "correct": true
+                    },
+                    {
+                        "text": "Du XVIe au XVIIIe si\u00e8cle",
+                        "correct": false
+                    },
+                    {
+                        "text": "Apr\u00e8s 1945",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pe99ecjche",
+                "type": "multiple",
+                "question": "Qui \u00e9taient les Gaulois ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Des peuples vivant en Gaule avant les Romains",
+                        "correct": true
+                    },
+                    {
+                        "text": "Des Vikings",
+                        "correct": false
+                    },
+                    {
+                        "text": "Des habitants de l'Am\u00e9rique",
+                        "correct": false
+                    },
+                    {
+                        "text": "Des Grecs",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pztutx9pzg",
+                "type": "multiple",
+                "question": "Quel personnage est associ\u00e9 \u00e0 l'Empire romain ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Charlemagne",
+                        "correct": false
+                    },
+                    {
+                        "text": "Jules C\u00e9sar",
+                        "correct": true
+                    },
+                    {
+                        "text": "Napol\u00e9on",
+                        "correct": false
+                    },
+                    {
+                        "text": "Louis XIV",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5p3jti7z894",
+                "type": "multiple",
+                "question": "Quelle construction romaine servait \u00e0 transporter l'eau ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Un aqueduc",
+                        "correct": true
+                    },
+                    {
+                        "text": "Un moulin",
+                        "correct": false
+                    },
+                    {
+                        "text": "Un phare",
+                        "correct": false
+                    },
+                    {
+                        "text": "Une cath\u00e9drale",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pmkwsxptgo",
+                "type": "multiple",
+                "question": "Au Moyen \u00c2ge, comment s'appelle le lieu de vie d'un seigneur ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Une usine",
+                        "correct": false
+                    },
+                    {
+                        "text": "Un ch\u00e2teau fort",
+                        "correct": true
+                    },
+                    {
+                        "text": "Un stade",
+                        "correct": false
+                    },
+                    {
+                        "text": "Un h\u00f4pital",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pd71rhpl9r",
+                "type": "truefalse",
+                "question": "Le Moyen \u00c2ge vient apr\u00e8s l'Antiquit\u00e9.",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5p2t4mz8iez",
+                "type": "multiple",
+                "question": "Qui est Charlemagne ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Un empereur du Moyen \u00c2ge",
+                        "correct": true
+                    },
+                    {
+                        "text": "Un peintre du XXe si\u00e8cle",
+                        "correct": false
+                    },
+                    {
+                        "text": "Un explorateur grec",
+                        "correct": false
+                    },
+                    {
+                        "text": "Un scientifique",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5p7fqi0hurm",
+                "type": "multiple",
+                "question": "Quel \u00e9v\u00e9nement a lieu en 1789 en France ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "La R\u00e9volution fran\u00e7aise",
+                        "correct": true
+                    },
+                    {
+                        "text": "La construction de la Tour Eiffel",
+                        "correct": false
+                    },
+                    {
+                        "text": "La Premi\u00e8re Guerre mondiale",
+                        "correct": false
+                    },
+                    {
+                        "text": "La d\u00e9couverte de l'Am\u00e9rique",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pwwzi22fh0",
+                "type": "multiple",
+                "question": "Qui \u00e9tait Louis XIV ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Un pr\u00e9sident",
+                        "correct": false
+                    },
+                    {
+                        "text": "Un roi de France",
+                        "correct": true
+                    },
+                    {
+                        "text": "Un empereur romain",
+                        "correct": false
+                    },
+                    {
+                        "text": "Un chevalier",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pz8fszs3jj",
+                "type": "truefalse",
+                "question": "La prise de la Bastille a eu lieu le 14 juillet 1789.",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5ppfalmdsd3",
+                "type": "multiple",
+                "question": "Quel si\u00e8cle correspond aux ann\u00e9es 1500 \u00e0 1599 ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "XIVe",
+                        "correct": false
+                    },
+                    {
+                        "text": "XVe",
+                        "correct": false
+                    },
+                    {
+                        "text": "XVIe",
+                        "correct": true
+                    },
+                    {
+                        "text": "XVIIe",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5poqzxjjsjs",
+                "type": "multiple",
+                "question": "Quelle guerre a eu lieu de 1914 \u00e0 1918 ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Guerre de Cent Ans",
+                        "correct": false
+                    },
+                    {
+                        "text": "Premi\u00e8re Guerre mondiale",
+                        "correct": true
+                    },
+                    {
+                        "text": "Seconde Guerre mondiale",
+                        "correct": false
+                    },
+                    {
+                        "text": "Guerre froide",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pk7zu2etjt",
+                "type": "multiple",
+                "question": "Quelle guerre a eu lieu de 1939 \u00e0 1945 ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Guerre de Cent Ans",
+                        "correct": false
+                    },
+                    {
+                        "text": "Premi\u00e8re Guerre mondiale",
+                        "correct": false
+                    },
+                    {
+                        "text": "Seconde Guerre mondiale",
+                        "correct": true
+                    },
+                    {
+                        "text": "Guerre froide",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pais219s18",
+                "type": "truefalse",
+                "question": "La Seconde Guerre mondiale se termine en 1945.",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pm03qoo17f",
+                "type": "multiple",
+                "question": "Quel objet a \u00e9t\u00e9 invent\u00e9 avant l'imprimerie ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Le smartphone",
+                        "correct": false
+                    },
+                    {
+                        "text": "La boussole",
+                        "correct": true
+                    },
+                    {
+                        "text": "Le satellite",
+                        "correct": false
+                    },
+                    {
+                        "text": "Le train \u00e0 vapeur",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5p9etktatrp",
+                "type": "multiple",
+                "question": "Comment appelle-t-on l'\u00e9poque des ch\u00e2teaux forts et des chevaliers ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Pr\u00e9histoire",
+                        "correct": false
+                    },
+                    {
+                        "text": "Antiquit\u00e9",
+                        "correct": false
+                    },
+                    {
+                        "text": "Moyen \u00c2ge",
+                        "correct": true
+                    },
+                    {
+                        "text": "\u00c9poque contemporaine",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pv8s4cptcq",
+                "type": "multiple",
+                "question": "Quel est le nom du grand explorateur associ\u00e9 \u00e0 1492 ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Christophe Colomb",
+                        "correct": true
+                    },
+                    {
+                        "text": "Marco Polo",
+                        "correct": false
+                    },
+                    {
+                        "text": "James Cook",
+                        "correct": false
+                    },
+                    {
+                        "text": "Magellan",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pvfjnmh9f0",
+                "type": "truefalse",
+                "question": "La Pr\u00e9histoire est la p\u00e9riode avant l'\u00e9criture.",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5ply3t1w3no",
+                "type": "multiple",
+                "question": "\u00c0 quoi servait une cath\u00e9drale au Moyen \u00c2ge ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "\u00c0 prier et se rassembler",
+                        "correct": true
+                    },
+                    {
+                        "text": "\u00c0 fabriquer des outils",
+                        "correct": false
+                    },
+                    {
+                        "text": "\u00c0 faire du sport",
+                        "correct": false
+                    },
+                    {
+                        "text": "\u00c0 stocker du bl\u00e9",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5poayp73jt6",
+                "type": "order",
+                "question": "Classe ces p\u00e9riodes de la plus ancienne \u00e0 la plus r\u00e9cente :",
+                "time": 60,
+                "answers": [
+                    {
+                        "text": "Pr\u00e9histoire",
+                        "correct": true
+                    },
+                    {
+                        "text": "Antiquit\u00e9",
+                        "correct": true
+                    },
+                    {
+                        "text": "Moyen \u00c2ge",
+                        "correct": true
+                    },
+                    {
+                        "text": "Temps modernes",
+                        "correct": true
+                    },
+                    {
+                        "text": "\u00c9poque contemporaine",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5phpueo09pr",
+                "type": "multiple",
+                "question": "De quoi est principalement compos\u00e9 l'air ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Oxyg\u00e8ne et azote",
+                        "correct": true
+                    },
+                    {
+                        "text": "Eau et sel",
+                        "correct": false
+                    },
+                    {
+                        "text": "Fer et cuivre",
+                        "correct": false
+                    },
+                    {
+                        "text": "Sucre et amidon",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pmbe4cpdwy",
+                "type": "multiple",
+                "question": "Quelle plan\u00e8te est la plus proche du Soleil ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Mercure",
+                        "correct": true
+                    },
+                    {
+                        "text": "Mars",
+                        "correct": false
+                    },
+                    {
+                        "text": "Jupiter",
+                        "correct": false
+                    },
+                    {
+                        "text": "Neptune",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5ple846w621",
+                "type": "multiple",
+                "question": "Quelle est la plan\u00e8te surnomm\u00e9e la \u00ab plan\u00e8te rouge \u00bb ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "V\u00e9nus",
+                        "correct": false
+                    },
+                    {
+                        "text": "Mars",
+                        "correct": true
+                    },
+                    {
+                        "text": "Saturne",
+                        "correct": false
+                    },
+                    {
+                        "text": "Uranus",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5p18j6bf366",
+                "type": "truefalse",
+                "question": "La Lune est un satellite naturel de la Terre.",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pu0exln6fd",
+                "type": "multiple",
+                "question": "Quel organe permet de respirer ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Le c\u0153ur",
+                        "correct": false
+                    },
+                    {
+                        "text": "Les poumons",
+                        "correct": true
+                    },
+                    {
+                        "text": "L'estomac",
+                        "correct": false
+                    },
+                    {
+                        "text": "Le foie",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pmq764s7p2",
+                "type": "multiple",
+                "question": "Quel est l'\u00e9tat de l'eau \u00e0 0 \u00b0C (\u00e0 pression normale) ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Gazeux",
+                        "correct": false
+                    },
+                    {
+                        "text": "Solide",
+                        "correct": true
+                    },
+                    {
+                        "text": "Liquide",
+                        "correct": false
+                    },
+                    {
+                        "text": "Plasma",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pflfc0x1vx",
+                "type": "multiple",
+                "question": "Quel est l'\u00e9tat de l'eau \u00e0 100 \u00b0C (\u00e0 pression normale) ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Solide",
+                        "correct": false
+                    },
+                    {
+                        "text": "Liquide",
+                        "correct": false
+                    },
+                    {
+                        "text": "Gazeux",
+                        "correct": true
+                    },
+                    {
+                        "text": "Plasma",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5p2an8r2crz",
+                "type": "multiple",
+                "question": "Quelle partie de la plante absorbe l'eau du sol ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Les feuilles",
+                        "correct": false
+                    },
+                    {
+                        "text": "Les racines",
+                        "correct": true
+                    },
+                    {
+                        "text": "Les fleurs",
+                        "correct": false
+                    },
+                    {
+                        "text": "Les fruits",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pifqvlgy9f",
+                "type": "truefalse",
+                "question": "La photosynth\u00e8se se fait principalement dans les feuilles.",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5podttvev56",
+                "type": "multiple",
+                "question": "Quel est le r\u00f4le du squelette ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Transporter le sang",
+                        "correct": false
+                    },
+                    {
+                        "text": "Soutenir le corps et prot\u00e9ger des organes",
+                        "correct": true
+                    },
+                    {
+                        "text": "Dig\u00e9rer les aliments",
+                        "correct": false
+                    },
+                    {
+                        "text": "Produire de l'oxyg\u00e8ne",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5p4xjfqfsh1",
+                "type": "multiple",
+                "question": "Quel est le sens du courant \u00e9lectrique (conventionnel) ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Du + vers le -",
+                        "correct": true
+                    },
+                    {
+                        "text": "Du - vers le +",
+                        "correct": false
+                    },
+                    {
+                        "text": "Il n'a pas de sens",
+                        "correct": false
+                    },
+                    {
+                        "text": "Du milieu vers l'ext\u00e9rieur",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5p2jghb9773",
+                "type": "multiple",
+                "question": "Quel appareil mesure la temp\u00e9rature ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Un thermom\u00e8tre",
+                        "correct": true
+                    },
+                    {
+                        "text": "Un barom\u00e8tre",
+                        "correct": false
+                    },
+                    {
+                        "text": "Un voltm\u00e8tre",
+                        "correct": false
+                    },
+                    {
+                        "text": "Un chronom\u00e8tre",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pyee7enol5",
+                "type": "multiple",
+                "question": "Quel appareil mesure la pression atmosph\u00e9rique ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Thermom\u00e8tre",
+                        "correct": false
+                    },
+                    {
+                        "text": "Barom\u00e8tre",
+                        "correct": true
+                    },
+                    {
+                        "text": "Balance",
+                        "correct": false
+                    },
+                    {
+                        "text": "Boussole",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5psrteq3xed",
+                "type": "truefalse",
+                "question": "Un aimant attire le fer.",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pnn04844yo",
+                "type": "multiple",
+                "question": "Quelle est la source d'\u00e9nergie d'une centrale solaire ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Le vent",
+                        "correct": false
+                    },
+                    {
+                        "text": "Le Soleil",
+                        "correct": true
+                    },
+                    {
+                        "text": "Le charbon",
+                        "correct": false
+                    },
+                    {
+                        "text": "L'eau",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5p2ptixjc4z",
+                "type": "multiple",
+                "question": "Quel gaz est n\u00e9cessaire \u00e0 la combustion ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Dioxyde de carbone",
+                        "correct": false
+                    },
+                    {
+                        "text": "Oxyg\u00e8ne",
+                        "correct": true
+                    },
+                    {
+                        "text": "Azote",
+                        "correct": false
+                    },
+                    {
+                        "text": "H\u00e9lium",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pyhvnlcdl6",
+                "type": "multiple",
+                "question": "Quel est l'organe qui pompe le sang ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Poumons",
+                        "correct": false
+                    },
+                    {
+                        "text": "C\u0153ur",
+                        "correct": true
+                    },
+                    {
+                        "text": "Reins",
+                        "correct": false
+                    },
+                    {
+                        "text": "Cerveau",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5p66ckle174",
+                "type": "truefalse",
+                "question": "Les vert\u00e9br\u00e9s sont des animaux qui ont une colonne vert\u00e9brale.",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5ppml7dsvmw",
+                "type": "multiple",
+                "question": "Quel est le nom du syst\u00e8me de plan\u00e8tes autour du Soleil ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "La Voie lact\u00e9e",
+                        "correct": false
+                    },
+                    {
+                        "text": "Le Syst\u00e8me solaire",
+                        "correct": true
+                    },
+                    {
+                        "text": "L'Univers",
+                        "correct": false
+                    },
+                    {
+                        "text": "La Galaxie d'Androm\u00e8de",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pyguavnk05",
+                "type": "order",
+                "question": "Ordonne les \u00e9tapes du cycle de l'eau :",
+                "time": 55,
+                "answers": [
+                    {
+                        "text": "\u00c9vaporation",
+                        "correct": true
+                    },
+                    {
+                        "text": "Condensation",
+                        "correct": true
+                    },
+                    {
+                        "text": "Pr\u00e9cipitations",
+                        "correct": true
+                    },
+                    {
+                        "text": "Ruissellement",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pbhqa5fvk3",
+                "type": "multiple",
+                "question": "Combien font 7 \u00d7 8 ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "54",
+                        "correct": false
+                    },
+                    {
+                        "text": "56",
+                        "correct": true
+                    },
+                    {
+                        "text": "58",
+                        "correct": false
+                    },
+                    {
+                        "text": "64",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pxyexahuis",
+                "type": "multiple",
+                "question": "Combien font 45 + 27 ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "62",
+                        "correct": false
+                    },
+                    {
+                        "text": "72",
+                        "correct": true
+                    },
+                    {
+                        "text": "82",
+                        "correct": false
+                    },
+                    {
+                        "text": "52",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5p2rw7k0qc8",
+                "type": "multiple",
+                "question": "Quel est le r\u00e9sultat de 100 \u00f7 4 ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "20",
+                        "correct": false
+                    },
+                    {
+                        "text": "25",
+                        "correct": true
+                    },
+                    {
+                        "text": "40",
+                        "correct": false
+                    },
+                    {
+                        "text": "50",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pvzzc8atue",
+                "type": "multiple",
+                "question": "Quelle fraction est \u00e9quivalente \u00e0 1\/2 ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "2\/4",
+                        "correct": true
+                    },
+                    {
+                        "text": "1\/3",
+                        "correct": false
+                    },
+                    {
+                        "text": "3\/5",
+                        "correct": false
+                    },
+                    {
+                        "text": "2\/3",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pnws5yq05d",
+                "type": "multiple",
+                "question": "Quelle est la valeur de 3\u00b2 ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "6",
+                        "correct": false
+                    },
+                    {
+                        "text": "9",
+                        "correct": true
+                    },
+                    {
+                        "text": "12",
+                        "correct": false
+                    },
+                    {
+                        "text": "15",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pzx5pkqyj4",
+                "type": "truefalse",
+                "question": "Un nombre pair est divisible par 2.",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pnrzv3e3sy",
+                "type": "multiple",
+                "question": "Quel est le p\u00e9rim\u00e8tre d'un carr\u00e9 de c\u00f4t\u00e9 5 cm ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "10 cm",
+                        "correct": false
+                    },
+                    {
+                        "text": "15 cm",
+                        "correct": false
+                    },
+                    {
+                        "text": "20 cm",
+                        "correct": true
+                    },
+                    {
+                        "text": "25 cm",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pk9zvqnzj7",
+                "type": "multiple",
+                "question": "Combien de c\u00f4t\u00e9s a un hexagone ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "5",
+                        "correct": false
+                    },
+                    {
+                        "text": "6",
+                        "correct": true
+                    },
+                    {
+                        "text": "7",
+                        "correct": false
+                    },
+                    {
+                        "text": "8",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5plksveo43d",
+                "type": "multiple",
+                "question": "Quelle unit\u00e9 est adapt\u00e9e pour mesurer la masse d'un stylo ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "La tonne",
+                        "correct": false
+                    },
+                    {
+                        "text": "Le kilogramme",
+                        "correct": false
+                    },
+                    {
+                        "text": "Le gramme",
+                        "correct": true
+                    },
+                    {
+                        "text": "Le litre",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pw422b5shx",
+                "type": "multiple",
+                "question": "Quelle unit\u00e9 est adapt\u00e9e pour mesurer la longueur d'une salle de classe ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Le millim\u00e8tre",
+                        "correct": false
+                    },
+                    {
+                        "text": "Le centim\u00e8tre",
+                        "correct": false
+                    },
+                    {
+                        "text": "Le m\u00e8tre",
+                        "correct": true
+                    },
+                    {
+                        "text": "Le kilom\u00e8tre",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pybijfxqua",
+                "type": "multiple",
+                "question": "Combien y a-t-il de minutes dans 2 heures ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "60",
+                        "correct": false
+                    },
+                    {
+                        "text": "90",
+                        "correct": false
+                    },
+                    {
+                        "text": "120",
+                        "correct": true
+                    },
+                    {
+                        "text": "180",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pnccw9hmmk",
+                "type": "truefalse",
+                "question": "1 litre = 1000 millilitres.",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pxw1rxklq1",
+                "type": "multiple",
+                "question": "Quel est le multiple de 3 parmi ces nombres ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "14",
+                        "correct": false
+                    },
+                    {
+                        "text": "21",
+                        "correct": true
+                    },
+                    {
+                        "text": "25",
+                        "correct": false
+                    },
+                    {
+                        "text": "28",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5ppsn6m8h3a",
+                "type": "multiple",
+                "question": "Combien font 3\/4 d'une heure ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "15 minutes",
+                        "correct": false
+                    },
+                    {
+                        "text": "30 minutes",
+                        "correct": false
+                    },
+                    {
+                        "text": "45 minutes",
+                        "correct": true
+                    },
+                    {
+                        "text": "60 minutes",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5ptratghiw2",
+                "type": "multiple",
+                "question": "Quel nombre est un nombre premier ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "9",
+                        "correct": false
+                    },
+                    {
+                        "text": "15",
+                        "correct": false
+                    },
+                    {
+                        "text": "17",
+                        "correct": true
+                    },
+                    {
+                        "text": "21",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5p5elg2cu31",
+                "type": "truefalse",
+                "question": "0 est un nombre naturel.",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pswzc80jpc",
+                "type": "multiple",
+                "question": "Quelle est l'aire d'un rectangle de 6 cm sur 4 cm ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "10 cm\u00b2",
+                        "correct": false
+                    },
+                    {
+                        "text": "20 cm\u00b2",
+                        "correct": false
+                    },
+                    {
+                        "text": "24 cm\u00b2",
+                        "correct": true
+                    },
+                    {
+                        "text": "30 cm\u00b2",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5p0l8ksd4h8",
+                "type": "multiple",
+                "question": "Quel est l'op\u00e9ration inverse de la multiplication ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Addition",
+                        "correct": false
+                    },
+                    {
+                        "text": "Soustraction",
+                        "correct": false
+                    },
+                    {
+                        "text": "Division",
+                        "correct": true
+                    },
+                    {
+                        "text": "Puissance",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pahuddtj38",
+                "type": "multiple",
+                "question": "Quel est le plus petit nombre parmi 0,2 ; 0,12 ; 0,3 ; 0,25 ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "0,2",
+                        "correct": false
+                    },
+                    {
+                        "text": "0,12",
+                        "correct": true
+                    },
+                    {
+                        "text": "0,3",
+                        "correct": false
+                    },
+                    {
+                        "text": "0,25",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pzy92l1vcg",
+                "type": "order",
+                "question": "Range ces nombres du plus petit au plus grand :",
+                "time": 45,
+                "answers": [
+                    {
+                        "text": "-3",
+                        "correct": true
+                    },
+                    {
+                        "text": "0",
+                        "correct": true
+                    },
+                    {
+                        "text": "2",
+                        "correct": true
+                    },
+                    {
+                        "text": "5",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pavpk4uqro",
+                "type": "multiple",
+                "question": "Dans la phrase \u00ab Le chat dort. \u00bb, quel est le verbe ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Le",
+                        "correct": false
+                    },
+                    {
+                        "text": "chat",
+                        "correct": false
+                    },
+                    {
+                        "text": "dort",
+                        "correct": true
+                    },
+                    {
+                        "text": ".",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5p05yaj5c34",
+                "type": "multiple",
+                "question": "Quel est le f\u00e9minin de \u00ab acteur \u00bb ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Actrice",
+                        "correct": true
+                    },
+                    {
+                        "text": "Acteuse",
+                        "correct": false
+                    },
+                    {
+                        "text": "Acteure",
+                        "correct": false
+                    },
+                    {
+                        "text": "Acteurice",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pvye28yir5",
+                "type": "multiple",
+                "question": "Quel signe de ponctuation termine une question ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": ".",
+                        "correct": false
+                    },
+                    {
+                        "text": "!",
+                        "correct": false
+                    },
+                    {
+                        "text": "?",
+                        "correct": true
+                    },
+                    {
+                        "text": ";",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pz44ryyq53",
+                "type": "multiple",
+                "question": "Quel est le synonyme de \u00ab heureux \u00bb ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Triste",
+                        "correct": false
+                    },
+                    {
+                        "text": "Content",
+                        "correct": true
+                    },
+                    {
+                        "text": "F\u00e2ch\u00e9",
+                        "correct": false
+                    },
+                    {
+                        "text": "Fatigu\u00e9",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5poasaxncer",
+                "type": "truefalse",
+                "question": "Un nom propre commence g\u00e9n\u00e9ralement par une majuscule.",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pytfy9kzdx",
+                "type": "multiple",
+                "question": "Comment s'appelle l'auteur de fables comme \u00ab Le Corbeau et le Renard \u00bb ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Victor Hugo",
+                        "correct": false
+                    },
+                    {
+                        "text": "Jean de La Fontaine",
+                        "correct": true
+                    },
+                    {
+                        "text": "Moli\u00e8re",
+                        "correct": false
+                    },
+                    {
+                        "text": "Jules Verne",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pefbh91d5i",
+                "type": "multiple",
+                "question": "Quel genre de texte raconte une histoire invent\u00e9e ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Une recette",
+                        "correct": false
+                    },
+                    {
+                        "text": "Un r\u00e9cit (conte\/roman)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Un mode d'emploi",
+                        "correct": false
+                    },
+                    {
+                        "text": "Une carte",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pv4efrugpq",
+                "type": "multiple",
+                "question": "En anglais, comment dit-on \u00ab bonjour \u00bb ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Goodbye",
+                        "correct": false
+                    },
+                    {
+                        "text": "Hello",
+                        "correct": true
+                    },
+                    {
+                        "text": "Please",
+                        "correct": false
+                    },
+                    {
+                        "text": "Thanks",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pbn9ay25tg",
+                "type": "multiple",
+                "question": "En anglais, comment dit-on \u00ab merci \u00bb ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Thank you",
+                        "correct": true
+                    },
+                    {
+                        "text": "Sorry",
+                        "correct": false
+                    },
+                    {
+                        "text": "Yes",
+                        "correct": false
+                    },
+                    {
+                        "text": "Night",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5ppyoi720xu",
+                "type": "multiple",
+                "question": "Quel instrument poss\u00e8de des touches blanches et noires ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Violon",
+                        "correct": false
+                    },
+                    {
+                        "text": "Piano",
+                        "correct": true
+                    },
+                    {
+                        "text": "Fl\u00fbte",
+                        "correct": false
+                    },
+                    {
+                        "text": "Tambour",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pxka1qki5s",
+                "type": "multiple",
+                "question": "Qu'appelle-t-on une \u00ab \u0153uvre d'art \u00bb ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Un objet fabriqu\u00e9 en s\u00e9rie",
+                        "correct": false
+                    },
+                    {
+                        "text": "Une cr\u00e9ation artistique (peinture, sculpture, etc.)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Un outil de bricolage",
+                        "correct": false
+                    },
+                    {
+                        "text": "Un exercice de maths",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pgw3imqghz",
+                "type": "multiple",
+                "question": "Quelle couleur obtient-on en m\u00e9langeant du rouge et du jaune ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Vert",
+                        "correct": false
+                    },
+                    {
+                        "text": "Orange",
+                        "correct": true
+                    },
+                    {
+                        "text": "Violet",
+                        "correct": false
+                    },
+                    {
+                        "text": "Bleu",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pq2s0ww8ux",
+                "type": "truefalse",
+                "question": "La Joconde est un tableau peint par L\u00e9onard de Vinci.",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pw5ufbfmk2",
+                "type": "multiple",
+                "question": "Quel sport se joue avec une balle orange et un panier ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Football",
+                        "correct": false
+                    },
+                    {
+                        "text": "Basket-ball",
+                        "correct": true
+                    },
+                    {
+                        "text": "Handball",
+                        "correct": false
+                    },
+                    {
+                        "text": "Rugby",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5p1hw4yo3r3",
+                "type": "multiple",
+                "question": "Combien y a-t-il de jours dans une semaine ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "5",
+                        "correct": false
+                    },
+                    {
+                        "text": "6",
+                        "correct": false
+                    },
+                    {
+                        "text": "7",
+                        "correct": true
+                    },
+                    {
+                        "text": "8",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pyyvdvx67l",
+                "type": "truefalse",
+                "question": "Un si\u00e8cle dure 100 ans.",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mk56gs5pv2j667gju",
+                "type": "freetext",
+                "question": "Quelle est la capitale de l'Allemagne ?",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "Berlin",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "Berlin",
+                    "berlin"
+                ]
+            },
+            {
+                "id": "mk56gs5pp0c78t37g",
+                "type": "freetext",
+                "question": "\u00c9cris le r\u00e9sultat de 12 + 8.",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "20",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "20",
+                    "vingt",
+                    "Vingt"
+                ]
+            },
+            {
+                "id": "mk56gs5psvj7xpu9m",
+                "type": "freetext",
+                "question": "Quel est le nom de la plan\u00e8te sur laquelle nous vivons ?",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "Terre",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "Terre",
+                    "la Terre",
+                    "terre"
+                ]
+            },
+            {
+                "id": "mk56gs5p54mfee2k1",
+                "type": "freetext",
+                "question": "Quel est le nom de l'\u00e9toile au centre de notre syst\u00e8me ?",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "Soleil",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "Soleil",
+                    "le Soleil",
+                    "soleil"
+                ]
+            }
+        ],
+        "modifyCode": "7YTPPHHV",
+        "playCode": "ZY2PG2",
+        "createdAt": 1767860468879,
+        "lastModified": 1767860468879
+    },
+    "lastModified": 1767860467,
+    "questionCount": 100
+}

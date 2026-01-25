@@ -1,0 +1,4339 @@
+{
+    "playCode": "L2EJ2C",
+    "quizData": {
+        "questions": [
+            {
+                "id": "mkp7ylw55e4jn30o8",
+                "type": "multiple",
+                "question": "Calcule : 7\u00d7(12\u22125)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "46",
+                        "correct": false
+                    },
+                    {
+                        "text": "49",
+                        "correct": true
+                    },
+                    {
+                        "text": "51",
+                        "correct": false
+                    },
+                    {
+                        "text": "54",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw6apfunkqdl",
+                "type": "multiple",
+                "question": "Calcule : 3\u00d7(20+4)",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "77",
+                        "correct": false
+                    },
+                    {
+                        "text": "72",
+                        "correct": true
+                    },
+                    {
+                        "text": "74",
+                        "correct": false
+                    },
+                    {
+                        "text": "69",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw68cr1wy87f",
+                "type": "multiple",
+                "question": "Calcule : 5\u00b2 + 4\u00b2",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "43",
+                        "correct": false
+                    },
+                    {
+                        "text": "46",
+                        "correct": false
+                    },
+                    {
+                        "text": "41",
+                        "correct": true
+                    },
+                    {
+                        "text": "38",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw65zgtxkfz2",
+                "type": "multiple",
+                "question": "Calcule : 18\u00f73 + 7",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "13",
+                        "correct": true
+                    },
+                    {
+                        "text": "10",
+                        "correct": false
+                    },
+                    {
+                        "text": "15",
+                        "correct": false
+                    },
+                    {
+                        "text": "18",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw6fh6uzdh6g",
+                "type": "multiple",
+                "question": "Calcule : 6\u00d77 \u2212 10",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "29",
+                        "correct": false
+                    },
+                    {
+                        "text": "37",
+                        "correct": false
+                    },
+                    {
+                        "text": "34",
+                        "correct": false
+                    },
+                    {
+                        "text": "32",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw6d294m71ea",
+                "type": "multiple",
+                "question": "Calcule : 2\u00b3 + 3\u00b2",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "22",
+                        "correct": false
+                    },
+                    {
+                        "text": "19",
+                        "correct": false
+                    },
+                    {
+                        "text": "14",
+                        "correct": false
+                    },
+                    {
+                        "text": "17",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw6kgbyljjab",
+                "type": "multiple",
+                "question": "Calcule : 45 \u2212 3\u00d79",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "20",
+                        "correct": false
+                    },
+                    {
+                        "text": "23",
+                        "correct": false
+                    },
+                    {
+                        "text": "18",
+                        "correct": true
+                    },
+                    {
+                        "text": "15",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7v420qhbs2",
+                "type": "multiple",
+                "question": "Calcule : (15\u22123)\u00d74",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "48",
+                        "correct": true
+                    },
+                    {
+                        "text": "53",
+                        "correct": false
+                    },
+                    {
+                        "text": "45",
+                        "correct": false
+                    },
+                    {
+                        "text": "50",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7vxrbprg25",
+                "type": "multiple",
+                "question": "Calcule : 9\u00d79 \u2212 20",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "61",
+                        "correct": true
+                    },
+                    {
+                        "text": "66",
+                        "correct": false
+                    },
+                    {
+                        "text": "63",
+                        "correct": false
+                    },
+                    {
+                        "text": "58",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7o812o50k1",
+                "type": "multiple",
+                "question": "Calcule : 100 \u2212 8\u00d77",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "49",
+                        "correct": false
+                    },
+                    {
+                        "text": "46",
+                        "correct": false
+                    },
+                    {
+                        "text": "44",
+                        "correct": true
+                    },
+                    {
+                        "text": "41",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7kezsby78p",
+                "type": "freetext",
+                "question": "Calcule : 128 \u2212 59",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "69",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "69"
+                ]
+            },
+            {
+                "id": "mkp7ylw7w3h2fsww7",
+                "type": "freetext",
+                "question": "Calcule : 14\u00d76",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "84",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "84"
+                ]
+            },
+            {
+                "id": "mkp7ylw7f5clapmcm",
+                "type": "freetext",
+                "question": "Calcule : 360 \u00f7 9",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "40",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "40"
+                ]
+            },
+            {
+                "id": "mkp7ylw7af6jwvsft",
+                "type": "freetext",
+                "question": "Calcule : 7\u00b2",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "49",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "49"
+                ]
+            },
+            {
+                "id": "mkp7ylw7kpg2dmnsd",
+                "type": "freetext",
+                "question": "Calcule : 3\u00d7(8+2)",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "30",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "30"
+                ]
+            },
+            {
+                "id": "mkp7ylw7sd68739lv",
+                "type": "freetext",
+                "question": "Calcule : 81 \u00f7 3",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "27",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "27"
+                ]
+            },
+            {
+                "id": "mkp7ylw7nqbt7vygr",
+                "type": "freetext",
+                "question": "Calcule : 5\u00d7(9\u22124)",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "25",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "25"
+                ]
+            },
+            {
+                "id": "mkp7ylw7h30jnxy6d",
+                "type": "freetext",
+                "question": "Calcule : 12\u00b2",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "144",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "144"
+                ]
+            },
+            {
+                "id": "mkp7ylw7oputfvtfs",
+                "type": "freetext",
+                "question": "Calcule : 0,5\u00d760",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "30",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "30"
+                ]
+            },
+            {
+                "id": "mkp7ylw7azk7bl6gv",
+                "type": "freetext",
+                "question": "Calcule : 2,4 + 1,7",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "4,1",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "4,1",
+                    "4.1"
+                ]
+            },
+            {
+                "id": "mkp7ylw76lnl6wmlc",
+                "type": "truefalse",
+                "question": "Le produit de deux nombres n\u00e9gatifs est positif.",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7a5jlbtrsg",
+                "type": "truefalse",
+                "question": "La somme de deux nombres n\u00e9gatifs est n\u00e9gative.",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw703u4xysfo",
+                "type": "truefalse",
+                "question": "Soustraire un nombre revient \u00e0 ajouter son oppos\u00e9.",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7poelzga3w",
+                "type": "truefalse",
+                "question": "\u2212(\u22127) = \u22127.",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": false
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw74txpk5jee",
+                "type": "truefalse",
+                "question": "(\u22123)\u00b2 = \u22129.",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": false
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw75r6y4pquz",
+                "type": "multiple",
+                "question": "Quel est le r\u00e9sultat de (\u22128) + 13 ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "3",
+                        "correct": false
+                    },
+                    {
+                        "text": "5",
+                        "correct": true
+                    },
+                    {
+                        "text": "-5",
+                        "correct": false
+                    },
+                    {
+                        "text": "21",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7oaa90a2ja",
+                "type": "multiple",
+                "question": "Quel est le r\u00e9sultat de 6 \u2212 (\u22124) ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "2",
+                        "correct": false
+                    },
+                    {
+                        "text": "10",
+                        "correct": true
+                    },
+                    {
+                        "text": "-10",
+                        "correct": false
+                    },
+                    {
+                        "text": "12",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7xbzn947ug",
+                "type": "multiple",
+                "question": "Quel est le r\u00e9sultat de (\u22123)\u00d77 ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "-21",
+                        "correct": true
+                    },
+                    {
+                        "text": "21",
+                        "correct": false
+                    },
+                    {
+                        "text": "-10",
+                        "correct": false
+                    },
+                    {
+                        "text": "-24",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw70vfv2gcqg",
+                "type": "multiple",
+                "question": "Quel est le r\u00e9sultat de (\u221224)\u00f76 ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "-4",
+                        "correct": true
+                    },
+                    {
+                        "text": "4",
+                        "correct": false
+                    },
+                    {
+                        "text": "-6",
+                        "correct": false
+                    },
+                    {
+                        "text": "-5",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw728p0kxw3v",
+                "type": "multiple",
+                "question": "Quel est le r\u00e9sultat de (\u22122)\u00b3 ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "-8",
+                        "correct": true
+                    },
+                    {
+                        "text": "8",
+                        "correct": false
+                    },
+                    {
+                        "text": "-6",
+                        "correct": false
+                    },
+                    {
+                        "text": "-4",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7man4na0k3",
+                "type": "multiple",
+                "question": "Quel est le r\u00e9sultat de 10\u00b2 ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "20",
+                        "correct": false
+                    },
+                    {
+                        "text": "50",
+                        "correct": false
+                    },
+                    {
+                        "text": "100",
+                        "correct": true
+                    },
+                    {
+                        "text": "1000",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7o2secephf",
+                "type": "multiple",
+                "question": "Quel est le r\u00e9sultat de 2\u2075 ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "16",
+                        "correct": false
+                    },
+                    {
+                        "text": "24",
+                        "correct": false
+                    },
+                    {
+                        "text": "32",
+                        "correct": true
+                    },
+                    {
+                        "text": "64",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw724dowmj9v",
+                "type": "multiple",
+                "question": "Quel est le r\u00e9sultat de 3\u2074 ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "27",
+                        "correct": false
+                    },
+                    {
+                        "text": "64",
+                        "correct": false
+                    },
+                    {
+                        "text": "81",
+                        "correct": true
+                    },
+                    {
+                        "text": "243",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7ue3guo4nx",
+                "type": "multiple",
+                "question": "Quel est le r\u00e9sultat de (\u22125)\u00b2 ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "-25",
+                        "correct": false
+                    },
+                    {
+                        "text": "25",
+                        "correct": true
+                    },
+                    {
+                        "text": "10",
+                        "correct": false
+                    },
+                    {
+                        "text": "30",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw71sim514oq",
+                "type": "multiple",
+                "question": "Quel est le r\u00e9sultat de (\u22121)\u2077 ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "-1",
+                        "correct": true
+                    },
+                    {
+                        "text": "1",
+                        "correct": false
+                    },
+                    {
+                        "text": "0",
+                        "correct": false
+                    },
+                    {
+                        "text": "7",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7f3xk931aj",
+                "type": "multiple",
+                "question": "Quelle est la fraction simplifi\u00e9e de 6\/12 ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "1\/2",
+                        "correct": true
+                    },
+                    {
+                        "text": "1\/3",
+                        "correct": false
+                    },
+                    {
+                        "text": "2\/3",
+                        "correct": false
+                    },
+                    {
+                        "text": "3\/2",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7jpz4j5t5n",
+                "type": "multiple",
+                "question": "Quelle est l'\u00e9criture d\u00e9cimale de 3\/4 ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "0,25",
+                        "correct": false
+                    },
+                    {
+                        "text": "0,5",
+                        "correct": false
+                    },
+                    {
+                        "text": "0,75",
+                        "correct": true
+                    },
+                    {
+                        "text": "1,5",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw78iuwmmngh",
+                "type": "multiple",
+                "question": "Quel est 25% de 80 ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "10",
+                        "correct": false
+                    },
+                    {
+                        "text": "20",
+                        "correct": true
+                    },
+                    {
+                        "text": "25",
+                        "correct": false
+                    },
+                    {
+                        "text": "40",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7g69t80ocu",
+                "type": "multiple",
+                "question": "Quel est 10% de 350 ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "3,5",
+                        "correct": false
+                    },
+                    {
+                        "text": "35",
+                        "correct": true
+                    },
+                    {
+                        "text": "50",
+                        "correct": false
+                    },
+                    {
+                        "text": "70",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7w3ddqsz1s",
+                "type": "multiple",
+                "question": "Combien font 1\/2 + 1\/3 ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "2\/5",
+                        "correct": false
+                    },
+                    {
+                        "text": "5\/6",
+                        "correct": true
+                    },
+                    {
+                        "text": "1\/6",
+                        "correct": false
+                    },
+                    {
+                        "text": "3\/5",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7x2cjdbmjj",
+                "type": "multiple",
+                "question": "Combien font 2\/5 + 1\/10 ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "1\/2",
+                        "correct": true
+                    },
+                    {
+                        "text": "3\/10",
+                        "correct": false
+                    },
+                    {
+                        "text": "1\/5",
+                        "correct": false
+                    },
+                    {
+                        "text": "5\/10",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7liawb3oji",
+                "type": "multiple",
+                "question": "Combien font 3\/4 \u2212 1\/8 ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "1\/2",
+                        "correct": false
+                    },
+                    {
+                        "text": "5\/8",
+                        "correct": true
+                    },
+                    {
+                        "text": "3\/8",
+                        "correct": false
+                    },
+                    {
+                        "text": "7\/8",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7vwm3bfnrt",
+                "type": "truefalse",
+                "question": "0,3 = 3\/10.",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7u8uyf9jzy",
+                "type": "truefalse",
+                "question": "50% = 1\/4.",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": false
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7qfn5dwsa1",
+                "type": "truefalse",
+                "question": "1,25 = 5\/4.",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7xfiqcvu7f",
+                "type": "multiple",
+                "question": "Une r\u00e9duction de 20% sur 50 \u20ac donne un prix de :",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "30 \u20ac",
+                        "correct": false
+                    },
+                    {
+                        "text": "35 \u20ac",
+                        "correct": false
+                    },
+                    {
+                        "text": "40 \u20ac",
+                        "correct": true
+                    },
+                    {
+                        "text": "45 \u20ac",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7ikbmy45es",
+                "type": "multiple",
+                "question": "Un article passe de 40 \u20ac \u00e0 50 \u20ac : l'augmentation est de :",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "10%",
+                        "correct": false
+                    },
+                    {
+                        "text": "20%",
+                        "correct": false
+                    },
+                    {
+                        "text": "25%",
+                        "correct": true
+                    },
+                    {
+                        "text": "30%",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7wqvy3h8mk",
+                "type": "freetext",
+                "question": "\u00c9cris 0,125 sous forme de fraction simplifi\u00e9e.",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "1\/8",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "1\/8",
+                    "0,125"
+                ]
+            },
+            {
+                "id": "mkp7ylw7mhoefxhij",
+                "type": "freetext",
+                "question": "\u00c9cris 3\/5 en \u00e9criture d\u00e9cimale.",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "0,6",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "0,6",
+                    "0.6"
+                ]
+            },
+            {
+                "id": "mkp7ylw7agl7x9xlo",
+                "type": "multiple",
+                "question": "Si 5 cahiers co\u00fbtent 12 \u20ac, combien co\u00fbtent 10 cahiers (proportionnalit\u00e9) ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "20 \u20ac",
+                        "correct": false
+                    },
+                    {
+                        "text": "22 \u20ac",
+                        "correct": false
+                    },
+                    {
+                        "text": "24 \u20ac",
+                        "correct": true
+                    },
+                    {
+                        "text": "26 \u20ac",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7hppazxl2z",
+                "type": "multiple",
+                "question": "Compl\u00e8te : 7\/10 = ... %",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "7%",
+                        "correct": false
+                    },
+                    {
+                        "text": "70%",
+                        "correct": true
+                    },
+                    {
+                        "text": "0,7%",
+                        "correct": false
+                    },
+                    {
+                        "text": "700%",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7xjj9hcnkj",
+                "type": "multiple",
+                "question": "Compl\u00e8te : 0,4 = ... %",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "4%",
+                        "correct": false
+                    },
+                    {
+                        "text": "40%",
+                        "correct": true
+                    },
+                    {
+                        "text": "0,4%",
+                        "correct": false
+                    },
+                    {
+                        "text": "400%",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw76zjvlxj6l",
+                "type": "multiple",
+                "question": "Quelle est la valeur de 3\/10 de 200 ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "6",
+                        "correct": false
+                    },
+                    {
+                        "text": "20",
+                        "correct": false
+                    },
+                    {
+                        "text": "60",
+                        "correct": true
+                    },
+                    {
+                        "text": "90",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw75xz4ijewr",
+                "type": "multiple",
+                "question": "Quel est le nombre manquant : 12 = 3 \u00d7 ...",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "3",
+                        "correct": false
+                    },
+                    {
+                        "text": "4",
+                        "correct": true
+                    },
+                    {
+                        "text": "5",
+                        "correct": false
+                    },
+                    {
+                        "text": "6",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7hy6bahelr",
+                "type": "order",
+                "question": "Classe du plus petit au plus grand :",
+                "time": 45,
+                "answers": [
+                    {
+                        "text": "0,2",
+                        "correct": true
+                    },
+                    {
+                        "text": "0,25",
+                        "correct": true
+                    },
+                    {
+                        "text": "0,3",
+                        "correct": true
+                    },
+                    {
+                        "text": "0,5",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7n1nuvygg4",
+                "type": "multiple",
+                "question": "Simplifie : 3x + 2x =",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "5x",
+                        "correct": true
+                    },
+                    {
+                        "text": "6x",
+                        "correct": false
+                    },
+                    {
+                        "text": "x",
+                        "correct": false
+                    },
+                    {
+                        "text": "5",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7b5vikxnhz",
+                "type": "multiple",
+                "question": "Simplifie : 7a \u2212 3a =",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "10a",
+                        "correct": false
+                    },
+                    {
+                        "text": "4a",
+                        "correct": true
+                    },
+                    {
+                        "text": "a",
+                        "correct": false
+                    },
+                    {
+                        "text": "4",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7fb6vl9wn1",
+                "type": "multiple",
+                "question": "D\u00e9veloppe : 2(3x + 5) =",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "6x+10",
+                        "correct": true
+                    },
+                    {
+                        "text": "6x+5",
+                        "correct": false
+                    },
+                    {
+                        "text": "3x+10",
+                        "correct": false
+                    },
+                    {
+                        "text": "5x+10",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7d7joilb6f",
+                "type": "multiple",
+                "question": "D\u00e9veloppe : 5(x \u2212 2) =",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "5x\u22122",
+                        "correct": false
+                    },
+                    {
+                        "text": "5x\u221210",
+                        "correct": true
+                    },
+                    {
+                        "text": "x\u221210",
+                        "correct": false
+                    },
+                    {
+                        "text": "5x+10",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7fh9dwwf0j",
+                "type": "multiple",
+                "question": "R\u00e9sous : x + 7 = 15",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "x=6",
+                        "correct": false
+                    },
+                    {
+                        "text": "x=7",
+                        "correct": false
+                    },
+                    {
+                        "text": "x=8",
+                        "correct": true
+                    },
+                    {
+                        "text": "x=9",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw72ua7cdd02",
+                "type": "multiple",
+                "question": "R\u00e9sous : 3x = 21",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "x=6",
+                        "correct": false
+                    },
+                    {
+                        "text": "x=7",
+                        "correct": true
+                    },
+                    {
+                        "text": "x=8",
+                        "correct": false
+                    },
+                    {
+                        "text": "x=9",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7wbzh2ua1g",
+                "type": "multiple",
+                "question": "R\u00e9sous : 2x \u2212 5 = 9",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "x=5",
+                        "correct": false
+                    },
+                    {
+                        "text": "x=6",
+                        "correct": false
+                    },
+                    {
+                        "text": "x=7",
+                        "correct": true
+                    },
+                    {
+                        "text": "x=8",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7yy1l9di5x",
+                "type": "multiple",
+                "question": "R\u00e9sous : 4x + 1 = 13",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "x=2",
+                        "correct": false
+                    },
+                    {
+                        "text": "x=3",
+                        "correct": true
+                    },
+                    {
+                        "text": "x=4",
+                        "correct": false
+                    },
+                    {
+                        "text": "x=5",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw71cxpfyelm",
+                "type": "truefalse",
+                "question": "Si x=2, alors 3x+1 = 7.",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7d8z6lwf8f",
+                "type": "truefalse",
+                "question": "Si a=\u22121, alors a\u00b2 = \u22121.",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": false
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7t4y26us0h",
+                "type": "multiple",
+                "question": "Quelle expression correspond \u00e0 \u00ab le triple d'un nombre n augment\u00e9 de 4 \u00bb ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "3n+4",
+                        "correct": true
+                    },
+                    {
+                        "text": "3(n+4)",
+                        "correct": false
+                    },
+                    {
+                        "text": "n+12",
+                        "correct": false
+                    },
+                    {
+                        "text": "n+4",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7gdwel15zx",
+                "type": "multiple",
+                "question": "Quelle valeur de x v\u00e9rifie : 5x \u2212 10 = 0 ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "x=0",
+                        "correct": false
+                    },
+                    {
+                        "text": "x=1",
+                        "correct": false
+                    },
+                    {
+                        "text": "x=2",
+                        "correct": true
+                    },
+                    {
+                        "text": "x=5",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7zqq78jy0a",
+                "type": "freetext",
+                "question": "R\u00e9sous : x\/4 = 3",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "12",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "12"
+                ]
+            },
+            {
+                "id": "mkp7ylw7z0c3mxvni",
+                "type": "freetext",
+                "question": "R\u00e9sous : 9 \u2212 x = 2",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "7",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "7"
+                ]
+            },
+            {
+                "id": "mkp7ylw70stcqc858",
+                "type": "multiple",
+                "question": "Si y = 2x et x = 6, alors y vaut :",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "8",
+                        "correct": false
+                    },
+                    {
+                        "text": "10",
+                        "correct": false
+                    },
+                    {
+                        "text": "12",
+                        "correct": true
+                    },
+                    {
+                        "text": "14",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7vv8ih5s5o",
+                "type": "multiple",
+                "question": "Somme des angles d'un triangle :",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "90\u00b0",
+                        "correct": false
+                    },
+                    {
+                        "text": "180\u00b0",
+                        "correct": true
+                    },
+                    {
+                        "text": "270\u00b0",
+                        "correct": false
+                    },
+                    {
+                        "text": "360\u00b0",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7tdtqb6ehb",
+                "type": "multiple",
+                "question": "Somme des angles d'un quadrilat\u00e8re :",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "180\u00b0",
+                        "correct": false
+                    },
+                    {
+                        "text": "270\u00b0",
+                        "correct": false
+                    },
+                    {
+                        "text": "360\u00b0",
+                        "correct": true
+                    },
+                    {
+                        "text": "540\u00b0",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7aidbt5szv",
+                "type": "truefalse",
+                "question": "Dans un triangle rectangle, les deux c\u00f4t\u00e9s qui forment l'angle droit sont des cath\u00e8tes.",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7tlf1zsgpb",
+                "type": "multiple",
+                "question": "Dans un triangle rectangle, le c\u00f4t\u00e9 oppos\u00e9 \u00e0 l'angle droit s'appelle :",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "cath\u00e8te",
+                        "correct": false
+                    },
+                    {
+                        "text": "hypot\u00e9nuse",
+                        "correct": true
+                    },
+                    {
+                        "text": "m\u00e9diatrice",
+                        "correct": false
+                    },
+                    {
+                        "text": "bissectrice",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7g99knq7u2",
+                "type": "multiple",
+                "question": "P\u00e9rim\u00e8tre d'un rectangle 8 cm \u00d7 3 cm :",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "11 cm",
+                        "correct": false
+                    },
+                    {
+                        "text": "16 cm",
+                        "correct": false
+                    },
+                    {
+                        "text": "22 cm",
+                        "correct": true
+                    },
+                    {
+                        "text": "24 cm",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7tqc6ns2pz",
+                "type": "multiple",
+                "question": "Aire d'un rectangle 8 cm \u00d7 3 cm :",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "11 cm\u00b2",
+                        "correct": false
+                    },
+                    {
+                        "text": "16 cm\u00b2",
+                        "correct": false
+                    },
+                    {
+                        "text": "24 cm\u00b2",
+                        "correct": true
+                    },
+                    {
+                        "text": "22 cm\u00b2",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw764j97o8xk",
+                "type": "multiple",
+                "question": "Aire d'un triangle (base 10 cm, hauteur 6 cm) :",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "30 cm\u00b2",
+                        "correct": true
+                    },
+                    {
+                        "text": "60 cm\u00b2",
+                        "correct": false
+                    },
+                    {
+                        "text": "16 cm\u00b2",
+                        "correct": false
+                    },
+                    {
+                        "text": "20 cm\u00b2",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw708w3ki0xs",
+                "type": "truefalse",
+                "question": "Deux droites parall\u00e8les ne se coupent jamais.",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7kethwzodt",
+                "type": "truefalse",
+                "question": "Deux droites perpendiculaires se coupent en formant un angle de 90\u00b0.",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7u1k1a6qxl",
+                "type": "multiple",
+                "question": "Un cercle de rayon 5 cm a un diam\u00e8tre de :",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "2,5 cm",
+                        "correct": false
+                    },
+                    {
+                        "text": "5 cm",
+                        "correct": false
+                    },
+                    {
+                        "text": "10 cm",
+                        "correct": true
+                    },
+                    {
+                        "text": "15 cm",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7bcy8e9ii1",
+                "type": "multiple",
+                "question": "Th\u00e9or\u00e8me de Pythagore : si les c\u00f4t\u00e9s de l'angle droit sont 6 cm et 8 cm, l'hypot\u00e9nuse vaut :",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "10 cm",
+                        "correct": true
+                    },
+                    {
+                        "text": "12 cm",
+                        "correct": false
+                    },
+                    {
+                        "text": "14 cm",
+                        "correct": false
+                    },
+                    {
+                        "text": "16 cm",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw75opwid0hq",
+                "type": "multiple",
+                "question": "Triangle rectangle : hypot\u00e9nuse 13 cm et un c\u00f4t\u00e9 5 cm. L'autre c\u00f4t\u00e9 vaut :",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "8 cm",
+                        "correct": false
+                    },
+                    {
+                        "text": "10 cm",
+                        "correct": false
+                    },
+                    {
+                        "text": "12 cm",
+                        "correct": true
+                    },
+                    {
+                        "text": "14 cm",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7xbfhvco6n",
+                "type": "multiple",
+                "question": "Un triangle isoc\u00e8le a :",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "2 c\u00f4t\u00e9s \u00e9gaux",
+                        "correct": true
+                    },
+                    {
+                        "text": "3 c\u00f4t\u00e9s \u00e9gaux",
+                        "correct": false
+                    },
+                    {
+                        "text": "0 c\u00f4t\u00e9 \u00e9gal",
+                        "correct": false
+                    },
+                    {
+                        "text": "4 c\u00f4t\u00e9s",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7f2lgshf4x",
+                "type": "multiple",
+                "question": "Un triangle \u00e9quilat\u00e9ral a des angles de :",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "45\u00b0",
+                        "correct": false
+                    },
+                    {
+                        "text": "60\u00b0",
+                        "correct": true
+                    },
+                    {
+                        "text": "90\u00b0",
+                        "correct": false
+                    },
+                    {
+                        "text": "120\u00b0",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw77omwhhqq0",
+                "type": "order",
+                "question": "Ordonne ces quadrilat\u00e8res du plus \u00ab g\u00e9n\u00e9ral \u00bb au plus \u00ab particulier \u00bb :",
+                "time": 55,
+                "answers": [
+                    {
+                        "text": "Quadrilat\u00e8re",
+                        "correct": true
+                    },
+                    {
+                        "text": "Parall\u00e9logramme",
+                        "correct": true
+                    },
+                    {
+                        "text": "Rectangle",
+                        "correct": true
+                    },
+                    {
+                        "text": "Carr\u00e9",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7csvuzczwv",
+                "type": "multiple",
+                "question": "La m\u00e9diatrice d'un segment est :",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Une droite perpendiculaire passant par le milieu",
+                        "correct": true
+                    },
+                    {
+                        "text": "Une droite parall\u00e8le au segment",
+                        "correct": false
+                    },
+                    {
+                        "text": "Un segment qui coupe en 3",
+                        "correct": false
+                    },
+                    {
+                        "text": "Une demi-droite",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7q6cfegiyh",
+                "type": "multiple",
+                "question": "La bissectrice d'un angle est :",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "La droite qui partage l'angle en deux angles \u00e9gaux",
+                        "correct": true
+                    },
+                    {
+                        "text": "La droite qui coupe le segment",
+                        "correct": false
+                    },
+                    {
+                        "text": "Le c\u00f4t\u00e9 le plus long",
+                        "correct": false
+                    },
+                    {
+                        "text": "Une parall\u00e8le",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7twtznmo4p",
+                "type": "truefalse",
+                "question": "Dans un triangle, une hauteur est toujours perpendiculaire \u00e0 un c\u00f4t\u00e9.",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7ctnzrq0wy",
+                "type": "freetext",
+                "question": "Un triangle rectangle a un angle de combien de degr\u00e9s ?",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "90",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "90",
+                    "90\u00b0"
+                ]
+            },
+            {
+                "id": "mkp7ylw76z7xjvqo8",
+                "type": "multiple",
+                "question": "Aire d'un carr\u00e9 de c\u00f4t\u00e9 9 cm :",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "18 cm\u00b2",
+                        "correct": false
+                    },
+                    {
+                        "text": "36 cm\u00b2",
+                        "correct": false
+                    },
+                    {
+                        "text": "81 cm\u00b2",
+                        "correct": true
+                    },
+                    {
+                        "text": "90 cm\u00b2",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7i02yyo3jx",
+                "type": "multiple",
+                "question": "Moyenne de 10, 14, 16 :",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "12",
+                        "correct": false
+                    },
+                    {
+                        "text": "13",
+                        "correct": true
+                    },
+                    {
+                        "text": "14",
+                        "correct": false
+                    },
+                    {
+                        "text": "15",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7m4lc2bdt1",
+                "type": "multiple",
+                "question": "M\u00e9diane de 2, 5, 9, 10, 12 :",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "5",
+                        "correct": false
+                    },
+                    {
+                        "text": "9",
+                        "correct": true
+                    },
+                    {
+                        "text": "10",
+                        "correct": false
+                    },
+                    {
+                        "text": "12",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7wkjmtu1s1",
+                "type": "multiple",
+                "question": "\u00c9tendue de 3, 8, 15, 20 :",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "12",
+                        "correct": false
+                    },
+                    {
+                        "text": "15",
+                        "correct": false
+                    },
+                    {
+                        "text": "17",
+                        "correct": true
+                    },
+                    {
+                        "text": "20",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7hd2p7nazm",
+                "type": "truefalse",
+                "question": "Dans une s\u00e9rie, le mode est la valeur la plus fr\u00e9quente.",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw79sp437ozq",
+                "type": "truefalse",
+                "question": "La moyenne est toujours une valeur de la s\u00e9rie.",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": false
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7npq3uuvc3",
+                "type": "multiple",
+                "question": "On lance un d\u00e9 \u00e9quilibr\u00e9. Probabilit\u00e9 d'obtenir un 6 :",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "1\/2",
+                        "correct": false
+                    },
+                    {
+                        "text": "1\/3",
+                        "correct": false
+                    },
+                    {
+                        "text": "1\/6",
+                        "correct": true
+                    },
+                    {
+                        "text": "1\/12",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7mnj9irxgs",
+                "type": "multiple",
+                "question": "On tire au hasard une carte parmi 10 cartes num\u00e9rot\u00e9es de 1 \u00e0 10. Probabilit\u00e9 de tirer un nombre pair :",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "1\/5",
+                        "correct": false
+                    },
+                    {
+                        "text": "1\/2",
+                        "correct": true
+                    },
+                    {
+                        "text": "2\/5",
+                        "correct": false
+                    },
+                    {
+                        "text": "3\/5",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw79vb1dx8hr",
+                "type": "multiple",
+                "question": "Dans une classe, 12 \u00e9l\u00e8ves sur 30 portent des lunettes. Proportion :",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "20%",
+                        "correct": false
+                    },
+                    {
+                        "text": "30%",
+                        "correct": false
+                    },
+                    {
+                        "text": "40%",
+                        "correct": true
+                    },
+                    {
+                        "text": "60%",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "id": "mkp7ylw7zsxm81cqp",
+                "type": "freetext",
+                "question": "Moyenne de 8 et 12 :",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "10",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "10"
+                ]
+            },
+            {
+                "id": "mkp7ylw7lpuiy3qd5",
+                "type": "multiple",
+                "question": "Si on double toutes les valeurs d'une s\u00e9rie, la moyenne est :",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Divis\u00e9e par 2",
+                        "correct": false
+                    },
+                    {
+                        "text": "Inchang\u00e9e",
+                        "correct": false
+                    },
+                    {
+                        "text": "Doubl\u00e9e",
+                        "correct": true
+                    },
+                    {
+                        "text": "Annul\u00e9e",
+                        "correct": false
+                    }
+                ]
+            }
+        ],
+        "name": "Mon Quiz"
+    },
+    "manualMode": false,
+    "showTop3": true,
+    "state": "waiting",
+    "currentQuestion": -1,
+    "players": [],
+    "questions": [
+        {
+            "id": "mkp7ylw55e4jn30o8",
+            "type": "multiple",
+            "question": "Calcule : 7\u00d7(12\u22125)",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "46",
+                    "correct": false
+                },
+                {
+                    "text": "49",
+                    "correct": true
+                },
+                {
+                    "text": "51",
+                    "correct": false
+                },
+                {
+                    "text": "54",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw6apfunkqdl",
+            "type": "multiple",
+            "question": "Calcule : 3\u00d7(20+4)",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "77",
+                    "correct": false
+                },
+                {
+                    "text": "72",
+                    "correct": true
+                },
+                {
+                    "text": "74",
+                    "correct": false
+                },
+                {
+                    "text": "69",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw68cr1wy87f",
+            "type": "multiple",
+            "question": "Calcule : 5\u00b2 + 4\u00b2",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "43",
+                    "correct": false
+                },
+                {
+                    "text": "46",
+                    "correct": false
+                },
+                {
+                    "text": "41",
+                    "correct": true
+                },
+                {
+                    "text": "38",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw65zgtxkfz2",
+            "type": "multiple",
+            "question": "Calcule : 18\u00f73 + 7",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "13",
+                    "correct": true
+                },
+                {
+                    "text": "10",
+                    "correct": false
+                },
+                {
+                    "text": "15",
+                    "correct": false
+                },
+                {
+                    "text": "18",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw6fh6uzdh6g",
+            "type": "multiple",
+            "question": "Calcule : 6\u00d77 \u2212 10",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "29",
+                    "correct": false
+                },
+                {
+                    "text": "37",
+                    "correct": false
+                },
+                {
+                    "text": "34",
+                    "correct": false
+                },
+                {
+                    "text": "32",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw6d294m71ea",
+            "type": "multiple",
+            "question": "Calcule : 2\u00b3 + 3\u00b2",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "22",
+                    "correct": false
+                },
+                {
+                    "text": "19",
+                    "correct": false
+                },
+                {
+                    "text": "14",
+                    "correct": false
+                },
+                {
+                    "text": "17",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw6kgbyljjab",
+            "type": "multiple",
+            "question": "Calcule : 45 \u2212 3\u00d79",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "20",
+                    "correct": false
+                },
+                {
+                    "text": "23",
+                    "correct": false
+                },
+                {
+                    "text": "18",
+                    "correct": true
+                },
+                {
+                    "text": "15",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7v420qhbs2",
+            "type": "multiple",
+            "question": "Calcule : (15\u22123)\u00d74",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "48",
+                    "correct": true
+                },
+                {
+                    "text": "53",
+                    "correct": false
+                },
+                {
+                    "text": "45",
+                    "correct": false
+                },
+                {
+                    "text": "50",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7vxrbprg25",
+            "type": "multiple",
+            "question": "Calcule : 9\u00d79 \u2212 20",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "61",
+                    "correct": true
+                },
+                {
+                    "text": "66",
+                    "correct": false
+                },
+                {
+                    "text": "63",
+                    "correct": false
+                },
+                {
+                    "text": "58",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7o812o50k1",
+            "type": "multiple",
+            "question": "Calcule : 100 \u2212 8\u00d77",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "49",
+                    "correct": false
+                },
+                {
+                    "text": "46",
+                    "correct": false
+                },
+                {
+                    "text": "44",
+                    "correct": true
+                },
+                {
+                    "text": "41",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7kezsby78p",
+            "type": "freetext",
+            "question": "Calcule : 128 \u2212 59",
+            "time": 25,
+            "answers": [
+                {
+                    "text": "69",
+                    "correct": true
+                }
+            ],
+            "caseSensitive": false,
+            "acceptedAnswers": [
+                "69"
+            ]
+        },
+        {
+            "id": "mkp7ylw7w3h2fsww7",
+            "type": "freetext",
+            "question": "Calcule : 14\u00d76",
+            "time": 25,
+            "answers": [
+                {
+                    "text": "84",
+                    "correct": true
+                }
+            ],
+            "caseSensitive": false,
+            "acceptedAnswers": [
+                "84"
+            ]
+        },
+        {
+            "id": "mkp7ylw7f5clapmcm",
+            "type": "freetext",
+            "question": "Calcule : 360 \u00f7 9",
+            "time": 25,
+            "answers": [
+                {
+                    "text": "40",
+                    "correct": true
+                }
+            ],
+            "caseSensitive": false,
+            "acceptedAnswers": [
+                "40"
+            ]
+        },
+        {
+            "id": "mkp7ylw7af6jwvsft",
+            "type": "freetext",
+            "question": "Calcule : 7\u00b2",
+            "time": 25,
+            "answers": [
+                {
+                    "text": "49",
+                    "correct": true
+                }
+            ],
+            "caseSensitive": false,
+            "acceptedAnswers": [
+                "49"
+            ]
+        },
+        {
+            "id": "mkp7ylw7kpg2dmnsd",
+            "type": "freetext",
+            "question": "Calcule : 3\u00d7(8+2)",
+            "time": 25,
+            "answers": [
+                {
+                    "text": "30",
+                    "correct": true
+                }
+            ],
+            "caseSensitive": false,
+            "acceptedAnswers": [
+                "30"
+            ]
+        },
+        {
+            "id": "mkp7ylw7sd68739lv",
+            "type": "freetext",
+            "question": "Calcule : 81 \u00f7 3",
+            "time": 25,
+            "answers": [
+                {
+                    "text": "27",
+                    "correct": true
+                }
+            ],
+            "caseSensitive": false,
+            "acceptedAnswers": [
+                "27"
+            ]
+        },
+        {
+            "id": "mkp7ylw7nqbt7vygr",
+            "type": "freetext",
+            "question": "Calcule : 5\u00d7(9\u22124)",
+            "time": 25,
+            "answers": [
+                {
+                    "text": "25",
+                    "correct": true
+                }
+            ],
+            "caseSensitive": false,
+            "acceptedAnswers": [
+                "25"
+            ]
+        },
+        {
+            "id": "mkp7ylw7h30jnxy6d",
+            "type": "freetext",
+            "question": "Calcule : 12\u00b2",
+            "time": 25,
+            "answers": [
+                {
+                    "text": "144",
+                    "correct": true
+                }
+            ],
+            "caseSensitive": false,
+            "acceptedAnswers": [
+                "144"
+            ]
+        },
+        {
+            "id": "mkp7ylw7oputfvtfs",
+            "type": "freetext",
+            "question": "Calcule : 0,5\u00d760",
+            "time": 25,
+            "answers": [
+                {
+                    "text": "30",
+                    "correct": true
+                }
+            ],
+            "caseSensitive": false,
+            "acceptedAnswers": [
+                "30"
+            ]
+        },
+        {
+            "id": "mkp7ylw7azk7bl6gv",
+            "type": "freetext",
+            "question": "Calcule : 2,4 + 1,7",
+            "time": 25,
+            "answers": [
+                {
+                    "text": "4,1",
+                    "correct": true
+                }
+            ],
+            "caseSensitive": false,
+            "acceptedAnswers": [
+                "4,1",
+                "4.1"
+            ]
+        },
+        {
+            "id": "mkp7ylw76lnl6wmlc",
+            "type": "truefalse",
+            "question": "Le produit de deux nombres n\u00e9gatifs est positif.",
+            "time": 20,
+            "answers": [
+                {
+                    "text": "Vrai",
+                    "correct": true
+                },
+                {
+                    "text": "Faux",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7a5jlbtrsg",
+            "type": "truefalse",
+            "question": "La somme de deux nombres n\u00e9gatifs est n\u00e9gative.",
+            "time": 20,
+            "answers": [
+                {
+                    "text": "Vrai",
+                    "correct": true
+                },
+                {
+                    "text": "Faux",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw703u4xysfo",
+            "type": "truefalse",
+            "question": "Soustraire un nombre revient \u00e0 ajouter son oppos\u00e9.",
+            "time": 20,
+            "answers": [
+                {
+                    "text": "Vrai",
+                    "correct": true
+                },
+                {
+                    "text": "Faux",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7poelzga3w",
+            "type": "truefalse",
+            "question": "\u2212(\u22127) = \u22127.",
+            "time": 20,
+            "answers": [
+                {
+                    "text": "Vrai",
+                    "correct": false
+                },
+                {
+                    "text": "Faux",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw74txpk5jee",
+            "type": "truefalse",
+            "question": "(\u22123)\u00b2 = \u22129.",
+            "time": 20,
+            "answers": [
+                {
+                    "text": "Vrai",
+                    "correct": false
+                },
+                {
+                    "text": "Faux",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw75r6y4pquz",
+            "type": "multiple",
+            "question": "Quel est le r\u00e9sultat de (\u22128) + 13 ?",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "3",
+                    "correct": false
+                },
+                {
+                    "text": "5",
+                    "correct": true
+                },
+                {
+                    "text": "-5",
+                    "correct": false
+                },
+                {
+                    "text": "21",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7oaa90a2ja",
+            "type": "multiple",
+            "question": "Quel est le r\u00e9sultat de 6 \u2212 (\u22124) ?",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "2",
+                    "correct": false
+                },
+                {
+                    "text": "10",
+                    "correct": true
+                },
+                {
+                    "text": "-10",
+                    "correct": false
+                },
+                {
+                    "text": "12",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7xbzn947ug",
+            "type": "multiple",
+            "question": "Quel est le r\u00e9sultat de (\u22123)\u00d77 ?",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "-21",
+                    "correct": true
+                },
+                {
+                    "text": "21",
+                    "correct": false
+                },
+                {
+                    "text": "-10",
+                    "correct": false
+                },
+                {
+                    "text": "-24",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw70vfv2gcqg",
+            "type": "multiple",
+            "question": "Quel est le r\u00e9sultat de (\u221224)\u00f76 ?",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "-4",
+                    "correct": true
+                },
+                {
+                    "text": "4",
+                    "correct": false
+                },
+                {
+                    "text": "-6",
+                    "correct": false
+                },
+                {
+                    "text": "-5",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw728p0kxw3v",
+            "type": "multiple",
+            "question": "Quel est le r\u00e9sultat de (\u22122)\u00b3 ?",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "-8",
+                    "correct": true
+                },
+                {
+                    "text": "8",
+                    "correct": false
+                },
+                {
+                    "text": "-6",
+                    "correct": false
+                },
+                {
+                    "text": "-4",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7man4na0k3",
+            "type": "multiple",
+            "question": "Quel est le r\u00e9sultat de 10\u00b2 ?",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "20",
+                    "correct": false
+                },
+                {
+                    "text": "50",
+                    "correct": false
+                },
+                {
+                    "text": "100",
+                    "correct": true
+                },
+                {
+                    "text": "1000",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7o2secephf",
+            "type": "multiple",
+            "question": "Quel est le r\u00e9sultat de 2\u2075 ?",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "16",
+                    "correct": false
+                },
+                {
+                    "text": "24",
+                    "correct": false
+                },
+                {
+                    "text": "32",
+                    "correct": true
+                },
+                {
+                    "text": "64",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw724dowmj9v",
+            "type": "multiple",
+            "question": "Quel est le r\u00e9sultat de 3\u2074 ?",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "27",
+                    "correct": false
+                },
+                {
+                    "text": "64",
+                    "correct": false
+                },
+                {
+                    "text": "81",
+                    "correct": true
+                },
+                {
+                    "text": "243",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7ue3guo4nx",
+            "type": "multiple",
+            "question": "Quel est le r\u00e9sultat de (\u22125)\u00b2 ?",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "-25",
+                    "correct": false
+                },
+                {
+                    "text": "25",
+                    "correct": true
+                },
+                {
+                    "text": "10",
+                    "correct": false
+                },
+                {
+                    "text": "30",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw71sim514oq",
+            "type": "multiple",
+            "question": "Quel est le r\u00e9sultat de (\u22121)\u2077 ?",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "-1",
+                    "correct": true
+                },
+                {
+                    "text": "1",
+                    "correct": false
+                },
+                {
+                    "text": "0",
+                    "correct": false
+                },
+                {
+                    "text": "7",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7f3xk931aj",
+            "type": "multiple",
+            "question": "Quelle est la fraction simplifi\u00e9e de 6\/12 ?",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "1\/2",
+                    "correct": true
+                },
+                {
+                    "text": "1\/3",
+                    "correct": false
+                },
+                {
+                    "text": "2\/3",
+                    "correct": false
+                },
+                {
+                    "text": "3\/2",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7jpz4j5t5n",
+            "type": "multiple",
+            "question": "Quelle est l'\u00e9criture d\u00e9cimale de 3\/4 ?",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "0,25",
+                    "correct": false
+                },
+                {
+                    "text": "0,5",
+                    "correct": false
+                },
+                {
+                    "text": "0,75",
+                    "correct": true
+                },
+                {
+                    "text": "1,5",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw78iuwmmngh",
+            "type": "multiple",
+            "question": "Quel est 25% de 80 ?",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "10",
+                    "correct": false
+                },
+                {
+                    "text": "20",
+                    "correct": true
+                },
+                {
+                    "text": "25",
+                    "correct": false
+                },
+                {
+                    "text": "40",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7g69t80ocu",
+            "type": "multiple",
+            "question": "Quel est 10% de 350 ?",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "3,5",
+                    "correct": false
+                },
+                {
+                    "text": "35",
+                    "correct": true
+                },
+                {
+                    "text": "50",
+                    "correct": false
+                },
+                {
+                    "text": "70",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7w3ddqsz1s",
+            "type": "multiple",
+            "question": "Combien font 1\/2 + 1\/3 ?",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "2\/5",
+                    "correct": false
+                },
+                {
+                    "text": "5\/6",
+                    "correct": true
+                },
+                {
+                    "text": "1\/6",
+                    "correct": false
+                },
+                {
+                    "text": "3\/5",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7x2cjdbmjj",
+            "type": "multiple",
+            "question": "Combien font 2\/5 + 1\/10 ?",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "1\/2",
+                    "correct": true
+                },
+                {
+                    "text": "3\/10",
+                    "correct": false
+                },
+                {
+                    "text": "1\/5",
+                    "correct": false
+                },
+                {
+                    "text": "5\/10",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7liawb3oji",
+            "type": "multiple",
+            "question": "Combien font 3\/4 \u2212 1\/8 ?",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "1\/2",
+                    "correct": false
+                },
+                {
+                    "text": "5\/8",
+                    "correct": true
+                },
+                {
+                    "text": "3\/8",
+                    "correct": false
+                },
+                {
+                    "text": "7\/8",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7vwm3bfnrt",
+            "type": "truefalse",
+            "question": "0,3 = 3\/10.",
+            "time": 20,
+            "answers": [
+                {
+                    "text": "Vrai",
+                    "correct": true
+                },
+                {
+                    "text": "Faux",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7u8uyf9jzy",
+            "type": "truefalse",
+            "question": "50% = 1\/4.",
+            "time": 20,
+            "answers": [
+                {
+                    "text": "Vrai",
+                    "correct": false
+                },
+                {
+                    "text": "Faux",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7qfn5dwsa1",
+            "type": "truefalse",
+            "question": "1,25 = 5\/4.",
+            "time": 20,
+            "answers": [
+                {
+                    "text": "Vrai",
+                    "correct": true
+                },
+                {
+                    "text": "Faux",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7xfiqcvu7f",
+            "type": "multiple",
+            "question": "Une r\u00e9duction de 20% sur 50 \u20ac donne un prix de :",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "30 \u20ac",
+                    "correct": false
+                },
+                {
+                    "text": "35 \u20ac",
+                    "correct": false
+                },
+                {
+                    "text": "40 \u20ac",
+                    "correct": true
+                },
+                {
+                    "text": "45 \u20ac",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7ikbmy45es",
+            "type": "multiple",
+            "question": "Un article passe de 40 \u20ac \u00e0 50 \u20ac : l'augmentation est de :",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "10%",
+                    "correct": false
+                },
+                {
+                    "text": "20%",
+                    "correct": false
+                },
+                {
+                    "text": "25%",
+                    "correct": true
+                },
+                {
+                    "text": "30%",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7wqvy3h8mk",
+            "type": "freetext",
+            "question": "\u00c9cris 0,125 sous forme de fraction simplifi\u00e9e.",
+            "time": 25,
+            "answers": [
+                {
+                    "text": "1\/8",
+                    "correct": true
+                }
+            ],
+            "caseSensitive": false,
+            "acceptedAnswers": [
+                "1\/8",
+                "0,125"
+            ]
+        },
+        {
+            "id": "mkp7ylw7mhoefxhij",
+            "type": "freetext",
+            "question": "\u00c9cris 3\/5 en \u00e9criture d\u00e9cimale.",
+            "time": 25,
+            "answers": [
+                {
+                    "text": "0,6",
+                    "correct": true
+                }
+            ],
+            "caseSensitive": false,
+            "acceptedAnswers": [
+                "0,6",
+                "0.6"
+            ]
+        },
+        {
+            "id": "mkp7ylw7agl7x9xlo",
+            "type": "multiple",
+            "question": "Si 5 cahiers co\u00fbtent 12 \u20ac, combien co\u00fbtent 10 cahiers (proportionnalit\u00e9) ?",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "20 \u20ac",
+                    "correct": false
+                },
+                {
+                    "text": "22 \u20ac",
+                    "correct": false
+                },
+                {
+                    "text": "24 \u20ac",
+                    "correct": true
+                },
+                {
+                    "text": "26 \u20ac",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7hppazxl2z",
+            "type": "multiple",
+            "question": "Compl\u00e8te : 7\/10 = ... %",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "7%",
+                    "correct": false
+                },
+                {
+                    "text": "70%",
+                    "correct": true
+                },
+                {
+                    "text": "0,7%",
+                    "correct": false
+                },
+                {
+                    "text": "700%",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7xjj9hcnkj",
+            "type": "multiple",
+            "question": "Compl\u00e8te : 0,4 = ... %",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "4%",
+                    "correct": false
+                },
+                {
+                    "text": "40%",
+                    "correct": true
+                },
+                {
+                    "text": "0,4%",
+                    "correct": false
+                },
+                {
+                    "text": "400%",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw76zjvlxj6l",
+            "type": "multiple",
+            "question": "Quelle est la valeur de 3\/10 de 200 ?",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "6",
+                    "correct": false
+                },
+                {
+                    "text": "20",
+                    "correct": false
+                },
+                {
+                    "text": "60",
+                    "correct": true
+                },
+                {
+                    "text": "90",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw75xz4ijewr",
+            "type": "multiple",
+            "question": "Quel est le nombre manquant : 12 = 3 \u00d7 ...",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "3",
+                    "correct": false
+                },
+                {
+                    "text": "4",
+                    "correct": true
+                },
+                {
+                    "text": "5",
+                    "correct": false
+                },
+                {
+                    "text": "6",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7hy6bahelr",
+            "type": "order",
+            "question": "Classe du plus petit au plus grand :",
+            "time": 45,
+            "answers": [
+                {
+                    "text": "0,2",
+                    "correct": true
+                },
+                {
+                    "text": "0,25",
+                    "correct": true
+                },
+                {
+                    "text": "0,3",
+                    "correct": true
+                },
+                {
+                    "text": "0,5",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7n1nuvygg4",
+            "type": "multiple",
+            "question": "Simplifie : 3x + 2x =",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "5x",
+                    "correct": true
+                },
+                {
+                    "text": "6x",
+                    "correct": false
+                },
+                {
+                    "text": "x",
+                    "correct": false
+                },
+                {
+                    "text": "5",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7b5vikxnhz",
+            "type": "multiple",
+            "question": "Simplifie : 7a \u2212 3a =",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "10a",
+                    "correct": false
+                },
+                {
+                    "text": "4a",
+                    "correct": true
+                },
+                {
+                    "text": "a",
+                    "correct": false
+                },
+                {
+                    "text": "4",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7fb6vl9wn1",
+            "type": "multiple",
+            "question": "D\u00e9veloppe : 2(3x + 5) =",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "6x+10",
+                    "correct": true
+                },
+                {
+                    "text": "6x+5",
+                    "correct": false
+                },
+                {
+                    "text": "3x+10",
+                    "correct": false
+                },
+                {
+                    "text": "5x+10",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7d7joilb6f",
+            "type": "multiple",
+            "question": "D\u00e9veloppe : 5(x \u2212 2) =",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "5x\u22122",
+                    "correct": false
+                },
+                {
+                    "text": "5x\u221210",
+                    "correct": true
+                },
+                {
+                    "text": "x\u221210",
+                    "correct": false
+                },
+                {
+                    "text": "5x+10",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7fh9dwwf0j",
+            "type": "multiple",
+            "question": "R\u00e9sous : x + 7 = 15",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "x=6",
+                    "correct": false
+                },
+                {
+                    "text": "x=7",
+                    "correct": false
+                },
+                {
+                    "text": "x=8",
+                    "correct": true
+                },
+                {
+                    "text": "x=9",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw72ua7cdd02",
+            "type": "multiple",
+            "question": "R\u00e9sous : 3x = 21",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "x=6",
+                    "correct": false
+                },
+                {
+                    "text": "x=7",
+                    "correct": true
+                },
+                {
+                    "text": "x=8",
+                    "correct": false
+                },
+                {
+                    "text": "x=9",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7wbzh2ua1g",
+            "type": "multiple",
+            "question": "R\u00e9sous : 2x \u2212 5 = 9",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "x=5",
+                    "correct": false
+                },
+                {
+                    "text": "x=6",
+                    "correct": false
+                },
+                {
+                    "text": "x=7",
+                    "correct": true
+                },
+                {
+                    "text": "x=8",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7yy1l9di5x",
+            "type": "multiple",
+            "question": "R\u00e9sous : 4x + 1 = 13",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "x=2",
+                    "correct": false
+                },
+                {
+                    "text": "x=3",
+                    "correct": true
+                },
+                {
+                    "text": "x=4",
+                    "correct": false
+                },
+                {
+                    "text": "x=5",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw71cxpfyelm",
+            "type": "truefalse",
+            "question": "Si x=2, alors 3x+1 = 7.",
+            "time": 20,
+            "answers": [
+                {
+                    "text": "Vrai",
+                    "correct": true
+                },
+                {
+                    "text": "Faux",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7d8z6lwf8f",
+            "type": "truefalse",
+            "question": "Si a=\u22121, alors a\u00b2 = \u22121.",
+            "time": 20,
+            "answers": [
+                {
+                    "text": "Vrai",
+                    "correct": false
+                },
+                {
+                    "text": "Faux",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7t4y26us0h",
+            "type": "multiple",
+            "question": "Quelle expression correspond \u00e0 \u00ab le triple d'un nombre n augment\u00e9 de 4 \u00bb ?",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "3n+4",
+                    "correct": true
+                },
+                {
+                    "text": "3(n+4)",
+                    "correct": false
+                },
+                {
+                    "text": "n+12",
+                    "correct": false
+                },
+                {
+                    "text": "n+4",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7gdwel15zx",
+            "type": "multiple",
+            "question": "Quelle valeur de x v\u00e9rifie : 5x \u2212 10 = 0 ?",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "x=0",
+                    "correct": false
+                },
+                {
+                    "text": "x=1",
+                    "correct": false
+                },
+                {
+                    "text": "x=2",
+                    "correct": true
+                },
+                {
+                    "text": "x=5",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7zqq78jy0a",
+            "type": "freetext",
+            "question": "R\u00e9sous : x\/4 = 3",
+            "time": 25,
+            "answers": [
+                {
+                    "text": "12",
+                    "correct": true
+                }
+            ],
+            "caseSensitive": false,
+            "acceptedAnswers": [
+                "12"
+            ]
+        },
+        {
+            "id": "mkp7ylw7z0c3mxvni",
+            "type": "freetext",
+            "question": "R\u00e9sous : 9 \u2212 x = 2",
+            "time": 25,
+            "answers": [
+                {
+                    "text": "7",
+                    "correct": true
+                }
+            ],
+            "caseSensitive": false,
+            "acceptedAnswers": [
+                "7"
+            ]
+        },
+        {
+            "id": "mkp7ylw70stcqc858",
+            "type": "multiple",
+            "question": "Si y = 2x et x = 6, alors y vaut :",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "8",
+                    "correct": false
+                },
+                {
+                    "text": "10",
+                    "correct": false
+                },
+                {
+                    "text": "12",
+                    "correct": true
+                },
+                {
+                    "text": "14",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7vv8ih5s5o",
+            "type": "multiple",
+            "question": "Somme des angles d'un triangle :",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "90\u00b0",
+                    "correct": false
+                },
+                {
+                    "text": "180\u00b0",
+                    "correct": true
+                },
+                {
+                    "text": "270\u00b0",
+                    "correct": false
+                },
+                {
+                    "text": "360\u00b0",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7tdtqb6ehb",
+            "type": "multiple",
+            "question": "Somme des angles d'un quadrilat\u00e8re :",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "180\u00b0",
+                    "correct": false
+                },
+                {
+                    "text": "270\u00b0",
+                    "correct": false
+                },
+                {
+                    "text": "360\u00b0",
+                    "correct": true
+                },
+                {
+                    "text": "540\u00b0",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7aidbt5szv",
+            "type": "truefalse",
+            "question": "Dans un triangle rectangle, les deux c\u00f4t\u00e9s qui forment l'angle droit sont des cath\u00e8tes.",
+            "time": 20,
+            "answers": [
+                {
+                    "text": "Vrai",
+                    "correct": true
+                },
+                {
+                    "text": "Faux",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7tlf1zsgpb",
+            "type": "multiple",
+            "question": "Dans un triangle rectangle, le c\u00f4t\u00e9 oppos\u00e9 \u00e0 l'angle droit s'appelle :",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "cath\u00e8te",
+                    "correct": false
+                },
+                {
+                    "text": "hypot\u00e9nuse",
+                    "correct": true
+                },
+                {
+                    "text": "m\u00e9diatrice",
+                    "correct": false
+                },
+                {
+                    "text": "bissectrice",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7g99knq7u2",
+            "type": "multiple",
+            "question": "P\u00e9rim\u00e8tre d'un rectangle 8 cm \u00d7 3 cm :",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "11 cm",
+                    "correct": false
+                },
+                {
+                    "text": "16 cm",
+                    "correct": false
+                },
+                {
+                    "text": "22 cm",
+                    "correct": true
+                },
+                {
+                    "text": "24 cm",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7tqc6ns2pz",
+            "type": "multiple",
+            "question": "Aire d'un rectangle 8 cm \u00d7 3 cm :",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "11 cm\u00b2",
+                    "correct": false
+                },
+                {
+                    "text": "16 cm\u00b2",
+                    "correct": false
+                },
+                {
+                    "text": "24 cm\u00b2",
+                    "correct": true
+                },
+                {
+                    "text": "22 cm\u00b2",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw764j97o8xk",
+            "type": "multiple",
+            "question": "Aire d'un triangle (base 10 cm, hauteur 6 cm) :",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "30 cm\u00b2",
+                    "correct": true
+                },
+                {
+                    "text": "60 cm\u00b2",
+                    "correct": false
+                },
+                {
+                    "text": "16 cm\u00b2",
+                    "correct": false
+                },
+                {
+                    "text": "20 cm\u00b2",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw708w3ki0xs",
+            "type": "truefalse",
+            "question": "Deux droites parall\u00e8les ne se coupent jamais.",
+            "time": 20,
+            "answers": [
+                {
+                    "text": "Vrai",
+                    "correct": true
+                },
+                {
+                    "text": "Faux",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7kethwzodt",
+            "type": "truefalse",
+            "question": "Deux droites perpendiculaires se coupent en formant un angle de 90\u00b0.",
+            "time": 20,
+            "answers": [
+                {
+                    "text": "Vrai",
+                    "correct": true
+                },
+                {
+                    "text": "Faux",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7u1k1a6qxl",
+            "type": "multiple",
+            "question": "Un cercle de rayon 5 cm a un diam\u00e8tre de :",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "2,5 cm",
+                    "correct": false
+                },
+                {
+                    "text": "5 cm",
+                    "correct": false
+                },
+                {
+                    "text": "10 cm",
+                    "correct": true
+                },
+                {
+                    "text": "15 cm",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7bcy8e9ii1",
+            "type": "multiple",
+            "question": "Th\u00e9or\u00e8me de Pythagore : si les c\u00f4t\u00e9s de l'angle droit sont 6 cm et 8 cm, l'hypot\u00e9nuse vaut :",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "10 cm",
+                    "correct": true
+                },
+                {
+                    "text": "12 cm",
+                    "correct": false
+                },
+                {
+                    "text": "14 cm",
+                    "correct": false
+                },
+                {
+                    "text": "16 cm",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw75opwid0hq",
+            "type": "multiple",
+            "question": "Triangle rectangle : hypot\u00e9nuse 13 cm et un c\u00f4t\u00e9 5 cm. L'autre c\u00f4t\u00e9 vaut :",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "8 cm",
+                    "correct": false
+                },
+                {
+                    "text": "10 cm",
+                    "correct": false
+                },
+                {
+                    "text": "12 cm",
+                    "correct": true
+                },
+                {
+                    "text": "14 cm",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7xbfhvco6n",
+            "type": "multiple",
+            "question": "Un triangle isoc\u00e8le a :",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "2 c\u00f4t\u00e9s \u00e9gaux",
+                    "correct": true
+                },
+                {
+                    "text": "3 c\u00f4t\u00e9s \u00e9gaux",
+                    "correct": false
+                },
+                {
+                    "text": "0 c\u00f4t\u00e9 \u00e9gal",
+                    "correct": false
+                },
+                {
+                    "text": "4 c\u00f4t\u00e9s",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7f2lgshf4x",
+            "type": "multiple",
+            "question": "Un triangle \u00e9quilat\u00e9ral a des angles de :",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "45\u00b0",
+                    "correct": false
+                },
+                {
+                    "text": "60\u00b0",
+                    "correct": true
+                },
+                {
+                    "text": "90\u00b0",
+                    "correct": false
+                },
+                {
+                    "text": "120\u00b0",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw77omwhhqq0",
+            "type": "order",
+            "question": "Ordonne ces quadrilat\u00e8res du plus \u00ab g\u00e9n\u00e9ral \u00bb au plus \u00ab particulier \u00bb :",
+            "time": 55,
+            "answers": [
+                {
+                    "text": "Quadrilat\u00e8re",
+                    "correct": true
+                },
+                {
+                    "text": "Parall\u00e9logramme",
+                    "correct": true
+                },
+                {
+                    "text": "Rectangle",
+                    "correct": true
+                },
+                {
+                    "text": "Carr\u00e9",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7csvuzczwv",
+            "type": "multiple",
+            "question": "La m\u00e9diatrice d'un segment est :",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "Une droite perpendiculaire passant par le milieu",
+                    "correct": true
+                },
+                {
+                    "text": "Une droite parall\u00e8le au segment",
+                    "correct": false
+                },
+                {
+                    "text": "Un segment qui coupe en 3",
+                    "correct": false
+                },
+                {
+                    "text": "Une demi-droite",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7q6cfegiyh",
+            "type": "multiple",
+            "question": "La bissectrice d'un angle est :",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "La droite qui partage l'angle en deux angles \u00e9gaux",
+                    "correct": true
+                },
+                {
+                    "text": "La droite qui coupe le segment",
+                    "correct": false
+                },
+                {
+                    "text": "Le c\u00f4t\u00e9 le plus long",
+                    "correct": false
+                },
+                {
+                    "text": "Une parall\u00e8le",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7twtznmo4p",
+            "type": "truefalse",
+            "question": "Dans un triangle, une hauteur est toujours perpendiculaire \u00e0 un c\u00f4t\u00e9.",
+            "time": 20,
+            "answers": [
+                {
+                    "text": "Vrai",
+                    "correct": true
+                },
+                {
+                    "text": "Faux",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7ctnzrq0wy",
+            "type": "freetext",
+            "question": "Un triangle rectangle a un angle de combien de degr\u00e9s ?",
+            "time": 25,
+            "answers": [
+                {
+                    "text": "90",
+                    "correct": true
+                }
+            ],
+            "caseSensitive": false,
+            "acceptedAnswers": [
+                "90",
+                "90\u00b0"
+            ]
+        },
+        {
+            "id": "mkp7ylw76z7xjvqo8",
+            "type": "multiple",
+            "question": "Aire d'un carr\u00e9 de c\u00f4t\u00e9 9 cm :",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "18 cm\u00b2",
+                    "correct": false
+                },
+                {
+                    "text": "36 cm\u00b2",
+                    "correct": false
+                },
+                {
+                    "text": "81 cm\u00b2",
+                    "correct": true
+                },
+                {
+                    "text": "90 cm\u00b2",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7i02yyo3jx",
+            "type": "multiple",
+            "question": "Moyenne de 10, 14, 16 :",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "12",
+                    "correct": false
+                },
+                {
+                    "text": "13",
+                    "correct": true
+                },
+                {
+                    "text": "14",
+                    "correct": false
+                },
+                {
+                    "text": "15",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7m4lc2bdt1",
+            "type": "multiple",
+            "question": "M\u00e9diane de 2, 5, 9, 10, 12 :",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "5",
+                    "correct": false
+                },
+                {
+                    "text": "9",
+                    "correct": true
+                },
+                {
+                    "text": "10",
+                    "correct": false
+                },
+                {
+                    "text": "12",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7wkjmtu1s1",
+            "type": "multiple",
+            "question": "\u00c9tendue de 3, 8, 15, 20 :",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "12",
+                    "correct": false
+                },
+                {
+                    "text": "15",
+                    "correct": false
+                },
+                {
+                    "text": "17",
+                    "correct": true
+                },
+                {
+                    "text": "20",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7hd2p7nazm",
+            "type": "truefalse",
+            "question": "Dans une s\u00e9rie, le mode est la valeur la plus fr\u00e9quente.",
+            "time": 20,
+            "answers": [
+                {
+                    "text": "Vrai",
+                    "correct": true
+                },
+                {
+                    "text": "Faux",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw79sp437ozq",
+            "type": "truefalse",
+            "question": "La moyenne est toujours une valeur de la s\u00e9rie.",
+            "time": 20,
+            "answers": [
+                {
+                    "text": "Vrai",
+                    "correct": false
+                },
+                {
+                    "text": "Faux",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7npq3uuvc3",
+            "type": "multiple",
+            "question": "On lance un d\u00e9 \u00e9quilibr\u00e9. Probabilit\u00e9 d'obtenir un 6 :",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "1\/2",
+                    "correct": false
+                },
+                {
+                    "text": "1\/3",
+                    "correct": false
+                },
+                {
+                    "text": "1\/6",
+                    "correct": true
+                },
+                {
+                    "text": "1\/12",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7mnj9irxgs",
+            "type": "multiple",
+            "question": "On tire au hasard une carte parmi 10 cartes num\u00e9rot\u00e9es de 1 \u00e0 10. Probabilit\u00e9 de tirer un nombre pair :",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "1\/5",
+                    "correct": false
+                },
+                {
+                    "text": "1\/2",
+                    "correct": true
+                },
+                {
+                    "text": "2\/5",
+                    "correct": false
+                },
+                {
+                    "text": "3\/5",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw79vb1dx8hr",
+            "type": "multiple",
+            "question": "Dans une classe, 12 \u00e9l\u00e8ves sur 30 portent des lunettes. Proportion :",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "20%",
+                    "correct": false
+                },
+                {
+                    "text": "30%",
+                    "correct": false
+                },
+                {
+                    "text": "40%",
+                    "correct": true
+                },
+                {
+                    "text": "60%",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "id": "mkp7ylw7zsxm81cqp",
+            "type": "freetext",
+            "question": "Moyenne de 8 et 12 :",
+            "time": 25,
+            "answers": [
+                {
+                    "text": "10",
+                    "correct": true
+                }
+            ],
+            "caseSensitive": false,
+            "acceptedAnswers": [
+                "10"
+            ]
+        },
+        {
+            "id": "mkp7ylw7lpuiy3qd5",
+            "type": "multiple",
+            "question": "Si on double toutes les valeurs d'une s\u00e9rie, la moyenne est :",
+            "time": 30,
+            "answers": [
+                {
+                    "text": "Divis\u00e9e par 2",
+                    "correct": false
+                },
+                {
+                    "text": "Inchang\u00e9e",
+                    "correct": false
+                },
+                {
+                    "text": "Doubl\u00e9e",
+                    "correct": true
+                },
+                {
+                    "text": "Annul\u00e9e",
+                    "correct": false
+                }
+            ]
+        }
+    ],
+    "usedAnimals": [],
+    "createdAt": 1769117759,
+    "pendingAnimals": {
+        "\ud83e\udd97 Criquet": 1769117782,
+        "\ud83d\udc26\u200d\u2b1b Corbeau": 1769117782,
+        "\ud83e\udda2 Cygne": 1769117782,
+        "\ud83e\udd88 Requin": 1769117815,
+        "\ud83e\udd96 T-Rex": 1769117815,
+        "\ud83d\udc24 Poussin": 1769117815
+    },
+    "deviceAnimals": {
+        "9fde07b37d333a7f82799b1affd90be7": {
+            "animals": [
+                "\ud83e\udd97 Criquet",
+                "\ud83d\udc26\u200d\u2b1b Corbeau",
+                "\ud83e\udda2 Cygne"
+            ],
+            "timestamp": 1769117782
+        },
+        "ad46f52a5d0dd40b8e36fa8af6876512": {
+            "animals": [
+                "\ud83e\udd88 Requin",
+                "\ud83e\udd96 T-Rex",
+                "\ud83d\udc24 Poussin"
+            ],
+            "timestamp": 1769117815
+        }
+    }
+}

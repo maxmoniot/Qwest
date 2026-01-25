@@ -623,6 +623,17 @@
     color: white;
 }
 
+.btn-icon.btn-warning {
+    background: #ffc107;
+    color: #000;
+    font-weight: 600;
+}
+
+.btn-icon.btn-warning:hover {
+    background: #ffb300;
+    transform: scale(1.1);
+}
+
 /* Code dans header */
 .control-code-header {
     display: flex;
