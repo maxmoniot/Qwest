@@ -65,8 +65,8 @@
                 <button class="btn-help" onclick="openHelpModal()" title="Astuce IA">
                     ?
                 </button>
-                <button class="btn-primary" onclick="openSaveQuizModal()">
-                    💾 Sauvegarder
+                <button class="btn-primary" onclick="downloadQuizJson()">
+                    💾 Télécharger mon quizz
                 </button>
                 <button class="btn-primary" onclick="openLoadQuizModal()">
                     📂 Charger
@@ -164,67 +164,6 @@
             <div class="modal-footer">
                 <button class="btn-secondary" onclick="closeEditQuestionModal()">Annuler</button>
                 <button class="btn-primary" onclick="saveEditedQuestion()">Enregistrer</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- MODAL: Sauvegarder questionnaire -->
-    <div id="save-quiz-modal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3>💾 Sauvegarder le questionnaire</h3>
-                <button class="close-btn" onclick="closeSaveQuizModal()">×</button>
-            </div>
-            <div class="modal-body">
-                <div class="form-group">
-                    <label>Nom du questionnaire :</label>
-                    <input type="text" 
-                           id="quiz-name-input" 
-                           placeholder="Mon super quiz..."
-                           maxlength="50">
-                </div>
-
-                <div class="form-group">
-                    <label>Captcha de sécurité :</label>
-                    <div class="captcha-container">
-                        <span id="captcha-question"></span>
-                        <input type="number" 
-                               id="captcha-answer-input" 
-                               placeholder="Réponse">
-                    </div>
-                </div>
-
-                <div id="save-message" class="message-box"></div>
-
-                <div id="save-success-display" style="display: none;">
-                    <div class="success-message">
-                        ✅ Questionnaire sauvegardé avec succès !
-                    </div>
-                    
-                    <div class="code-box" style="margin-top: 20px;">
-                        <h4>🔑 Code de modification</h4>
-                        <div class="code-display">
-                            <input type="text" id="modify-code-display" readonly>
-                            <button class="btn-copy" onclick="copyCode('modify-code-display')">
-                                📋 Copier
-                            </button>
-                        </div>
-                        <p class="code-info">
-                            ⚠️ <strong>Conservez précieusement ce code !</strong><br>
-                            Il vous permettra de modifier ce questionnaire à l'avenir.
-                        </p>
-                    </div>
-                    
-                    <div class="action-buttons">
-                        <button class="btn-launch" onclick="closeSaveQuizModal(); openControlPanel();">
-                            🚀 Piloter la partie
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer" id="save-modal-footer">
-                <button class="btn-primary" onclick="confirmSaveQuiz()">💾 Sauvegarder en ligne</button>
-                <button class="btn-secondary" onclick="exportQuizLocally()">📥 Exporter localement</button>
             </div>
         </div>
     </div>
