@@ -619,6 +619,14 @@
                 textarea.addEventListener('input', function() {
                     counter.textContent = this.value.length;
                 });
+                
+                // Valider avec la touche Entrée
+                textarea.addEventListener('keydown', function(e) {
+                    if (e.key === 'Enter' && !e.shiftKey) {
+                        e.preventDefault(); // Empêcher le saut de ligne
+                        validateFreeText();
+                    }
+                });
             }
         }
     }
