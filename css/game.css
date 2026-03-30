@@ -247,10 +247,24 @@
     margin-bottom: var(--space-sm);
 }
 
+/* Pour les pseudos personnalisés, l'avatar est plus petit car c'est juste 👤 */
+.player-card.custom-nickname .player-avatar {
+    font-size: 36px;
+}
+
 .player-name {
     font-weight: 600;
     font-size: 14px;
     color: var(--gray-900);
+    word-break: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+}
+
+/* Pour les pseudos personnalisés, le nom est plus grand car c'est l'élément principal */
+.player-card.custom-nickname .player-name {
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .player-badge {
@@ -420,6 +434,17 @@
     /* TEXTE - Taille naturelle, ajusté par JS si nécessaire */
     .question-text {
         flex: 0 0 auto;
+        width: 100%;
+        box-sizing: border-box;
+        /* Réinitialiser les styles de main.css (.question-text éditeur) qui
+           sinon s'appliquent ici : white-space:nowrap, overflow:hidden,
+           text-overflow:ellipsis, background, border, border-radius */
+        white-space: normal !important;
+        overflow: visible;
+        text-overflow: clip;
+        background: none;
+        border: none;
+        border-radius: 0;
         font-size: clamp(16px, 1.6vw, 28px);
         font-weight: 700;
         line-height: 1.3;
@@ -671,6 +696,14 @@
     /* TEXTE - Taille naturelle, ajusté par JS si nécessaire */
     .question-text {
         flex: 0 0 auto;
+        width: 100%;
+        box-sizing: border-box;
+        white-space: normal !important;
+        overflow: visible;
+        text-overflow: clip;
+        background: none;
+        border: none;
+        border-radius: 0;
         font-size: clamp(16px, 4.5vw, 24px);
         font-weight: 700;
         color: var(--gray-900);
@@ -1252,12 +1285,22 @@
     line-height: 1;
 }
 
+/* Pour les pseudos personnalisés sur le podium */
+.final-podium-item.custom-nickname .final-avatar {
+    font-size: 32px;
+}
+
 .final-name {
     font-weight: 700;
     font-size: 15px;
     margin-bottom: var(--space-xs);
     word-break: break-word;
     width: 100%;
+}
+
+/* Pour les pseudos personnalisés sur le podium */
+.final-podium-item.custom-nickname .final-name {
+    font-size: 17px;
 }
 
 .final-points {
@@ -1452,8 +1495,20 @@
     font-size: 28px;
 }
 
+/* Pour les pseudos personnalisés dans le classement */
+.ranking-item.custom-nickname .ranking-avatar {
+    font-size: 22px;
+}
+
 .ranking-name {
     font-size: 16px;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+/* Pour les pseudos personnalisés dans le classement */
+.ranking-item.custom-nickname .ranking-name {
+    font-weight: 600;
 }
 
 .ranking-score {
@@ -1566,6 +1621,11 @@
 .question-result.incorrect {
     background: #f8d7da;
     border: 2px solid #dc3545;
+}
+
+.question-result.neutral {
+    background: #fff3cd;
+    border: 2px solid #ffc107;
 }
 
 .result-icon {
@@ -2221,5 +2281,79 @@
     .answers-container {
         gap: 1.5vw;
         min-height: 25vh;
+    }
+}
+
+/* ========================================
+   PSEUDO PERSONNALISÉ
+   ======================================== */
+
+.nickname-input {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    border: 3px solid var(--gray-300);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    transition: all 0.3s ease;
+    margin-bottom: 15px;
+}
+
+.nickname-input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 4px rgba(33, 150, 243, 0.2);
+}
+
+.nickname-input::placeholder {
+    color: var(--gray-400);
+    font-weight: 400;
+}
+
+.btn-join-nickname {
+    width: 100%;
+    padding: 18px 30px;
+    font-size: 20px;
+    font-weight: 700;
+    background: linear-gradient(135deg, #4CAF50 0%, #2E7D32 100%);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-join-nickname:hover:not(:disabled) {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(76, 175, 80, 0.5);
+    background: linear-gradient(135deg, #66BB6A 0%, #388E3C 100%);
+}
+
+.btn-join-nickname:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+.btn-join-nickname:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+    background: linear-gradient(135deg, #9E9E9E 0%, #757575 100%);
+    box-shadow: none;
+}
+
+@media (max-width: 768px) {
+    .nickname-input {
+        font-size: 18px;
+        padding: 15px 18px;
+    }
+    
+    .btn-join-nickname {
+        font-size: 18px;
+        padding: 16px 25px;
     }
 }

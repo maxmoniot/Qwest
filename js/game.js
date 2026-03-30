@@ -14,123 +14,128 @@
     let answerTimeout = null;
 
     // ========================================
+    // UTILITAIRE : PARSING DES NICKNAMES
+    // ========================================
+    
+    /**
+     * Parse un nickname pour extraire l'avatar (emoji) et le nom
+     * Gère les deux formats :
+     * - Animal : "🐕 Chien" -> { avatar: "🐕", name: "Chien", isCustom: false }
+     * - Personnalisé : "Max" -> { avatar: "👤", name: "Max", isCustom: true }
+     */
+    function parseNickname(nickname) {
+        if (!nickname) return { avatar: '👤', name: '???', isCustom: true };
+        
+        const parts = nickname.split(' ');
+        
+        // Vérifier si c'est un format animal (emoji + nom)
+        // Un emoji animal commence généralement par un caractère unicode > 0x1F400
+        const firstChar = parts[0];
+        const isEmoji = firstChar && /[\u{1F300}-\u{1F9FF}]|[\u{2600}-\u{26FF}]/u.test(firstChar);
+        
+        if (isEmoji && parts.length >= 2) {
+            // Format animal : "🐕 Chien"
+            return {
+                avatar: parts[0],
+                name: parts.slice(1).join(' '),
+                isCustom: false
+            };
+        } else {
+            // Format personnalisé : juste le prénom
+            return {
+                avatar: '👤',
+                name: nickname,
+                isCustom: true
+            };
+        }
+    }
+
+    // ========================================
     // AJUSTEMENT DYNAMIQUE DE LA MISE EN PAGE
     // ========================================
     
     /**
-     * Ajuste dynamiquement la mise en page pour que tout soit visible sans scroll
-     * Principe : Le texte de la question prend sa taille naturelle, 
-     * puis l'image et les réponses se partagent l'espace restant
+     * Ajuste dynamiquement la taille de police du texte de la question
+     * pour qu'il tienne verticalement dans l'espace disponible.
+     *
+     * Pré-requis CSS : question-text doit avoir width:100% pour que le texte
+     * revienne à la ligne (corrigé dans game.css). Ce JS ne gère que la
+     * hauteur : si le texte multi-lignes est encore trop haut, on réduit
+     * la police de façon itérative jusqu'à ce qu'il rentre.
      */
     function adjustQuestionLayout() {
-        const questionScreen = document.querySelector('.question-screen');
-        const questionContent = document.querySelector('.question-content');
-        const questionHeader = document.querySelector('.question-header');
-        const questionText = document.querySelector('.question-text');
-        const questionImage = document.querySelector('.question-image');
-        const answersContainer = document.querySelector('.answers-container') || 
-                                 document.querySelector('.order-container')?.parentElement ||
-                                 document.querySelector('.freetext-container')?.parentElement;
-        
-        if (!questionScreen || !questionContent || !questionText) return;
-        
-        // Hauteur totale disponible (viewport)
-        const viewportHeight = window.innerHeight;
-        
-        // Padding du conteneur principal
-        const screenStyle = window.getComputedStyle(questionScreen);
-        const screenPaddingTop = parseFloat(screenStyle.paddingTop) || 0;
-        const screenPaddingBottom = parseFloat(screenStyle.paddingBottom) || 0;
-        
-        // Hauteur du header
-        const headerHeight = questionHeader ? questionHeader.offsetHeight : 0;
-        
-        // Padding du content
-        const contentStyle = window.getComputedStyle(questionContent);
-        const contentPaddingTop = parseFloat(contentStyle.paddingTop) || 0;
-        const contentPaddingBottom = parseFloat(contentStyle.paddingBottom) || 0;
-        
-        // Gaps entre éléments (approximation)
-        const gaps = 20;
-        
-        // Hauteur disponible pour le contenu (image + texte + réponses)
-        const availableHeight = viewportHeight - screenPaddingTop - screenPaddingBottom 
-                                - headerHeight - contentPaddingTop - contentPaddingBottom - gaps;
-        
-        // ÉTAPE 1 : Laisser le texte prendre sa taille naturelle
+        const questionContent  = document.querySelector('.question-content');
+        const questionText     = document.querySelector('.question-text');
+        const questionImage    = document.querySelector('.question-image');
+        const answersContainer = document.querySelector('.answers-container') ||
+                                  document.querySelector('.order-container')?.parentElement ||
+                                  document.querySelector('.freetext-container')?.parentElement;
+
+        if (!questionContent || !questionText) return;
+
+        // Hauteur utilisable dans question-content (mesure directe du DOM)
+        const cStyle  = window.getComputedStyle(questionContent);
+        const padV    = (parseFloat(cStyle.paddingTop) || 0) + (parseFloat(cStyle.paddingBottom) || 0);
+        const usableH = questionContent.clientHeight - padV;
+
+        if (usableH <= 0) {
+            requestAnimationFrame(adjustQuestionLayout);
+            return;
+        }
+
+        // Espace minimum pour les boutons de réponse
+        const answerBtns  = document.querySelectorAll('.answer-btn');
+        const numAnswers  = answerBtns.length;
+        const MIN_BTN_H   = 44;
+        const BTN_GAP     = 8;
+        const imageH      = questionImage ? questionImage.offsetHeight : 0;
+        const minAnswersH = numAnswers > 0
+            ? numAnswers * MIN_BTN_H + Math.max(0, numAnswers - 1) * BTN_GAP
+            : 80;
+
+        // Hauteur max autorisée pour le texte
+        const maxTextH = Math.max(40, usableH - imageH - minAnswersH - 10);
+
+        // Forcer la largeur à 100% en JS (inline style = priorité maximale, indépendant
+        // du cache CSS). Sans ça, margin:0 auto dans un flex-column annule le stretch
+        // et l'élément prend sa largeur de contenu → texte sur une ligne, jamais wrappé.
+        questionText.style.width      = '100%';
+        questionText.style.maxWidth   = '100%';
+        questionText.style.boxSizing  = 'border-box';
+        questionText.style.whiteSpace = 'normal';
+        questionText.style.textOverflow = 'clip';
+
+        // Réinitialiser les styles inline de la police pour partir de la valeur CSS
+        questionText.style.fontSize  = '';
         questionText.style.maxHeight = 'none';
-        questionText.style.overflow = 'visible';
-        const textHeight = questionText.scrollHeight;
-        
-        // ÉTAPE 2 : Calculer l'espace restant pour image et réponses
-        let remainingHeight = availableHeight - textHeight - 10; // 10px de marge
-        
-        // Si le texte prend plus de 40% de l'écran, on le limite et on force un affichage compact
-        const maxTextHeight = availableHeight * 0.4;
-        if (textHeight > maxTextHeight) {
-            // Réduire la taille de police du texte pour qu'il rentre
-            const currentFontSize = parseFloat(window.getComputedStyle(questionText).fontSize);
-            const ratio = maxTextHeight / textHeight;
-            const newFontSize = Math.max(14, currentFontSize * ratio * 0.95); // Min 14px
-            questionText.style.fontSize = newFontSize + 'px';
-            remainingHeight = availableHeight - maxTextHeight - 10;
+        questionText.style.overflow  = 'visible';
+        void questionText.offsetHeight; // reflow
+
+        // Réduction itérative de la police si le texte (wrappé) est trop haut
+        let fontSize = parseFloat(window.getComputedStyle(questionText).fontSize);
+        let iterations = 0;
+        while (questionText.scrollHeight > maxTextH && fontSize > 12 && iterations < 20) {
+            fontSize -= 1;
+            questionText.style.fontSize = fontSize + 'px';
+            void questionText.offsetHeight;
+            iterations++;
         }
-        
-        // ÉTAPE 3 : Répartir l'espace restant entre image et réponses
-        if (questionImage && answersContainer) {
-            // Avec image : 30% image, 70% réponses de l'espace restant
-            const imageMaxHeight = Math.max(50, remainingHeight * 0.3);
-            const answersMinHeight = Math.max(100, remainingHeight * 0.65);
-            
-            questionImage.style.maxHeight = imageMaxHeight + 'px';
-            questionImage.style.minHeight = '0';
-            
-            const imgElement = questionImage.querySelector('img');
-            if (imgElement) {
-                imgElement.style.maxHeight = (imageMaxHeight - 10) + 'px';
-            }
-            
-            answersContainer.style.minHeight = answersMinHeight + 'px';
-            answersContainer.style.maxHeight = answersMinHeight + 'px';
-            
-        } else if (answersContainer) {
-            // Sans image : tout l'espace pour les réponses
-            answersContainer.style.minHeight = Math.max(150, remainingHeight - 20) + 'px';
-            answersContainer.style.maxHeight = (remainingHeight - 20) + 'px';
+
+        // Dernier recours : tronquer si même 12px ne suffit pas
+        if (questionText.scrollHeight > maxTextH) {
+            questionText.style.maxHeight = maxTextH + 'px';
+            questionText.style.overflow  = 'hidden';
         }
-        
-        // ÉTAPE 4 : Ajuster les boutons de réponse pour qu'ils se partagent l'espace
-        const answerBtns = document.querySelectorAll('.answer-btn');
-        if (answerBtns.length > 0 && answersContainer) {
-            const containerHeight = parseFloat(answersContainer.style.maxHeight) || answersContainer.offsetHeight;
-            const gap = 8; // gap entre boutons
-            const totalGaps = (answerBtns.length - 1) * gap;
-            const btnHeight = Math.max(40, (containerHeight - totalGaps) / answerBtns.length);
-            
-            answerBtns.forEach(btn => {
-                btn.style.height = btnHeight + 'px';
-                btn.style.minHeight = btnHeight + 'px';
-                btn.style.maxHeight = btnHeight + 'px';
-                
-                // Ajuster la taille de police si le texte est long
-                const btnText = btn.textContent.trim();
-                if (btnText.length > 50) {
-                    btn.style.fontSize = '14px';
-                } else if (btnText.length > 30) {
-                    btn.style.fontSize = '16px';
-                }
-            });
+
+        // Libérer l'answers-container : flex:1 auto lui alloue tout le reste
+        if (answersContainer) {
+            answersContainer.style.maxHeight = '';
+            answersContainer.style.minHeight = '';
         }
-        
-        // ÉTAPE 5 : S'assurer que le conteneur principal ne déborde pas
+
         questionContent.style.overflow = 'hidden';
-        
-        console.log('📐 Layout ajusté:', {
-            viewport: viewportHeight,
-            available: availableHeight,
-            text: textHeight,
-            remaining: remainingHeight
-        });
+
+        console.log('📐 Layout:', { usableH, maxTextH, textH: questionText.scrollHeight, fontSize, iterations });
     }
     
     // Ré-ajuster lors du redimensionnement
@@ -153,7 +158,7 @@
     // PAGE DE SÉLECTION (Collège + Animal)
     // ========================================
     
-    async function showStudentJoinPage(playCode, quizName, totalQuestions = 0) {
+    async function showStudentJoinPage(playCode, quizName, totalQuestions = 0, customNicknames = false) {
         const gameContainer = document.querySelector('.game-container');
         
         // Réinitialiser la sélection d'animal
@@ -162,6 +167,62 @@
         // Initialiser la session élève avec le playCode et totalQuestions
         initStudentSession(playCode, { name: quizName, totalQuestions: totalQuestions });
         
+        // Si les pseudos personnalisés sont activés, afficher un champ de saisie
+        if (customNicknames) {
+            let html = `
+                <div class="join-page">
+                    <div class="join-header">
+                        <h2>📝 ${quizName}</h2>
+                        <p class="join-subtitle">Entre ton prénom pour jouer</p>
+                    </div>
+                    
+                    <div class="join-form">
+                        <div class="form-group">
+                            <label>✏️ Ton prénom :</label>
+                            <input type="text" 
+                                   id="custom-nickname-input" 
+                                   class="nickname-input"
+                                   placeholder="Entre ton prénom..."
+                                   maxlength="20"
+                                   autocomplete="off">
+                            <p class="animal-info">Appuie sur Entrée ou clique sur le bouton pour rejoindre 🎮</p>
+                            <button id="join-with-nickname-btn" class="btn-join-nickname">
+                                🚀 Rejoindre la partie
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            gameContainer.innerHTML = html;
+            showPage('game-page');
+            
+            // Focus sur le champ de saisie
+            setTimeout(() => {
+                const input = document.getElementById('custom-nickname-input');
+                if (input) {
+                    input.focus();
+                    
+                    // Rejoindre avec Entrée
+                    input.addEventListener('keydown', function(e) {
+                        if (e.key === 'Enter') {
+                            e.preventDefault();
+                            joinWithCustomNickname();
+                        }
+                    });
+                }
+                
+                // Bouton de validation
+                const btn = document.getElementById('join-with-nickname-btn');
+                if (btn) {
+                    btn.addEventListener('click', joinWithCustomNickname);
+                }
+            }, 0);
+            
+            return;
+        }
+        
+        // Mode standard : sélection d'animaux
         // Générer ou récupérer un identifiant unique pour ce poste
         // Cet identifiant persiste entre les onglets et les rafraîchissements
         let deviceId = null;
@@ -247,6 +308,53 @@
                 });
             });
         }, 0);
+    }
+    
+    // Fonction pour rejoindre avec un pseudo personnalisé
+    async function joinWithCustomNickname() {
+        const input = document.getElementById('custom-nickname-input');
+        const btn = document.getElementById('join-with-nickname-btn');
+        
+        if (!input) return;
+        
+        let nickname = input.value.trim();
+        
+        // Validation
+        if (!nickname) {
+            alert('⚠️ Entre ton prénom pour jouer');
+            input.focus();
+            return;
+        }
+        
+        // Limiter et nettoyer le pseudo
+        nickname = nickname.substring(0, 20);
+        
+        // Désactiver le bouton et le champ
+        if (btn) {
+            btn.disabled = true;
+            btn.textContent = '⏳ Connexion...';
+        }
+        input.disabled = true;
+        
+        // Enregistrer le pseudo
+        selectedAnimal = nickname;
+        setPlayerInfo('', nickname);
+        
+        // Rejoindre la session
+        const success = await joinSession();
+        
+        if (success) {
+            showWaitingRoom();
+        } else {
+            // Réactiver en cas d'échec
+            if (btn) {
+                btn.disabled = false;
+                btn.textContent = '🚀 Rejoindre la partie';
+            }
+            input.disabled = false;
+            input.focus();
+            selectedAnimal = null;
+        }
     }
 
     let selectedAnimal = null;
@@ -368,10 +476,11 @@
         let html = '';
         players.forEach(player => {
             const isMe = player.nickname === SESSION_STATE.playerNickname;
+            const parsed = parseNickname(player.nickname);
             html += `
-                <div class="player-card ${isMe ? 'is-me' : ''}">
-                    <div class="player-avatar">${player.nickname.split(' ')[0]}</div>
-                    <div class="player-name">${player.nickname.split(' ')[1]}</div>
+                <div class="player-card ${isMe ? 'is-me' : ''} ${parsed.isCustom ? 'custom-nickname' : ''}">
+                    <div class="player-avatar">${parsed.avatar}</div>
+                    <div class="player-name">${parsed.name}</div>
                     ${isMe ? '<div class="player-badge">Toi</div>' : ''}
                 </div>
             `;
@@ -496,7 +605,7 @@
                                 <img src="${question.imageUrl}" alt="Image de la question">
                             </div>
                         ` : ''}
-                        <h2 class="question-text">${question.question}</h2>
+                        <h2 class="question-text" style="width:100%;max-width:100%;box-sizing:border-box;white-space:normal;text-overflow:clip;background:none;border:none">${question.question}</h2>
                         
                         <div class="answers-container" id="answers-container">
         `;
@@ -573,9 +682,12 @@
             btn.blur();
         });
         
-        // AJUSTEMENT DYNAMIQUE : S'assurer que tout est visible sans scroll
+        // AJUSTEMENT DYNAMIQUE : double rAF pour garantir que le layout est
+        // entièrement calculé par le navigateur avant de mesurer clientHeight.
         requestAnimationFrame(() => {
-            adjustQuestionLayout();
+            requestAnimationFrame(() => {
+                adjustQuestionLayout();
+            });
         });
         
         // IMPORTANT : Nettoyer et ajouter les event listeners avec un léger délai
@@ -835,10 +947,6 @@
             <div class="answer-feedback">
                 <div class="feedback-text">${message}</div>
                 <div class="feedback-subtext">En attente des autres joueurs...</div>
-                <div id="stuck-warning" style="display: none; margin-top: 20px; padding: 15px; background: #fff3cd; border: 2px solid #ffc107; border-radius: 8px; color: #856404;">
-                    ⚠️ Cela prend plus de temps que prévu...<br>
-                    <small>Le professeur peut débloquer la situation avec le bouton "Resynchroniser"</small>
-                </div>
             </div>
         `;
         
@@ -1060,12 +1168,8 @@
         
         if (!data.questionStats) {
             console.warn('⚠️ Pas de questionStats dans data');
-            return `
-                <div class="question-stats-container">
-                    <h3 class="section-title">📝 Question précédente</h3>
-                    <p style="color: red;">DEBUG: Pas de questionStats reçu du serveur</p>
-                </div>
-            `;
+            // Ne pas afficher d'erreur, juste masquer la section
+            return '';
         }
         
         // Trouver mes stats pour cette question
@@ -1074,19 +1178,42 @@
         console.log('📊 myStats trouvé:', myStats);
         
         if (!myStats) {
-            console.warn('⚠️ Pas de stats pour mon pseudo');
-            const receivedNicknames = data.questionStats.map(s => s.nickname).join(', ');
+            console.warn('⚠️ Pas de stats pour mon pseudo:', SESSION_STATE.playerNickname);
+            console.warn('📊 Pseudos disponibles:', data.questionStats.map(s => s.nickname));
+            
+            // Afficher un message neutre au lieu du debug
             return `
                 <div class="question-stats-container">
                     <h3 class="section-title">📝 Question précédente</h3>
-                    <p style="color: orange;">DEBUG: Stats non trouvées pour "${SESSION_STATE.playerNickname}"</p>
-                    <p>Pseudos reçus: ${receivedNicknames}</p>
-                    <p>Nombre de stats: ${data.questionStats.length}</p>
+                    <div class="question-result-centered">
+                        <div class="question-result neutral">
+                            <div class="result-icon">⏳</div>
+                            <div class="result-text">
+                                <div class="result-label">Réponse en cours de traitement</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             `;
         }
         
-        if (!myStats) return '';
+        // Vérifier si l'élève n'a pas répondu (answered = false du serveur)
+        if (myStats.answered === false) {
+            return `
+                <div class="question-stats-container">
+                    <h3 class="section-title">📝 Question précédente</h3>
+                    <div class="question-result-centered">
+                        <div class="question-result neutral">
+                            <div class="result-icon">⏰</div>
+                            <div class="result-text">
+                                <div class="result-label">Temps écoulé</div>
+                                <div class="result-details">Tu n'as pas répondu à temps</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
         
         const isCorrect = myStats.correct;
         const timeSpent = myStats.timeSpent || 0;
@@ -1313,11 +1440,12 @@
         
         players.forEach((player, index) => {
             const isMe = player.nickname === SESSION_STATE.playerNickname;
+            const parsed = parseNickname(player.nickname);
             html += `
-                <div class="ranking-item ${isMe ? 'is-me' : ''}">
+                <div class="ranking-item ${isMe ? 'is-me' : ''} ${parsed.isCustom ? 'custom-nickname' : ''}">
                     <div class="ranking-position">#${index + 1}</div>
-                    <div class="ranking-avatar">${player.nickname.split(' ')[0]}</div>
-                    <div class="ranking-name">${player.nickname.split(' ')[1]}</div>
+                    <div class="ranking-avatar">${parsed.avatar}</div>
+                    <div class="ranking-name">${parsed.name}</div>
                     <div class="ranking-score">${player.score || 0} pts</div>
                 </div>
             `;
@@ -1440,13 +1568,14 @@
             const player = top3[originalIndex];
             const isMe = player.nickname === SESSION_STATE.playerNickname;
             const rank = originalIndex + 1;
+            const parsed = parseNickname(player.nickname);
             
             html += `
-                <div class="final-podium-item rank-${rank} ${isMe ? 'is-me' : ''}" style="height: ${heights[displayIndex]}">
+                <div class="final-podium-item rank-${rank} ${isMe ? 'is-me' : ''} ${parsed.isCustom ? 'custom-nickname' : ''}" style="height: ${heights[displayIndex]}">
                     <div class="final-rank">#${rank}</div>
                     <div class="final-medal">${medals[originalIndex]}</div>
-                    <div class="final-avatar">${player.nickname.split(' ')[0]}</div>
-                    <div class="final-name">${player.nickname.split(' ')[1]}</div>
+                    <div class="final-avatar">${parsed.avatar}</div>
+                    <div class="final-name">${parsed.name}</div>
                     <div class="final-points">${player.score} pts</div>
                 </div>
             `;
