@@ -889,10 +889,12 @@
         hasAnswered = true;
         const timeSpent = Date.now() - questionStartTime; // Millisecondes
         
-        // Désactiver tous les boutons
-        document.querySelectorAll('.answer-btn').forEach((btn, i) => {
+        // Désactiver tous les boutons et surligner celui cliqué.
+        // IMPORTANT : on compare data-answer-index (index original avant mélange)
+        // et NON la position i dans le DOM (qui diffère après le shuffle).
+        document.querySelectorAll('.answer-btn').forEach((btn) => {
             btn.disabled = true;
-            if (i === index) {
+            if (parseInt(btn.getAttribute('data-answer-index')) === index) {
                 btn.classList.add('selected');
             }
         });
