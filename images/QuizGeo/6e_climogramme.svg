@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="#fff"/>
+  <text x="300" y="25" font-size="16" font-weight="bold" text-anchor="middle">Climogramme - Ville mystère</text>
+  <!-- Axes -->
+  <line x1="70" y1="320" x2="550" y2="320" stroke="#333" stroke-width="2"/>
+  <line x1="70" y1="320" x2="70" y2="50" stroke="#333" stroke-width="2"/>
+  <line x1="550" y1="320" x2="550" y2="50" stroke="#3498db" stroke-width="2"/>
+  <!-- Axe Y gauche: Températures -->
+  <text x="20" y="190" font-size="11" fill="#e74c3c" transform="rotate(-90,20,190)">Température (°C)</text>
+  <text x="60" y="320" font-size="9" text-anchor="end">0</text>
+  <text x="60" y="260" font-size="9" text-anchor="end">10</text>
+  <text x="60" y="200" font-size="9" text-anchor="end">20</text>
+  <text x="60" y="140" font-size="9" text-anchor="end">30</text>
+  <!-- Axe Y droit: Précipitations -->
+  <text x="590" y="190" font-size="11" fill="#3498db" transform="rotate(90,590,190)">Précipitations (mm)</text>
+  <text x="560" y="320" font-size="9">0</text>
+  <text x="560" y="260" font-size="9">50</text>
+  <text x="560" y="200" font-size="9">100</text>
+  <text x="560" y="140" font-size="9">150</text>
+  <!-- Mois -->
+  <text x="95" y="340" font-size="9">J</text>
+  <text x="135" y="340" font-size="9">F</text>
+  <text x="175" y="340" font-size="9">M</text>
+  <text x="215" y="340" font-size="9">A</text>
+  <text x="255" y="340" font-size="9">M</text>
+  <text x="295" y="340" font-size="9">J</text>
+  <text x="335" y="340" font-size="9">J</text>
+  <text x="375" y="340" font-size="9">A</text>
+  <text x="415" y="340" font-size="9">S</text>
+  <text x="455" y="340" font-size="9">O</text>
+  <text x="495" y="340" font-size="9">N</text>
+  <text x="525" y="340" font-size="9">D</text>
+  <!-- Barres précipitations (climat méditerranéen) -->
+  <rect x="85" y="260" width="25" height="60" fill="#3498db"/>
+  <rect x="125" y="270" width="25" height="50" fill="#3498db"/>
+  <rect x="165" y="275" width="25" height="45" fill="#3498db"/>
+  <rect x="205" y="280" width="25" height="40" fill="#3498db"/>
+  <rect x="245" y="290" width="25" height="30" fill="#3498db"/>
+  <rect x="285" y="305" width="25" height="15" fill="#3498db"/>
+  <rect x="325" y="310" width="25" height="10" fill="#3498db"/>
+  <rect x="365" y="310" width="25" height="10" fill="#3498db"/>
+  <rect x="405" y="285" width="25" height="35" fill="#3498db"/>
+  <rect x="445" y="260" width="25" height="60" fill="#3498db"/>
+  <rect x="485" y="250" width="25" height="70" fill="#3498db"/>
+  <rect x="515" y="260" width="25" height="60" fill="#3498db"/>
+  <!-- Courbe températures -->
+  <path d="M95 275 L135 265 L175 240 L215 210 L255 175 L295 140 L335 120 L375 120 L415 145 L455 190 L495 240 L530 270" fill="none" stroke="#e74c3c" stroke-width="3"/>
+  <circle cx="335" cy="120" r="4" fill="#e74c3c"/>
+  <!-- Question -->
+  <rect x="100" y="360" width="400" height="30" fill="#f9f9f9" stroke="#ddd"/>
+  <text x="300" y="380" font-size="12" text-anchor="middle">Quel type de climat ? (Méditerranéen, Océanique, Continental, Tropical)</text>
+</svg>

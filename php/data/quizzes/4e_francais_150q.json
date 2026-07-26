@@ -1,0 +1,3380 @@
+{
+  "name": "4e_francais_150q",
+  "version": "1.0",
+  "createdAt": "2026-04-19T16:30:00.000Z",
+  "questionsCount": 150,
+  "questions": [
+    {
+      "type": "multiple",
+      "question": "La Pléiade est un groupe de poètes français du…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "XVIe siècle",
+          "correct": true
+        },
+        {
+          "text": "XVIIe siècle",
+          "correct": false
+        },
+        {
+          "text": "XVIIIe siècle",
+          "correct": false
+        },
+        {
+          "text": "XIXe siècle",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pierre de Ronsard est surtout célèbre pour ses poèmes sur…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'amour et la beauté féminine",
+          "correct": true
+        },
+        {
+          "text": "Les batailles et les héros de guerre",
+          "correct": false
+        },
+        {
+          "text": "La vie quotidienne des paysans",
+          "correct": false
+        },
+        {
+          "text": "La critique des rois de France",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Joachim du Bellay a écrit \"Les Regrets\", un recueil qui exprime…",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Sa nostalgie de la France lors de son séjour à Rome",
+          "correct": true
+        },
+        {
+          "text": "Sa joie de vivre à la cour du roi",
+          "correct": false
+        },
+        {
+          "text": "Son amour pour une femme inconnue",
+          "correct": false
+        },
+        {
+          "text": "Sa passion pour les voyages en mer",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La Pléiade défendait l'idée d'écrire en latin plutôt qu'en français.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la poésie amoureuse de la Renaissance, la femme aimée est souvent comparée à…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La nature : une rose, le soleil, les étoiles…",
+          "correct": true
+        },
+        {
+          "text": "Des personnages historiques célèbres",
+          "correct": false
+        },
+        {
+          "text": "Des animaux sauvages et dangereux",
+          "correct": false
+        },
+        {
+          "text": "Des objets du quotidien",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le XVIIe siècle en France est souvent appelé le siècle du…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Grand Siècle ou Classicisme",
+          "correct": true
+        },
+        {
+          "text": "Siècle des Lumières",
+          "correct": false
+        },
+        {
+          "text": "Siècle romantique",
+          "correct": false
+        },
+        {
+          "text": "Siècle de la Renaissance",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le mouvement des Lumières se développe principalement au…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "XVIIIe siècle",
+          "correct": true
+        },
+        {
+          "text": "XVIIe siècle",
+          "correct": false
+        },
+        {
+          "text": "XIXe siècle",
+          "correct": false
+        },
+        {
+          "text": "XVIe siècle",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Les philosophes des Lumières défendaient avant tout…",
+      "time": 30,
+      "answers": [
+        {
+          "text": "La raison, la liberté et la tolérance",
+          "correct": true
+        },
+        {
+          "text": "Le pouvoir absolu du roi",
+          "correct": false
+        },
+        {
+          "text": "La tradition et la religion sans discussion",
+          "correct": false
+        },
+        {
+          "text": "Le retour à une vie simple à la campagne",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Molière est surtout connu pour ses…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Comédies",
+          "correct": true
+        },
+        {
+          "text": "Tragédies",
+          "correct": false
+        },
+        {
+          "text": "Romans",
+          "correct": false
+        },
+        {
+          "text": "Poèmes épiques",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans \"L'Avare\" de Molière, quel est le défaut principal du personnage d'Harpagon ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Son avarice excessive : il ne supporte pas de dépenser son argent",
+          "correct": true
+        },
+        {
+          "text": "Sa paresse légendaire",
+          "correct": false
+        },
+        {
+          "text": "Sa vanité et son orgueil",
+          "correct": false
+        },
+        {
+          "text": "Sa jalousie envers ses enfants",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans \"Le Malade imaginaire\" de Molière, Argan croit qu'il est…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Très malade alors qu'il est en bonne santé",
+          "correct": true
+        },
+        {
+          "text": "Très riche alors qu'il est ruiné",
+          "correct": false
+        },
+        {
+          "text": "Un grand poète incompris",
+          "correct": false
+        },
+        {
+          "text": "Un roi déguisé en bourgeois",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le comique de gestes (ou comique gestuel) fait rire grâce à…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Des actions physiques drôles : chutes, grimaces, coups…",
+          "correct": true
+        },
+        {
+          "text": "Des jeux de mots et calembours",
+          "correct": false
+        },
+        {
+          "text": "Des situations de malentendu entre personnages",
+          "correct": false
+        },
+        {
+          "text": "Un personnage ridicule par son caractère",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le comique de situation fait rire grâce à…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Des malentendus, des quiproquos, des coïncidences inattendues",
+          "correct": true
+        },
+        {
+          "text": "Des chutes et des gifles sur scène",
+          "correct": false
+        },
+        {
+          "text": "Des défauts exagérés d'un personnage",
+          "correct": false
+        },
+        {
+          "text": "Des jeux de mots amusants",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le comique de caractère fait rire grâce à…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un défaut ou une obsession poussé à l'extrême chez un personnage",
+          "correct": true
+        },
+        {
+          "text": "Des gestes et mimiques drôles",
+          "correct": false
+        },
+        {
+          "text": "Des situations de méprise entre personnages",
+          "correct": false
+        },
+        {
+          "text": "Des mots à double sens",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un quiproquo, c'est quand…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un personnage en prend un autre pour quelqu'un d'autre, ou comprend mal une situation",
+          "correct": true
+        },
+        {
+          "text": "Un personnage tombe par accident sur scène",
+          "correct": false
+        },
+        {
+          "text": "Deux personnages disent la même chose en même temps",
+          "correct": false
+        },
+        {
+          "text": "Un personnage ment délibérément à un autre",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans quel roman de Victor Hugo rencontre-t-on les personnages de Jean Valjean et Cosette ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Les Misérables",
+          "correct": true
+        },
+        {
+          "text": "Notre-Dame de Paris",
+          "correct": false
+        },
+        {
+          "text": "L'Homme qui rit",
+          "correct": false
+        },
+        {
+          "text": "Quatre-Vingt-Treize",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Jules Verne est célèbre pour ses romans d'…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Aventure et de science-fiction (voyages extraordinaires)",
+          "correct": true
+        },
+        {
+          "text": "Amour et de passion romantique",
+          "correct": false
+        },
+        {
+          "text": "Horreur et de fantastique pur",
+          "correct": false
+        },
+        {
+          "text": "Philosophie et de satire politique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "\"Vingt mille lieues sous les mers\" est un roman de…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Jules Verne",
+          "correct": true
+        },
+        {
+          "text": "Alexandre Dumas",
+          "correct": false
+        },
+        {
+          "text": "Victor Hugo",
+          "correct": false
+        },
+        {
+          "text": "Émile Zola",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Alexandre Dumas est l'auteur de…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Les Trois Mousquetaires",
+          "correct": true
+        },
+        {
+          "text": "Les Misérables",
+          "correct": false
+        },
+        {
+          "text": "Germinal",
+          "correct": false
+        },
+        {
+          "text": "Le Tour du monde en 80 jours",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Une utopie est une société imaginaire idéale et parfaite.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Une dystopie est…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Une société imaginaire cauchemardesque, à l'opposé d'une utopie",
+          "correct": true
+        },
+        {
+          "text": "Une société parfaite et idéale",
+          "correct": false
+        },
+        {
+          "text": "Un voyage réel dans un pays étranger",
+          "correct": false
+        },
+        {
+          "text": "Un roman policier se déroulant dans le futur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le registre fantastique crée chez le lecteur…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Une hésitation entre une explication naturelle et surnaturelle",
+          "correct": true
+        },
+        {
+          "text": "Une grande tristesse et de l'émotion",
+          "correct": false
+        },
+        {
+          "text": "Beaucoup de rires et de bonne humeur",
+          "correct": false
+        },
+        {
+          "text": "De l'admiration pour les exploits d'un héros",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un récit fantastique, l'événement étrange…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Survient dans un cadre réaliste et quotidien, ce qui le rend plus troublant",
+          "correct": true
+        },
+        {
+          "text": "Se passe dans un monde entièrement magique dès le début",
+          "correct": false
+        },
+        {
+          "text": "Est toujours expliqué à la fin du récit",
+          "correct": false
+        },
+        {
+          "text": "N'existe que dans l'imagination d'un enfant",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'un article de presse ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un texte publié dans un journal ou un magazine pour informer le lecteur",
+          "correct": true
+        },
+        {
+          "text": "Un texte littéraire publié uniquement sur internet",
+          "correct": false
+        },
+        {
+          "text": "Une lettre envoyée par un lecteur à un journal",
+          "correct": false
+        },
+        {
+          "text": "Un roman publié en plusieurs épisodes dans un journal",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pour vérifier si une information est fiable, on doit d'abord…",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Identifier la source et vérifier si elle est sérieuse",
+          "correct": true
+        },
+        {
+          "text": "Regarder combien de personnes l'ont partagée sur les réseaux",
+          "correct": false
+        },
+        {
+          "text": "Croire tout ce qui est écrit en gras ou en rouge",
+          "correct": false
+        },
+        {
+          "text": "Faire confiance uniquement aux informations récentes",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Les \"fake news\" sont…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "De fausses informations présentées comme vraies",
+          "correct": true
+        },
+        {
+          "text": "Des nouvelles littéraires inventées",
+          "correct": false
+        },
+        {
+          "text": "Des articles publiés en langue étrangère",
+          "correct": false
+        },
+        {
+          "text": "Des informations très récentes non vérifiées",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La différence entre un fait et une opinion, c'est que…",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Un fait est vérifiable, une opinion est un point de vue personnel",
+          "correct": true
+        },
+        {
+          "text": "Un fait est toujours faux, une opinion est vraie",
+          "correct": false
+        },
+        {
+          "text": "Un fait est subjectif, une opinion est objective",
+          "correct": false
+        },
+        {
+          "text": "Il n'y a aucune différence entre les deux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Sur internet, tout ce qui est publié sur un site a obligatoirement été vérifié.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Une comparaison s'identifie grâce à…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un mot outil : comme, tel que, pareil à, semblable à…",
+          "correct": true
+        },
+        {
+          "text": "L'absence de tout mot outil",
+          "correct": false
+        },
+        {
+          "text": "La répétition d'un même mot",
+          "correct": false
+        },
+        {
+          "text": "L'utilisation du mot \"très\" avant un adjectif",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "\"La nuit était un manteau de velours noir\" est une…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Métaphore",
+          "correct": true
+        },
+        {
+          "text": "Comparaison",
+          "correct": false
+        },
+        {
+          "text": "Personnification",
+          "correct": false
+        },
+        {
+          "text": "Hyperbole",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "\"Les étoiles veillaient sur les voyageurs endormis.\" Quelle figure de style est utilisée ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Personnification",
+          "correct": true
+        },
+        {
+          "text": "Comparaison",
+          "correct": false
+        },
+        {
+          "text": "Métaphore",
+          "correct": false
+        },
+        {
+          "text": "Hyperbole",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "\"J'ai attendu une éternité !\" est un exemple de…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Hyperbole",
+          "correct": true
+        },
+        {
+          "text": "Comparaison",
+          "correct": false
+        },
+        {
+          "text": "Personnification",
+          "correct": false
+        },
+        {
+          "text": "Métaphore",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "\"Pour vivre heureux, vivons cachés\" est un exemple de…",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Maxime ou proverbe (formule courte exprimant une vérité générale)",
+          "correct": true
+        },
+        {
+          "text": "Hyperbole",
+          "correct": false
+        },
+        {
+          "text": "Anaphore",
+          "correct": false
+        },
+        {
+          "text": "Comparaison",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans \"Pour moi, c'est délicieux\", le groupe \"Pour moi\" indique…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Que c'est une opinion subjective, un point de vue personnel",
+          "correct": true
+        },
+        {
+          "text": "Que c'est un fait objectif et vérifiable",
+          "correct": false
+        },
+        {
+          "text": "Que c'est une information scientifique",
+          "correct": false
+        },
+        {
+          "text": "Que c'est une information fausse",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la forme d'une phrase interrogative totale ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Une question à laquelle on répond par oui ou non",
+          "correct": true
+        },
+        {
+          "text": "Une question commençant par \"pourquoi\" ou \"comment\"",
+          "correct": false
+        },
+        {
+          "text": "Une phrase qui exprime un ordre",
+          "correct": false
+        },
+        {
+          "text": "Une phrase qui exprime un sentiment fort",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Laquelle de ces phrases est de type impératif ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Ferme la porte !",
+          "correct": true
+        },
+        {
+          "text": "Est-ce que tu fermes la porte ?",
+          "correct": false
+        },
+        {
+          "text": "Tu fermes la porte.",
+          "correct": false
+        },
+        {
+          "text": "Quelle bonne idée de fermer la porte !",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans le discours direct, les paroles du personnage sont encadrées par…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Des guillemets (« »)",
+          "correct": true
+        },
+        {
+          "text": "Des parenthèses (  )",
+          "correct": false
+        },
+        {
+          "text": "Des crochets [  ]",
+          "correct": false
+        },
+        {
+          "text": "Des tirets courts -",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Transforme en discours indirect : Elle crie : « Je suis perdue ! » → Elle crie que…",
+      "time": 30,
+      "answers": [
+        {
+          "text": "…elle est perdue.",
+          "correct": true
+        },
+        {
+          "text": "…je suis perdue.",
+          "correct": false
+        },
+        {
+          "text": "…elle était perdue.",
+          "correct": false
+        },
+        {
+          "text": "…tu es perdue.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la nature du mot \"maison\" dans \"La maison est grande\" ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Un nom commun",
+          "correct": true
+        },
+        {
+          "text": "Un adjectif qualificatif",
+          "correct": false
+        },
+        {
+          "text": "Un verbe",
+          "correct": false
+        },
+        {
+          "text": "Un pronom",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la nature du mot \"cette\" dans \"cette maison\" ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Un déterminant (adjectif démonstratif)",
+          "correct": true
+        },
+        {
+          "text": "Un pronom démonstratif",
+          "correct": false
+        },
+        {
+          "text": "Un adjectif qualificatif",
+          "correct": false
+        },
+        {
+          "text": "Un adverbe",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans \"Il mange une pomme\", quelle est la fonction du groupe \"une pomme\" ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Complément d'objet direct (COD)",
+          "correct": true
+        },
+        {
+          "text": "Sujet du verbe",
+          "correct": false
+        },
+        {
+          "text": "Complément circonstanciel de lieu",
+          "correct": false
+        },
+        {
+          "text": "Attribut du sujet",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans \"Elle semble heureuse\", \"heureuse\" est…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Attribut du sujet",
+          "correct": true
+        },
+        {
+          "text": "Complément d'objet direct",
+          "correct": false
+        },
+        {
+          "text": "Complément circonstanciel de manière",
+          "correct": false
+        },
+        {
+          "text": "Épithète du nom",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le temps utilisé pour décrire une action passée de premier plan (soudaine, ponctuelle) dans un récit littéraire ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le passé simple",
+          "correct": true
+        },
+        {
+          "text": "L'imparfait",
+          "correct": false
+        },
+        {
+          "text": "Le présent",
+          "correct": false
+        },
+        {
+          "text": "Le futur simple",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le temps utilisé pour des descriptions et des actions de fond dans un récit ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'imparfait",
+          "correct": true
+        },
+        {
+          "text": "Le passé simple",
+          "correct": false
+        },
+        {
+          "text": "Le futur antérieur",
+          "correct": false
+        },
+        {
+          "text": "Le présent de l'indicatif",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Remets ces siècles dans l'ordre chronologique (du plus ancien au plus récent) :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "XVIe siècle : La Renaissance et la Pléiade",
+          "correct": true
+        },
+        {
+          "text": "XVIIe siècle : Le Classicisme et Molière",
+          "correct": true
+        },
+        {
+          "text": "XVIIIe siècle : Les Lumières et Voltaire",
+          "correct": true
+        },
+        {
+          "text": "XIXe siècle : Le Romantisme et Hugo",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un roman-feuilleton est un roman…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Publié en épisodes successifs dans un journal ou une revue",
+          "correct": true
+        },
+        {
+          "text": "Écrit par plusieurs auteurs à la fois",
+          "correct": false
+        },
+        {
+          "text": "Destiné uniquement aux enfants",
+          "correct": false
+        },
+        {
+          "text": "Illustré de dessins à chaque page",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Alexandre Dumas a publié \"Le Comte de Monte-Cristo\" sous forme de roman-feuilleton.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'un récit de voyage ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un récit qui raconte une expédition ou un voyage, réel ou imaginaire",
+          "correct": true
+        },
+        {
+          "text": "Un guide touristique avec des adresses et des conseils",
+          "correct": false
+        },
+        {
+          "text": "Un roman policier se déroulant dans un pays étranger",
+          "correct": false
+        },
+        {
+          "text": "Un poème qui décrit un paysage exotique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le mot \"sincère\" vient du latin. Que signifie-t-il en français ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Qui dit la vérité, sans hypocrisie",
+          "correct": true
+        },
+        {
+          "text": "Qui est très intelligent",
+          "correct": false
+        },
+        {
+          "text": "Qui est courageux et fort",
+          "correct": false
+        },
+        {
+          "text": "Qui aime les autres",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on la scène de théâtre où deux personnages se disputent vivement avec de longues répliques ?",
+      "time": 30,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "Scène de dispute",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "scène de dispute",
+        "dispute",
+        "querelle",
+        "altercation",
+        "joute verbale",
+        "scène de conflit"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une pièce de théâtre, les \"actes\" sont divisés en…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Scènes",
+          "correct": true
+        },
+        {
+          "text": "Chapitres",
+          "correct": false
+        },
+        {
+          "text": "Strophes",
+          "correct": false
+        },
+        {
+          "text": "Paragraphes",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La Renaissance est un mouvement culturel qui naît d'abord en…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Italie",
+          "correct": true
+        },
+        {
+          "text": "France",
+          "correct": false
+        },
+        {
+          "text": "Angleterre",
+          "correct": false
+        },
+        {
+          "text": "Espagne",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "À la Renaissance, les auteurs redécouvrent les textes de l'Antiquité. Comment appelle-t-on ce mouvement de retour aux sources antiques ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "L'Humanisme",
+          "correct": true
+        },
+        {
+          "text": "Le Romantisme",
+          "correct": false
+        },
+        {
+          "text": "Le Classicisme",
+          "correct": false
+        },
+        {
+          "text": "Le Naturalisme",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Ronsard et Du Bellay appartenaient tous les deux au groupe de la Pléiade.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans les sonnets amoureux de la Renaissance, le poète exprime souvent…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Sa souffrance face à une femme qui ne l'aime pas",
+          "correct": true
+        },
+        {
+          "text": "Sa joie d'être aimé en retour",
+          "correct": false
+        },
+        {
+          "text": "Sa honte d'être amoureux",
+          "correct": false
+        },
+        {
+          "text": "Sa colère contre les femmes en général",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Au XVIIe siècle, le théâtre classique respecte une règle importante. Combien d'actes comporte généralement une comédie ou tragédie classique ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "5 actes",
+          "correct": true
+        },
+        {
+          "text": "2 actes",
+          "correct": false
+        },
+        {
+          "text": "3 actes",
+          "correct": false
+        },
+        {
+          "text": "7 actes",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La comédie classique se termine généralement par…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un dénouement heureux (mariage, réconciliation…)",
+          "correct": true
+        },
+        {
+          "text": "La mort du personnage principal",
+          "correct": false
+        },
+        {
+          "text": "Une punition divine du héros",
+          "correct": false
+        },
+        {
+          "text": "Une catastrophe sans espoir",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans les comédies de Molière, les personnages ridicules ont souvent…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un défaut ou une obsession exagérée (avarice, hypocondrie, jalousie…)",
+          "correct": true
+        },
+        {
+          "text": "Une grande intelligence et beaucoup de sagesse",
+          "correct": false
+        },
+        {
+          "text": "Un physique comique décrit dans les didascalies",
+          "correct": false
+        },
+        {
+          "text": "Un accent étranger pour faire rire le public",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans \"Le Bourgeois Gentilhomme\" de Molière, Monsieur Jourdain veut à tout prix…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Ressembler à un noble et se comporter comme un aristocrate",
+          "correct": true
+        },
+        {
+          "text": "Devenir le plus riche marchand de France",
+          "correct": false
+        },
+        {
+          "text": "Faire le tour du monde en bateau",
+          "correct": false
+        },
+        {
+          "text": "Devenir médecin malgré lui",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le comique de mots fait rire grâce à…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Des jeux de mots, des calembours, des répétitions drôles",
+          "correct": true
+        },
+        {
+          "text": "Des chutes et des gestes exagérés",
+          "correct": false
+        },
+        {
+          "text": "Des situations de méprise entre personnages",
+          "correct": false
+        },
+        {
+          "text": "Un défaut poussé à l'extrême",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une pièce de théâtre, une \"tirade\" est…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un long discours prononcé par un personnage sans être interrompu",
+          "correct": true
+        },
+        {
+          "text": "Une courte réplique d'un mot ou deux",
+          "correct": false
+        },
+        {
+          "text": "Une indication de mise en scène",
+          "correct": false
+        },
+        {
+          "text": "Un échange très rapide entre deux personnages",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le siècle des Lumières s'appelle ainsi parce que les philosophes voulaient…",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Éclairer les esprits par la raison et la connaissance",
+          "correct": true
+        },
+        {
+          "text": "Inventer l'électricité et les lampes",
+          "correct": false
+        },
+        {
+          "text": "Célébrer la lumière divine et la religion",
+          "correct": false
+        },
+        {
+          "text": "Découvrir de nouvelles étoiles et planètes",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "L'Encyclopédie, publiée au XVIIIe siècle, a été dirigée par…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Diderot et d'Alembert",
+          "correct": true
+        },
+        {
+          "text": "Voltaire et Rousseau",
+          "correct": false
+        },
+        {
+          "text": "Molière et La Fontaine",
+          "correct": false
+        },
+        {
+          "text": "Hugo et Zola",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "L'Encyclopédie des Lumières avait pour but principal de…",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Rassembler et diffuser toutes les connaissances humaines",
+          "correct": true
+        },
+        {
+          "text": "Célébrer la grandeur du roi de France",
+          "correct": false
+        },
+        {
+          "text": "Raconter l'histoire de France depuis les origines",
+          "correct": false
+        },
+        {
+          "text": "Publier des romans et des poèmes populaires",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le thème central du roman \"Les Misérables\" de Victor Hugo ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La misère sociale, l'injustice et la rédemption",
+          "correct": true
+        },
+        {
+          "text": "Les aventures d'explorateurs en Amérique du Sud",
+          "correct": false
+        },
+        {
+          "text": "L'amour impossible entre deux nobles ennemis",
+          "correct": false
+        },
+        {
+          "text": "La vie quotidienne dans un village de Normandie",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "\"Le Tour du monde en 80 jours\" est un roman de Jules Verne dont le héros se nomme…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Phileas Fogg",
+          "correct": true
+        },
+        {
+          "text": "Capitaine Nemo",
+          "correct": false
+        },
+        {
+          "text": "Michel Strogoff",
+          "correct": false
+        },
+        {
+          "text": "Gulliver",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel roman de Jules Verne se déroule sous les mers à bord d'un sous-marin appelé le Nautilus ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vingt mille lieues sous les mers",
+          "correct": true
+        },
+        {
+          "text": "Voyage au centre de la Terre",
+          "correct": false
+        },
+        {
+          "text": "De la Terre à la Lune",
+          "correct": false
+        },
+        {
+          "text": "L'Île mystérieuse",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans les romans d'aventure du XIXe siècle, le héros doit généralement…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Surmonter des obstacles et des dangers pour atteindre son but",
+          "correct": true
+        },
+        {
+          "text": "Rester chez lui et rédiger un journal intime",
+          "correct": false
+        },
+        {
+          "text": "Critiquer la société par des discours philosophiques",
+          "correct": false
+        },
+        {
+          "text": "Tomber amoureux et vivre une idylle tranquille",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le roman \"Les Trois Mousquetaires\" d'Alexandre Dumas se passe au XVIIe siècle.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'une nouvelle de science-fiction ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un récit court qui imagine le futur ou des technologies avancées",
+          "correct": true
+        },
+        {
+          "text": "Un article de journal sur les dernières découvertes scientifiques",
+          "correct": false
+        },
+        {
+          "text": "Un roman très long sur l'histoire des sciences",
+          "correct": false
+        },
+        {
+          "text": "Un conte traditionnel avec des sorciers et des dragons",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un récit fantastique, qu'est-ce qui distingue le personnage principal du lecteur ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le personnage vit l'événement étrange de l'intérieur, le lecteur l'observe de l'extérieur",
+          "correct": true
+        },
+        {
+          "text": "Le personnage comprend tout, le lecteur ne comprend rien",
+          "correct": false
+        },
+        {
+          "text": "Le personnage est toujours un enfant, le lecteur est adulte",
+          "correct": false
+        },
+        {
+          "text": "Il n'y a aucune différence entre les deux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qui a écrit les nouvelles fantastiques \"La Horla\" et \"Le Horla\" ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Guy de Maupassant",
+          "correct": true
+        },
+        {
+          "text": "Jules Verne",
+          "correct": false
+        },
+        {
+          "text": "Victor Hugo",
+          "correct": false
+        },
+        {
+          "text": "Gustave Flaubert",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un journal ou un magazine, la \"une\" désigne…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "La première page, avec les titres et images principaux",
+          "correct": true
+        },
+        {
+          "text": "Un article d'une seule colonne",
+          "correct": false
+        },
+        {
+          "text": "Le dernier article publié",
+          "correct": false
+        },
+        {
+          "text": "La rubrique sport uniquement",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un article de presse, le \"chapeau\" (ou chapô) est…",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Un court texte en introduction qui résume l'article",
+          "correct": true
+        },
+        {
+          "text": "Le titre principal en très grosses lettres",
+          "correct": false
+        },
+        {
+          "text": "La signature du journaliste",
+          "correct": false
+        },
+        {
+          "text": "Une photo illustrant l'article",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'un éditorial dans un journal ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Un article qui exprime l'opinion de la rédaction ou du directeur du journal",
+          "correct": true
+        },
+        {
+          "text": "Un article qui rapporte uniquement des faits sans aucun commentaire",
+          "correct": false
+        },
+        {
+          "text": "Une publicité déguisée en article",
+          "correct": false
+        },
+        {
+          "text": "Un courrier envoyé par un lecteur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un reportage et un éditorial sont deux types d'articles qui ont exactement le même objectif.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'une légende sous une photo dans un article de presse ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Une courte phrase qui explique ou décrit ce que représente la photo",
+          "correct": true
+        },
+        {
+          "text": "Le nom du photographe uniquement",
+          "correct": false
+        },
+        {
+          "text": "Un récit mythologique illustré",
+          "correct": false
+        },
+        {
+          "text": "Le titre de l'article répété sous la photo",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "L'adverbe modifie généralement…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un verbe, un adjectif ou un autre adverbe",
+          "correct": true
+        },
+        {
+          "text": "Uniquement un nom commun",
+          "correct": false
+        },
+        {
+          "text": "Uniquement un pronom",
+          "correct": false
+        },
+        {
+          "text": "Uniquement un déterminant",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans \"Il chante très bien\", quelle est la nature de \"très\" ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un adverbe",
+          "correct": true
+        },
+        {
+          "text": "Un adjectif",
+          "correct": false
+        },
+        {
+          "text": "Un déterminant",
+          "correct": false
+        },
+        {
+          "text": "Une préposition",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans \"Il mange lentement\", \"lentement\" est un adverbe de…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Manière",
+          "correct": true
+        },
+        {
+          "text": "Temps",
+          "correct": false
+        },
+        {
+          "text": "Lieu",
+          "correct": false
+        },
+        {
+          "text": "Quantité",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la différence entre un nom propre et un nom commun ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le nom propre désigne une personne, un lieu ou une chose unique et prend une majuscule",
+          "correct": true
+        },
+        {
+          "text": "Le nom propre est toujours masculin, le nom commun peut être féminin",
+          "correct": false
+        },
+        {
+          "text": "Le nom propre est toujours pluriel, le nom commun est toujours singulier",
+          "correct": false
+        },
+        {
+          "text": "Il n'y a aucune différence entre les deux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans \"Ce livre m'appartient\", \"m'\" est un pronom…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Personnel (COI : à moi)",
+          "correct": true
+        },
+        {
+          "text": "Démonstratif",
+          "correct": false
+        },
+        {
+          "text": "Possessif",
+          "correct": false
+        },
+        {
+          "text": "Relatif",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Parmi ces verbes, lequel est un verbe d'état ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Sembler",
+          "correct": true
+        },
+        {
+          "text": "Courir",
+          "correct": false
+        },
+        {
+          "text": "Manger",
+          "correct": false
+        },
+        {
+          "text": "Construire",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le conditionnel passé est formé avec…",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Avoir ou être au conditionnel présent + participe passé",
+          "correct": true
+        },
+        {
+          "text": "Avoir ou être à l'imparfait + infinitif",
+          "correct": false
+        },
+        {
+          "text": "L'infinitif + la terminaison du futur",
+          "correct": false
+        },
+        {
+          "text": "Le subjonctif présent + participe passé",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans \"Si j'avais su, je serais venu\", quel temps est utilisé après \"si\" ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le plus-que-parfait",
+          "correct": true
+        },
+        {
+          "text": "Le conditionnel passé",
+          "correct": false
+        },
+        {
+          "text": "L'imparfait",
+          "correct": false
+        },
+        {
+          "text": "Le futur antérieur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle phrase utilise correctement le subjonctif ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Je veux que tu fasses tes devoirs.",
+          "correct": true
+        },
+        {
+          "text": "Je veux que tu fais tes devoirs.",
+          "correct": false
+        },
+        {
+          "text": "Je veux que tu feras tes devoirs.",
+          "correct": false
+        },
+        {
+          "text": "Je veux que tu ferais tes devoirs.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'une proposition subordonnée circonstancielle de temps ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Une proposition qui indique quand a lieu l'action de la proposition principale",
+          "correct": true
+        },
+        {
+          "text": "Une proposition qui indique pourquoi a lieu l'action principale",
+          "correct": false
+        },
+        {
+          "text": "Une proposition qui complète un nom",
+          "correct": false
+        },
+        {
+          "text": "Une proposition qui exprime une hypothèse",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "\"Dès qu'il arriva, la fête commença.\" La proposition soulignée est une subordonnée de…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Temps",
+          "correct": true
+        },
+        {
+          "text": "Cause",
+          "correct": false
+        },
+        {
+          "text": "But",
+          "correct": false
+        },
+        {
+          "text": "Condition",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans \"Il travaille pour réussir\", \"pour réussir\" exprime…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le but",
+          "correct": true
+        },
+        {
+          "text": "La cause",
+          "correct": false
+        },
+        {
+          "text": "La conséquence",
+          "correct": false
+        },
+        {
+          "text": "La concession",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel connecteur logique introduit une opposition ou une concession ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Cependant",
+          "correct": true
+        },
+        {
+          "text": "Donc",
+          "correct": false
+        },
+        {
+          "text": "Car",
+          "correct": false
+        },
+        {
+          "text": "Ainsi",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'un texte descriptif ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un texte qui présente les caractéristiques d'un lieu, d'un objet ou d'un personnage",
+          "correct": true
+        },
+        {
+          "text": "Un texte qui raconte une suite d'événements",
+          "correct": false
+        },
+        {
+          "text": "Un texte qui cherche à convaincre le lecteur",
+          "correct": false
+        },
+        {
+          "text": "Un texte qui explique le fonctionnement de quelque chose",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une description, les adjectifs qualificatifs servent à…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Préciser les caractéristiques des personnes, lieux ou objets décrits",
+          "correct": true
+        },
+        {
+          "text": "Indiquer la chronologie des événements",
+          "correct": false
+        },
+        {
+          "text": "Remplacer les noms pour éviter les répétitions",
+          "correct": false
+        },
+        {
+          "text": "Exprimer des actions passées",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "\"Rouge, rond et brillant\" : ces adjectifs font partie d'un champ lexical de…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La description visuelle",
+          "correct": true
+        },
+        {
+          "text": "La description sonore",
+          "correct": false
+        },
+        {
+          "text": "La description olfactive",
+          "correct": false
+        },
+        {
+          "text": "La description du mouvement",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce que la focalisation interne dans un récit ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le lecteur ne voit et ne sait que ce que voit et sait un personnage précis",
+          "correct": true
+        },
+        {
+          "text": "Le narrateur sait tout sur tous les personnages",
+          "correct": false
+        },
+        {
+          "text": "Le narrateur observe de l'extérieur sans entrer dans les pensées",
+          "correct": false
+        },
+        {
+          "text": "L'histoire est racontée par plusieurs narrateurs à tour de rôle",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la focalisation externe, le narrateur…",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Décrit ce qu'il voit de l'extérieur, sans connaître les pensées des personnages",
+          "correct": true
+        },
+        {
+          "text": "Connaît tous les secrets et pensées des personnages",
+          "correct": false
+        },
+        {
+          "text": "Est lui-même le héros de l'histoire et dit \"je\"",
+          "correct": false
+        },
+        {
+          "text": "Invente des événements qui ne se sont pas passés",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Remets ces étapes du schéma narratif dans le bon ordre :",
+      "time": 40,
+      "answers": [
+        {
+          "text": "Situation initiale (équilibre)",
+          "correct": true
+        },
+        {
+          "text": "Élément perturbateur (rupture de l'équilibre)",
+          "correct": true
+        },
+        {
+          "text": "Péripéties (actions pour résoudre le problème)",
+          "correct": true
+        },
+        {
+          "text": "Situation finale (nouvel équilibre)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un \"épilogue\" dans un roman, c'est…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un chapitre final qui raconte ce qu'il arrive aux personnages après la fin de l'histoire",
+          "correct": true
+        },
+        {
+          "text": "Une introduction qui présente les personnages au début du roman",
+          "correct": false
+        },
+        {
+          "text": "Un résumé du roman placé au milieu",
+          "correct": false
+        },
+        {
+          "text": "Un chapitre racontant une histoire parallèle",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment s'appelle l'œuvre de Diderot et d'Alembert qui rassemblait toutes les connaissances humaines au XVIIIe siècle ?",
+      "time": 30,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "L'Encyclopédie",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "encyclopédie",
+        "l'encyclopédie",
+        "la grande encyclopédie",
+        "encyclopedie"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "\"Être dans de beaux draps\" est une expression idiomatique qui signifie…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Être dans une mauvaise situation",
+          "correct": true
+        },
+        {
+          "text": "Être très bien habillé",
+          "correct": false
+        },
+        {
+          "text": "Être très confortable et à l'aise",
+          "correct": false
+        },
+        {
+          "text": "Être hospitalisé à l'hôpital",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un texte, les points de suspension (…) servent à exprimer…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Une hésitation, une interruption, un sous-entendu ou une liste non exhaustive",
+          "correct": true
+        },
+        {
+          "text": "La fin d'une phrase déclarative normale",
+          "correct": false
+        },
+        {
+          "text": "Un ordre ou un commandement",
+          "correct": false
+        },
+        {
+          "text": "Une question directe",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel signe de ponctuation introduit une liste ou une explication ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Les deux-points ( : )",
+          "correct": true
+        },
+        {
+          "text": "La virgule ( , )",
+          "correct": false
+        },
+        {
+          "text": "Le point-virgule ( ; )",
+          "correct": false
+        },
+        {
+          "text": "Le tiret ( — )",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "À la Renaissance, les auteurs humanistes pensaient que l'être humain devait avant tout…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Se cultiver, développer ses connaissances et son esprit critique",
+          "correct": true
+        },
+        {
+          "text": "Obéir à l'Église sans jamais remettre en question ses enseignements",
+          "correct": false
+        },
+        {
+          "text": "Vivre à la campagne et se méfier des villes",
+          "correct": false
+        },
+        {
+          "text": "Apprendre uniquement les métiers manuels utiles",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "François Rabelais est un auteur humaniste du XVIe siècle. Ses romans mettent en scène des géants comme…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Gargantua et Pantagruel",
+          "correct": true
+        },
+        {
+          "text": "Ulysse et Achille",
+          "correct": false
+        },
+        {
+          "text": "Roland et Olivier",
+          "correct": false
+        },
+        {
+          "text": "Artus et Lancelot",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans les sonnets de la Renaissance, les sentiments amoureux sont souvent mêlés de souffrance et de bonheur en même temps.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Au XVIIe siècle, la règle de la « bienséance » dans le théâtre classique impose de…",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Ne pas montrer sur scène des actes violents ou choquants",
+          "correct": true
+        },
+        {
+          "text": "Toujours finir la pièce avec une chanson",
+          "correct": false
+        },
+        {
+          "text": "Utiliser uniquement des personnages nobles",
+          "correct": false
+        },
+        {
+          "text": "Écrire toutes les pièces en alexandrins",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La règle de la « vraisemblance » au théâtre classique signifie que…",
+      "time": 30,
+      "answers": [
+        {
+          "text": "L'histoire doit paraître crédible et possible au spectateur",
+          "correct": true
+        },
+        {
+          "text": "Les personnages doivent tous être des personnages réels de l'Histoire",
+          "correct": false
+        },
+        {
+          "text": "La pièce doit durer exactement 24 heures à jouer",
+          "correct": false
+        },
+        {
+          "text": "Le décor doit représenter un lieu existant avec précision",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans \"Tartuffe\" de Molière, le personnage de Tartuffe est un hypocrite qui se fait passer pour…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un homme très pieux et dévot",
+          "correct": true
+        },
+        {
+          "text": "Un grand médecin renommé",
+          "correct": false
+        },
+        {
+          "text": "Un noble de haute naissance",
+          "correct": false
+        },
+        {
+          "text": "Un généreux bienfaiteur du peuple",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans \"Dom Juan\" de Molière, le héros est célèbre pour…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Séduire et abandonner de nombreuses femmes",
+          "correct": true
+        },
+        {
+          "text": "Voyager autour du monde en bateau",
+          "correct": false
+        },
+        {
+          "text": "Résoudre des crimes mystérieux",
+          "correct": false
+        },
+        {
+          "text": "Défendre les pauvres contre les riches",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "À la fin de \"Dom Juan\" de Molière, le héros est puni par…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Une statue qui l'entraîne en enfer",
+          "correct": true
+        },
+        {
+          "text": "Un procès devant le roi de France",
+          "correct": false
+        },
+        {
+          "text": "L'une de ses victimes qui se venge",
+          "correct": false
+        },
+        {
+          "text": "Son propre père qui le chasse du royaume",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Jean-Jacques Rousseau, philosophe des Lumières, est connu pour son idée que…",
+      "time": 30,
+      "answers": [
+        {
+          "text": "L'être humain est naturellement bon mais corrompu par la société",
+          "correct": true
+        },
+        {
+          "text": "L'être humain est naturellement mauvais et doit être contrôlé",
+          "correct": false
+        },
+        {
+          "text": "La société est toujours meilleure que la nature sauvage",
+          "correct": false
+        },
+        {
+          "text": "Seule la science peut rendre les hommes heureux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Montesquieu est un philosophe des Lumières qui a écrit « L'Esprit des lois ». Il défendait notamment…",
+      "time": 30,
+      "answers": [
+        {
+          "text": "La séparation des pouvoirs (exécutif, législatif, judiciaire)",
+          "correct": true
+        },
+        {
+          "text": "Le droit des rois à gouverner sans limites",
+          "correct": false
+        },
+        {
+          "text": "La suppression de toute forme de gouvernement",
+          "correct": false
+        },
+        {
+          "text": "Le retour à une vie entièrement agricole",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le roman \"Robinson Crusoé\", qui raconte la survie d'un naufragé sur une île déserte, est écrit par…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Daniel Defoe",
+          "correct": true
+        },
+        {
+          "text": "Jules Verne",
+          "correct": false
+        },
+        {
+          "text": "Alexandre Dumas",
+          "correct": false
+        },
+        {
+          "text": "Jonathan Swift",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans \"L'Île au trésor\" de Robert Louis Stevenson, le jeune Jim Hawkins rencontre quel célèbre pirate ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Long John Silver",
+          "correct": true
+        },
+        {
+          "text": "Barbe Noire",
+          "correct": false
+        },
+        {
+          "text": "Capitaine Crochet",
+          "correct": false
+        },
+        {
+          "text": "Jack Sparrow",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce que le registre merveilleux ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Un univers où la magie et le surnaturel sont acceptés comme normaux dès le début",
+          "correct": true
+        },
+        {
+          "text": "Un univers où un événement étrange crée une hésitation entre naturel et surnaturel",
+          "correct": false
+        },
+        {
+          "text": "Un univers réaliste sans aucun élément imaginaire",
+          "correct": false
+        },
+        {
+          "text": "Un univers futuriste avec des robots et des vaisseaux spatiaux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la différence principale entre le merveilleux et le fantastique ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Dans le merveilleux, le surnaturel est normal ; dans le fantastique, il est inquiétant et inattendu",
+          "correct": true
+        },
+        {
+          "text": "Le merveilleux fait peur, le fantastique fait rire",
+          "correct": false
+        },
+        {
+          "text": "Le merveilleux est pour les adultes, le fantastique pour les enfants",
+          "correct": false
+        },
+        {
+          "text": "Il n'y a aucune différence entre les deux registres",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Les contes de fées comme « Cendrillon » ou « La Belle au bois dormant » appartiennent au registre…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Merveilleux",
+          "correct": true
+        },
+        {
+          "text": "Fantastique",
+          "correct": false
+        },
+        {
+          "text": "Réaliste",
+          "correct": false
+        },
+        {
+          "text": "Épique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le « coup de théâtre » dans un récit ou une pièce, c'est…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un événement totalement inattendu qui renverse la situation",
+          "correct": true
+        },
+        {
+          "text": "La scène finale où tout le monde se réconcilie",
+          "correct": false
+        },
+        {
+          "text": "Le moment où le héros fait un long discours",
+          "correct": false
+        },
+        {
+          "text": "La première apparition du personnage principal",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un roman d'aventure, le « suspense » est créé par…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'incertitude du lecteur sur ce qui va arriver aux personnages",
+          "correct": true
+        },
+        {
+          "text": "De longues descriptions du décor très précises",
+          "correct": false
+        },
+        {
+          "text": "Des dialogues philosophiques entre les personnages",
+          "correct": false
+        },
+        {
+          "text": "Un narrateur omniscient qui raconte tout à l'avance",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'un roman sentimental ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un roman centré sur les émotions et les histoires d'amour des personnages",
+          "correct": true
+        },
+        {
+          "text": "Un roman qui raconte uniquement des batailles et des guerres",
+          "correct": false
+        },
+        {
+          "text": "Un roman écrit pour faire pleurer les enfants",
+          "correct": false
+        },
+        {
+          "text": "Un roman dont tous les personnages sont tristes du début à la fin",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la poésie amoureuse, le « carpe diem » (expression latine) signifie…",
+      "time": 30,
+      "answers": [
+        {
+          "text": "« Profite du moment présent » : la vie est courte, il faut en jouir",
+          "correct": true
+        },
+        {
+          "text": "« Souffre en silence » : l'amour doit rester secret",
+          "correct": false
+        },
+        {
+          "text": "« Fuis le monde » : le bonheur est dans la solitude",
+          "correct": false
+        },
+        {
+          "text": "« Pêche les carpes » : image de la pêche miraculeuse",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel mot de liaison exprime une addition, un ajout d'idée ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "De plus / En outre",
+          "correct": true
+        },
+        {
+          "text": "Pourtant",
+          "correct": false
+        },
+        {
+          "text": "Donc",
+          "correct": false
+        },
+        {
+          "text": "Car",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un paragraphe bien construit, on trouve d'abord…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'idée principale, puis les exemples qui l'illustrent",
+          "correct": true
+        },
+        {
+          "text": "Les exemples, puis la conclusion générale, puis l'idée",
+          "correct": false
+        },
+        {
+          "text": "Un résumé de tout le texte sans exemples",
+          "correct": false
+        },
+        {
+          "text": "Uniquement des questions sans réponses",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un article de presse, un « portrait » est…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un article qui présente et décrit une personne (physique, caractère, parcours)",
+          "correct": true
+        },
+        {
+          "text": "Une photo de la personnalité en couverture du journal",
+          "correct": false
+        },
+        {
+          "text": "Un dessin satirique d'une personnalité politique",
+          "correct": false
+        },
+        {
+          "text": "Un article qui résume la carrière d'une personne décédée",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Une « brève » dans un journal, c'est…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un article très court qui annonce une information en quelques lignes",
+          "correct": true
+        },
+        {
+          "text": "Un long article de fond sur un sujet complexe",
+          "correct": false
+        },
+        {
+          "text": "Un entretien entre un journaliste et une personnalité",
+          "correct": false
+        },
+        {
+          "text": "Le résumé d'un livre ou d'un film",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un journal télévisé, le présentateur dit souvent « selon nos sources ». Cela signifie…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Que l'information vient de personnes ou de documents qui ont informé la rédaction",
+          "correct": true
+        },
+        {
+          "text": "Que l'information est inventée par la rédaction",
+          "correct": false
+        },
+        {
+          "text": "Que l'information est fausse mais possible",
+          "correct": false
+        },
+        {
+          "text": "Que l'information est très ancienne",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'appelle-t-on la « liberté de la presse » ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le droit pour les journalistes d'informer sans censure ni pression du gouvernement",
+          "correct": true
+        },
+        {
+          "text": "Le droit de lire les journaux gratuitement",
+          "correct": false
+        },
+        {
+          "text": "Le droit de publier n'importe quelle information sans vérification",
+          "correct": false
+        },
+        {
+          "text": "La possibilité pour les journaux d'être vendus sans taxes",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle figure de style est utilisée dans « Le soleil sourit à la terre » ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Personnification",
+          "correct": true
+        },
+        {
+          "text": "Métaphore",
+          "correct": false
+        },
+        {
+          "text": "Comparaison",
+          "correct": false
+        },
+        {
+          "text": "Hyperbole",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'une énumération (figure de style) ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Une liste de plusieurs éléments à la suite pour créer un effet d'accumulation",
+          "correct": true
+        },
+        {
+          "text": "La répétition d'un même mot en début de phrases",
+          "correct": false
+        },
+        {
+          "text": "L'opposition de deux idées contraires dans une phrase",
+          "correct": false
+        },
+        {
+          "text": "Une question posée sans attendre de réponse",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "« Il avait des livres, des cahiers, des stylos, des crayons, des règles… » est un exemple de…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Énumération",
+          "correct": true
+        },
+        {
+          "text": "Anaphore",
+          "correct": false
+        },
+        {
+          "text": "Comparaison",
+          "correct": false
+        },
+        {
+          "text": "Métaphore",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'une allégorie ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Une représentation concrète et imagée d'une idée abstraite (ex : une femme aux yeux bandés = la Justice)",
+          "correct": true
+        },
+        {
+          "text": "Un long poème racontant les exploits d'un héros",
+          "correct": false
+        },
+        {
+          "text": "Une répétition de sons consonantiques dans une phrase",
+          "correct": false
+        },
+        {
+          "text": "Un discours prononcé devant un grand public",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle figure de style consiste à s'adresser directement à quelqu'un (ou quelque chose d'absent ou inanimé) ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "L'apostrophe (ex : « Ô Mort, vieux capitaine… »)",
+          "correct": true
+        },
+        {
+          "text": "La litote",
+          "correct": false
+        },
+        {
+          "text": "L'oxymore",
+          "correct": false
+        },
+        {
+          "text": "La périphrase",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "« Soleil cou coupé » (Apollinaire) est un exemple de…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Métaphore originale et inattendue",
+          "correct": true
+        },
+        {
+          "text": "Comparaison classique",
+          "correct": false
+        },
+        {
+          "text": "Hyperbole exagérée",
+          "correct": false
+        },
+        {
+          "text": "Énumération de couleurs",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le préfixe « bi- » ou « bis- » signifie…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Deux / double (ex : bilingue = deux langues)",
+          "correct": true
+        },
+        {
+          "text": "Petit / miniature",
+          "correct": false
+        },
+        {
+          "text": "Contre / opposé",
+          "correct": false
+        },
+        {
+          "text": "Au-delà / par-dessus",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le suffixe « -tion » sert à former…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Des noms à partir de verbes (ex : créer → création)",
+          "correct": true
+        },
+        {
+          "text": "Des adjectifs à partir de noms",
+          "correct": false
+        },
+        {
+          "text": "Des verbes à partir d'adjectifs",
+          "correct": false
+        },
+        {
+          "text": "Des adverbes à partir d'adjectifs",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le sens du mot « altruisme » ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le fait de se préoccuper du bien des autres avant le sien",
+          "correct": true
+        },
+        {
+          "text": "La passion pour les voyages à l'étranger",
+          "correct": false
+        },
+        {
+          "text": "Le refus de tout changement dans sa vie",
+          "correct": false
+        },
+        {
+          "text": "L'amour de la musique et des arts",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le point-virgule ( ; ) dans une phrase sert à…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Séparer deux propositions liées par le sens, avec une pause plus longue qu'une virgule",
+          "correct": true
+        },
+        {
+          "text": "Remplacer les guillemets dans le discours direct",
+          "correct": false
+        },
+        {
+          "text": "Marquer la fin d'un paragraphe",
+          "correct": false
+        },
+        {
+          "text": "Introduire une liste ou une explication",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une phrase, les parenthèses ( ) servent à…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Ajouter une précision ou une information secondaire",
+          "correct": true
+        },
+        {
+          "text": "Indiquer les paroles d'un personnage",
+          "correct": false
+        },
+        {
+          "text": "Remplacer un mot manquant dans le texte",
+          "correct": false
+        },
+        {
+          "text": "Marquer une pause très longue dans la lecture",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la phrase « Il a mangé la tarte que tu avais faite », quel temps est utilisé pour « avais faite » ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le plus-que-parfait",
+          "correct": true
+        },
+        {
+          "text": "L'imparfait",
+          "correct": false
+        },
+        {
+          "text": "Le passé composé",
+          "correct": false
+        },
+        {
+          "text": "Le passé simple",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la forme correcte du gérondif du verbe « chanter » ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "En chantant",
+          "correct": true
+        },
+        {
+          "text": "Chantant",
+          "correct": false
+        },
+        {
+          "text": "À chanter",
+          "correct": false
+        },
+        {
+          "text": "De chanter",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le gérondif exprime généralement…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La simultanéité ou la manière (ex : Il s'est blessé en courant)",
+          "correct": true
+        },
+        {
+          "text": "Une action future certaine",
+          "correct": false
+        },
+        {
+          "text": "Une action passée terminée",
+          "correct": false
+        },
+        {
+          "text": "Un ordre ou une suggestion",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment passe-t-on de la voix active à la voix passive ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le COD devient sujet, le sujet devient complément d'agent introduit par « par »",
+          "correct": true
+        },
+        {
+          "text": "On ajoute un pronom réfléchi devant le verbe",
+          "correct": false
+        },
+        {
+          "text": "On met le verbe à la forme négative",
+          "correct": false
+        },
+        {
+          "text": "On remplace le sujet par un pronom personnel",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans « La souris a été attrapée par le chat », quel est le « complément d'agent » ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Par le chat",
+          "correct": true
+        },
+        {
+          "text": "La souris",
+          "correct": false
+        },
+        {
+          "text": "A été attrapée",
+          "correct": false
+        },
+        {
+          "text": "Il n'y a pas de complément d'agent",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Laquelle de ces phrases est correctement accordée ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Elles sont parties tôt ce matin.",
+          "correct": true
+        },
+        {
+          "text": "Elles sont partis tôt ce matin.",
+          "correct": false
+        },
+        {
+          "text": "Elles sont partie tôt ce matin.",
+          "correct": false
+        },
+        {
+          "text": "Elles est parties tôt ce matin.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Lequel de ces mots s'écrit avec un trait d'union ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Peut-être",
+          "correct": true
+        },
+        {
+          "text": "Autrefois",
+          "correct": false
+        },
+        {
+          "text": "Bientôt",
+          "correct": false
+        },
+        {
+          "text": "Désormais",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans « Viens-tu avec nous ? », la forme « Viens-tu » utilise un trait d'union parce que…",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le pronom sujet « tu » est inversé après le verbe dans une question formelle",
+          "correct": true
+        },
+        {
+          "text": "C'est une règle d'orthographe qui s'applique à tous les verbes",
+          "correct": false
+        },
+        {
+          "text": "Le verbe « venir » est irrégulier et l'exige toujours",
+          "correct": false
+        },
+        {
+          "text": "La phrase est à la forme négative",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on la figure de style qui consiste à dire le minimum pour suggérer le maximum (ex : « Je ne déteste pas ça » pour dire « J'aime beaucoup ») ?",
+      "time": 30,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "Litote",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "litote",
+        "une litote",
+        "la litote"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Remets ces étapes dans le bon ordre pour écrire un texte descriptif réussi :",
+      "time": 40,
+      "answers": [
+        {
+          "text": "Choisir un point de vue (d'où observe-t-on ?)",
+          "correct": true
+        },
+        {
+          "text": "Organiser la description dans l'espace (de gauche à droite, de haut en bas…)",
+          "correct": true
+        },
+        {
+          "text": "Utiliser des adjectifs et des figures de style pour enrichir",
+          "correct": true
+        },
+        {
+          "text": "Relire pour vérifier la cohérence et les accords",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le XIXe siècle est marqué par la Révolution industrielle. Quel auteur décrit le mieux les conditions de travail difficiles des ouvriers à cette époque ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Émile Zola dans « Germinal »",
+          "correct": true
+        },
+        {
+          "text": "Jules Verne dans « Voyage au centre de la Terre »",
+          "correct": false
+        },
+        {
+          "text": "Alexandre Dumas dans « Le Comte de Monte-Cristo »",
+          "correct": false
+        },
+        {
+          "text": "Gustave Flaubert dans « Salammbô »",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce que la « ville » comme thème en 4ème (questionnement complémentaire) ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "L'étude de la ville comme espace de vie, d'injustice sociale et d'imaginaire dans la littérature",
+          "correct": true
+        },
+        {
+          "text": "L'apprentissage du vocabulaire de la géographie urbaine",
+          "correct": false
+        },
+        {
+          "text": "L'étude des plans d'urbanisme des grandes capitales européennes",
+          "correct": false
+        },
+        {
+          "text": "La visite virtuelle de monuments historiques célèbres",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Victor Hugo décrit Paris de façon très vivante dans ses romans. Quelle œuvre met en scène Quasimodo dans une cathédrale parisienne ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Notre-Dame de Paris",
+          "correct": true
+        },
+        {
+          "text": "Les Misérables",
+          "correct": false
+        },
+        {
+          "text": "L'Homme qui rit",
+          "correct": false
+        },
+        {
+          "text": "Han d'Islande",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

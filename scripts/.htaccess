@@ -1,0 +1,15 @@
+# Le runner exécute des scripts CLI : on le restreint au localhost et au réseau privé.
+# Si tu veux l'utiliser depuis un autre poste sur le LAN du collège, ajoute son IP.
+# À NE PAS DÉPLOYER en production OVH sans authentification supplémentaire.
+#
+# NB : le dashboard de métriques a été déplacé à la racine (qwest/dashboard.html
+# et qwest/dashboard.php) car Apache 2.4 fusionne les Require, donc un <Files>
+# d'exception ne suffisait pas à le rendre accessible hors LAN.
+
+<RequireAny>
+    Require ip 127.0.0.1
+    Require ip ::1
+    Require ip 192.168.0.0/16
+    Require ip 10.0.0.0/8
+    Require ip 172.16.0.0/12
+</RequireAny>

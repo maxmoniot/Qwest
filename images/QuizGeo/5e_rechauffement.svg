@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="#fff"/>
+  <text x="300" y="25" font-size="16" font-weight="bold" text-anchor="middle">Évolution des températures mondiales</text>
+  <!-- Axes -->
+  <line x1="70" y1="320" x2="550" y2="320" stroke="#333" stroke-width="2"/>
+  <line x1="70" y1="320" x2="70" y2="60" stroke="#333" stroke-width="2"/>
+  <!-- Ligne de référence 0 -->
+  <line x1="70" y1="200" x2="550" y2="200" stroke="#999" stroke-width="1" stroke-dasharray="5,5"/>
+  <text x="60" y="205" font-size="10" text-anchor="end">0°C</text>
+  <!-- Graduations Y -->
+  <text x="60" y="85" font-size="10" text-anchor="end">+1.5°C</text>
+  <text x="60" y="140" font-size="10" text-anchor="end">+1°C</text>
+  <text x="60" y="260" font-size="10" text-anchor="end">-0.5°C</text>
+  <text x="60" y="315" font-size="10" text-anchor="end">-1°C</text>
+  <text x="25" y="200" font-size="11" text-anchor="middle" transform="rotate(-90,25,200)">Écart/moyenne</text>
+  <!-- Graduations X -->
+  <text x="90" y="340" font-size="10">1880</text>
+  <text x="180" y="340" font-size="10">1920</text>
+  <text x="270" y="340" font-size="10">1960</text>
+  <text x="360" y="340" font-size="10">1980</text>
+  <text x="450" y="340" font-size="10">2000</text>
+  <text x="520" y="340" font-size="10">2020</text>
+  <!-- Courbe de température -->
+  <path d="M90 250 Q120 260 150 245 Q180 240 210 235 Q240 230 270 210 Q300 195 330 180 Q360 160 390 145 Q420 125 450 110 Q480 95 510 85 L530 80" fill="none" stroke="#e74c3c" stroke-width="3"/>
+  <!-- Zone de réchauffement marquée -->
+  <rect x="350" y="60" width="180" height="140" fill="#ffcdd2" opacity="0.3"/>
+  <!-- Annotation -->
+  <text x="440" y="75" font-size="10" fill="#c62828" font-weight="bold">Zone de réchauffement</text>
+  <text x="440" y="90" font-size="10" fill="#c62828">accéléré</text>
+  <!-- Question -->
+  <rect x="100" y="360" width="400" height="30" fill="#f5f5f5" rx="5"/>
+  <text x="300" y="380" font-size="11" text-anchor="middle">À partir de quelle décennie le réchauffement s'accélère-t-il nettement ?</text>
+</svg>

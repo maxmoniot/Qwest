@@ -1,0 +1,1583 @@
+{
+  "name": "6e_histoire_150q",
+  "version": "1.0",
+  "createdAt": "2026-05-06T00:00:00.000Z",
+  "questionsCount": 150,
+  "questions": [
+    {
+      "type": "multiple",
+      "question": "Entre quels deux fleuves s'est développée la Mésopotamie antique ?",
+      "time": 25,
+      "answers": [
+        {"text": "Le Nil et le Congo", "correct": false},
+        {"text": "Le Gange et l'Indus", "correct": false},
+        {"text": "Le Tigre et l'Euphrate", "correct": true},
+        {"text": "Le Rhin et le Danube", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel pays actuel correspond approximativement à l'ancienne Mésopotamie ?",
+      "time": 25,
+      "answers": [
+        {"text": "L'Égypte", "correct": false},
+        {"text": "L'Irak", "correct": true},
+        {"text": "La Grèce", "correct": false},
+        {"text": "La Turquie", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'écriture cunéiforme mésopotamienne était tracée sur des tablettes d'argile à l'aide d'un calame.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel roi babylonien a rédigé l'un des premiers codes de lois de l'histoire ?",
+      "time": 25,
+      "answers": [
+        {"text": "Khéops", "correct": false},
+        {"text": "Périclès", "correct": false},
+        {"text": "Hammourabi", "correct": true},
+        {"text": "Auguste", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'une ziggourat en Mésopotamie ?",
+      "time": 25,
+      "answers": [
+        {"text": "Un palais royal souterrain", "correct": false},
+        {"text": "Un temple à étages en forme de pyramide à degrés", "correct": true},
+        {"text": "Un type de bateau mésopotamien", "correct": false},
+        {"text": "Un marché couvert", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Babylone fut une grande et célèbre cité de Mésopotamie.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces peuples/empires mésopotamiens du plus ancien au plus récent :",
+      "time": 40,
+      "answers": [
+        {"text": "Sumériens (premiers à développer l'écriture)", "correct": true},
+        {"text": "Akkadiens (premier empire)", "correct": true},
+        {"text": "Babyloniens (code d'Hammourabi)", "correct": true},
+        {"text": "Assyriens (empire militaire puissant)", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on l'écriture inventée en Mésopotamie, faite de petits traits en forme de coins ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Cunéiforme", "correct": true}
+      ],
+      "acceptedAnswers": ["cunéiforme", "cuneiforme", "écriture cunéiforme", "ecriture cuneiforme"]
+    },
+    {
+      "type": "multiple",
+      "question": "Pourquoi l'agriculture s'est-elle particulièrement développée en Mésopotamie ?",
+      "time": 30,
+      "answers": [
+        {"text": "Grâce aux pluies abondantes toute l'année", "correct": false},
+        {"text": "Grâce à l'irrigation par les eaux du Tigre et de l'Euphrate", "correct": true},
+        {"text": "Grâce à la neige des montagnes environnantes", "correct": false},
+        {"text": "Grâce au commerce maritime", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La civilisation mésopotamienne est souvent considérée comme le « berceau de la civilisation ». Pourquoi ?",
+      "time": 30,
+      "answers": [
+        {"text": "Elle a inventé la roue, l'écriture et les premières cités", "correct": true},
+        {"text": "Elle a construit les plus grandes pyramides", "correct": false},
+        {"text": "Elle a fondé les Jeux Olympiques", "correct": false},
+        {"text": "Elle a inventé la démocratie", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment appelle-t-on le roi de l'Égypte ancienne, considéré comme un dieu vivant ?",
+      "time": 20,
+      "answers": [
+        {"text": "Le Consul", "correct": false},
+        {"text": "Le Pharaon", "correct": true},
+        {"text": "Le Sénateur", "correct": false},
+        {"text": "Le Basileus", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel fleuve a permis l'essor de la civilisation égyptienne grâce à ses crues fertilisantes ?",
+      "time": 20,
+      "answers": [
+        {"text": "Le Tigre", "correct": false},
+        {"text": "Le Congo", "correct": false},
+        {"text": "Le Nil", "correct": true},
+        {"text": "L'Euphrate", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Les pyramides égyptiennes étaient des palais royaux où vivaient les pharaons.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": false},
+        {"text": "Faux", "correct": true}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment s'appelle l'écriture sacrée des Égyptiens anciens, composée de dessins et symboles ?",
+      "time": 20,
+      "answers": [
+        {"text": "Le cunéiforme", "correct": false},
+        {"text": "L'alphabet phénicien", "correct": false},
+        {"text": "Les hiéroglyphes", "correct": true},
+        {"text": "Le latin", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "À quoi servait la momification dans l'Égypte ancienne ?",
+      "time": 25,
+      "answers": [
+        {"text": "À préparer les corps pour la guerre", "correct": false},
+        {"text": "À conserver le corps pour que l'âme du défunt continue à vivre dans l'au-delà", "correct": true},
+        {"text": "À montrer la richesse des familles", "correct": false},
+        {"text": "À un usage médical", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le Grand Sphinx est situé près des pyramides de Gizeh, en Égypte.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne les étapes de la fabrication d'une momie égyptienne :",
+      "time": 45,
+      "answers": [
+        {"text": "Retrait des organes internes", "correct": true},
+        {"text": "Dessiccation du corps avec du natron (sel)", "correct": true},
+        {"text": "Enveloppement dans des bandelettes de lin", "correct": true},
+        {"text": "Placement dans le cercueil (sarcophage)", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on le phénomène naturel annuel du Nil qui fertilisait les terres égyptiennes ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "La crue", "correct": true}
+      ],
+      "acceptedAnswers": ["la crue", "crue", "inondation", "crue du Nil", "inondation annuelle"]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel dieu égyptien était représenté avec une tête de chacal et guidait les morts ?",
+      "time": 25,
+      "answers": [
+        {"text": "Rê", "correct": false},
+        {"text": "Osiris", "correct": false},
+        {"text": "Anubis", "correct": true},
+        {"text": "Horus", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la plus grande pyramide d'Égypte, construite pour un pharaon ?",
+      "time": 25,
+      "answers": [
+        {"text": "La pyramide de Mykérinos", "correct": false},
+        {"text": "La pyramide de Khéphren", "correct": false},
+        {"text": "La pyramide de Khéops (à Gizeh)", "correct": true},
+        {"text": "La pyramide de Ramsès II", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment appelle-t-on la cité-état de la Grèce antique ?",
+      "time": 20,
+      "answers": [
+        {"text": "Une domus", "correct": false},
+        {"text": "Une polis (cité)", "correct": true},
+        {"text": "Une légion", "correct": false},
+        {"text": "Une tribu", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle cité grecque est considérée comme l'inventrice de la démocratie ?",
+      "time": 20,
+      "answers": [
+        {"text": "Sparte", "correct": false},
+        {"text": "Corinthe", "correct": false},
+        {"text": "Athènes", "correct": true},
+        {"text": "Thèbes", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Sparte était réputée pour son régime militaire très strict dès l'enfance.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "En quelle année furent organisés les premiers Jeux Olympiques de l'Antiquité ?",
+      "time": 25,
+      "answers": [
+        {"text": "1200 av. J.-C.", "correct": false},
+        {"text": "776 av. J.-C.", "correct": true},
+        {"text": "490 av. J.-C.", "correct": false},
+        {"text": "323 av. J.-C.", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces philosophes grecs par ordre chronologique (du plus ancien au plus récent) :",
+      "time": 40,
+      "answers": [
+        {"text": "Socrate (470 - 399 av. J.-C.)", "correct": true},
+        {"text": "Platon (428 - 348 av. J.-C.)", "correct": true},
+        {"text": "Aristote (384 - 322 av. J.-C.)", "correct": true},
+        {"text": "Épicure (341 - 270 av. J.-C.)", "correct": true}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Les Jeux Olympiques de l'Antiquité avaient lieu dans la cité d'Olympie, et non à Sparte.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces grands événements de la Grèce antique du plus ancien au plus récent :",
+      "time": 45,
+      "answers": [
+        {"text": "Premiers Jeux Olympiques (776 av. J.-C.)", "correct": true},
+        {"text": "Naissance de la démocratie à Athènes (508 av. J.-C.)", "correct": true},
+        {"text": "Bataille de Marathon contre les Perses (490 av. J.-C.)", "correct": true},
+        {"text": "Mort d'Alexandre le Grand (323 av. J.-C.)", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment s'appelle le célèbre temple dédié à la déesse Athéna sur l'Acropole d'Athènes ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Parthénon", "correct": true}
+      ],
+      "acceptedAnswers": ["parthénon", "le Parthénon", "le parthénon", "Parthenon"]
+    },
+    {
+      "type": "multiple",
+      "question": "Qui était Périclès dans la Grèce antique ?",
+      "time": 25,
+      "answers": [
+        {"text": "Un général qui a conquis l'Asie", "correct": false},
+        {"text": "Un homme d'État athénien qui développa la démocratie au Ve siècle av. J.-C.", "correct": true},
+        {"text": "Un philosophe fondateur de l'Académie", "correct": false},
+        {"text": "Un roi de Sparte", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Alexandre le Grand était roi de quelle région du nord de la Grèce ?",
+      "time": 25,
+      "answers": [
+        {"text": "L'Athènes", "correct": false},
+        {"text": "La Thessalie", "correct": false},
+        {"text": "La Macédoine", "correct": true},
+        {"text": "La Crète", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel dieu grec était considéré comme le maître de l'Olympe et de la foudre ?",
+      "time": 20,
+      "answers": [
+        {"text": "Apollon", "correct": false},
+        {"text": "Poséidon", "correct": false},
+        {"text": "Zeus", "correct": true},
+        {"text": "Arès", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce que l'Acropole d'Athènes ?",
+      "time": 25,
+      "answers": [
+        {"text": "Le port principal d'Athènes", "correct": false},
+        {"text": "Une colline rocheuse sur laquelle étaient construits des temples importants", "correct": true},
+        {"text": "La place du marché d'Athènes", "correct": false},
+        {"text": "La prison de la cité athénienne", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La ville de Marseille (anciennement Massalia) a été fondée par des colons grecs vers 600 av. J.-C.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce que la démocratie athénienne au Ve siècle av. J.-C. ?",
+      "time": 30,
+      "answers": [
+        {"text": "Un régime où tous les habitants votent", "correct": false},
+        {"text": "Un régime où les citoyens libres (hommes adultes) participent aux décisions", "correct": true},
+        {"text": "Une monarchie héréditaire", "correct": false},
+        {"text": "Un gouvernement militaire", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qui les Grecs ont-ils vaincu lors de la bataille de Marathon en 490 av. J.-C. ?",
+      "time": 25,
+      "answers": [
+        {"text": "Les Romains", "correct": false},
+        {"text": "Les Carthaginois", "correct": false},
+        {"text": "Les Perses", "correct": true},
+        {"text": "Les Spartiates", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans la démocratie athénienne, les femmes et les esclaves pouvaient voter comme les hommes libres.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": false},
+        {"text": "Faux", "correct": true}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces événements importants de la Grèce antique du plus ancien au plus récent :",
+      "time": 45,
+      "answers": [
+        {"text": "Premiers Jeux Olympiques (776 av. J.-C.)", "correct": true},
+        {"text": "Bataille de Marathon (490 av. J.-C.)", "correct": true},
+        {"text": "Âge d'or de Périclès (~450 av. J.-C.)", "correct": true},
+        {"text": "Mort d'Alexandre le Grand (323 av. J.-C.)", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on l'ensemble des récits sur les dieux et héros de la Grèce antique ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Mythologie", "correct": true}
+      ],
+      "acceptedAnswers": ["mythologie", "la mythologie", "mythes grecs", "mythes"]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans quelle matière les Grecs taillaient-ils surtout leurs statues ?",
+      "time": 20,
+      "answers": [
+        {"text": "Le bois", "correct": false},
+        {"text": "Le granit", "correct": false},
+        {"text": "Le marbre (et parfois le bronze)", "correct": true},
+        {"text": "L'argile cuite", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le poète Homère est célèbre pour avoir écrit deux épopées. Lesquelles ?",
+      "time": 25,
+      "answers": [
+        {"text": "La République et Les Lois", "correct": false},
+        {"text": "L'Iliade et l'Odyssée", "correct": true},
+        {"text": "L'Énéide et la Métamorphose", "correct": false},
+        {"text": "Les Travaux et les Jours et la Théogonie", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Selon la légende, qui a fondé Rome en 753 av. J.-C. ?",
+      "time": 25,
+      "answers": [
+        {"text": "Jules César", "correct": false},
+        {"text": "Auguste", "correct": false},
+        {"text": "Romulus (et son frère Rémus)", "correct": true},
+        {"text": "Énée", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "En quelle année (légendaire) Rome a-t-elle été fondée ?",
+      "time": 25,
+      "answers": [
+        {"text": "510 av. J.-C.", "correct": false},
+        {"text": "753 av. J.-C.", "correct": true},
+        {"text": "1200 av. J.-C.", "correct": false},
+        {"text": "27 av. J.-C.", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Rome était d'abord gouvernée par une République avant de devenir un Empire.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qui est le premier empereur romain (27 av. J.-C.) ?",
+      "time": 25,
+      "answers": [
+        {"text": "Jules César", "correct": false},
+        {"text": "Néron", "correct": false},
+        {"text": "Auguste (Octavien)", "correct": true},
+        {"text": "Trajan", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce que le Colisée de Rome ?",
+      "time": 25,
+      "answers": [
+        {"text": "Un temple dédié aux dieux romains", "correct": false},
+        {"text": "Un amphithéâtre où se déroulaient des combats de gladiateurs", "correct": true},
+        {"text": "Le palais des empereurs romains", "correct": false},
+        {"text": "Un marché couvert", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Jules César fut le premier empereur romain.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": false},
+        {"text": "Faux", "correct": true}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces personnages de l'histoire romaine dans l'ordre chronologique :",
+      "time": 40,
+      "answers": [
+        {"text": "Romulus (fondation légendaire de Rome, 753 av.)", "correct": true},
+        {"text": "Cicéron (grand orateur de la République)", "correct": true},
+        {"text": "Jules César (dictateur, assassiné en 44 av.)", "correct": true},
+        {"text": "Auguste (premier empereur, 27 av.)", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on le soldat professionnel de l'armée romaine, organisé en légions ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Légionnaire", "correct": true}
+      ],
+      "acceptedAnswers": ["légionnaire", "legionnaire", "soldat romain", "légion", "soldat"]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'un aqueduc dans la Rome antique ?",
+      "time": 25,
+      "answers": [
+        {"text": "Un pont militaire", "correct": false},
+        {"text": "Un ouvrage qui transportait l'eau des sources vers les villes", "correct": true},
+        {"text": "Un égout souterrain", "correct": false},
+        {"text": "Un bateau de guerre", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle ville était la capitale de l'Empire romain ?",
+      "time": 15,
+      "answers": [
+        {"text": "Carthage", "correct": false},
+        {"text": "Alexandrie", "correct": false},
+        {"text": "Rome", "correct": true},
+        {"text": "Constantinople", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment s'appelle le centre politique, religieux et commercial de Rome antique ?",
+      "time": 25,
+      "answers": [
+        {"text": "L'Acropole", "correct": false},
+        {"text": "L'Agora", "correct": false},
+        {"text": "Le Forum", "correct": true},
+        {"text": "Le Capitole", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Que sont les « Lois des Douze Tables » à Rome ?",
+      "time": 25,
+      "answers": [
+        {"text": "Les règles des jeux du cirque", "correct": false},
+        {"text": "Le premier code de lois écrit de Rome (vers 450 av. J.-C.)", "correct": true},
+        {"text": "Les douze dieux principaux de Rome", "correct": false},
+        {"text": "Un traité de commerce", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Les Romains ont adopté et adapté la mythologie grecque (Zeus devenant Jupiter, Athéna devenant Minerve).",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce que la romanisation des provinces conquises ?",
+      "time": 30,
+      "answers": [
+        {"text": "L'extermination des peuples vaincus", "correct": false},
+        {"text": "Le processus par lequel les peuples conquis adoptaient la langue et la culture romaines", "correct": true},
+        {"text": "La construction de murs pour protéger les frontières", "correct": false},
+        {"text": "Le paiement d'un tribut à Rome", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces événements de l'histoire romaine du plus ancien au plus récent :",
+      "time": 45,
+      "answers": [
+        {"text": "Fondation légendaire de Rome (753 av. J.-C.)", "correct": true},
+        {"text": "Création de la République romaine (~509 av. J.-C.)", "correct": true},
+        {"text": "Assassinat de Jules César (44 av. J.-C.)", "correct": true},
+        {"text": "Incendie de Rome sous Néron (64 ap. J.-C.)", "correct": true}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'Empire romain d'Occident a chuté en 476 après J.-C.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne les étapes de la carrière de Jules César :",
+      "time": 40,
+      "answers": [
+        {"text": "Campagnes militaires en Gaule (58-51 av. J.-C.)", "correct": true},
+        {"text": "Guerre civile et prise du pouvoir à Rome", "correct": true},
+        {"text": "Nommé dictateur perpétuel de Rome", "correct": true},
+        {"text": "Assassinat aux Ides de Mars (44 av. J.-C.)", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment s'appelle la langue parlée dans l'Empire romain, ancêtre du français et de l'espagnol ?",
+      "time": 20,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Latin", "correct": true}
+      ],
+      "acceptedAnswers": ["latin", "le latin", "langue latine"]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle religion s'est développée dans l'Empire romain et fut légalisée par l'Édit de Milan (313 ap. J.-C.) ?",
+      "time": 25,
+      "answers": [
+        {"text": "Le judaïsme", "correct": false},
+        {"text": "L'islam", "correct": false},
+        {"text": "Le christianisme", "correct": true},
+        {"text": "Le bouddhisme", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qui a conquis la Gaule (France actuelle) entre 58 et 51 av. J.-C. ?",
+      "time": 20,
+      "answers": [
+        {"text": "Auguste", "correct": false},
+        {"text": "Hannibal", "correct": false},
+        {"text": "Jules César", "correct": true},
+        {"text": "Alexandre le Grand", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'une religion monothéiste ?",
+      "time": 20,
+      "answers": [
+        {"text": "Une religion qui croit en plusieurs dieux", "correct": false},
+        {"text": "Une religion qui croit en un seul Dieu unique", "correct": true},
+        {"text": "Une religion sans lieu de culte", "correct": false},
+        {"text": "Une religion fondée en Grèce antique", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la ville sainte la plus importante du judaïsme ?",
+      "time": 20,
+      "answers": [
+        {"text": "Bethléem", "correct": false},
+        {"text": "La Mecque", "correct": false},
+        {"text": "Jérusalem", "correct": true},
+        {"text": "Rome", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La Torah est le livre sacré du judaïsme.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qui est considéré comme le fondateur du judaïsme selon la tradition religieuse ?",
+      "time": 25,
+      "answers": [
+        {"text": "Moïse", "correct": false},
+        {"text": "David", "correct": false},
+        {"text": "Abraham", "correct": true},
+        {"text": "Jésus", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qui est Moïse dans la tradition juive ?",
+      "time": 25,
+      "answers": [
+        {"text": "Un pharaon d'Égypte", "correct": false},
+        {"text": "Un prophète qui a conduit les Hébreux hors d'Égypte et reçu les dix commandements", "correct": true},
+        {"text": "Un roi de Jérusalem", "correct": false},
+        {"text": "Un général romain", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le judaïsme est l'une des plus anciennes religions monothéistes connues.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces grandes figures du judaïsme dans l'ordre chronologique de leur récit :",
+      "time": 40,
+      "answers": [
+        {"text": "Abraham (père des croyants)", "correct": true},
+        {"text": "Isaac (fils d'Abraham)", "correct": true},
+        {"text": "Moïse (l'Exode hors d'Égypte)", "correct": true},
+        {"text": "David (roi d'Israël, Jérusalem)", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on les croyants de la religion juive ?",
+      "time": 20,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Juifs", "correct": true}
+      ],
+      "acceptedAnswers": ["juifs", "juif", "hébreux", "israélites", "Juifs"]
+    },
+    {
+      "type": "multiple",
+      "question": "Que commémore la fête de Pessah (Pâque juive) ?",
+      "time": 25,
+      "answers": [
+        {"text": "La victoire de David sur Goliath", "correct": false},
+        {"text": "L'Exode : la sortie des Hébreux hors d'Égypte", "correct": true},
+        {"text": "La construction du Temple de Salomon", "correct": false},
+        {"text": "La naissance d'Abraham", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans quelle langue la Torah (texte sacré du judaïsme) est-elle écrite ?",
+      "time": 25,
+      "answers": [
+        {"text": "L'araméen", "correct": false},
+        {"text": "Le grec ancien", "correct": false},
+        {"text": "L'hébreu", "correct": true},
+        {"text": "Le latin", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle figure est au cœur de la religion chrétienne ?",
+      "time": 20,
+      "answers": [
+        {"text": "Abraham", "correct": false},
+        {"text": "Mahomet", "correct": false},
+        {"text": "Jésus de Nazareth (le Christ)", "correct": true},
+        {"text": "Bouddha", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans quelle ville Jésus est-il né selon les Évangiles ?",
+      "time": 20,
+      "answers": [
+        {"text": "Jérusalem", "correct": false},
+        {"text": "Nazareth", "correct": false},
+        {"text": "Bethléem", "correct": true},
+        {"text": "Rome", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La Bible est le livre sacré du christianisme.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment appelle-t-on les 12 disciples proches de Jésus ?",
+      "time": 20,
+      "answers": [
+        {"text": "Les prophètes", "correct": false},
+        {"text": "Les évangélistes", "correct": false},
+        {"text": "Les apôtres", "correct": true},
+        {"text": "Les martyrs", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle fête chrétienne commémore la résurrection de Jésus ?",
+      "time": 20,
+      "answers": [
+        {"text": "Noël", "correct": false},
+        {"text": "Pâques", "correct": true},
+        {"text": "La Pentecôte", "correct": false},
+        {"text": "L'Épiphanie", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Paul (Saul) de Tarse a joué un rôle majeur dans la diffusion du christianisme autour de la Méditerranée.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces événements de la vie de Jésus dans l'ordre chronologique :",
+      "time": 40,
+      "answers": [
+        {"text": "Naissance à Bethléem", "correct": true},
+        {"text": "Baptême par Jean-Baptiste", "correct": true},
+        {"text": "Sermon sur la montagne", "correct": true},
+        {"text": "Crucifixion et mort à Jérusalem", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on les auteurs des quatre récits de la vie de Jésus dans le Nouveau Testament ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Évangélistes", "correct": true}
+      ],
+      "acceptedAnswers": ["évangélistes", "evangelistes", "les évangélistes", "apôtres évangélistes"]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle ville est sainte pour les trois religions monothéistes (judaïsme, christianisme, islam) ?",
+      "time": 20,
+      "answers": [
+        {"text": "Rome", "correct": false},
+        {"text": "La Mecque", "correct": false},
+        {"text": "Jérusalem", "correct": true},
+        {"text": "Alexandrie", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "En quelle année le christianisme est-il devenu religion officielle de l'Empire romain ?",
+      "time": 25,
+      "answers": [
+        {"text": "313 ap. J.-C. (Édit de Milan)", "correct": false},
+        {"text": "380 ap. J.-C. (Édit de Thessalonique)", "correct": true},
+        {"text": "476 ap. J.-C.", "correct": false},
+        {"text": "30 ap. J.-C.", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel peuple habitait la Mésopotamie vers 3500 av. J.-C., inventeur de l'écriture ?",
+      "time": 25,
+      "answers": [
+        {"text": "Les Égyptiens", "correct": false},
+        {"text": "Les Perses", "correct": false},
+        {"text": "Les Sumériens", "correct": true},
+        {"text": "Les Phéniciens", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la principale innovation de la civilisation mésopotamienne ?",
+      "time": 25,
+      "answers": [
+        {"text": "La construction des pyramides", "correct": false},
+        {"text": "L'invention de l'écriture cunéiforme et des premières cités", "correct": true},
+        {"text": "La démocratie", "correct": false},
+        {"text": "La navigation en haute mer", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le Code de Hammourabi est absolument le premier code de lois jamais écrit dans l'histoire.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": false},
+        {"text": "Faux", "correct": true}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'un papyrus dans l'Égypte ancienne ?",
+      "time": 25,
+      "answers": [
+        {"text": "Un type de momie", "correct": false},
+        {"text": "Un support d'écriture fabriqué à partir d'une plante des bords du Nil", "correct": true},
+        {"text": "Une barque funéraire", "correct": false},
+        {"text": "Un outil d'agriculture", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces pharaons célèbres du plus ancien au plus récent :",
+      "time": 45,
+      "answers": [
+        {"text": "Khéops (~2589 av. J.-C., grande pyramide)", "correct": true},
+        {"text": "Toutankhamon (~1332 av. J.-C., trésor découvert en 1922)", "correct": true},
+        {"text": "Ramsès II (~1279 av. J.-C., grand bâtisseur)", "correct": true},
+        {"text": "Cléopâtre VII (~69-30 av. J.-C., dernière reine)", "correct": true}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Les hiéroglyphes ont été déchiffrés en 1822 grâce à la Pierre de Rosette, par Champollion.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces grandes civilisations méditerranéennes dans l'ordre chronologique d'apparition :",
+      "time": 45,
+      "answers": [
+        {"text": "Mésopotamie (Sumer, ~3500 av. J.-C.)", "correct": true},
+        {"text": "Égypte ancienne (~3100 av. J.-C.)", "correct": true},
+        {"text": "Grèce classique (~500 av. J.-C.)", "correct": true},
+        {"text": "Rome républicaine puis impériale (~509 av. - 476 ap.)", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment s'appellent les tombeaux monumentaux triangulaires des pharaons d'Égypte ?",
+      "time": 20,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Pyramides", "correct": true}
+      ],
+      "acceptedAnswers": ["pyramides", "la pyramide", "les pyramides", "pyramide"]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel outil a permis à Champollion de déchiffrer les hiéroglyphes en 1822 ?",
+      "time": 25,
+      "answers": [
+        {"text": "Un manuscrit grec ancien", "correct": false},
+        {"text": "La Pierre de Rosette (même texte en trois écritures)", "correct": true},
+        {"text": "Les papyrus de Thèbes", "correct": false},
+        {"text": "Un dictionnaire phénicien", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle mer a favorisé les échanges entre les civilisations de l'Antiquité (Égypte, Grèce, Rome) ?",
+      "time": 20,
+      "answers": [
+        {"text": "La mer Rouge", "correct": false},
+        {"text": "L'Atlantique", "correct": false},
+        {"text": "La Méditerranée", "correct": true},
+        {"text": "La mer Caspienne", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce que l'Iliade d'Homère raconte ?",
+      "time": 25,
+      "answers": [
+        {"text": "Le voyage de retour d'Ulysse", "correct": false},
+        {"text": "La fondation de Rome", "correct": false},
+        {"text": "La guerre de Troie", "correct": true},
+        {"text": "La vie d'Alexandre le Grand", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel était le statut d'un esclave dans les sociétés antiques ?",
+      "time": 25,
+      "answers": [
+        {"text": "Un citoyen de deuxième rang", "correct": false},
+        {"text": "Un être humain considéré comme une propriété, sans droits", "correct": true},
+        {"text": "Un artisan libre mais pauvre", "correct": false},
+        {"text": "Un prisonnier temporaire", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Aux Jeux Olympiques antiques, seuls les Grecs libres (citoyens) pouvaient participer à l'origine.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Aristote est célèbre pour avoir enseigné en marchant avec ses élèves. Dans quelle école ?",
+      "time": 25,
+      "answers": [
+        {"text": "L'Académie", "correct": false},
+        {"text": "Le Lycée (à Athènes)", "correct": true},
+        {"text": "Le Gymnase", "correct": false},
+        {"text": "L'Agora", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment s'appelle la cité concurrente d'Athènes, connue pour son armée et sa discipline ?",
+      "time": 20,
+      "answers": [
+        {"text": "Corinthe", "correct": false},
+        {"text": "Thèbes", "correct": false},
+        {"text": "Sparte", "correct": true},
+        {"text": "Syracuse", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Les Grecs de l'Antiquité ont colonisé de nombreuses régions autour de la Méditerranée.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne les étapes de la victoire des Grecs contre l'Empire perse :",
+      "time": 40,
+      "answers": [
+        {"text": "Début de la guerre (invasion perse)", "correct": true},
+        {"text": "Victoire grecque à Marathon (490 av. J.-C.)", "correct": true},
+        {"text": "Victoire navale à Salamine (480 av. J.-C.)", "correct": true},
+        {"text": "Fin des guerres médiques et paix", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment s'appelle la colline sur laquelle se trouve le Parthénon à Athènes ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Acropole", "correct": true}
+      ],
+      "acceptedAnswers": ["acropole", "l'acropole", "Acropole", "la colline sacrée", "l'Acropole"]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'un tyran dans la Grèce antique (sens original) ?",
+      "time": 30,
+      "answers": [
+        {"text": "Un roi élu démocratiquement", "correct": false},
+        {"text": "Un homme qui s'est emparé du pouvoir par la force (pas obligatoirement cruel)", "correct": true},
+        {"text": "Un général militaire", "correct": false},
+        {"text": "Un esclave affranchi", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Sous quel dirigeant d'Athènes le Parthénon a-t-il été construit (Ve siècle av. J.-C.) ?",
+      "time": 25,
+      "answers": [
+        {"text": "Solon", "correct": false},
+        {"text": "Alexandre le Grand", "correct": false},
+        {"text": "Périclès", "correct": true},
+        {"text": "Thémistocle", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment s'appelaient les deux consuls qui gouvernaient la République romaine ?",
+      "time": 25,
+      "answers": [
+        {"text": "Deux rois élus à vie", "correct": false},
+        {"text": "Deux magistrats élus pour un an, exerçant le pouvoir ensemble", "correct": true},
+        {"text": "Deux généraux permanents", "correct": false},
+        {"text": "Deux sénateurs nommés à vie", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce que le Sénat dans la Rome républicaine ?",
+      "time": 25,
+      "answers": [
+        {"text": "L'assemblée du peuple romain", "correct": false},
+        {"text": "L'armée permanente de Rome", "correct": false},
+        {"text": "L'assemblée des aristocrates (sénateurs) qui conseillaient le gouvernement", "correct": true},
+        {"text": "Le tribunal criminel", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Les gladiateurs romains étaient souvent des esclaves ou des prisonniers de guerre.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle langue parlée à Rome a donné naissance aux langues romanes (français, espagnol, italien) ?",
+      "time": 20,
+      "answers": [
+        {"text": "Le grec", "correct": false},
+        {"text": "L'hébreu", "correct": false},
+        {"text": "Le latin", "correct": true},
+        {"text": "L'araméen", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce que l'Édit de Milan de 313 ap. J.-C. ?",
+      "time": 30,
+      "answers": [
+        {"text": "Une loi expulsant les chrétiens de Rome", "correct": false},
+        {"text": "Un décret autorisant la liberté religieuse et mettant fin aux persécutions", "correct": true},
+        {"text": "La fondation de Constantinople", "correct": false},
+        {"text": "Un traité de paix entre Rome et la Perse", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le Colisée de Rome pouvait accueillir environ 50 000 spectateurs.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces empereurs romains dans l'ordre chronologique :",
+      "time": 40,
+      "answers": [
+        {"text": "Auguste (27 av. J.-C. - 14 ap. J.-C.)", "correct": true},
+        {"text": "Néron (54 - 68 ap. J.-C.)", "correct": true},
+        {"text": "Trajan (98 - 117 ap. J.-C.)", "correct": true},
+        {"text": "Constantin (306 - 337 ap. J.-C.)", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment s'appelle l'unité militaire de base de l'armée romaine (environ 5 000 soldats) ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Légion", "correct": true}
+      ],
+      "acceptedAnswers": ["légion", "legion", "la légion", "légion romaine"]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la date généralement retenue pour la chute de l'Empire romain d'Occident ?",
+      "time": 25,
+      "answers": [
+        {"text": "313 ap. J.-C.", "correct": false},
+        {"text": "380 ap. J.-C.", "correct": false},
+        {"text": "476 ap. J.-C.", "correct": true},
+        {"text": "800 ap. J.-C.", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'ont notamment apporté les Romains aux peuples conquis (romanisation) ?",
+      "time": 25,
+      "answers": [
+        {"text": "L'écriture cunéiforme et les pyramides", "correct": false},
+        {"text": "La langue latine, les lois, les routes et les aqueducs", "correct": true},
+        {"text": "La démocratie directe et les Jeux Olympiques", "correct": false},
+        {"text": "L'islam et le Coran", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment appelle-t-on les chrétiens qui ont subi la mort pour leur foi dans l'Empire romain ?",
+      "time": 25,
+      "answers": [
+        {"text": "Les apôtres", "correct": false},
+        {"text": "Les pèlerins", "correct": false},
+        {"text": "Les martyrs", "correct": true},
+        {"text": "Les évangélistes", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le lieu de culte des juifs ?",
+      "time": 20,
+      "answers": [
+        {"text": "L'église", "correct": false},
+        {"text": "La mosquée", "correct": false},
+        {"text": "La synagogue", "correct": true},
+        {"text": "Le temple bouddhiste", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Jésus était juif et a vécu dans la province romaine de Judée.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Que commémore la fête de Noël pour les chrétiens ?",
+      "time": 15,
+      "answers": [
+        {"text": "La résurrection de Jésus", "correct": false},
+        {"text": "La naissance de Jésus", "correct": true},
+        {"text": "La mort de Jésus", "correct": false},
+        {"text": "Le baptême de Jésus", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces événements religieux dans l'ordre chronologique :",
+      "time": 45,
+      "answers": [
+        {"text": "Abraham (origine du judaïsme, ~2000 av. J.-C.)", "correct": true},
+        {"text": "Moïse et l'Exode (~1300 av. J.-C.)", "correct": true},
+        {"text": "Naissance de Jésus (vers l'an 1 av./ap. J.-C.)", "correct": true},
+        {"text": "Édit de Milan : tolérance du christianisme (313 ap. J.-C.)", "correct": true}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La mosquée est le lieu de culte des chrétiens.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": false},
+        {"text": "Faux", "correct": true}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces événements de l'histoire romaine liés au christianisme :",
+      "time": 45,
+      "answers": [
+        {"text": "Crucifixion de Jésus (vers 30 ap. J.-C.)", "correct": true},
+        {"text": "Premières persécutions des chrétiens (sous Néron, 64 ap. J.-C.)", "correct": true},
+        {"text": "Édit de Milan : liberté religieuse (313 ap. J.-C.)", "correct": true},
+        {"text": "Christianisme religion officielle de Rome (380 ap. J.-C.)", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on les 10 règles morales fondamentales reçues par Moïse selon la tradition ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Dix commandements", "correct": true}
+      ],
+      "acceptedAnswers": ["dix commandements", "10 commandements", "les commandements", "décalogue", "decalogue"]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel apôtre de Jésus aurait été crucifié à Rome selon la tradition chrétienne ?",
+      "time": 25,
+      "answers": [
+        {"text": "Paul", "correct": false},
+        {"text": "Jean", "correct": false},
+        {"text": "Pierre (Simon-Pierre)", "correct": true},
+        {"text": "Thomas", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle ville est liée à la résurrection de Jésus et est sainte pour les chrétiens ?",
+      "time": 20,
+      "answers": [
+        {"text": "Bethléem", "correct": false},
+        {"text": "Rome", "correct": false},
+        {"text": "Jérusalem", "correct": true},
+        {"text": "Nazareth", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelles sont les trois grandes pyramides situées sur le plateau de Gizeh ?",
+      "time": 25,
+      "answers": [
+        {"text": "Ramses, Séthi, Thoutmosis", "correct": false},
+        {"text": "Khéops, Khéphren, Mykérinos", "correct": true},
+        {"text": "Anubis, Osiris, Rê", "correct": false},
+        {"text": "Memphis, Louxor, Karnak", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel peuple était l'ennemi principal des Grecs lors des guerres médiques (Ve siècle av. J.-C.) ?",
+      "time": 20,
+      "answers": [
+        {"text": "Les Romains", "correct": false},
+        {"text": "Les Carthaginois", "correct": false},
+        {"text": "Les Perses", "correct": true},
+        {"text": "Les Égyptiens", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Alexandre le Grand a bâti un empire qui s'étendait jusqu'en Inde.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel monument romain célèbre en France permettait d'alimenter la ville de Nîmes en eau ?",
+      "time": 25,
+      "answers": [
+        {"text": "Les Arènes de Nîmes", "correct": false},
+        {"text": "La Maison Carrée", "correct": false},
+        {"text": "Le Pont du Gard (aqueduc)", "correct": true},
+        {"text": "La Tour Magne", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle déesse grecque donnait son nom à la ville d'Athènes ?",
+      "time": 20,
+      "answers": [
+        {"text": "Artémis", "correct": false},
+        {"text": "Aphrodite", "correct": false},
+        {"text": "Athéna", "correct": true},
+        {"text": "Héra", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La ville de Carthage (Tunisie actuelle) était un grand rival commercial et militaire de Rome.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne les grandes civilisations de 6ème dans l'ordre chronologique d'apparition :",
+      "time": 45,
+      "answers": [
+        {"text": "Mésopotamie (Sumer, ~3500 av. J.-C.)", "correct": true},
+        {"text": "Égypte ancienne (premières dynasties, ~3100 av. J.-C.)", "correct": true},
+        {"text": "Grèce classique (Ve-IVe siècle av. J.-C.)", "correct": true},
+        {"text": "Rome (République puis Empire, 509 av. - 476 ap. J.-C.)", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on le type d'écriture utilisé en Égypte ancienne, composé de dessins et symboles ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Hiéroglyphes", "correct": true}
+      ],
+      "acceptedAnswers": ["hiéroglyphes", "hieroglyphes", "écriture hiéroglyphique", "hiéroglyphique"]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel Romain célèbre a dit « Veni, Vidi, Vici » (Je suis venu, j'ai vu, j'ai vaincu) ?",
+      "time": 20,
+      "answers": [
+        {"text": "Auguste", "correct": false},
+        {"text": "Cicéron", "correct": false},
+        {"text": "Jules César", "correct": true},
+        {"text": "Néron", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle grande épopée grecque raconte le voyage de retour d'Ulysse après la guerre de Troie ?",
+      "time": 20,
+      "answers": [
+        {"text": "L'Iliade", "correct": false},
+        {"text": "L'Odyssée", "correct": true},
+        {"text": "L'Énéide", "correct": false},
+        {"text": "Les Métamorphoses", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'un hiéroglyphe dans l'Égypte ancienne ?",
+      "time": 25,
+      "answers": [
+        {"text": "Un type de pyramide", "correct": false},
+        {"text": "Un signe de l'écriture sacrée égyptienne représentant un objet, un être ou un son", "correct": true},
+        {"text": "Un titre royal", "correct": false},
+        {"text": "Un instrument de musique", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle langue était parlée dans l'Empire romain d'Occident ?",
+      "time": 15,
+      "answers": [
+        {"text": "Le grec", "correct": false},
+        {"text": "Le gaulois", "correct": false},
+        {"text": "Le latin", "correct": true},
+        {"text": "L'hébreu", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'Acropole d'Athènes est classée au patrimoine mondial de l'UNESCO.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'une légion romaine ?",
+      "time": 25,
+      "answers": [
+        {"text": "Un tribunal romain", "correct": false},
+        {"text": "Une unité militaire de l'armée romaine (~5 000 à 6 000 soldats)", "correct": true},
+        {"text": "Un marché régional", "correct": false},
+        {"text": "Un navire de guerre", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle a été la grande influence de la civilisation grecque sur Rome ?",
+      "time": 25,
+      "answers": [
+        {"text": "Rome a adopté la démocratie directe athénienne", "correct": false},
+        {"text": "Rome a repris la mythologie, l'art, l'architecture et la philosophie grecs", "correct": true},
+        {"text": "Rome a imposé la langue grecque dans tout son empire", "correct": false},
+        {"text": "Rome a copié le régime militaire de Sparte", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La civilisation grecque a eu une grande influence sur la civilisation romaine.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces monuments antiques du plus ancien au plus récent :",
+      "time": 45,
+      "answers": [
+        {"text": "Pyramides de Gizeh (~2560 av. J.-C.)", "correct": true},
+        {"text": "Parthénon d'Athènes (~447 av. J.-C.)", "correct": true},
+        {"text": "Colisée de Rome (80 ap. J.-C.)", "correct": true},
+        {"text": "Arc de Constantin à Rome (315 ap. J.-C.)", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on un être humain réduit à l'état de propriété dans les sociétés antiques ?",
+      "time": 20,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Esclave", "correct": true}
+      ],
+      "acceptedAnswers": ["esclave", "les esclaves", "un esclave"]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans quelle région du monde l'écriture a-t-elle été inventée pour la première fois ?",
+      "time": 25,
+      "answers": [
+        {"text": "En Égypte, sur les bords du Nil", "correct": false},
+        {"text": "En Grèce, à Athènes", "correct": false},
+        {"text": "En Mésopotamie (actuel Irak), par les Sumériens", "correct": true},
+        {"text": "En Inde, dans la vallée de l'Indus", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle forme d'art de la Grèce antique a le plus influencé l'art occidental ?",
+      "time": 25,
+      "answers": [
+        {"text": "La peinture sur vase uniquement", "correct": false},
+        {"text": "La sculpture et l'architecture (colonnes, frontons, temples)", "correct": true},
+        {"text": "La musique et les instruments", "correct": false},
+        {"text": "La mosaïque de sol", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Combien de « merveilles du monde antique » comptait-on dans l'Antiquité ?",
+      "time": 20,
+      "answers": [
+        {"text": "5", "correct": false},
+        {"text": "6", "correct": false},
+        {"text": "7", "correct": true},
+        {"text": "10", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la plus ancienne forme d'écriture connue dans l'histoire ?",
+      "time": 25,
+      "answers": [
+        {"text": "Les hiéroglyphes égyptiens", "correct": false},
+        {"text": "L'alphabet grec", "correct": false},
+        {"text": "L'écriture cunéiforme sumérienne (~3500 av. J.-C.)", "correct": true},
+        {"text": "Les caractères chinois", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le Colisée de Rome était utilisé pour des courses de chars.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": false},
+        {"text": "Faux", "correct": true}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle découverte archéologique a permis à Champollion de déchiffrer les hiéroglyphes ?",
+      "time": 25,
+      "answers": [
+        {"text": "Un papyrus de Louxor", "correct": false},
+        {"text": "La Pierre de Rosette (même texte en 3 écritures)", "correct": true},
+        {"text": "Un dictionnaire égyptien-grec", "correct": false},
+        {"text": "Les murs du temple de Karnak", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces grandes batailles de l'Antiquité du plus ancien au plus récent :",
+      "time": 45,
+      "answers": [
+        {"text": "Bataille de Marathon (490 av. J.-C.)", "correct": true},
+        {"text": "Bataille de Salamine navale (480 av. J.-C.)", "correct": true},
+        {"text": "Conquête de la Gaule par César (58-51 av. J.-C.)", "correct": true},
+        {"text": "Bataille d'Actium - Auguste contre Antoine (31 av. J.-C.)", "correct": true}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le mot « démocratie » vient du grec ancien (demos = peuple, kratos = pouvoir).",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces empereurs romains dans l'ordre chronologique :",
+      "time": 40,
+      "answers": [
+        {"text": "Auguste (27 av. J.-C.)", "correct": true},
+        {"text": "Néron (54 ap. J.-C.)", "correct": true},
+        {"text": "Trajan (98 ap. J.-C.)", "correct": true},
+        {"text": "Constantin (306 ap. J.-C.)", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on la période historique qui précède l'invention de l'écriture ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Préhistoire", "correct": true}
+      ],
+      "acceptedAnswers": ["préhistoire", "prehistoire", "la préhistoire"]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel immense empire a dominé l'Égypte, la Perse, la Grèce et une partie de l'Inde au IVe siècle av. J.-C. ?",
+      "time": 25,
+      "answers": [
+        {"text": "L'Empire romain", "correct": false},
+        {"text": "L'Empire perse", "correct": false},
+        {"text": "L'Empire d'Alexandre le Grand (macédonien)", "correct": true},
+        {"text": "L'Empire babylonien", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle langue a donné naissance au français, à l'espagnol, à l'italien et au portugais ?",
+      "time": 20,
+      "answers": [
+        {"text": "Le grec ancien", "correct": false},
+        {"text": "Le gaulois", "correct": false},
+        {"text": "Le latin (langue des Romains)", "correct": true},
+        {"text": "L'hébreu", "correct": false}
+      ]
+    }
+  ]
+}

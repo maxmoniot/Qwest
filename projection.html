@@ -654,11 +654,18 @@
             </div>
         </div>
     </div>
-    
+
+    <!-- SYNCHRO v2 : la projection charge config.js + clockSync.js pour disposer de
+         l'horloge serveur synchronisée (QwestClock) et révéler les questions au même
+         instant absolu que les postes élèves. Reste autonome (mode secours) par ailleurs. -->
+    <script src="js/config.js?v=20260618e"></script>
+    <script src="js/clockSync.js?v=20260618e"></script>
     <script>
         // Récupérer les infos depuis l'URL
         const urlParams = new URLSearchParams(window.location.search);
         const playCode = urlParams.get('code');
+        // SYNCHRO v2 : démarrer la synchronisation d'horloge serveur (handshake + resync).
+        if (window.QwestClock) window.QwestClock.start();
         // totalQuestions sera mis à jour dynamiquement quand les données arrivent
         let totalQuestions = parseInt(urlParams.get('total')) || 0;
         
@@ -674,9 +681,223 @@
             top3Data: null,
             questions: [],
             lastScreenKey: null,
-            participants: []
+            participants: [],
+            revealTimer: null
         };
+
+        // Délais de révélation des questions, alignés sur l'horloge serveur, pour que le
+        // TABLEAU révèle la question EN MÊME TEMPS que les postes élèves (pas avant, ce qui
+        // donnait un avantage à ceux qui regardaient l'écran). Mêmes valeurs que config.js
+        // (la projection est autonome et ne charge pas config.js).
+        const PROJ_FIRST_COUNTDOWN_MS = 3500; // Q0 : même countdown 3-2-1 que les élèves
+        const PROJ_REVEAL_DELAY_MS = 1500;    // Q1+ : court, pour ne pas devancer les élèves
         
+        // Permet à control.js de pousser une mise à jour immédiate de la projection
+        // (après une action prof : start, next, pause, end…) sans attendre le poll
+        // périodique. Le fetch lui-même est dans control.js (updateProjectionWindow),
+        // donc on lui demande poliment de rafraîchir.
+        window.forceUpdate = function() {
+            try {
+                if (window.opener && typeof window.opener.updateProjectionWindow === 'function') {
+                    window.opener.updateProjectionWindow();
+                }
+            } catch (e) {
+                console.warn('📽️ PROJECTION: forceUpdate non disponible (opener fermé ?)', e);
+            }
+        };
+
+        // Visibility API : quand l'onglet projection redevient visible (l'enseignant
+        // y revient ou le projecteur sort de veille), on force une mise à jour pour
+        // rattraper toute évolution manquée pendant le throttling navigateur.
+        document.addEventListener('visibilitychange', function() {
+            if (document.visibilityState === 'visible') {
+                window.forceUpdate();
+            }
+        });
+        window.addEventListener('pageshow', function() { window.forceUpdate(); });
+
+        // HEARTBEAT vers le pilote (1 s). La projection est LA fenêtre toujours visible
+        // (affichée au TBI), donc ses timers ne sont jamais throttlés par le navigateur.
+        // Quand l'onglet pilote est caché (cas « un seul écran » : projection plein écran
+        // par-dessus), SES timers tombent à 1 tick/min — on a mesuré des passages auto à
+        // la question suivante retardés à 60 s pile, et la classe attendait sur le Top 3.
+        // Ce battement appelle window.opener.projectionHeartbeat() qui, côté pilote :
+        // tire l'avance auto en retard, relance le poll pilote (resync + réparation
+        // d'avance perdue) et rafraîchit la projection. Les appels inter-fenêtres ne sont
+        // PAS throttlés (seuls les timers le sont) — le fetch s'exécute normalement.
+        setInterval(function() {
+            try {
+                if (window.opener && !window.opener.closed &&
+                    typeof window.opener.projectionHeartbeat === 'function') {
+                    window.opener.projectionHeartbeat();
+                }
+            } catch (e) { /* opener fermé ou indisponible : silencieux */ }
+        }, 1000);
+
+        // ============================================================
+        // MODE SECOURS : projection AUTONOME si la fenêtre pilote meurt
+        // ============================================================
+        // Tant que le pilote (opener) vit, il pousse les données et reçoit le heartbeat
+        // ci-dessus. S'il est fermé ou planté, la projection prend le relais : elle
+        // interroge elle-même get_control_state (lecture publique), reconstruit l'écran,
+        // et assure le PILOTAGE MINIMAL — fin de question au timeout (+3 s) et avance
+        // auto en mode auto — grâce au teacher_hash relayé par le pilote à l'ouverture
+        // (conservé en sessionStorage : survit à un reload de la projection après la
+        // mort du pilote). La partie continue donc même si le poste prof tombe.
+        let relayHash = '';
+        try { relayHash = sessionStorage.getItem('qwest_relay_hash_' + playCode) || ''; } catch (e) {}
+        try {
+            if (!relayHash && window.opener && window.opener.CONFIG && window.opener.CONFIG.TEACHER_PASSWORD_HASH) {
+                relayHash = window.opener.CONFIG.TEACHER_PASSWORD_HASH;
+                sessionStorage.setItem('qwest_relay_hash_' + playCode, relayHash);
+            }
+        } catch (e) { /* opener déjà fermé */ }
+
+        const standalone = {
+            active: false,
+            completedForQ: -1,
+            completedSeenAt: 0,
+            lastForceTs: 0,
+            lastNextTs: 0,
+            lastCustomTime: null
+        };
+
+        function openerAlive() {
+            try {
+                return !!(window.opener && !window.opener.closed &&
+                          typeof window.opener.projectionHeartbeat === 'function');
+            } catch (e) { return false; }
+        }
+
+        async function standaloneTick() {
+            if (openerAlive()) {
+                if (standalone.active) {
+                    standalone.active = false;
+                    console.log('📽️ PROJECTION: pilote de retour — mode secours désactivé');
+                }
+                return;
+            }
+            if (!standalone.active) {
+                standalone.active = true;
+                console.warn('📽️ PROJECTION: pilote indisponible — MODE SECOURS activé (self-polling)');
+            }
+
+            let result;
+            try {
+                const res = await fetch('php/control.php?action=get_control_state&playCode=' + encodeURIComponent(playCode));
+                if (!res.ok) return;
+                result = await res.json();
+            } catch (e) { return; }
+            if (!result || !result.success) return;
+
+            standalone.lastCustomTime = (result.customTime !== undefined) ? result.customTime : null;
+
+            // — même machine à états que updateProjectionWindow (control.js) —
+            const stableSort = function(players) {
+                return players.slice().sort(function(a, b) {
+                    const d = (b.score || 0) - (a.score || 0);
+                    if (d !== 0) return d;
+                    return String(a.nickname || '').localeCompare(String(b.nickname || ''));
+                });
+            };
+            const data = {
+                playCode: playCode,
+                state: result.state,
+                currentQuestion: result.currentQuestion,
+                playersCount: (result.players || []).length,
+                participants: result.players || [],
+                manualMode: !!result.manualMode,
+                paused: result.paused || false,
+                screen: 'waiting',
+                questions: projectionState.questions,
+                totalQuestions: (projectionState.questions || []).length || totalQuestions
+            };
+            if (result.state === 'finished' || result.state === 'ended') {
+                data.screen = 'final';
+                data.allPlayers = result.ranking || stableSort(result.players || []);
+            } else if (result.questionCompleted || result.resultsAvailable) {
+                data.screen = 'ranking';
+                const ranked = result.ranking || stableSort(result.players || []);
+                data.allPlayers = ranked;
+                data.top3 = ranked.slice(0, 3);
+            } else if (result.state === 'playing' && result.currentQuestion >= 0) {
+                data.screen = 'question';
+                data.timeElapsed = (typeof result.timeElapsed === 'number') ? result.timeElapsed : 0;
+                data.questionTime = result.questionTime;
+                // SYNCHRO v2 : instant absolu d'apparition (ms serveur) pour la révélation
+                // alignée via l'horloge synchronisée (cf. revealQuestionAligned).
+                data.revealAt = (typeof result.questionRevealAt === 'number') ? result.questionRevealAt : 0;
+            }
+            try { window.updateProjection(data); } catch (e) { console.warn('📽️ secours: rendu', e); }
+
+            // — pilotage de relève (uniquement si le hash a pu être relayé) —
+            if (!relayHash || result.paused) return;
+
+            // 1) Fin de question au timeout (+3 s de grâce), 1 tentative max / 5 s.
+            //    force_question_complete est idempotente côté serveur.
+            if (result.state === 'playing' && result.currentQuestion >= 0 &&
+                !result.questionCompleted &&
+                typeof result.timeElapsed === 'number' && typeof result.questionTime === 'number' &&
+                (result.timeElapsed - result.questionTime) >= 3 &&
+                (Date.now() - standalone.lastForceTs) > 5000) {
+                standalone.lastForceTs = Date.now();
+                console.warn('📽️ PROJECTION (secours): force_question_complete Q' + result.currentQuestion);
+                fetch('php/control.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                    body: new URLSearchParams({
+                        action: 'force_question_complete',
+                        playCode: playCode,
+                        questionIndex: result.currentQuestion,
+                        teacher_hash: relayHash
+                    })
+                }).catch(function() {});
+            }
+
+            // 2) Avance auto 5 s après la complétion (mode auto uniquement). La cible est
+            //    « question serveur + 1 » : idempotent et monotone, aucun saut possible.
+            if (result.state === 'playing' && !result.manualMode && result.questionCompleted) {
+                if (standalone.completedForQ !== result.currentQuestion) {
+                    standalone.completedForQ = result.currentQuestion;
+                    standalone.completedSeenAt = Date.now();
+                } else if ((Date.now() - standalone.completedSeenAt) >= 5000 &&
+                           (Date.now() - standalone.lastNextTs) > 5000) {
+                    standalone.lastNextTs = Date.now();
+                    const totalQ = (projectionState.questions || []).length || totalQuestions;
+                    const target = result.currentQuestion + 1;
+                    if (totalQ > 0 && target >= totalQ) {
+                        console.warn('📽️ PROJECTION (secours): fin de partie (Q' + target + ' >= ' + totalQ + ')');
+                        fetch('php/control.php', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                            body: new URLSearchParams({
+                                action: 'end_game',
+                                playCode: playCode,
+                                teacher_hash: relayHash
+                            })
+                        }).catch(function() {});
+                    } else {
+                        const params = {
+                            action: 'next_question',
+                            playCode: playCode,
+                            questionIndex: target,
+                            teacher_hash: relayHash
+                        };
+                        if (standalone.lastCustomTime !== null && standalone.lastCustomTime !== undefined) {
+                            params.customTime = standalone.lastCustomTime;
+                        }
+                        console.warn('📽️ PROJECTION (secours): next_question → Q' + target);
+                        fetch('php/control.php', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                            body: new URLSearchParams(params)
+                        }).catch(function() {});
+                    }
+                }
+            }
+        }
+        setInterval(standaloneTick, 2500);
+
         // Fonctions de contrôle
         function projStartGame() {
             window.opener.startGame();
@@ -729,7 +950,10 @@
                     body: new URLSearchParams({
                         action: 'force_question_complete',
                         playCode: playCode,
-                        questionIndex: projectionState.currentQuestion
+                        questionIndex: projectionState.currentQuestion,
+                        // Auth prof requise (le hash est relayé par le pilote à l'ouverture).
+                        // Sans lui, ce bouton renvoyait HTTP 403 (vu dans les métriques).
+                        teacher_hash: (typeof relayHash !== 'undefined' ? relayHash : '')
                     })
                 });
                 
@@ -855,13 +1079,24 @@
             const screenKey = data.screen + '-' + (data.currentQuestion || 0);
             if (projectionState.lastScreenKey !== screenKey) {
                 projectionState.lastScreenKey = screenKey;
-                
+
+                // L'écran change → annuler une éventuelle révélation de question en
+                // attente (sinon un setTimeout tardif écraserait le classement/top3).
+                if (projectionState.revealTimer) {
+                    clearTimeout(projectionState.revealTimer);
+                    projectionState.revealTimer = null;
+                }
+                if (projectionState.countdownInterval) {
+                    clearInterval(projectionState.countdownInterval);
+                    projectionState.countdownInterval = null;
+                }
+
                 // Affichage selon le type
                 if (data.screen === 'question' && data.currentQuestion >= 0) {
                     const question = projectionState.questions[data.currentQuestion];
                     if (question) {
-                        console.log('📽️ PROJECTION: Rendu question', question);
-                        content.innerHTML = renderQuestion(question, data.currentQuestion, totalQuestions);
+                        console.log('📽️ PROJECTION: Rendu question (aligné)', question);
+                        revealQuestionAligned(question, data, totalQuestions);
                     }
                 } else if (data.screen === 'ranking' && data.allPlayers) {
                     // NOUVEAU : Affichage du classement général
@@ -883,6 +1118,86 @@
             }
         };
         
+        // Révèle la question au TABLEAU en synchronisation avec les postes élèves :
+        // compte à rebours aligné sur l'horloge serveur (questionStartTime + délai), puis
+        // affichage de la question + réponses au même instant que sur les téléphones.
+        // Supprime l'avantage « la question s'affiche d'abord au tableau ».
+        function revealQuestionAligned(question, data, total) {
+            if (projectionState.revealTimer) {
+                clearTimeout(projectionState.revealTimer);
+                projectionState.revealTimer = null;
+            }
+            const content = document.getElementById('proj-content');
+            // SYNCHRO v2 : on vise l'instant ABSOLU revealAt (ms serveur) via l'horloge
+            // synchronisée → le TABLEAU révèle EXACTEMENT au même instant que les postes
+            // élèves, au ms près. Repli (revealAt/horloge absents) : ancien calcul
+            // délai - tempsÉcoulé (secondes serveur).
+            let wait;
+            if (typeof data.revealAt === 'number' && data.revealAt > 0 && window.QwestClock && window.QwestClock.synced) {
+                wait = Math.max(0, Math.round(data.revealAt - window.QwestClock.now()));
+            } else {
+                const delay = (data.currentQuestion === 0) ? PROJ_FIRST_COUNTDOWN_MS : PROJ_REVEAL_DELAY_MS;
+                const elapsedMs = (typeof data.timeElapsed === 'number' ? data.timeElapsed : 0) * 1000;
+                wait = Math.max(0, delay - elapsedMs);
+            }
+
+            if (wait < 250) {
+                // Déjà l'heure (projection ouverte tard, ou délai écoulé) → affichage direct.
+                content.innerHTML = renderQuestion(question, data.currentQuestion, total);
+                return;
+            }
+            // Compte à rebours, puis révélation synchronisée.
+            renderProjectionCountdown(wait);
+            const qIndex = data.currentQuestion;
+            projectionState.revealTimer = setTimeout(function() {
+                projectionState.revealTimer = null;
+                const c = document.getElementById('proj-content');
+                if (c) c.innerHTML = renderQuestion(question, qIndex, total);
+            }, wait);
+        }
+
+        // Affiche un compte à rebours plein écran (3-2-1 → GO) jusqu'à la révélation.
+        function renderProjectionCountdown(waitMs) {
+            const content = document.getElementById('proj-content');
+            if (!content) return;
+            const startN = Math.max(1, Math.round((waitMs - 400) / 1000));
+            content.innerHTML = '<div class="projection-waiting"><h1>🎬 Préparez-vous…</h1>' +
+                '<div id="proj-countdown" style="font-size:120px;font-weight:800;margin-top:20px;">' + startN + '</div></div>';
+            let n = startN;
+            if (projectionState.countdownInterval) clearInterval(projectionState.countdownInterval);
+            projectionState.countdownInterval = setInterval(function() {
+                n--;
+                const el = document.getElementById('proj-countdown');
+                if (!el) { clearInterval(projectionState.countdownInterval); projectionState.countdownInterval = null; return; }
+                el.textContent = (n > 0) ? n : 'GO ! 🚀';
+                if (n <= 0) { clearInterval(projectionState.countdownInterval); projectionState.countdownInterval = null; }
+            }, 1000);
+        }
+
+        // Mélange DÉTERMINISTE des réponses pour la projection (graine = index de la
+        // question). Corrige le bug « la bonne réponse est toujours en premier » : les
+        // réponses étaient affichées dans l'ordre de stockage (bonne réponse en A).
+        // L'ordre reste STABLE pour une question donnée (pas de re-mélange à chaque
+        // rafraîchissement 1,5 s → aucun scintillement). Les élèves voient déjà chacun
+        // un ordre aléatoire propre (game.js) ; la projection doit juste ne pas trahir
+        // la réponse, un ordre fixe par question suffit.
+        function projectionShuffle(arr, seed) {
+            const a = (arr || []).slice();
+            let s = (seed * 2654435761) >>> 0;
+            if (s === 0) s = 1;
+            const rand = () => {
+                s ^= s << 13; s >>>= 0;
+                s ^= s >>> 17;
+                s ^= s << 5;  s >>>= 0;
+                return (s >>> 0) / 4294967296;
+            };
+            for (let i = a.length - 1; i > 0; i--) {
+                const j = Math.floor(rand() * (i + 1));
+                const tmp = a[i]; a[i] = a[j]; a[j] = tmp;
+            }
+            return a;
+        }
+
         function renderQuestion(question, index, total) {
             let answersHTML = '';
             let answersClass = 'grid-4';
@@ -892,8 +1207,9 @@
             }
             
             if (question.type === 'multiple' || question.type === 'truefalse') {
+                const shown = projectionShuffle(question.answers, index + 1);
                 answersHTML = '<div class="projection-answers ' + answersClass + '">';
-                question.answers.forEach((answer, i) => {
+                shown.forEach((answer, i) => {
                     answersHTML += '<div class="projection-answer">';
                     answersHTML += '<div class="projection-answer-label">' + String.fromCharCode(65 + i) + '</div>';
                     answersHTML += '<div>' + answer.text + '</div>';
@@ -901,11 +1217,15 @@
                 });
                 answersHTML += '</div>';
             } else if (question.type === 'order') {
+                // Mélangé aussi : afficher les éléments dans l'ordre de stockage révélait
+                // la bonne séquence. Puce neutre « • » au lieu d'un numéro pour ne pas
+                // suggérer un ordre.
+                const shown = projectionShuffle(question.answers, index + 101);
                 answersHTML = '<p class="projection-order-instruction">Remettre les éléments dans le bon ordre</p>';
                 answersHTML += '<div class="projection-answers">';
-                question.answers.forEach((answer, i) => {
+                shown.forEach((answer, i) => {
                     answersHTML += '<div class="projection-answer">';
-                    answersHTML += '<div class="projection-answer-label">' + (i + 1) + '</div>';
+                    answersHTML += '<div class="projection-answer-label">•</div>';
                     answersHTML += '<div>' + answer.text + '</div>';
                     answersHTML += '</div>';
                 });

@@ -1,0 +1,3390 @@
+{
+  "name": "6e_francais_150q",
+  "version": "1.0",
+  "createdAt": "2026-05-06T12:30:00.000Z",
+  "questionsCount": 150,
+  "questions": [
+    {
+      "type": "multiple",
+      "question": "La mythologie grecque raconte les aventures des dieux et des héros. Quel est le roi des dieux grecs ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Zeus",
+          "correct": true
+        },
+        {
+          "text": "Poséidon",
+          "correct": false
+        },
+        {
+          "text": "Hadès",
+          "correct": false
+        },
+        {
+          "text": "Apollon",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la mythologie grecque, Poséidon est le dieu de…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "La mer",
+          "correct": true
+        },
+        {
+          "text": "La guerre",
+          "correct": false
+        },
+        {
+          "text": "La sagesse",
+          "correct": false
+        },
+        {
+          "text": "Le soleil",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Hadès est le dieu grec qui règne sur…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Les Enfers (le monde des morts)",
+          "correct": true
+        },
+        {
+          "text": "Le ciel et les nuages",
+          "correct": false
+        },
+        {
+          "text": "La forêt et les animaux",
+          "correct": false
+        },
+        {
+          "text": "La mer et les océans",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Athéna est la déesse grecque de…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "La sagesse et de la guerre stratégique",
+          "correct": true
+        },
+        {
+          "text": "L'amour et de la beauté",
+          "correct": false
+        },
+        {
+          "text": "La chasse et de la lune",
+          "correct": false
+        },
+        {
+          "text": "La mer et des voyages",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Aphrodite est la déesse grecque de…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "L'amour et de la beauté",
+          "correct": true
+        },
+        {
+          "text": "La sagesse",
+          "correct": false
+        },
+        {
+          "text": "La guerre",
+          "correct": false
+        },
+        {
+          "text": "La chasse",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la mythologie grecque, les dieux habitent sur…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Le mont Olympe",
+          "correct": true
+        },
+        {
+          "text": "Le mont Blanc",
+          "correct": false
+        },
+        {
+          "text": "L'île de Crète",
+          "correct": false
+        },
+        {
+          "text": "Au fond de la mer",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Hercule (ou Héraclès) est un célèbre héros grec connu pour…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Ses douze travaux, des épreuves impossibles qu'il a réussies grâce à sa force",
+          "correct": true
+        },
+        {
+          "text": "Son long voyage en mer pour rentrer chez lui",
+          "correct": false
+        },
+        {
+          "text": "Avoir volé le feu aux dieux pour le donner aux hommes",
+          "correct": false
+        },
+        {
+          "text": "Avoir combattu dans la guerre de Troie",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Prométhée est un héros de la mythologie grecque célèbre pour avoir…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Volé le feu aux dieux pour le donner aux hommes",
+          "correct": true
+        },
+        {
+          "text": "Tué le Minotaure dans le labyrinthe",
+          "correct": false
+        },
+        {
+          "text": "Traversé les Enfers pour retrouver sa femme",
+          "correct": false
+        },
+        {
+          "text": "Accompli les douze travaux imposés par Héra",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Thésée est le héros grec qui a tué le Minotaure, un monstre mi-homme mi-taureau. Où vivait ce monstre ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Dans un labyrinthe, sur l'île de Crète",
+          "correct": true
+        },
+        {
+          "text": "Dans une caverne au sommet de l'Olympe",
+          "correct": false
+        },
+        {
+          "text": "Au fond de la mer Méditerranée",
+          "correct": false
+        },
+        {
+          "text": "Dans la forêt d'Athènes",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans la mythologie grecque, Icare s'est trop approché du soleil avec ses ailes de cire et a chuté dans la mer.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "L'Iliade et l'Odyssée sont deux grandes épopées de la mythologie grecque attribuées à…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Homère",
+          "correct": true
+        },
+        {
+          "text": "Virgile",
+          "correct": false
+        },
+        {
+          "text": "Ovide",
+          "correct": false
+        },
+        {
+          "text": "Sophocle",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "L'Iliade raconte…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La guerre de Troie entre les Grecs et les Troyens",
+          "correct": true
+        },
+        {
+          "text": "Le long voyage d'Ulysse pour rentrer chez lui",
+          "correct": false
+        },
+        {
+          "text": "Les aventures du héros Hercule",
+          "correct": false
+        },
+        {
+          "text": "La création du monde par les dieux grecs",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La guerre de Troie a éclaté à cause de… ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'enlèvement d'Hélène, la plus belle femme du monde, par le prince troyen Pâris",
+          "correct": true
+        },
+        {
+          "text": "Un vol de bétail entre deux rois grecs",
+          "correct": false
+        },
+        {
+          "text": "Une tempête envoyée par Poséidon",
+          "correct": false
+        },
+        {
+          "text": "Un concours de beauté remporté par un dieu",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le cheval de Troie est une ruse de guerre inventée par…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Ulysse",
+          "correct": true
+        },
+        {
+          "text": "Achille",
+          "correct": false
+        },
+        {
+          "text": "Agamemnon",
+          "correct": false
+        },
+        {
+          "text": "Hector",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "L'Odyssée raconte le voyage de retour d'Ulysse après la guerre de Troie. Combien d'années dure ce voyage ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "10 ans",
+          "correct": true
+        },
+        {
+          "text": "3 ans",
+          "correct": false
+        },
+        {
+          "text": "20 ans",
+          "correct": false
+        },
+        {
+          "text": "1 an",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans l'Odyssée, le Cyclope Polyphème est un géant qui n'a qu'un seul œil. Comment Ulysse s'échappe-t-il de sa grotte ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Il l'aveugle avec un pieu brûlant puis se cache sous les béliers",
+          "correct": true
+        },
+        {
+          "text": "Il l'endort avec une potion magique",
+          "correct": false
+        },
+        {
+          "text": "Il le tue avec son épée pendant son sommeil",
+          "correct": false
+        },
+        {
+          "text": "Il s'échappe par un tunnel creusé dans la roche",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Les Fables de La Fontaine s'inspirent souvent des fables d'un auteur grec antique. Comment s'appelle-t-il ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Ésope",
+          "correct": true
+        },
+        {
+          "text": "Homère",
+          "correct": false
+        },
+        {
+          "text": "Aristote",
+          "correct": false
+        },
+        {
+          "text": "Platon",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une fable, les personnages sont souvent des animaux qui représentent des…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Types humains avec des défauts ou des qualités (le rusé, le fort, le naïf…)",
+          "correct": true
+        },
+        {
+          "text": "Animaux réalistes décrits scientifiquement",
+          "correct": false
+        },
+        {
+          "text": "Dieux et héros de la mythologie",
+          "correct": false
+        },
+        {
+          "text": "Personnages historiques célèbres déguisés",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la fable « Le Corbeau et le Renard » de La Fontaine, le renard flatte le corbeau pour lui voler…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Son fromage",
+          "correct": true
+        },
+        {
+          "text": "Son nid",
+          "correct": false
+        },
+        {
+          "text": "Ses plumes",
+          "correct": false
+        },
+        {
+          "text": "Ses œufs",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La morale de « Le Corbeau et le Renard » enseigne que…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Tout flatteur vit aux dépens de celui qui l'écoute",
+          "correct": true
+        },
+        {
+          "text": "La ruse est toujours punie à la fin",
+          "correct": false
+        },
+        {
+          "text": "Les oiseaux sont plus intelligents que les renards",
+          "correct": false
+        },
+        {
+          "text": "Il ne faut jamais partager sa nourriture",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la fable « Le Lièvre et la Tortue », qui gagne la course ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "La tortue",
+          "correct": true
+        },
+        {
+          "text": "Le lièvre",
+          "correct": false
+        },
+        {
+          "text": "Ils arrivent en même temps",
+          "correct": false
+        },
+        {
+          "text": "Personne, la course est annulée",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La morale de « Le Lièvre et la Tortue » est…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Rien ne sert de courir, il faut partir à point",
+          "correct": true
+        },
+        {
+          "text": "La lenteur est toujours récompensée",
+          "correct": false
+        },
+        {
+          "text": "Mieux vaut être rapide qu'intelligent",
+          "correct": false
+        },
+        {
+          "text": "Ne jamais accepter un pari impossible",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Jean de La Fontaine est un auteur français du XVIIe siècle.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un texte, le verbe est le mot qui exprime…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Une action ou un état",
+          "correct": true
+        },
+        {
+          "text": "Le nom d'une personne ou d'une chose",
+          "correct": false
+        },
+        {
+          "text": "La qualité d'un nom",
+          "correct": false
+        },
+        {
+          "text": "Le lieu où se passe l'action",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la phrase « Le petit chat noir dort sur le canapé. », combien y a-t-il de noms ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "2 (chat et canapé)",
+          "correct": true
+        },
+        {
+          "text": "1 (chat seulement)",
+          "correct": false
+        },
+        {
+          "text": "3 (chat, noir et canapé)",
+          "correct": false
+        },
+        {
+          "text": "4 (le, chat, canapé, petit)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'un article défini ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un déterminant qui désigne quelque chose de précis et connu : le, la, les, l'",
+          "correct": true
+        },
+        {
+          "text": "Un déterminant qui désigne quelque chose d'indéfini : un, une, des",
+          "correct": false
+        },
+        {
+          "text": "Un déterminant qui indique la possession : mon, ma, mes",
+          "correct": false
+        },
+        {
+          "text": "Un déterminant qui indique la quantité : quelques, plusieurs",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Lequel de ces mots est un adjectif qualificatif ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Courageux",
+          "correct": true
+        },
+        {
+          "text": "Maison",
+          "correct": false
+        },
+        {
+          "text": "Courir",
+          "correct": false
+        },
+        {
+          "text": "Lentement",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la phrase « Il chante magnifiquement. », quel est le rôle du mot « magnifiquement » ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "C'est un adverbe qui précise comment il chante",
+          "correct": true
+        },
+        {
+          "text": "C'est un adjectif qui décrit le chanteur",
+          "correct": false
+        },
+        {
+          "text": "C'est un nom qui désigne quelque chose",
+          "correct": false
+        },
+        {
+          "text": "C'est le sujet du verbe",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la phrase « La sorcière prépare une potion. », quel est le sujet du verbe « prépare » ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "La sorcière",
+          "correct": true
+        },
+        {
+          "text": "Une potion",
+          "correct": false
+        },
+        {
+          "text": "Prépare",
+          "correct": false
+        },
+        {
+          "text": "La",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la phrase « Le héros tue le dragon. », quel est le COD du verbe « tue » ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Le dragon",
+          "correct": true
+        },
+        {
+          "text": "Le héros",
+          "correct": false
+        },
+        {
+          "text": "Tue",
+          "correct": false
+        },
+        {
+          "text": "Le",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pour trouver le COD d'un verbe, on pose la question…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Qui ? ou Quoi ? après le verbe",
+          "correct": true
+        },
+        {
+          "text": "Où ? après le verbe",
+          "correct": false
+        },
+        {
+          "text": "Comment ? après le verbe",
+          "correct": false
+        },
+        {
+          "text": "Pourquoi ? après le verbe",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le présent de l'indicatif du verbe « être » à la 1ère personne du singulier ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Je suis",
+          "correct": true
+        },
+        {
+          "text": "Je es",
+          "correct": false
+        },
+        {
+          "text": "Je sommes",
+          "correct": false
+        },
+        {
+          "text": "Je sait",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le présent de l'indicatif du verbe « avoir » à la 3ème personne du pluriel ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Ils ont",
+          "correct": true
+        },
+        {
+          "text": "Ils avons",
+          "correct": false
+        },
+        {
+          "text": "Ils avez",
+          "correct": false
+        },
+        {
+          "text": "Ils ont-ils",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le verbe « finir » appartient à quel groupe ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "2e groupe (verbes en -ir avec -issons au présent)",
+          "correct": true
+        },
+        {
+          "text": "1er groupe (verbes en -er)",
+          "correct": false
+        },
+        {
+          "text": "3e groupe (verbes irréguliers)",
+          "correct": false
+        },
+        {
+          "text": "Il n'appartient à aucun groupe",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Laquelle de ces formes est correctement conjuguée au présent du verbe « choisir » ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Nous choisissons",
+          "correct": true
+        },
+        {
+          "text": "Nous choisez",
+          "correct": false
+        },
+        {
+          "text": "Nous choisons",
+          "correct": false
+        },
+        {
+          "text": "Nous choisissez",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le futur simple du verbe « partir » à la 1ère personne du singulier est…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Je partirai",
+          "correct": true
+        },
+        {
+          "text": "Je partais",
+          "correct": false
+        },
+        {
+          "text": "Je pars",
+          "correct": false
+        },
+        {
+          "text": "Je suis parti",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "L'imparfait du verbe « jouer » à la 2ème personne du singulier est…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Tu jouais",
+          "correct": true
+        },
+        {
+          "text": "Tu joues",
+          "correct": false
+        },
+        {
+          "text": "Tu joueras",
+          "correct": false
+        },
+        {
+          "text": "Tu jouas",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Laquelle de ces phrases est au passé composé ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "« Elle a mangé une pomme. »",
+          "correct": true
+        },
+        {
+          "text": "« Elle mange une pomme. »",
+          "correct": false
+        },
+        {
+          "text": "« Elle mangeait une pomme. »",
+          "correct": false
+        },
+        {
+          "text": "« Elle mangera une pomme. »",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Une phrase affirmative devient négative avec…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Ne… pas autour du verbe",
+          "correct": true
+        },
+        {
+          "text": "Un point d'interrogation à la fin",
+          "correct": false
+        },
+        {
+          "text": "Le mot « jamais » uniquement",
+          "correct": false
+        },
+        {
+          "text": "Un point d'exclamation à la fin",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Laquelle de ces phrases est à la forme négative ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "« Il ne vient pas. »",
+          "correct": true
+        },
+        {
+          "text": "« Il vient ! »",
+          "correct": false
+        },
+        {
+          "text": "« Vient-il ? »",
+          "correct": false
+        },
+        {
+          "text": "« Il vient toujours. »",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Les quatre types de phrases sont : déclarative, interrogative, exclamative et…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Impérative",
+          "correct": true
+        },
+        {
+          "text": "Négative",
+          "correct": false
+        },
+        {
+          "text": "Descriptive",
+          "correct": false
+        },
+        {
+          "text": "Comparative",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "« Quel beau paysage ! » est une phrase de type…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Exclamative",
+          "correct": true
+        },
+        {
+          "text": "Interrogative",
+          "correct": false
+        },
+        {
+          "text": "Déclarative",
+          "correct": false
+        },
+        {
+          "text": "Impérative",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un récit comporte généralement un début, un milieu et une fin. Comment appelle-t-on le moment qui lance l'action et crée un problème ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'élément déclencheur (ou perturbateur)",
+          "correct": true
+        },
+        {
+          "text": "La situation finale",
+          "correct": false
+        },
+        {
+          "text": "La morale",
+          "correct": false
+        },
+        {
+          "text": "Le dénouement",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un texte, les mots « d'abord », « ensuite », « enfin » sont des…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Connecteurs de temps qui indiquent l'ordre des événements",
+          "correct": true
+        },
+        {
+          "text": "Adjectifs qui décrivent les personnages",
+          "correct": false
+        },
+        {
+          "text": "Verbes d'action conjugués",
+          "correct": false
+        },
+        {
+          "text": "Pronoms personnels sujets",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un texte narratif, les verbes d'action…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Font avancer l'histoire en racontant ce que font les personnages",
+          "correct": true
+        },
+        {
+          "text": "Décrivent l'apparence des personnages",
+          "correct": false
+        },
+        {
+          "text": "Donnent l'opinion de l'auteur",
+          "correct": false
+        },
+        {
+          "text": "Expriment les sentiments du lecteur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La ponctuation est importante dans un texte. Quel signe de ponctuation termine une question ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Le point d'interrogation ( ? )",
+          "correct": true
+        },
+        {
+          "text": "Le point ( . )",
+          "correct": false
+        },
+        {
+          "text": "Le point d'exclamation ( ! )",
+          "correct": false
+        },
+        {
+          "text": "Les points de suspension ( … )",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Remets ces parties d'une fable dans le bon ordre :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Titre de la fable",
+          "correct": true
+        },
+        {
+          "text": "Récit avec les personnages animaux",
+          "correct": true
+        },
+        {
+          "text": "Dialogue ou action principale",
+          "correct": true
+        },
+        {
+          "text": "Morale (leçon de la fable)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le mot « soleil » vient du latin « sol ». Il appartient à une famille de mots. Lequel de ces mots appartient à la même famille ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Ensoleillé",
+          "correct": true
+        },
+        {
+          "text": "Solide",
+          "correct": false
+        },
+        {
+          "text": "Solitaire",
+          "correct": false
+        },
+        {
+          "text": "Solution",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on le texte court, souvent en vers, qui raconte une histoire avec des animaux et se termine par une leçon de vie ?",
+      "time": 30,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "Fable",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "fable",
+        "une fable",
+        "la fable"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la mythologie grecque, Orphée était un musicien si talentueux qu'il descendit aux Enfers pour…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Ramener sa femme Eurydice à la vie",
+          "correct": true
+        },
+        {
+          "text": "Voler le trésor de Hadès",
+          "correct": false
+        },
+        {
+          "text": "Tuer le chien Cerbère à trois têtes",
+          "correct": false
+        },
+        {
+          "text": "Demander l'immortalité à Hadès",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la mythologie grecque, Arès est le dieu de…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "La guerre",
+          "correct": true
+        },
+        {
+          "text": "La mer",
+          "correct": false
+        },
+        {
+          "text": "La sagesse",
+          "correct": false
+        },
+        {
+          "text": "L'amour",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la mythologie grecque, Apollon est le dieu de…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "La musique, la poésie et le soleil",
+          "correct": true
+        },
+        {
+          "text": "La mer et les tempêtes",
+          "correct": false
+        },
+        {
+          "text": "La guerre et la stratégie",
+          "correct": false
+        },
+        {
+          "text": "Les Enfers et la mort",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Hermès est le dieu grec messager de l'Olympe. On le reconnaît à ses sandales ailées. Il est aussi le dieu des…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Voyageurs et des commerçants",
+          "correct": true
+        },
+        {
+          "text": "Marins et des pêcheurs",
+          "correct": false
+        },
+        {
+          "text": "Agriculteurs et des moissons",
+          "correct": false
+        },
+        {
+          "text": "Guerriers et des héros",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Déméter est la déesse grecque de…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "L'agriculture et des moissons",
+          "correct": true
+        },
+        {
+          "text": "La mer et des tempêtes",
+          "correct": false
+        },
+        {
+          "text": "La chasse et de la lune",
+          "correct": false
+        },
+        {
+          "text": "L'amour et de la beauté",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans la mythologie grecque, les dieux peuvent se transformer et prendre l'apparence d'animaux ou d'humains.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la mythologie grecque, un « demi-dieu » est un personnage qui…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "A un parent dieu et un parent humain (comme Hercule, fils de Zeus)",
+          "correct": true
+        },
+        {
+          "text": "Est un dieu qui a perdu ses pouvoirs",
+          "correct": false
+        },
+        {
+          "text": "Est un humain qui a volé les pouvoirs des dieux",
+          "correct": false
+        },
+        {
+          "text": "Est plus puissant que les dieux ordinaires",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la mythologie grecque, Méduse est un monstre célèbre car…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Quiconque la regarde dans les yeux est changé en pierre",
+          "correct": true
+        },
+        {
+          "text": "Elle peut cracher du feu et voler",
+          "correct": false
+        },
+        {
+          "text": "Elle a cent bras et cinquante têtes",
+          "correct": false
+        },
+        {
+          "text": "Elle peut devenir invisible à volonté",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel héros grec a tué Méduse en utilisant son bouclier comme miroir ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Persée",
+          "correct": true
+        },
+        {
+          "text": "Hercule",
+          "correct": false
+        },
+        {
+          "text": "Thésée",
+          "correct": false
+        },
+        {
+          "text": "Achille",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans l'Odyssée, la magicienne Circé transforme les compagnons d'Ulysse en…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Cochons",
+          "correct": true
+        },
+        {
+          "text": "Chevaux",
+          "correct": false
+        },
+        {
+          "text": "Pierres",
+          "correct": false
+        },
+        {
+          "text": "Oiseaux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans l'Odyssée, les Sirènes sont des créatures dangereuses car…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Leur chant envoûtant attire les marins vers les rochers pour les noyer",
+          "correct": true
+        },
+        {
+          "text": "Elles transforment les marins en poissons",
+          "correct": false
+        },
+        {
+          "text": "Elles volent la nourriture des bateaux",
+          "correct": false
+        },
+        {
+          "text": "Elles provoquent des tempêtes gigantesques",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la fable « La Cigale et la Fourmi », que fait la cigale pendant l'été ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Elle chante sans se préoccuper de l'hiver",
+          "correct": true
+        },
+        {
+          "text": "Elle stocke de la nourriture pour l'hiver",
+          "correct": false
+        },
+        {
+          "text": "Elle construit une maison solide",
+          "correct": false
+        },
+        {
+          "text": "Elle aide la fourmi dans ses tâches",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la fable « La Cigale et la Fourmi », que répond la fourmi à la cigale qui lui demande de la nourriture ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "« Vous chantiez ? J'en suis fort aise. Eh bien ! dansez maintenant. »",
+          "correct": true
+        },
+        {
+          "text": "« Prenez tout ce que vous voulez, nous partagerons. »",
+          "correct": false
+        },
+        {
+          "text": "« Revenez au printemps, je vous aiderai. »",
+          "correct": false
+        },
+        {
+          "text": "« Je n'ai rien à vous donner, je suis trop pauvre. »",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans les fables de La Fontaine, le personnage le plus fort ou le plus puissant gagne toujours.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la fable « Le Loup et l'Agneau », qui mange qui à la fin ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Le loup mange l'agneau malgré les bonnes raisons de l'agneau",
+          "correct": true
+        },
+        {
+          "text": "L'agneau s'échappe grâce à sa ruse",
+          "correct": false
+        },
+        {
+          "text": "Un berger sauve l'agneau au dernier moment",
+          "correct": false
+        },
+        {
+          "text": "Ils deviennent amis à la fin",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La morale de « Le Loup et l'Agneau » montre que…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La raison du plus fort est toujours la meilleure",
+          "correct": true
+        },
+        {
+          "text": "Les loups sont toujours méchants",
+          "correct": false
+        },
+        {
+          "text": "L'intelligence peut toujours battre la force",
+          "correct": false
+        },
+        {
+          "text": "Il ne faut jamais s'approcher d'un loup",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un récit, on appelle « narrateur » la voix qui raconte l'histoire. Quand le narrateur dit « je », on dit qu'il est…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un narrateur interne (il participe à l'histoire)",
+          "correct": true
+        },
+        {
+          "text": "Un narrateur externe (il observe de l'extérieur)",
+          "correct": false
+        },
+        {
+          "text": "Un narrateur omniscient (il sait tout)",
+          "correct": false
+        },
+        {
+          "text": "Un narrateur anonyme (on ne sait pas qui il est)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un texte, quand un personnage parle directement, ses paroles sont placées entre…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Guillemets (« »)",
+          "correct": true
+        },
+        {
+          "text": "Parenthèses ( )",
+          "correct": false
+        },
+        {
+          "text": "Crochets [ ]",
+          "correct": false
+        },
+        {
+          "text": "Astérisques *  *",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un dialogue écrit, chaque nouvelle prise de parole commence souvent par…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Un tiret ( — )",
+          "correct": true
+        },
+        {
+          "text": "Une majuscule sans ponctuation",
+          "correct": false
+        },
+        {
+          "text": "Un point-virgule",
+          "correct": false
+        },
+        {
+          "text": "Trois points de suspension",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un verbe introducteur de paroles (ou verbe de parole) est un verbe qui introduit les paroles d'un personnage. Lequel de ces verbes est un verbe de parole ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Répondre",
+          "correct": true
+        },
+        {
+          "text": "Courir",
+          "correct": false
+        },
+        {
+          "text": "Dormir",
+          "correct": false
+        },
+        {
+          "text": "Grandir",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la phrase « La fée dit : « Je t'accorde trois vœux. » », quel est le verbe introducteur ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Dit",
+          "correct": true
+        },
+        {
+          "text": "Accorde",
+          "correct": false
+        },
+        {
+          "text": "La fée",
+          "correct": false
+        },
+        {
+          "text": "Je",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un texte descriptif utilise souvent des adjectifs. À quoi servent les adjectifs dans une description ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "À préciser les caractéristiques des personnes, des lieux ou des objets",
+          "correct": true
+        },
+        {
+          "text": "À indiquer l'ordre des événements",
+          "correct": false
+        },
+        {
+          "text": "À remplacer les noms pour éviter les répétitions",
+          "correct": false
+        },
+        {
+          "text": "À exprimer les actions passées des personnages",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un texte narratif et un texte descriptif se ressemblent parfois. Quelle est leur principale différence ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le narratif raconte des événements, le descriptif présente des caractéristiques sans action",
+          "correct": true
+        },
+        {
+          "text": "Le narratif est toujours court, le descriptif est toujours long",
+          "correct": false
+        },
+        {
+          "text": "Le narratif est en vers, le descriptif est en prose",
+          "correct": false
+        },
+        {
+          "text": "Il n'y a aucune différence entre les deux types de textes",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Lequel de ces mots est un pronom personnel sujet ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Nous",
+          "correct": true
+        },
+        {
+          "text": "Grand",
+          "correct": false
+        },
+        {
+          "text": "Maison",
+          "correct": false
+        },
+        {
+          "text": "Courir",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans « Mon chien s'appelle Rex. », quel est le déterminant ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Mon (déterminant possessif)",
+          "correct": true
+        },
+        {
+          "text": "Chien (nom)",
+          "correct": false
+        },
+        {
+          "text": "Rex (nom propre)",
+          "correct": false
+        },
+        {
+          "text": "S'appelle (verbe)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Combien de genres grammaticaux y a-t-il en français ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "2 : masculin et féminin",
+          "correct": true
+        },
+        {
+          "text": "3 : masculin, féminin et neutre",
+          "correct": false
+        },
+        {
+          "text": "1 : tout est neutre",
+          "correct": false
+        },
+        {
+          "text": "4 : masculin, féminin, neutre et mixte",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pour mettre un nom au pluriel, on ajoute généralement…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Un « s » à la fin du mot",
+          "correct": true
+        },
+        {
+          "text": "Un « e » à la fin du mot",
+          "correct": false
+        },
+        {
+          "text": "Un « x » à la fin du mot",
+          "correct": false
+        },
+        {
+          "text": "Rien, le mot ne change pas",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Les noms en -eau font leur pluriel en -eaux. Lequel est correctement mis au pluriel ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Des gâteaux",
+          "correct": true
+        },
+        {
+          "text": "Des gâteaus",
+          "correct": false
+        },
+        {
+          "text": "Des gâteauxs",
+          "correct": false
+        },
+        {
+          "text": "Des gâteau",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "L'adjectif qualificatif s'accorde toujours avec…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Le nom qu'il accompagne (même genre et même nombre)",
+          "correct": true
+        },
+        {
+          "text": "Le verbe de la phrase",
+          "correct": false
+        },
+        {
+          "text": "Le sujet de la phrase uniquement",
+          "correct": false
+        },
+        {
+          "text": "Il ne s'accorde jamais, il est invariable",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Laquelle de ces phrases est correctement accordée ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "« Des fleurs blanches et parfumées. »",
+          "correct": true
+        },
+        {
+          "text": "« Des fleurs blanc et parfumé. »",
+          "correct": false
+        },
+        {
+          "text": "« Des fleurs blancs et parfumées. »",
+          "correct": false
+        },
+        {
+          "text": "« Des fleur blanche et parfumée. »",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le présent de l'indicatif du verbe « aller » à la 2ème personne du singulier est…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Tu vas",
+          "correct": true
+        },
+        {
+          "text": "Tu ales",
+          "correct": false
+        },
+        {
+          "text": "Tu allons",
+          "correct": false
+        },
+        {
+          "text": "Tu allez",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le présent du verbe « venir » à la 3ème personne du singulier est…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Il vient",
+          "correct": true
+        },
+        {
+          "text": "Il venir",
+          "correct": false
+        },
+        {
+          "text": "Il venons",
+          "correct": false
+        },
+        {
+          "text": "Il venait",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "L'imparfait est souvent utilisé pour décrire une scène dans le passé. Quelle terminaison caractérise l'imparfait à la 1ère personne du singulier ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "-ais (ex : je jouais, je mangeais)",
+          "correct": true
+        },
+        {
+          "text": "-ai (ex : je jouai, je mangeai)",
+          "correct": false
+        },
+        {
+          "text": "-erai (ex : je jouerai, je mangerai)",
+          "correct": false
+        },
+        {
+          "text": "-e (ex : je joue, je mange)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le passé composé du verbe « voir » à la 1ère personne du singulier est…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "J'ai vu",
+          "correct": true
+        },
+        {
+          "text": "J'ai vois",
+          "correct": false
+        },
+        {
+          "text": "Je suis vu",
+          "correct": false
+        },
+        {
+          "text": "J'avais vu",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le futur simple du verbe « être » à la 3ème personne du pluriel est…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Ils seront",
+          "correct": true
+        },
+        {
+          "text": "Ils sont",
+          "correct": false
+        },
+        {
+          "text": "Ils étaient",
+          "correct": false
+        },
+        {
+          "text": "Ils seraient",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans « Il ne mange jamais de légumes. », la négation utilisée est…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Ne… jamais",
+          "correct": true
+        },
+        {
+          "text": "Ne… pas",
+          "correct": false
+        },
+        {
+          "text": "Ne… plus",
+          "correct": false
+        },
+        {
+          "text": "Ne… rien",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un synonyme du mot « courageux » est…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Brave",
+          "correct": true
+        },
+        {
+          "text": "Peureux",
+          "correct": false
+        },
+        {
+          "text": "Triste",
+          "correct": false
+        },
+        {
+          "text": "Rapide",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un antonyme (contraire) du mot « petit » est…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Grand",
+          "correct": true
+        },
+        {
+          "text": "Mince",
+          "correct": false
+        },
+        {
+          "text": "Joli",
+          "correct": false
+        },
+        {
+          "text": "Doux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le mot « lumineux » appartient à la famille du mot…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Lumière",
+          "correct": true
+        },
+        {
+          "text": "Lune",
+          "correct": false
+        },
+        {
+          "text": "Lutte",
+          "correct": false
+        },
+        {
+          "text": "Luxe",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le mot « aquatique » vient du latin « aqua » qui signifie…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "L'eau",
+          "correct": true
+        },
+        {
+          "text": "Le feu",
+          "correct": false
+        },
+        {
+          "text": "La terre",
+          "correct": false
+        },
+        {
+          "text": "L'air",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le préfixe « super- » signifie…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Au-dessus de, très (ex : supermarché, superpuissant)",
+          "correct": true
+        },
+        {
+          "text": "En dessous de (ex : supérieur = en dessous)",
+          "correct": false
+        },
+        {
+          "text": "Contre (ex : supprimer = contre primer)",
+          "correct": false
+        },
+        {
+          "text": "Avant (ex : superman = homme d'avant)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la phrase « Le géant dévore les voyageurs. », quel est le sujet du verbe ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Le géant",
+          "correct": true
+        },
+        {
+          "text": "Les voyageurs",
+          "correct": false
+        },
+        {
+          "text": "Dévore",
+          "correct": false
+        },
+        {
+          "text": "Le",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la phrase « Les enfants adorent les histoires de monstres. », quel est le COD ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Les histoires de monstres",
+          "correct": true
+        },
+        {
+          "text": "Les enfants",
+          "correct": false
+        },
+        {
+          "text": "Adorent",
+          "correct": false
+        },
+        {
+          "text": "De monstres",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans « Elle habite à Lyon. », quel est le complément circonstanciel de lieu ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "À Lyon",
+          "correct": true
+        },
+        {
+          "text": "Elle",
+          "correct": false
+        },
+        {
+          "text": "Habite",
+          "correct": false
+        },
+        {
+          "text": "Lyon",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un « conte étiologique » est un conte qui explique…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'origine d'un phénomène naturel (pourquoi le ciel est bleu, pourquoi le feu existe…)",
+          "correct": true
+        },
+        {
+          "text": "Comment gagner une bataille",
+          "correct": false
+        },
+        {
+          "text": "La vie d'un personnage historique réel",
+          "correct": false
+        },
+        {
+          "text": "Les règles d'un jeu ancien",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le mythe de Pandore raconte que, lorsqu'elle ouvre une boîte interdite, elle libère tous les maux du monde. Qu'est-ce qui reste au fond de la boîte ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'espoir",
+          "correct": true
+        },
+        {
+          "text": "L'amour",
+          "correct": false
+        },
+        {
+          "text": "La sagesse",
+          "correct": false
+        },
+        {
+          "text": "La richesse",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans la mythologie grecque, les dieux sont immortels mais peuvent souffrir et ressentir des émotions.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Remets ces mots dans le bon ordre pour former une phrase correcte :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Le (déterminant)",
+          "correct": true
+        },
+        {
+          "text": "courageux (adjectif)",
+          "correct": true
+        },
+        {
+          "text": "chevalier (nom)",
+          "correct": true
+        },
+        {
+          "text": "combat (verbe)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La virgule dans une phrase sert à…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Séparer des éléments dans une liste ou marquer une courte pause",
+          "correct": true
+        },
+        {
+          "text": "Terminer une phrase déclarative",
+          "correct": false
+        },
+        {
+          "text": "Indiquer qu'un personnage parle",
+          "correct": false
+        },
+        {
+          "text": "Marquer la fin d'un paragraphe",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on le récit des exploits d'un héros de la mythologie grecque, comme Hercule ou Ulysse ?",
+      "time": 30,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "Mythe",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "mythe",
+        "un mythe",
+        "le mythe",
+        "mythologie",
+        "épopée",
+        "une épopée",
+        "légende",
+        "une légende"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la mythologie grecque, le Minotaure est un monstre avec le corps d'un homme et la tête d'un…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Taureau",
+          "correct": true
+        },
+        {
+          "text": "Lion",
+          "correct": false
+        },
+        {
+          "text": "Cheval",
+          "correct": false
+        },
+        {
+          "text": "Aigle",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la mythologie grecque, Artémis est la déesse de…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "La chasse et de la lune",
+          "correct": true
+        },
+        {
+          "text": "L'amour et de la beauté",
+          "correct": false
+        },
+        {
+          "text": "La sagesse et de la guerre",
+          "correct": false
+        },
+        {
+          "text": "La mer et des tempêtes",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la mythologie grecque, Héphaïstos est le dieu du feu et des…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Forgerons et artisans",
+          "correct": true
+        },
+        {
+          "text": "Poètes et musiciens",
+          "correct": false
+        },
+        {
+          "text": "Guerriers et soldats",
+          "correct": false
+        },
+        {
+          "text": "Marchands et voyageurs",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Poséidon se déplace sur la mer avec un chariot tiré par des chevaux. Son arme principale est…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Le trident",
+          "correct": true
+        },
+        {
+          "text": "La foudre",
+          "correct": false
+        },
+        {
+          "text": "Un arc et des flèches",
+          "correct": false
+        },
+        {
+          "text": "Un bouclier magique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Zeus se sert d'une arme redoutable pour punir les dieux et les humains. Laquelle ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "La foudre",
+          "correct": true
+        },
+        {
+          "text": "Le trident",
+          "correct": false
+        },
+        {
+          "text": "Un casque qui rend invisible",
+          "correct": false
+        },
+        {
+          "text": "Un arc d'or",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans la mythologie romaine, Jupiter est le nom donné au dieu grec Zeus.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le nom romain du dieu grec Poséidon ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Neptune",
+          "correct": true
+        },
+        {
+          "text": "Mars",
+          "correct": false
+        },
+        {
+          "text": "Mercure",
+          "correct": false
+        },
+        {
+          "text": "Vulcain",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la mythologie grecque, les Muses sont neuf déesses qui inspirent les…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Artistes : poètes, musiciens, danseurs…",
+          "correct": true
+        },
+        {
+          "text": "Guerriers avant les batailles",
+          "correct": false
+        },
+        {
+          "text": "Agriculteurs pendant les moissons",
+          "correct": false
+        },
+        {
+          "text": "Rois dans leur gouvernement",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la mythologie grecque, Pégase est un cheval ailé célèbre. De qui est-il né ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Du sang de Méduse quand Persée lui a coupé la tête",
+          "correct": true
+        },
+        {
+          "text": "De Zeus transformé en cheval blanc",
+          "correct": false
+        },
+        {
+          "text": "D'Artémis, déesse de la chasse",
+          "correct": false
+        },
+        {
+          "text": "De Poséidon, dieu de la mer",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Achille est le plus grand guerrier grec de la guerre de Troie. Quelle est son unique faiblesse ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Son talon, la seule partie de son corps que l'eau magique n'a pas rendue invulnérable",
+          "correct": true
+        },
+        {
+          "text": "Sa peur du feu",
+          "correct": false
+        },
+        {
+          "text": "Sa trop grande confiance en Ulysse",
+          "correct": false
+        },
+        {
+          "text": "Sa faiblesse face aux dieux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la mythologie grecque, le Sphinx était un monstre qui posait des énigmes aux voyageurs. Que faisait-il à ceux qui ne trouvaient pas la réponse ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Il les dévorait",
+          "correct": true
+        },
+        {
+          "text": "Il les transformait en animaux",
+          "correct": false
+        },
+        {
+          "text": "Il les transformait en pierre",
+          "correct": false
+        },
+        {
+          "text": "Il les envoyait aux Enfers",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la fable « Le Renard et la Cigogne », le renard sert un repas dans une assiette plate pour que la cigogne ne puisse pas manger avec son long bec. La cigogne se venge ensuite en servant son repas dans…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un vase à long col étroit, où le renard ne peut pas plonger son museau",
+          "correct": true
+        },
+        {
+          "text": "Un seau trop lourd pour le renard",
+          "correct": false
+        },
+        {
+          "text": "Un plat caché dans son nid inaccessible",
+          "correct": false
+        },
+        {
+          "text": "Une carapace de tortue hermétiquement fermée",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une fable, la « morale » est…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Une leçon de vie que l'auteur veut transmettre au lecteur",
+          "correct": true
+        },
+        {
+          "text": "Le titre de la fable",
+          "correct": false
+        },
+        {
+          "text": "La description physique du personnage principal",
+          "correct": false
+        },
+        {
+          "text": "Le dialogue entre deux animaux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Ésope était un auteur de fables de l'Antiquité grecque. Quelle est la particularité de sa vie selon la légende ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Il était esclave et difforme, mais très sage et plein d'esprit",
+          "correct": true
+        },
+        {
+          "text": "Il était un riche noble qui écrivait pour divertir le roi",
+          "correct": false
+        },
+        {
+          "text": "Il était un moine qui copiait des textes religieux",
+          "correct": false
+        },
+        {
+          "text": "Il était un médecin qui soignait avec des histoires",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un « récit fondateur » est un texte qui explique…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'origine du monde, d'un peuple ou d'une civilisation",
+          "correct": true
+        },
+        {
+          "text": "Comment construire un bâtiment solide",
+          "correct": false
+        },
+        {
+          "text": "La biographie d'un personnage célèbre",
+          "correct": false
+        },
+        {
+          "text": "Les règles d'un jeu traditionnel",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La Genèse (premier livre de la Bible) est un récit fondateur qui raconte…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La création du monde et des premiers humains (Adam et Ève)",
+          "correct": true
+        },
+        {
+          "text": "Les batailles des rois d'Israël",
+          "correct": false
+        },
+        {
+          "text": "La vie de Jésus-Christ",
+          "correct": false
+        },
+        {
+          "text": "Les lois données aux hommes par Dieu",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le mythe grec de la création du monde raconte que, au début, il n'y avait que le…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Chaos (le vide et le désordre total)",
+          "correct": true
+        },
+        {
+          "text": "L'Olympe habité par les dieux",
+          "correct": false
+        },
+        {
+          "text": "Une immense forêt peuplée de monstres",
+          "correct": false
+        },
+        {
+          "text": "Un océan infini calme et paisible",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un poème, on appelle « strophe » un groupe de…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vers séparés des autres groupes par une ligne blanche",
+          "correct": true
+        },
+        {
+          "text": "Mots qui riment entre eux",
+          "correct": false
+        },
+        {
+          "text": "Syllabes dans un seul vers",
+          "correct": false
+        },
+        {
+          "text": "Chapitres d'un long poème épique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Une strophe de 4 vers s'appelle un…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Quatrain",
+          "correct": true
+        },
+        {
+          "text": "Distique",
+          "correct": false
+        },
+        {
+          "text": "Tercet",
+          "correct": false
+        },
+        {
+          "text": "Sixain",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un poème, comment appelle-t-on chaque ligne écrite par le poète ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Un vers",
+          "correct": true
+        },
+        {
+          "text": "Une strophe",
+          "correct": false
+        },
+        {
+          "text": "Un refrain",
+          "correct": false
+        },
+        {
+          "text": "Une rime",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La comparaison est une figure de style. Dans « Elle court comme le vent », quel est l'élément comparé ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Elle (la personne qui court)",
+          "correct": true
+        },
+        {
+          "text": "Le vent",
+          "correct": false
+        },
+        {
+          "text": "Comme",
+          "correct": false
+        },
+        {
+          "text": "Court",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans « Elle court comme le vent », quel est l'élément comparant ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le vent",
+          "correct": true
+        },
+        {
+          "text": "Elle",
+          "correct": false
+        },
+        {
+          "text": "Court",
+          "correct": false
+        },
+        {
+          "text": "Comme",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La personnification consiste à donner à un animal, un objet ou un élément naturel des qualités…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Humaines (parler, penser, ressentir, agir comme un être humain)",
+          "correct": true
+        },
+        {
+          "text": "Divines (être immortel, omniscient)",
+          "correct": false
+        },
+        {
+          "text": "Animales (courir vite, voler, rugir)",
+          "correct": false
+        },
+        {
+          "text": "Magiques (se transformer, disparaître)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "« La lune se cache derrière les nuages. » Quelle figure de style est utilisée ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Personnification",
+          "correct": true
+        },
+        {
+          "text": "Comparaison",
+          "correct": false
+        },
+        {
+          "text": "Métaphore",
+          "correct": false
+        },
+        {
+          "text": "Hyperbole",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "« Il a une faim de loup. » Cette expression veut dire qu'il a…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Très faim",
+          "correct": true
+        },
+        {
+          "text": "Peur des loups",
+          "correct": false
+        },
+        {
+          "text": "Mangé du loup",
+          "correct": false
+        },
+        {
+          "text": "La même allure qu'un loup",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un nom commun s'écrit…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Avec une minuscule (ex : maison, chien, courage)",
+          "correct": true
+        },
+        {
+          "text": "Avec une majuscule (ex : Maison, Chien)",
+          "correct": false
+        },
+        {
+          "text": "Toujours en italique dans les textes",
+          "correct": false
+        },
+        {
+          "text": "Toujours avec un déterminant obligatoire",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Lequel de ces mots est un nom commun ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Forêt",
+          "correct": true
+        },
+        {
+          "text": "Hercule",
+          "correct": false
+        },
+        {
+          "text": "Athènes",
+          "correct": false
+        },
+        {
+          "text": "Méditerranée",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la phrase, le verbe s'accorde toujours avec…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Son sujet (même personne et même nombre)",
+          "correct": true
+        },
+        {
+          "text": "Le COD de la phrase",
+          "correct": false
+        },
+        {
+          "text": "Le dernier nom de la phrase",
+          "correct": false
+        },
+        {
+          "text": "Le premier mot de la phrase",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Laquelle de ces phrases contient une erreur d'accord sujet-verbe ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "« Les héros combat le monstre. »",
+          "correct": true
+        },
+        {
+          "text": "« Les héros combattent le monstre. »",
+          "correct": false
+        },
+        {
+          "text": "« Le héros combat le monstre. »",
+          "correct": false
+        },
+        {
+          "text": "« La héroïne combat le monstre. »",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Une préposition est un petit mot invariable qui relie des mots entre eux. Lequel est une préposition ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Avec",
+          "correct": true
+        },
+        {
+          "text": "Grand",
+          "correct": false
+        },
+        {
+          "text": "Courir",
+          "correct": false
+        },
+        {
+          "text": "Hier",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Une conjonction de coordination relie deux mots ou deux propositions. Lesquelles sont des conjonctions de coordination ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Mais, ou, et, donc, or, ni, car",
+          "correct": true
+        },
+        {
+          "text": "Avec, sur, dans, sous, entre",
+          "correct": false
+        },
+        {
+          "text": "Il, elle, nous, vous, ils",
+          "correct": false
+        },
+        {
+          "text": "Hier, demain, vite, bien, mal",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans « Elle mange, mais elle n'a pas faim. », quel est le rôle de « mais » ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Il exprime une opposition entre les deux parties de la phrase",
+          "correct": true
+        },
+        {
+          "text": "Il exprime la cause",
+          "correct": false
+        },
+        {
+          "text": "Il exprime la conséquence",
+          "correct": false
+        },
+        {
+          "text": "Il exprime une addition",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le présent du verbe « pouvoir » à la 1ère personne du singulier est…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Je peux",
+          "correct": true
+        },
+        {
+          "text": "Je poux",
+          "correct": false
+        },
+        {
+          "text": "Je pouvons",
+          "correct": false
+        },
+        {
+          "text": "Je pouvez",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le présent du verbe « prendre » à la 3ème personne du pluriel est…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Ils prennent",
+          "correct": true
+        },
+        {
+          "text": "Ils prenent",
+          "correct": false
+        },
+        {
+          "text": "Ils prends",
+          "correct": false
+        },
+        {
+          "text": "Ils prendons",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le passé composé du verbe « arriver » à la 3ème personne du singulier (féminin) est…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Elle est arrivée",
+          "correct": true
+        },
+        {
+          "text": "Elle a arrivée",
+          "correct": false
+        },
+        {
+          "text": "Elle est arrivé",
+          "correct": false
+        },
+        {
+          "text": "Elle a arrivé",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le futur simple du verbe « avoir » à la 2ème personne du singulier est…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Tu auras",
+          "correct": true
+        },
+        {
+          "text": "Tu avais",
+          "correct": false
+        },
+        {
+          "text": "Tu as",
+          "correct": false
+        },
+        {
+          "text": "Tu aurais",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "L'imparfait du verbe « être » à la 3ème personne du pluriel est…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Ils étaient",
+          "correct": true
+        },
+        {
+          "text": "Ils sont",
+          "correct": false
+        },
+        {
+          "text": "Ils seront",
+          "correct": false
+        },
+        {
+          "text": "Ils aient",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment appelle-t-on les mots « a » et « est » dans ces phrases : « Il a faim. » / « Il est grand. » ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Des auxiliaires (verbes être et avoir utilisés pour conjuguer)",
+          "correct": true
+        },
+        {
+          "text": "Des adverbes",
+          "correct": false
+        },
+        {
+          "text": "Des prépositions",
+          "correct": false
+        },
+        {
+          "text": "Des déterminants",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le mot « fleur » est féminin. Comment s'écrit l'article défini qui l'accompagne ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "La fleur",
+          "correct": true
+        },
+        {
+          "text": "Le fleur",
+          "correct": false
+        },
+        {
+          "text": "Les fleur",
+          "correct": false
+        },
+        {
+          "text": "Un fleur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pour trouver si un mot est masculin ou féminin, on peut essayer de le précéder de…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "« Un » ou « une » (ex : un arbre = masculin / une forêt = féminin)",
+          "correct": true
+        },
+        {
+          "text": "La couleur bleue ou rose",
+          "correct": false
+        },
+        {
+          "text": "Un chiffre (1 ou 2)",
+          "correct": false
+        },
+        {
+          "text": "Le mot « beau » ou « belle »",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le mot « tableau » au pluriel s'écrit…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Des tableaux",
+          "correct": true
+        },
+        {
+          "text": "Des tableaus",
+          "correct": false
+        },
+        {
+          "text": "Des tableau",
+          "correct": false
+        },
+        {
+          "text": "Des tableauxs",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le mot « pou » au pluriel s'écrit…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Des poux",
+          "correct": true
+        },
+        {
+          "text": "Des pous",
+          "correct": false
+        },
+        {
+          "text": "Des pouxs",
+          "correct": false
+        },
+        {
+          "text": "Des pous-x",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un mot de la famille de « terra » (terre en latin) est…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Terrestre",
+          "correct": true
+        },
+        {
+          "text": "Terrible",
+          "correct": false
+        },
+        {
+          "text": "Terrier (à l'origine : terrier = habitat d'animal)",
+          "correct": false
+        },
+        {
+          "text": "Terroriser",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le préfixe « anti- » signifie…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Contre (ex : antivirus = contre les virus)",
+          "correct": true
+        },
+        {
+          "text": "Avant (ex : anticiper = faire avant)",
+          "correct": false
+        },
+        {
+          "text": "Après (ex : antibiotique = après les bactéries)",
+          "correct": false
+        },
+        {
+          "text": "Beaucoup (ex : antique = très ancien)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un texte, le mot « cependant » exprime…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Une opposition ou une nuance (mais, pourtant)",
+          "correct": true
+        },
+        {
+          "text": "Une cause (parce que, car)",
+          "correct": false
+        },
+        {
+          "text": "Une addition (et, de plus)",
+          "correct": false
+        },
+        {
+          "text": "Une conséquence (donc, ainsi)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un texte, que signifie le mot « glouton » ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Quelqu'un qui mange trop et avec avidité",
+          "correct": true
+        },
+        {
+          "text": "Quelqu'un qui parle sans s'arrêter",
+          "correct": false
+        },
+        {
+          "text": "Quelqu'un qui court très vite",
+          "correct": false
+        },
+        {
+          "text": "Quelqu'un qui rit tout le temps",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans un texte narratif, le présent peut être utilisé pour raconter une histoire (on appelle cela le présent de narration).",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Remets dans l'ordre les différentes parties d'une histoire (schéma narratif simple) :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Situation initiale : tout va bien",
+          "correct": true
+        },
+        {
+          "text": "Élément déclencheur : un problème apparaît",
+          "correct": true
+        },
+        {
+          "text": "Aventures et actions des personnages",
+          "correct": true
+        },
+        {
+          "text": "Fin : le problème est résolu",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un texte, comment appelle-t-on un groupe de mots qui forment une unité de sens autour d'un nom ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un groupe nominal",
+          "correct": true
+        },
+        {
+          "text": "Un groupe verbal",
+          "correct": false
+        },
+        {
+          "text": "Une proposition indépendante",
+          "correct": false
+        },
+        {
+          "text": "Un complément circonstanciel",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on le dieu grec du soleil, de la musique et de la poésie, dont le nom est aussi celui d'un programme spatial américain ?",
+      "time": 30,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "Apollon",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "apollon",
+        "apollo",
+        "Apollon",
+        "Apollo"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la mythologie grecque, Cerbère est le chien à trois têtes qui garde l'entrée des…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Enfers (le royaume des morts)",
+          "correct": true
+        },
+        {
+          "text": "L'Olympe (le palais des dieux)",
+          "correct": false
+        },
+        {
+          "text": "La mer (le palais de Poséidon)",
+          "correct": false
+        },
+        {
+          "text": "La forêt sacrée d'Artémis",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

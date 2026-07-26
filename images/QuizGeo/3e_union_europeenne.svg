@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 450">
+  <rect width="700" height="450" fill="#f5f5f5"/>
+  <text x="350" y="25" font-size="16" font-weight="bold" text-anchor="middle">L'Union européenne (27 membres)</text>
+  <!-- Carte Europe simplifiée -->
+  <!-- Membres UE en bleu -->
+  <!-- Europe occidentale -->
+  <path d="M180 180 L220 160 L260 170 L280 210 L250 250 L200 240 Z" fill="#1565c0" stroke="#333" stroke-width="1"/>
+  <text x="230" y="210" font-size="8" fill="white">FR</text>
+  <path d="M270 150 L300 140 L320 170 L300 190 L270 180 Z" fill="#1565c0" stroke="#333"/>
+  <text x="290" y="170" font-size="7" fill="white">BE</text>
+  <path d="M300 140 L340 130 L360 160 L340 180 L310 170 Z" fill="#1565c0" stroke="#333"/>
+  <text x="330" y="160" font-size="7" fill="white">DE</text>
+  <path d="M360 160 L420 150 L440 200 L400 220 L370 190 Z" fill="#1565c0" stroke="#333"/>
+  <text x="400" y="185" font-size="7" fill="white">PL</text>
+  <path d="M280 220 L320 210 L340 260 L300 280 Z" fill="#1565c0" stroke="#333"/>
+  <text x="305" y="250" font-size="7" fill="white">IT</text>
+  <path d="M220 280 L270 270 L280 320 L240 340 L210 310 Z" fill="#1565c0" stroke="#333"/>
+  <text x="245" y="305" font-size="7" fill="white">ES</text>
+  <!-- Pays nordiques -->
+  <path d="M320 80 L350 70 L380 100 L360 130 L330 120 Z" fill="#1565c0" stroke="#333"/>
+  <text x="350" y="105" font-size="7" fill="white">DK</text>
+  <path d="M360 50 L400 40 L420 80 L390 100 L370 80 Z" fill="#1565c0" stroke="#333"/>
+  <text x="390" y="75" font-size="7" fill="white">SE</text>
+  <path d="M420 30 L470 40 L480 90 L440 80 L430 50 Z" fill="#1565c0" stroke="#333"/>
+  <text x="450" y="65" font-size="7" fill="white">FI</text>
+  <!-- Europe de l'Est -->
+  <path d="M440 200 L480 190 L500 240 L470 260 L450 230 Z" fill="#1565c0" stroke="#333"/>
+  <text x="465" y="225" font-size="7" fill="white">RO</text>
+  <path d="M450 260 L490 250 L510 300 L470 310 Z" fill="#1565c0" stroke="#333"/>
+  <text x="475" y="285" font-size="7" fill="white">BG</text>
+  <path d="M380 250 L420 240 L440 280 L400 290 Z" fill="#1565c0" stroke="#333"/>
+  <text x="405" y="270" font-size="7" fill="white">GR</text>
+  <!-- Non-membres (gris) -->
+  <path d="M160 120 L200 100 L230 130 L200 160 L170 150 Z" fill="#9e9e9e" stroke="#333"/>
+  <text x="195" y="135" font-size="7" fill="white">UK</text>
+  <path d="M500 150 L560 140 L580 200 L540 220 L510 190 Z" fill="#9e9e9e" stroke="#333"/>
+  <text x="540" y="180" font-size="7" fill="white">UA</text>
+  <path d="M340 280 L370 270 L380 300 L350 310 Z" fill="#9e9e9e" stroke="#333"/>
+  <text x="358" y="292" font-size="6" fill="white">CH</text>
+  <!-- Drapeau UE -->
+  <circle cx="600" cy="100" r="50" fill="#003399"/>
+  <g fill="#FFCC00">
+    <polygon points="600,55 603,65 613,65 605,72 608,82 600,76 592,82 595,72 587,65 597,65" transform="translate(0,-5)"/>
+    <polygon points="600,55 603,65 613,65 605,72 608,82 600,76 592,82 595,72 587,65 597,65" transform="rotate(30,600,100) translate(0,-5)"/>
+    <polygon points="600,55 603,65 613,65 605,72 608,82 600,76 592,82 595,72 587,65 597,65" transform="rotate(60,600,100) translate(0,-5)"/>
+    <polygon points="600,55 603,65 613,65 605,72 608,82 600,76 592,82 595,72 587,65 597,65" transform="rotate(90,600,100) translate(0,-5)"/>
+    <polygon points="600,55 603,65 613,65 605,72 608,82 600,76 592,82 595,72 587,65 597,65" transform="rotate(120,600,100) translate(0,-5)"/>
+    <polygon points="600,55 603,65 613,65 605,72 608,82 600,76 592,82 595,72 587,65 597,65" transform="rotate(150,600,100) translate(0,-5)"/>
+  </g>
+  <!-- Légende -->
+  <rect x="50" y="360" width="600" height="80" fill="white" stroke="#ddd" rx="5"/>
+  <rect x="70" y="380" width="20" height="15" fill="#1565c0"/>
+  <text x="95" y="392" font-size="11">États membres de l'UE (27)</text>
+  <rect x="280" y="380" width="20" height="15" fill="#9e9e9e"/>
+  <text x="305" y="392" font-size="11">Non-membres (Royaume-Uni, Suisse, Ukraine...)</text>
+  <text x="350" y="420" font-size="12" text-anchor="middle" fill="#333">En quelle année le Royaume-Uni a-t-il quitté l'UE (Brexit) ?</text>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 300">
+  <rect width="700" height="300" fill="#f5f5f5"/>
+  <text x="350" y="25" font-size="16" font-weight="bold" text-anchor="middle">Deux types d'espaces à identifier</text>
+  <!-- Espace A: Rural -->
+  <rect x="30" y="50" width="300" height="180" fill="#90EE90" stroke="#333" stroke-width="2"/>
+  <rect x="50" y="80" width="40" height="30" fill="#8B4513"/>
+  <polygon points="50,80 70,60 90,80" fill="#c0392b"/>
+  <rect x="200" y="100" width="80" height="60" fill="#F4D03F"/>
+  <ellipse cx="140" cy="150" rx="30" ry="20" fill="#27ae60"/>
+  <ellipse cx="250" cy="180" rx="25" ry="15" fill="#27ae60"/>
+  <!-- Vaches -->
+  <ellipse cx="100" cy="180" rx="12" ry="8" fill="white" stroke="#333"/>
+  <ellipse cx="130" cy="190" rx="12" ry="8" fill="white" stroke="#333"/>
+  <text x="180" y="250" font-size="20" text-anchor="middle" font-weight="bold" fill="#333">Espace A</text>
+  <!-- Espace B: Urbain -->
+  <rect x="370" y="50" width="300" height="180" fill="#bdc3c7" stroke="#333" stroke-width="2"/>
+  <rect x="390" y="100" width="40" height="80" fill="#34495e"/>
+  <rect x="440" y="80" width="50" height="100" fill="#2c3e50"/>
+  <rect x="500" y="90" width="45" height="90" fill="#34495e"/>
+  <rect x="555" y="110" width="35" height="70" fill="#2c3e50"/>
+  <rect x="600" y="70" width="55" height="110" fill="#34495e"/>
+  <!-- Fenêtres -->
+  <rect x="395" y="110" width="8" height="8" fill="#f1c40f"/>
+  <rect x="420" y="110" width="8" height="8" fill="#f1c40f"/>
+  <rect x="395" y="130" width="8" height="8" fill="#f1c40f"/>
+  <!-- Route -->
+  <rect x="370" y="180" width="300" height="20" fill="#7f8c8d"/>
+  <line x1="520" y1="185" x2="520" y2="195" stroke="white" stroke-width="2" stroke-dasharray="10,5"/>
+  <text x="520" y="250" font-size="20" text-anchor="middle" font-weight="bold" fill="#333">Espace B</text>
+  <!-- Question -->
+  <text x="350" y="285" font-size="13" text-anchor="middle" fill="#666">Lequel est l'espace rural ? Lequel est l'espace urbain ?</text>
+</svg>

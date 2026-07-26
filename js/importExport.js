@@ -231,13 +231,20 @@
             try {
                 const data = JSON.parse(e.target.result);
                 
-                // Valider le format
-                if (!data.questions || !Array.isArray(data.questions)) {
+                // Détecter le format et extraire les questions
+                let questions;
+                if (data.questions && Array.isArray(data.questions)) {
+                    // Format brut : questions à la racine
+                    questions = data.questions;
+                } else if (data.data && data.data.questions && Array.isArray(data.data.questions)) {
+                    // Format avec métadonnées : questions dans data.questions
+                    questions = data.data.questions;
+                } else {
                     throw new Error('Format invalide : questions manquantes');
                 }
                 
                 // Valider chaque question
-                data.questions.forEach((q, index) => {
+                questions.forEach((q, index) => {
                     if (!q.type || !q.question || !q.answers) {
                         throw new Error(`Question ${index + 1} invalide`);
                     }
@@ -254,7 +261,7 @@
                 });
                 
                 // Import réussi - charger les questions
-                APP_STATE.questions = data.questions.map(q => {
+                APP_STATE.questions = questions.map(q => {
                     const question = new Question(q.type);
                     question.question = q.question;
                     question.time = q.time;
@@ -283,7 +290,7 @@
                 renderQuestionsList();
                 updateHeaderButtons();
                 
-                showMessage('load-message', `✅ ${data.questions.length} question(s) importée(s) !`, 'success');
+                showMessage('load-message', `✅ ${questions.length} question(s) importée(s) !`, 'success');
                 
                 setTimeout(() => {
                     closeLoadQuizModal();

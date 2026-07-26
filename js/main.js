@@ -12,23 +12,37 @@
     
     function init() {
         console.log('🎯 Qwest - Initialisation...');
-        
+
         // Vérifier que tous les modules sont chargés
         if (!window.CONFIG) {
             console.error('❌ Module config.js non chargé');
             return;
         }
-        
-        // Afficher la page d'accueil
+
+        // Reconnexion auto : si une partie était en cours dans CET onglet (l'élève a
+        // rechargé / fait "retour" / pull-to-refresh), on le replace directement dans
+        // la partie au lieu de l'éjecter vers l'accueil. Sinon, accueil normal.
+        var hasSaved = false;
+        try { hasSaved = !!sessionStorage.getItem('qwest_active_session'); } catch (e) {}
+
+        if (hasSaved && typeof window.tryRejoinActiveSession === 'function') {
+            window.tryRejoinActiveSession()
+                .then(function(ok) { if (!ok) showHomePage(); })
+                .catch(function() { showHomePage(); });
+        } else {
+            showHomePage();
+        }
+
+        console.log('✅ Qwest initialisé');
+    }
+
+    function showHomePage() {
+        // Afficher la page d'accueil + focus sur le champ de code
         showPage('home-page');
-        
-        // Focus sur le champ de code
         const input = document.getElementById('quiz-code-input');
         if (input) {
             input.focus();
         }
-        
-        console.log('✅ Qwest initialisé');
     }
 
     // ========================================
@@ -73,10 +87,19 @@
     // ÉVÉNEMENTS
     // ========================================
     
-    window.addEventListener('load', function() {
+    // Init au plus tôt (DOMContentLoaded), PAS sur window 'load' : ce dernier attend
+    // toutes les ressources, dont le CDN qrcodejs — un CDN lent au collège retardait
+    // alors l'affichage de l'accueil et la reconnexion auto. Le CDN est désormais async,
+    // donc DOMContentLoaded n'attend que les scripts locaux.
+    function bootstrap() {
         init();
         handleResize();
-    });
+    }
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', bootstrap);
+    } else {
+        bootstrap();
+    }
 
     window.addEventListener('resize', handleResize);
 

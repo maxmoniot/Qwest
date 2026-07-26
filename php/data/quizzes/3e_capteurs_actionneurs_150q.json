@@ -1,0 +1,3240 @@
+{
+  "name": "3e_capteurs_actionneurs_150q",
+  "version": "1.0",
+  "createdAt": "2026-04-05T13:00:00.000Z",
+  "questionsCount": 150,
+  "questions": [
+    {
+      "type": "multiple",
+      "question": "Quelle définition correspond à une fonction technique ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Ce à quoi sert l'objet, exprimée par un verbe à l'infinitif",
+          "correct": true
+        },
+        {
+          "text": "La liste des matériaux utilisés pour fabriquer l'objet",
+          "correct": false
+        },
+        {
+          "text": "Le prix de fabrication de l'objet",
+          "correct": false
+        },
+        {
+          "text": "La marque et le modèle de l'objet",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce que la solution technique d'un objet ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Les éléments concrets qui permettent de réaliser la fonction technique",
+          "correct": true
+        },
+        {
+          "text": "La fonction à laquelle l'objet répond",
+          "correct": false
+        },
+        {
+          "text": "L'énergie consommée par l'objet",
+          "correct": false
+        },
+        {
+          "text": "Le nom de l'objet",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La fonction technique d'un objet doit toujours être exprimée avec un verbe à l'infinitif.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la fonction technique d'un thermomètre ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Mesurer la température",
+          "correct": true
+        },
+        {
+          "text": "Chauffer un fluide",
+          "correct": false
+        },
+        {
+          "text": "Afficher une image",
+          "correct": false
+        },
+        {
+          "text": "Convertir de l'énergie électrique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la définition d'un capteur ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Un composant qui mesure une grandeur physique",
+          "correct": true
+        },
+        {
+          "text": "Un composant qui convertit de l'énergie",
+          "correct": false
+        },
+        {
+          "text": "Un composant qui stocke de l'énergie",
+          "correct": false
+        },
+        {
+          "text": "Un composant qui distribue de l'énergie",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la définition d'un actionneur ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Un composant qui convertit de l'énergie",
+          "correct": true
+        },
+        {
+          "text": "Un composant qui mesure une grandeur physique",
+          "correct": false
+        },
+        {
+          "text": "Un composant qui traite l'information",
+          "correct": false
+        },
+        {
+          "text": "Un composant qui alimente le système",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Parmi ces composants, lequel est un capteur ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un détecteur de lumière (photorésistance)",
+          "correct": true
+        },
+        {
+          "text": "Un moteur électrique",
+          "correct": false
+        },
+        {
+          "text": "Une ampoule LED",
+          "correct": false
+        },
+        {
+          "text": "Un haut-parleur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Parmi ces composants, lequel est un actionneur ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un moteur électrique",
+          "correct": true
+        },
+        {
+          "text": "Un capteur de température",
+          "correct": false
+        },
+        {
+          "text": "Un microphone",
+          "correct": false
+        },
+        {
+          "text": "Un bouton poussoir",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un microphone est un actionneur car il transforme le son en signal électrique.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une voiture, le capteur qui mesure la vitesse du véhicule s'appelle :",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Un capteur de vitesse (ABS ou compteur)",
+          "correct": true
+        },
+        {
+          "text": "Un alternateur",
+          "correct": false
+        },
+        {
+          "text": "Un démarreur",
+          "correct": false
+        },
+        {
+          "text": "Un injecteur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Remets dans l'ordre les étapes de la chaîne de l'information :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Acquérir",
+          "correct": true
+        },
+        {
+          "text": "Traiter",
+          "correct": true
+        },
+        {
+          "text": "Communiquer",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Remets dans l'ordre les étapes de la chaîne de l'énergie :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Alimenter",
+          "correct": true
+        },
+        {
+          "text": "Distribuer",
+          "correct": true
+        },
+        {
+          "text": "Convertir",
+          "correct": true
+        },
+        {
+          "text": "Transmettre",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la chaîne de l'information, quel composant réalise l'étape 'Acquérir' ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Un capteur",
+          "correct": true
+        },
+        {
+          "text": "Un actionneur",
+          "correct": false
+        },
+        {
+          "text": "Un écran",
+          "correct": false
+        },
+        {
+          "text": "Un moteur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la chaîne de l'information, quel composant réalise l'étape 'Traiter' ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Un microcontrôleur ou un processeur",
+          "correct": true
+        },
+        {
+          "text": "Un capteur de température",
+          "correct": false
+        },
+        {
+          "text": "Un moteur électrique",
+          "correct": false
+        },
+        {
+          "text": "Une batterie",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la chaîne de l'information, l'étape 'Communiquer' peut être assurée par :",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Un écran, un haut-parleur ou une liaison Wi-Fi",
+          "correct": true
+        },
+        {
+          "text": "Un capteur de pression",
+          "correct": false
+        },
+        {
+          "text": "Une batterie rechargeable",
+          "correct": false
+        },
+        {
+          "text": "Un engrenage",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la chaîne de l'énergie, que réalise l'étape 'Alimenter' ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Fournir l'énergie nécessaire au système",
+          "correct": true
+        },
+        {
+          "text": "Transformer l'énergie en mouvement",
+          "correct": false
+        },
+        {
+          "text": "Répartir l'énergie vers les actionneurs",
+          "correct": false
+        },
+        {
+          "text": "Transmettre le mouvement à l'effecteur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la chaîne de l'énergie, que réalise l'étape 'Convertir' ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Transformer une forme d'énergie en une autre",
+          "correct": true
+        },
+        {
+          "text": "Stocker l'énergie pour plus tard",
+          "correct": false
+        },
+        {
+          "text": "Alimenter le système en énergie",
+          "correct": false
+        },
+        {
+          "text": "Répartir l'énergie vers les différents composants",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans la chaîne de l'énergie d'un aspirateur, le moteur électrique réalise l'étape 'Convertir'.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pour un vélo électrique, quelle est la solution technique pour l'étape 'Alimenter' de la chaîne de l'énergie ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Une batterie lithium-ion",
+          "correct": true
+        },
+        {
+          "text": "Un moteur brushless",
+          "correct": false
+        },
+        {
+          "text": "Un variateur de vitesse",
+          "correct": false
+        },
+        {
+          "text": "Un capteur de cadence",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pour un vélo électrique, quelle est la solution technique pour l'étape 'Convertir' de la chaîne de l'énergie ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Un moteur électrique (brushless)",
+          "correct": true
+        },
+        {
+          "text": "Une batterie lithium",
+          "correct": false
+        },
+        {
+          "text": "Le contrôleur électronique",
+          "correct": false
+        },
+        {
+          "text": "La transmission par courroie",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un smartphone, quel composant joue le rôle de capteur pour détecter l'orientation de l'écran ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Un accéléromètre / gyroscope",
+          "correct": true
+        },
+        {
+          "text": "Le processeur",
+          "correct": false
+        },
+        {
+          "text": "La batterie",
+          "correct": false
+        },
+        {
+          "text": "L'écran tactile",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un smartphone, quel composant est l'actionneur qui produit le son ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le haut-parleur",
+          "correct": true
+        },
+        {
+          "text": "Le microphone",
+          "correct": false
+        },
+        {
+          "text": "La caméra",
+          "correct": false
+        },
+        {
+          "text": "Le processeur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans un système technique, la chaîne de l'énergie et la chaîne de l'information sont totalement indépendantes et ne se croisent jamais.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un système de porte automatique, quel est le rôle du détecteur de présence ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Acquérir l'information de présence d'une personne",
+          "correct": true
+        },
+        {
+          "text": "Ouvrir mécaniquement la porte",
+          "correct": false
+        },
+        {
+          "text": "Alimenter le moteur en énergie",
+          "correct": false
+        },
+        {
+          "text": "Transmettre le mouvement à la porte",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un système de porte automatique, quel composant réalise l'étape 'Convertir' de la chaîne de l'énergie ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le moteur électrique",
+          "correct": true
+        },
+        {
+          "text": "Le détecteur infrarouge",
+          "correct": false
+        },
+        {
+          "text": "Le rail de guidage",
+          "correct": false
+        },
+        {
+          "text": "Le boîtier de commande",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un four à micro-ondes, quel composant est un capteur ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le capteur de température interne",
+          "correct": true
+        },
+        {
+          "text": "Le magnétron (générateur de micro-ondes)",
+          "correct": false
+        },
+        {
+          "text": "Le moteur du plateau tournant",
+          "correct": false
+        },
+        {
+          "text": "Le transformateur haute tension",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un four à micro-ondes, quel composant est un actionneur ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le moteur du plateau tournant",
+          "correct": true
+        },
+        {
+          "text": "Le capteur de température",
+          "correct": false
+        },
+        {
+          "text": "Le panneau de commande",
+          "correct": false
+        },
+        {
+          "text": "Le fusible",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Lors de l'analyse d'un système technique, à quoi correspond l'étape 'Distribuer' dans la chaîne de l'énergie ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Répartir et commander l'énergie vers les actionneurs",
+          "correct": true
+        },
+        {
+          "text": "Produire l'énergie utilisée par le système",
+          "correct": false
+        },
+        {
+          "text": "Transformer l'énergie en mouvement utile",
+          "correct": false
+        },
+        {
+          "text": "Transmettre le mouvement à l'effecteur final",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pour une voiture, quelle est la solution technique pour l'étape 'Distribuer' de la chaîne de l'énergie ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "La boîte de vitesses",
+          "correct": true
+        },
+        {
+          "text": "Le réservoir d'essence",
+          "correct": false
+        },
+        {
+          "text": "Le moteur à combustion",
+          "correct": false
+        },
+        {
+          "text": "Les roues",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pour une voiture, quelle est la solution technique pour l'étape 'Transmettre' de la chaîne de l'énergie ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "L'arbre de transmission et les roues",
+          "correct": true
+        },
+        {
+          "text": "Le moteur thermique",
+          "correct": false
+        },
+        {
+          "text": "Le réservoir de carburant",
+          "correct": false
+        },
+        {
+          "text": "L'alternateur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un panneau solaire photovoltaïque est un capteur d'énergie lumineuse ET un composant de la chaîne de l'énergie.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un système de climatisation, quel est le rôle du thermostat ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Mesurer la température (acquérir) et la comparer à la consigne (traiter)",
+          "correct": true
+        },
+        {
+          "text": "Souffler l'air froid dans la pièce",
+          "correct": false
+        },
+        {
+          "text": "Comprimer le fluide frigorigène",
+          "correct": false
+        },
+        {
+          "text": "Alimenter le compresseur en énergie",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un système d'alarme incendie, le détecteur de fumée est placé dans quelle partie de la chaîne de l'information ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Acquérir",
+          "correct": true
+        },
+        {
+          "text": "Traiter",
+          "correct": false
+        },
+        {
+          "text": "Communiquer",
+          "correct": false
+        },
+        {
+          "text": "Alimenter",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un système d'alarme incendie, la sirène est placée dans quelle partie du système ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Dans la chaîne de l'énergie (étape convertir) et dans la chaîne de l'information (communiquer)",
+          "correct": true
+        },
+        {
+          "text": "Dans la chaîne de l'information, étape acquérir uniquement",
+          "correct": false
+        },
+        {
+          "text": "Dans la chaîne de l'énergie, étape alimenter uniquement",
+          "correct": false
+        },
+        {
+          "text": "Dans la chaîne de l'information, étape traiter uniquement",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle grandeur physique mesure un capteur de pression ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La pression d'un gaz ou d'un liquide",
+          "correct": true
+        },
+        {
+          "text": "La température d'un milieu",
+          "correct": false
+        },
+        {
+          "text": "La luminosité ambiante",
+          "correct": false
+        },
+        {
+          "text": "La vitesse de rotation d'un axe",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on le composant qui mesure une grandeur physique dans un système automatisé ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "Capteur",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "capteur",
+        "un capteur",
+        "le capteur"
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on le composant qui convertit de l'énergie pour produire une action dans un système ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "Actionneur",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "actionneur",
+        "un actionneur",
+        "l'actionneur"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un moteur électrique d'essuie-glace convertit :",
+      "time": 30,
+      "answers": [
+        {
+          "text": "De l'énergie électrique en énergie mécanique",
+          "correct": true
+        },
+        {
+          "text": "De l'énergie mécanique en énergie électrique",
+          "correct": false
+        },
+        {
+          "text": "De l'énergie thermique en énergie mécanique",
+          "correct": false
+        },
+        {
+          "text": "De l'énergie lumineuse en énergie mécanique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un panneau photovoltaïque convertit :",
+      "time": 25,
+      "answers": [
+        {
+          "text": "De l'énergie lumineuse en énergie électrique",
+          "correct": true
+        },
+        {
+          "text": "De l'énergie électrique en chaleur",
+          "correct": false
+        },
+        {
+          "text": "De l'énergie mécanique en énergie lumineuse",
+          "correct": false
+        },
+        {
+          "text": "De l'énergie chimique en énergie électrique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un robot aspirateur, quel composant réalise l'étape 'Traiter' de la chaîne de l'information ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le microcontrôleur (carte électronique centrale)",
+          "correct": true
+        },
+        {
+          "text": "Les capteurs de proximité",
+          "correct": false
+        },
+        {
+          "text": "Les moteurs des roues",
+          "correct": false
+        },
+        {
+          "text": "La batterie rechargeable",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un robot aspirateur, quel est le rôle du capteur de proximité infrarouge ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Détecter les obstacles et acquérir cette information",
+          "correct": true
+        },
+        {
+          "text": "Aspirer les poussières",
+          "correct": false
+        },
+        {
+          "text": "Recharger la batterie",
+          "correct": false
+        },
+        {
+          "text": "Transmettre les données au smartphone",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans la chaîne de l'énergie, l'étape 'Transmettre' vient toujours avant l'étape 'Convertir'.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un encodeur optique sur un moteur est un exemple de :",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Capteur (il mesure la vitesse de rotation)",
+          "correct": true
+        },
+        {
+          "text": "Actionneur (il fait tourner le moteur)",
+          "correct": false
+        },
+        {
+          "text": "Distributeur (il répartit l'énergie)",
+          "correct": false
+        },
+        {
+          "text": "Transmetteur mécanique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une imprimante 3D, quel composant réalise l'étape 'Convertir' pour le mouvement de la tête d'impression ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Un moteur pas à pas",
+          "correct": true
+        },
+        {
+          "text": "Le capteur de fin de course",
+          "correct": false
+        },
+        {
+          "text": "La carte mère de l'imprimante",
+          "correct": false
+        },
+        {
+          "text": "L'alimentation électrique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une imprimante 3D, quel composant est un capteur de la chaîne de l'information ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le capteur de fin de course (fin de course mécanique ou optique)",
+          "correct": true
+        },
+        {
+          "text": "Le moteur pas à pas",
+          "correct": false
+        },
+        {
+          "text": "La résistance chauffante (hotend)",
+          "correct": false
+        },
+        {
+          "text": "La courroie de transmission",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pour un système d'arrosage automatique de jardin, quelle est la solution technique pour l'étape 'Acquérir' de la chaîne de l'information ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Un capteur d'humidité du sol",
+          "correct": true
+        },
+        {
+          "text": "Une électrovanne",
+          "correct": false
+        },
+        {
+          "text": "Une pompe à eau",
+          "correct": false
+        },
+        {
+          "text": "Un programmateur électronique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pour un système d'arrosage automatique de jardin, quel est l'actionneur qui produit l'action finale ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "L'électrovanne (ouvre/ferme le circuit d'eau)",
+          "correct": true
+        },
+        {
+          "text": "Le capteur d'humidité",
+          "correct": false
+        },
+        {
+          "text": "Le programmateur",
+          "correct": false
+        },
+        {
+          "text": "Le tuyau d'arrosage",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle grandeur physique mesure un anémomètre ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La vitesse du vent",
+          "correct": true
+        },
+        {
+          "text": "La pression atmosphérique",
+          "correct": false
+        },
+        {
+          "text": "L'humidité de l'air",
+          "correct": false
+        },
+        {
+          "text": "La quantité de pluie",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une station météo automatique, la girouette connectée est :",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un capteur (elle mesure la direction du vent)",
+          "correct": true
+        },
+        {
+          "text": "Un actionneur (elle oriente les éoliennes)",
+          "correct": false
+        },
+        {
+          "text": "Un distributeur d'énergie",
+          "correct": false
+        },
+        {
+          "text": "Un transmetteur mécanique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Pour un système de régulation de température (ex: chauffage central), remets les étapes de la chaîne de l'information dans l'ordre :",
+      "time": 40,
+      "answers": [
+        {
+          "text": "La sonde de température mesure la chaleur de la pièce",
+          "correct": true
+        },
+        {
+          "text": "Le thermostat compare la mesure à la consigne",
+          "correct": true
+        },
+        {
+          "text": "L'ordre est envoyé à la chaudière",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un lave-linge, quel composant est un capteur ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le pressostat (capteur de niveau d'eau)",
+          "correct": true
+        },
+        {
+          "text": "Le moteur du tambour",
+          "correct": false
+        },
+        {
+          "text": "La résistance chauffante",
+          "correct": false
+        },
+        {
+          "text": "La pompe de vidange",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un lave-linge, quel composant est un actionneur ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La pompe de vidange",
+          "correct": true
+        },
+        {
+          "text": "Le pressostat",
+          "correct": false
+        },
+        {
+          "text": "La carte électronique de commande",
+          "correct": false
+        },
+        {
+          "text": "Le sélecteur de programme",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un distributeur automatique de boissons, quel composant assure l'étape 'Acquérir' de la chaîne de l'information ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le lecteur de monnaie ou de carte bancaire",
+          "correct": true
+        },
+        {
+          "text": "Le moteur qui pousse la canette",
+          "correct": false
+        },
+        {
+          "text": "L'écran d'affichage",
+          "correct": false
+        },
+        {
+          "text": "Le compresseur du circuit de refroidissement",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un distributeur automatique de boissons, quel composant assure l'étape 'Communiquer' de la chaîne de l'information ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "L'écran d'affichage et les voyants lumineux",
+          "correct": true
+        },
+        {
+          "text": "Le moteur de distribution",
+          "correct": false
+        },
+        {
+          "text": "Le capteur de température interne",
+          "correct": false
+        },
+        {
+          "text": "Le compresseur frigorifique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Une résistance chauffante électrique est un actionneur car elle convertit de l'énergie électrique en énergie thermique.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un ascenseur, quelle est la solution technique pour l'étape 'Alimenter' de la chaîne de l'énergie ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le réseau électrique (prise sur le secteur)",
+          "correct": true
+        },
+        {
+          "text": "Le moteur de traction",
+          "correct": false
+        },
+        {
+          "text": "Le variateur de vitesse",
+          "correct": false
+        },
+        {
+          "text": "Le câble de traction",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un ascenseur, quelle est la solution technique pour l'étape 'Transmettre' de la chaîne de l'énergie ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le câble d'acier et la poulie",
+          "correct": true
+        },
+        {
+          "text": "Le moteur électrique",
+          "correct": false
+        },
+        {
+          "text": "Le variateur de vitesse",
+          "correct": false
+        },
+        {
+          "text": "Le tableau de commande",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un ascenseur, quel composant est un capteur permettant d'arrêter la cabine au bon étage ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Un capteur de position (fin de course ou inductif)",
+          "correct": true
+        },
+        {
+          "text": "Le moteur de traction",
+          "correct": false
+        },
+        {
+          "text": "Le variateur de fréquence",
+          "correct": false
+        },
+        {
+          "text": "Le frein électromagnétique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans la chaîne de l'énergie, le composant qui réalise l'étape 'Distribuer' est toujours un capteur.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un véhicule hybride, quel composant réalise à la fois l'étape 'Convertir' et peut aussi recharger la batterie ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Le moteur électrique (fonctionnant aussi en générateur au freinage)",
+          "correct": true
+        },
+        {
+          "text": "Le capteur de vitesse",
+          "correct": false
+        },
+        {
+          "text": "La boîte de vitesses automatique",
+          "correct": false
+        },
+        {
+          "text": "Le capteur de position de la pédale de frein",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un drone, quelle est la solution technique pour l'étape 'Convertir' de la chaîne de l'énergie ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Les moteurs brushless qui font tourner les hélices",
+          "correct": true
+        },
+        {
+          "text": "La batterie LiPo",
+          "correct": false
+        },
+        {
+          "text": "Le contrôleur de vol (flight controller)",
+          "correct": false
+        },
+        {
+          "text": "Le récepteur radio",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un drone, quel composant est un capteur indispensable à la stabilisation en vol ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "La centrale inertielle (accéléromètre + gyroscope)",
+          "correct": true
+        },
+        {
+          "text": "Les moteurs brushless",
+          "correct": false
+        },
+        {
+          "text": "Les hélices en carbone",
+          "correct": false
+        },
+        {
+          "text": "La batterie LiPo",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un système de freinage ABS, quel rôle jouent les capteurs de vitesse de roue ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Acquérir la vitesse de chaque roue pour détecter un blocage",
+          "correct": true
+        },
+        {
+          "text": "Actionner les étriers de frein",
+          "correct": false
+        },
+        {
+          "text": "Alimenter le système hydraulique en pression",
+          "correct": false
+        },
+        {
+          "text": "Transmettre l'effort de freinage aux roues",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un système de freinage ABS, quel est l'actionneur qui agit directement sur le freinage ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le modulateur hydraulique (électrovanne)",
+          "correct": true
+        },
+        {
+          "text": "Le capteur de vitesse de roue",
+          "correct": false
+        },
+        {
+          "text": "Le calculateur ABS",
+          "correct": false
+        },
+        {
+          "text": "Le pédalier de frein",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un LED est un actionneur car il convertit de l'énergie électrique en énergie lumineuse.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel type d'énergie un moteur thermique (essence) convertit-il en énergie mécanique ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "De l'énergie chimique (carburant)",
+          "correct": true
+        },
+        {
+          "text": "De l'énergie électrique",
+          "correct": false
+        },
+        {
+          "text": "De l'énergie solaire",
+          "correct": false
+        },
+        {
+          "text": "De l'énergie hydraulique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une centrale hydroélectrique, quel composant réalise l'étape 'Convertir' de la chaîne de l'énergie ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "La turbine couplée à l'alternateur",
+          "correct": true
+        },
+        {
+          "text": "Le barrage en béton",
+          "correct": false
+        },
+        {
+          "text": "Les lignes à haute tension",
+          "correct": false
+        },
+        {
+          "text": "Le transformateur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une centrale hydroélectrique, quelle est la solution technique pour l'étape 'Distribuer' de la chaîne de l'énergie ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Les vannes qui régulent le débit d'eau vers la turbine",
+          "correct": true
+        },
+        {
+          "text": "Le barrage qui retient l'eau",
+          "correct": false
+        },
+        {
+          "text": "L'alternateur",
+          "correct": false
+        },
+        {
+          "text": "Les pylônes électriques",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un système de contrôle d'accès par badge, quel est le capteur utilisé ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le lecteur RFID / NFC",
+          "correct": true
+        },
+        {
+          "text": "La serrure électromagnétique",
+          "correct": false
+        },
+        {
+          "text": "Le gâche électrique",
+          "correct": false
+        },
+        {
+          "text": "L'alimentation de secours",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un système de contrôle d'accès par badge, quel est l'actionneur qui ouvre la porte ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La gâche électrique ou la serrure électromagnétique",
+          "correct": true
+        },
+        {
+          "text": "Le lecteur de badge",
+          "correct": false
+        },
+        {
+          "text": "Le microcontrôleur de gestion",
+          "correct": false
+        },
+        {
+          "text": "Le badge lui-même",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Pour un système de contrôle d'accès, remets les étapes de la chaîne de l'information dans l'ordre :",
+      "time": 40,
+      "answers": [
+        {
+          "text": "Le lecteur RFID lit le badge",
+          "correct": true
+        },
+        {
+          "text": "Le microcontrôleur vérifie si le badge est autorisé",
+          "correct": true
+        },
+        {
+          "text": "L'ordre d'ouverture est envoyé à la gâche électrique",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un réfrigérateur, quel composant est un capteur ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le thermostat ou la sonde de température interne",
+          "correct": true
+        },
+        {
+          "text": "Le compresseur",
+          "correct": false
+        },
+        {
+          "text": "Le condenseur",
+          "correct": false
+        },
+        {
+          "text": "Le ventilateur interne",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un réfrigérateur, quel composant est un actionneur de la chaîne de l'énergie ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le compresseur (convertit l'énergie électrique en énergie mécanique)",
+          "correct": true
+        },
+        {
+          "text": "La sonde de température",
+          "correct": false
+        },
+        {
+          "text": "Le thermostat électronique",
+          "correct": false
+        },
+        {
+          "text": "Le joint de porte",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Une cellule photoélectrique (barrière lumineuse) est à la fois un capteur et un actionneur.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un système de volet roulant motorisé, quel composant est un capteur permettant d'arrêter le volet en position basse ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Un fin de course mécanique ou un capteur de couple",
+          "correct": true
+        },
+        {
+          "text": "Le moteur tubulaire",
+          "correct": false
+        },
+        {
+          "text": "La télécommande radio",
+          "correct": false
+        },
+        {
+          "text": "L'alimentation secteur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un système de volet roulant motorisé, quel est l'actionneur ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le moteur tubulaire électrique",
+          "correct": true
+        },
+        {
+          "text": "La télécommande infrarouge",
+          "correct": false
+        },
+        {
+          "text": "Le fin de course",
+          "correct": false
+        },
+        {
+          "text": "L'interrupteur mural",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un système de tri automatique de colis (entrepôt logistique), quel capteur permet d'identifier chaque colis ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Un lecteur de code-barres ou un capteur RFID",
+          "correct": true
+        },
+        {
+          "text": "Un moteur de convoyeur",
+          "correct": false
+        },
+        {
+          "text": "Un vérin pneumatique d'aiguillage",
+          "correct": false
+        },
+        {
+          "text": "Le tapis roulant",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un système de tri automatique de colis, quel est l'actionneur qui dévie le colis vers la bonne sortie ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Un vérin pneumatique ou un déflecteur motorisé",
+          "correct": true
+        },
+        {
+          "text": "Le lecteur de code-barres",
+          "correct": false
+        },
+        {
+          "text": "Le calculateur de tri",
+          "correct": false
+        },
+        {
+          "text": "Le capteur de présence",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle grandeur physique mesure un hygromètre ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le taux d'humidité de l'air",
+          "correct": true
+        },
+        {
+          "text": "La pression atmosphérique",
+          "correct": false
+        },
+        {
+          "text": "La vitesse du vent",
+          "correct": false
+        },
+        {
+          "text": "La quantité de précipitations",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle grandeur physique mesure un baromètre ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La pression atmosphérique",
+          "correct": true
+        },
+        {
+          "text": "La température",
+          "correct": false
+        },
+        {
+          "text": "L'humidité de l'air",
+          "correct": false
+        },
+        {
+          "text": "La vitesse du vent",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Cite une des quatre étapes de la chaîne de l'énergie.",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "Alimenter",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "alimenter",
+        "distribuer",
+        "convertir",
+        "transmettre"
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Cite une des trois étapes de la chaîne de l'information.",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "Acquérir",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "acquérir",
+        "acquerir",
+        "traiter",
+        "communiquer"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un système d'éclairage public automatique, quel capteur permet d'allumer les lampadaires à la tombée de la nuit ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Une cellule photoélectrique (capteur de luminosité)",
+          "correct": true
+        },
+        {
+          "text": "Un capteur de température extérieure",
+          "correct": false
+        },
+        {
+          "text": "Un capteur de présence infrarouge",
+          "correct": false
+        },
+        {
+          "text": "Un compteur d'heures électronique uniquement",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un système d'éclairage public automatique, quel est l'actionneur ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La lampe (LED ou sodium) qui éclaire la rue",
+          "correct": true
+        },
+        {
+          "text": "La cellule photoélectrique",
+          "correct": false
+        },
+        {
+          "text": "L'horloge astronomique",
+          "correct": false
+        },
+        {
+          "text": "Le câble d'alimentation",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un capteur mesure toujours une grandeur électrique.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un train à grande vitesse (TGV), quelle est la solution technique pour l'étape 'Alimenter' la chaîne de l'énergie de traction ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "La caténaire (ligne aérienne à 25 000 V) via le pantographe",
+          "correct": true
+        },
+        {
+          "text": "Une batterie embarquée",
+          "correct": false
+        },
+        {
+          "text": "Un moteur diesel",
+          "correct": false
+        },
+        {
+          "text": "Un alternateur entraîné par les roues",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un train à grande vitesse (TGV), quelle est la solution technique pour l'étape 'Convertir' de la chaîne de l'énergie de traction ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Les moteurs électriques synchrones des bogies",
+          "correct": true
+        },
+        {
+          "text": "La caténaire",
+          "correct": false
+        },
+        {
+          "text": "Le pantographe",
+          "correct": false
+        },
+        {
+          "text": "Les rails",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un système de parking automatique avec barrière, quel composant assure l'étape 'Traiter' de la chaîne de l'information ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "L'automate ou le microcontrôleur de gestion",
+          "correct": true
+        },
+        {
+          "text": "La barrière levante",
+          "correct": false
+        },
+        {
+          "text": "La boucle de détection magnétique au sol",
+          "correct": false
+        },
+        {
+          "text": "Le ticket imprimé",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un système de parking automatique avec barrière, quel est le capteur qui détecte l'arrivée d'un véhicule ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "La boucle de détection magnétique (inductif) au sol",
+          "correct": true
+        },
+        {
+          "text": "La barrière elle-même",
+          "correct": false
+        },
+        {
+          "text": "L'automate de commande",
+          "correct": false
+        },
+        {
+          "text": "Le moteur de la barrière",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Pour un système de remplissage automatique d'une cuve, remets les étapes de la chaîne de l'information dans l'ordre :",
+      "time": 40,
+      "answers": [
+        {
+          "text": "Le capteur de niveau mesure la hauteur de liquide",
+          "correct": true
+        },
+        {
+          "text": "L'automate compare le niveau mesuré au niveau souhaité",
+          "correct": true
+        },
+        {
+          "text": "L'électrovanne d'admission est commandée",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un système de remplissage automatique d'une cuve, quel est l'actionneur ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'électrovanne (ouvre ou ferme l'arrivée d'eau)",
+          "correct": true
+        },
+        {
+          "text": "Le capteur de niveau",
+          "correct": false
+        },
+        {
+          "text": "L'automate programmable",
+          "correct": false
+        },
+        {
+          "text": "Le flotteur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans la chaîne de l'information, l'étape 'Traiter' peut être réalisée par un être humain qui prend une décision.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une imprimante à jet d'encre, quel composant est un actionneur qui projette l'encre sur le papier ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Les buses piézoélectriques de la tête d'impression",
+          "correct": true
+        },
+        {
+          "text": "Le capteur de fin de papier",
+          "correct": false
+        },
+        {
+          "text": "Le microcontrôleur d'impression",
+          "correct": false
+        },
+        {
+          "text": "Le câble de liaison USB",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une imprimante à jet d'encre, quel capteur permet de détecter l'absence de papier ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Un capteur optique (détection par lumière interrompue)",
+          "correct": true
+        },
+        {
+          "text": "La tête d'impression",
+          "correct": false
+        },
+        {
+          "text": "Le moteur d'avance du papier",
+          "correct": false
+        },
+        {
+          "text": "La cartouche d'encre",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un bras robotisé industriel, quelle solution technique assure l'étape 'Convertir' de la chaîne de l'énergie ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Les servomoteurs électriques de chaque articulation",
+          "correct": true
+        },
+        {
+          "text": "Les capteurs de position angulaire",
+          "correct": false
+        },
+        {
+          "text": "L'armoire de commande numérique",
+          "correct": false
+        },
+        {
+          "text": "Le câblage d'alimentation",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un bras robotisé industriel, quel capteur permet de connaître la position angulaire de chaque articulation ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Un codeur incrémental ou absolu (encodeur)",
+          "correct": true
+        },
+        {
+          "text": "Un servomoteur",
+          "correct": false
+        },
+        {
+          "text": "Un variateur de vitesse",
+          "correct": false
+        },
+        {
+          "text": "Le câble d'alimentation électrique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans un système automatisé, il est possible qu'un même composant n'appartienne qu'à la chaîne de l'énergie et jamais à la chaîne de l'information.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un système de surveillance par caméra, quel composant réalise l'étape 'Acquérir' de la chaîne de l'information ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La caméra (capteur d'image)",
+          "correct": true
+        },
+        {
+          "text": "L'écran de surveillance",
+          "correct": false
+        },
+        {
+          "text": "Le disque dur d'enregistrement",
+          "correct": false
+        },
+        {
+          "text": "Le câble réseau",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un système de surveillance par caméra, quel composant réalise l'étape 'Communiquer' de la chaîne de l'information ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'écran de surveillance ou l'envoi d'alerte sur smartphone",
+          "correct": true
+        },
+        {
+          "text": "La caméra",
+          "correct": false
+        },
+        {
+          "text": "L'alimentation électrique",
+          "correct": false
+        },
+        {
+          "text": "Le boîtier d'enregistrement seul",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un lave-vaisselle, quel composant est un capteur ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le capteur de turbidité (mesure la saleté de l'eau)",
+          "correct": true
+        },
+        {
+          "text": "La résistance chauffante",
+          "correct": false
+        },
+        {
+          "text": "Le moteur de la pompe de circulation",
+          "correct": false
+        },
+        {
+          "text": "Le bras de lavage rotatif",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un lave-vaisselle, quel composant est un actionneur de la chaîne de l'énergie ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La pompe de vidange (convertit énergie électrique en énergie mécanique)",
+          "correct": true
+        },
+        {
+          "text": "Le capteur de turbidité",
+          "correct": false
+        },
+        {
+          "text": "La carte électronique de commande",
+          "correct": false
+        },
+        {
+          "text": "Le sélecteur de programme",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une trottinette électrique, quelle est la solution technique pour l'étape 'Alimenter' de la chaîne de l'énergie ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Une batterie lithium-ion intégrée",
+          "correct": true
+        },
+        {
+          "text": "Le moteur de roue",
+          "correct": false
+        },
+        {
+          "text": "Le contrôleur électronique",
+          "correct": false
+        },
+        {
+          "text": "La poignée d'accélération",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une trottinette électrique, quel capteur permet de réguler la vitesse selon l'action du pilote ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le capteur de position de la poignée d'accélération (potentiomètre)",
+          "correct": true
+        },
+        {
+          "text": "Le moteur brushless de la roue",
+          "correct": false
+        },
+        {
+          "text": "La batterie lithium",
+          "correct": false
+        },
+        {
+          "text": "L'éclairage avant LED",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans la chaîne de l'énergie, l'étape 'Alimenter' peut être assurée par une pile, une batterie ou le réseau électrique.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un chauffe-eau solaire, quel composant réalise l'étape 'Convertir' de la chaîne de l'énergie ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le capteur solaire thermique (panneau absorbant la chaleur)",
+          "correct": true
+        },
+        {
+          "text": "La pompe de circulation",
+          "correct": false
+        },
+        {
+          "text": "Le ballon de stockage d'eau chaude",
+          "correct": false
+        },
+        {
+          "text": "Le robinet thermostatique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un chauffe-eau solaire, quel composant est un capteur de la chaîne de l'information ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "La sonde de température du ballon",
+          "correct": true
+        },
+        {
+          "text": "Le panneau solaire thermique",
+          "correct": false
+        },
+        {
+          "text": "La pompe de circulation",
+          "correct": false
+        },
+        {
+          "text": "Le vase d'expansion",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un système de navigation GPS embarqué (voiture), quel composant assure l'étape 'Acquérir' de la chaîne de l'information ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "L'antenne GPS (reçoit les signaux des satellites)",
+          "correct": true
+        },
+        {
+          "text": "L'écran tactile de navigation",
+          "correct": false
+        },
+        {
+          "text": "Le haut-parleur qui annonce les directions",
+          "correct": false
+        },
+        {
+          "text": "Le processeur de calcul d'itinéraire",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un système de navigation GPS, quel composant assure l'étape 'Communiquer' de la chaîne de l'information ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "L'écran d'affichage et le haut-parleur",
+          "correct": true
+        },
+        {
+          "text": "L'antenne GPS",
+          "correct": false
+        },
+        {
+          "text": "Le processeur de calcul",
+          "correct": false
+        },
+        {
+          "text": "Le câble d'alimentation",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un électroaimant est un actionneur car il convertit de l'énergie électrique en énergie magnétique (force d'attraction).",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un pont-levis (pont levant) automatique, quelle est la solution technique pour l'étape 'Distribuer' de la chaîne de l'énergie ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le contacteur ou le variateur qui commande le moteur",
+          "correct": true
+        },
+        {
+          "text": "Le câble d'alimentation électrique",
+          "correct": false
+        },
+        {
+          "text": "Le moteur de levage",
+          "correct": false
+        },
+        {
+          "text": "Les câbles de traction du pont",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un pont levant automatique, quel capteur déclenche la montée du pont à l'approche d'un bateau ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Un capteur de présence (radar ou ultrasonique)",
+          "correct": true
+        },
+        {
+          "text": "Le moteur de levage",
+          "correct": false
+        },
+        {
+          "text": "Le voyant lumineux d'alerte",
+          "correct": false
+        },
+        {
+          "text": "La barrière de sécurité",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une pompe à chaleur (PAC), quel composant réalise l'étape 'Convertir' de la chaîne de l'énergie ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le compresseur (comprime le fluide frigorigène)",
+          "correct": true
+        },
+        {
+          "text": "La sonde de température extérieure",
+          "correct": false
+        },
+        {
+          "text": "Le thermostat d'ambiance",
+          "correct": false
+        },
+        {
+          "text": "Le câble d'alimentation triphasé",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une pompe à chaleur, quel composant est un capteur de la chaîne de l'information ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La sonde de température extérieure",
+          "correct": true
+        },
+        {
+          "text": "Le compresseur",
+          "correct": false
+        },
+        {
+          "text": "L'échangeur thermique",
+          "correct": false
+        },
+        {
+          "text": "Le ventilateur du groupe extérieur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un détecteur de monoxyde de carbone (CO), quel composant réalise l'étape 'Acquérir' ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le capteur électrochimique de gaz CO",
+          "correct": true
+        },
+        {
+          "text": "La sirène d'alarme",
+          "correct": false
+        },
+        {
+          "text": "Le voyant LED d'alerte",
+          "correct": false
+        },
+        {
+          "text": "La pile d'alimentation",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un détecteur de CO, quel est l'actionneur qui prévient les occupants ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La sirène sonore (buzzer)",
+          "correct": true
+        },
+        {
+          "text": "Le capteur électrochimique",
+          "correct": false
+        },
+        {
+          "text": "Le microcontrôleur interne",
+          "correct": false
+        },
+        {
+          "text": "Le bouton de test",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Pour un système de détection de CO, remets les étapes de la chaîne de l'information dans l'ordre :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Le capteur chimique mesure la concentration en CO",
+          "correct": true
+        },
+        {
+          "text": "Le microcontrôleur compare la valeur au seuil de danger",
+          "correct": true
+        },
+        {
+          "text": "La sirène et le voyant s'activent pour alerter",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une machine CNC (centre d'usinage), quel composant assure l'étape 'Convertir' pour le déplacement de l'outil ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Les servomoteurs des axes X, Y et Z",
+          "correct": true
+        },
+        {
+          "text": "Les capteurs de fin de course des axes",
+          "correct": false
+        },
+        {
+          "text": "L'ordinateur de commande numérique",
+          "correct": false
+        },
+        {
+          "text": "L'alimentation électrique triphasée",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une machine CNC, quel capteur permet de repérer la position 'zéro' de chaque axe au démarrage ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le capteur de fin de course (origine machine)",
+          "correct": true
+        },
+        {
+          "text": "Le servomoteur d'axe",
+          "correct": false
+        },
+        {
+          "text": "La broche de fraisage",
+          "correct": false
+        },
+        {
+          "text": "L'interface opérateur (écran)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans un système automatisé, le capteur est toujours connecté directement à l'actionneur, sans passer par une étape de traitement.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un système de pesée industrielle automatique, quel composant réalise l'étape 'Acquérir' ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Une jauge de contrainte (capteur de force)",
+          "correct": true
+        },
+        {
+          "text": "L'afficheur numérique du poids",
+          "correct": false
+        },
+        {
+          "text": "Le convoyeur d'évacuation",
+          "correct": false
+        },
+        {
+          "text": "Le microcontrôleur de comparaison",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un système de pesée industrielle, quel est l'actionneur qui évacue un colis trop lourd ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un vérin ou un pousseur motorisé",
+          "correct": true
+        },
+        {
+          "text": "La jauge de contrainte",
+          "correct": false
+        },
+        {
+          "text": "L'afficheur de poids",
+          "correct": false
+        },
+        {
+          "text": "Le microcontrôleur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un lampadaire solaire autonome, quelle est la solution technique pour l'étape 'Alimenter' de la chaîne de l'énergie la nuit ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Une batterie rechargée pendant la journée par le panneau solaire",
+          "correct": true
+        },
+        {
+          "text": "Le réseau électrique public",
+          "correct": false
+        },
+        {
+          "text": "Un groupe électrogène",
+          "correct": false
+        },
+        {
+          "text": "Une pile à combustible",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un lampadaire solaire autonome, quel capteur déclenche l'éclairage à la nuit tombée ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Une cellule photoélectrique (capteur de luminosité)",
+          "correct": true
+        },
+        {
+          "text": "Un capteur de température",
+          "correct": false
+        },
+        {
+          "text": "Un capteur de vent",
+          "correct": false
+        },
+        {
+          "text": "Un capteur de présence uniquement",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La solution technique d'un système peut évoluer dans le temps tout en remplissant la même fonction technique.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un scanner médical IRM, quel composant réalise l'étape 'Convertir' pour produire un signal mesurable ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Les bobines d'induction (transforment les signaux radio en signal électrique mesurable)",
+          "correct": true
+        },
+        {
+          "text": "L'écran de visualisation des images",
+          "correct": false
+        },
+        {
+          "text": "Le système de refroidissement à hélium liquide",
+          "correct": false
+        },
+        {
+          "text": "Le lit motorisé du patient",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un scanner médical IRM, quel composant est un actionneur qui positionne le patient ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le moteur du lit coulissant (table d'examen)",
+          "correct": true
+        },
+        {
+          "text": "Les bobines d'acquisition",
+          "correct": false
+        },
+        {
+          "text": "Le système de refroidissement cryogénique",
+          "correct": false
+        },
+        {
+          "text": "Le capteur de pression pour les injections",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un fer à repasser à vapeur avec système automatique, quel capteur permet d'arrêter la chauffe quand la température est atteinte ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Un thermostat bimétallique (capteur de température)",
+          "correct": true
+        },
+        {
+          "text": "La résistance chauffante",
+          "correct": false
+        },
+        {
+          "text": "La pompe à vapeur",
+          "correct": false
+        },
+        {
+          "text": "Le câble d'alimentation",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un fer à repasser à vapeur, quel est l'actionneur qui produit la vapeur ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La résistance chauffante (chauffe l'eau pour créer la vapeur)",
+          "correct": true
+        },
+        {
+          "text": "Le thermostat",
+          "correct": false
+        },
+        {
+          "text": "Le câble d'alimentation",
+          "correct": false
+        },
+        {
+          "text": "Le sélecteur de température",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Pour un système de régulation d'une serre agricole, remets les étapes de la chaîne de l'information dans l'ordre :",
+      "time": 40,
+      "answers": [
+        {
+          "text": "Le capteur d'humidité mesure le taux dans la serre",
+          "correct": true
+        },
+        {
+          "text": "L'automate compare la valeur à la consigne",
+          "correct": true
+        },
+        {
+          "text": "Les ventilateurs et ouvrants sont commandés",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une serre agricole automatisée, quel composant assure l'étape 'Transmettre' de la chaîne de l'énergie pour l'ouverture des fenêtres ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Un système de crémaillère ou bras articulé lié au moteur",
+          "correct": true
+        },
+        {
+          "text": "Le moteur électrique d'ouverture",
+          "correct": false
+        },
+        {
+          "text": "Le capteur de température",
+          "correct": false
+        },
+        {
+          "text": "L'alimentation électrique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle grandeur physique mesure un capteur ultrasonique ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La distance par mesure du temps de réponse d'une onde sonore",
+          "correct": true
+        },
+        {
+          "text": "L'intensité lumineuse",
+          "correct": false
+        },
+        {
+          "text": "La pression d'un gaz",
+          "correct": false
+        },
+        {
+          "text": "La vitesse de rotation",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle grandeur physique mesure un tachymètre ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La vitesse de rotation d'un axe (en tours/min)",
+          "correct": true
+        },
+        {
+          "text": "La pression d'un fluide",
+          "correct": false
+        },
+        {
+          "text": "La température d'une surface",
+          "correct": false
+        },
+        {
+          "text": "L'humidité relative de l'air",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans un système automatisé, il peut y avoir plusieurs capteurs différents qui alimentent la même étape 'Acquérir' de la chaîne de l'information.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un système d'irrigation agricole automatique par secteur, quel composant assure l'étape 'Distribuer' de la chaîne de l'énergie hydraulique ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Les électrovannes de secteur",
+          "correct": true
+        },
+        {
+          "text": "La pompe principale",
+          "correct": false
+        },
+        {
+          "text": "Les asperseurs",
+          "correct": false
+        },
+        {
+          "text": "Le programmateur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un système d'irrigation agricole, quel est l'effecteur final qui produit l'action utile sur la culture ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "L'asperseur ou le goutteur (distribue l'eau sur les plantes)",
+          "correct": true
+        },
+        {
+          "text": "La pompe",
+          "correct": false
+        },
+        {
+          "text": "L'électrovanne",
+          "correct": false
+        },
+        {
+          "text": "Le capteur de pluie",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un système de freinage régénératif (voiture électrique), que fait le moteur électrique lors d'un freinage ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Il se comporte comme un générateur et recharge la batterie",
+          "correct": true
+        },
+        {
+          "text": "Il consomme plus d'énergie pour ralentir la voiture",
+          "correct": false
+        },
+        {
+          "text": "Il ne fonctionne pas pendant le freinage",
+          "correct": false
+        },
+        {
+          "text": "Il alerte le conducteur via un capteur de freinage",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une voiture électrique, quel capteur informe le conducteur de l'autonomie restante ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un capteur de charge de la batterie (état de charge, SOC)",
+          "correct": true
+        },
+        {
+          "text": "Le moteur électrique",
+          "correct": false
+        },
+        {
+          "text": "Le chargeur embarqué",
+          "correct": false
+        },
+        {
+          "text": "L'inverseur de polarité",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un système de tri sélectif automatique de déchets, quel capteur permet de distinguer les métaux des autres déchets ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Un capteur inductif (détecte les métaux ferreux et non-ferreux)",
+          "correct": true
+        },
+        {
+          "text": "Un capteur de température",
+          "correct": false
+        },
+        {
+          "text": "Un capteur de pression",
+          "correct": false
+        },
+        {
+          "text": "Une caméra infrarouge",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un vérin hydraulique est un actionneur car il convertit de l'énergie hydraulique en énergie mécanique (mouvement de translation).",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un système de grue de chantier, quelle est la solution technique pour l'étape 'Convertir' du mouvement de levage ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le moteur électrique du treuil",
+          "correct": true
+        },
+        {
+          "text": "Le câble d'acier",
+          "correct": false
+        },
+        {
+          "text": "Le limiteur de charge (capteur)",
+          "correct": false
+        },
+        {
+          "text": "L'alimentation électrique du chantier",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un système de grue de chantier, quel capteur empêche le levage d'une charge trop lourde ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Un capteur de force / limiteur de charge",
+          "correct": true
+        },
+        {
+          "text": "Le moteur du treuil",
+          "correct": false
+        },
+        {
+          "text": "La cabine du grutier",
+          "correct": false
+        },
+        {
+          "text": "Le câble de levage",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Pour un système de levage de grue automatique, remets les étapes de la chaîne de l'énergie dans l'ordre :",
+      "time": 40,
+      "answers": [
+        {
+          "text": "Le réseau électrique du chantier alimente la grue",
+          "correct": true
+        },
+        {
+          "text": "Le contacteur commande l'alimentation du moteur",
+          "correct": true
+        },
+        {
+          "text": "Le moteur électrique convertit l'énergie électrique en énergie mécanique",
+          "correct": true
+        },
+        {
+          "text": "Le câble et la poulie transmettent le mouvement au crochet",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un système de sismographe (détection de tremblements de terre), quel composant réalise l'étape 'Acquérir' de la chaîne de l'information ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le capteur sismique (géophone ou accéléromètre)",
+          "correct": true
+        },
+        {
+          "text": "L'enregistreur de données",
+          "correct": false
+        },
+        {
+          "text": "L'écran d'affichage des ondes sismiques",
+          "correct": false
+        },
+        {
+          "text": "La transmission satellite des données",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un système de sismographe connecté, quel composant assure l'étape 'Communiquer' de la chaîne de l'information ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "La liaison satellite ou internet vers les centres de surveillance",
+          "correct": true
+        },
+        {
+          "text": "Le capteur sismique",
+          "correct": false
+        },
+        {
+          "text": "La batterie de secours",
+          "correct": false
+        },
+        {
+          "text": "Le boîtier d'acquisition électronique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment nomme-t-on les différents composants réels qui permettent à un système de remplir sa fonction technique ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "La solution technique",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "solution technique",
+        "les solutions techniques",
+        "la solution technique"
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quel est le nom de l'étape de la chaîne de l'énergie où l'énergie est transformée d'une forme en une autre par un actionneur ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "Convertir",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "convertir",
+        "la conversion",
+        "conversion"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un système de télescope motorisé, quel capteur permet de connaître en permanence l'orientation du tube vers les étoiles ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Des codeurs angulaires (encodeurs) sur les axes de rotation",
+          "correct": true
+        },
+        {
+          "text": "Les moteurs pas à pas",
+          "correct": false
+        },
+        {
+          "text": "L'oculaire du télescope",
+          "correct": false
+        },
+        {
+          "text": "La raquette de commande",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un système de télescope motorisé, quel est l'actionneur qui oriente le tube ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Les moteurs pas à pas des axes (ascension droite et déclinaison)",
+          "correct": true
+        },
+        {
+          "text": "Les encodeurs de position angulaire",
+          "correct": false
+        },
+        {
+          "text": "La raquette de commande",
+          "correct": false
+        },
+        {
+          "text": "L'ordinateur de pilotage",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un système de qualité d'air intérieur connecté, quel composant assure l'étape 'Traiter' de la chaîne de l'information ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le microcontrôleur qui analyse les données des capteurs et décide d'activer la ventilation",
+          "correct": true
+        },
+        {
+          "text": "Le capteur de CO₂",
+          "correct": false
+        },
+        {
+          "text": "Le ventilateur de renouvellement d'air",
+          "correct": false
+        },
+        {
+          "text": "L'écran d'affichage de la qualité d'air",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans un système automatisé complexe, un seul microcontrôleur peut traiter les informations de plusieurs capteurs différents en même temps.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 300">
+  <rect width="700" height="300" fill="#f5f5f5"/>
+  <text x="350" y="25" font-size="16" font-weight="bold" text-anchor="middle">Différents types de littoraux</text>
+  <!-- Littoral 1: Plage -->
+  <rect x="30" y="50" width="200" height="150" fill="#e6f3ff" stroke="#333"/>
+  <rect x="30" y="150" width="200" height="50" fill="#F4D03F"/>
+  <path d="M30 150 Q80 140 130 150 Q180 160 230 150" fill="none" stroke="#3498db" stroke-width="2"/>
+  <circle cx="180" cy="100" r="20" fill="#F39C12"/>
+  <text x="130" y="220" font-size="14" text-anchor="middle" font-weight="bold">Type 1</text>
+  <!-- Littoral 2: Falaise -->
+  <rect x="250" y="50" width="200" height="150" fill="#e6f3ff" stroke="#333"/>
+  <path d="M250 200 L250 100 L300 80 L300 200 Z" fill="#7f8c8d"/>
+  <path d="M300 200 L300 80 L350 100 L350 200 Z" fill="#95a5a6"/>
+  <path d="M350 200 L350 100 L400 120 L400 200 Z" fill="#7f8c8d"/>
+  <rect x="250" y="180" width="200" height="20" fill="#3498db"/>
+  <text x="350" y="220" font-size="14" text-anchor="middle" font-weight="bold">Type 2</text>
+  <!-- Littoral 3: Mangrove -->
+  <rect x="470" y="50" width="200" height="150" fill="#e6f3ff" stroke="#333"/>
+  <rect x="470" y="150" width="200" height="50" fill="#5D6D7E"/>
+  <path d="M490 150 L490 100 L510 100 L510 150" stroke="#2E7D32" stroke-width="3" fill="none"/>
+  <ellipse cx="500" cy="95" rx="20" ry="15" fill="#4CAF50"/>
+  <path d="M540 150 L540 110 L560 110 L560 150" stroke="#2E7D32" stroke-width="3" fill="none"/>
+  <ellipse cx="550" cy="105" rx="18" ry="12" fill="#4CAF50"/>
+  <path d="M590 150 L590 100 L610 100 L610 150" stroke="#2E7D32" stroke-width="3" fill="none"/>
+  <ellipse cx="600" cy="95" rx="20" ry="15" fill="#4CAF50"/>
+  <text x="570" y="220" font-size="14" text-anchor="middle" font-weight="bold">Type 3</text>
+  <!-- Question -->
+  <text x="130" y="260" font-size="12" text-anchor="middle" fill="#333">Plage ? Falaise ? Mangrove ?</text>
+  <text x="350" y="280" font-size="12" text-anchor="middle" fill="#666">Identifiez chaque type de littoral</text>
+</svg>

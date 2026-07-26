@@ -21,7 +21,15 @@
         autoNextTimer: null,
         autoNextTimestamp: null,
         autoNextQuestionPending: false,
-        autoNextCheckInterval: null
+        autoNextCheckInterval: null,
+        // Anti lost-update (hébergement mutualisé) : dernière avance CONFIRMÉE par le
+        // serveur, et horodatage de la dernière commande envoyée. Permet au polling de
+        // détecter qu'une écriture next_question a été engloutie par une écriture
+        // concurrente (l'état serveur « recule ») et de la ré-émettre automatiquement.
+        lastCommandedQuestion: null,
+        lastCommandTs: 0,
+        _nextInFlight: false,
+        _pausePending: false
     };
 
     // ========================================
@@ -183,13 +191,15 @@
         CONTROL_STATE.playCode = null;
         CONTROL_STATE.quizData = null;
         CONTROL_STATE.players = [];
-        CONTROL_STATE.currentQuestion = -1;
         CONTROL_STATE.isPaused = false;
+        // Purge complète de l'état de conduite (lastCommandedQuestion, repairState,
+        // auto-next…) pour qu'une partie suivante reparte propre (cf. resetConductorState).
+        resetConductorState();
         
-        // Arrêter le polling immédiatement
+        // Arrêter le polling immédiatement (setTimeout adaptatif)
         if (controlPollingInterval) {
             console.log('🔴 PROF: Arrêt du polling...');
-            clearInterval(controlPollingInterval);
+            clearTimeout(controlPollingInterval);
             controlPollingInterval = null;
         }
         
@@ -203,22 +213,24 @@
                         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
                         body: new URLSearchParams({
                             action: 'end_game',
-                            playCode: playCodeToCleanup
+                            playCode: playCodeToCleanup,
+                            teacher_hash: window.CONFIG?.TEACHER_PASSWORD_HASH || ''
                         })
                     });
-                    
+
                     console.log('🏁 PROF: Partie terminée (arrière-plan)');
-                    
+
                     // Attendre que les élèves reçoivent l'événement
                     await new Promise(resolve => setTimeout(resolve, 2000));
-                    
+
                     // Cleanup de la session
                     await fetch('php/control.php', {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
                         body: new URLSearchParams({
                             action: 'cleanup_session',
-                            playCode: playCodeToCleanup
+                            playCode: playCodeToCleanup,
+                            teacher_hash: window.CONFIG?.TEACHER_PASSWORD_HASH || ''
                         })
                     });
                     
@@ -259,7 +271,8 @@
                     playCode: CONTROL_STATE.playCode,
                     quizData: JSON.stringify(CONTROL_STATE.quizData),
                     manualMode: CONTROL_STATE.manualMode ? '1' : '0',
-                    showTop3: CONTROL_STATE.showTop3 ? '1' : '0'
+                    showTop3: CONTROL_STATE.showTop3 ? '1' : '0',
+                    teacher_hash: window.CONFIG?.TEACHER_PASSWORD_HASH || ''
                 })
             });
             
@@ -300,7 +313,14 @@
                 <span class="code-label">Code :</span>
                 <span class="code-value">${CONTROL_STATE.playCode}</span>
             </div>
+            <div class="qr-btn" onclick="showQrModal()" title="Afficher le QR code">
+                <span class="qr-icon">⬛</span>
+                <span class="qr-btn-label">QR</span>
+            </div>
         `;
+
+        // Générer le QR code miniature
+        requestAnimationFrame(() => generateQrMini(CONTROL_STATE.playCode));
         
         panel.innerHTML = `
             <div class="control-interface">
@@ -518,11 +538,17 @@
             const resyncButton = `<button class="btn-icon ${resyncButtonClass}" onclick="reconnectPlayer('${player.nickname}')" title="Resynchroniser cet élève">
                     🔄
                 </button>`;
-            
+
+            // Anti-triche : marqueur si l'élève a quitté l'onglet pendant une question.
+            const tabSwitches = player.tabSwitchCount || 0;
+            const tabWarn = tabSwitches > 0
+                ? `<span class="player-tabwarn" title="A quitté l'onglet ${tabSwitches} fois pendant la partie" style="color:#e65100;font-weight:700;margin-left:6px;">⚠️${tabSwitches}</span>`
+                : '';
+
             html += `
                 <div class="control-player-item ${statusClass}">
                     <span class="player-status">${statusIcon}</span>
-                    <span class="player-nick">${player.nickname}</span>
+                    <span class="player-nick">${escapeHtml(player.nickname)}${tabWarn}</span>
                     <span class="player-progress">✓ ${correctAnswers}/${totalQuestions}</span>
                     <span class="player-score" id="score-${index}">${player.score || 0} pts</span>
                     <div class="player-actions">
@@ -574,7 +600,8 @@
                             action: 'update_player_score',
                             playCode: CONTROL_STATE.playCode,
                             nickname: nickname,
-                            score: newScore
+                            score: newScore,
+                            teacher_hash: window.CONFIG?.TEACHER_PASSWORD_HASH || ''
                         })
                     });
                     
@@ -657,13 +684,15 @@
                         body: new URLSearchParams({
                             action: 'remove_player',
                             playCode: CONTROL_STATE.playCode,
-                            nickname: nickname
+                            nickname: nickname,
+                            teacher_hash: window.CONFIG?.TEACHER_PASSWORD_HASH || ''
                         })
                     });
                     
                     const result = await response.json();
                     if (result.success) {
                         console.log('✅ PROF: Joueur supprimé');
+                        pushInstantSync();
                     }
                 } catch (error) {
                     console.error('❌ Erreur suppression joueur:', error);
@@ -680,7 +709,31 @@
     // ========================================
     // ACTIONS DE CONTRÔLE
     // ========================================
-    
+
+    /**
+     * Pousse une resync immédiate vers les fenêtres prof secondaires (teacher-play, projection),
+     * de manière à court-circuiter leur cycle de polling après une action prof.
+     * - teacher-play : appelle window.forceSyncGameState (exposé par sessionManager.js)
+     *   qui fait un get_state immédiat et applique la nouvelle question / les résultats.
+     * - projection   : déclenche updateProjectionWindow (défini plus bas dans ce module)
+     *   qui interroge get_control_state et envoie les données à la fenêtre projection.
+     * Tolérant : si une fenêtre est fermée ou pas prête, on ignore silencieusement.
+     */
+    function pushInstantSync() {
+        try {
+            if (typeof teacherWindow !== 'undefined' && teacherWindow && !teacherWindow.closed) {
+                if (typeof teacherWindow.forceSyncGameState === 'function') {
+                    teacherWindow.forceSyncGameState();
+                }
+            }
+        } catch (e) { /* fenêtre fermée ou cross-origin — on ignore */ }
+        try {
+            if (typeof updateProjectionWindow === 'function') {
+                updateProjectionWindow();
+            }
+        } catch (e) { /* idem */ }
+    }
+
     async function startGame() {
         if (CONTROL_STATE.players.length === 0) {
             showCustomConfirm(
@@ -701,6 +754,11 @@
     
     async function launchGame() {
         try {
+            // CRITIQUE : repartir d'un état de conduite VIERGE. Sinon, en enchaînant une
+            // nouvelle partie sans recharger la fenêtre, lastCommandedQuestion (etc.) de la
+            // partie précédente fait sauter celle-ci à la fin (cf. resetConductorState).
+            resetConductorState();
+
             // Lire les valeurs des checkboxes MAINTENANT (pas à l'ouverture)
             const checkManual = document.getElementById('manual-mode-check');
             const checkTop3 = document.getElementById('show-top3-check');
@@ -778,7 +836,8 @@
                     action: 'update_questions',
                     playCode: CONTROL_STATE.playCode,
                     questions: JSON.stringify(questionsToUse),
-                    quizData: JSON.stringify(CONTROL_STATE.quizData)
+                    quizData: JSON.stringify(CONTROL_STATE.quizData),
+                    teacher_hash: window.CONFIG?.TEACHER_PASSWORD_HASH || ''
                 })
             });
             
@@ -791,7 +850,8 @@
                     action: 'start_game',
                     playCode: CONTROL_STATE.playCode,
                     manualMode: CONTROL_STATE.manualMode ? '1' : '0',
-                    showTop3: CONTROL_STATE.showTop3 ? '1' : '0'
+                    showTop3: CONTROL_STATE.showTop3 ? '1' : '0',
+                    teacher_hash: window.CONFIG?.TEACHER_PASSWORD_HASH || ''
                 })
             });
             
@@ -829,10 +889,14 @@
                 if (inputLimitQuestions) inputLimitQuestions.disabled = true;
                 if (inputCustomTime) inputCustomTime.disabled = true;
                 
+                // Push immédiat aux fenêtres prof secondaires (teacher-play, projection)
+                // pour qu'elles voient le passage en 'playing' sans attendre leur prochain poll.
+                pushInstantSync();
+
                 // Lancer la première question (toujours, même en mode manuel)
                 setTimeout(() => {
                     nextQuestion();
-                    
+
                     // Toujours activer le bouton "Question suivante" pour permettre au prof d'avancer
                     document.getElementById('btn-next-question').disabled = false;
                 }, 3000);
@@ -845,80 +909,323 @@
     }
 
     async function pauseGame() {
-        CONTROL_STATE.isPaused = !CONTROL_STATE.isPaused;
-        
-        const btn = document.getElementById('btn-pause-game');
-        
-        if (btn) {
-            if (CONTROL_STATE.isPaused) {
-                btn.textContent = '▶️ Reprendre';
-            } else {
-                btn.textContent = '⏸️ Pause';
-            }
-        }
-        
-        // Notifier le serveur
-        await fetch('php/control.php', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            body: new URLSearchParams({
-                action: 'pause_game',
+        // Anti double-toggle : un seul basculement à la fois (les logs montraient des
+        // paires pause/reprise à 1 s d'intervalle quand le bouton était re-cliqué avant
+        // la confirmation serveur). Pendant l'envoi, la réconciliation du poll est aussi
+        // suspendue via ce flag pour ne pas écraser l'intention du prof.
+        if (CONTROL_STATE._pausePending) return;
+        CONTROL_STATE._pausePending = true;
+
+        const newPaused = !CONTROL_STATE.isPaused;
+        const restore = lockButton('btn-pause-game', '⏳…');
+
+        try {
+            const result = await controlRequest('pause_game', {
                 playCode: CONTROL_STATE.playCode,
-                paused: CONTROL_STATE.isPaused ? '1' : '0'
-            })
-        });
+                paused: newPaused ? '1' : '0'
+            });
+
+            if (result.ok) {
+                CONTROL_STATE.isPaused = newPaused;
+                const btn = document.getElementById('btn-pause-game');
+                if (btn) btn.innerHTML = newPaused ? '▶️ Reprendre' : '⏸️ Pause';
+                if (btn) btn.disabled = false;
+                pushInstantSync();
+            } else {
+                console.error('❌ PROF: pauseGame a échoué', result.error || result.data);
+                restore();
+                showToast('Pause/Reprendre non confirmée. Réessaye dans un instant.', 'warning', 4000);
+            }
+        } finally {
+            CONTROL_STATE._pausePending = false;
+        }
     }
 
-    async function nextQuestion() {
+    /**
+     * Helper de requête côté pilote avec retry exponentiel.
+     * Tentatives : immédiate, +500ms, +1500ms, +4000ms (4 essais max).
+     * Timeout par tentative : 8 s. Renvoie { ok, data, error }.
+     *
+     * Toutes les actions de pilotage doivent passer par ce helper et être idempotentes
+     * côté serveur, pour que les retries soient sûrs en cas de timeout / 5xx.
+     *
+     * Auth prof : on injecte automatiquement teacher_hash dans le body. Le serveur
+     * vérifie ce hash sur toutes les actions sensibles (cf. control.php $privilegedActions).
+     */
+    // ========================================
+    // CIRCUIT BREAKER côté prof
+    // ========================================
+    // Même logique que côté élève (sessionManager.js) : sur 4xx/5xx/timeout en
+    // rafale, on impose une pause pour ne pas amplifier un ban de l'hébergeur.
+    // Respecte strictement l'en-tête Retry-After. Toast non bloquant pour le prof.
+    const PROF_CB_THRESHOLD = (window.CONFIG && window.CONFIG.CIRCUIT_BREAKER_THRESHOLD) || 3;
+    const PROF_CB_WINDOW_MS = (window.CONFIG && window.CONFIG.CIRCUIT_BREAKER_WINDOW_MS) || 30000;
+    const PROF_CB_PAUSES = (window.CONFIG && window.CONFIG.CIRCUIT_BREAKER_PAUSES) || [60000, 120000, 300000];
+    const PROF_CB_MAX_RA = (window.CONFIG && window.CONFIG.CIRCUIT_BREAKER_MAX_RETRY_AFTER_MS) || 600000;
+    let profCbErrors = [];
+    let profCbLevel = 0;
+    let profCbPausedUntil = 0;
+
+    function profParseRetryAfterMs(response) {
+        try {
+            if (!response || !response.headers) return 0;
+            const v = response.headers.get('Retry-After');
+            if (!v) return 0;
+            const n = parseFloat(v);
+            if (!Number.isNaN(n) && n >= 0) {
+                return Math.min(PROF_CB_MAX_RA, Math.round(n * 1000));
+            }
+            const t = Date.parse(v);
+            if (!Number.isNaN(t)) {
+                return Math.min(PROF_CB_MAX_RA, Math.max(0, t - Date.now()));
+            }
+        } catch (e) {}
+        return 0;
+    }
+
+    function profRecordError(retryAfterMs) {
+        const now = Date.now();
+        profCbErrors.push(now);
+        profCbErrors = profCbErrors.filter(t => (now - t) <= PROF_CB_WINDOW_MS);
+
+        let pausedFor = 0;
+        if (retryAfterMs > 0) {
+            profCbPausedUntil = Math.max(profCbPausedUntil, now + retryAfterMs);
+            profCbLevel = Math.min(profCbLevel + 1, PROF_CB_PAUSES.length - 1);
+            profCbErrors = [];
+            pausedFor = retryAfterMs;
+            console.warn('🔌 PROF CB: pause imposée par serveur', Math.round(retryAfterMs / 1000), 's');
+        } else if (profCbErrors.length >= PROF_CB_THRESHOLD) {
+            const idx = Math.min(profCbLevel, PROF_CB_PAUSES.length - 1);
+            const pauseMs = PROF_CB_PAUSES[idx];
+            profCbPausedUntil = Math.max(profCbPausedUntil, now + pauseMs);
+            profCbLevel = Math.min(profCbLevel + 1, PROF_CB_PAUSES.length - 1);
+            profCbErrors = [];
+            pausedFor = pauseMs;
+            console.warn('🔌 PROF CB: seuil atteint, pause', Math.round(pauseMs / 1000), 's (palier', profCbLevel, ')');
+        }
+        if (pausedFor > 0 && typeof showToast === 'function') {
+            const sec = Math.ceil(pausedFor / 1000);
+            const label = sec >= 60 ? `${Math.floor(sec / 60)} min ${sec % 60}s` : `${sec}s`;
+            showToast(`🔌 Connexion lente, pause ${label}`, 'warning', 6000);
+        }
+    }
+
+    function profResetCircuit() {
+        if (profCbErrors.length === 0 && profCbPausedUntil === 0 && profCbLevel === 0) return;
+        profCbErrors = [];
+        profCbPausedUntil = 0;
+        profCbLevel = 0;
+    }
+
+    function profIsCircuitPaused() {
+        return Date.now() < profCbPausedUntil;
+    }
+
+    function profTimeUntilReopens() {
+        return Math.max(0, profCbPausedUntil - Date.now());
+    }
+
+    // Exposer pour le polling adaptatif
+    window.__profCircuit = { isPaused: profIsCircuitPaused, untilReopens: profTimeUntilReopens };
+
+    async function controlRequest(action, params, opts = {}) {
+        const maxAttempts = opts.maxAttempts ?? 4;
+        const delays = [0, 500, 1500, 4000];
+        const timeoutMs = opts.timeoutMs ?? 8000;
+        let lastError = null;
+
+        // Injection automatique du hash prof (cf. config.js TEACHER_PASSWORD_HASH).
+        const authParams = { ...params };
+        if (window.CONFIG && window.CONFIG.TEACHER_PASSWORD_HASH && !authParams.teacher_hash) {
+            authParams.teacher_hash = window.CONFIG.TEACHER_PASSWORD_HASH;
+        }
+
+        // Si le circuit breaker est ouvert : on n'essaye pas du tout. Renvoie
+        // immédiatement un échec — l'action sera idempotente côté serveur si
+        // l'utilisateur retente après la pause.
+        if (profIsCircuitPaused()) {
+            const wait = profTimeUntilReopens();
+            console.warn(`🔌 PROF: ${action} bloqué par CB (reprise dans ${Math.ceil(wait / 1000)}s)`);
+            return { ok: false, error: new Error('circuit_breaker_open'), circuitOpen: true, retryAfterMs: wait };
+        }
+
+        for (let attempt = 0; attempt < maxAttempts; attempt++) {
+            if (profIsCircuitPaused()) {
+                console.warn(`🔌 PROF: ${action} interrompu (CB ouvert pendant retries)`);
+                return { ok: false, error: lastError || new Error('circuit_breaker_open'), circuitOpen: true };
+            }
+            if (delays[attempt]) {
+                await new Promise(r => setTimeout(r, delays[attempt]));
+            }
+            const controller = new AbortController();
+            const t = setTimeout(() => controller.abort(), timeoutMs);
+            try {
+                const response = await fetch('php/control.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                    body: new URLSearchParams({ action, ...authParams }),
+                    signal: controller.signal
+                });
+                clearTimeout(t);
+                if (!response.ok) {
+                    const retryAfterMs = profParseRetryAfterMs(response);
+                    lastError = new Error('HTTP ' + response.status);
+                    console.warn(`⚠️ PROF: ${action} HTTP ${response.status} (tentative ${attempt + 1})`);
+                    profRecordError(retryAfterMs);
+                    if (profIsCircuitPaused()) {
+                        return { ok: false, error: lastError, circuitOpen: true };
+                    }
+                    continue;
+                }
+                const data = await response.json();
+                if (data && data.success) {
+                    profResetCircuit();
+                    return { ok: true, data };
+                }
+                // Échec applicatif non-retryable (mismatch question, session perdue, etc.)
+                // → PAS une erreur réseau, on ne déclenche pas le CB
+                console.warn(`⛔ PROF: ${action} refusé par serveur (tentative ${attempt + 1})`, data);
+                return { ok: false, data };
+            } catch (err) {
+                clearTimeout(t);
+                lastError = err;
+                console.warn(`⚠️ PROF: ${action} erreur réseau (tentative ${attempt + 1}):`, err.message || err);
+                profRecordError(0);
+                if (profIsCircuitPaused()) {
+                    return { ok: false, error: lastError, circuitOpen: true };
+                }
+            }
+        }
+        return { ok: false, error: lastError };
+    }
+
+    /**
+     * Toast non-bloquant — pour les notifications qui ne doivent pas interrompre le prof
+     * pendant la partie. Apparaît en haut à droite, disparaît tout seul après quelques secondes.
+     * Utilisé à la place de alert() pour les échecs réseau qui se résolvent souvent au polling suivant.
+     */
+    function showToast(message, kind = 'info', durationMs = 5000) {
+        let container = document.getElementById('qwest-toast-container');
+        if (!container) {
+            container = document.createElement('div');
+            container.id = 'qwest-toast-container';
+            container.style.cssText = 'position:fixed;top:16px;right:16px;z-index:99999;display:flex;flex-direction:column;gap:8px;pointer-events:none;max-width:360px;';
+            document.body.appendChild(container);
+        }
+        const toast = document.createElement('div');
+        const colors = {
+            info:    'background:#1f6feb;color:#fff;',
+            warning: 'background:#fff3cd;color:#604000;border:1px solid #ffd966;',
+            error:   'background:#fde2e2;color:#8a2222;border:1px solid #f4a8a8;',
+            success: 'background:#d8f5e3;color:#1f6b3e;border:1px solid #8dd5a6;',
+        };
+        toast.style.cssText = 'padding:10px 14px;border-radius:6px;font:14px/1.4 sans-serif;box-shadow:0 4px 12px rgba(0,0,0,0.15);pointer-events:auto;cursor:pointer;opacity:0;transform:translateX(20px);transition:all 0.25s;'
+                              + (colors[kind] || colors.info);
+        toast.textContent = message;
+        toast.addEventListener('click', () => toast.remove());
+        container.appendChild(toast);
+        // Animation d'entrée
+        requestAnimationFrame(() => { toast.style.opacity = '1'; toast.style.transform = 'translateX(0)'; });
+        // Auto-disparition
+        setTimeout(() => {
+            toast.style.opacity = '0';
+            toast.style.transform = 'translateX(20px)';
+            setTimeout(() => toast.remove(), 300);
+        }, durationMs);
+    }
+
+    /**
+     * UI helper : désactive un bouton + remplace son texte par un spinner pendant une action,
+     * puis restaure son état initial. Retourne une fonction de restauration à appeler à la fin.
+     */
+    function lockButton(btnId, busyHtml) {
+        const btn = document.getElementById(btnId);
+        if (!btn) return () => {};
+        const originalDisabled = btn.disabled;
+        const originalHtml = btn.innerHTML;
+        btn.disabled = true;
+        if (busyHtml) btn.innerHTML = busyHtml;
+        return () => {
+            btn.disabled = originalDisabled;
+            btn.innerHTML = originalHtml;
+        };
+    }
+
+    /**
+     * Avance à la question suivante.
+     * @param {boolean} silent  Si true (cas auto-next du polling), aucune notification visible
+     *                           en cas d'échec — le polling resynchronisera tout seul.
+     *                           Si false (clic manuel), un toast non-bloquant est affiché.
+     */
+    async function nextQuestion(silent = false) {
         if (CONTROL_STATE.isPaused) {
-            alert('⚠️ La partie est en pause');
+            if (!silent) showToast('⚠️ La partie est en pause', 'warning');
             return;
         }
-        
-        // IMPORTANT : Annuler le passage automatique en attente
-        // Si le prof clique manuellement, on ne veut pas que le timer auto lance la question suivante
+
         if (CONTROL_STATE.autoNextQuestionPending) {
             console.log('🛑 PROF: Annulation du passage auto (clic manuel)');
             CONTROL_STATE.autoNextQuestionPending = false;
         }
-        
-        CONTROL_STATE.currentQuestion++;
-        
-        // Utiliser le nombre de questions réellement jouées (limitées)
+
+        // Anti-double-clic : si une demande est déjà en cours, on ignore.
+        if (CONTROL_STATE._nextInFlight) {
+            console.log('⏳ PROF: nextQuestion déjà en cours, ignoré');
+            return;
+        }
+
         const totalQuestions = CONTROL_STATE.quizData?.questions?.length || APP_STATE.questions.length;
-        
-        if (CONTROL_STATE.currentQuestion >= totalQuestions) {
-            // Fin naturelle de la partie - pas de confirmation
-            console.log('🏁 PROF: Fin de partie atteinte (question', CONTROL_STATE.currentQuestion, '>=', totalQuestions, ')');
+        // La cible est TOUJOURS « état serveur connu + 1 ». CONTROL_STATE.currentQuestion
+        // est réconcilié depuis le serveur à chaque poll : si une avance précédente a été
+        // engloutie côté serveur (lost update mutualisé), un nouveau clic RE-PROPOSE la
+        // question jamais affichée au lieu de la sauter (avant : compteur optimiste local
+        // → chaque clic post-incident sautait une question pour les élèves).
+        const targetIndex = (CONTROL_STATE.currentQuestion ?? -1) + 1;
+
+        if (targetIndex >= totalQuestions) {
+            console.log('🏁 PROF: Fin de partie atteinte (cible', targetIndex, '>=', totalQuestions, ')');
             endGame(true);
             return;
         }
-        
+
+        CONTROL_STATE._nextInFlight = true;
+        CONTROL_STATE.lastCommandTs = Date.now();
+        const restoreNext = lockButton('btn-next-question', '⏳ Envoi…');
+        const restoreNextMobile = lockButton('btn-next-question-mobile', '⏳ Envoi…');
+
         try {
-            const params = {
-                action: 'next_question',
+            const result = await controlRequest('next_question', {
                 playCode: CONTROL_STATE.playCode,
-                questionIndex: CONTROL_STATE.currentQuestion,
-                customTime: CONTROL_STATE.customTime // Toujours envoyer (peut être null)
-            };
-            
-            console.log('🎯 PROF: Envoi nextQuestion avec params:', params);
-            
-            const response = await fetch('php/control.php', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-                body: new URLSearchParams(params)
+                questionIndex: targetIndex,
+                customTime: CONTROL_STATE.customTime
             });
-            
-            const result = await response.json();
-            
-            if (result.success) {
-                // Mettre à jour la progression
+
+            if (result.ok) {
+                const serverIndex = result.data.currentQuestion ?? result.data.alreadyAt ?? targetIndex;
+                CONTROL_STATE.currentQuestion = serverIndex;
+                // Mémoriser l'avance confirmée : le polling vérifiera que le serveur ne
+                // « recule » pas en dessous (auto-réparation si écriture engloutie).
+                CONTROL_STATE.lastCommandedQuestion = Math.max(CONTROL_STATE.lastCommandedQuestion ?? -1, serverIndex);
+                CONTROL_STATE.lastCommandTs = Date.now();
+                if (result.data.idempotent) {
+                    console.log('ℹ️ PROF: nextQuestion idempotent, aligné sur Q' + serverIndex);
+                }
                 updateQuestionProgress();
+                // Push immédiat aux fenêtres prof secondaires : c'est l'action la plus
+                // sensible à la latence (passage à la question suivante doit s'aligner < 1 s).
+                pushInstantSync();
+            } else {
+                console.error('❌ PROF: nextQuestion a échoué après retries', result.error || result.data);
+                if (!silent) {
+                    // Toast non-bloquant. Le polling à 3 s va re-synchroniser de toute façon.
+                    showToast('Question suivante non confirmée. Synchronisation en cours…', 'warning', 4000);
+                }
             }
-            
-        } catch (error) {
-            console.error('Erreur question suivante:', error);
+        } finally {
+            CONTROL_STATE._nextInFlight = false;
+            restoreNext();
+            restoreNextMobile();
         }
     }
 
@@ -957,11 +1264,10 @@
     
     async function executeEndGame() {
         try {
-            // Fermer le SSE prof avant de terminer
-            // Arrêter le polling
+            // Arrêter le polling (setTimeout adaptatif)
             if (controlPollingInterval) {
                 console.log('🔴 PROF: Arrêt du polling...');
-                clearInterval(controlPollingInterval);
+                clearTimeout(controlPollingInterval);
                 controlPollingInterval = null;
                 console.log('✅ PROF: Polling arrêté');
             }
@@ -971,7 +1277,8 @@
                 headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
                 body: new URLSearchParams({
                     action: 'end_game',
-                    playCode: CONTROL_STATE.playCode
+                    playCode: CONTROL_STATE.playCode,
+                    teacher_hash: window.CONFIG?.TEACHER_PASSWORD_HASH || ''
                 })
             });
             
@@ -981,7 +1288,8 @@
             
             if (result.success) {
                 console.log('✅ PROF: Partie terminée avec succès');
-                
+                pushInstantSync();
+
                 // Désactiver tous les boutons
                 const btnPause = document.getElementById('btn-pause-game');
                 const btnNext = document.getElementById('btn-next-question');
@@ -1071,8 +1379,8 @@
         return sorted.map((player, index) => `
             <tr>
                 <td>${index + 1}</td>
-                <td>${player.nickname}</td>
-                <td>${player.schoolName}</td>
+                <td>${escapeHtml(player.nickname)}</td>
+                <td>${escapeHtml(player.schoolName)}</td>
                 <td><strong>${player.score}</strong></td>
             </tr>
         `).join('');
@@ -1137,7 +1445,7 @@
                                 ${playersData.map((player, index) => `
                                     <tr class="clickable-row" onclick="showPlayerRecap('${player.nickname.replace(/'/g, "\\'")}')">
                                         <td>${index + 1}</td>
-                                        <td class="student-name">${player.nickname}</td>
+                                        <td class="student-name">${escapeHtml(player.nickname)}</td>
                                         <td class="success-rate">
                                             <span class="success-badge">${player.correctAnswers}/${player.totalQuestions}</span>
                                             <span class="success-percent">${totalQuestions > 0 ? Math.round((player.correctAnswers / player.totalQuestions) * 100) : 0}%</span>
@@ -1229,7 +1537,7 @@
         tbody.innerHTML = playersData.map((player, index) => `
             <tr class="clickable-row" data-nickname="${player.nickname.replace(/"/g, '&quot;')}">
                 <td>${index + 1}</td>
-                <td class="student-name">${player.nickname}</td>
+                <td class="student-name">${escapeHtml(player.nickname)}</td>
                 <td class="success-rate">
                     <span class="success-badge">${player.correctAnswers}/${player.totalQuestions}</span>
                     <span class="success-percent">${totalQuestions > 0 ? Math.round((player.correctAnswers / player.totalQuestions) * 100) : 0}%</span>
@@ -1640,29 +1948,194 @@
     let lastControlState = null;
     let lastResultsQuestionIndex = -1;
     let autoResyncTriggered = {}; // Track par questionIndex pour éviter de déclencher plusieurs fois
-    
+    let lastPollSuccessTs = 0;        // horodatage du dernier poll pilote réussi
+    let runAdaptivePollNow = null;    // relance immédiate du poll (utilisé par le heartbeat projection)
+    let autoNextFiredAt = {};         // questionIndex -> ts du dernier tir auto-next (anti re-tir + re-armement)
+    let repairState = { inFlight: false, lastTs: 0, attemptsByQ: {} };
+
+    /**
+     * Remet à ZÉRO tout l'état de CONDUITE entre deux parties. À appeler au lancement
+     * d'une nouvelle partie. BUG du 19/06 (corrigé) : le prof enchaînait des parties SANS
+     * recharger la fenêtre de pilotage ; `lastCommandedQuestion` (et repairState / auto-next
+     * / lastResultsQuestionIndex) gardaient la DERNIÈRE question de la partie PRÉCÉDENTE.
+     * Au démarrage suivant, maybeRepairLostAdvance voyait serveur(0) < voulu(24) et
+     * ré-émettait next_question(24) → la nouvelle partie SAUTAIT à la fin et « s'arrêtait
+     * subitement » (mesuré : 35KHY3 0→24, 5RVDJU 0→29, HDC874 -1→29).
+     */
+    function resetConductorState() {
+        CONTROL_STATE.currentQuestion = -1;
+        CONTROL_STATE.lastCommandedQuestion = null;
+        CONTROL_STATE.autoNextQuestionPending = false;
+        CONTROL_STATE.autoNextTimestamp = null;
+        CONTROL_STATE._nextInFlight = false;
+        if (CONTROL_STATE.autoNextCheckInterval) {
+            clearInterval(CONTROL_STATE.autoNextCheckInterval);
+            CONTROL_STATE.autoNextCheckInterval = null;
+        }
+        lastResultsQuestionIndex = -1;
+        autoResyncTriggered = {};
+        autoNextFiredAt = {};
+        repairState = { inFlight: false, lastTs: 0, attemptsByQ: {} };
+        console.log('🔄 PROF: état de conduite réinitialisé (nouvelle partie)');
+    }
+    window.__resetConductorState = resetConductorState;
+
+    /**
+     * AUTO-RÉPARATION (anti lost-update hébergement mutualisé).
+     * Si le serveur annonce un currentQuestion INFÉRIEUR à la dernière avance confirmée
+     * (lastCommandedQuestion), c'est qu'une écriture next_question a été engloutie par
+     * une écriture concurrente (copie périmée réécrite par-dessus). On ré-émet alors la
+     * commande : côté serveur elle est idempotente et MONOTONE (questionIndex <= courant
+     * → no-op), donc sur-émettre est sans danger ; elle ne peut que restaurer l'avance.
+     * Garde-fous : 1 réparation à la fois, 3 s min entre deux, 5 tentatives max par
+     * question (au-delà : toast pour le prof, qui peut recliquer).
+     */
+    async function maybeRepairLostAdvance(data) {
+        const wanted = CONTROL_STATE.lastCommandedQuestion;
+        if (wanted == null || typeof data.currentQuestion !== 'number') return;
+        if (data.currentQuestion >= wanted) {
+            // Serveur à jour (ou au-delà) : réinitialiser le compteur de tentatives.
+            repairState.attemptsByQ = {};
+            return;
+        }
+        if (data.state !== 'playing') return;
+        if (CONTROL_STATE.isPaused || CONTROL_STATE._nextInFlight || repairState.inFlight) return;
+        if (Date.now() - repairState.lastTs < 3000) return;
+
+        const attempts = repairState.attemptsByQ[wanted] || 0;
+        if (attempts >= 5) {
+            return; // toast déjà affiché à la 5ᵉ tentative
+        }
+        repairState.inFlight = true;
+        repairState.lastTs = Date.now();
+        repairState.attemptsByQ[wanted] = attempts + 1;
+        console.warn('🛠️ PROF: avance perdue détectée (serveur Q' + data.currentQuestion +
+                     ' < confirmé Q' + wanted + ') — ré-émission (tentative ' + (attempts + 1) + ')');
+        try {
+            const result = await controlRequest('next_question', {
+                playCode: CONTROL_STATE.playCode,
+                questionIndex: wanted,
+                customTime: CONTROL_STATE.customTime
+            });
+            if (result.ok) {
+                const serverIndex = result.data.currentQuestion ?? result.data.alreadyAt ?? wanted;
+                CONTROL_STATE.currentQuestion = Math.max(CONTROL_STATE.currentQuestion ?? -1, serverIndex);
+                CONTROL_STATE.lastCommandTs = Date.now();
+                updateQuestionProgress();
+                pushInstantSync();
+                console.log('🛠️ PROF: avance Q' + wanted + ' restaurée');
+            } else if ((repairState.attemptsByQ[wanted] || 0) >= 5) {
+                showToast('⚠️ La question n\'a pas pu être relancée automatiquement. Reclique sur « Question suivante ».', 'warning', 6000);
+            }
+        } finally {
+            repairState.inFlight = false;
+        }
+    }
+
+    /**
+     * Tir de l'avance automatique si l'échéance est atteinte. Appelé par TROIS voies
+     * complémentaires (la première qui passe gagne, le flag pending évite les doublons) :
+     *   1. l'interval 500 ms du pilote (précis quand l'onglet pilote est visible),
+     *   2. chaque poll pilote (fonctionne même throttlé),
+     *   3. le heartbeat 1 s de la projection (fenêtre TBI toujours visible — voie fiable
+     *      quand le pilote est en onglet caché, cas « un seul écran » où l'on a mesuré
+     *      des avances auto retardées à 60 s pile par le throttling navigateur).
+     */
+    function checkAutoNextDeadline() {
+        if (CONTROL_STATE.autoNextQuestionPending &&
+            !CONTROL_STATE.isPaused &&
+            !CONTROL_STATE._nextInFlight &&
+            Date.now() >= CONTROL_STATE.autoNextTimestamp) {
+
+            CONTROL_STATE.autoNextQuestionPending = false;
+            autoNextFiredAt[(CONTROL_STATE.currentQuestion ?? -1)] = Date.now();
+            console.log('⏰ PROF: Lancement auto de la question suivante (silencieux)');
+            nextQuestion(true); // silent=true : pas d'alerte si le polling synchronisera
+        }
+    }
+
+
     function startControlPolling() {
-        console.log('🔄 PROF: Démarrage du polling (1 requête/seconde)');
-        
-        // Arrêter le polling existant si présent
+        console.log('🔄 PROF: Démarrage du polling adaptatif côté pilote');
+
+        // Arrêter le polling existant si présent (setTimeout adaptatif)
         if (controlPollingInterval) {
-            clearInterval(controlPollingInterval);
+            clearTimeout(controlPollingInterval);
+            controlPollingInterval = null;
         }
         
         const poll = async () => {
             if (!CONTROL_STATE.playCode) {
                 return;
             }
-            
+
+            // Circuit breaker : si en pause, ne pas envoyer de requête
+            if (profIsCircuitPaused()) {
+                return;
+            }
+
             try {
                 const response = await fetch(`php/control.php?action=get_control_state&playCode=${CONTROL_STATE.playCode}`);
+                if (!response.ok) {
+                    const retryAfterMs = profParseRetryAfterMs(response);
+                    console.warn('⚠️ PROF: polling HTTP', response.status);
+                    profRecordError(retryAfterMs);
+                    return;
+                }
                 const data = await response.json();
-                
+
                 if (!data.success) {
                     console.error('❌ PROF: Erreur polling:', data.message);
                     return;
                 }
-                
+                // Succès : reset CB
+                profResetCircuit();
+                lastPollSuccessTs = Date.now();
+
+                // Mémoriser le timing pour piloter la cadence adaptative (transition window).
+                CONTROL_STATE.lastTimeElapsed = (typeof data.timeElapsed === 'number') ? data.timeElapsed : null;
+                CONTROL_STATE.lastQuestionTime = (typeof data.questionTime === 'number') ? data.questionTime : null;
+                CONTROL_STATE.lastQuestionStartTime = (typeof data.questionStartTime === 'number') ? data.questionStartTime : null;
+
+                // ========================================
+                // RÉCONCILIATION AVEC LE SERVEUR (anti lost-update)
+                // ========================================
+                // Le serveur est la VÉRITÉ. Sur l'hébergement mutualisé (cluster + NFS),
+                // une écriture next_question peut être engloutie par une écriture
+                // concurrente porteuse d'une copie périmée : l'état serveur « recule »
+                // alors que le pilote a reçu un succès. Sans réconciliation, le pilote
+                // vivait dans le futur : élèves bloqués sur le Top 3, puis question
+                // sautée au clic suivant (45 avances perdues mesurées le 12/06).
+                CONTROL_STATE.state = (typeof data.state === 'string') ? data.state : CONTROL_STATE.state;
+
+                // Pause : suivre le serveur (sauf si un toggle est en cours d'envoi).
+                if (typeof data.paused === 'boolean' && !CONTROL_STATE._pausePending &&
+                    data.paused !== CONTROL_STATE.isPaused) {
+                    console.log('🔁 PROF: état pause réconcilié depuis le serveur →', data.paused);
+                    CONTROL_STATE.isPaused = data.paused;
+                    const btnPause = document.getElementById('btn-pause-game');
+                    if (btnPause) btnPause.innerHTML = data.paused ? '▶️ Reprendre' : '⏸️ Pause';
+                }
+
+                if (typeof data.currentQuestion === 'number') {
+                    const sinceCmd = Date.now() - (CONTROL_STATE.lastCommandTs || 0);
+                    if (sinceCmd <= 2500) {
+                        // Fenêtre optimiste : une commande vient de partir, le poll peut
+                        // renvoyer un état antérieur sans que ce soit une anomalie.
+                        CONTROL_STATE.currentQuestion = Math.max(CONTROL_STATE.currentQuestion ?? -1, data.currentQuestion);
+                    } else {
+                        if (data.currentQuestion !== CONTROL_STATE.currentQuestion) {
+                            console.log('🔁 PROF: currentQuestion réconcilié', CONTROL_STATE.currentQuestion, '→', data.currentQuestion);
+                            CONTROL_STATE.currentQuestion = data.currentQuestion;
+                            updateQuestionProgress();
+                        }
+                        // AUTO-RÉPARATION : le serveur est REVENU en dessous d'une avance
+                        // pourtant confirmée → on ré-émet la commande (idempotente côté
+                        // serveur, et monotone : elle ne peut qu'avancer, jamais reculer).
+                        maybeRepairLostAdvance(data);
+                    }
+                }
+
                 // Mise à jour de la liste des joueurs
                 if (data.players) {
                     updateControlPlayersList(data.players);
@@ -1690,27 +2163,18 @@
                             
                             console.log('⏰ PROF: RESYNC AUTO - Temps écoulé depuis ' + timeOverdue + 's, forçage de la question ' + data.currentQuestion);
                             
-                            // Appeler forceQuestionComplete automatiquement
-                            try {
-                                const resyncResponse = await fetch('php/control.php', {
-                                    method: 'POST',
-                                    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-                                    body: new URLSearchParams({
-                                        action: 'force_question_complete',
-                                        playCode: CONTROL_STATE.playCode,
-                                        questionIndex: data.currentQuestion
-                                    })
-                                });
-                                
-                                const resyncResult = await resyncResponse.json();
-                                
-                                if (resyncResult.success) {
-                                    console.log('✅ PROF: RESYNC AUTO réussie pour Q' + data.currentQuestion);
-                                } else {
-                                    console.error('❌ PROF: RESYNC AUTO échouée');
-                                }
-                            } catch (error) {
-                                console.error('❌ PROF: Erreur RESYNC AUTO:', error);
+                            // Resync auto via le helper (retry exponentiel + idempotence côté serveur)
+                            const resyncResult = await controlRequest('force_question_complete', {
+                                playCode: CONTROL_STATE.playCode,
+                                questionIndex: data.currentQuestion
+                            });
+                            if (resyncResult.ok) {
+                                console.log('✅ PROF: RESYNC AUTO réussie pour Q' + data.currentQuestion +
+                                            (resyncResult.data.idempotent ? ' (idempotent)' : ''));
+                            } else {
+                                console.error('❌ PROF: RESYNC AUTO échouée', resyncResult.error || resyncResult.data);
+                                // On retire le flag pour permettre une nouvelle tentative au prochain polling
+                                delete autoResyncTriggered[data.currentQuestion];
                             }
                         }
                     } else {
@@ -1722,43 +2186,153 @@
                 }
                 
                 // Détecter si des résultats sont disponibles
-                if (data.resultsAvailable && data.questionIndex !== lastResultsQuestionIndex) {
-                    console.log('🟢 PROF: Résultats reçus pour question', data.questionIndex);
-                    lastResultsQuestionIndex = data.questionIndex;
-                    
-                    // En mode automatique, passer à la question suivante après 10 secondes
+                if (data.resultsAvailable && data.questionIndex === data.currentQuestion) {
+                    const isNewResults = (data.questionIndex !== lastResultsQuestionIndex);
+                    if (isNewResults) {
+                        console.log('🟢 PROF: Résultats reçus pour question', data.questionIndex);
+                        lastResultsQuestionIndex = data.questionIndex;
+                    }
+
+                    // En mode automatique, programmer l'avance. SYNCHRO v2 : l'apparition
+                    // réelle = ce délai + REVEAL_LEAD_MS (le serveur fixe revealAt à
+                    // l'instruction). On raccourcit donc le délai pour garder un rythme
+                    // ~équivalent à l'ancien (délai 5 s + révélation 1,5 s = 6,5 s).
                     if (!CONTROL_STATE.manualMode) {
-                        console.log('⏰ PROF: Passage auto à la question suivante dans 10s');
-                        
-                        CONTROL_STATE.autoNextTimestamp = Date.now() + 10000;
-                        CONTROL_STATE.autoNextQuestionPending = true;
-                        
+                        const autoDelay = (window.CONFIG && window.CONFIG.AUTO_NEXT_DELAY_MS) || 3500;
+                        const firedAt = autoNextFiredAt[data.questionIndex] || 0;
+                        if (isNewResults) {
+                            console.log('⏰ PROF: Passage auto à la question suivante dans ' + Math.round(autoDelay / 1000) + 's (+ lead révélation)');
+                            CONTROL_STATE.autoNextTimestamp = Date.now() + autoDelay;
+                            CONTROL_STATE.autoNextQuestionPending = true;
+                        } else if (!CONTROL_STATE.autoNextQuestionPending &&
+                                   !CONTROL_STATE._nextInFlight &&
+                                   (Date.now() - firedAt) > 8000) {
+                            // RE-ARMEMENT : les résultats de cette question sont TOUJOURS
+                            // affichés alors que l'avance auto aurait dû partir (tir raté
+                            // pour cause de réseau/CB, onglet throttlé, ou avance engloutie
+                            // côté serveur). Avant, le one-shot sur lastResultsQuestionIndex
+                            // laissait toute la classe bloquée sur le Top 3 jusqu'à un clic
+                            // manuel — qui, en plus, sautait une question.
+                            console.warn('⏰ PROF: auto-next bloqué sur Q' + data.questionIndex + ' — re-armement (1,5 s)');
+                            CONTROL_STATE.autoNextTimestamp = Date.now() + 1500;
+                            CONTROL_STATE.autoNextQuestionPending = true;
+                        }
+
                         if (!CONTROL_STATE.autoNextCheckInterval) {
-                            CONTROL_STATE.autoNextCheckInterval = setInterval(() => {
-                                if (CONTROL_STATE.autoNextQuestionPending && 
-                                    !CONTROL_STATE.isPaused && 
-                                    Date.now() >= CONTROL_STATE.autoNextTimestamp) {
-                                    
-                                    CONTROL_STATE.autoNextQuestionPending = false;
-                                    console.log('⏰ PROF: Lancement auto de la question suivante');
-                                    nextQuestion();
-                                }
-                            }, 500);
+                            // NB : en onglet caché, ce setInterval est throttlé par le
+                            // navigateur (jusqu'à 1 tick/min). Le même contrôle est donc
+                            // AUSSI fait à chaque poll et par le heartbeat de la projection
+                            // (fenêtre visible sur le TBI) via window.projectionHeartbeat.
+                            CONTROL_STATE.autoNextCheckInterval = setInterval(checkAutoNextDeadline, 500);
                         }
                     }
                 }
+                // Filet de sécurité : tenter le tir auto même si ce poll n'a pas de résultats
+                // (cas onglet caché où l'interval 500 ms ne tourne plus).
+                checkAutoNextDeadline();
                 
             } catch (error) {
                 console.error('❌ PROF: Erreur polling:', error);
+                profRecordError(0);
             }
         };
-        
-        // Première requête immédiate
-        poll();
-        
-        // Puis toutes les 2 secondes (au lieu de 1s)
-        controlPollingInterval = setInterval(poll, 2000);
+
+        // Polling adaptatif côté pilote :
+        //   - 1,5 s pendant qu'une question est active (CONTROL_POLL_INTERVAL_QUESTION)
+        //   - 2,5 s en attente / résultats (CONTROL_POLL_INTERVAL_IDLE)
+        //   - 400 ms en fenêtre de transition (juste après un changement OU fin de question imminente)
+        // Avec un jitter ±15 % pour éviter la synchronisation des frappes serveur.
+        const CTRL_Q  = (window.CONFIG && window.CONFIG.CONTROL_POLL_INTERVAL_QUESTION) || 1500;
+        const CTRL_I  = (window.CONFIG && window.CONFIG.CONTROL_POLL_INTERVAL_IDLE)     || 2500;
+        const CTRL_T  = (window.CONFIG && window.CONFIG.POLL_INTERVAL_TRANSITION)       || 400;
+        const CTRL_TW = (window.CONFIG && window.CONFIG.POLL_TRANSITION_WINDOW_MS)      || 4000;
+        const CTRL_PT = (window.CONFIG && window.CONFIG.POLL_PRE_TRANSITION_SECONDS)    || 2;
+        const CTRL_J  = (window.CONFIG && window.CONFIG.POLL_JITTER_RATIO)              || 0.15;
+
+        let adaptivePollRunning = false;
+        const adaptivePoll = async () => {
+            if (adaptivePollRunning) return;
+            adaptivePollRunning = true;
+            try {
+                await poll();
+            } finally {
+                adaptivePollRunning = false;
+            }
+
+            // Fenêtre de transition côté pilote : juste après un changement (questionStartTime
+            // récent < CTRL_TW), OU fin de question imminente (timeRemaining < CTRL_PT).
+            const qst = CONTROL_STATE.lastQuestionStartTime;
+            const elapsed = CONTROL_STATE.lastTimeElapsed;
+            const qTime = CONTROL_STATE.lastQuestionTime;
+            const nowSec = Math.floor(Date.now() / 1000);
+            const inPostTransition = (typeof qst === 'number' && qst > 0)
+                                     ? ((nowSec - qst) * 1000 < CTRL_TW)
+                                     : false;
+            const inPreTransition = (typeof elapsed === 'number' && typeof qTime === 'number' && qTime > 0)
+                                    ? ((qTime - elapsed) <= CTRL_PT && elapsed >= 0)
+                                    : false;
+
+            let base;
+            if (inPostTransition || inPreTransition) {
+                base = CTRL_T;
+            } else {
+                const isQuestionActive = (CONTROL_STATE.currentQuestion ?? -1) >= 0
+                                         && CONTROL_STATE.state !== 'finished';
+                base = isQuestionActive ? CTRL_Q : CTRL_I;
+            }
+            const jitter = (Math.random() * 2 - 1) * CTRL_J;
+            let delay = Math.max(300, Math.round(base * (1 + jitter)));
+            // Si le circuit breaker est ouvert, on attend au moins la fin de la pause
+            const pauseDelay = profTimeUntilReopens();
+            if (pauseDelay > 0) {
+                delay = Math.max(delay, pauseDelay + 100);
+            }
+            controlPollingInterval = setTimeout(adaptivePoll, delay);
+        };
+
+        // Relance immédiate déclenchable de l'extérieur (heartbeat projection) : quand
+        // l'onglet pilote est caché, ses setTimeout sont throttlés (jusqu'à 1/min) ; la
+        // projection, toujours visible, peut ainsi maintenir la cadence du poll pilote.
+        runAdaptivePollNow = () => {
+            if (adaptivePollRunning) return;
+            if (controlPollingInterval) {
+                clearTimeout(controlPollingInterval);
+                controlPollingInterval = null;
+            }
+            adaptivePoll();
+        };
+
+        // Première requête immédiate, les suivantes sont réarmées dans adaptivePoll
+        adaptivePoll();
     }
+
+    /**
+     * Battement de cœur appelé toutes les secondes par la FENÊTRE PROJECTION (qui, étant
+     * affichée au TBI, n'est jamais throttlée par le navigateur). Compense le throttling
+     * de l'onglet pilote quand il est caché (cas fréquent : un seul écran en classe,
+     * projection en plein écran par-dessus le pilote) :
+     *   - tire l'avance automatique dont l'échéance est dépassée,
+     *   - relance le poll pilote s'il a plus de 4 s de retard (resync auto + réparation
+     *     d'avance perdue incluses),
+     *   - rafraîchit la projection si sa dernière mise à jour date de plus de 4 s.
+     * Sans projection ouverte, ce heartbeat n'existe pas et le pilote fonctionne comme
+     * avant (intervalles propres tant que son onglet est visible).
+     */
+    window.projectionHeartbeat = function() {
+        try {
+            if (!CONTROL_STATE.playCode) return;
+            checkAutoNextDeadline();
+            if (typeof runAdaptivePollNow === 'function' &&
+                (Date.now() - lastPollSuccessTs) > 4000 && !profIsCircuitPaused()) {
+                runAdaptivePollNow();
+            }
+            if ((Date.now() - lastProjectionPushTs) > 4000 && !profIsCircuitPaused()) {
+                updateProjectionWindow();
+            }
+        } catch (e) {
+            console.warn('💓 PROJECTION heartbeat: erreur ignorée', e);
+        }
+    };
     
     // ========================================
     // RESYNCHRONISATION D'URGENCE
@@ -1768,31 +2342,30 @@
         if (!confirm('🔄 Forcer la resynchronisation ?\n\nCela va forcer l\'affichage des résultats actuels pour tous les élèves.\nUtilisez ceci uniquement si les élèves sont bloqués.')) {
             return;
         }
-        
+
+        const restore1 = lockButton('btn-resync', '⏳ Resync…');
+        const restore2 = lockButton('btn-resync-mobile', '⏳ Resync…');
+
         try {
-            // Marquer la question actuelle comme complétée
-            const response = await fetch('php/control.php', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-                body: new URLSearchParams({
-                    action: 'force_question_complete',
-                    playCode: CONTROL_STATE.playCode,
-                    questionIndex: CONTROL_STATE.currentQuestion
-                })
+            const result = await controlRequest('force_question_complete', {
+                playCode: CONTROL_STATE.playCode,
+                questionIndex: CONTROL_STATE.currentQuestion
             });
-            
-            const result = await response.json();
-            
-            if (result.success) {
-                console.log('✅ Resynchronisation forcée avec succès');
-                alert('✅ Resynchronisation effectuée !\nLes élèves devraient maintenant voir les résultats.');
+
+            if (result.ok) {
+                if (result.data.idempotent) {
+                    showToast('ℹ️ Question déjà complétée — les élèves voient les résultats.', 'info', 4000);
+                } else {
+                    showToast('✅ Resynchronisation effectuée !', 'success', 4000);
+                }
+                pushInstantSync();
             } else {
-                alert('❌ Erreur lors de la resynchronisation');
+                console.error('❌ PROF: resync échouée', result.error || result.data);
+                showToast('❌ Resynchronisation non confirmée. Réessaye dans un instant.', 'error', 5000);
             }
-            
-        } catch (error) {
-            console.error('❌ Erreur resynchronisation:', error);
-            alert('❌ Erreur lors de la resynchronisation');
+        } finally {
+            restore1();
+            restore2();
         }
     };
 
@@ -1803,6 +2376,8 @@
     let projectionWindow = null;
     let projectionUpdateInterval = null;
     let teacherWindow = null;
+    let lastProjectionPushTs = 0;     // dernier update projection abouti (pour le heartbeat)
+    let lastProjectionFetchTs = 0;    // anti-doublon : updateProjectionWindow max ~1/s
     
     function openProjectionMode() {
         // Créer l'URL avec les paramètres - utiliser les questions de la session en cours
@@ -1840,10 +2415,14 @@
     }
     
     function startProjectionUpdates() {
-        console.log('📽️ PROJECTION: Démarrage du polling (toutes les 1.5s au lieu de 500ms)');
+        // Polling autonome de la projection (3 s) — la projection reste à jour même si la
+        // fenêtre prof est fermée ou en perte de connexion. Cadence dédiée (3 s) pour
+        // réduire le volume get_control_state ; l'immédiateté vient de pushInstantSync.
+        const interval = (window.CONFIG && window.CONFIG.PROJECTION_POLL_INTERVAL_MS) || 3000;
+        console.log('📽️ PROJECTION: Démarrage du polling toutes les ' + interval + ' ms');
         projectionUpdateInterval = setInterval(() => {
             updateProjectionWindow();
-        }, 1500);
+        }, interval);
     }
     
     function stopProjectionUpdates() {
@@ -1878,16 +2457,37 @@
             plannedQuestionCount = CONTROL_STATE.quizData.questions.length;
         }
         
+        // Si le circuit breaker prof est en pause, ne pas envoyer
+        if (profIsCircuitPaused()) {
+            return;
+        }
+
+        // Anti-rafale : l'update peut être déclenché par l'interval (3 s), pushInstantSync
+        // ET le heartbeat projection — on borne à ~1 requête/s.
+        if (Date.now() - lastProjectionFetchTs < 900) {
+            return;
+        }
+        lastProjectionFetchTs = Date.now();
+
         // Récupérer l'état du jeu via le serveur
         fetch('php/control.php?action=get_control_state&playCode=' + CONTROL_STATE.playCode)
-            .then(res => res.json())
+            .then(res => {
+                if (!res.ok) {
+                    const retryAfterMs = profParseRetryAfterMs(res);
+                    profRecordError(retryAfterMs);
+                    throw new Error('HTTP ' + res.status);
+                }
+                return res.json();
+            })
             .then(result => {
                 if (!result.success) {
                     console.error('❌ PROJECTION: Erreur API', result);
                     return;
                 }
-                
-                console.log('📽️ PROJECTION: État reçu', result.state, 'Q' + result.currentQuestion, 
+                profResetCircuit();
+                lastProjectionPushTs = Date.now();
+
+                console.log('📽️ PROJECTION: État reçu', result.state, 'Q' + result.currentQuestion,
                     result.questionCompleted ? '✅completed' : '', result.resultsAvailable ? '📊results' : '');
                 
                 // Préparer les données de base - utiliser les questions de la session en cours
@@ -1901,27 +2501,46 @@
                     paused: result.paused || false,
                     screen: 'waiting',
                     questions: CONTROL_STATE.quizData?.questions || APP_STATE.questions,
-                    totalQuestions: plannedQuestionCount // NOUVEAU : Toujours envoyer le nombre prévu
+                    totalQuestions: plannedQuestionCount, // NOUVEAU : Toujours envoyer le nombre prévu
+                    // SYNCHRO v2 : instant absolu d'apparition (ms serveur) + horloge serveur
+                    // ms — la projection révèle la question via son horloge synchronisée, au
+                    // même instant que les postes élèves.
+                    revealAt: (typeof result.questionRevealAt === 'number') ? result.questionRevealAt : 0,
+                    serverTimeMs: (typeof result.serverTimeMs === 'number') ? result.serverTimeMs : 0
                 };
                 
+                // Tri STABLE et déterministe (anti-scintillement) : score décroissant,
+                // puis pseudo (départage des ex æquo). Évite que les ex æquo permutent
+                // d'un poll à l'autre.
+                const stableSort = function(players) {
+                    return players.slice().sort(function(a, b) {
+                        const d = (b.score || 0) - (a.score || 0);
+                        if (d !== 0) return d;
+                        return String(a.nickname || '').localeCompare(String(b.nickname || ''));
+                    });
+                };
+
                 // Détecter l'écran actuel selon l'état du serveur
                 if (result.state === 'finished' || result.state === 'ended') {
                     console.log('📽️ PROJECTION: Affichage écran final');
                     data.screen = 'final';
-                    // Envoyer le classement final complet
-                    const sortedPlayers = result.players.slice().sort((a, b) => (b.score || 0) - (a.score || 0));
-                    data.allPlayers = sortedPlayers;
+                    data.allPlayers = result.ranking || stableSort(result.players);
                 } else if (result.questionCompleted || result.resultsAvailable) {
-                    // NOUVEAU : Détecter la phase "résultats" via questionCompleted
+                    // Phase "résultats" : utiliser le classement FIGÉ par le serveur
+                    // (result.ranking) → l'ordre ne bouge plus malgré les réponses
+                    // tardives. Repli : tri stable si pas d'instantané.
                     console.log('📽️ PROJECTION: Affichage classement général');
                     data.screen = 'ranking';
-                    // Trier TOUS les joueurs par score
-                    const sortedPlayers = result.players.slice().sort((a, b) => (b.score || 0) - (a.score || 0));
-                    data.allPlayers = sortedPlayers;
-                    data.top3 = sortedPlayers.slice(0, 3);
+                    const ranked = result.ranking || stableSort(result.players);
+                    data.allPlayers = ranked;
+                    data.top3 = ranked.slice(0, 3);
                 } else if (result.state === 'playing' && result.currentQuestion >= 0) {
                     console.log('📽️ PROJECTION: Affichage question', result.currentQuestion);
                     data.screen = 'question';
+                    // Timing serveur → la projection aligne le compte à rebours pour
+                    // révéler la question EN MÊME TEMPS que les postes élèves (pas avant).
+                    data.timeElapsed = (typeof result.timeElapsed === 'number') ? result.timeElapsed : 0;
+                    data.questionTime = result.questionTime;
                 } else {
                     console.log('📽️ PROJECTION: En attente');
                 }
@@ -1947,6 +2566,7 @@
             })
             .catch(err => {
                 console.error('❌ PROJECTION: Erreur mise à jour:', err);
+                profRecordError(0);
             });
     }
     
@@ -2080,15 +2700,127 @@
     }
 
     // ========================================
+    // QR CODE
+    // ========================================
+
+    /**
+     * Construit l'URL de la page d'accueil avec le code pré-rempli.
+     * Fonctionne quelle que soit la profondeur du chemin de déploiement.
+     */
+    function buildJoinUrl(playCode) {
+        const base = window.location.origin + window.location.pathname
+                        .replace(/\/[^/]*$/, '/'); // garder le dossier, retirer le fichier
+        return base + 'index.html?code=' + encodeURIComponent(playCode);
+    }
+
+    /**
+     * Génère le QR code miniature dans le bouton du header.
+     * Remplace l'icône ⬛ par le vrai QR rendu par qrcodejs.
+     */
+    function generateQrMini(playCode) {
+        const btn = document.querySelector('.qr-btn');
+        if (!btn || typeof QRCode === 'undefined') return;
+
+        const icon = btn.querySelector('.qr-icon');
+        if (!icon) return;
+
+        // Remplacer l'icône par un conteneur pour le QR
+        icon.innerHTML = '';
+        icon.style.cssText = 'display:flex;align-items:center;justify-content:center;width:36px;height:36px;';
+
+        try {
+            new QRCode(icon, {
+                text: buildJoinUrl(playCode),
+                width: 36,
+                height: 36,
+                colorDark: '#1a1a2e',
+                colorLight: '#ffffff',
+                correctLevel: QRCode.CorrectLevel.M
+            });
+        } catch(e) {
+            icon.textContent = '⬛';
+        }
+    }
+
+    /**
+     * Affiche le QR code en grand dans un modal plein écran.
+     * Clic n'importe où sur le modal le ferme.
+     */
+    function showQrModal() {
+        const playCode = CONTROL_STATE.playCode;
+        if (!playCode) return;
+
+        // Créer le modal s'il n'existe pas encore
+        let modal = document.getElementById('qr-modal');
+        if (!modal) {
+            modal = document.createElement('div');
+            modal.id = 'qr-modal';
+            modal.className = 'qr-modal';
+            modal.innerHTML = `
+                <div class="qr-modal-backdrop" onclick="closeQrModal()"></div>
+                <div class="qr-modal-content">
+                    <div class="qr-modal-header">
+                        <div class="qr-modal-title">Scanner pour rejoindre</div>
+                        <button class="qr-modal-close" onclick="closeQrModal()">✕</button>
+                    </div>
+                    <div id="qr-modal-canvas"></div>
+                    <div class="qr-modal-code">${playCode}</div>
+                    <div class="qr-modal-url" id="qr-modal-url"></div>
+                </div>
+            `;
+            document.body.appendChild(modal);
+        }
+
+        // Afficher le modal
+        modal.classList.add('active');
+        document.getElementById('qr-modal-url').textContent = buildJoinUrl(playCode);
+
+        // Générer le grand QR (vider d'abord)
+        const canvas = document.getElementById('qr-modal-canvas');
+        canvas.innerHTML = '';
+        if (typeof QRCode !== 'undefined') {
+            new QRCode(canvas, {
+                text: buildJoinUrl(playCode),
+                width: 260,
+                height: 260,
+                colorDark: '#1a1a2e',
+                colorLight: '#ffffff',
+                correctLevel: QRCode.CorrectLevel.M
+            });
+        }
+    }
+
+    function closeQrModal() {
+        const modal = document.getElementById('qr-modal');
+        if (modal) modal.classList.remove('active');
+    }
+
+    // ========================================
     // EXPORT VERS GLOBAL
     // ========================================
     
+    // TEMPORAIRE : bouton de monitoring depuis le panel prof. À retirer
+    // une fois l'app stabilisée (cf. lien dans index.html, modal #control-modal).
+    // Le dashboard est à la racine (dashboard.html / dashboard.php) pour rester
+    // accessible depuis le poste prof au collège — protégé par teacher_hash côté PHP.
+    function openMetricsDashboard() {
+        const hash = (window.CONFIG && window.CONFIG.TEACHER_PASSWORD_HASH) || '';
+        if (!hash) {
+            alert('⚠️ Hash prof introuvable. Ouvre la console pour diagnostiquer.');
+            return;
+        }
+        const url = 'dashboard.html?teacher_hash=' + encodeURIComponent(hash);
+        window.open(url, 'qwest-metrics', 'width=1100,height=820');
+    }
+    window.openMetricsDashboard = openMetricsDashboard;
+
     window.openControlPanel = openControlPanel;
     window.openTeacherPlay = openTeacherPlay;
     window.closeControlPanel = closeControlPanel;
     window.startGame = startGame;
     window.pauseGame = pauseGame;
     window.nextQuestion = nextQuestion;
+    window.CONTROL_STATE = CONTROL_STATE; // exposé pour diagnostic (comme APP_STATE/SESSION_STATE)
     window.endGame = endGame;
     window.refreshPlayers = refreshPlayers;
     window.showFullScoreboard = showFullScoreboard;
@@ -2099,5 +2831,10 @@
     window.toggleQuestionPreview = toggleQuestionPreview;
     window.closeQuestionPreview = closeQuestionPreview;
     window.openProjectionMode = openProjectionMode;
+    window.showQrModal = showQrModal;
+    window.closeQrModal = closeQrModal;
+    // Exposé pour permettre à projection.html (window.forceUpdate) et à teacher-play.html
+    // de demander une resync immédiate à la fenêtre prof, sans attendre le polling.
+    window.updateProjectionWindow = updateProjectionWindow;
 
 })();

@@ -1,0 +1,3032 @@
+{
+  "name": "5e_CultureGenerale_150q",
+  "version": "1.0",
+  "createdAt": "2026-01-29T06:50:29.424Z",
+  "questionsCount": 150,
+  "questions": [
+    {
+      "type": "multiple",
+      "question": "Quelle est la religion majoritaire au Moyen Âge en Europe occidentale ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'islam",
+          "correct": false
+        },
+        {
+          "text": "Le christianisme",
+          "correct": true
+        },
+        {
+          "text": "Le judaïsme",
+          "correct": false
+        },
+        {
+          "text": "Le bouddhisme",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La Terre met 365 jours et 6 heures environ pour faire le tour du Soleil.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment appelle-t-on le système politique où le roi détient tous les pouvoirs ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La démocratie",
+          "correct": false
+        },
+        {
+          "text": "La monarchie absolue",
+          "correct": true
+        },
+        {
+          "text": "La république",
+          "correct": false
+        },
+        {
+          "text": "L'oligarchie",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on le savant musulman qui a inventé l'algèbre ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Al-Khwarizmi",
+          "correct": true
+        }
+      ],
+      "caseSensitive": false,
+      "acceptedAnswers": [
+        "al-khwarizmi",
+        "Al Khwarizmi",
+        "Khwarizmi",
+        "al khwarizmi"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces empires du plus ancien au plus récent :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Empire romain",
+          "correct": true
+        },
+        {
+          "text": "Empire byzantin",
+          "correct": true
+        },
+        {
+          "text": "Empire carolingien",
+          "correct": true
+        },
+        {
+          "text": "Empire ottoman",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel océan borde la côte ouest de l'Afrique ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "L'océan Pacifique",
+          "correct": false
+        },
+        {
+          "text": "L'océan Atlantique",
+          "correct": true
+        },
+        {
+          "text": "L'océan Indien",
+          "correct": false
+        },
+        {
+          "text": "L'océan Arctique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le Coran est le livre sacré des musulmans.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'une fraction irréductible ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Une fraction égale à 1",
+          "correct": false
+        },
+        {
+          "text": "Une fraction qui ne peut plus être simplifiée",
+          "correct": true
+        },
+        {
+          "text": "Une fraction négative",
+          "correct": false
+        },
+        {
+          "text": "Une fraction supérieure à 1",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment s'appelle la période historique entre l'Antiquité et les Temps modernes ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le Moyen Âge",
+          "correct": true
+        }
+      ],
+      "caseSensitive": false,
+      "acceptedAnswers": [
+        "Moyen Âge",
+        "moyen age",
+        "Moyen Age",
+        "moyen âge"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le plus long fleuve d'Europe ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le Danube",
+          "correct": false
+        },
+        {
+          "text": "Le Rhin",
+          "correct": false
+        },
+        {
+          "text": "La Volga",
+          "correct": true
+        },
+        {
+          "text": "La Loire",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Les croisades avaient pour but de reprendre Jérusalem aux musulmans.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces événements du Moyen Âge dans l'ordre chronologique :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Baptême de Clovis (496)",
+          "correct": true
+        },
+        {
+          "text": "Couronnement de Charlemagne (800)",
+          "correct": true
+        },
+        {
+          "text": "Première croisade (1096)",
+          "correct": true
+        },
+        {
+          "text": "Guerre de Cent Ans (1337)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment appelle-t-on le lieu de culte des musulmans ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Une église",
+          "correct": false
+        },
+        {
+          "text": "Une synagogue",
+          "correct": false
+        },
+        {
+          "text": "Une mosquée",
+          "correct": true
+        },
+        {
+          "text": "Un temple",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment s'appelle la technique de peinture sur mur encore humide ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Fresque",
+          "correct": true
+        }
+      ],
+      "caseSensitive": false,
+      "acceptedAnswers": [
+        "la fresque",
+        "une fresque"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel instrument utilise-t-on pour mesurer les angles ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Un compas",
+          "correct": false
+        },
+        {
+          "text": "Un rapporteur",
+          "correct": true
+        },
+        {
+          "text": "Une équerre",
+          "correct": false
+        },
+        {
+          "text": "Une règle",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La peste noire a tué environ un tiers de la population européenne au XIVe siècle.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel roi de France est connu pour avoir unifié le royaume franc ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Louis XIV",
+          "correct": false
+        },
+        {
+          "text": "Charlemagne",
+          "correct": true
+        },
+        {
+          "text": "François Ier",
+          "correct": false
+        },
+        {
+          "text": "Philippe Auguste",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces nombres décimaux du plus petit au plus grand :",
+      "time": 25,
+      "answers": [
+        {
+          "text": "0,25",
+          "correct": true
+        },
+        {
+          "text": "0,5",
+          "correct": true
+        },
+        {
+          "text": "0,75",
+          "correct": true
+        },
+        {
+          "text": "1,25",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment appelle-t-on le chef religieux de l'Islam ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un prêtre",
+          "correct": false
+        },
+        {
+          "text": "Un rabbin",
+          "correct": false
+        },
+        {
+          "text": "Un imam",
+          "correct": true
+        },
+        {
+          "text": "Un moine",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment s'appelle le fondateur de l'Islam ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Mahomet",
+          "correct": true
+        }
+      ],
+      "caseSensitive": false,
+      "acceptedAnswers": [
+        "Muhammad",
+        "Mohammed",
+        "Mohamed",
+        "le prophète Mahomet"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un angle obtus mesure plus de 90° et moins de 180°.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la capitale de l'Égypte ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Alexandrie",
+          "correct": false
+        },
+        {
+          "text": "Le Caire",
+          "correct": true
+        },
+        {
+          "text": "Louxor",
+          "correct": false
+        },
+        {
+          "text": "Assouan",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment appelle-t-on un vers de 12 syllabes ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un octosyllabe",
+          "correct": false
+        },
+        {
+          "text": "Un décasyllabe",
+          "correct": false
+        },
+        {
+          "text": "Un alexandrin",
+          "correct": true
+        },
+        {
+          "text": "Un hexasyllabe",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces découvertes scientifiques de la plus ancienne à la plus récente :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Théorie de la gravité (Newton)",
+          "correct": true
+        },
+        {
+          "text": "Vaccin contre la rage (Pasteur)",
+          "correct": true
+        },
+        {
+          "text": "Radioactivité (Curie)",
+          "correct": true
+        },
+        {
+          "text": "ADN (Watson et Crick)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le résultat de (-5) × (-3) ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "-15",
+          "correct": false
+        },
+        {
+          "text": "15",
+          "correct": true
+        },
+        {
+          "text": "-8",
+          "correct": false
+        },
+        {
+          "text": "8",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on l'ensemble des règles qui organisent la vie des moines ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "La règle",
+          "correct": true
+        }
+      ],
+      "caseSensitive": false,
+      "acceptedAnswers": [
+        "règle monastique",
+        "une règle",
+        "la règle monastique",
+        "règle"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La boussole a été inventée en Chine.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel type de triangle a deux côtés égaux ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Équilatéral",
+          "correct": false
+        },
+        {
+          "text": "Isocèle",
+          "correct": true
+        },
+        {
+          "text": "Scalène",
+          "correct": false
+        },
+        {
+          "text": "Rectangle",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle ville était la capitale de l'Empire byzantin ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Rome",
+          "correct": false
+        },
+        {
+          "text": "Athènes",
+          "correct": false
+        },
+        {
+          "text": "Constantinople",
+          "correct": true
+        },
+        {
+          "text": "Alexandrie",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Marco Polo a voyagé jusqu'en Chine au XIIIe siècle.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces rois de France dans l'ordre chronologique :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Clovis",
+          "correct": true
+        },
+        {
+          "text": "Charlemagne",
+          "correct": true
+        },
+        {
+          "text": "Saint Louis",
+          "correct": true
+        },
+        {
+          "text": "Louis XIV",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le nom de la guerre qui a opposé la France et l'Angleterre pendant plus de 100 ans ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La guerre des Gaules",
+          "correct": false
+        },
+        {
+          "text": "La guerre de Cent Ans",
+          "correct": true
+        },
+        {
+          "text": "Les guerres de Religion",
+          "correct": false
+        },
+        {
+          "text": "La guerre de Trente Ans",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on le système d'écriture arabe qui a remplacé les chiffres romains ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Chiffres arabes",
+          "correct": true
+        }
+      ],
+      "caseSensitive": false,
+      "acceptedAnswers": [
+        "les chiffres arabes",
+        "numération arabe",
+        "chiffres indo-arabes"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la formule du périmètre d'un cercle ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "π × r",
+          "correct": false
+        },
+        {
+          "text": "2 × π × r",
+          "correct": true
+        },
+        {
+          "text": "π × r²",
+          "correct": false
+        },
+        {
+          "text": "π × d²",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Jeanne d'Arc a été brûlée vive à Rouen en 1431.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel peuple a envahi l'Empire romain au Ve siècle ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Les Grecs",
+          "correct": false
+        },
+        {
+          "text": "Les Perses",
+          "correct": false
+        },
+        {
+          "text": "Les Barbares (Germains)",
+          "correct": true
+        },
+        {
+          "text": "Les Égyptiens",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment appelle-t-on un quadrilatère qui a 4 angles droits ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Un losange",
+          "correct": false
+        },
+        {
+          "text": "Un rectangle",
+          "correct": true
+        },
+        {
+          "text": "Un trapèze",
+          "correct": false
+        },
+        {
+          "text": "Un parallélogramme",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces inventions médiévales de la plus ancienne à la plus récente :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Le moulin à eau",
+          "correct": true
+        },
+        {
+          "text": "Les lunettes",
+          "correct": true
+        },
+        {
+          "text": "L'imprimerie",
+          "correct": true
+        },
+        {
+          "text": "Le microscope",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on l'obligation des paysans de donner une partie de leur récolte à l'Église ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "La dîme",
+          "correct": true
+        }
+      ],
+      "caseSensitive": false,
+      "acceptedAnswers": [
+        "dîme",
+        "dime",
+        "la dime"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel continent est le plus peuplé du monde ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "L'Afrique",
+          "correct": false
+        },
+        {
+          "text": "L'Europe",
+          "correct": false
+        },
+        {
+          "text": "L'Asie",
+          "correct": true
+        },
+        {
+          "text": "L'Amérique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le système féodal repose sur les liens entre seigneurs et vassaux.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la capitale du Maroc ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Casablanca",
+          "correct": false
+        },
+        {
+          "text": "Marrakech",
+          "correct": false
+        },
+        {
+          "text": "Rabat",
+          "correct": true
+        },
+        {
+          "text": "Fès",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment appelle-t-on un angle de 180° ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Un angle droit",
+          "correct": false
+        },
+        {
+          "text": "Un angle plat",
+          "correct": true
+        },
+        {
+          "text": "Un angle obtus",
+          "correct": false
+        },
+        {
+          "text": "Un angle aigu",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces pays par superficie (du plus petit au plus grand) :",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Belgique",
+          "correct": true
+        },
+        {
+          "text": "Allemagne",
+          "correct": true
+        },
+        {
+          "text": "France",
+          "correct": true
+        },
+        {
+          "text": "Algérie",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment s'appelle le palais fortifié des rois maures à Grenade, en Espagne ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "L'Alhambra",
+          "correct": true
+        }
+      ],
+      "caseSensitive": false,
+      "acceptedAnswers": [
+        "Alhambra",
+        "alhambra"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Les Vikings venaient de Scandinavie.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le résultat de 3/4 + 1/4 ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "4/8",
+          "correct": false
+        },
+        {
+          "text": "1",
+          "correct": true
+        },
+        {
+          "text": "4/4",
+          "correct": false
+        },
+        {
+          "text": "2/4",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment appelle-t-on un récit qui raconte les exploits d'un chevalier ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Une fable",
+          "correct": false
+        },
+        {
+          "text": "Un roman de chevalerie",
+          "correct": true
+        },
+        {
+          "text": "Une épopée",
+          "correct": false
+        },
+        {
+          "text": "Un conte",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La Grande Mosquée de Cordoue était autrefois la plus grande mosquée du monde occidental.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces éléments de l'architecture gothique du bas vers le haut :",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le portail",
+          "correct": true
+        },
+        {
+          "text": "La rosace",
+          "correct": true
+        },
+        {
+          "text": "Les clochers",
+          "correct": true
+        },
+        {
+          "text": "La flèche",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel pays n'a pas de frontière avec la France ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'Espagne",
+          "correct": false
+        },
+        {
+          "text": "L'Italie",
+          "correct": false
+        },
+        {
+          "text": "Le Portugal",
+          "correct": true
+        },
+        {
+          "text": "La Belgique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on les cinq piliers de l'Islam ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Les cinq piliers",
+          "correct": true
+        }
+      ],
+      "caseSensitive": false,
+      "acceptedAnswers": [
+        "cinq piliers de l'islam",
+        "5 piliers",
+        "piliers de l'islam"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la propriété d'un losange ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "4 angles droits",
+          "correct": false
+        },
+        {
+          "text": "4 côtés égaux",
+          "correct": true
+        },
+        {
+          "text": "2 côtés parallèles",
+          "correct": false
+        },
+        {
+          "text": "Aucun côté égal",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Gutenberg a inventé l'imprimerie à caractères mobiles en Europe au XVe siècle.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment appelle-t-on le style architectural avec des arcs en ogive ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le style roman",
+          "correct": false
+        },
+        {
+          "text": "Le style gothique",
+          "correct": true
+        },
+        {
+          "text": "Le style baroque",
+          "correct": false
+        },
+        {
+          "text": "Le style classique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces fleuves du plus court au plus long :",
+      "time": 30,
+      "answers": [
+        {
+          "text": "La Seine (776 km)",
+          "correct": true
+        },
+        {
+          "text": "Le Rhin (1 233 km)",
+          "correct": true
+        },
+        {
+          "text": "Le Danube (2 857 km)",
+          "correct": true
+        },
+        {
+          "text": "Le Nil (6 650 km)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel navigateur portugais a découvert la route maritime vers l'Inde ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Christophe Colomb",
+          "correct": false
+        },
+        {
+          "text": "Vasco de Gama",
+          "correct": true
+        },
+        {
+          "text": "Magellan",
+          "correct": false
+        },
+        {
+          "text": "Amerigo Vespucci",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on la cérémonie où un seigneur donne un fief à son vassal ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "L'hommage",
+          "correct": true
+        }
+      ],
+      "caseSensitive": false,
+      "acceptedAnswers": [
+        "hommage",
+        "cérémonie de l'hommage",
+        "la cérémonie de l'hommage"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le nombre π (pi) est environ égal à 3,14.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel pays africain n'a jamais été colonisé ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le Sénégal",
+          "correct": false
+        },
+        {
+          "text": "L'Algérie",
+          "correct": false
+        },
+        {
+          "text": "L'Éthiopie",
+          "correct": true
+        },
+        {
+          "text": "Le Maroc",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment calcule-t-on l'aire d'un triangle ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Base × hauteur",
+          "correct": false
+        },
+        {
+          "text": "(Base × hauteur) ÷ 2",
+          "correct": true
+        },
+        {
+          "text": "Base + hauteur",
+          "correct": false
+        },
+        {
+          "text": "2 × base × hauteur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces villes françaises du nord au sud :",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Lille",
+          "correct": true
+        },
+        {
+          "text": "Paris",
+          "correct": true
+        },
+        {
+          "text": "Lyon",
+          "correct": true
+        },
+        {
+          "text": "Marseille",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment s'appelle le texte qui limite les pouvoirs du roi d'Angleterre en 1215 ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "La Magna Carta",
+          "correct": true
+        }
+      ],
+      "caseSensitive": false,
+      "acceptedAnswers": [
+        "Magna Carta",
+        "Grande Charte",
+        "la Grande Charte"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'Empire byzantin est la continuation de l'Empire romain d'Orient.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle mer sépare l'Europe de l'Afrique ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "La mer Rouge",
+          "correct": false
+        },
+        {
+          "text": "La mer Noire",
+          "correct": false
+        },
+        {
+          "text": "La mer Méditerranée",
+          "correct": true
+        },
+        {
+          "text": "La mer Baltique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est l'inverse de 1/3 ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "-1/3",
+          "correct": false
+        },
+        {
+          "text": "3",
+          "correct": true
+        },
+        {
+          "text": "0,33",
+          "correct": false
+        },
+        {
+          "text": "1/3",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Les cathédrales gothiques ont des murs épais sans fenêtres.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces artistes de la Renaissance du plus ancien au plus récent :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Giotto (1267-1337)",
+          "correct": true
+        },
+        {
+          "text": "Botticelli (1445-1510)",
+          "correct": true
+        },
+        {
+          "text": "Léonard de Vinci (1452-1519)",
+          "correct": true
+        },
+        {
+          "text": "Michel-Ange (1475-1564)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment appelle-t-on le voyage annuel des musulmans vers La Mecque ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le ramadan",
+          "correct": false
+        },
+        {
+          "text": "Le hadj",
+          "correct": true
+        },
+        {
+          "text": "La zakat",
+          "correct": false
+        },
+        {
+          "text": "La salat",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quel est le nom du système de défense des châteaux forts avec des ouvertures pour tirer des flèches ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Les meurtrières",
+          "correct": true
+        }
+      ],
+      "caseSensitive": false,
+      "acceptedAnswers": [
+        "meurtrières",
+        "meurtrière",
+        "archères"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la capitale de la Turquie ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Istanbul",
+          "correct": false
+        },
+        {
+          "text": "Ankara",
+          "correct": true
+        },
+        {
+          "text": "Izmir",
+          "correct": false
+        },
+        {
+          "text": "Antalya",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un nombre divisible par 2 et par 3 est aussi divisible par 6.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qui a peint 'La Naissance de Vénus' ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Léonard de Vinci",
+          "correct": false
+        },
+        {
+          "text": "Botticelli",
+          "correct": true
+        },
+        {
+          "text": "Raphaël",
+          "correct": false
+        },
+        {
+          "text": "Michel-Ange",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces religions par ordre d'apparition :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Judaïsme",
+          "correct": true
+        },
+        {
+          "text": "Bouddhisme",
+          "correct": true
+        },
+        {
+          "text": "Christianisme",
+          "correct": true
+        },
+        {
+          "text": "Islam",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment appelle-t-on les expéditions militaires pour libérer la Terre sainte ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Les conquêtes",
+          "correct": false
+        },
+        {
+          "text": "Les croisades",
+          "correct": true
+        },
+        {
+          "text": "Les invasions",
+          "correct": false
+        },
+        {
+          "text": "Les pèlerinages",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Combien vaut 2³ (2 puissance 3) ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "8",
+          "correct": true
+        }
+      ],
+      "caseSensitive": false,
+      "acceptedAnswers": [
+        "huit"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le détroit de Gibraltar sépare l'Europe de l'Afrique.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel auteur a écrit 'Le Roman de Renart' ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Chrétien de Troyes",
+          "correct": false
+        },
+        {
+          "text": "Plusieurs auteurs anonymes",
+          "correct": true
+        },
+        {
+          "text": "François Villon",
+          "correct": false
+        },
+        {
+          "text": "Guillaume de Lorris",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la somme des angles d'un triangle ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "90°",
+          "correct": false
+        },
+        {
+          "text": "180°",
+          "correct": true
+        },
+        {
+          "text": "270°",
+          "correct": false
+        },
+        {
+          "text": "360°",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces dynasties françaises dans l'ordre chronologique :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Mérovingiens",
+          "correct": true
+        },
+        {
+          "text": "Carolingiens",
+          "correct": true
+        },
+        {
+          "text": "Capétiens",
+          "correct": true
+        },
+        {
+          "text": "Bourbons",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on le travail obligatoire que le paysan devait au seigneur ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "La corvée",
+          "correct": true
+        }
+      ],
+      "caseSensitive": false,
+      "acceptedAnswers": [
+        "corvée",
+        "corvées",
+        "les corvées"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le zéro a été introduit en Europe par les Arabes.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle chaîne de montagnes sépare l'Europe de l'Asie ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Les Alpes",
+          "correct": false
+        },
+        {
+          "text": "L'Himalaya",
+          "correct": false
+        },
+        {
+          "text": "L'Oural",
+          "correct": true
+        },
+        {
+          "text": "Les Pyrénées",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel roi de France a participé à la troisième croisade ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Louis IX (Saint Louis)",
+          "correct": false
+        },
+        {
+          "text": "Philippe Auguste",
+          "correct": true
+        },
+        {
+          "text": "Louis VII",
+          "correct": false
+        },
+        {
+          "text": "Charles VII",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'aire d'un carré de côté 5 cm est de 25 cm².",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces événements de la Guerre de Cent Ans dans l'ordre :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Bataille de Crécy (1346)",
+          "correct": true
+        },
+        {
+          "text": "Bataille de Poitiers (1356)",
+          "correct": true
+        },
+        {
+          "text": "Épopée de Jeanne d'Arc (1429)",
+          "correct": true
+        },
+        {
+          "text": "Fin de la guerre (1453)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel instrument de navigation permet de se repérer grâce aux étoiles ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La boussole",
+          "correct": false
+        },
+        {
+          "text": "L'astrolabe",
+          "correct": true
+        },
+        {
+          "text": "Le sextant",
+          "correct": false
+        },
+        {
+          "text": "Le compas",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment s'appelle l'art de la belle écriture pratiqué dans les monastères ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La calligraphie",
+          "correct": true
+        }
+      ],
+      "caseSensitive": false,
+      "acceptedAnswers": [
+        "calligraphie",
+        "enluminure"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la capitale du Portugal ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Porto",
+          "correct": false
+        },
+        {
+          "text": "Lisbonne",
+          "correct": true
+        },
+        {
+          "text": "Faro",
+          "correct": false
+        },
+        {
+          "text": "Coimbra",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Les serfs pouvaient quitter librement les terres de leur seigneur.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment appelle-t-on la partie la plus haute d'un château fort ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le donjon",
+          "correct": true
+        },
+        {
+          "text": "Les douves",
+          "correct": false
+        },
+        {
+          "text": "Le pont-levis",
+          "correct": false
+        },
+        {
+          "text": "Les créneaux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces opérations mathématiques dans l'ordre de priorité :",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Parenthèses",
+          "correct": true
+        },
+        {
+          "text": "Puissances",
+          "correct": true
+        },
+        {
+          "text": "Multiplications/Divisions",
+          "correct": true
+        },
+        {
+          "text": "Additions/Soustractions",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel empire s'étendait sur trois continents au Moyen Âge ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'Empire carolingien",
+          "correct": false
+        },
+        {
+          "text": "L'Empire byzantin",
+          "correct": false
+        },
+        {
+          "text": "L'Empire ottoman",
+          "correct": true
+        },
+        {
+          "text": "L'Empire mongol",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on un nombre qui n'est divisible que par 1 et par lui-même ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Nombre premier",
+          "correct": true
+        }
+      ],
+      "caseSensitive": false,
+      "acceptedAnswers": [
+        "premier",
+        "un nombre premier",
+        "nombres premiers"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le Sahara est le plus grand désert chaud du monde.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel écrivain médiéval a écrit 'Lancelot ou le Chevalier de la charrette' ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "François Villon",
+          "correct": false
+        },
+        {
+          "text": "Chrétien de Troyes",
+          "correct": true
+        },
+        {
+          "text": "Guillaume de Lorris",
+          "correct": false
+        },
+        {
+          "text": "Rutebeuf",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le PGCD de 12 et 18 ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "2",
+          "correct": false
+        },
+        {
+          "text": "3",
+          "correct": false
+        },
+        {
+          "text": "6",
+          "correct": true
+        },
+        {
+          "text": "36",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces cathédrales gothiques par date de construction :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Saint-Denis (1140)",
+          "correct": true
+        },
+        {
+          "text": "Notre-Dame de Paris (1163)",
+          "correct": true
+        },
+        {
+          "text": "Chartres (1194)",
+          "correct": true
+        },
+        {
+          "text": "Reims (1211)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on le fossé rempli d'eau autour d'un château ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Les douves",
+          "correct": true
+        }
+      ],
+      "caseSensitive": false,
+      "acceptedAnswers": [
+        "douves",
+        "douve",
+        "la douve"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La médecine arabe était plus avancée que la médecine européenne au Moyen Âge.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel pays est le plus grand d'Afrique ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Le Congo",
+          "correct": false
+        },
+        {
+          "text": "L'Algérie",
+          "correct": true
+        },
+        {
+          "text": "Le Soudan",
+          "correct": false
+        },
+        {
+          "text": "L'Égypte",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Combien font 2/3 de 120 ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "60",
+          "correct": false
+        },
+        {
+          "text": "80",
+          "correct": true
+        },
+        {
+          "text": "90",
+          "correct": false
+        },
+        {
+          "text": "40",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Les Vikings ont découvert l'Amérique avant Christophe Colomb.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces personnages historiques par date de naissance :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Marco Polo (1254)",
+          "correct": true
+        },
+        {
+          "text": "Jeanne d'Arc (1412)",
+          "correct": true
+        },
+        {
+          "text": "Gutenberg (1400)",
+          "correct": true
+        },
+        {
+          "text": "Christophe Colomb (1451)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la ville sainte commune aux trois religions monothéistes ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La Mecque",
+          "correct": false
+        },
+        {
+          "text": "Rome",
+          "correct": false
+        },
+        {
+          "text": "Jérusalem",
+          "correct": true
+        },
+        {
+          "text": "Médine",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on le résultat d'une division ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Le quotient",
+          "correct": true
+        }
+      ],
+      "caseSensitive": false,
+      "acceptedAnswers": [
+        "quotient"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel art décoratif islamique est célèbre pour ses motifs géométriques ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La fresque",
+          "correct": false
+        },
+        {
+          "text": "L'arabesque",
+          "correct": true
+        },
+        {
+          "text": "La mosaïque",
+          "correct": false
+        },
+        {
+          "text": "La tapisserie",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le style roman précède le style gothique.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le nom du détroit qui relie la Méditerranée à l'océan Atlantique ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le détroit du Bosphore",
+          "correct": false
+        },
+        {
+          "text": "Le détroit de Gibraltar",
+          "correct": true
+        },
+        {
+          "text": "Le canal de Suez",
+          "correct": false
+        },
+        {
+          "text": "Le détroit de Malacca",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces fractions de la plus petite à la plus grande :",
+      "time": 30,
+      "answers": [
+        {
+          "text": "1/5",
+          "correct": true
+        },
+        {
+          "text": "2/5",
+          "correct": true
+        },
+        {
+          "text": "3/5",
+          "correct": true
+        },
+        {
+          "text": "4/5",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment s'appelle la technique de décoration des livres médiévaux avec des dessins et des dorures ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "L'enluminure",
+          "correct": true
+        }
+      ],
+      "caseSensitive": false,
+      "acceptedAnswers": [
+        "enluminure",
+        "enluminures"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel philosophe grec a été traduit par les savants arabes ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Socrate",
+          "correct": false
+        },
+        {
+          "text": "Platon",
+          "correct": false
+        },
+        {
+          "text": "Aristote",
+          "correct": true
+        },
+        {
+          "text": "Épicure",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La bataille de Hastings en 1066 a permis à Guillaume le Conquérant de s'emparer de l'Angleterre.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la capitale de la Grèce ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Thessalonique",
+          "correct": false
+        },
+        {
+          "text": "Le Pirée",
+          "correct": false
+        },
+        {
+          "text": "Athènes",
+          "correct": true
+        },
+        {
+          "text": "Patras",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le résultat de (-8) + (+5) ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "-13",
+          "correct": false
+        },
+        {
+          "text": "-3",
+          "correct": true
+        },
+        {
+          "text": "+3",
+          "correct": false
+        },
+        {
+          "text": "+13",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces pays par population (du moins peuplé au plus peuplé) :",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Portugal",
+          "correct": true
+        },
+        {
+          "text": "France",
+          "correct": true
+        },
+        {
+          "text": "Allemagne",
+          "correct": true
+        },
+        {
+          "text": "Russie",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on l'ensemble des chevaliers au service d'un seigneur ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La chevalerie",
+          "correct": true
+        }
+      ],
+      "caseSensitive": false,
+      "acceptedAnswers": [
+        "chevalerie",
+        "les chevaliers",
+        "l'ost"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Bagdad était un important centre culturel et scientifique au Moyen Âge.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment appelle-t-on un quadrilatère qui a ses côtés opposés parallèles ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un trapèze",
+          "correct": false
+        },
+        {
+          "text": "Un parallélogramme",
+          "correct": true
+        },
+        {
+          "text": "Un losange",
+          "correct": false
+        },
+        {
+          "text": "Un rectangle",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel explorateur vénitien a raconté ses voyages en Asie dans 'Le Livre des merveilles' ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Christophe Colomb",
+          "correct": false
+        },
+        {
+          "text": "Vasco de Gama",
+          "correct": false
+        },
+        {
+          "text": "Marco Polo",
+          "correct": true
+        },
+        {
+          "text": "Ibn Battûta",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quel est le nom de l'arc caractéristique du style roman ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Arc en plein cintre",
+          "correct": true
+        }
+      ],
+      "caseSensitive": false,
+      "acceptedAnswers": [
+        "plein cintre",
+        "arc plein cintre",
+        "l'arc en plein cintre"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le château de Versailles a été construit au Moyen Âge.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces nombres de la plus petite valeur à la plus grande :",
+      "time": 25,
+      "answers": [
+        {
+          "text": "-10",
+          "correct": true
+        },
+        {
+          "text": "-2",
+          "correct": true
+        },
+        {
+          "text": "0",
+          "correct": true
+        },
+        {
+          "text": "5",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel roi a construit la Sainte-Chapelle à Paris ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Philippe Auguste",
+          "correct": false
+        },
+        {
+          "text": "Saint Louis (Louis IX)",
+          "correct": true
+        },
+        {
+          "text": "Charles V",
+          "correct": false
+        },
+        {
+          "text": "Louis XIV",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la capitale de l'Autriche ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Salzbourg",
+          "correct": false
+        },
+        {
+          "text": "Innsbruck",
+          "correct": false
+        },
+        {
+          "text": "Vienne",
+          "correct": true
+        },
+        {
+          "text": "Graz",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La proportion 2/4 est égale à 3/6.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on le commerce triangulaire pratiqué au Moyen Âge en Méditerranée ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Commerce méditerranéen",
+          "correct": true
+        }
+      ],
+      "caseSensitive": false,
+      "acceptedAnswers": [
+        "commerce maritime",
+        "routes commerciales",
+        "le commerce"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le périmètre d'un carré de côté 8 cm ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "16 cm",
+          "correct": false
+        },
+        {
+          "text": "24 cm",
+          "correct": false
+        },
+        {
+          "text": "32 cm",
+          "correct": true
+        },
+        {
+          "text": "64 cm",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces montagnes par altitude (de la plus basse à la plus haute) :",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Vosges (1 424 m)",
+          "correct": true
+        },
+        {
+          "text": "Pyrénées (3 404 m)",
+          "correct": true
+        },
+        {
+          "text": "Alpes (4 808 m)",
+          "correct": true
+        },
+        {
+          "text": "Himalaya (8 849 m)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle maladie a décimé l'Europe au XIVe siècle ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "La variole",
+          "correct": false
+        },
+        {
+          "text": "La peste noire",
+          "correct": true
+        },
+        {
+          "text": "Le choléra",
+          "correct": false
+        },
+        {
+          "text": "La grippe",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Avicenne était un médecin et philosophe persan célèbre du Moyen Âge.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Combien de médianes possède un triangle ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "1",
+          "correct": false
+        },
+        {
+          "text": "2",
+          "correct": false
+        },
+        {
+          "text": "3",
+          "correct": true
+        },
+        {
+          "text": "4",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on la cérémonie qui fait d'un homme un chevalier ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'adoubement",
+          "correct": true
+        }
+      ],
+      "caseSensitive": false,
+      "acceptedAnswers": [
+        "adoubement",
+        "cérémonie de l'adoubement"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel pays traverse le fleuve Amazone ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "L'Argentine",
+          "correct": false
+        },
+        {
+          "text": "Le Chili",
+          "correct": false
+        },
+        {
+          "text": "Le Brésil",
+          "correct": true
+        },
+        {
+          "text": "Le Mexique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces ordres religieux par date de fondation :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Bénédictins (529)",
+          "correct": true
+        },
+        {
+          "text": "Cisterciens (1098)",
+          "correct": true
+        },
+        {
+          "text": "Franciscains (1209)",
+          "correct": true
+        },
+        {
+          "text": "Dominicains (1215)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Les arcs-boutants permettent de soutenir les murs des cathédrales gothiques.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la valeur de x si 3x = 15 ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "3",
+          "correct": false
+        },
+        {
+          "text": "5",
+          "correct": true
+        },
+        {
+          "text": "12",
+          "correct": false
+        },
+        {
+          "text": "45",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel navigateur a effectué le premier tour du monde ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Christophe Colomb",
+          "correct": false
+        },
+        {
+          "text": "Vasco de Gama",
+          "correct": false
+        },
+        {
+          "text": "Magellan (et son équipage)",
+          "correct": true
+        },
+        {
+          "text": "James Cook",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on les guerres entre catholiques et protestants au XVIe siècle en France ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Les guerres de Religion",
+          "correct": true
+        }
+      ],
+      "caseSensitive": false,
+      "acceptedAnswers": [
+        "guerres de religion",
+        "guerres de Religion"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Constantinople est tombée aux mains des Ottomans en 1453.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces pourcentages du plus petit au plus grand :",
+      "time": 25,
+      "answers": [
+        {
+          "text": "10%",
+          "correct": true
+        },
+        {
+          "text": "25%",
+          "correct": true
+        },
+        {
+          "text": "50%",
+          "correct": true
+        },
+        {
+          "text": "75%",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la capitale de la Pologne ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Cracovie",
+          "correct": false
+        },
+        {
+          "text": "Varsovie",
+          "correct": true
+        },
+        {
+          "text": "Gdansk",
+          "correct": false
+        },
+        {
+          "text": "Wroclaw",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le nom de l'écriture utilisée dans les monastères au Moyen Âge ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'écriture gothique",
+          "correct": false
+        },
+        {
+          "text": "L'écriture caroline",
+          "correct": true
+        },
+        {
+          "text": "L'écriture onciale",
+          "correct": false
+        },
+        {
+          "text": "L'écriture cursive",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quel est le nom du récit en vers qui raconte les aventures du roi Arthur ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "La légende arthurienne",
+          "correct": true
+        }
+      ],
+      "caseSensitive": false,
+      "acceptedAnswers": [
+        "légende arthurienne",
+        "cycle arthurien",
+        "roman arthurien",
+        "Table ronde"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "50% de 200 égale 100.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel pays n'est pas bordé par la mer Méditerranée ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'Espagne",
+          "correct": false
+        },
+        {
+          "text": "La Suisse",
+          "correct": true
+        },
+        {
+          "text": "L'Italie",
+          "correct": false
+        },
+        {
+          "text": "La Grèce",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le fleuve qui traverse Bagdad ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le Nil",
+          "correct": false
+        },
+        {
+          "text": "L'Euphrate",
+          "correct": false
+        },
+        {
+          "text": "Le Tigre",
+          "correct": true
+        },
+        {
+          "text": "Le Jourdain",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La guerre de Cent Ans s'est terminée en 1453.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on la monnaie d'or utilisée à Venise au Moyen Âge ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le ducat",
+          "correct": true
+        }
+      ],
+      "caseSensitive": false,
+      "acceptedAnswers": [
+        "ducat",
+        "ducats"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle ville était le centre du commerce méditerranéen au Moyen Âge ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Paris",
+          "correct": false
+        },
+        {
+          "text": "Venise",
+          "correct": true
+        },
+        {
+          "text": "Londres",
+          "correct": false
+        },
+        {
+          "text": "Berlin",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

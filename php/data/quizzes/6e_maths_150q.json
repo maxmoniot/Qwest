@@ -1,0 +1,3206 @@
+{
+  "name": "6e_maths_150q",
+  "version": "1.0",
+  "createdAt": "2026-04-17T10:00:00.000Z",
+  "questionsCount": 150,
+  "questions": [
+    {
+      "type": "multiple",
+      "question": "Quel est le plus grand de ces nombres : 4,09 ou 4,9 ?",
+      "time": 15,
+      "answers": [
+        {
+          "text": "4,9",
+          "correct": true
+        },
+        {
+          "text": "4,09",
+          "correct": false
+        },
+        {
+          "text": "Ils sont égaux",
+          "correct": false
+        },
+        {
+          "text": "On ne peut pas comparer",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Range ces nombres dans l'ordre croissant (du plus petit au plus grand) :",
+      "time": 30,
+      "answers": [
+        {
+          "text": "0,07",
+          "correct": true
+        },
+        {
+          "text": "0,7",
+          "correct": true
+        },
+        {
+          "text": "7",
+          "correct": true
+        },
+        {
+          "text": "70",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Arrondi 12,748 à l'unité.",
+      "time": 15,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "13",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "13"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Calcule 4,5 + 3,8.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "8,3",
+          "correct": true
+        },
+        {
+          "text": "7,3",
+          "correct": false
+        },
+        {
+          "text": "8,13",
+          "correct": false
+        },
+        {
+          "text": "7,13",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Calcule 12,6 − 4,9.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "7,7",
+          "correct": true
+        },
+        {
+          "text": "8,3",
+          "correct": false
+        },
+        {
+          "text": "7,3",
+          "correct": false
+        },
+        {
+          "text": "8,7",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Calcule 3,2 × 4.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "12,8",
+          "correct": true
+        },
+        {
+          "text": "12,0",
+          "correct": false
+        },
+        {
+          "text": "128",
+          "correct": false
+        },
+        {
+          "text": "1,28",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Calcule 15,6 ÷ 3.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "5,2",
+          "correct": true
+        },
+        {
+          "text": "4,2",
+          "correct": false
+        },
+        {
+          "text": "52",
+          "correct": false
+        },
+        {
+          "text": "6,2",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "0,50 est égal à 0,5.",
+      "time": 10,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle fraction représente la partie colorée d'une barre divisée en 5 parts égales dont 2 sont colorées ?",
+      "time": 15,
+      "answers": [
+        {
+          "text": "2/5",
+          "correct": true
+        },
+        {
+          "text": "5/2",
+          "correct": false
+        },
+        {
+          "text": "3/5",
+          "correct": false
+        },
+        {
+          "text": "2/3",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle fraction est la plus grande : 3/5 ou 3/8 ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "3/5",
+          "correct": true
+        },
+        {
+          "text": "3/8",
+          "correct": false
+        },
+        {
+          "text": "Elles sont égales",
+          "correct": false
+        },
+        {
+          "text": "On ne peut pas comparer",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La fraction 4/8 est égale à 1/2.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment s'écrit 3/4 en nombre décimal ?",
+      "time": 15,
+      "answers": [
+        {
+          "text": "0,75",
+          "correct": true
+        },
+        {
+          "text": "0,34",
+          "correct": false
+        },
+        {
+          "text": "1,33",
+          "correct": false
+        },
+        {
+          "text": "0,43",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un tableau de proportionnalité, si 2 correspond à 6, quelle valeur correspond à 5 ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "15",
+          "correct": true
+        },
+        {
+          "text": "10",
+          "correct": false
+        },
+        {
+          "text": "12",
+          "correct": false
+        },
+        {
+          "text": "3",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Si 3 pommes coûtent 1,20 €, combien coûtent 6 pommes ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "2,40 €",
+          "correct": true
+        },
+        {
+          "text": "1,80 €",
+          "correct": false
+        },
+        {
+          "text": "3,60 €",
+          "correct": false
+        },
+        {
+          "text": "2,20 €",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans un tableau de proportionnalité, quand on multiplie une valeur par 3, la valeur correspondante est aussi multipliée par 3.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Sur un dessin à l'échelle 1/100, un segment mesure 4 cm. Quelle est la longueur réelle ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "4 m",
+          "correct": true
+        },
+        {
+          "text": "400 m",
+          "correct": false
+        },
+        {
+          "text": "0,04 m",
+          "correct": false
+        },
+        {
+          "text": "40 cm",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel mot désigne deux droites qui ne se croisent jamais et restent toujours à la même distance ?",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Parallèles",
+          "correct": true
+        },
+        {
+          "text": "Perpendiculaires",
+          "correct": false
+        },
+        {
+          "text": "Sécantes",
+          "correct": false
+        },
+        {
+          "text": "Confondues",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Deux droites perpendiculaires forment un angle de :",
+      "time": 10,
+      "answers": [
+        {
+          "text": "90°",
+          "correct": true
+        },
+        {
+          "text": "45°",
+          "correct": false
+        },
+        {
+          "text": "180°",
+          "correct": false
+        },
+        {
+          "text": "60°",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un angle de 135° est :",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Obtus",
+          "correct": true
+        },
+        {
+          "text": "Aigu",
+          "correct": false
+        },
+        {
+          "text": "Droit",
+          "correct": false
+        },
+        {
+          "text": "Plat",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un angle de 40° est :",
+      "time": 10,
+      "answers": [
+        {
+          "text": "Aigu",
+          "correct": true
+        },
+        {
+          "text": "Obtus",
+          "correct": false
+        },
+        {
+          "text": "Droit",
+          "correct": false
+        },
+        {
+          "text": "Plat",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un angle plat mesure 180°.",
+      "time": 10,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un triangle dont les trois côtés ont la même longueur s'appelle :",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Équilatéral",
+          "correct": true
+        },
+        {
+          "text": "Isocèle",
+          "correct": false
+        },
+        {
+          "text": "Scalène",
+          "correct": false
+        },
+        {
+          "text": "Rectangle",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un triangle isocèle a :",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Exactement deux côtés de même longueur",
+          "correct": true
+        },
+        {
+          "text": "Trois côtés de même longueur",
+          "correct": false
+        },
+        {
+          "text": "Aucun côté égal",
+          "correct": false
+        },
+        {
+          "text": "Obligatoirement un angle droit",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un triangle rectangle possède un angle de 90°.",
+      "time": 10,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment s'appelle le côté opposé à l'angle droit dans un triangle rectangle ?",
+      "time": 15,
+      "answers": [
+        {
+          "text": "L'hypoténuse",
+          "correct": true
+        },
+        {
+          "text": "La cathète",
+          "correct": false
+        },
+        {
+          "text": "La médiane",
+          "correct": false
+        },
+        {
+          "text": "La base",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un quadrilatère qui a 4 côtés égaux et 4 angles droits s'appelle :",
+      "time": 10,
+      "answers": [
+        {
+          "text": "Un carré",
+          "correct": true
+        },
+        {
+          "text": "Un rectangle",
+          "correct": false
+        },
+        {
+          "text": "Un losange",
+          "correct": false
+        },
+        {
+          "text": "Un parallélogramme",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un rectangle, combien y a-t-il d'angles droits ?",
+      "time": 10,
+      "answers": [
+        {
+          "text": "4",
+          "correct": true
+        },
+        {
+          "text": "2",
+          "correct": false
+        },
+        {
+          "text": "0",
+          "correct": false
+        },
+        {
+          "text": "1",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un losange est un quadrilatère qui a :",
+      "time": 15,
+      "answers": [
+        {
+          "text": "4 côtés de même longueur",
+          "correct": true
+        },
+        {
+          "text": "4 angles droits",
+          "correct": false
+        },
+        {
+          "text": "2 côtés parallèles seulement",
+          "correct": false
+        },
+        {
+          "text": "Exactement un axe de symétrie",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Tout carré est aussi un rectangle.",
+      "time": 10,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment s'appelle le segment qui relie le centre d'un cercle à un point du cercle ?",
+      "time": 10,
+      "answers": [
+        {
+          "text": "Un rayon",
+          "correct": true
+        },
+        {
+          "text": "Un diamètre",
+          "correct": false
+        },
+        {
+          "text": "Une corde",
+          "correct": false
+        },
+        {
+          "text": "Une tangente",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le diamètre d'un cercle mesure 10 cm. Quelle est la longueur du rayon ?",
+      "time": 10,
+      "answers": [
+        {
+          "text": "5 cm",
+          "correct": true
+        },
+        {
+          "text": "20 cm",
+          "correct": false
+        },
+        {
+          "text": "10 cm",
+          "correct": false
+        },
+        {
+          "text": "100 cm",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le diamètre est le double du rayon.",
+      "time": 10,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Un cercle a un rayon de 6 cm. Quelle est la longueur de son diamètre (en cm) ?",
+      "time": 10,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "12",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "12 cm",
+        "12"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le périmètre d'un carré de côté 8 cm ?",
+      "time": 15,
+      "answers": [
+        {
+          "text": "32 cm",
+          "correct": true
+        },
+        {
+          "text": "64 cm",
+          "correct": false
+        },
+        {
+          "text": "16 cm",
+          "correct": false
+        },
+        {
+          "text": "24 cm",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le périmètre d'un rectangle de longueur 9 cm et de largeur 4 cm ?",
+      "time": 15,
+      "answers": [
+        {
+          "text": "26 cm",
+          "correct": true
+        },
+        {
+          "text": "36 cm",
+          "correct": false
+        },
+        {
+          "text": "13 cm",
+          "correct": false
+        },
+        {
+          "text": "52 cm",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un triangle équilatéral a un périmètre de 24 cm. Quelle est la longueur d'un côté ?",
+      "time": 15,
+      "answers": [
+        {
+          "text": "8 cm",
+          "correct": true
+        },
+        {
+          "text": "12 cm",
+          "correct": false
+        },
+        {
+          "text": "6 cm",
+          "correct": false
+        },
+        {
+          "text": "72 cm",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est l'aire d'un carré de côté 6 cm ?",
+      "time": 15,
+      "answers": [
+        {
+          "text": "36 cm²",
+          "correct": true
+        },
+        {
+          "text": "24 cm²",
+          "correct": false
+        },
+        {
+          "text": "12 cm²",
+          "correct": false
+        },
+        {
+          "text": "216 cm²",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est l'aire d'un rectangle de longueur 8 cm et de largeur 3 cm ?",
+      "time": 15,
+      "answers": [
+        {
+          "text": "24 cm²",
+          "correct": true
+        },
+        {
+          "text": "22 cm²",
+          "correct": false
+        },
+        {
+          "text": "11 cm²",
+          "correct": false
+        },
+        {
+          "text": "48 cm²",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est l'aire d'un triangle de base 6 cm et de hauteur 4 cm ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "12 cm²",
+          "correct": true
+        },
+        {
+          "text": "24 cm²",
+          "correct": false
+        },
+        {
+          "text": "10 cm²",
+          "correct": false
+        },
+        {
+          "text": "48 cm²",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'aire d'un triangle se calcule avec la formule : base × hauteur ÷ 2.",
+      "time": 10,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le volume d'un pavé droit de longueur 4 cm, largeur 3 cm et hauteur 2 cm ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "24 cm³",
+          "correct": true
+        },
+        {
+          "text": "9 cm³",
+          "correct": false
+        },
+        {
+          "text": "48 cm³",
+          "correct": false
+        },
+        {
+          "text": "26 cm³",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le symétrique d'un point A par rapport à un axe est le point A'. L'axe de symétrie est :",
+      "time": 15,
+      "answers": [
+        {
+          "text": "La médiatrice du segment [AA']",
+          "correct": true
+        },
+        {
+          "text": "La diagonale de [AA']",
+          "correct": false
+        },
+        {
+          "text": "Un côté du segment AA'",
+          "correct": false
+        },
+        {
+          "text": "Un angle de AA'",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans une symétrie axiale, le point et son symétrique sont à égale distance de l'axe.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La médiatrice d'un segment [AB] est :",
+      "time": 15,
+      "answers": [
+        {
+          "text": "La droite perpendiculaire à [AB] passant par son milieu",
+          "correct": true
+        },
+        {
+          "text": "La droite passant par A et B",
+          "correct": false
+        },
+        {
+          "text": "La droite parallèle à [AB] passant par son milieu",
+          "correct": false
+        },
+        {
+          "text": "La bissectrice de l'angle en A",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un tableau, 15 élèves préfèrent le foot et 10 préfèrent le basket sur 50 élèves. Quelle fraction des élèves préfère le foot ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "3/10",
+          "correct": true
+        },
+        {
+          "text": "15/10",
+          "correct": false
+        },
+        {
+          "text": "10/50",
+          "correct": false
+        },
+        {
+          "text": "25/50",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un diagramme en barres montre que 12 élèves ont un chien, 8 ont un chat et 5 ont un lapin. Combien d'élèves ont été interrogés en tout ?",
+      "time": 15,
+      "answers": [
+        {
+          "text": "25",
+          "correct": true
+        },
+        {
+          "text": "20",
+          "correct": false
+        },
+        {
+          "text": "13",
+          "correct": false
+        },
+        {
+          "text": "17",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "On tire au hasard une bille dans un sac contenant 1 bille rouge et 9 billes bleues. Tirer une bille rouge est :",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Possible mais peu probable",
+          "correct": true
+        },
+        {
+          "text": "Impossible",
+          "correct": false
+        },
+        {
+          "text": "Certain",
+          "correct": false
+        },
+        {
+          "text": "Aussi probable que tirer bleu",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Si un sac ne contient que des billes rouges, tirer une bille bleue est impossible.",
+      "time": 10,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Range ces fractions de la plus petite à la plus grande (même numérateur = plus grand dénominateur donne la plus petite fraction) :",
+      "time": 30,
+      "answers": [
+        {
+          "text": "1/8",
+          "correct": true
+        },
+        {
+          "text": "1/5",
+          "correct": true
+        },
+        {
+          "text": "1/3",
+          "correct": true
+        },
+        {
+          "text": "1/2",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le périmètre d'un pentagone régulier (5 côtés égaux) de côté 7 cm ?",
+      "time": 15,
+      "answers": [
+        {
+          "text": "35 cm",
+          "correct": true
+        },
+        {
+          "text": "49 cm",
+          "correct": false
+        },
+        {
+          "text": "28 cm",
+          "correct": false
+        },
+        {
+          "text": "42 cm",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le plus grand de ces nombres : 3,8 ou 3,79 ?",
+      "time": 15,
+      "answers": [
+        {
+          "text": "3,8",
+          "correct": true
+        },
+        {
+          "text": "3,79",
+          "correct": false
+        },
+        {
+          "text": "Ils sont égaux",
+          "correct": false
+        },
+        {
+          "text": "On ne peut pas comparer",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Range ces nombres dans l'ordre décroissant (du plus grand au plus petit) :",
+      "time": 30,
+      "answers": [
+        {
+          "text": "5,3",
+          "correct": true
+        },
+        {
+          "text": "5,03",
+          "correct": true
+        },
+        {
+          "text": "0,53",
+          "correct": true
+        },
+        {
+          "text": "0,053",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Arrondi 8,352 au dixième.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "8,4",
+          "correct": true
+        },
+        {
+          "text": "8,3",
+          "correct": false
+        },
+        {
+          "text": "8",
+          "correct": false
+        },
+        {
+          "text": "8,35",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Calcule 7,4 + 5,9.",
+      "time": 15,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "13,3",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "13,3",
+        "13.3"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Calcule 20,5 − 8,7.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "11,8",
+          "correct": true
+        },
+        {
+          "text": "12,8",
+          "correct": false
+        },
+        {
+          "text": "11,2",
+          "correct": false
+        },
+        {
+          "text": "29,2",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Calcule 2,5 × 6.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "15",
+          "correct": true
+        },
+        {
+          "text": "12,5",
+          "correct": false
+        },
+        {
+          "text": "150",
+          "correct": false
+        },
+        {
+          "text": "1,5",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Calcule 24,8 ÷ 4.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "6,2",
+          "correct": true
+        },
+        {
+          "text": "5,2",
+          "correct": false
+        },
+        {
+          "text": "62",
+          "correct": false
+        },
+        {
+          "text": "7,2",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "2,3 × 10 = 23.",
+      "time": 10,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un groupe de 8 élèves, 3 portent des lunettes. Quelle fraction représente les élèves portant des lunettes ?",
+      "time": 15,
+      "answers": [
+        {
+          "text": "3/8",
+          "correct": true
+        },
+        {
+          "text": "8/3",
+          "correct": false
+        },
+        {
+          "text": "5/8",
+          "correct": false
+        },
+        {
+          "text": "3/5",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle fraction est la plus petite : 5/9 ou 5/7 ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "5/9",
+          "correct": true
+        },
+        {
+          "text": "5/7",
+          "correct": false
+        },
+        {
+          "text": "Elles sont égales",
+          "correct": false
+        },
+        {
+          "text": "On ne peut pas comparer",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La fraction 6/10 est égale à 3/5.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment s'écrit 1/5 en nombre décimal ?",
+      "time": 15,
+      "answers": [
+        {
+          "text": "0,2",
+          "correct": true
+        },
+        {
+          "text": "0,5",
+          "correct": false
+        },
+        {
+          "text": "0,15",
+          "correct": false
+        },
+        {
+          "text": "5",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Laquelle de ces fractions est la plus grande : 7/10 ou 2/3 ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "7/10",
+          "correct": true
+        },
+        {
+          "text": "2/3",
+          "correct": false
+        },
+        {
+          "text": "Elles sont égales",
+          "correct": false
+        },
+        {
+          "text": "On ne peut pas comparer",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "5 stylos coûtent 3,50 €. Combien coûtent 10 stylos ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "7,00 €",
+          "correct": true
+        },
+        {
+          "text": "8,50 €",
+          "correct": false
+        },
+        {
+          "text": "17,50 €",
+          "correct": false
+        },
+        {
+          "text": "5,00 €",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un tableau de proportionnalité, 4 correspond à 10. Quelle valeur correspond à 12 ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "30",
+          "correct": true
+        },
+        {
+          "text": "24",
+          "correct": false
+        },
+        {
+          "text": "18",
+          "correct": false
+        },
+        {
+          "text": "40",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Sur une carte à l'échelle 1/200, un couloir mesure 3 cm. Quelle est sa longueur réelle ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "6 m",
+          "correct": true
+        },
+        {
+          "text": "600 m",
+          "correct": false
+        },
+        {
+          "text": "60 cm",
+          "correct": false
+        },
+        {
+          "text": "0,6 m",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Deux droites perpendiculaires sont aussi parallèles.",
+      "time": 10,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment appelle-t-on le point d'intersection de deux droites qui se croisent ?",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Le point de concours (ou d'intersection)",
+          "correct": true
+        },
+        {
+          "text": "Le milieu",
+          "correct": false
+        },
+        {
+          "text": "Le sommet",
+          "correct": false
+        },
+        {
+          "text": "Le centre",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un angle de 90° est un angle :",
+      "time": 10,
+      "answers": [
+        {
+          "text": "Droit",
+          "correct": true
+        },
+        {
+          "text": "Aigu",
+          "correct": false
+        },
+        {
+          "text": "Obtus",
+          "correct": false
+        },
+        {
+          "text": "Plat",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel instrument utilise-t-on pour mesurer ou tracer un angle ?",
+      "time": 10,
+      "answers": [
+        {
+          "text": "Le rapporteur",
+          "correct": true
+        },
+        {
+          "text": "La règle",
+          "correct": false
+        },
+        {
+          "text": "Le compas",
+          "correct": false
+        },
+        {
+          "text": "L'équerre",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un angle mesure 270°. Comment le qualifie-t-on ?",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Rentrant (ou reflex)",
+          "correct": true
+        },
+        {
+          "text": "Obtus",
+          "correct": false
+        },
+        {
+          "text": "Aigu",
+          "correct": false
+        },
+        {
+          "text": "Plat",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un angle aigu est strictement inférieur à 90°.",
+      "time": 10,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un triangle scalène est un triangle :",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Dont tous les côtés ont des longueurs différentes",
+          "correct": true
+        },
+        {
+          "text": "Dont deux côtés sont égaux",
+          "correct": false
+        },
+        {
+          "text": "Qui a un angle droit",
+          "correct": false
+        },
+        {
+          "text": "Dont tous les côtés sont égaux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un triangle équilatéral, tous les angles sont égaux. Quelle est la mesure de chaque angle ?",
+      "time": 15,
+      "answers": [
+        {
+          "text": "60°",
+          "correct": true
+        },
+        {
+          "text": "90°",
+          "correct": false
+        },
+        {
+          "text": "45°",
+          "correct": false
+        },
+        {
+          "text": "120°",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment s'appelle la droite qui coupe un angle en deux parties égales ?",
+      "time": 15,
+      "answers": [
+        {
+          "text": "La bissectrice",
+          "correct": true
+        },
+        {
+          "text": "La médiatrice",
+          "correct": false
+        },
+        {
+          "text": "La médiane",
+          "correct": false
+        },
+        {
+          "text": "La hauteur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un triangle peut avoir deux angles droits.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un parallélogramme est un quadrilatère qui a :",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Deux paires de côtés parallèles",
+          "correct": true
+        },
+        {
+          "text": "Quatre angles droits",
+          "correct": false
+        },
+        {
+          "text": "Quatre côtés égaux",
+          "correct": false
+        },
+        {
+          "text": "Une seule paire de côtés parallèles",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Tout rectangle est aussi un parallélogramme.",
+      "time": 10,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un carré de côté 5 cm, combien les deux diagonales mesurent-elles chacune ? (Elles sont égales.)",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Elles sont égales entre elles mais on ne peut pas calculer leur valeur exacte sans Pythagore",
+          "correct": true
+        },
+        {
+          "text": "5 cm",
+          "correct": false
+        },
+        {
+          "text": "10 cm",
+          "correct": false
+        },
+        {
+          "text": "25 cm",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un trapèze est un quadrilatère avec :",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Exactement une paire de côtés parallèles",
+          "correct": true
+        },
+        {
+          "text": "Deux paires de côtés parallèles",
+          "correct": false
+        },
+        {
+          "text": "Quatre côtés égaux",
+          "correct": false
+        },
+        {
+          "text": "Quatre angles droits",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Une corde d'un cercle est :",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Un segment reliant deux points du cercle",
+          "correct": true
+        },
+        {
+          "text": "Un segment reliant le centre à un point du cercle",
+          "correct": false
+        },
+        {
+          "text": "La longueur totale du cercle",
+          "correct": false
+        },
+        {
+          "text": "Un segment passant par le centre",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le rayon d'un cercle mesure 4 cm. Quelle est la longueur du diamètre ?",
+      "time": 10,
+      "answers": [
+        {
+          "text": "8 cm",
+          "correct": true
+        },
+        {
+          "text": "2 cm",
+          "correct": false
+        },
+        {
+          "text": "4 cm",
+          "correct": false
+        },
+        {
+          "text": "16 cm",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Tous les rayons d'un même cercle ont la même longueur.",
+      "time": 10,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le périmètre d'un rectangle de longueur 12 cm et de largeur 5 cm ?",
+      "time": 15,
+      "answers": [
+        {
+          "text": "34 cm",
+          "correct": true
+        },
+        {
+          "text": "60 cm",
+          "correct": false
+        },
+        {
+          "text": "17 cm",
+          "correct": false
+        },
+        {
+          "text": "24 cm",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le périmètre d'un carré de côté 11 cm ?",
+      "time": 15,
+      "answers": [
+        {
+          "text": "44 cm",
+          "correct": true
+        },
+        {
+          "text": "121 cm",
+          "correct": false
+        },
+        {
+          "text": "22 cm",
+          "correct": false
+        },
+        {
+          "text": "33 cm",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Un hexagone régulier (6 côtés égaux) a un côté de 5 cm. Quel est son périmètre (en cm) ?",
+      "time": 15,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "30",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "30 cm",
+        "30"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est l'aire d'un carré de côté 7 cm ?",
+      "time": 15,
+      "answers": [
+        {
+          "text": "49 cm²",
+          "correct": true
+        },
+        {
+          "text": "28 cm²",
+          "correct": false
+        },
+        {
+          "text": "14 cm²",
+          "correct": false
+        },
+        {
+          "text": "343 cm²",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est l'aire d'un rectangle de longueur 10 cm et de largeur 6 cm ?",
+      "time": 15,
+      "answers": [
+        {
+          "text": "60 cm²",
+          "correct": true
+        },
+        {
+          "text": "32 cm²",
+          "correct": false
+        },
+        {
+          "text": "16 cm²",
+          "correct": false
+        },
+        {
+          "text": "600 cm²",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est l'aire d'un triangle de base 10 cm et de hauteur 5 cm ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "25 cm²",
+          "correct": true
+        },
+        {
+          "text": "50 cm²",
+          "correct": false
+        },
+        {
+          "text": "15 cm²",
+          "correct": false
+        },
+        {
+          "text": "100 cm²",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'aire s'exprime en cm² (centimètres carrés) et le périmètre s'exprime en cm (centimètres).",
+      "time": 10,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le volume d'un pavé droit de longueur 5 cm, largeur 5 cm et hauteur 5 cm ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "125 cm³",
+          "correct": true
+        },
+        {
+          "text": "75 cm³",
+          "correct": false
+        },
+        {
+          "text": "25 cm³",
+          "correct": false
+        },
+        {
+          "text": "15 cm³",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un pavé droit a une longueur de 6 cm, une largeur de 4 cm et une hauteur de 3 cm. Quelle est son volume ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "72 cm³",
+          "correct": true
+        },
+        {
+          "text": "36 cm³",
+          "correct": false
+        },
+        {
+          "text": "144 cm³",
+          "correct": false
+        },
+        {
+          "text": "13 cm³",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Lors d'une symétrie axiale, quelle propriété est conservée ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Les longueurs et les angles",
+          "correct": true
+        },
+        {
+          "text": "Seulement les longueurs",
+          "correct": false
+        },
+        {
+          "text": "Seulement la position",
+          "correct": false
+        },
+        {
+          "text": "Rien n'est conservé",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le milieu d'un segment [AB] est le point M tel que :",
+      "time": 15,
+      "answers": [
+        {
+          "text": "MA = MB",
+          "correct": true
+        },
+        {
+          "text": "MA = AB",
+          "correct": false
+        },
+        {
+          "text": "MB = AB",
+          "correct": false
+        },
+        {
+          "text": "MA + MB = 0",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La médiatrice d'un segment est perpendiculaire à ce segment.",
+      "time": 10,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un tableau montre la couleur préférée de 30 élèves : 12 bleu, 10 rouge, 8 vert. Quelle fraction des élèves préfère le bleu ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "12/30 = 2/5",
+          "correct": true
+        },
+        {
+          "text": "12/18",
+          "correct": false
+        },
+        {
+          "text": "8/30",
+          "correct": false
+        },
+        {
+          "text": "10/30",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un diagramme circulaire, le secteur « sport » occupe la moitié du disque. Quelle fraction des élèves pratiquent le sport ?",
+      "time": 15,
+      "answers": [
+        {
+          "text": "1/2",
+          "correct": true
+        },
+        {
+          "text": "1/4",
+          "correct": false
+        },
+        {
+          "text": "1/3",
+          "correct": false
+        },
+        {
+          "text": "2/3",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "On met dans un chapeau 5 billets numérotés de 1 à 5. On tire un billet au hasard. Tirer le numéro 3 est-il :",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Possible",
+          "correct": true
+        },
+        {
+          "text": "Impossible",
+          "correct": false
+        },
+        {
+          "text": "Certain",
+          "correct": false
+        },
+        {
+          "text": "Toujours le résultat obtenu",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "On tire au hasard une carte dans un paquet contenant uniquement des cartes rouges. Tirer une carte noire est :",
+      "time": 10,
+      "answers": [
+        {
+          "text": "Impossible",
+          "correct": true
+        },
+        {
+          "text": "Certain",
+          "correct": false
+        },
+        {
+          "text": "Possible",
+          "correct": false
+        },
+        {
+          "text": "Probable",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Range ces fractions de la plus petite à la plus grande (même dénominateur) :",
+      "time": 25,
+      "answers": [
+        {
+          "text": "1/7",
+          "correct": true
+        },
+        {
+          "text": "3/7",
+          "correct": true
+        },
+        {
+          "text": "5/7",
+          "correct": true
+        },
+        {
+          "text": "6/7",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le plus grand de ces nombres : 0,6 ou 0,59 ?",
+      "time": 15,
+      "answers": [
+        {
+          "text": "0,6",
+          "correct": true
+        },
+        {
+          "text": "0,59",
+          "correct": false
+        },
+        {
+          "text": "Ils sont égaux",
+          "correct": false
+        },
+        {
+          "text": "On ne peut pas comparer",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Calcule 6,7 − 2,3.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "4,4",
+          "correct": true
+        },
+        {
+          "text": "4,6",
+          "correct": false
+        },
+        {
+          "text": "9",
+          "correct": false
+        },
+        {
+          "text": "3,4",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Calcule 1,4 × 5.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "7",
+          "correct": true
+        },
+        {
+          "text": "5,4",
+          "correct": false
+        },
+        {
+          "text": "70",
+          "correct": false
+        },
+        {
+          "text": "6,5",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Calcule 18,9 ÷ 9.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "2,1",
+          "correct": true
+        },
+        {
+          "text": "1,9",
+          "correct": false
+        },
+        {
+          "text": "21",
+          "correct": false
+        },
+        {
+          "text": "2,9",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Arrondi 3,647 au centième.",
+      "time": 15,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "3,65",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "3,65",
+        "3.65"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "3,6 × 100 = 360.",
+      "time": 10,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel nombre décimal se trouve entre 2 et 3 ?",
+      "time": 15,
+      "answers": [
+        {
+          "text": "2,5",
+          "correct": true
+        },
+        {
+          "text": "3,5",
+          "correct": false
+        },
+        {
+          "text": "1,5",
+          "correct": false
+        },
+        {
+          "text": "0,5",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La fraction 2/6 est-elle égale à 1/3 ?",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Oui, car 2÷2 = 1 et 6÷2 = 3",
+          "correct": true
+        },
+        {
+          "text": "Non, 2/6 est plus grande que 1/3",
+          "correct": false
+        },
+        {
+          "text": "Non, les numérateurs sont différents",
+          "correct": false
+        },
+        {
+          "text": "Non, les dénominateurs sont différents",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la plus grande fraction : 4/9 ou 7/9 ?",
+      "time": 15,
+      "answers": [
+        {
+          "text": "7/9",
+          "correct": true
+        },
+        {
+          "text": "4/9",
+          "correct": false
+        },
+        {
+          "text": "Elles sont égales",
+          "correct": false
+        },
+        {
+          "text": "On ne peut pas comparer",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment s'écrit 1/4 en nombre décimal ?",
+      "time": 15,
+      "answers": [
+        {
+          "text": "0,25",
+          "correct": true
+        },
+        {
+          "text": "0,4",
+          "correct": false
+        },
+        {
+          "text": "0,14",
+          "correct": false
+        },
+        {
+          "text": "4",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La fraction 7/4 est supérieure à 1.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La fraction 1/2 est placée entre quels entiers sur une droite graduée ?",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Entre 0 et 1",
+          "correct": true
+        },
+        {
+          "text": "Entre 1 et 2",
+          "correct": false
+        },
+        {
+          "text": "Entre −1 et 0",
+          "correct": false
+        },
+        {
+          "text": "Elle vaut exactement 1",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pour faire des crêpes pour 4 personnes, il faut 8 œufs. Combien faut-il d'œufs pour 6 personnes ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "12",
+          "correct": true
+        },
+        {
+          "text": "10",
+          "correct": false
+        },
+        {
+          "text": "16",
+          "correct": false
+        },
+        {
+          "text": "6",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un tableau de proportionnalité, le coefficient est 4. Si x = 7, quelle est la valeur de y ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "28",
+          "correct": true
+        },
+        {
+          "text": "11",
+          "correct": false
+        },
+        {
+          "text": "3",
+          "correct": false
+        },
+        {
+          "text": "47",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Sur un plan à l'échelle 1/500, un mur mesure 6 cm. Quelle est la longueur réelle du mur ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "30 m",
+          "correct": true
+        },
+        {
+          "text": "3 m",
+          "correct": false
+        },
+        {
+          "text": "300 m",
+          "correct": false
+        },
+        {
+          "text": "0,3 m",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Combien de points faut-il minimum pour définir une droite ?",
+      "time": 15,
+      "answers": [
+        {
+          "text": "2",
+          "correct": true
+        },
+        {
+          "text": "1",
+          "correct": false
+        },
+        {
+          "text": "3",
+          "correct": false
+        },
+        {
+          "text": "4",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un segment [AB] est :",
+      "time": 15,
+      "answers": [
+        {
+          "text": "La partie d'une droite comprise entre A et B",
+          "correct": true
+        },
+        {
+          "text": "Une droite passant par A et B",
+          "correct": false
+        },
+        {
+          "text": "Un point situé entre A et B",
+          "correct": false
+        },
+        {
+          "text": "Un cercle de centre A passant par B",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment s'appelle le point de départ des deux demi-droites qui forment un angle ?",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Le sommet",
+          "correct": true
+        },
+        {
+          "text": "Le centre",
+          "correct": false
+        },
+        {
+          "text": "L'origine",
+          "correct": false
+        },
+        {
+          "text": "Le milieu",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un angle droit se repère avec un petit carré dans la figure.",
+      "time": 10,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un angle qui mesure entre 90° et 180° est :",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Obtus",
+          "correct": true
+        },
+        {
+          "text": "Aigu",
+          "correct": false
+        },
+        {
+          "text": "Droit",
+          "correct": false
+        },
+        {
+          "text": "Plat",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un triangle a combien de côtés ?",
+      "time": 10,
+      "answers": [
+        {
+          "text": "3",
+          "correct": true
+        },
+        {
+          "text": "4",
+          "correct": false
+        },
+        {
+          "text": "2",
+          "correct": false
+        },
+        {
+          "text": "5",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans un triangle isocèle, les deux angles à la base (à côté des côtés égaux) sont égaux.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un triangle peut-il être à la fois isocèle et rectangle ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Oui, il a alors un angle droit et deux côtés égaux",
+          "correct": true
+        },
+        {
+          "text": "Non, ce n'est pas possible",
+          "correct": false
+        },
+        {
+          "text": "Seulement si c'est aussi un triangle équilatéral",
+          "correct": false
+        },
+        {
+          "text": "Oui, mais seulement s'il est aussi équilatéral",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un quadrilatère a combien de côtés ?",
+      "time": 10,
+      "answers": [
+        {
+          "text": "4",
+          "correct": true
+        },
+        {
+          "text": "3",
+          "correct": false
+        },
+        {
+          "text": "5",
+          "correct": false
+        },
+        {
+          "text": "6",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un losange, les deux diagonales sont :",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Perpendiculaires entre elles",
+          "correct": true
+        },
+        {
+          "text": "Parallèles entre elles",
+          "correct": false
+        },
+        {
+          "text": "De même longueur",
+          "correct": false
+        },
+        {
+          "text": "Horizontales",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un carré est aussi un losange.",
+      "time": 10,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'un disque ?",
+      "time": 15,
+      "answers": [
+        {
+          "text": "La surface à l'intérieur d'un cercle",
+          "correct": true
+        },
+        {
+          "text": "La ligne arrondie qui forme le cercle",
+          "correct": false
+        },
+        {
+          "text": "Le rayon du cercle",
+          "correct": false
+        },
+        {
+          "text": "Le diamètre du cercle",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le diamètre est toujours la corde la plus longue d'un cercle.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un cercle a un diamètre de 14 cm. Quelle est la longueur de son rayon ?",
+      "time": 10,
+      "answers": [
+        {
+          "text": "7 cm",
+          "correct": true
+        },
+        {
+          "text": "28 cm",
+          "correct": false
+        },
+        {
+          "text": "14 cm",
+          "correct": false
+        },
+        {
+          "text": "196 cm",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le périmètre d'un triangle dont les côtés mesurent 3 cm, 5 cm et 7 cm ?",
+      "time": 15,
+      "answers": [
+        {
+          "text": "15 cm",
+          "correct": true
+        },
+        {
+          "text": "105 cm",
+          "correct": false
+        },
+        {
+          "text": "35 cm",
+          "correct": false
+        },
+        {
+          "text": "8 cm",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un losange a un côté de 9 cm. Quel est son périmètre ?",
+      "time": 15,
+      "answers": [
+        {
+          "text": "36 cm",
+          "correct": true
+        },
+        {
+          "text": "18 cm",
+          "correct": false
+        },
+        {
+          "text": "81 cm",
+          "correct": false
+        },
+        {
+          "text": "27 cm",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un triangle équilatéral a un côté de 7 cm. Quel est son périmètre ?",
+      "time": 15,
+      "answers": [
+        {
+          "text": "21 cm",
+          "correct": true
+        },
+        {
+          "text": "14 cm",
+          "correct": false
+        },
+        {
+          "text": "49 cm",
+          "correct": false
+        },
+        {
+          "text": "7 cm",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "L'aire mesure :",
+      "time": 10,
+      "answers": [
+        {
+          "text": "La surface occupée par une figure",
+          "correct": true
+        },
+        {
+          "text": "Le tour d'une figure",
+          "correct": false
+        },
+        {
+          "text": "La hauteur d'une figure",
+          "correct": false
+        },
+        {
+          "text": "Le volume d'une figure",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est l'aire d'un rectangle de longueur 15 cm et de largeur 4 cm ?",
+      "time": 15,
+      "answers": [
+        {
+          "text": "60 cm²",
+          "correct": true
+        },
+        {
+          "text": "38 cm²",
+          "correct": false
+        },
+        {
+          "text": "19 cm²",
+          "correct": false
+        },
+        {
+          "text": "600 cm²",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un carré a une aire de 25 cm². Quelle est la longueur de son côté ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "5 cm",
+          "correct": true
+        },
+        {
+          "text": "25 cm",
+          "correct": false
+        },
+        {
+          "text": "12,5 cm",
+          "correct": false
+        },
+        {
+          "text": "625 cm",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est l'aire d'un triangle de base 8 cm et de hauteur 7 cm ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "28 cm²",
+          "correct": true
+        },
+        {
+          "text": "56 cm²",
+          "correct": false
+        },
+        {
+          "text": "15 cm²",
+          "correct": false
+        },
+        {
+          "text": "112 cm²",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le volume mesure :",
+      "time": 10,
+      "answers": [
+        {
+          "text": "L'espace occupé par un solide",
+          "correct": true
+        },
+        {
+          "text": "La surface d'un solide",
+          "correct": false
+        },
+        {
+          "text": "Le poids d'un solide",
+          "correct": false
+        },
+        {
+          "text": "La longueur d'un solide",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "1 litre équivaut à combien de cm³ ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "1 000 cm³",
+          "correct": true
+        },
+        {
+          "text": "100 cm³",
+          "correct": false
+        },
+        {
+          "text": "10 000 cm³",
+          "correct": false
+        },
+        {
+          "text": "1 cm³",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le volume d'un pavé droit de longueur 10 cm, largeur 2 cm et hauteur 3 cm ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "60 cm³",
+          "correct": true
+        },
+        {
+          "text": "30 cm³",
+          "correct": false
+        },
+        {
+          "text": "15 cm³",
+          "correct": false
+        },
+        {
+          "text": "120 cm³",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Combien d'axes de symétrie possède un triangle équilatéral ?",
+      "time": 15,
+      "answers": [
+        {
+          "text": "3",
+          "correct": true
+        },
+        {
+          "text": "0",
+          "correct": false
+        },
+        {
+          "text": "1",
+          "correct": false
+        },
+        {
+          "text": "6",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Combien d'axes de symétrie possède un rectangle non carré ?",
+      "time": 15,
+      "answers": [
+        {
+          "text": "2",
+          "correct": true
+        },
+        {
+          "text": "0",
+          "correct": false
+        },
+        {
+          "text": "4",
+          "correct": false
+        },
+        {
+          "text": "1",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un cercle possède une infinité d'axes de symétrie.",
+      "time": 10,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le symétrique d'un point A par rapport à un axe est le point A'. Le segment [AA'] est :",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Perpendiculaire à l'axe et coupé en deux par l'axe",
+          "correct": true
+        },
+        {
+          "text": "Parallèle à l'axe",
+          "correct": false
+        },
+        {
+          "text": "Confondu avec l'axe",
+          "correct": false
+        },
+        {
+          "text": "Plus long que l'axe",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un tableau indique le nombre de livres lus pendant l'été : 5 élèves ont lu 0 livre, 8 ont lu 1 livre, 4 ont lu 2 livres. Combien d'élèves ont été interrogés en tout ?",
+      "time": 15,
+      "answers": [
+        {
+          "text": "17",
+          "correct": true
+        },
+        {
+          "text": "12",
+          "correct": false
+        },
+        {
+          "text": "13",
+          "correct": false
+        },
+        {
+          "text": "20",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un groupe de 20 élèves, 8 préfèrent le dessin, 7 la musique et 5 le sport. Quelle fraction préfère la musique ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "7/20",
+          "correct": true
+        },
+        {
+          "text": "7/12",
+          "correct": false
+        },
+        {
+          "text": "8/20",
+          "correct": false
+        },
+        {
+          "text": "7/15",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un diagramme en barres, la barre la plus haute représente :",
+      "time": 15,
+      "answers": [
+        {
+          "text": "La valeur la plus fréquente",
+          "correct": true
+        },
+        {
+          "text": "La valeur la plus petite",
+          "correct": false
+        },
+        {
+          "text": "La moyenne",
+          "correct": false
+        },
+        {
+          "text": "La dernière valeur listée",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "On tire au hasard une carte parmi 4 cartes : As de cœur, Roi de pique, Dame de carreau, Valet de trèfle. Tirer le Roi de pique est-il :",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Possible",
+          "correct": true
+        },
+        {
+          "text": "Certain",
+          "correct": false
+        },
+        {
+          "text": "Impossible",
+          "correct": false
+        },
+        {
+          "text": "Interdit",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Si un événement est certain, il se réalisera forcément à chaque fois.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Range ces nombres du plus petit au plus grand :",
+      "time": 25,
+      "answers": [
+        {
+          "text": "0,09",
+          "correct": true
+        },
+        {
+          "text": "0,9",
+          "correct": true
+        },
+        {
+          "text": "1,09",
+          "correct": true
+        },
+        {
+          "text": "9,1",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Range ces fractions de la plus petite à la plus grande (même dénominateur = comparer les numérateurs) :",
+      "time": 25,
+      "answers": [
+        {
+          "text": "2/11",
+          "correct": true
+        },
+        {
+          "text": "5/11",
+          "correct": true
+        },
+        {
+          "text": "8/11",
+          "correct": true
+        },
+        {
+          "text": "10/11",
+          "correct": true
+        }
+      ]
+    }
+  ]
+}

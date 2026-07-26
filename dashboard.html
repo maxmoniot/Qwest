@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Qwest — Dashboard métriques</title>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 0; padding: 20px; background: #f5f5f5; color: #222; }
+  h1 { margin: 0 0 8px 0; font-size: 22px; }
+  .sub { color: #666; margin-bottom: 18px; font-size: 14px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
+  .card { background: #fff; border-radius: 10px; padding: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+  .card h2 { margin: 0 0 12px 0; font-size: 16px; color: #444; }
+  .big { font-size: 38px; font-weight: 600; line-height: 1; }
+  .big.ok { color: #1f6b3e; }
+  .big.warn { color: #b56600; }
+  .big.danger { color: #8a2222; }
+  .label { color: #888; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 8px; }
+  canvas { width: 100%; height: 180px; display: block; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td { padding: 6px 8px; text-align: left; border-bottom: 1px solid #eee; }
+  th { font-weight: 600; color: #555; font-size: 12px; text-transform: uppercase; }
+  td.num { text-align: right; font-variant-numeric: tabular-nums; }
+  .controls { margin-bottom: 12px; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+  .controls label { font-size: 13px; color: #444; }
+  select, button { font: inherit; padding: 6px 10px; border: 1px solid #ccc; border-radius: 6px; background: #fff; }
+  button { cursor: pointer; }
+  button:hover { background: #f5f5f5; }
+  .legend { font-size: 12px; color: #888; margin-top: 4px; }
+  .status-200 { color: #1f6b3e; }
+  .status-429 { color: #b56600; font-weight: 600; }
+  .status-other { color: #8a2222; font-weight: 600; }
+  .note { font-size: 12px; color: #888; margin-top: 8px; }
+</style>
+</head>
+<body>
+
+<h1>Qwest — Dashboard métriques en temps réel</h1>
+<div class="sub">Mesure côté serveur du volume de requêtes (log <code>php/data/metrics/YYYY-MM-DD.log</code>). Refresh auto.</div>
+
+<div class="controls">
+  <label>Fenêtre :
+    <select id="window">
+      <option value="60">1 min</option>
+      <option value="300" selected>5 min</option>
+      <option value="900">15 min</option>
+      <option value="3600">1 heure</option>
+    </select>
+  </label>
+  <label>Granularité :
+    <select id="bucket">
+      <option value="1">1 s</option>
+      <option value="5" selected>5 s</option>
+      <option value="15">15 s</option>
+      <option value="60">1 min</option>
+    </select>
+  </label>
+  <label>Refresh :
+    <select id="refresh">
+      <option value="2000">2 s</option>
+      <option value="5000">5 s</option>
+      <option value="10000" selected>10 s</option>
+      <option value="0">manuel</option>
+    </select>
+  </label>
+  <button id="refreshBtn">↻ Rafraîchir</button>
+  <span id="lastUpdate" class="legend"></span>
+</div>
+
+<div class="grid">
+  <div class="card">
+    <h2>Volume global</h2>
+    <div class="big" id="reqPerMin">—</div>
+    <div class="label">requêtes / minute</div>
+    <div class="legend"><span id="totalReq">0</span> requêtes sur la fenêtre · seuil OVH ≈ <strong>1000 req/min</strong></div>
+    <hr style="margin:12px 0;border:none;border-top:1px solid #eee;">
+    <div style="font-size:13px;">
+      ⏱️ Latence : <strong id="slowReqs">0</strong> requête(s) &gt; 1 s · pire : <strong id="maxDur">0</strong> ms
+    </div>
+    <div class="legend">Beaucoup de requêtes lentes = lock contention serveur ou OVH saturé.</div>
+  </div>
+
+  <div class="card">
+    <h2>Évolution</h2>
+    <canvas id="chart"></canvas>
+    <div class="legend">Bleu : req/min instantané (par bucket) · ligne rouge : seuil OVH</div>
+  </div>
+
+  <div class="card">
+    <h2>Par endpoint</h2>
+    <table>
+      <thead><tr><th>Endpoint</th><th class="num">Requêtes</th><th class="num">% du total</th></tr></thead>
+      <tbody id="endpointTable"></tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <h2>Codes HTTP</h2>
+    <table>
+      <thead><tr><th>Code</th><th class="num">Requêtes</th><th>Statut</th></tr></thead>
+      <tbody id="statusTable"></tbody>
+    </table>
+    <div class="legend">Surveiller les <strong>429</strong> (throttle) et <strong>5xx</strong> (erreurs).</div>
+  </div>
+
+  <div class="card" style="grid-column: 1 / -1;">
+    <h2>Top 10 — Devices les plus actifs</h2>
+    <table>
+      <thead><tr><th>Device (IP + pseudo)</th><th class="num">Requêtes</th><th class="num">req/min</th></tr></thead>
+      <tbody id="devicesTable"></tbody>
+    </table>
+    <div class="note">Si un device dépasse 60 req/min, le throttle PHP renvoie 429 (cf. <code>game.php</code>).</div>
+  </div>
+
+  <div class="card" style="grid-column: 1 / -1;">
+    <h2>📥 Télécharger les logs (à faire LE SOIR, pas pendant une partie)</h2>
+    <div class="note" style="margin-bottom:10px;">
+      Les logs sont écrits automatiquement par le serveur à chaque requête.
+      Rotation auto : <strong>7 jours</strong>. Tu peux jouer plusieurs parties — chaque jour aura son fichier.
+      Pour partager : télécharge le(s) fichier(s) et envoie le contenu.
+    </div>
+    <table>
+      <thead><tr><th>Date</th><th class="num">Taille</th><th class="num">Dernière requête</th><th></th></tr></thead>
+      <tbody id="logsTable"><tr><td colspan="4" style="color:#999;">Chargement…</td></tr></tbody>
+    </table>
+  </div>
+</div>
+
+<script>
+const $ = id => document.getElementById(id);
+
+// Auth : 3 sources possibles
+//   - URL ?teacher_hash=... (hash SHA-256)
+//   - URL ?teacher_password=... (clair)
+//   - localStorage : qwest_teacher_password (clair, conservé entre sessions)
+//   - formulaire de login si aucune des 3 ne marche
+// On préfère le clair côté client (envoyé au serveur qui le hashe lui-même).
+// Comme ça : aucun risque de mismatch entre les hash côté JS / côté PHP.
+const urlParams = new URLSearchParams(window.location.search);
+let teacherPassword = urlParams.get('teacher_password')
+                    || localStorage.getItem('qwest_teacher_password')
+                    || '';
+let teacherHash = urlParams.get('teacher_hash') || '';
+
+// Récupère le query-string d'auth à concaténer aux URLs des fetch et des liens DL
+function authQs() {
+  if (teacherPassword) return 'teacher_password=' + encodeURIComponent(teacherPassword);
+  if (teacherHash) return 'teacher_hash=' + encodeURIComponent(teacherHash);
+  return '';
+}
+
+function showLoginOverlay(errorMsg) {
+  let ov = document.getElementById('login-overlay');
+  if (ov) ov.remove();
+  ov = document.createElement('div');
+  ov.id = 'login-overlay';
+  ov.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:9999;';
+  ov.innerHTML = `
+    <div style="background:#fff;padding:24px;border-radius:10px;box-shadow:0 8px 32px rgba(0,0,0,0.2);max-width:340px;width:90%;">
+      <h2 style="margin:0 0 8px 0;font-size:18px;">🔒 Accès dashboard</h2>
+      <p style="margin:0 0 14px 0;font-size:14px;color:#555;">Saisis le mot de passe prof.</p>
+      ${errorMsg ? `<div style="background:#fde2e2;color:#8a2222;padding:8px 10px;border-radius:6px;font-size:13px;margin-bottom:10px;">${errorMsg}</div>` : ''}
+      <input type="password" id="login-pwd" autofocus placeholder="mot de passe" style="width:100%;padding:10px;border:1px solid #ccc;border-radius:6px;font-size:14px;box-sizing:border-box;">
+      <button id="login-go" style="margin-top:10px;width:100%;padding:10px;background:#1f6feb;color:#fff;border:none;border-radius:6px;font-size:14px;cursor:pointer;">Se connecter</button>
+    </div>
+  `;
+  document.body.appendChild(ov);
+  const pwd = document.getElementById('login-pwd');
+  const go = document.getElementById('login-go');
+  const submit = async () => {
+    const v = pwd.value.trim();
+    if (!v) return;
+    go.disabled = true;
+    teacherPassword = v;
+    teacherHash = ''; // on n'utilise plus le hash bogué éventuellement en cache
+    try {
+      localStorage.setItem('qwest_teacher_password', v);
+      localStorage.removeItem('qwest_teacher_hash'); // nettoie l'ancien
+    } catch (e) {}
+    ov.remove();
+    fetchAndRender();
+    fetchLogsList();
+  };
+  go.addEventListener('click', submit);
+  pwd.addEventListener('keydown', e => { if (e.key === 'Enter') submit(); });
+}
+
+async function fetchAndRender() {
+  if (!teacherPassword && !teacherHash) {
+    showLoginOverlay();
+    return;
+  }
+  const w = $('window').value;
+  const b = $('bucket').value;
+  try {
+    const res = await fetch(`dashboard.php?window=${w}&bucket=${b}&${authQs()}`);
+    if (res.status === 403) {
+      // Mot de passe invalide → purge et redemande
+      teacherPassword = '';
+      teacherHash = '';
+      try {
+        localStorage.removeItem('qwest_teacher_password');
+        localStorage.removeItem('qwest_teacher_hash');
+      } catch (e) {}
+      showLoginOverlay('Mot de passe incorrect.');
+      return;
+    }
+    if (!res.ok) {
+      $('lastUpdate').textContent = '⚠️ HTTP ' + res.status + ' (' + new Date().toLocaleTimeString() + ')';
+      return;
+    }
+    const data = await res.json();
+    render(data);
+    $('lastUpdate').textContent = 'Mis à jour à ' + new Date().toLocaleTimeString();
+  } catch (e) {
+    $('lastUpdate').textContent = '⚠️ Erreur fetch (' + new Date().toLocaleTimeString() + ')';
+  }
+}
+
+function render(d) {
+  // Volume global
+  const r = d.totalReqPerMin || 0;
+  const el = $('reqPerMin');
+  el.textContent = r;
+  el.className = 'big ' + (r < 700 ? 'ok' : r < 1000 ? 'warn' : 'danger');
+  $('totalReq').textContent = d.totalRequests || 0;
+  $('slowReqs').textContent = d.slowRequests || 0;
+  $('maxDur').textContent = d.maxDuration || 0;
+
+  // Chart canvas
+  drawChart(d.perBucket || [], d.bucketSec);
+
+  // Endpoints
+  const total = d.totalRequests || 1;
+  const epRows = Object.entries(d.byEndpoint || {}).map(([k, v]) =>
+    `<tr><td>${escapeHtml(k)}</td><td class="num">${v}</td><td class="num">${((v / total) * 100).toFixed(1)}%</td></tr>`
+  );
+  $('endpointTable').innerHTML = epRows.join('') || '<tr><td colspan="3" style="color:#999;">aucune donnée</td></tr>';
+
+  // Status codes
+  const stRows = Object.entries(d.byStatus || {}).map(([k, v]) => {
+    const code = parseInt(k);
+    let cls = 'status-200';
+    let label = 'OK';
+    if (code === 429) { cls = 'status-429'; label = '⚠️ Throttled'; }
+    else if (code >= 400) { cls = 'status-other'; label = '❌ Erreur'; }
+    return `<tr><td class="${cls}">${k}</td><td class="num">${v}</td><td class="${cls}">${label}</td></tr>`;
+  });
+  $('statusTable').innerHTML = stRows.join('') || '<tr><td colspan="3" style="color:#999;">aucune donnée</td></tr>';
+
+  // Top devices
+  const dvRows = (d.topDevices || []).map(o =>
+    `<tr><td>${escapeHtml(o.key)}</td><td class="num">${o.count}</td><td class="num">${o.reqPerMin}</td></tr>`
+  );
+  $('devicesTable').innerHTML = dvRows.join('') || '<tr><td colspan="3" style="color:#999;">aucune donnée</td></tr>';
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c]));
+}
+
+function drawChart(buckets, bucketSec) {
+  const c = $('chart');
+  const ctx = c.getContext('2d');
+  const dpr = window.devicePixelRatio || 1;
+  const w = c.clientWidth * dpr;
+  const h = c.clientHeight * dpr;
+  c.width = w; c.height = h;
+  ctx.clearRect(0, 0, w, h);
+
+  if (buckets.length === 0) {
+    ctx.fillStyle = '#999';
+    ctx.font = (12 * dpr) + 'px sans-serif';
+    ctx.fillText('Pas de données', 10 * dpr, 30 * dpr);
+    return;
+  }
+
+  // Valeur max (en req/min) pour échelle
+  const maxVal = Math.max(1000, ...buckets.map(b => b.reqPerMin));
+  const pad = 30 * dpr;
+  const chartW = w - pad * 2;
+  const chartH = h - pad;
+  const barW = chartW / buckets.length;
+
+  // Seuil OVH (ligne rouge à 1000)
+  const ovhY = pad + chartH * (1 - 1000 / maxVal);
+  ctx.strokeStyle = '#d54e4e';
+  ctx.lineWidth = 1 * dpr;
+  ctx.setLineDash([4 * dpr, 4 * dpr]);
+  ctx.beginPath();
+  ctx.moveTo(pad, ovhY);
+  ctx.lineTo(w - pad, ovhY);
+  ctx.stroke();
+  ctx.setLineDash([]);
+
+  // Barres
+  buckets.forEach((b, i) => {
+    const x = pad + i * barW;
+    const barH = chartH * (b.reqPerMin / maxVal);
+    const y = pad + chartH - barH;
+    ctx.fillStyle = b.reqPerMin > 1000 ? '#d54e4e' : b.reqPerMin > 700 ? '#e6a23c' : '#3b7ec9';
+    ctx.fillRect(x + 1 * dpr, y, Math.max(1 * dpr, barW - 2 * dpr), barH);
+  });
+
+  // Axe Y (échelle simple)
+  ctx.fillStyle = '#888';
+  ctx.font = (10 * dpr) + 'px sans-serif';
+  ctx.textAlign = 'right';
+  ctx.fillText(maxVal + ' req/min', pad - 4 * dpr, pad + 8 * dpr);
+  ctx.fillText('0', pad - 4 * dpr, pad + chartH);
+  ctx.fillStyle = '#d54e4e';
+  ctx.fillText('1000', pad - 4 * dpr, ovhY + 3 * dpr);
+}
+
+function formatBytes(b) {
+  if (b < 1024) return b + ' o';
+  if (b < 1024 * 1024) return (b / 1024).toFixed(1) + ' ko';
+  return (b / (1024 * 1024)).toFixed(2) + ' Mo';
+}
+
+async function fetchLogsList() {
+  if (!teacherPassword && !teacherHash) return;
+  try {
+    const res = await fetch('dashboard.php?list=logs&' + authQs());
+    if (!res.ok) {
+      $('logsTable').innerHTML = '<tr><td colspan="4" style="color:#a22;">HTTP ' + res.status + '</td></tr>';
+      return;
+    }
+    const data = await res.json();
+    if (!data.success || !Array.isArray(data.files) || data.files.length === 0) {
+      $('logsTable').innerHTML = '<tr><td colspan="4" style="color:#999;">Aucun log encore (pas de partie jouée ?)</td></tr>';
+      return;
+    }
+    const today = new Date().toISOString().slice(0,10);
+    const rows = data.files.map(f => {
+      const dl = `dashboard.php?download=${f.date}&type=${encodeURIComponent(f.type)}&${authQs()}`;
+      const modDate = new Date(f.modified * 1000).toLocaleString();
+      const typeLabel = f.type === 'metrics' ? 'Métriques serveur (toutes requêtes)'
+                       : f.type === 'metrics-old' ? 'Métriques serveur (archivé après rotation)'
+                       : f.type === 'events' ? 'Événements prof (start/next/end/kick)'
+                       : f.type === 'client' ? '📱 Logs côté élèves (déconnexions, visibility, etc.)'
+                       : f.type === 'client-old' ? '📱 Logs côté élèves (archivé)' : f.type;
+      return `<tr>
+        <td><strong>${escapeHtml(f.date)}</strong>${f.date === today ? ' <span style="color:#999;">(aujourd\'hui)</span>' : ''}<br><span style="color:#888;font-size:12px;">${escapeHtml(typeLabel)}</span></td>
+        <td class="num">${formatBytes(f.sizeBytes)}</td>
+        <td class="num" style="color:#666;">${escapeHtml(modDate)}</td>
+        <td><a href="${dl}" download style="color:#1f6feb;text-decoration:none;font-weight:600;">📥 Télécharger</a></td>
+      </tr>`;
+    });
+    $('logsTable').innerHTML = rows.join('');
+  } catch (e) {
+    $('logsTable').innerHTML = '<tr><td colspan="4" style="color:#a22;">Erreur réseau</td></tr>';
+  }
+}
+
+let refreshTimer = null;
+function setupRefresh() {
+  if (refreshTimer) clearInterval(refreshTimer);
+  const ms = parseInt($('refresh').value);
+  if (ms > 0) {
+    refreshTimer = setInterval(fetchAndRender, ms);
+  }
+}
+
+$('refresh').addEventListener('change', setupRefresh);
+$('window').addEventListener('change', fetchAndRender);
+$('bucket').addEventListener('change', fetchAndRender);
+$('refreshBtn').addEventListener('click', fetchAndRender);
+
+fetchAndRender();
+fetchLogsList();
+setupRefresh();
+
+// Recharger la liste des logs à chaque refresh du dashboard
+// (utile si tu actives le bouton "Rafraîchir" pour voir les nouveaux fichiers)
+$('refreshBtn').addEventListener('click', fetchLogsList);
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 350">
+  <rect width="600" height="350" fill="#fff"/>
+  <text x="300" y="25" font-size="16" font-weight="bold" text-anchor="middle">Scénarios du GIEC - Réchauffement climatique</text>
+  <!-- Axes -->
+  <line x1="80" y1="280" x2="550" y2="280" stroke="#333" stroke-width="2"/>
+  <line x1="80" y1="280" x2="80" y2="50" stroke="#333" stroke-width="2"/>
+  <text x="50" y="170" font-size="10" text-anchor="middle" transform="rotate(-90,50,170)">Température (°C)</text>
+  <text x="315" y="300" font-size="10" text-anchor="middle">Années</text>
+  <!-- Graduations -->
+  <text x="70" y="280" font-size="9" text-anchor="end">0</text>
+  <text x="70" y="230" font-size="9" text-anchor="end">+1</text>
+  <text x="70" y="180" font-size="9" text-anchor="end">+2</text>
+  <text x="70" y="130" font-size="9" text-anchor="end">+3</text>
+  <text x="70" y="80" font-size="9" text-anchor="end">+4</text>
+  <text x="120" y="295" font-size="9">2020</text>
+  <text x="280" y="295" font-size="9">2050</text>
+  <text x="450" y="295" font-size="9">2100</text>
+  <!-- Ligne objectif Paris 1.5°C -->
+  <line x1="80" y1="205" x2="550" y2="205" stroke="#4caf50" stroke-width="1" stroke-dasharray="5,5"/>
+  <text x="560" y="210" font-size="8" fill="#4caf50">1,5°C</text>
+  <!-- Scénario pessimiste -->
+  <path d="M120 250 Q200 240 280 200 Q360 150 450 90 L520 70" fill="none" stroke="#e74c3c" stroke-width="3"/>
+  <text x="530" y="75" font-size="9" fill="#e74c3c">Pessimiste</text>
+  <!-- Scénario intermédiaire -->
+  <path d="M120 250 Q200 245 280 220 Q360 190 450 160 L520 145" fill="none" stroke="#ff9800" stroke-width="3"/>
+  <text x="530" y="150" font-size="9" fill="#ff9800">Intermédiaire</text>
+  <!-- Scénario optimiste -->
+  <path d="M120 250 Q200 248 280 235 Q360 220 450 210 L520 205" fill="none" stroke="#4caf50" stroke-width="3"/>
+  <text x="530" y="210" font-size="9" fill="#4caf50">Optimiste</text>
+  <!-- Question -->
+  <rect x="100" y="310" width="400" height="35" fill="#f5f5f5" rx="5"/>
+  <text x="300" y="332" font-size="11" text-anchor="middle">Quel scénario respecte l'objectif de l'Accord de Paris ?</text>
+</svg>

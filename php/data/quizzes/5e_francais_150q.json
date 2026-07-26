@@ -1,0 +1,3379 @@
+{
+  "name": "5e_francais_150q",
+  "version": "1.0",
+  "createdAt": "2026-04-20T10:30:00.000Z",
+  "questionsCount": 150,
+  "questions": [
+    {
+      "type": "multiple",
+      "question": "Le Moyen Âge correspond à quelle grande période de l'histoire ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Du Ve siècle à la fin du XVe siècle environ",
+          "correct": true
+        },
+        {
+          "text": "Du Ier siècle à la fin du IVe siècle",
+          "correct": false
+        },
+        {
+          "text": "Du XVIe siècle au XVIIIe siècle",
+          "correct": false
+        },
+        {
+          "text": "Du XIXe siècle à nos jours",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un chevalier du Moyen Âge devait respecter un code d'honneur appelé…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La chevalerie",
+          "correct": true
+        },
+        {
+          "text": "La croisade",
+          "correct": false
+        },
+        {
+          "text": "Le serment féodal",
+          "correct": false
+        },
+        {
+          "text": "La courtoisie uniquement",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans les romans de chevalerie du Moyen Âge, le héros part généralement en…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Quête (une aventure pour trouver quelque chose ou prouver sa valeur)",
+          "correct": true
+        },
+        {
+          "text": "Vacances pour se reposer de ses combats",
+          "correct": false
+        },
+        {
+          "text": "Exil car il a trahi son roi",
+          "correct": false
+        },
+        {
+          "text": "Pèlerinage uniquement religieux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le Roman de Renart met en scène des animaux qui parlent et agissent comme des humains. Le personnage principal Renart est…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un renard rusé qui trompe tout le monde",
+          "correct": true
+        },
+        {
+          "text": "Un lion courageux et juste",
+          "correct": false
+        },
+        {
+          "text": "Un loup gentil incompris",
+          "correct": false
+        },
+        {
+          "text": "Un ours fort et loyal",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans le Roman de Renart, les animaux représentent souvent des types humains de la société médiévale.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un fabliau est un court récit médiéval qui est généralement…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Comique et parfois satirique, écrit en vers",
+          "correct": true
+        },
+        {
+          "text": "Un long poème épique sur des chevaliers",
+          "correct": false
+        },
+        {
+          "text": "Un texte religieux destiné aux moines",
+          "correct": false
+        },
+        {
+          "text": "Une pièce de théâtre en cinq actes",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Chrétien de Troyes est un auteur du Moyen Âge célèbre pour ses romans sur…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Les chevaliers de la Table Ronde et le roi Arthur",
+          "correct": true
+        },
+        {
+          "text": "Les croisades en Terre Sainte",
+          "correct": false
+        },
+        {
+          "text": "La vie des paysans au Moyen Âge",
+          "correct": false
+        },
+        {
+          "text": "Les aventures de Renart le renard",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel objet magique les chevaliers d'Arthur cherchaient-ils dans les romans de Chrétien de Troyes ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le Graal",
+          "correct": true
+        },
+        {
+          "text": "Excalibur, l'épée magique",
+          "correct": false
+        },
+        {
+          "text": "La couronne d'Arthur",
+          "correct": false
+        },
+        {
+          "text": "Un bouclier enchanté",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce que « l'amour courtois » au Moyen Âge ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Un amour idéalisé où le chevalier voue une admiration absolue à une dame inaccessible",
+          "correct": true
+        },
+        {
+          "text": "Un mariage arrangé entre deux nobles familles",
+          "correct": false
+        },
+        {
+          "text": "Une amitié entre chevaliers sur le champ de bataille",
+          "correct": false
+        },
+        {
+          "text": "Un amour simple et quotidien entre gens du peuple",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un récit de voyage raconte…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Une expédition ou une exploration, avec les découvertes et les dangers rencontrés",
+          "correct": true
+        },
+        {
+          "text": "L'histoire d'amour de deux personnages qui se rencontrent en voyage",
+          "correct": false
+        },
+        {
+          "text": "Un guide pratique pour les touristes",
+          "correct": false
+        },
+        {
+          "text": "La biographie d'un explorateur célèbre",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un récit d'aventure, le héros fait face à des…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Obstacles et dangers qu'il doit surmonter",
+          "correct": true
+        },
+        {
+          "text": "Longues descriptions de paysages sans action",
+          "correct": false
+        },
+        {
+          "text": "Débats philosophiques avec d'autres personnages",
+          "correct": false
+        },
+        {
+          "text": "Souvenirs tranquilles de son enfance heureuse",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Jack London est un auteur américain célèbre pour ses romans d'aventure qui se passent souvent…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Dans les régions sauvages du Grand Nord (Alaska, Yukon)",
+          "correct": true
+        },
+        {
+          "text": "Dans les déserts d'Afrique",
+          "correct": false
+        },
+        {
+          "text": "Au fond des océans",
+          "correct": false
+        },
+        {
+          "text": "Dans les jungles d'Amazonie",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'un conte merveilleux ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un récit avec des éléments magiques acceptés comme normaux : fées, sorcières, objets enchantés…",
+          "correct": true
+        },
+        {
+          "text": "Un récit réaliste qui raconte une belle histoire vraie",
+          "correct": false
+        },
+        {
+          "text": "Un récit qui fait peur avec des événements inexpliqués",
+          "correct": false
+        },
+        {
+          "text": "Un récit qui se passe dans le futur avec des robots",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans les contes merveilleux, la formule d'ouverture est souvent…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "\"Il était une fois…\"",
+          "correct": true
+        },
+        {
+          "text": "\"Dans un futur lointain…\"",
+          "correct": false
+        },
+        {
+          "text": "\"D'après une histoire vraie…\"",
+          "correct": false
+        },
+        {
+          "text": "\"Je me souviens que…\"",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Une utopie décrit…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Une société idéale et parfaite imaginée par l'auteur",
+          "correct": true
+        },
+        {
+          "text": "Un voyage dans un pays étranger exotique",
+          "correct": false
+        },
+        {
+          "text": "Un monde futuriste peuplé de robots",
+          "correct": false
+        },
+        {
+          "text": "Un pays réel décrit de façon très précise",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une poésie, la « rime » est…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "La répétition d'un même son en fin de vers",
+          "correct": true
+        },
+        {
+          "text": "Le nombre de syllabes dans un vers",
+          "correct": false
+        },
+        {
+          "text": "Le titre donné au poème",
+          "correct": false
+        },
+        {
+          "text": "La ponctuation placée à la fin d'un vers",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un poème, comment compte-t-on les syllabes d'un vers ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "On compte chaque syllabe prononcée, y compris le « e » muet devant une consonne",
+          "correct": true
+        },
+        {
+          "text": "On compte uniquement les voyelles",
+          "correct": false
+        },
+        {
+          "text": "On compte les mots du vers",
+          "correct": false
+        },
+        {
+          "text": "On compte uniquement les consonnes",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Les jeux de langage en poésie comprennent notamment…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Les calembours, les contrepèteries, les mots inventés, les jeux sur les sons",
+          "correct": true
+        },
+        {
+          "text": "Les tableaux statistiques et les graphiques",
+          "correct": false
+        },
+        {
+          "text": "Les mots croisés et les charades uniquement",
+          "correct": false
+        },
+        {
+          "text": "Les citations d'autres poètes sans modification",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'un calembour ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un jeu de mots fondé sur des mots qui se prononcent pareil mais ont des sens différents",
+          "correct": true
+        },
+        {
+          "text": "Un poème très court de deux vers seulement",
+          "correct": false
+        },
+        {
+          "text": "Un discours politique qui cherche à convaincre",
+          "correct": false
+        },
+        {
+          "text": "Une figure de style qui exagère une réalité",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Les niveaux de langage en français sont au nombre de trois. Lequel de ces exemples est en langage familier ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "\"T'as vu ce truc ?\"",
+          "correct": true
+        },
+        {
+          "text": "\"Avez-vous observé cet objet ?\"",
+          "correct": false
+        },
+        {
+          "text": "\"As-tu vu cet objet ?\"",
+          "correct": false
+        },
+        {
+          "text": "\"Je vous prie d'observer ce phénomène.\"",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le langage soutenu est utilisé dans…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Les discours officiels, les textes littéraires, les situations formelles",
+          "correct": true
+        },
+        {
+          "text": "Les conversations entre amis proches",
+          "correct": false
+        },
+        {
+          "text": "Les messages sur les réseaux sociaux",
+          "correct": false
+        },
+        {
+          "text": "Les discussions à la récréation",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'un champ lexical ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un ensemble de mots appartenant au même thème ou domaine",
+          "correct": true
+        },
+        {
+          "text": "Un dictionnaire de rimes pour les poètes",
+          "correct": false
+        },
+        {
+          "text": "La liste de tous les mots d'un texte dans l'ordre alphabétique",
+          "correct": false
+        },
+        {
+          "text": "Les mots qui ont le même sens qu'un autre mot",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la phrase « Le vieux chien dormait paisiblement », quel est le sujet du verbe ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Le vieux chien",
+          "correct": true
+        },
+        {
+          "text": "Dormait",
+          "correct": false
+        },
+        {
+          "text": "Paisiblement",
+          "correct": false
+        },
+        {
+          "text": "Vieux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans « Elle offre des fleurs à sa mère », « des fleurs » est le…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Complément d'objet direct (COD)",
+          "correct": true
+        },
+        {
+          "text": "Complément d'objet indirect (COI)",
+          "correct": false
+        },
+        {
+          "text": "Sujet du verbe",
+          "correct": false
+        },
+        {
+          "text": "Complément circonstanciel",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans « Elle offre des fleurs à sa mère », « à sa mère » est le…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Complément d'objet indirect (COI)",
+          "correct": true
+        },
+        {
+          "text": "Complément d'objet direct (COD)",
+          "correct": false
+        },
+        {
+          "text": "Sujet du verbe",
+          "correct": false
+        },
+        {
+          "text": "Complément du nom",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un complément circonstanciel de lieu répond à la question…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Où ? / D'où ? / Jusqu'où ?",
+          "correct": true
+        },
+        {
+          "text": "Quand ? / Depuis quand ?",
+          "correct": false
+        },
+        {
+          "text": "Comment ? / De quelle façon ?",
+          "correct": false
+        },
+        {
+          "text": "Pourquoi ? / Dans quel but ?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un complément circonstanciel de temps répond à la question…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Quand ? / À quel moment ? / Depuis combien de temps ?",
+          "correct": true
+        },
+        {
+          "text": "Où ? / Dans quel endroit ?",
+          "correct": false
+        },
+        {
+          "text": "Pourquoi ? / Pour quelle raison ?",
+          "correct": false
+        },
+        {
+          "text": "Comment ? / De quelle manière ?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la nature du mot « magnifique » dans « un paysage magnifique » ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Un adjectif qualificatif",
+          "correct": true
+        },
+        {
+          "text": "Un nom commun",
+          "correct": false
+        },
+        {
+          "text": "Un verbe",
+          "correct": false
+        },
+        {
+          "text": "Un adverbe",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans « Les jolies fleurs rouges poussent dans le jardin. », combien y a-t-il d'adjectifs qualificatifs ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "2 (jolies et rouges)",
+          "correct": true
+        },
+        {
+          "text": "1 (jolies seulement)",
+          "correct": false
+        },
+        {
+          "text": "3 (jolies, rouges et dans)",
+          "correct": false
+        },
+        {
+          "text": "0 (il n'y en a pas)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Les verbes du 1er groupe se terminent à l'infinitif par…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "-er (ex : chanter, manger, parler)",
+          "correct": true
+        },
+        {
+          "text": "-ir (ex : finir, choisir)",
+          "correct": false
+        },
+        {
+          "text": "-re (ex : prendre, vendre)",
+          "correct": false
+        },
+        {
+          "text": "-oir (ex : vouloir, pouvoir)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment conjugue-t-on « manger » à la 1ère personne du singulier au présent de l'indicatif ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Je mange",
+          "correct": true
+        },
+        {
+          "text": "Je manges",
+          "correct": false
+        },
+        {
+          "text": "Je mangeons",
+          "correct": false
+        },
+        {
+          "text": "Je mangeais",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "L'imparfait de l'indicatif des verbes en -er se forme avec la terminaison…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "-ais, -ais, -ait, -ions, -iez, -aient",
+          "correct": true
+        },
+        {
+          "text": "-ai, -as, -a, -âmes, -âtes, -èrent",
+          "correct": false
+        },
+        {
+          "text": "-e, -es, -e, -ons, -ez, -ent",
+          "correct": false
+        },
+        {
+          "text": "-erai, -eras, -era, -erons, -erez, -eront",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Au présent de l'indicatif, le verbe « aller » est régulier : il suit les mêmes règles que les verbes en -er.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Laquelle de ces formes verbales est correctement conjuguée au présent ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Nous finissons",
+          "correct": true
+        },
+        {
+          "text": "Nous finissez",
+          "correct": false
+        },
+        {
+          "text": "Nous finissons-ions",
+          "correct": false
+        },
+        {
+          "text": "Nous finissaient",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le futur simple des verbes en -er se reconnaît à ses terminaisons. Laquelle est correcte ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "-erai, -eras, -era, -erons, -erez, -eront",
+          "correct": true
+        },
+        {
+          "text": "-ais, -ais, -ait, -ions, -iez, -aient",
+          "correct": false
+        },
+        {
+          "text": "-ai, -as, -a, -âmes, -âtes, -èrent",
+          "correct": false
+        },
+        {
+          "text": "-e, -es, -e, -ons, -ez, -ent",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un groupe nominal, le nom est le mot…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Principal (le noyau), autour duquel s'organisent les autres mots",
+          "correct": true
+        },
+        {
+          "text": "Qui indique une action",
+          "correct": false
+        },
+        {
+          "text": "Qui décrit les caractéristiques du groupe",
+          "correct": false
+        },
+        {
+          "text": "Qui peut être supprimé sans changer le sens",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'un déterminant ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un mot qui accompagne le nom pour l'introduire (un, le, ce, mon, quel…)",
+          "correct": true
+        },
+        {
+          "text": "Un mot qui décrit le nom (grand, beau, bleu…)",
+          "correct": false
+        },
+        {
+          "text": "Un mot qui remplace le nom pour éviter une répétition",
+          "correct": false
+        },
+        {
+          "text": "Un mot qui exprime une action",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Une phrase « simple » est une phrase qui contient…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un seul verbe conjugué",
+          "correct": true
+        },
+        {
+          "text": "Moins de 5 mots",
+          "correct": false
+        },
+        {
+          "text": "Deux verbes conjugués reliés par « et »",
+          "correct": false
+        },
+        {
+          "text": "Uniquement des noms et des adjectifs",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Une phrase « complexe » est une phrase qui contient…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Au moins deux verbes conjugués (donc au moins deux propositions)",
+          "correct": true
+        },
+        {
+          "text": "Plus de 10 mots",
+          "correct": false
+        },
+        {
+          "text": "Des mots difficiles à comprendre",
+          "correct": false
+        },
+        {
+          "text": "Un seul verbe conjugué très long",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La coordination relie deux propositions avec des mots comme…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Mais, ou, et, donc, or, ni, car",
+          "correct": true
+        },
+        {
+          "text": "Que, qui, dont, où, lequel",
+          "correct": false
+        },
+        {
+          "text": "Parce que, lorsque, bien que, si",
+          "correct": false
+        },
+        {
+          "text": "Cependant, néanmoins, pourtant",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "« ou / où » : laquelle de ces phrases utilise correctement « où » ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "\"C'est la ville où je suis né.\"",
+          "correct": true
+        },
+        {
+          "text": "\"Je veux du café où du thé.\"",
+          "correct": false
+        },
+        {
+          "text": "\"Où tu préfères, le rouge où le bleu ?\"",
+          "correct": false
+        },
+        {
+          "text": "\"Il faut choisir : rester où partir.\"",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "« peu / peut » : laquelle de ces phrases est correcte ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "\"Il peut venir demain.\"",
+          "correct": true
+        },
+        {
+          "text": "\"Il peu venir demain.\"",
+          "correct": false
+        },
+        {
+          "text": "\"Elle peut-être malade.\"",
+          "correct": false
+        },
+        {
+          "text": "\"Peut d'élèves ont réussi.\"",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le préfixe « re- » ou « ré- » signifie…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Faire à nouveau, répéter (ex : relire = lire à nouveau)",
+          "correct": true
+        },
+        {
+          "text": "Faire le contraire (ex : refaire = ne plus faire)",
+          "correct": false
+        },
+        {
+          "text": "Faire beaucoup (ex : remplir = remplir beaucoup)",
+          "correct": false
+        },
+        {
+          "text": "Faire avant (ex : revenir = venir avant)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Les mots « chanter », « chanteur », « chanson », « chant » appartiennent tous à la même…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Famille de mots (même radical : chant-)",
+          "correct": true
+        },
+        {
+          "text": "Catégorie grammaticale",
+          "correct": false
+        },
+        {
+          "text": "Classe des noms communs uniquement",
+          "correct": false
+        },
+        {
+          "text": "Champ lexical de la tristesse",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Remets ces éléments dans le bon ordre pour constituer un groupe nominal correct :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Déterminant (ex : une)",
+          "correct": true
+        },
+        {
+          "text": "Adjectif épithète avant le nom (ex : belle)",
+          "correct": true
+        },
+        {
+          "text": "Nom (ex : fleur)",
+          "correct": true
+        },
+        {
+          "text": "Adjectif épithète après le nom (ex : rouge)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un récit, la « situation initiale » est…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le moment de calme et d'équilibre au début de l'histoire, avant le problème",
+          "correct": true
+        },
+        {
+          "text": "Le moment le plus dramatique de l'histoire",
+          "correct": false
+        },
+        {
+          "text": "La fin heureuse qui résout tout",
+          "correct": false
+        },
+        {
+          "text": "L'arrivée du personnage principal sur les lieux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un récit, l'« élément perturbateur » est…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'événement qui vient rompre l'équilibre initial et déclenche l'action",
+          "correct": true
+        },
+        {
+          "text": "Le personnage méchant qui apparaît",
+          "correct": false
+        },
+        {
+          "text": "La description du lieu principal",
+          "correct": false
+        },
+        {
+          "text": "La morale écrite à la fin du récit",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans un texte narratif, les verbes d'action permettent de faire avancer l'histoire.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on un court récit médiéval, souvent drôle, écrit en vers, qui se moque des défauts humains ?",
+      "time": 30,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "Fabliau",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "fabliau",
+        "un fabliau",
+        "des fabliaux",
+        "fabliaux"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La nature est un thème étudié en 5ème (questionnement complémentaire). Les textes sur ce thème s'interrogent sur…",
+      "time": 30,
+      "answers": [
+        {
+          "text": "La relation entre les hommes et leur environnement naturel",
+          "correct": true
+        },
+        {
+          "text": "Les techniques agricoles modernes",
+          "correct": false
+        },
+        {
+          "text": "La géographie des forêts tropicales",
+          "correct": false
+        },
+        {
+          "text": "Les animaux de compagnie et leur éducation",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un roman de chevalerie, le chevalier accomplit ses exploits pour…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Défendre les faibles, servir son roi et conquérir la gloire",
+          "correct": true
+        },
+        {
+          "text": "Accumuler le plus d'or possible",
+          "correct": false
+        },
+        {
+          "text": "Fuir les combats et vivre en paix",
+          "correct": false
+        },
+        {
+          "text": "Devenir roi à la place du roi",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans le Roman de Renart, qui est le principal ennemi de Renart le renard ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Ysengrin le loup",
+          "correct": true
+        },
+        {
+          "text": "Noble le lion",
+          "correct": false
+        },
+        {
+          "text": "Tibert le chat",
+          "correct": false
+        },
+        {
+          "text": "Brun l'ours",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Les fabliaux du Moyen Âge sont des textes sérieux et moralisateurs destinés aux nobles.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Une « enluminure » au Moyen Âge, c'est…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Une illustration peinte et colorée dans un manuscrit médiéval",
+          "correct": true
+        },
+        {
+          "text": "Un type de lampe utilisée dans les châteaux forts",
+          "correct": false
+        },
+        {
+          "text": "Une technique pour écrire plus vite sur parchemin",
+          "correct": false
+        },
+        {
+          "text": "Une décoration sculptée sur les cathédrales",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel support utilisait-on pour écrire avant l'invention du papier au Moyen Âge ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le parchemin (fait de peau d'animal)",
+          "correct": true
+        },
+        {
+          "text": "Des tablettes de cire",
+          "correct": false
+        },
+        {
+          "text": "Du tissu de lin traité",
+          "correct": false
+        },
+        {
+          "text": "Des feuilles d'arbre séchées",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Les troubadours et trouvères du Moyen Âge étaient des…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Poètes et musiciens qui chantaient des poèmes d'amour",
+          "correct": true
+        },
+        {
+          "text": "Chevaliers spécialisés dans les tournois",
+          "correct": false
+        },
+        {
+          "text": "Moines qui copiaient les manuscrits",
+          "correct": false
+        },
+        {
+          "text": "Marchands qui voyageaient de ville en ville",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un récit d'aventure, le personnage qui s'oppose au héros et lui crée des difficultés s'appelle…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'antagoniste",
+          "correct": true
+        },
+        {
+          "text": "Le narrateur",
+          "correct": false
+        },
+        {
+          "text": "Le destinataire",
+          "correct": false
+        },
+        {
+          "text": "L'adjuvant",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un récit, un personnage qui aide le héros s'appelle…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un adjuvant",
+          "correct": true
+        },
+        {
+          "text": "Un antagoniste",
+          "correct": false
+        },
+        {
+          "text": "Un narrateur",
+          "correct": false
+        },
+        {
+          "text": "Un destinateur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Les « Grandes Découvertes » du XVe et XVIe siècle ont inspiré beaucoup de récits de voyage. Quel explorateur a découvert l'Amérique en 1492 ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Christophe Colomb",
+          "correct": true
+        },
+        {
+          "text": "Vasco de Gama",
+          "correct": false
+        },
+        {
+          "text": "Magellan",
+          "correct": false
+        },
+        {
+          "text": "Marco Polo",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Marco Polo est célèbre pour avoir raconté son voyage vers…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La Chine et l'Asie",
+          "correct": true
+        },
+        {
+          "text": "L'Amérique du Sud",
+          "correct": false
+        },
+        {
+          "text": "L'Afrique subsaharienne",
+          "correct": false
+        },
+        {
+          "text": "L'Australie",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un conte, la formule de clôture est souvent…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "« Ils vécurent heureux et eurent beaucoup d'enfants. »",
+          "correct": true
+        },
+        {
+          "text": "« Fin de l'histoire, retour à la réalité. »",
+          "correct": false
+        },
+        {
+          "text": "« Et voilà pourquoi les choses sont ainsi. »",
+          "correct": false
+        },
+        {
+          "text": "« À suivre dans le prochain épisode… »",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans les contes merveilleux, les chiffres qui reviennent souvent sont…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "3 et 7 (trois épreuves, sept nains…)",
+          "correct": true
+        },
+        {
+          "text": "10 et 100",
+          "correct": false
+        },
+        {
+          "text": "2 et 4",
+          "correct": false
+        },
+        {
+          "text": "13 et 666",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un poème, le terme « vers » désigne…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Une ligne d'un poème",
+          "correct": true
+        },
+        {
+          "text": "Le thème principal du poème",
+          "correct": false
+        },
+        {
+          "text": "La morale finale du poème",
+          "correct": false
+        },
+        {
+          "text": "Le nom de l'auteur du poème",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un poème sans rimes s'appelle un poème…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "En vers libres ou blanc",
+          "correct": true
+        },
+        {
+          "text": "En prose uniquement",
+          "correct": false
+        },
+        {
+          "text": "Épique",
+          "correct": false
+        },
+        {
+          "text": "Syllabique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La « comparaison » est une figure de style qui rapproche deux éléments grâce à un mot outil. Lequel de ces mots est un mot outil de comparaison ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Comme",
+          "correct": true
+        },
+        {
+          "text": "Mais",
+          "correct": false
+        },
+        {
+          "text": "Donc",
+          "correct": false
+        },
+        {
+          "text": "Pourtant",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "« Il est fort comme un bœuf. » Cette phrase contient une…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Comparaison",
+          "correct": true
+        },
+        {
+          "text": "Métaphore",
+          "correct": false
+        },
+        {
+          "text": "Hyperbole",
+          "correct": false
+        },
+        {
+          "text": "Personnification",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "« Il pleuvait des cordes. » Cette expression signifie qu'il pleuvait…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Très fort",
+          "correct": true
+        },
+        {
+          "text": "Légèrement",
+          "correct": false
+        },
+        {
+          "text": "Avec du vent fort",
+          "correct": false
+        },
+        {
+          "text": "Depuis plusieurs jours",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'une métaphore ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Une comparaison sans mot outil, qui dit qu'une chose EST une autre chose",
+          "correct": true
+        },
+        {
+          "text": "Une comparaison avec un mot outil comme « comme »",
+          "correct": false
+        },
+        {
+          "text": "Une exagération pour frapper les esprits",
+          "correct": false
+        },
+        {
+          "text": "L'attribution de qualités humaines à un animal",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "« Sa voix est du miel. » est un exemple de…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Métaphore",
+          "correct": true
+        },
+        {
+          "text": "Comparaison",
+          "correct": false
+        },
+        {
+          "text": "Hyperbole",
+          "correct": false
+        },
+        {
+          "text": "Personnification",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Une « hyperbole » est une figure de style qui consiste à…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Exagérer pour insister ou frapper l'imagination",
+          "correct": true
+        },
+        {
+          "text": "Dire le contraire de ce qu'on pense",
+          "correct": false
+        },
+        {
+          "text": "Attribuer des qualités humaines à un objet",
+          "correct": false
+        },
+        {
+          "text": "Rapprocher deux éléments avec un mot outil",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le rôle du narrateur dans un récit ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "C'est la voix qui raconte l'histoire",
+          "correct": true
+        },
+        {
+          "text": "C'est toujours le personnage principal",
+          "correct": false
+        },
+        {
+          "text": "C'est l'auteur qui écrit le livre",
+          "correct": false
+        },
+        {
+          "text": "C'est le lecteur qui imagine l'histoire",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le narrateur d'un récit est toujours la même personne que l'auteur qui a écrit le livre.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un récit écrit à la première personne (« je ») donne l'impression que…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le narrateur participe lui-même à l'histoire",
+          "correct": true
+        },
+        {
+          "text": "Le narrateur voit tout de l'extérieur sans participer",
+          "correct": false
+        },
+        {
+          "text": "Il y a plusieurs narrateurs qui se relaient",
+          "correct": false
+        },
+        {
+          "text": "L'histoire est vraie et tirée de la vie de l'auteur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un récit écrit à la troisième personne (« il », « elle »)…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Donne une distance entre le narrateur et les personnages",
+          "correct": true
+        },
+        {
+          "text": "Signifie que l'auteur parle de lui-même",
+          "correct": false
+        },
+        {
+          "text": "Est toujours une autobiographie",
+          "correct": false
+        },
+        {
+          "text": "Est interdit dans les récits d'aventure",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un « dialogue » dans un récit sert principalement à…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Faire parler les personnages directement et faire avancer l'action",
+          "correct": true
+        },
+        {
+          "text": "Ralentir le récit avec de longues descriptions",
+          "correct": false
+        },
+        {
+          "text": "Donner le point de vue de l'auteur",
+          "correct": false
+        },
+        {
+          "text": "Résumer ce qui s'est passé avant",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un texte, les guillemets (« ») servent souvent à introduire…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Les paroles d'un personnage (discours direct)",
+          "correct": true
+        },
+        {
+          "text": "Une liste d'éléments",
+          "correct": false
+        },
+        {
+          "text": "Une explication ou une précision",
+          "correct": false
+        },
+        {
+          "text": "La fin d'une phrase",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans « Hier, Léa a mangé une pomme. », quel mot est un adverbe de temps ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Hier",
+          "correct": true
+        },
+        {
+          "text": "Léa",
+          "correct": false
+        },
+        {
+          "text": "Mangé",
+          "correct": false
+        },
+        {
+          "text": "Pomme",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le genre du nom « une fourmi » ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Féminin",
+          "correct": true
+        },
+        {
+          "text": "Masculin",
+          "correct": false
+        },
+        {
+          "text": "Neutre",
+          "correct": false
+        },
+        {
+          "text": "Cela dépend du contexte",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Laquelle de ces phrases contient une faute d'accord ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "« Les chats noir dorment. »",
+          "correct": true
+        },
+        {
+          "text": "« Les chats noirs dorment. »",
+          "correct": false
+        },
+        {
+          "text": "« Le chat noir dort. »",
+          "correct": false
+        },
+        {
+          "text": "« La chatte noire dort. »",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans « Nous allons au cinéma ce soir. », quel est le complément circonstanciel de temps ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Ce soir",
+          "correct": true
+        },
+        {
+          "text": "Au cinéma",
+          "correct": false
+        },
+        {
+          "text": "Nous",
+          "correct": false
+        },
+        {
+          "text": "Allons",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment appelle-t-on l'ensemble des formes d'un verbe selon le temps, le mode et la personne ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La conjugaison",
+          "correct": true
+        },
+        {
+          "text": "La déclinaison",
+          "correct": false
+        },
+        {
+          "text": "La dérivation",
+          "correct": false
+        },
+        {
+          "text": "La composition",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Au présent de l'indicatif, quelle est la bonne conjugaison du verbe « vouloir » à la 2e personne du singulier ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Tu veux",
+          "correct": true
+        },
+        {
+          "text": "Tu veut",
+          "correct": false
+        },
+        {
+          "text": "Tu voulons",
+          "correct": false
+        },
+        {
+          "text": "Tu voulez",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Au présent de l'indicatif, « faire » à la 1ère personne du pluriel se conjugue…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Nous faisons",
+          "correct": true
+        },
+        {
+          "text": "Nous faisez",
+          "correct": false
+        },
+        {
+          "text": "Nous faitons",
+          "correct": false
+        },
+        {
+          "text": "Nous ferons",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le passé composé est formé avec…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'auxiliaire avoir ou être au présent + le participe passé du verbe",
+          "correct": true
+        },
+        {
+          "text": "L'auxiliaire avoir ou être à l'imparfait + l'infinitif",
+          "correct": false
+        },
+        {
+          "text": "Le verbe seul avec une terminaison particulière",
+          "correct": false
+        },
+        {
+          "text": "L'infinitif + la terminaison du futur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Lequel de ces verbes se conjugue avec l'auxiliaire « être » au passé composé ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Aller",
+          "correct": true
+        },
+        {
+          "text": "Manger",
+          "correct": false
+        },
+        {
+          "text": "Voir",
+          "correct": false
+        },
+        {
+          "text": "Prendre",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la forme correcte du passé composé de « partir » à la 3e personne du singulier (masculin) ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Il est parti",
+          "correct": true
+        },
+        {
+          "text": "Il a parti",
+          "correct": false
+        },
+        {
+          "text": "Il est partis",
+          "correct": false
+        },
+        {
+          "text": "Il a partait",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Les adjectifs de couleur s'accordent en genre et en nombre avec le nom. Laquelle de ces formes est correcte ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Des robes bleues",
+          "correct": true
+        },
+        {
+          "text": "Des robes bleu",
+          "correct": false
+        },
+        {
+          "text": "Des robes bleus",
+          "correct": false
+        },
+        {
+          "text": "Des robe bleues",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Les adjectifs de couleur composés (ex : bleu clair, rouge foncé) s'accordent en genre et en nombre.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le suffixe « -eur » peut former des noms de métier ou de personne. Quel métier est formé à partir du verbe « chanter » ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Chanteur",
+          "correct": true
+        },
+        {
+          "text": "Chantable",
+          "correct": false
+        },
+        {
+          "text": "Chantement",
+          "correct": false
+        },
+        {
+          "text": "Rechanteur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le préfixe « in- » ou « im- » sert à exprimer…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Le contraire ou la négation (ex : impossible = pas possible)",
+          "correct": true
+        },
+        {
+          "text": "Une répétition (ex : imprimer = imprimer à nouveau)",
+          "correct": false
+        },
+        {
+          "text": "Une très grande taille (ex : immense = très grand)",
+          "correct": false
+        },
+        {
+          "text": "Un mouvement vers l'intérieur uniquement",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un synonyme est un mot qui a…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Le même sens (ou un sens très proche) qu'un autre mot",
+          "correct": true
+        },
+        {
+          "text": "Le sens contraire d'un autre mot",
+          "correct": false
+        },
+        {
+          "text": "La même prononciation qu'un autre mot",
+          "correct": false
+        },
+        {
+          "text": "La même orthographe qu'un autre mot mais un sens différent",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un antonyme est un mot qui a…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Le sens contraire d'un autre mot (ex : grand / petit)",
+          "correct": true
+        },
+        {
+          "text": "Le même sens qu'un autre mot",
+          "correct": false
+        },
+        {
+          "text": "La même orthographe mais une prononciation différente",
+          "correct": false
+        },
+        {
+          "text": "Une origine latine identique à un autre mot",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "« sans / s'en » : laquelle de ces phrases est correcte ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "« Il est parti sans dire au revoir. »",
+          "correct": true
+        },
+        {
+          "text": "« Il est parti s'en dire au revoir. »",
+          "correct": false
+        },
+        {
+          "text": "« Il sans alla précipitamment. »",
+          "correct": false
+        },
+        {
+          "text": "« Sans t'inquiète, il s'en va bien. »",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "« ni / n'y » : quelle phrase est correcte ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "« Je n'y vais pas. »",
+          "correct": true
+        },
+        {
+          "text": "« Je ni vais pas. »",
+          "correct": false
+        },
+        {
+          "text": "« Il ni a personne. »",
+          "correct": false
+        },
+        {
+          "text": "« N'y lui ni elle ne sont venus. »",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Les principales prépositions de lieu sont…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Dans, sur, sous, devant, derrière, entre, chez, à, en…",
+          "correct": true
+        },
+        {
+          "text": "Mais, et, ou, donc, or, ni, car",
+          "correct": false
+        },
+        {
+          "text": "Que, qui, dont, où, lequel",
+          "correct": false
+        },
+        {
+          "text": "Très, bien, mal, vite, lentement",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans « La forêt était sombre et silencieuse. Le vent soufflait doucement. », le texte est principalement…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Descriptif : il décrit un lieu",
+          "correct": true
+        },
+        {
+          "text": "Narratif : il raconte une action",
+          "correct": false
+        },
+        {
+          "text": "Argumentatif : il défend une opinion",
+          "correct": false
+        },
+        {
+          "text": "Dialogué : des personnages parlent",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Remets les étapes du schéma narratif dans le bon ordre :",
+      "time": 40,
+      "answers": [
+        {
+          "text": "Situation initiale (tout va bien)",
+          "correct": true
+        },
+        {
+          "text": "Élément perturbateur (un problème surgit)",
+          "correct": true
+        },
+        {
+          "text": "Péripéties (le héros agit pour résoudre le problème)",
+          "correct": true
+        },
+        {
+          "text": "Dénouement et situation finale (le calme revient)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un récit, une description du lieu où se passe l'action s'appelle…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un cadre spatio-temporel ou une description de décor",
+          "correct": true
+        },
+        {
+          "text": "Un portrait de personnage",
+          "correct": false
+        },
+        {
+          "text": "Un élément perturbateur",
+          "correct": false
+        },
+        {
+          "text": "Une péripétie",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on un poète ou musicien du Moyen Âge qui composait et chantait des poèmes d'amour en langue d'oïl (Nord de la France) ?",
+      "time": 35,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "Trouvère",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "trouvère",
+        "trouvere",
+        "un trouvère",
+        "les trouvères",
+        "trouvères"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La nature comme thème en 5ème invite à réfléchir à la relation entre l'homme et la nature. Laquelle de ces questions correspond le mieux à ce thème ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Comment les hommes vivent-ils avec la nature et comment la respectent-ils (ou non) ?",
+          "correct": true
+        },
+        {
+          "text": "Comment calculer la surface d'une forêt en géométrie ?",
+          "correct": false
+        },
+        {
+          "text": "Quels animaux peut-on élever dans une ferme moderne ?",
+          "correct": false
+        },
+        {
+          "text": "Quelles plantes médicinales existaient au Moyen Âge ?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La « Chanson de Roland » est une épopée médiévale. Une épopée, c'est…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un long poème qui raconte les exploits héroïques d'un guerrier",
+          "correct": true
+        },
+        {
+          "text": "Une chanson d'amour chantée par un troubadour",
+          "correct": false
+        },
+        {
+          "text": "Un conte merveilleux pour les enfants",
+          "correct": false
+        },
+        {
+          "text": "Un fabliau comique en vers",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la Chanson de Roland, Roland est le neveu de quel roi célèbre ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Charlemagne",
+          "correct": true
+        },
+        {
+          "text": "Arthur",
+          "correct": false
+        },
+        {
+          "text": "Philippe Auguste",
+          "correct": false
+        },
+        {
+          "text": "Louis IX (Saint Louis)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Au Moyen Âge, la langue française se divisait en deux grandes variétés. Quelle langue parlait-on dans le Nord de la France ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La langue d'oïl",
+          "correct": true
+        },
+        {
+          "text": "La langue d'oc",
+          "correct": false
+        },
+        {
+          "text": "Le latin uniquement",
+          "correct": false
+        },
+        {
+          "text": "Le vieux français germanique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Les croisades au Moyen Âge étaient des…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Expéditions militaires et religieuses vers la Terre Sainte (Jérusalem)",
+          "correct": true
+        },
+        {
+          "text": "Voyages commerciaux vers l'Asie pour rapporter des épices",
+          "correct": false
+        },
+        {
+          "text": "Tournois de chevalerie organisés chaque année",
+          "correct": false
+        },
+        {
+          "text": "Pèlerinages pacifiques vers Rome",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Au Moyen Âge, les cathédrales gothiques se reconnaissent à leurs grandes fenêtres appelées vitraux.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un « jongleur » au Moyen Âge était…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un artiste itinérant qui récitait des poèmes et divertissait le public",
+          "correct": true
+        },
+        {
+          "text": "Un chevalier spécialisé dans les joutes",
+          "correct": false
+        },
+        {
+          "text": "Un moine copiste de manuscrits",
+          "correct": false
+        },
+        {
+          "text": "Un marchand qui vendait des épices rares",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans les contes merveilleux, les personnages sont souvent des « types » faciles à reconnaître. Lequel est le personnage maléfique classique ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "La sorcière ou la fée maléfique",
+          "correct": true
+        },
+        {
+          "text": "Le chevalier courageux",
+          "correct": false
+        },
+        {
+          "text": "Le sage vieillard",
+          "correct": false
+        },
+        {
+          "text": "Le jeune héros naïf",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans les contes merveilleux, les objets magiques servent à…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Aider le héros à accomplir ses épreuves ou à se transformer",
+          "correct": true
+        },
+        {
+          "text": "Décorer le château du roi",
+          "correct": false
+        },
+        {
+          "text": "Punir les personnages méchants uniquement",
+          "correct": false
+        },
+        {
+          "text": "Décrire précisément l'époque où se passe le conte",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Les héros mythologiques comme Hercule viennent de la mythologie…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Gréco-romaine",
+          "correct": true
+        },
+        {
+          "text": "Nordique",
+          "correct": false
+        },
+        {
+          "text": "Égyptienne",
+          "correct": false
+        },
+        {
+          "text": "Celtique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Ulysse est un héros de la mythologie grecque. Dans quel récit raconte-t-on son long voyage de retour chez lui ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'Odyssée (d'Homère)",
+          "correct": true
+        },
+        {
+          "text": "L'Iliade (d'Homère)",
+          "correct": false
+        },
+        {
+          "text": "L'Énéide (de Virgile)",
+          "correct": false
+        },
+        {
+          "text": "Les Métamorphoses (d'Ovide)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un héros, qu'il soit mythologique ou de roman, se distingue généralement par…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Son courage, sa force et sa capacité à surmonter les épreuves",
+          "correct": true
+        },
+        {
+          "text": "Sa richesse et son confort",
+          "correct": false
+        },
+        {
+          "text": "Sa discrétion et son refus des aventures",
+          "correct": false
+        },
+        {
+          "text": "Sa méchanceté envers les autres personnages",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un poème, une « allitération » est la répétition d'un même…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Son de consonne en début de plusieurs mots proches (ex : « Pour qui sont ces serpents… »)",
+          "correct": true
+        },
+        {
+          "text": "Mot en début de plusieurs vers",
+          "correct": false
+        },
+        {
+          "text": "Son de voyelle dans plusieurs mots proches",
+          "correct": false
+        },
+        {
+          "text": "Vers entier dans le poème",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Une onomatopée est un mot dont le son imite le bruit qu'il représente. Lequel de ces mots est une onomatopée ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Plouf !",
+          "correct": true
+        },
+        {
+          "text": "Maison",
+          "correct": false
+        },
+        {
+          "text": "Courir",
+          "correct": false
+        },
+        {
+          "text": "Magnifique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Laquelle de ces phrases contient une personnification ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "« La pluie tambourinait sur les vitres. »",
+          "correct": true
+        },
+        {
+          "text": "« Il pleut très fort dehors. »",
+          "correct": false
+        },
+        {
+          "text": "« La pluie est froide comme de la glace. »",
+          "correct": false
+        },
+        {
+          "text": "« Une pluie abondante est tombée. »",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La répétition d'un même mot ou groupe de mots au début de plusieurs phrases successives s'appelle…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Une anaphore (ex : « Vive la fête ! Vive la joie ! Vive l'amour ! »)",
+          "correct": true
+        },
+        {
+          "text": "Une allitération",
+          "correct": false
+        },
+        {
+          "text": "Une hyperbole",
+          "correct": false
+        },
+        {
+          "text": "Une métaphore",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un récit, le portrait physique d'un personnage décrit…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Son apparence : taille, cheveux, visage, vêtements…",
+          "correct": true
+        },
+        {
+          "text": "Son caractère et ses qualités morales",
+          "correct": false
+        },
+        {
+          "text": "Son passé et son histoire personnelle",
+          "correct": false
+        },
+        {
+          "text": "Ses actions dans le récit",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un récit, le portrait moral d'un personnage décrit…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Sa personnalité, ses qualités et ses défauts",
+          "correct": true
+        },
+        {
+          "text": "Sa taille et la couleur de ses yeux",
+          "correct": false
+        },
+        {
+          "text": "Ses vêtements et son apparence physique",
+          "correct": false
+        },
+        {
+          "text": "Les lieux qu'il a visités",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un texte narratif, quels deux temps sont le plus souvent utilisés ensemble pour raconter au passé ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le passé simple (actions principales) et l'imparfait (descriptions, arrière-plan)",
+          "correct": true
+        },
+        {
+          "text": "Le présent et le futur",
+          "correct": false
+        },
+        {
+          "text": "Le passé composé et le conditionnel",
+          "correct": false
+        },
+        {
+          "text": "Le futur simple et le plus-que-parfait",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un récit, l'imparfait sert surtout à…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Décrire le décor, les personnages ou des actions habituelles en arrière-plan",
+          "correct": true
+        },
+        {
+          "text": "Raconter les actions principales et ponctuelles",
+          "correct": false
+        },
+        {
+          "text": "Exprimer une action future",
+          "correct": false
+        },
+        {
+          "text": "Donner des ordres aux personnages",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un récit, le passé simple sert à raconter…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Les actions principales, soudaines et ponctuelles qui font avancer l'histoire",
+          "correct": true
+        },
+        {
+          "text": "Les descriptions de lieux et de personnages",
+          "correct": false
+        },
+        {
+          "text": "Les actions habituelles qui se répètent",
+          "correct": false
+        },
+        {
+          "text": "Les pensées intimes des personnages",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la différence entre le discours direct et le discours indirect ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le discours direct cite les paroles exactes entre guillemets ; le discours indirect les intègre dans une proposition",
+          "correct": true
+        },
+        {
+          "text": "Le discours direct est à l'écrit, le discours indirect est à l'oral",
+          "correct": false
+        },
+        {
+          "text": "Le discours direct est plus poli que le discours indirect",
+          "correct": false
+        },
+        {
+          "text": "Il n'y a aucune différence entre les deux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Laquelle de ces phrases utilise le discours direct ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "« Il cria : « Au secours ! » »",
+          "correct": true
+        },
+        {
+          "text": "« Il dit qu'il avait besoin d'aide. »",
+          "correct": false
+        },
+        {
+          "text": "« Il demanda si quelqu'un pouvait l'aider. »",
+          "correct": false
+        },
+        {
+          "text": "« Il semblait avoir besoin de secours. »",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une phrase, un pronom personnel sujet comme « il », « elle », « ils » sert à…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Remplacer un nom déjà mentionné pour éviter la répétition",
+          "correct": true
+        },
+        {
+          "text": "Ajouter une information sur le lieu de l'action",
+          "correct": false
+        },
+        {
+          "text": "Exprimer une action passée",
+          "correct": false
+        },
+        {
+          "text": "Introduire une liste d'éléments",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans « Max aime le football. Il joue tous les mercredis. », que remplace le pronom « il » ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Max",
+          "correct": true
+        },
+        {
+          "text": "Football",
+          "correct": false
+        },
+        {
+          "text": "Mercredis",
+          "correct": false
+        },
+        {
+          "text": "Joue",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'un nom propre ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Un nom qui désigne une personne, un lieu ou une chose unique et prend une majuscule",
+          "correct": true
+        },
+        {
+          "text": "Un nom qui désigne n'importe quel objet ou être vivant",
+          "correct": false
+        },
+        {
+          "text": "Un nom qui s'écrit toujours en minuscule",
+          "correct": false
+        },
+        {
+          "text": "Un nom qui ne peut pas être pluriel",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Lequel de ces mots est un nom propre ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Paris",
+          "correct": true
+        },
+        {
+          "text": "Ville",
+          "correct": false
+        },
+        {
+          "text": "Château",
+          "correct": false
+        },
+        {
+          "text": "Rivière",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un mot « générique » est un mot qui…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Désigne une catégorie générale (ex : « animal » inclut chien, chat, lion…)",
+          "correct": true
+        },
+        {
+          "text": "Désigne un élément précis et unique",
+          "correct": false
+        },
+        {
+          "text": "A le même sens qu'un autre mot",
+          "correct": false
+        },
+        {
+          "text": "S'emploie uniquement à l'écrit dans les textes littéraires",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un mot « spécifique » est…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un mot plus précis que le mot générique (ex : « labrador » est plus spécifique que « chien »)",
+          "correct": true
+        },
+        {
+          "text": "Un mot qui appartient à un registre de langue très soutenu",
+          "correct": false
+        },
+        {
+          "text": "Un mot qui n'existe que dans les dictionnaires spécialisés",
+          "correct": false
+        },
+        {
+          "text": "Le contraire d'un synonyme",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un mot « polysémique » est un mot qui possède…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Plusieurs sens différents selon le contexte (ex : « vol » = vol d'avion ou vol de bijoux)",
+          "correct": true
+        },
+        {
+          "text": "Un seul sens très précis et spécialisé",
+          "correct": false
+        },
+        {
+          "text": "La même prononciation qu'un autre mot différent",
+          "correct": false
+        },
+        {
+          "text": "Une étymologie grecque obligatoirement",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le préfixe « pré- » signifie…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Avant (ex : prévoir = voir avant)",
+          "correct": true
+        },
+        {
+          "text": "Après (ex : prénom = nom d'après)",
+          "correct": false
+        },
+        {
+          "text": "Contre (ex : prévenir = venir contre)",
+          "correct": false
+        },
+        {
+          "text": "Très (ex : précieux = très eux)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le suffixe « -able » ou « -ible » sert à former des adjectifs qui signifient…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Qui peut être fait, possible (ex : mangeable = qu'on peut manger)",
+          "correct": true
+        },
+        {
+          "text": "Qui appartient à (ex : notable = de la note)",
+          "correct": false
+        },
+        {
+          "text": "Qui fait l'action (ex : portable = qui porte)",
+          "correct": false
+        },
+        {
+          "text": "Qui est très grand (ex : notable = très grand)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Lequel de ces homophones est correctement utilisé dans cette phrase : « ___ tu viens ? »",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Est-ce que tu viens ? (est-ce que = locution interrogative)",
+          "correct": true
+        },
+        {
+          "text": "Esque tu viens ?",
+          "correct": false
+        },
+        {
+          "text": "Esk tu viens ?",
+          "correct": false
+        },
+        {
+          "text": "Escque tu viens ?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "« leur / leurs » : laquelle de ces phrases est correcte ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "« Les enfants ont rangé leurs affaires. »",
+          "correct": true
+        },
+        {
+          "text": "« Les enfants ont rangé leur affaires. »",
+          "correct": false
+        },
+        {
+          "text": "« Les enfants leurs ont rangé. »",
+          "correct": false
+        },
+        {
+          "text": "« Les enfants a rangé leurs affaire. »",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "« c'est / s'est / ces / ses » : laquelle de ces phrases est correcte ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "« C'est mon livre. »",
+          "correct": true
+        },
+        {
+          "text": "« S'est mon livre. »",
+          "correct": false
+        },
+        {
+          "text": "« Ces mon livre. »",
+          "correct": false
+        },
+        {
+          "text": "« Ses mon livre. »",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "« quel / quelle / qu'elle » : laquelle de ces phrases est correcte ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "« Quelle belle journée ! »",
+          "correct": true
+        },
+        {
+          "text": "« Qu'elle belle journée ! »",
+          "correct": false
+        },
+        {
+          "text": "« Quel belle journée ! »",
+          "correct": false
+        },
+        {
+          "text": "« Quelles belle journée ! »",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Au présent de l'indicatif, comment conjugue-t-on « savoir » à la 1ère personne du singulier ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Je sais",
+          "correct": true
+        },
+        {
+          "text": "Je savoir",
+          "correct": false
+        },
+        {
+          "text": "Je savons",
+          "correct": false
+        },
+        {
+          "text": "Je sait",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Au présent de l'indicatif, comment conjugue-t-on « dire » à la 2e personne du pluriel ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vous dites",
+          "correct": true
+        },
+        {
+          "text": "Vous disez",
+          "correct": false
+        },
+        {
+          "text": "Vous distent",
+          "correct": false
+        },
+        {
+          "text": "Vous disent",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "L'impératif présent sert à exprimer…",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Un ordre, un conseil ou une demande",
+          "correct": true
+        },
+        {
+          "text": "Une action passée et terminée",
+          "correct": false
+        },
+        {
+          "text": "Une supposition ou une hypothèse",
+          "correct": false
+        },
+        {
+          "text": "Une action qui se passe en ce moment",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Laquelle de ces phrases est à l'impératif présent ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "« Mange tes légumes ! »",
+          "correct": true
+        },
+        {
+          "text": "« Tu manges tes légumes. »",
+          "correct": false
+        },
+        {
+          "text": "« Il mange ses légumes. »",
+          "correct": false
+        },
+        {
+          "text": "« Nous mangeons nos légumes. »",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le conditionnel présent exprime souvent un souhait ou une action imaginaire. Lequel de ces exemples est au conditionnel ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "« J'aimerais voyager dans le temps. »",
+          "correct": true
+        },
+        {
+          "text": "« Je voyage souvent. »",
+          "correct": false
+        },
+        {
+          "text": "« Je voyagerai l'été prochain. »",
+          "correct": false
+        },
+        {
+          "text": "« Je voyageais enfant. »",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans « La petite fille courut vers la forêt sombre. », quelle est la fonction de « vers la forêt sombre » ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Complément circonstanciel de lieu",
+          "correct": true
+        },
+        {
+          "text": "Complément d'objet direct",
+          "correct": false
+        },
+        {
+          "text": "Sujet du verbe",
+          "correct": false
+        },
+        {
+          "text": "Attribut du sujet",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans « Le ciel devient gris. », le mot « gris » est…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Attribut du sujet (via le verbe d'état « devient »)",
+          "correct": true
+        },
+        {
+          "text": "Complément d'objet direct",
+          "correct": false
+        },
+        {
+          "text": "Complément circonstanciel de manière",
+          "correct": false
+        },
+        {
+          "text": "Sujet du verbe",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Laquelle de ces phrases contient une proposition subordonnée ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "« Je sais que tu viendras. »",
+          "correct": true
+        },
+        {
+          "text": "« Il fait beau aujourd'hui. »",
+          "correct": false
+        },
+        {
+          "text": "« Le chat dort sur le canapé. »",
+          "correct": false
+        },
+        {
+          "text": "« Elle chante et danse. »",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans « Je sais que tu viendras », « que » est…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Une conjonction de subordination qui introduit la proposition subordonnée",
+          "correct": true
+        },
+        {
+          "text": "Un pronom relatif qui complète un nom",
+          "correct": false
+        },
+        {
+          "text": "Un adverbe de quantité",
+          "correct": false
+        },
+        {
+          "text": "Un déterminant interrogatif",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le thème « Vivre en société » en 5ème s'intéresse notamment aux relations…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Familiales, amicales et sociales dans les textes littéraires",
+          "correct": true
+        },
+        {
+          "text": "Économiques entre les pays européens",
+          "correct": false
+        },
+        {
+          "text": "Diplomatiques entre les rois du Moyen Âge",
+          "correct": false
+        },
+        {
+          "text": "Entre les hommes et les animaux sauvages",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un récit d'apprentissage, le personnage principal évolue car il…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Apprend de ses erreurs et grandit grâce à ses expériences",
+          "correct": true
+        },
+        {
+          "text": "Reste identique du début à la fin de l'histoire",
+          "correct": false
+        },
+        {
+          "text": "Disparaît à la fin du récit sans avoir changé",
+          "correct": false
+        },
+        {
+          "text": "Est remplacé par un autre héros à mi-parcours",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un texte, pour éviter de répéter un mot trop souvent, on peut utiliser…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un pronom, un synonyme ou une périphrase",
+          "correct": true
+        },
+        {
+          "text": "Des guillemets autour du mot répété",
+          "correct": false
+        },
+        {
+          "text": "Des majuscules pour le mettre en valeur",
+          "correct": false
+        },
+        {
+          "text": "Un mot de liaison comme « donc » ou « car »",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Remets ces étapes dans le bon ordre pour rédiger un bon paragraphe de description de personnage :",
+      "time": 40,
+      "answers": [
+        {
+          "text": "Introduire le personnage avec son nom et son rôle dans l'histoire",
+          "correct": true
+        },
+        {
+          "text": "Décrire son apparence physique (taille, visage, vêtements…)",
+          "correct": true
+        },
+        {
+          "text": "Décrire son caractère et ses qualités ou défauts",
+          "correct": true
+        },
+        {
+          "text": "Conclure avec une impression générale sur ce personnage",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans un texte descriptif, on peut faire appel aux cinq sens : la vue, l'ouïe, l'odorat, le goût et le toucher.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on la figure de style qui consiste à donner des qualités humaines (parler, ressentir, agir) à un animal, un objet ou un élément de la nature ?",
+      "time": 30,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "Personnification",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "personnification",
+        "une personnification",
+        "la personnification"
+      ]
+    }
+  ]
+}

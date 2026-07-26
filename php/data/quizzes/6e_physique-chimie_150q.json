@@ -1,0 +1,1583 @@
+{
+  "name": "6e_physique-chimie_150q",
+  "version": "1.0",
+  "createdAt": "2026-05-06T00:00:00.000Z",
+  "questionsCount": 150,
+  "questions": [
+    {
+      "type": "multiple",
+      "question": "L'eau peut exister sous combien d'états physiques différents ?",
+      "time": 25,
+      "answers": [
+        {"text": "2 états", "correct": false},
+        {"text": "3 états", "correct": true},
+        {"text": "4 états", "correct": false},
+        {"text": "5 états", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans quel état physique trouve-t-on la glace ?",
+      "time": 20,
+      "answers": [
+        {"text": "Solide", "correct": true},
+        {"text": "Liquide", "correct": false},
+        {"text": "Gazeux", "correct": false},
+        {"text": "Plasma", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un solide garde toujours sa forme, quelle que soit la forme du récipient.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est l'état physique de la vapeur d'eau ?",
+      "time": 20,
+      "answers": [
+        {"text": "Solide", "correct": false},
+        {"text": "Liquide", "correct": false},
+        {"text": "Gazeux", "correct": true},
+        {"text": "Liquide et solide à la fois", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Lequel est à l'état liquide à température ambiante (environ 20 °C) ?",
+      "time": 25,
+      "answers": [
+        {"text": "Le glaçon", "correct": false},
+        {"text": "L'eau pure", "correct": true},
+        {"text": "Le fer", "correct": false},
+        {"text": "Le dioxygène", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un gaz occupe tout l'espace disponible dans son récipient.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne les étapes pour transformer de la glace en vapeur d'eau en chauffant :",
+      "time": 40,
+      "answers": [
+        {"text": "La glace se réchauffe en dessous de 0 °C", "correct": true},
+        {"text": "La glace fond complètement à 0 °C (fusion)", "correct": true},
+        {"text": "L'eau liquide se réchauffe de 0 à 100 °C", "correct": true},
+        {"text": "L'eau bout à 100 °C et devient vapeur (vaporisation)", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on le changement d'état de l'eau quand elle passe de l'état liquide à l'état gazeux ?",
+      "time": 30,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Vaporisation", "correct": true}
+      ],
+      "acceptedAnswers": ["vaporisation", "ebullition", "ébullition", "évaporation", "evaporation"]
+    },
+    {
+      "type": "multiple",
+      "question": "Lequel de ces éléments se trouve à l'état gazeux à température ambiante ?",
+      "time": 25,
+      "answers": [
+        {"text": "Le mercure", "correct": false},
+        {"text": "Le dioxygène (O₂)", "correct": true},
+        {"text": "Le soufre", "correct": false},
+        {"text": "Le fer", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel instrument utilise-t-on pour mesurer la masse d'un objet ?",
+      "time": 25,
+      "answers": [
+        {"text": "Le thermomètre", "correct": false},
+        {"text": "La balance", "correct": true},
+        {"text": "L'éprouvette", "correct": false},
+        {"text": "La règle", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est l'unité internationale de la masse ?",
+      "time": 20,
+      "answers": [
+        {"text": "Le gramme (g)", "correct": false},
+        {"text": "Le litre (L)", "correct": false},
+        {"text": "Le kilogramme (kg)", "correct": true},
+        {"text": "Le newton (N)", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment s'appelle le changement d'état de l'eau quand elle passe de l'état liquide à l'état solide ?",
+      "time": 25,
+      "answers": [
+        {"text": "Fusion", "correct": false},
+        {"text": "Solidification", "correct": true},
+        {"text": "Vaporisation", "correct": false},
+        {"text": "Sublimation", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'eau se solidifie à 0 °C sous pression atmosphérique normale.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le volume d'un litre en centimètres cubes (cm³) ?",
+      "time": 25,
+      "answers": [
+        {"text": "100 cm³", "correct": false},
+        {"text": "1 000 cm³", "correct": true},
+        {"text": "10 cm³", "correct": false},
+        {"text": "10 000 cm³", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'un corps pur en physique-chimie ?",
+      "time": 30,
+      "answers": [
+        {"text": "Un mélange de plusieurs substances", "correct": false},
+        {"text": "Une substance composée d'une seule espèce chimique", "correct": true},
+        {"text": "De l'eau filtrée", "correct": false},
+        {"text": "N'importe quel liquide incolore", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un mélange homogène laisse voir ses différents constituants à l'œil nu.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": false},
+        {"text": "Faux", "correct": true}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces masses de la plus petite à la plus grande :",
+      "time": 40,
+      "answers": [
+        {"text": "1 milligramme (mg)", "correct": true},
+        {"text": "1 gramme (g)", "correct": true},
+        {"text": "1 kilogramme (kg)", "correct": true},
+        {"text": "1 tonne (t)", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Donne le symbole de l'unité internationale du volume (système SI).",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "m³", "correct": true}
+      ],
+      "acceptedAnswers": ["m3", "m³", "mètre cube", "metre cube"]
+    },
+    {
+      "type": "multiple",
+      "question": "L'eau salée est un exemple de mélange…",
+      "time": 25,
+      "answers": [
+        {"text": "Hétérogène", "correct": false},
+        {"text": "Homogène", "correct": true},
+        {"text": "Corps pur", "correct": false},
+        {"text": "Solide", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Lequel de ces mélanges est hétérogène ?",
+      "time": 25,
+      "answers": [
+        {"text": "Eau + alcool", "correct": false},
+        {"text": "Eau + sucre dissous", "correct": false},
+        {"text": "Eau + huile", "correct": true},
+        {"text": "Eau + sel dissous", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle technique permet de séparer un solide en suspension d'un liquide ?",
+      "time": 25,
+      "answers": [
+        {"text": "La décantation", "correct": false},
+        {"text": "La filtration", "correct": true},
+        {"text": "La distillation", "correct": false},
+        {"text": "L'évaporation", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La décantation est utile pour séparer…",
+      "time": 25,
+      "answers": [
+        {"text": "Un sel dissous de l'eau", "correct": false},
+        {"text": "Le sable de l'eau (le sable se dépose)", "correct": true},
+        {"text": "De l'alcool de l'eau", "correct": false},
+        {"text": "La vapeur de l'air", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'eau et l'huile sont miscibles (elles se mélangent bien).",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": false},
+        {"text": "Faux", "correct": true}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une solution sucrée, le sucre est…",
+      "time": 25,
+      "answers": [
+        {"text": "Le solvant", "correct": false},
+        {"text": "Le soluté", "correct": true},
+        {"text": "Le mélange", "correct": false},
+        {"text": "La solution", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne les étapes pour réaliser une filtration en classe :",
+      "time": 40,
+      "answers": [
+        {"text": "Plier le filtre en papier en forme d'entonnoir", "correct": true},
+        {"text": "Placer le filtre dans l'entonnoir au-dessus d'un bécher", "correct": true},
+        {"text": "Verser doucement le mélange à filtrer", "correct": true},
+        {"text": "Récupérer le filtrat dans le bécher", "correct": true}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Quand on dissout du sel dans l'eau, le sel disparaît définitivement (il n'existe plus).",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": false},
+        {"text": "Faux", "correct": true}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne les étapes pour dissoudre du sel dans l'eau :",
+      "time": 40,
+      "answers": [
+        {"text": "Mesurer et peser la quantité de sel", "correct": true},
+        {"text": "Verser l'eau dans un bécher", "correct": true},
+        {"text": "Ajouter le sel dans l'eau", "correct": true},
+        {"text": "Agiter jusqu'à dissolution complète", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on le liquide dans lequel on dissout une substance ?",
+      "time": 30,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Solvant", "correct": true}
+      ],
+      "acceptedAnswers": ["solvant", "le solvant", "liquide solvant"]
+    },
+    {
+      "type": "multiple",
+      "question": "Lequel de ces mélanges est homogène ?",
+      "time": 25,
+      "answers": [
+        {"text": "Eau + huile", "correct": false},
+        {"text": "Eau + alcool", "correct": true},
+        {"text": "Eau + sable", "correct": false},
+        {"text": "Eau + farine non mélangée", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Que reste-t-il dans le bécher après évaporation complète d'une eau salée ?",
+      "time": 25,
+      "answers": [
+        {"text": "Rien du tout", "correct": false},
+        {"text": "Du sel", "correct": true},
+        {"text": "De l'eau pure", "correct": false},
+        {"text": "De l'huile", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la masse volumique de l'eau ?",
+      "time": 25,
+      "answers": [
+        {"text": "10 g/cm³", "correct": false},
+        {"text": "0,1 g/cm³", "correct": false},
+        {"text": "1 g/cm³", "correct": true},
+        {"text": "100 g/cm³", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un objet dont la masse volumique est supérieure à celle de l'eau…",
+      "time": 25,
+      "answers": [
+        {"text": "Flotte", "correct": false},
+        {"text": "Coule", "correct": true},
+        {"text": "Reste en suspension", "correct": false},
+        {"text": "S'évapore", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La glace flotte sur l'eau parce qu'elle est moins dense que l'eau liquide.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la masse de 2 litres d'eau ?",
+      "time": 25,
+      "answers": [
+        {"text": "1 kg", "correct": false},
+        {"text": "2 kg", "correct": true},
+        {"text": "500 g", "correct": false},
+        {"text": "20 g", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "1 kilogramme équivaut à combien de grammes ?",
+      "time": 20,
+      "answers": [
+        {"text": "100 g", "correct": false},
+        {"text": "1 000 g", "correct": true},
+        {"text": "10 g", "correct": false},
+        {"text": "10 000 g", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un objet dont la masse volumique est inférieure à celle du liquide flotte sur ce liquide.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces volumes du plus petit au plus grand :",
+      "time": 40,
+      "answers": [
+        {"text": "1 millilitre (mL)", "correct": true},
+        {"text": "1 centilitre (cL)", "correct": true},
+        {"text": "1 décilitre (dL)", "correct": true},
+        {"text": "1 litre (L)", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quelle est la masse d'un litre d'eau, exprimée en grammes ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "1000 g", "correct": true}
+      ],
+      "acceptedAnswers": ["1000", "1000g", "mille grammes", "1 kg", "un kilogramme"]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel instrument permet de mesurer précisément le volume d'un liquide ?",
+      "time": 25,
+      "answers": [
+        {"text": "La balance", "correct": false},
+        {"text": "Le thermomètre", "correct": false},
+        {"text": "L'éprouvette graduée", "correct": true},
+        {"text": "La règle graduée", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pourquoi un bouchon en liège flotte-t-il sur l'eau ?",
+      "time": 30,
+      "answers": [
+        {"text": "Il est creux à l'intérieur", "correct": false},
+        {"text": "Il est imperméable", "correct": false},
+        {"text": "Sa masse volumique est inférieure à celle de l'eau", "correct": true},
+        {"text": "Parce qu'il est léger", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La lumière du Soleil est une source de lumière…",
+      "time": 20,
+      "answers": [
+        {"text": "Secondaire", "correct": false},
+        {"text": "Primaire", "correct": true},
+        {"text": "Artificielle", "correct": false},
+        {"text": "Réfléchie", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La Lune est une source de lumière…",
+      "time": 25,
+      "answers": [
+        {"text": "Primaire", "correct": false},
+        {"text": "Secondaire (elle réfléchit la lumière du Soleil)", "correct": true},
+        {"text": "Naturelle et primaire", "correct": false},
+        {"text": "Artificielle", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans un milieu homogène (comme l'air), la lumière se propage en ligne droite.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un objet opaque…",
+      "time": 20,
+      "answers": [
+        {"text": "Laisse passer toute la lumière", "correct": false},
+        {"text": "Ne laisse passer aucune lumière", "correct": true},
+        {"text": "Laisse passer un peu de lumière en la diffusant", "correct": false},
+        {"text": "Produit de la lumière", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'un matériau transparent ?",
+      "time": 25,
+      "answers": [
+        {"text": "Il ne laisse passer aucune lumière", "correct": false},
+        {"text": "Il laisse passer la lumière sans la dévier", "correct": true},
+        {"text": "Il diffuse la lumière dans toutes les directions", "correct": false},
+        {"text": "Il absorbe la lumière", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'ombre se forme toujours du côté opposé à la source lumineuse, par rapport à l'objet.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces sources de lumière de la plus éloignée à la plus proche de la Terre :",
+      "time": 40,
+      "answers": [
+        {"text": "Une étoile lointaine (autre que le Soleil)", "correct": true},
+        {"text": "Le Soleil", "correct": true},
+        {"text": "La Lune", "correct": true},
+        {"text": "Une lampe dans une salle de classe", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on un objet qui produit sa propre lumière ?",
+      "time": 30,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Source primaire", "correct": true}
+      ],
+      "acceptedAnswers": ["source primaire", "source lumineuse primaire", "source de lumière", "émetteur de lumière", "source lumineuse"]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la vitesse approximative de la lumière dans le vide ?",
+      "time": 25,
+      "answers": [
+        {"text": "300 km/s", "correct": false},
+        {"text": "300 000 km/s", "correct": true},
+        {"text": "300 000 m/s", "correct": false},
+        {"text": "300 000 000 km/s", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Environ combien de temps met la lumière du Soleil pour atteindre la Terre ?",
+      "time": 25,
+      "answers": [
+        {"text": "8 secondes", "correct": false},
+        {"text": "8 minutes", "correct": true},
+        {"text": "8 heures", "correct": false},
+        {"text": "8 jours", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un matériau translucide…",
+      "time": 25,
+      "answers": [
+        {"text": "Ne laisse passer aucune lumière", "correct": false},
+        {"text": "Laisse passer la lumière sans la dévier", "correct": false},
+        {"text": "Laisse passer la lumière en la diffusant", "correct": true},
+        {"text": "Réfléchit toute la lumière", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle couleur obtient-on quand on mélange toutes les couleurs de la lumière ?",
+      "time": 25,
+      "answers": [
+        {"text": "Noir", "correct": false},
+        {"text": "Blanc", "correct": true},
+        {"text": "Gris", "correct": false},
+        {"text": "Marron", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le papier calque est un matériau translucide.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qui crée une ombre sur un écran ?",
+      "time": 25,
+      "answers": [
+        {"text": "Un objet transparent éclairé", "correct": false},
+        {"text": "Un objet opaque éclairé par une source lumineuse", "correct": true},
+        {"text": "Un objet translucide uniquement", "correct": false},
+        {"text": "N'importe quel objet", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces matériaux du plus transparent au plus opaque :",
+      "time": 40,
+      "answers": [
+        {"text": "Verre ordinaire (transparent)", "correct": true},
+        {"text": "Papier calque (translucide)", "correct": true},
+        {"text": "Feuille de papier blanc (peu transparente)", "correct": true},
+        {"text": "Carton épais (opaque)", "correct": true}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Une lampe à incandescence allumée est une source de lumière primaire.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne les étapes de la formation d'une ombre :",
+      "time": 40,
+      "answers": [
+        {"text": "La source lumineuse émet de la lumière", "correct": true},
+        {"text": "La lumière rencontre un objet opaque sur son chemin", "correct": true},
+        {"text": "L'objet bloque une partie des rayons lumineux", "correct": true},
+        {"text": "Une zone sombre (ombre) se forme derrière l'objet", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quel matériau courant en classe illustre bien la notion de matériau translucide ?",
+      "time": 30,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Papier calque", "correct": true}
+      ],
+      "acceptedAnswers": ["papier calque", "calque", "verre dépoli", "plastique translucide"]
+    },
+    {
+      "type": "multiple",
+      "question": "Si on rapproche un objet d'une source lumineuse, son ombre…",
+      "time": 30,
+      "answers": [
+        {"text": "Devient plus petite", "correct": false},
+        {"text": "Devient plus grande", "correct": true},
+        {"text": "Ne change pas", "correct": false},
+        {"text": "Disparaît complètement", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La lumière des étoiles que l'on voit la nuit nous parvient…",
+      "time": 30,
+      "answers": [
+        {"text": "Instantanément", "correct": false},
+        {"text": "Après avoir voyagé des années, voire des milliers d'années", "correct": true},
+        {"text": "En quelques secondes", "correct": false},
+        {"text": "En quelques heures", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le rôle d'une pile dans un circuit électrique ?",
+      "time": 25,
+      "answers": [
+        {"text": "Mesurer l'intensité", "correct": false},
+        {"text": "Fournir de l'énergie électrique (générateur)", "correct": true},
+        {"text": "Interrompre le courant", "correct": false},
+        {"text": "Convertir l'électricité en lumière", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'un récepteur dans un circuit électrique ?",
+      "time": 30,
+      "answers": [
+        {"text": "Un composant qui fournit l'énergie", "correct": false},
+        {"text": "Un composant qui utilise l'énergie électrique (lampe, moteur…)", "correct": true},
+        {"text": "Un composant qui mesure le courant", "correct": false},
+        {"text": "Un composant qui stocke le courant", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le cuivre est un bon conducteur électrique.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Lequel est un isolant électrique ?",
+      "time": 25,
+      "answers": [
+        {"text": "Cuivre", "correct": false},
+        {"text": "Aluminium", "correct": false},
+        {"text": "Plastique", "correct": true},
+        {"text": "Fer", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un circuit est dit « ouvert » quand…",
+      "time": 25,
+      "answers": [
+        {"text": "Toutes les lampes sont allumées", "correct": false},
+        {"text": "L'interrupteur est ouvert et le courant ne circule pas", "correct": true},
+        {"text": "On a branché beaucoup d'appareils", "correct": false},
+        {"text": "Le générateur est épuisé", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un court-circuit peut provoquer un incendie ou endommager les composants du circuit.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne le trajet du courant dans un circuit électrique simple (pile + lampe) :",
+      "time": 40,
+      "answers": [
+        {"text": "Départ du pôle positif (+) de la pile", "correct": true},
+        {"text": "Passage dans le fil conducteur jusqu'à la lampe", "correct": true},
+        {"text": "Passage du courant dans la lampe (qui s'allume)", "correct": true},
+        {"text": "Retour au pôle négatif (−) de la pile", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on le composant qui fournit de l'énergie électrique dans un circuit ?",
+      "time": 30,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Générateur", "correct": true}
+      ],
+      "acceptedAnswers": ["générateur", "generateur", "pile", "batterie", "source d'énergie", "source électrique"]
+    },
+    {
+      "type": "multiple",
+      "question": "Lequel de ces matériaux conduit le mieux l'électricité ?",
+      "time": 25,
+      "answers": [
+        {"text": "Bois", "correct": false},
+        {"text": "Plastique", "correct": false},
+        {"text": "Cuivre", "correct": true},
+        {"text": "Caoutchouc", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Que se passe-t-il dans un circuit si l'interrupteur est en position ouverte ?",
+      "time": 25,
+      "answers": [
+        {"text": "Le courant double", "correct": false},
+        {"text": "Le courant s'arrête", "correct": true},
+        {"text": "Le courant diminue de moitié", "correct": false},
+        {"text": "Les lampes brillent plus fort", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un circuit en série, si une lampe est grillée (filament cassé)…",
+      "time": 30,
+      "answers": [
+        {"text": "Les autres lampes brillent plus fort", "correct": false},
+        {"text": "Les autres lampes s'éteignent aussi", "correct": true},
+        {"text": "Les autres lampes ne changent pas", "correct": false},
+        {"text": "La pile s'use plus vite", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le symbole normalisé d'une pile dans un schéma de circuit ?",
+      "time": 25,
+      "answers": [
+        {"text": "Un cercle avec une croix", "correct": false},
+        {"text": "Une longue barre et une courte barre alternées", "correct": true},
+        {"text": "Un carré avec un plus (+)", "correct": false},
+        {"text": "Deux cercles reliés", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'eau pure (sans minéraux dissous) est un bon conducteur électrique.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": false},
+        {"text": "Faux", "correct": true}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel composant permet d'ouvrir ou de fermer un circuit électrique ?",
+      "time": 20,
+      "answers": [
+        {"text": "La lampe", "correct": false},
+        {"text": "L'interrupteur", "correct": true},
+        {"text": "La pile", "correct": false},
+        {"text": "Le fil", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un schéma de circuit, que représente un trait continu entre deux composants ?",
+      "time": 25,
+      "answers": [
+        {"text": "Un composant électronique", "correct": false},
+        {"text": "Un conducteur (fil de connexion)", "correct": true},
+        {"text": "Une résistance", "correct": false},
+        {"text": "Un isolant", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Une ampoule électrique est un exemple de récepteur électrique.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne les étapes pour allumer une lampe avec une pile :",
+      "time": 40,
+      "answers": [
+        {"text": "Connecter un fil au pôle positif (+) de la pile", "correct": true},
+        {"text": "Relier ce fil à une borne de la lampe", "correct": true},
+        {"text": "Connecter l'autre borne de la lampe au pôle négatif (−) par un fil", "correct": true},
+        {"text": "Fermer l'interrupteur : la lampe s'allume !", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quel métal, très utilisé dans les fils électriques, est un excellent conducteur ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Cuivre", "correct": true}
+      ],
+      "acceptedAnswers": ["cuivre", "le cuivre", "copper", "Cu"]
+    },
+    {
+      "type": "multiple",
+      "question": "Lequel de ces objets est un isolant électrique ?",
+      "time": 25,
+      "answers": [
+        {"text": "Cuivre", "correct": false},
+        {"text": "Aluminium", "correct": false},
+        {"text": "Gomme en caoutchouc", "correct": true},
+        {"text": "Fer", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un circuit électrique fermé signifie que…",
+      "time": 25,
+      "answers": [
+        {"text": "Le circuit est enfermé dans une boîte", "correct": false},
+        {"text": "Le courant peut circuler dans tout le circuit", "correct": true},
+        {"text": "Le circuit est cassé", "correct": false},
+        {"text": "La pile est épuisée", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La sublimation est le passage de l'état…",
+      "time": 30,
+      "answers": [
+        {"text": "Gazeux à liquide", "correct": false},
+        {"text": "Liquide à solide", "correct": false},
+        {"text": "Solide directement à gazeux", "correct": true},
+        {"text": "Gazeux à solide", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La condensation est le passage de l'état…",
+      "time": 25,
+      "answers": [
+        {"text": "Solide à liquide", "correct": false},
+        {"text": "Liquide à gazeux", "correct": false},
+        {"text": "Gazeux à liquide", "correct": true},
+        {"text": "Gazeux à solide", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La rosée du matin sur les feuilles est un phénomène de condensation.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans quel état se trouve le beurre à température ambiante (20 °C) ?",
+      "time": 20,
+      "answers": [
+        {"text": "Liquide", "correct": false},
+        {"text": "Solide", "correct": true},
+        {"text": "Gazeux", "correct": false},
+        {"text": "En sublimation", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces substances selon leur température de fusion croissante (du plus facile au plus difficile à fondre) :",
+      "time": 45,
+      "answers": [
+        {"text": "Glace d'eau (fond à 0 °C)", "correct": true},
+        {"text": "Beurre (fond vers 32 °C)", "correct": true},
+        {"text": "Cire de bougie (fond vers 60 °C)", "correct": true},
+        {"text": "Fer (fond à 1 538 °C)", "correct": true}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le dioxyde de carbone peut exister sous forme solide : c'est la « glace carbonique ».",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne les étapes du cycle de l'eau :",
+      "time": 45,
+      "answers": [
+        {"text": "Évaporation de l'eau des océans et des lacs sous l'effet du soleil", "correct": true},
+        {"text": "Montée de la vapeur d'eau dans l'atmosphère", "correct": true},
+        {"text": "Condensation de la vapeur en nuages", "correct": true},
+        {"text": "Précipitations (pluie, neige) qui retombent sur terre", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quel changement d'état se produit lorsque le linge mouillé sèche au soleil ?",
+      "time": 30,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Évaporation", "correct": true}
+      ],
+      "acceptedAnswers": ["évaporation", "evaporation", "vaporisation", "séchage", "sechage"]
+    },
+    {
+      "type": "multiple",
+      "question": "Le givre sur les vitres se forme quand la vapeur d'eau passe directement à l'état…",
+      "time": 25,
+      "answers": [
+        {"text": "Liquide", "correct": false},
+        {"text": "Solide", "correct": true},
+        {"text": "Gazeux", "correct": false},
+        {"text": "Plasma", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Une solution est toujours un mélange…",
+      "time": 25,
+      "answers": [
+        {"text": "Hétérogène", "correct": false},
+        {"text": "Homogène", "correct": true},
+        {"text": "Solide", "correct": false},
+        {"text": "Gazeux", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle couleur absorbe le plus de lumière (et chauffe le plus au soleil) ?",
+      "time": 25,
+      "answers": [
+        {"text": "Blanc", "correct": false},
+        {"text": "Jaune", "correct": false},
+        {"text": "Noir", "correct": true},
+        {"text": "Rouge", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un miroir renvoie la lumière par le phénomène de…",
+      "time": 25,
+      "answers": [
+        {"text": "Réfraction", "correct": false},
+        {"text": "Diffusion", "correct": false},
+        {"text": "Réflexion", "correct": true},
+        {"text": "Absorption", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La lumière visible par l'œil humain comprend toutes les couleurs de l'arc-en-ciel.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La lumière blanche est…",
+      "time": 25,
+      "answers": [
+        {"text": "Une seule couleur très brillante", "correct": false},
+        {"text": "Un mélange de toutes les couleurs visibles", "correct": true},
+        {"text": "De la lumière solaire uniquement", "correct": false},
+        {"text": "De la lumière sans couleur", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qui produit un arc-en-ciel dans le ciel ?",
+      "time": 30,
+      "answers": [
+        {"text": "La réflexion de la lumière sur les nuages", "correct": false},
+        {"text": "La décomposition de la lumière blanche par les gouttes d'eau", "correct": true},
+        {"text": "L'absorption de la lumière par l'atmosphère", "correct": false},
+        {"text": "La diffusion de la lumière par la pollution", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La lumière voyage beaucoup plus vite que le son dans l'air.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces couleurs dans l'ordre de l'arc-en-ciel (de l'extérieur vers l'intérieur) :",
+      "time": 40,
+      "answers": [
+        {"text": "Rouge", "correct": true},
+        {"text": "Vert", "correct": true},
+        {"text": "Bleu", "correct": true},
+        {"text": "Violet", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on le phénomène par lequel la lumière blanche se décompose en couleurs à travers un prisme ?",
+      "time": 30,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Dispersion", "correct": true}
+      ],
+      "acceptedAnswers": ["dispersion", "décomposition", "decomposition", "réfraction", "refraction"]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans quel milieu la lumière voyage-t-elle le plus vite ?",
+      "time": 25,
+      "answers": [
+        {"text": "Dans l'eau", "correct": false},
+        {"text": "Dans le verre", "correct": false},
+        {"text": "Dans le vide", "correct": true},
+        {"text": "Dans l'air", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La lumière peut-elle se propager dans le vide de l'espace ?",
+      "time": 25,
+      "answers": [
+        {"text": "Non, elle a besoin d'un milieu matériel", "correct": false},
+        {"text": "Oui, la lumière traverse le vide", "correct": true},
+        {"text": "Seulement si elle est très intense", "correct": false},
+        {"text": "Non, elle s'arrête à l'atmosphère terrestre", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un circuit en dérivation (parallèle), si une lampe est grillée…",
+      "time": 30,
+      "answers": [
+        {"text": "Toutes les lampes s'éteignent", "correct": false},
+        {"text": "Les autres lampes continuent à fonctionner", "correct": true},
+        {"text": "Les autres lampes brillent moins fort", "correct": false},
+        {"text": "La pile s'arrête", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le symbole normalisé d'une lampe (ampoule) dans un schéma de circuit ?",
+      "time": 25,
+      "answers": [
+        {"text": "Une longue et courte barre alternées", "correct": false},
+        {"text": "Un cercle avec une croix à l'intérieur", "correct": true},
+        {"text": "Un carré avec un éclair", "correct": false},
+        {"text": "Un triangle avec un rond", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans un schéma de circuit, on représente chaque composant par un symbole normalisé (conventionnel).",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un circuit en série, les composants sont branchés…",
+      "time": 25,
+      "answers": [
+        {"text": "Sur des chemins parallèles", "correct": false},
+        {"text": "L'un après l'autre sur un seul chemin", "correct": true},
+        {"text": "Chacun directement à la pile", "correct": false},
+        {"text": "Sans ordre particulier", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Si on ajoute une deuxième lampe identique en série dans un circuit, les lampes brillent…",
+      "time": 30,
+      "answers": [
+        {"text": "Plus fort qu'avant", "correct": false},
+        {"text": "Moins fort qu'avant", "correct": true},
+        {"text": "Pareil qu'avant", "correct": false},
+        {"text": "De façon alternée", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Toucher un fil électrique dénudé (sans gaine isolante) relié au secteur est très dangereux.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne les étapes pour construire un circuit électrique simple :",
+      "time": 40,
+      "answers": [
+        {"text": "Rassembler les composants (pile, lampe, fils, interrupteur)", "correct": true},
+        {"text": "Connecter les fils au générateur (pile)", "correct": true},
+        {"text": "Connecter la lampe et l'interrupteur dans le circuit", "correct": true},
+        {"text": "Fermer l'interrupteur pour tester le circuit", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quel symbole désigne l'unité de mesure de l'intensité du courant électrique ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "A", "correct": true}
+      ],
+      "acceptedAnswers": ["A", "ampère", "ampere", "Ampère", "Ampere"]
+    },
+    {
+      "type": "multiple",
+      "question": "La gaine en plastique autour d'un fil électrique sert à…",
+      "time": 25,
+      "answers": [
+        {"text": "Conduire l'électricité mieux", "correct": false},
+        {"text": "Protéger et isoler pour éviter les chocs électriques", "correct": true},
+        {"text": "Décorer le fil", "correct": false},
+        {"text": "Augmenter la résistance du fil", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Parmi ces exemples, lequel est un récepteur électrique ?",
+      "time": 25,
+      "answers": [
+        {"text": "La pile plate", "correct": false},
+        {"text": "La batterie de voiture", "correct": false},
+        {"text": "Le moteur d'un ventilateur", "correct": true},
+        {"text": "Le générateur d'une centrale", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "L'eau distillée est-elle un corps pur ?",
+      "time": 25,
+      "answers": [
+        {"text": "Non, c'est un mélange", "correct": false},
+        {"text": "Oui, c'est un corps pur", "correct": true},
+        {"text": "Oui, mais seulement à 100 °C", "correct": false},
+        {"text": "Non, elle contient du calcaire", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Laquelle de ces substances est un corps pur ?",
+      "time": 25,
+      "answers": [
+        {"text": "Le lait", "correct": false},
+        {"text": "L'or pur (24 carats)", "correct": true},
+        {"text": "Le jus d'orange", "correct": false},
+        {"text": "Le béton", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'air est un mélange gazeux (principalement diazote et dioxygène).",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel gaz est le plus abondant dans l'air (environ 78 %) ?",
+      "time": 25,
+      "answers": [
+        {"text": "Le dioxygène (O₂)", "correct": false},
+        {"text": "Le dioxyde de carbone (CO₂)", "correct": false},
+        {"text": "Le diazote (N₂)", "correct": true},
+        {"text": "L'argon", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne les composants de l'air par proportion décroissante :",
+      "time": 45,
+      "answers": [
+        {"text": "Diazote N₂ (≈ 78 %)", "correct": true},
+        {"text": "Dioxygène O₂ (≈ 21 %)", "correct": true},
+        {"text": "Argon (≈ 0,9 %)", "correct": true},
+        {"text": "Dioxyde de carbone CO₂ (≈ 0,04 %)", "correct": true}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La chromatographie est une technique qui permet de séparer les différents pigments d'un mélange.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne les étapes d'une expérience de dissolution du sucre :",
+      "time": 40,
+      "answers": [
+        {"text": "Remplir un bécher avec de l'eau", "correct": true},
+        {"text": "Peser la quantité de sucre à dissoudre", "correct": true},
+        {"text": "Verser le sucre dans l'eau", "correct": true},
+        {"text": "Agiter avec une tige en verre jusqu'à dissolution complète", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on la technique qui permet de séparer le sable de l'eau par gravité (le sable se dépose) ?",
+      "time": 30,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Décantation", "correct": true}
+      ],
+      "acceptedAnswers": ["décantation", "decantation", "la décantation", "sédimentation", "sedimentation"]
+    },
+    {
+      "type": "multiple",
+      "question": "La vinaigrette (huile + vinaigre) est un mélange…",
+      "time": 20,
+      "answers": [
+        {"text": "Homogène", "correct": false},
+        {"text": "Hétérogène", "correct": true},
+        {"text": "Corps pur", "correct": false},
+        {"text": "Solide", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Lequel est un exemple de mélange homogène de la vie quotidienne ?",
+      "time": 25,
+      "answers": [
+        {"text": "Huile et eau", "correct": false},
+        {"text": "Sucre dissous dans l'eau", "correct": true},
+        {"text": "Sable et eau", "correct": false},
+        {"text": "Granit", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment appelle-t-on le passage de l'état solide directement à l'état gazeux ?",
+      "time": 30,
+      "answers": [
+        {"text": "Vaporisation", "correct": false},
+        {"text": "Condensation", "correct": false},
+        {"text": "Sublimation", "correct": true},
+        {"text": "Fusion", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un thermomètre, le liquide coloré monte quand la température augmente car…",
+      "time": 25,
+      "answers": [
+        {"text": "Il se condense", "correct": false},
+        {"text": "Il se dilate", "correct": true},
+        {"text": "Il se solidifie", "correct": false},
+        {"text": "Il change d'état", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Seuls les solides se dilatent quand la température augmente.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": false},
+        {"text": "Faux", "correct": true}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle propriété d'un liquide lui permet de prendre la forme de son récipient ?",
+      "time": 25,
+      "answers": [
+        {"text": "Il est rigide", "correct": false},
+        {"text": "Il est incompressible", "correct": false},
+        {"text": "Il n'a pas de forme propre", "correct": true},
+        {"text": "Il est gazeux", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pourquoi flotte-t-on plus facilement dans la mer (eau salée) que dans une piscine (eau douce) ?",
+      "time": 30,
+      "answers": [
+        {"text": "Parce que la mer est plus profonde", "correct": false},
+        {"text": "Parce que l'eau salée est plus dense que l'eau douce", "correct": true},
+        {"text": "Parce que les vagues aident à flotter", "correct": false},
+        {"text": "Parce que le soleil chauffe l'eau de mer", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La masse et le poids d'un objet sont deux grandeurs identiques.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": false},
+        {"text": "Faux", "correct": true}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne les étapes du cycle de l'eau dans l'atmosphère :",
+      "time": 45,
+      "answers": [
+        {"text": "Évaporation de l'eau des océans sous l'effet du soleil", "correct": true},
+        {"text": "Transport de la vapeur d'eau par les vents", "correct": true},
+        {"text": "Condensation de la vapeur en nuages", "correct": true},
+        {"text": "Précipitations (pluie ou neige) et ruissellement", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quel terme désigne la quantité de matière contenue dans un objet, indépendamment de la gravité ?",
+      "time": 30,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Masse", "correct": true}
+      ],
+      "acceptedAnswers": ["masse", "la masse", "la quantité de matière", "quantité de matière"]
+    },
+    {
+      "type": "multiple",
+      "question": "Pourquoi la glace carbonique (CO₂ solide) crée-t-elle un effet de brouillard au théâtre ?",
+      "time": 30,
+      "answers": [
+        {"text": "Elle fond en eau froide", "correct": false},
+        {"text": "Elle se sublime et crée un nuage de gaz froid", "correct": true},
+        {"text": "Elle réfléchit la lumière des projecteurs", "correct": false},
+        {"text": "Elle absorbe la chaleur de la salle", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Lequel est à la fois un isolant thermique et un isolant électrique courant ?",
+      "time": 25,
+      "answers": [
+        {"text": "Cuivre", "correct": false},
+        {"text": "Aluminium", "correct": false},
+        {"text": "Bois sec", "correct": true},
+        {"text": "Fer", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pourquoi l'huile flotte-t-elle sur l'eau ?",
+      "time": 25,
+      "answers": [
+        {"text": "Elle est toujours plus légère que l'eau", "correct": false},
+        {"text": "Sa masse volumique est inférieure à celle de l'eau", "correct": true},
+        {"text": "Elle est imperméable", "correct": false},
+        {"text": "Elle repousse chimiquement l'eau", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quand on souffle sur une vitre froide, une buée se forme. C'est un phénomène de…",
+      "time": 25,
+      "answers": [
+        {"text": "Vaporisation", "correct": false},
+        {"text": "Fusion", "correct": false},
+        {"text": "Condensation", "correct": true},
+        {"text": "Sublimation", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "On ne peut voir un objet que si de la lumière provenant de cet objet entre dans nos yeux.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pourquoi voit-on l'éclair avant d'entendre le tonnerre lors d'un orage ?",
+      "time": 25,
+      "answers": [
+        {"text": "Le son est produit avant la lumière", "correct": false},
+        {"text": "La lumière voyage beaucoup plus vite que le son", "correct": true},
+        {"text": "Les nuages bloquent le son", "correct": false},
+        {"text": "L'éclair est toujours plus proche de nous", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un iceberg flotte sur l'eau de mer parce que la glace…",
+      "time": 25,
+      "answers": [
+        {"text": "Pèse moins que l'eau de mer dans tous les cas", "correct": false},
+        {"text": "Est moins dense que l'eau liquide", "correct": true},
+        {"text": "Contient beaucoup d'air à l'intérieur", "correct": false},
+        {"text": "Est repoussée par le sel de la mer", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Si on ajoute trop de sel dans l'eau (au-delà de la saturation), le sel en excès reste dissous.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": false},
+        {"text": "Faux", "correct": true}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces matériaux du meilleur conducteur électrique au moins bon conducteur :",
+      "time": 40,
+      "answers": [
+        {"text": "Fil de cuivre", "correct": true},
+        {"text": "Fourchette en acier inoxydable", "correct": true},
+        {"text": "Mine de crayon (graphite)", "correct": true},
+        {"text": "Baguette en bois sec", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on le nuage qui se forme près du sol par condensation de la vapeur d'eau ?",
+      "time": 30,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Brouillard", "correct": true}
+      ],
+      "acceptedAnswers": ["brouillard", "le brouillard", "brume", "la brume", "nuage au sol"]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans quelle pièce de la maison observe-t-on fréquemment de la condensation sur les miroirs ?",
+      "time": 25,
+      "answers": [
+        {"text": "La cuisine", "correct": false},
+        {"text": "La salle de bain (après une douche chaude)", "correct": true},
+        {"text": "La chambre à coucher", "correct": false},
+        {"text": "Le salon", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La photosynthèse des plantes transforme l'énergie lumineuse du Soleil en énergie…",
+      "time": 30,
+      "answers": [
+        {"text": "Électrique", "correct": false},
+        {"text": "Chimique (matière organique)", "correct": true},
+        {"text": "Thermique (chaleur)", "correct": false},
+        {"text": "Sonore", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Que signifie la formule H₂O pour une molécule d'eau ?",
+      "time": 30,
+      "answers": [
+        {"text": "2 atomes d'oxygène et 1 d'hydrogène", "correct": false},
+        {"text": "2 atomes d'hydrogène et 1 d'oxygène", "correct": true},
+        {"text": "2 molécules d'eau", "correct": false},
+        {"text": "3 atomes d'hydrogène uniquement", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Si on pèse 1 litre d'huile et 1 litre d'eau, lequel est le plus lourd ?",
+      "time": 25,
+      "answers": [
+        {"text": "L'huile", "correct": false},
+        {"text": "Ils pèsent pareil", "correct": false},
+        {"text": "L'eau", "correct": true},
+        {"text": "Ça dépend de la température de la pièce", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Une éprouvette graduée permet de mesurer la masse d'un liquide.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": false},
+        {"text": "Faux", "correct": true}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le principal danger de l'électricité du secteur (230 V) pour les humains ?",
+      "time": 25,
+      "answers": [
+        {"text": "Une légère brûlure sans gravité", "correct": false},
+        {"text": "L'électrocution, potentiellement mortelle", "correct": true},
+        {"text": "Un risque uniquement pour les enfants", "correct": false},
+        {"text": "La surchauffe de l'air ambiant", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne les étapes qui se produisent quand on allume une ampoule dans un circuit :",
+      "time": 40,
+      "answers": [
+        {"text": "L'électricité quitte le générateur (pile)", "correct": true},
+        {"text": "Le courant traverse les fils conducteurs", "correct": true},
+        {"text": "L'ampoule reçoit l'énergie électrique", "correct": true},
+        {"text": "L'ampoule s'allume et émet de la lumière", "correct": true}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Les fusibles et les disjoncteurs protègent un circuit électrique des surcharges de courant.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne les étapes de formation d'un glaçon au congélateur :",
+      "time": 40,
+      "answers": [
+        {"text": "Verser de l'eau liquide dans le bac à glaçons", "correct": true},
+        {"text": "Placer le bac dans le congélateur", "correct": true},
+        {"text": "La température de l'eau descend jusqu'à 0 °C", "correct": true},
+        {"text": "L'eau se solidifie complètement : le glaçon est formé !", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quel changement d'état se produit lorsqu'on met de l'eau dans le congélateur ?",
+      "time": 30,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Solidification", "correct": true}
+      ],
+      "acceptedAnswers": ["solidification", "congélation", "congelation", "cristallisation", "congeler"]
+    },
+    {
+      "type": "multiple",
+      "question": "Une bougie allumée est une source de lumière…",
+      "time": 20,
+      "answers": [
+        {"text": "Secondaire", "correct": false},
+        {"text": "Artificielle uniquement", "correct": false},
+        {"text": "Primaire (elle produit sa propre lumière par combustion)", "correct": true},
+        {"text": "Réfléchissante", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Lequel de ces phénomènes N'EST PAS un changement d'état ?",
+      "time": 30,
+      "answers": [
+        {"text": "La fusion de la glace", "correct": false},
+        {"text": "La solidification de l'eau", "correct": false},
+        {"text": "La dissolution du sel dans l'eau", "correct": true},
+        {"text": "L'ébullition de l'eau", "correct": false}
+      ]
+    }
+  ]
+}

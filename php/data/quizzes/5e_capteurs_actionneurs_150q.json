@@ -1,0 +1,3214 @@
+{
+  "name": "5e_capteurs_actionneurs_150q",
+  "version": "1.0",
+  "createdAt": "2026-04-05T21:00:00.000Z",
+  "questionsCount": 150,
+  "questions": [
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce que la fonction technique d'un objet ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Ce à quoi sert l'objet, exprimée par un verbe à l'infinitif",
+          "correct": true
+        },
+        {
+          "text": "La liste des matériaux qui composent l'objet",
+          "correct": false
+        },
+        {
+          "text": "Le prix de l'objet",
+          "correct": false
+        },
+        {
+          "text": "La marque et le modèle de l'objet",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La fonction technique d'un objet s'exprime toujours avec un verbe à l'infinitif.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Parmi ces propositions, laquelle est une fonction technique correctement formulée ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Éclairer une pièce",
+          "correct": true
+        },
+        {
+          "text": "La lumière d'une pièce",
+          "correct": false
+        },
+        {
+          "text": "Lumière électrique",
+          "correct": false
+        },
+        {
+          "text": "Une ampoule LED",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce que la solution technique d'un objet ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Les éléments concrets qui permettent de réaliser la fonction technique",
+          "correct": true
+        },
+        {
+          "text": "Ce à quoi sert l'objet",
+          "correct": false
+        },
+        {
+          "text": "Le coût de fabrication de l'objet",
+          "correct": false
+        },
+        {
+          "text": "Le nom du fabricant de l'objet",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la fonction technique d'une lampe torche ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Éclairer dans l'obscurité",
+          "correct": true
+        },
+        {
+          "text": "Mesurer la lumière ambiante",
+          "correct": false
+        },
+        {
+          "text": "Convertir la chaleur en lumière",
+          "correct": false
+        },
+        {
+          "text": "Stocker de l'énergie électrique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la solution technique d'une lampe torche pour produire de la lumière ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Une ampoule LED alimentée par des piles",
+          "correct": true
+        },
+        {
+          "text": "Éclairer dans l'obscurité",
+          "correct": false
+        },
+        {
+          "text": "La couleur jaune du boîtier",
+          "correct": false
+        },
+        {
+          "text": "Le bouton on/off",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Deux objets différents peuvent avoir la même fonction technique mais des solutions techniques différentes.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la définition d'un capteur ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Un composant qui mesure une grandeur physique",
+          "correct": true
+        },
+        {
+          "text": "Un composant qui convertit de l'énergie",
+          "correct": false
+        },
+        {
+          "text": "Un composant qui stocke de l'énergie",
+          "correct": false
+        },
+        {
+          "text": "Un composant qui alimente un système",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la définition d'un actionneur ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Un composant qui convertit de l'énergie",
+          "correct": true
+        },
+        {
+          "text": "Un composant qui mesure une grandeur physique",
+          "correct": false
+        },
+        {
+          "text": "Un composant qui distribue l'information",
+          "correct": false
+        },
+        {
+          "text": "Un composant qui stocke de l'énergie",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un capteur sert à mesurer une grandeur physique.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un actionneur convertit de l'énergie.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Parmi ces composants, lequel est un capteur ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un thermomètre",
+          "correct": true
+        },
+        {
+          "text": "Un moteur électrique",
+          "correct": false
+        },
+        {
+          "text": "Une ampoule LED",
+          "correct": false
+        },
+        {
+          "text": "Une résistance chauffante",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Parmi ces composants, lequel est un actionneur ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un moteur électrique",
+          "correct": true
+        },
+        {
+          "text": "Un thermomètre",
+          "correct": false
+        },
+        {
+          "text": "Un bouton poussoir",
+          "correct": false
+        },
+        {
+          "text": "Un détecteur de lumière",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un microphone est-il un capteur ou un actionneur ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un capteur, car il mesure le son (grandeur physique)",
+          "correct": true
+        },
+        {
+          "text": "Un actionneur, car il produit du son",
+          "correct": false
+        },
+        {
+          "text": "Ni l'un ni l'autre",
+          "correct": false
+        },
+        {
+          "text": "Les deux à la fois",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un haut-parleur est-il un capteur ou un actionneur ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un actionneur, car il convertit l'énergie électrique en son",
+          "correct": true
+        },
+        {
+          "text": "Un capteur, car il mesure le son",
+          "correct": false
+        },
+        {
+          "text": "Ni l'un ni l'autre",
+          "correct": false
+        },
+        {
+          "text": "Un composant de la chaîne de l'information uniquement",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un bouton poussoir est un capteur car il détecte une action (l'appui d'un doigt).",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Combien d'étapes comporte la chaîne de l'information ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "3",
+          "correct": true
+        },
+        {
+          "text": "2",
+          "correct": false
+        },
+        {
+          "text": "4",
+          "correct": false
+        },
+        {
+          "text": "5",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Remets dans l'ordre les 3 étapes de la chaîne de l'information :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Acquérir",
+          "correct": true
+        },
+        {
+          "text": "Traiter",
+          "correct": true
+        },
+        {
+          "text": "Communiquer",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la chaîne de l'information, à quelle étape le capteur intervient-il ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Acquérir",
+          "correct": true
+        },
+        {
+          "text": "Traiter",
+          "correct": false
+        },
+        {
+          "text": "Communiquer",
+          "correct": false
+        },
+        {
+          "text": "Convertir",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la chaîne de l'information, à quelle étape un écran ou un voyant intervient-il ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Communiquer",
+          "correct": true
+        },
+        {
+          "text": "Acquérir",
+          "correct": false
+        },
+        {
+          "text": "Traiter",
+          "correct": false
+        },
+        {
+          "text": "Distribuer",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la chaîne de l'information, quelle étape consiste à analyser les données reçues par le capteur ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Traiter",
+          "correct": true
+        },
+        {
+          "text": "Acquérir",
+          "correct": false
+        },
+        {
+          "text": "Communiquer",
+          "correct": false
+        },
+        {
+          "text": "Alimenter",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans la chaîne de l'information, l'étape 'Acquérir' vient toujours avant l'étape 'Communiquer'.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Combien d'étapes comporte la chaîne de l'énergie ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "4",
+          "correct": true
+        },
+        {
+          "text": "2",
+          "correct": false
+        },
+        {
+          "text": "3",
+          "correct": false
+        },
+        {
+          "text": "5",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Remets dans l'ordre les 4 étapes de la chaîne de l'énergie :",
+      "time": 40,
+      "answers": [
+        {
+          "text": "Alimenter",
+          "correct": true
+        },
+        {
+          "text": "Distribuer",
+          "correct": true
+        },
+        {
+          "text": "Convertir",
+          "correct": true
+        },
+        {
+          "text": "Transmettre",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la chaîne de l'énergie, quelle étape consiste à fournir l'énergie nécessaire au système ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Alimenter",
+          "correct": true
+        },
+        {
+          "text": "Distribuer",
+          "correct": false
+        },
+        {
+          "text": "Convertir",
+          "correct": false
+        },
+        {
+          "text": "Transmettre",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la chaîne de l'énergie, quelle étape consiste à transformer une forme d'énergie en une autre ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Convertir",
+          "correct": true
+        },
+        {
+          "text": "Alimenter",
+          "correct": false
+        },
+        {
+          "text": "Distribuer",
+          "correct": false
+        },
+        {
+          "text": "Transmettre",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la chaîne de l'énergie, quelle étape correspond à l'actionneur ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Convertir",
+          "correct": true
+        },
+        {
+          "text": "Alimenter",
+          "correct": false
+        },
+        {
+          "text": "Distribuer",
+          "correct": false
+        },
+        {
+          "text": "Transmettre",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans la chaîne de l'énergie, l'étape 'Alimenter' vient toujours en premier.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle grandeur physique mesure un thermomètre ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "La température",
+          "correct": true
+        },
+        {
+          "text": "La pression",
+          "correct": false
+        },
+        {
+          "text": "La lumière",
+          "correct": false
+        },
+        {
+          "text": "La vitesse",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle grandeur physique mesure une photorésistance ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'intensité lumineuse",
+          "correct": true
+        },
+        {
+          "text": "La température",
+          "correct": false
+        },
+        {
+          "text": "La pression",
+          "correct": false
+        },
+        {
+          "text": "L'humidité",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la fonction technique d'un réveil-matin ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Signaler une heure programmée par un son",
+          "correct": true
+        },
+        {
+          "text": "Mesurer le temps qui passe",
+          "correct": false
+        },
+        {
+          "text": "Alimenter les appareils en énergie",
+          "correct": false
+        },
+        {
+          "text": "Convertir l'énergie mécanique en son",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un réveil-matin électrique, quel est l'actionneur ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le buzzer ou la sonnerie (convertit l'énergie électrique en son)",
+          "correct": true
+        },
+        {
+          "text": "L'horloge interne",
+          "correct": false
+        },
+        {
+          "text": "La pile d'alimentation",
+          "correct": false
+        },
+        {
+          "text": "L'afficheur de l'heure",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la fonction technique d'un robinet d'eau ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Contrôler le débit d'eau",
+          "correct": true
+        },
+        {
+          "text": "Mesurer la pression de l'eau",
+          "correct": false
+        },
+        {
+          "text": "Convertir l'énergie hydraulique en énergie mécanique",
+          "correct": false
+        },
+        {
+          "text": "Stocker l'eau courante",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Une pile électrique est la solution technique de l'étape 'Alimenter' dans la chaîne de l'énergie d'une lampe torche.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la fonction technique d'un vélo ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Transporter une personne grâce à la force musculaire",
+          "correct": true
+        },
+        {
+          "text": "Mesurer la vitesse de déplacement",
+          "correct": false
+        },
+        {
+          "text": "Convertir l'énergie électrique en mouvement",
+          "correct": false
+        },
+        {
+          "text": "Distribuer l'énergie vers les roues",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la chaîne de l'énergie d'un vélo, quelle est la solution technique de l'étape 'Alimenter' ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La force musculaire du cycliste",
+          "correct": true
+        },
+        {
+          "text": "Le moteur électrique",
+          "correct": false
+        },
+        {
+          "text": "La chaîne de transmission",
+          "correct": false
+        },
+        {
+          "text": "Les roues",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la chaîne de l'énergie d'un vélo, quelle est la solution technique de l'étape 'Transmettre' ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La chaîne et les pignons",
+          "correct": true
+        },
+        {
+          "text": "Les jambes du cycliste",
+          "correct": false
+        },
+        {
+          "text": "Les roues",
+          "correct": false
+        },
+        {
+          "text": "Le guidon",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la fonction technique d'une sonnerie de portable ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Signaler acoustiquement un appel entrant",
+          "correct": true
+        },
+        {
+          "text": "Mesurer le niveau sonore ambiant",
+          "correct": false
+        },
+        {
+          "text": "Alimenter le téléphone en énergie",
+          "correct": false
+        },
+        {
+          "text": "Distribuer les données réseau",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un téléphone portable, quel composant est un capteur qui mesure la luminosité pour régler la luminosité de l'écran ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le capteur de lumière ambiante (photodétecteur)",
+          "correct": true
+        },
+        {
+          "text": "L'écran OLED",
+          "correct": false
+        },
+        {
+          "text": "La batterie lithium",
+          "correct": false
+        },
+        {
+          "text": "Le haut-parleur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un téléphone portable, quel composant est un actionneur qui fait vibrer le téléphone ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le vibreur (petit moteur excentrique)",
+          "correct": true
+        },
+        {
+          "text": "Le capteur de lumière",
+          "correct": false
+        },
+        {
+          "text": "La batterie",
+          "correct": false
+        },
+        {
+          "text": "Le microphone",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans un téléphone portable, le microphone est un capteur et le haut-parleur est un actionneur.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la fonction technique d'un réfrigérateur ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Conserver les aliments au froid",
+          "correct": true
+        },
+        {
+          "text": "Mesurer la température des aliments",
+          "correct": false
+        },
+        {
+          "text": "Convertir l'énergie thermique en froid",
+          "correct": false
+        },
+        {
+          "text": "Alimenter la maison en énergie froide",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un réfrigérateur, quel composant est un capteur ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le thermostat (mesure la température intérieure)",
+          "correct": true
+        },
+        {
+          "text": "Le compresseur",
+          "correct": false
+        },
+        {
+          "text": "Le moteur du ventilateur",
+          "correct": false
+        },
+        {
+          "text": "Le câble d'alimentation",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un réfrigérateur, quel composant est un actionneur ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le compresseur (convertit l'énergie électrique en énergie mécanique)",
+          "correct": true
+        },
+        {
+          "text": "Le thermostat",
+          "correct": false
+        },
+        {
+          "text": "La grille des clayettes",
+          "correct": false
+        },
+        {
+          "text": "Le câble d'alimentation",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quelle est la première étape de la chaîne de l'information ?",
+      "time": 20,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "Acquérir",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "acquérir",
+        "acquerir",
+        "l'acquisition",
+        "acquisition"
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quelle est la première étape de la chaîne de l'énergie ?",
+      "time": 20,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "Alimenter",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "alimenter",
+        "l'alimentation",
+        "alimentation"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la fonction technique d'un aspirateur ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Aspirer les poussières et salissures",
+          "correct": true
+        },
+        {
+          "text": "Mesurer la quantité de poussière dans l'air",
+          "correct": false
+        },
+        {
+          "text": "Distribuer l'air dans une pièce",
+          "correct": false
+        },
+        {
+          "text": "Convertir l'énergie mécanique en énergie électrique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la chaîne de l'énergie d'un aspirateur, quelle est la solution technique de l'étape 'Alimenter' ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le cordon électrique branché au secteur",
+          "correct": true
+        },
+        {
+          "text": "Le moteur électrique",
+          "correct": false
+        },
+        {
+          "text": "Le sac à poussière",
+          "correct": false
+        },
+        {
+          "text": "Le tuyau d'aspiration",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la chaîne de l'énergie d'un aspirateur, quel est l'actionneur (étape 'Convertir') ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le moteur électrique de la turbine",
+          "correct": true
+        },
+        {
+          "text": "Le câble d'alimentation",
+          "correct": false
+        },
+        {
+          "text": "Le filtre à poussière",
+          "correct": false
+        },
+        {
+          "text": "Le tuyau flexible",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans la chaîne de l'énergie, l'étape 'Convertir' est toujours réalisée par un actionneur.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Parmi ces propositions, laquelle est une fonction technique correctement formulée pour une montre ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Indiquer l'heure",
+          "correct": true
+        },
+        {
+          "text": "Une aiguille et un cadran",
+          "correct": false
+        },
+        {
+          "text": "L'heure affichée",
+          "correct": false
+        },
+        {
+          "text": "Énergie mécanique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Parmi ces propositions, laquelle est une fonction technique correctement formulée pour un couteau ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Couper des aliments",
+          "correct": true
+        },
+        {
+          "text": "Une lame et un manche",
+          "correct": false
+        },
+        {
+          "text": "L'aliment coupé",
+          "correct": false
+        },
+        {
+          "text": "Acier inoxydable",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La solution technique d'un objet décrit ce à quoi il sert.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la fonction technique d'un parapluie ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Protéger de la pluie",
+          "correct": true
+        },
+        {
+          "text": "Mesurer la quantité de pluie tombée",
+          "correct": false
+        },
+        {
+          "text": "Convertir l'énergie de la pluie",
+          "correct": false
+        },
+        {
+          "text": "Un tissu imperméable tendu sur des tiges",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la solution technique d'un parapluie pour remplir sa fonction ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un tissu imperméable tendu sur une armature de tiges",
+          "correct": true
+        },
+        {
+          "text": "Protéger de la pluie",
+          "correct": false
+        },
+        {
+          "text": "Le prix du parapluie",
+          "correct": false
+        },
+        {
+          "text": "La couleur du parapluie",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la fonction technique d'une loupe ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Agrandir l'image d'un objet",
+          "correct": true
+        },
+        {
+          "text": "Mesurer la taille des objets",
+          "correct": false
+        },
+        {
+          "text": "Convertir la lumière en image",
+          "correct": false
+        },
+        {
+          "text": "Une lentille convexe et un manche",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un même objet peut avoir plusieurs solutions techniques pour remplir sa fonction technique.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle grandeur physique mesure un baromètre ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La pression atmosphérique",
+          "correct": true
+        },
+        {
+          "text": "La température",
+          "correct": false
+        },
+        {
+          "text": "L'humidité de l'air",
+          "correct": false
+        },
+        {
+          "text": "La vitesse du vent",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle grandeur physique mesure un sonomètre ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le niveau sonore",
+          "correct": true
+        },
+        {
+          "text": "La lumière",
+          "correct": false
+        },
+        {
+          "text": "La température",
+          "correct": false
+        },
+        {
+          "text": "La vitesse",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Parmi ces objets, lequel est un capteur ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un détecteur de fumée",
+          "correct": true
+        },
+        {
+          "text": "Une sirène",
+          "correct": false
+        },
+        {
+          "text": "Une ampoule",
+          "correct": false
+        },
+        {
+          "text": "Un ventilateur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Parmi ces objets, lequel est un actionneur ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Une sirène (convertit l'énergie électrique en son)",
+          "correct": true
+        },
+        {
+          "text": "Un détecteur de fumée",
+          "correct": false
+        },
+        {
+          "text": "Un thermomètre",
+          "correct": false
+        },
+        {
+          "text": "Un interrupteur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Une ampoule électrique est un actionneur car elle convertit de l'énergie électrique en lumière.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la chaîne de l'information, quelle étape consiste à transmettre le résultat à l'utilisateur ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Communiquer",
+          "correct": true
+        },
+        {
+          "text": "Acquérir",
+          "correct": false
+        },
+        {
+          "text": "Traiter",
+          "correct": false
+        },
+        {
+          "text": "Alimenter",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la chaîne de l'information, quelle étape est réalisée par un capteur ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Acquérir",
+          "correct": true
+        },
+        {
+          "text": "Traiter",
+          "correct": false
+        },
+        {
+          "text": "Communiquer",
+          "correct": false
+        },
+        {
+          "text": "Transmettre",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans la chaîne de l'information, l'étape 'Traiter' se trouve entre 'Acquérir' et 'Communiquer'.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la chaîne de l'énergie, quelle étape consiste à répartir l'énergie vers les actionneurs ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Distribuer",
+          "correct": true
+        },
+        {
+          "text": "Alimenter",
+          "correct": false
+        },
+        {
+          "text": "Convertir",
+          "correct": false
+        },
+        {
+          "text": "Transmettre",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la chaîne de l'énergie, quelle étape consiste à transmettre le mouvement vers l'effecteur final ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Transmettre",
+          "correct": true
+        },
+        {
+          "text": "Alimenter",
+          "correct": false
+        },
+        {
+          "text": "Distribuer",
+          "correct": false
+        },
+        {
+          "text": "Convertir",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans la chaîne de l'énergie, l'étape 'Convertir' est réalisée par un actionneur.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la fonction technique d'un stylo bille ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Écrire sur une surface",
+          "correct": true
+        },
+        {
+          "text": "Mesurer la pression exercée sur le papier",
+          "correct": false
+        },
+        {
+          "text": "Convertir l'énergie mécanique en traits",
+          "correct": false
+        },
+        {
+          "text": "Une bille d'acier et un réservoir d'encre",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la fonction technique d'une lampe de chevet ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Éclairer un espace de nuit",
+          "correct": true
+        },
+        {
+          "text": "Mesurer l'intensité lumineuse de la chambre",
+          "correct": false
+        },
+        {
+          "text": "Alimenter la prise électrique",
+          "correct": false
+        },
+        {
+          "text": "Une ampoule et un abat-jour",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la fonction technique d'un marteau ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Enfoncer des clous ou assembler des pièces par choc",
+          "correct": true
+        },
+        {
+          "text": "Mesurer la dureté d'une surface",
+          "correct": false
+        },
+        {
+          "text": "Convertir l'énergie musculaire en chaleur",
+          "correct": false
+        },
+        {
+          "text": "Un manche en bois et une tête en acier",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une lampe de chevet avec interrupteur, quel composant est le capteur de la chaîne de l'information ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'interrupteur (détecte l'action de l'utilisateur)",
+          "correct": true
+        },
+        {
+          "text": "L'ampoule",
+          "correct": false
+        },
+        {
+          "text": "Le câble électrique",
+          "correct": false
+        },
+        {
+          "text": "L'abat-jour",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une lampe de chevet, quel composant est l'actionneur ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'ampoule (convertit l'énergie électrique en lumière)",
+          "correct": true
+        },
+        {
+          "text": "L'interrupteur",
+          "correct": false
+        },
+        {
+          "text": "Le câble d'alimentation",
+          "correct": false
+        },
+        {
+          "text": "L'abat-jour",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans une lampe de chevet, le câble d'alimentation est la solution technique de l'étape 'Alimenter' de la chaîne de l'énergie.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la fonction technique d'un robinet thermostatique de radiateur ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Régler la chaleur émise par un radiateur",
+          "correct": true
+        },
+        {
+          "text": "Mesurer la pression de l'eau dans le circuit",
+          "correct": false
+        },
+        {
+          "text": "Alimenter le circuit de chauffage en énergie",
+          "correct": false
+        },
+        {
+          "text": "Convertir l'énergie électrique en chaleur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un robinet thermostatique, quel est le capteur ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La sonde de température intégrée au robinet",
+          "correct": true
+        },
+        {
+          "text": "Le radiateur lui-même",
+          "correct": false
+        },
+        {
+          "text": "La chaudière",
+          "correct": false
+        },
+        {
+          "text": "Le tuyau de chauffage",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la fonction technique d'une calculatrice ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Effectuer des calculs mathématiques",
+          "correct": true
+        },
+        {
+          "text": "Mesurer les grandeurs numériques",
+          "correct": false
+        },
+        {
+          "text": "Convertir l'énergie lumineuse en résultats",
+          "correct": false
+        },
+        {
+          "text": "Distribuer les données vers l'écran",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une calculatrice solaire, quel composant est à la fois la solution technique de l'étape 'Alimenter' ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La cellule photovoltaïque (convertit la lumière en électricité)",
+          "correct": true
+        },
+        {
+          "text": "L'écran à cristaux liquides",
+          "correct": false
+        },
+        {
+          "text": "Les touches du clavier",
+          "correct": false
+        },
+        {
+          "text": "Le processeur de calcul",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une calculatrice, quel composant est un capteur de la chaîne de l'information ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Les touches du clavier (captent les appuis de l'utilisateur)",
+          "correct": true
+        },
+        {
+          "text": "L'écran d'affichage",
+          "correct": false
+        },
+        {
+          "text": "La cellule solaire",
+          "correct": false
+        },
+        {
+          "text": "Le processeur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une calculatrice, quel composant est l'actionneur qui présente le résultat ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'écran LCD (convertit l'énergie électrique en affichage visible)",
+          "correct": true
+        },
+        {
+          "text": "Les touches",
+          "correct": false
+        },
+        {
+          "text": "La cellule photovoltaïque",
+          "correct": false
+        },
+        {
+          "text": "Le processeur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Pour une calculatrice, remets les étapes de la chaîne de l'information dans l'ordre :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Les touches captent les chiffres et opérateurs saisis",
+          "correct": true
+        },
+        {
+          "text": "Le processeur effectue le calcul",
+          "correct": true
+        },
+        {
+          "text": "L'écran affiche le résultat",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la fonction technique d'un sifflet ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Produire un signal sonore aigu",
+          "correct": true
+        },
+        {
+          "text": "Mesurer l'intensité du souffle",
+          "correct": false
+        },
+        {
+          "text": "Convertir l'énergie électrique en son",
+          "correct": false
+        },
+        {
+          "text": "Distribuer l'air vers les poumons",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la fonction technique d'un rétroviseur de voiture ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Permettre au conducteur de voir derrière lui",
+          "correct": true
+        },
+        {
+          "text": "Mesurer la distance entre les véhicules",
+          "correct": false
+        },
+        {
+          "text": "Convertir la lumière en image numérique",
+          "correct": false
+        },
+        {
+          "text": "Un miroir plan fixé sur la carrosserie",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle grandeur physique mesure un capteur de vitesse sur un vélo ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La vitesse de déplacement du vélo",
+          "correct": true
+        },
+        {
+          "text": "La force exercée sur les pédales",
+          "correct": false
+        },
+        {
+          "text": "La pression des pneus",
+          "correct": false
+        },
+        {
+          "text": "L'inclinaison du sol",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans la chaîne de l'énergie, l'étape 'Distribuer' permet de commander et de répartir l'énergie vers les actionneurs.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la fonction technique d'un essuie-glace de voiture ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Essuyer l'eau et les salissures du pare-brise",
+          "correct": true
+        },
+        {
+          "text": "Mesurer la quantité de pluie",
+          "correct": false
+        },
+        {
+          "text": "Alimenter le circuit électrique de la voiture",
+          "correct": false
+        },
+        {
+          "text": "Convertir l'énergie du vent en mouvement",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un essuie-glace automatique avec capteur de pluie, quel composant est le capteur ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le capteur de pluie (optique, sur le pare-brise)",
+          "correct": true
+        },
+        {
+          "text": "Le moteur de l'essuie-glace",
+          "correct": false
+        },
+        {
+          "text": "La raclette en caoutchouc",
+          "correct": false
+        },
+        {
+          "text": "Le câble d'alimentation",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un essuie-glace, quel composant est l'actionneur ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le moteur électrique (convertit l'énergie électrique en mouvement)",
+          "correct": true
+        },
+        {
+          "text": "Le capteur de pluie",
+          "correct": false
+        },
+        {
+          "text": "La raclette en caoutchouc",
+          "correct": false
+        },
+        {
+          "text": "La batterie du véhicule",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la fonction technique d'un vélo électrique ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Assister le cycliste dans son effort de pédalage",
+          "correct": true
+        },
+        {
+          "text": "Mesurer la vitesse du cycliste",
+          "correct": false
+        },
+        {
+          "text": "Convertir l'énergie solaire en mouvement",
+          "correct": false
+        },
+        {
+          "text": "Distribuer l'énergie vers les roues",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la chaîne de l'énergie d'un vélo électrique, quelle est la solution technique de l'étape 'Alimenter' ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La batterie rechargeable",
+          "correct": true
+        },
+        {
+          "text": "Le moteur électrique",
+          "correct": false
+        },
+        {
+          "text": "La chaîne de transmission",
+          "correct": false
+        },
+        {
+          "text": "Le capteur de pédalage",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la chaîne de l'énergie d'un vélo électrique, quelle est la solution technique de l'étape 'Convertir' ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le moteur électrique (convertit l'énergie électrique en rotation)",
+          "correct": true
+        },
+        {
+          "text": "La batterie rechargeable",
+          "correct": false
+        },
+        {
+          "text": "La chaîne et les pignons",
+          "correct": false
+        },
+        {
+          "text": "Le capteur de cadence",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Pour un vélo électrique, remets les étapes de la chaîne de l'énergie dans l'ordre :",
+      "time": 40,
+      "answers": [
+        {
+          "text": "La batterie rechargeable fournit l'énergie électrique",
+          "correct": true
+        },
+        {
+          "text": "Le contrôleur électronique répartit l'énergie vers le moteur",
+          "correct": true
+        },
+        {
+          "text": "Le moteur convertit l'énergie électrique en rotation",
+          "correct": true
+        },
+        {
+          "text": "La roue arrière est entraînée en rotation",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la fonction technique d'un sèche-cheveux ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Sécher les cheveux en soufflant de l'air chaud",
+          "correct": true
+        },
+        {
+          "text": "Mesurer l'humidité des cheveux",
+          "correct": false
+        },
+        {
+          "text": "Alimenter la salle de bain en électricité",
+          "correct": false
+        },
+        {
+          "text": "Un moteur et une résistance chauffante",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un sèche-cheveux, quelle est la solution technique de l'étape 'Alimenter' de la chaîne de l'énergie ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le cordon électrique branché au secteur 230V",
+          "correct": true
+        },
+        {
+          "text": "Le moteur électrique",
+          "correct": false
+        },
+        {
+          "text": "La résistance chauffante",
+          "correct": false
+        },
+        {
+          "text": "Le bouton de sélection de vitesse",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans la chaîne de l'énergie, les étapes 'Alimenter', 'Distribuer', 'Convertir' et 'Transmettre' sont toujours présentes dans cet ordre.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la fonction technique d'un casque audio ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Reproduire un son directement près des oreilles",
+          "correct": true
+        },
+        {
+          "text": "Mesurer le niveau sonore ambiant",
+          "correct": false
+        },
+        {
+          "text": "Convertir le son en signal électrique",
+          "correct": false
+        },
+        {
+          "text": "Distribuer le signal audio vers les enceintes",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un casque audio, les haut-parleurs sont des :",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Actionneurs (ils convertissent l'énergie électrique en son)",
+          "correct": true
+        },
+        {
+          "text": "Capteurs (ils mesurent le son)",
+          "correct": false
+        },
+        {
+          "text": "Composants de la chaîne de l'information étape 'Traiter'",
+          "correct": false
+        },
+        {
+          "text": "Sources d'alimentation",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la fonction technique d'une montre connectée avec cardiofréquencemètre ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Mesurer et afficher la fréquence cardiaque et l'heure",
+          "correct": true
+        },
+        {
+          "text": "Convertir l'énergie mécanique du poignet en électricité",
+          "correct": false
+        },
+        {
+          "text": "Distribuer les données vers un smartphone",
+          "correct": false
+        },
+        {
+          "text": "Alimenter les capteurs du corps en énergie",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une montre connectée, quel composant est un capteur qui mesure le rythme cardiaque ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un capteur optique infrarouge positionné contre le poignet",
+          "correct": true
+        },
+        {
+          "text": "L'écran tactile",
+          "correct": false
+        },
+        {
+          "text": "La batterie",
+          "correct": false
+        },
+        {
+          "text": "Le vibreur d'alerte",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment s'appelle la dernière étape de la chaîne de l'information ?",
+      "time": 20,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "Communiquer",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "communiquer",
+        "la communication",
+        "communication"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Parmi ces propositions, laquelle est une fonction technique correctement formulée pour un cartable ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Transporter des affaires scolaires",
+          "correct": true
+        },
+        {
+          "text": "Des poches, des fermetures éclair et des bretelles",
+          "correct": false
+        },
+        {
+          "text": "Le cartable de l'élève",
+          "correct": false
+        },
+        {
+          "text": "Tissu imperméable et renforts plastiques",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Parmi ces propositions, laquelle est une fonction technique correctement formulée pour des lunettes de vue ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Corriger la vision",
+          "correct": true
+        },
+        {
+          "text": "Des verres et une monture",
+          "correct": false
+        },
+        {
+          "text": "La correction visuelle",
+          "correct": false
+        },
+        {
+          "text": "Verre et plastique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la fonction technique d'un pont ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Franchir un obstacle (rivière, route, vallée)",
+          "correct": true
+        },
+        {
+          "text": "Mesurer la longueur d'une rivière",
+          "correct": false
+        },
+        {
+          "text": "Béton armé et câbles d'acier",
+          "correct": false
+        },
+        {
+          "text": "Convertir l'énergie hydraulique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la fonction technique d'une serrure ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Verrouiller ou déverrouiller une porte",
+          "correct": true
+        },
+        {
+          "text": "Mesurer la solidité de la porte",
+          "correct": false
+        },
+        {
+          "text": "Un barillet et un pêne",
+          "correct": false
+        },
+        {
+          "text": "Distribuer la sécurité dans un bâtiment",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La fonction technique répond toujours à la question : 'À quoi ça sert ?'",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la solution technique d'une serrure pour verrouiller une porte ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un barillet, un pêne et une clé",
+          "correct": true
+        },
+        {
+          "text": "Verrouiller ou déverrouiller une porte",
+          "correct": false
+        },
+        {
+          "text": "Le prix de la serrure",
+          "correct": false
+        },
+        {
+          "text": "La couleur de la porte",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle grandeur physique mesure un compteur d'eau ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le volume d'eau consommé",
+          "correct": true
+        },
+        {
+          "text": "La pression de l'eau",
+          "correct": false
+        },
+        {
+          "text": "La température de l'eau",
+          "correct": false
+        },
+        {
+          "text": "La vitesse de l'eau",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle grandeur physique mesure un compteur électrique ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'énergie électrique consommée (en kWh)",
+          "correct": true
+        },
+        {
+          "text": "La tension du réseau",
+          "correct": false
+        },
+        {
+          "text": "La puissance instantanée uniquement",
+          "correct": false
+        },
+        {
+          "text": "La fréquence du courant",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Parmi ces objets, lequel est uniquement un capteur ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un capteur de température dans un four",
+          "correct": true
+        },
+        {
+          "text": "Une résistance chauffante",
+          "correct": false
+        },
+        {
+          "text": "Un ventilateur",
+          "correct": false
+        },
+        {
+          "text": "Un haut-parleur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Parmi ces objets, lequel est uniquement un actionneur ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un vérin pneumatique (convertit l'énergie en mouvement)",
+          "correct": true
+        },
+        {
+          "text": "Un capteur de pression",
+          "correct": false
+        },
+        {
+          "text": "Un interrupteur",
+          "correct": false
+        },
+        {
+          "text": "Un baromètre",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un interrupteur est un capteur car il détecte l'action de l'utilisateur et transmet une information au circuit.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la chaîne de l'information d'un four automatique, quel composant réalise l'étape 'Acquérir' ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le capteur de température (thermocouple)",
+          "correct": true
+        },
+        {
+          "text": "La résistance chauffante",
+          "correct": false
+        },
+        {
+          "text": "Le tableau de commande",
+          "correct": false
+        },
+        {
+          "text": "La porte du four",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la chaîne de l'information d'un four automatique, quel composant réalise l'étape 'Communiquer' ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'afficheur de température sur le tableau de bord",
+          "correct": true
+        },
+        {
+          "text": "La résistance chauffante",
+          "correct": false
+        },
+        {
+          "text": "Le capteur de température",
+          "correct": false
+        },
+        {
+          "text": "Le câble d'alimentation",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans la chaîne de l'énergie, il n'y a jamais plus de quatre étapes.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la chaîne de l'énergie d'un radiateur électrique, quelle est la solution technique de l'étape 'Convertir' ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La résistance chauffante (énergie électrique → énergie thermique)",
+          "correct": true
+        },
+        {
+          "text": "Le câble d'alimentation secteur",
+          "correct": false
+        },
+        {
+          "text": "Le thermostat",
+          "correct": false
+        },
+        {
+          "text": "Le bouton de réglage",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la chaîne de l'énergie d'un radiateur électrique, quelle est la solution technique de l'étape 'Alimenter' ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le câble branché au réseau électrique (secteur)",
+          "correct": true
+        },
+        {
+          "text": "La résistance chauffante",
+          "correct": false
+        },
+        {
+          "text": "Le thermostat",
+          "correct": false
+        },
+        {
+          "text": "Le boîtier du radiateur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la fonction technique d'un détecteur de fumée ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Alerter en cas de présence de fumée",
+          "correct": true
+        },
+        {
+          "text": "Éteindre un incendie",
+          "correct": false
+        },
+        {
+          "text": "Mesurer la température d'une pièce",
+          "correct": false
+        },
+        {
+          "text": "Distribuer l'air dans une pièce",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un détecteur de fumée, quel composant est le capteur ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La chambre de détection optique (détecte les particules de fumée)",
+          "correct": true
+        },
+        {
+          "text": "La sirène sonore",
+          "correct": false
+        },
+        {
+          "text": "La pile d'alimentation",
+          "correct": false
+        },
+        {
+          "text": "Le boîtier en plastique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un détecteur de fumée, quel composant est l'actionneur ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La sirène sonore (convertit l'énergie électrique en son d'alarme)",
+          "correct": true
+        },
+        {
+          "text": "La chambre de détection",
+          "correct": false
+        },
+        {
+          "text": "La pile",
+          "correct": false
+        },
+        {
+          "text": "Le circuit électronique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Pour un détecteur de fumée, remets les étapes de la chaîne de l'information dans l'ordre :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "La chambre optique détecte des particules de fumée",
+          "correct": true
+        },
+        {
+          "text": "Le circuit électronique analyse le signal reçu",
+          "correct": true
+        },
+        {
+          "text": "La sirène s'active pour alerter les occupants",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la fonction technique d'un chronomètre ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Mesurer une durée",
+          "correct": true
+        },
+        {
+          "text": "Indiquer l'heure courante",
+          "correct": false
+        },
+        {
+          "text": "Convertir le temps en énergie",
+          "correct": false
+        },
+        {
+          "text": "Distribuer les données de temps",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la fonction technique d'une télécommande de télévision ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Envoyer des commandes à distance à la télévision",
+          "correct": true
+        },
+        {
+          "text": "Mesurer la distance entre l'utilisateur et la TV",
+          "correct": false
+        },
+        {
+          "text": "Alimenter la télévision à distance",
+          "correct": false
+        },
+        {
+          "text": "Des touches et une pile",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une télécommande de télévision, quel composant est l'actionneur ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La LED infrarouge (convertit l'énergie électrique en rayonnement infrarouge)",
+          "correct": true
+        },
+        {
+          "text": "Les touches du clavier",
+          "correct": false
+        },
+        {
+          "text": "La pile d'alimentation",
+          "correct": false
+        },
+        {
+          "text": "Le circuit intégré de codage",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une télécommande de télévision, quel composant est le capteur ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Les touches (captent l'appui de l'utilisateur)",
+          "correct": true
+        },
+        {
+          "text": "La LED infrarouge",
+          "correct": false
+        },
+        {
+          "text": "La pile",
+          "correct": false
+        },
+        {
+          "text": "Le boîtier en plastique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans une télécommande, la LED infrarouge est un actionneur car elle convertit de l'énergie électrique en rayonnement infrarouge.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la fonction technique d'un climatiseur ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Refroidir (ou chauffer) l'air d'une pièce",
+          "correct": true
+        },
+        {
+          "text": "Mesurer la température extérieure",
+          "correct": false
+        },
+        {
+          "text": "Distribuer l'air frais dans les canalisations",
+          "correct": false
+        },
+        {
+          "text": "Convertir l'énergie solaire en froid",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un climatiseur, quel composant est un capteur ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La sonde de température ambiante",
+          "correct": true
+        },
+        {
+          "text": "Le compresseur",
+          "correct": false
+        },
+        {
+          "text": "Le ventilateur intérieur",
+          "correct": false
+        },
+        {
+          "text": "Le câble d'alimentation",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un climatiseur, quel composant est un actionneur ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le ventilateur intérieur (convertit l'énergie électrique en flux d'air)",
+          "correct": true
+        },
+        {
+          "text": "La sonde de température",
+          "correct": false
+        },
+        {
+          "text": "La télécommande",
+          "correct": false
+        },
+        {
+          "text": "Le câble d'alimentation",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la fonction technique d'une sonnette de porte (classique, sans batterie) ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Signaler la présence d'un visiteur par un son",
+          "correct": true
+        },
+        {
+          "text": "Mesurer la pression exercée sur le bouton",
+          "correct": false
+        },
+        {
+          "text": "Convertir l'énergie mécanique en électricité",
+          "correct": false
+        },
+        {
+          "text": "Distribuer l'énergie au carillon",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la chaîne de l'énergie d'une sonnette électrique simple, quelle est la solution technique de l'étape 'Distribuer' ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le bouton poussoir (commande le passage du courant)",
+          "correct": true
+        },
+        {
+          "text": "Le carillon sonore",
+          "correct": false
+        },
+        {
+          "text": "Le câble d'alimentation",
+          "correct": false
+        },
+        {
+          "text": "Le transformateur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans la chaîne de l'énergie, un même composant peut réaliser à la fois l'étape 'Convertir' et produire l'effet utile final.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la fonction technique d'une pompe à vélo ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Gonfler un pneu en comprimant de l'air",
+          "correct": true
+        },
+        {
+          "text": "Mesurer la pression dans un pneu",
+          "correct": false
+        },
+        {
+          "text": "Convertir l'énergie électrique en pression",
+          "correct": false
+        },
+        {
+          "text": "Un piston, un cylindre et un tuyau",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la solution technique d'une pompe à vélo pour comprimer l'air ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un piston coulissant dans un cylindre",
+          "correct": true
+        },
+        {
+          "text": "Gonfler un pneu en comprimant de l'air",
+          "correct": false
+        },
+        {
+          "text": "L'énergie musculaire",
+          "correct": false
+        },
+        {
+          "text": "Le manomètre de pression",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la fonction technique d'une imprimante 3D ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Fabriquer un objet en trois dimensions couche par couche",
+          "correct": true
+        },
+        {
+          "text": "Mesurer les dimensions d'un objet",
+          "correct": false
+        },
+        {
+          "text": "Distribuer la matière dans le bac",
+          "correct": false
+        },
+        {
+          "text": "Convertir un fichier numérique en image 2D",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une imprimante 3D, quel composant est un actionneur qui dépose la matière ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La buse chauffante (convertit l'énergie électrique en chaleur pour fondre le filament)",
+          "correct": true
+        },
+        {
+          "text": "Le capteur de fin de course",
+          "correct": false
+        },
+        {
+          "text": "La carte mère de l'imprimante",
+          "correct": false
+        },
+        {
+          "text": "Le bobineau de filament",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la fonction technique d'une bouilloire électrique ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Chauffer de l'eau rapidement",
+          "correct": true
+        },
+        {
+          "text": "Mesurer la température de l'eau",
+          "correct": false
+        },
+        {
+          "text": "Distribuer l'eau chaude dans les canalisations",
+          "correct": false
+        },
+        {
+          "text": "Une résistance chauffante et un thermostat",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la chaîne de l'énergie d'une bouilloire, quelle est la solution technique de l'étape 'Convertir' ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La résistance chauffante (énergie électrique → chaleur)",
+          "correct": true
+        },
+        {
+          "text": "Le cordon d'alimentation",
+          "correct": false
+        },
+        {
+          "text": "Le thermostat de sécurité",
+          "correct": false
+        },
+        {
+          "text": "Le bouton marche/arrêt",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Pour une bouilloire électrique, remets les étapes de la chaîne de l'énergie dans l'ordre :",
+      "time": 40,
+      "answers": [
+        {
+          "text": "Le cordon branché au secteur fournit l'énergie électrique",
+          "correct": true
+        },
+        {
+          "text": "Le bouton marche/arrêt commande l'alimentation",
+          "correct": true
+        },
+        {
+          "text": "La résistance chauffante convertit l'énergie en chaleur",
+          "correct": true
+        },
+        {
+          "text": "La chaleur se transmet à l'eau contenue dans la cuve",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la fonction technique d'un aimant permanent ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Attirer les objets métalliques ferreux",
+          "correct": true
+        },
+        {
+          "text": "Mesurer l'intensité d'un champ magnétique",
+          "correct": false
+        },
+        {
+          "text": "Convertir l'énergie électrique en force d'attraction",
+          "correct": false
+        },
+        {
+          "text": "Distribuer l'énergie magnétique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la fonction technique d'un filtre à eau ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Purifier l'eau en retenant les impuretés",
+          "correct": true
+        },
+        {
+          "text": "Mesurer la qualité de l'eau",
+          "correct": false
+        },
+        {
+          "text": "Convertir l'énergie hydraulique",
+          "correct": false
+        },
+        {
+          "text": "Une membrane filtrante et un boîtier",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un panneau solaire photovoltaïque est un actionneur car il convertit de l'énergie lumineuse en énergie électrique.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la chaîne de l'énergie d'un ventilateur de table, quelle est la solution technique de l'étape 'Distribuer' ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le bouton ou le sélecteur de vitesse",
+          "correct": true
+        },
+        {
+          "text": "Le câble d'alimentation secteur",
+          "correct": false
+        },
+        {
+          "text": "Le moteur électrique",
+          "correct": false
+        },
+        {
+          "text": "Les pales",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la chaîne de l'énergie d'un ventilateur de table, quelle est la solution technique de l'étape 'Transmettre' ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'axe du moteur entraînant directement les pales",
+          "correct": true
+        },
+        {
+          "text": "Le moteur électrique",
+          "correct": false
+        },
+        {
+          "text": "Le bouton de vitesse",
+          "correct": false
+        },
+        {
+          "text": "Le câble secteur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la fonction technique d'une boussole ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Indiquer le nord magnétique pour s'orienter",
+          "correct": true
+        },
+        {
+          "text": "Mesurer la force du champ magnétique terrestre",
+          "correct": false
+        },
+        {
+          "text": "Convertir l'énergie magnétique en direction",
+          "correct": false
+        },
+        {
+          "text": "Distribuer les données de position",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la fonction technique d'un verrou de porte ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Bloquer l'ouverture d'une porte",
+          "correct": true
+        },
+        {
+          "text": "Mesurer la pression exercée sur la porte",
+          "correct": false
+        },
+        {
+          "text": "Convertir l'énergie mécanique en sécurité",
+          "correct": false
+        },
+        {
+          "text": "Un pêne et un mécanisme de blocage",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans la chaîne de l'information, un voyant lumineux LED qui s'allume pour indiquer une information réalise l'étape 'Communiquer'.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la chaîne de l'information d'une machine à laver, quel composant réalise l'étape 'Traiter' ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La carte électronique qui gère le programme de lavage",
+          "correct": true
+        },
+        {
+          "text": "Le pressostat qui mesure le niveau d'eau",
+          "correct": false
+        },
+        {
+          "text": "Le moteur du tambour",
+          "correct": false
+        },
+        {
+          "text": "L'afficheur du programme en cours",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Pour un radiateur électrique avec thermostat, remets les étapes de la chaîne de l'information dans l'ordre :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "La sonde mesure la température de la pièce",
+          "correct": true
+        },
+        {
+          "text": "Le thermostat compare la valeur mesurée à la consigne",
+          "correct": true
+        },
+        {
+          "text": "La résistance est allumée ou éteinte en conséquence",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quelle est la dernière étape de la chaîne de l'énergie ?",
+      "time": 20,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "Transmettre",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "transmettre",
+        "la transmission",
+        "transmission"
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quel terme désigne les éléments concrets d'un objet qui lui permettent de remplir sa fonction technique ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "La solution technique",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "solution technique",
+        "la solution technique",
+        "les solutions techniques",
+        "solutions techniques"
+      ]
+    }
+  ]
+}

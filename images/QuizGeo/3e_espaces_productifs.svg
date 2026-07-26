@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 380">
+  <rect width="700" height="380" fill="#f5f5f5"/>
+  <text x="350" y="25" font-size="16" font-weight="bold" text-anchor="middle">Les espaces productifs en France</text>
+  <!-- Espace 1: Agricole -->
+  <rect x="30" y="60" width="200" height="140" fill="#a5d6a7" stroke="#333" rx="5"/>
+  <text x="130" y="85" font-size="12" text-anchor="middle" font-weight="bold">Type A</text>
+  <rect x="50" y="100" width="40" height="30" fill="#f9a825"/>
+  <rect x="100" y="100" width="40" height="30" fill="#8bc34a"/>
+  <rect x="150" y="100" width="40" height="30" fill="#f9a825"/>
+  <rect x="50" y="140" width="60" height="25" fill="#8bc34a"/>
+  <rect x="120" y="140" width="60" height="25" fill="#f9a825"/>
+  <ellipse cx="90" cy="180" rx="15" ry="10" fill="white" stroke="#333"/>
+  <ellipse cx="130" cy="180" rx="15" ry="10" fill="white" stroke="#333"/>
+  <!-- Espace 2: Industriel -->
+  <rect x="250" y="60" width="200" height="140" fill="#90a4ae" stroke="#333" rx="5"/>
+  <text x="350" y="85" font-size="12" text-anchor="middle" font-weight="bold">Type B</text>
+  <rect x="270" y="100" width="60" height="70" fill="#546e7a"/>
+  <rect x="340" y="110" width="50" height="60" fill="#607d8b"/>
+  <rect x="400" y="100" width="40" height="70" fill="#546e7a"/>
+  <rect x="285" y="95" width="10" height="30" fill="#424242"/>
+  <ellipse cx="290" cy="90" rx="12" ry="8" fill="#9e9e9e"/>
+  <rect x="355" y="105" width="8" height="25" fill="#424242"/>
+  <ellipse cx="359" cy="100" rx="10" ry="6" fill="#9e9e9e"/>
+  <!-- Espace 3: Tertiaire/Services -->
+  <rect x="470" y="60" width="200" height="140" fill="#90caf9" stroke="#333" rx="5"/>
+  <text x="570" y="85" font-size="12" text-anchor="middle" font-weight="bold">Type C</text>
+  <rect x="490" y="100" width="50" height="80" fill="#1565c0"/>
+  <rect x="550" y="90" width="60" height="90" fill="#1976d2"/>
+  <rect x="620" y="105" width="40" height="75" fill="#1565c0"/>
+  <!-- Fenêtres -->
+  <rect x="495" y="110" width="10" height="10" fill="#fff59d"/>
+  <rect x="510" y="110" width="10" height="10" fill="#fff59d"/>
+  <rect x="525" y="110" width="10" height="10" fill="#fff59d"/>
+  <rect x="560" y="100" width="12" height="12" fill="#fff59d"/>
+  <rect x="580" y="100" width="12" height="12" fill="#fff59d"/>
+  <!-- Labels question -->
+  <circle cx="130" cy="210" r="15" fill="#e74c3c"/>
+  <text x="130" y="215" font-size="14" text-anchor="middle" fill="white" font-weight="bold">?</text>
+  <circle cx="350" cy="210" r="15" fill="#e74c3c"/>
+  <text x="350" y="215" font-size="14" text-anchor="middle" fill="white" font-weight="bold">?</text>
+  <circle cx="570" cy="210" r="15" fill="#e74c3c"/>
+  <text x="570" y="215" font-size="14" text-anchor="middle" fill="white" font-weight="bold">?</text>
+  <!-- Légende question -->
+  <rect x="100" y="240" width="500" height="60" fill="white" stroke="#ddd" rx="5"/>
+  <text x="350" y="265" font-size="12" text-anchor="middle" font-weight="bold">Identifiez chaque type d'espace productif :</text>
+  <text x="350" y="285" font-size="11" text-anchor="middle" fill="#666">A = Agricole | B = Industriel | C = Tertiaire (services)</text>
+  <!-- Question supplémentaire -->
+  <text x="350" y="320" font-size="11" text-anchor="middle">Quel secteur emploie aujourd'hui le plus de Français ?</text>
+</svg>

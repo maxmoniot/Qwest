@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#f5f5f5"/>
+  <text x="400" y="25" font-size="16" font-weight="bold" text-anchor="middle">Indice de Développement Humain (IDH) dans le monde</text>
+  <!-- Continents avec couleurs IDH -->
+  <!-- Amérique du Nord - IDH très élevé -->
+  <path d="M60 80 L160 70 L200 140 L160 200 L80 180 L50 120 Z" fill="#1b5e20" stroke="#333"/>
+  <!-- Amérique du Sud - IDH moyen/élevé -->
+  <path d="M130 210 L180 220 L160 310 L100 290 Z" fill="#81c784" stroke="#333"/>
+  <!-- Europe - IDH très élevé -->
+  <path d="M310 70 L380 65 L410 110 L390 150 L330 145 Z" fill="#1b5e20" stroke="#333"/>
+  <!-- Afrique - IDH faible -->
+  <path d="M310 160 L390 155 L410 270 L350 300 L290 260 Z" fill="#ef5350" stroke="#333"/>
+  <!-- Asie - mixte -->
+  <path d="M420 55 L600 45 L650 120 L600 190 L460 180 L420 110 Z" fill="#ffb74d" stroke="#333"/>
+  <path d="M520 80 L580 75 L600 100 L580 120 L530 115 Z" fill="#1b5e20" stroke="#333"/>
+  <!-- Océanie -->
+  <path d="M650 230 L720 220 L750 290 L700 320 L660 300 Z" fill="#4caf50" stroke="#333"/>
+  <!-- Légende -->
+  <rect x="50" y="330" width="700" height="60" fill="white" stroke="#ddd" rx="5"/>
+  <rect x="70" y="345" width="25" height="15" fill="#1b5e20"/>
+  <text x="100" y="357" font-size="10">IDH très élevé (&gt;0.8)</text>
+  <rect x="220" y="345" width="25" height="15" fill="#4caf50"/>
+  <text x="250" y="357" font-size="10">IDH élevé (0.7-0.8)</text>
+  <rect x="370" y="345" width="25" height="15" fill="#ffb74d"/>
+  <text x="400" y="357" font-size="10">IDH moyen (0.55-0.7)</text>
+  <rect x="540" y="345" width="25" height="15" fill="#ef5350"/>
+  <text x="570" y="357" font-size="10">IDH faible (&lt;0.55)</text>
+  <text x="400" y="380" font-size="11" text-anchor="middle" fill="#666">Quel continent a globalement l'IDH le plus faible ?</text>
+</svg>

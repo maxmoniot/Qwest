@@ -1,0 +1,3147 @@
+{
+  "name": "3e_Impression3D_150q",
+  "version": "1.0",
+  "createdAt": "2026-04-06T20:52:43.000Z",
+  "questionsCount": 150,
+  "questions": [
+    {
+      "type": "multiple",
+      "question": "Quelle technologie d'impression 3D a été inventée en premier ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "La stéréolithographie (SLA)",
+          "correct": true
+        },
+        {
+          "text": "Le frittage laser (SLS)",
+          "correct": false
+        },
+        {
+          "text": "Le dépôt de filament fondu (FDM)",
+          "correct": false
+        },
+        {
+          "text": "L'impression à jet d'encre 3D",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "En quelle année la stéréolithographie (SLA) a-t-elle été inventée ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "1984",
+          "correct": true
+        },
+        {
+          "text": "1987",
+          "correct": false
+        },
+        {
+          "text": "1988",
+          "correct": false
+        },
+        {
+          "text": "1990",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "En quelle année le frittage laser (SLS) a-t-il été inventé ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "1987",
+          "correct": true
+        },
+        {
+          "text": "1984",
+          "correct": false
+        },
+        {
+          "text": "1988",
+          "correct": false
+        },
+        {
+          "text": "1985",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "En quelle année le dépôt de filament fondu (FDM) a-t-il été inventé ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "1988",
+          "correct": true
+        },
+        {
+          "text": "1984",
+          "correct": false
+        },
+        {
+          "text": "1987",
+          "correct": false
+        },
+        {
+          "text": "1992",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Remets ces technologies d'impression 3D dans l'ordre chronologique de leur invention (de la plus ancienne à la plus récente) :",
+      "time": 40,
+      "answers": [
+        {
+          "text": "Stéréolithographie (SLA) - 1984",
+          "correct": true
+        },
+        {
+          "text": "Frittage laser (SLS) - 1987",
+          "correct": true
+        },
+        {
+          "text": "Dépôt de filament fondu (FDM) - 1988",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le FDM (dépôt de filament fondu) est la plus ancienne technologie d'impression 3D.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La stéréolithographie (SLA) est plus ancienne que le frittage laser (SLS).",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Que signifie l'acronyme FDM ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Fused Deposition Modeling",
+          "correct": true
+        },
+        {
+          "text": "Filament Deposition Method",
+          "correct": false
+        },
+        {
+          "text": "Fusion Direct Manufacturing",
+          "correct": false
+        },
+        {
+          "text": "Fast Digital Molding",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Que signifie l'acronyme SLA ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "StéréoLithographie Apparatus",
+          "correct": true
+        },
+        {
+          "text": "Sintering Laser Additive",
+          "correct": false
+        },
+        {
+          "text": "Standard Layer Assembly",
+          "correct": false
+        },
+        {
+          "text": "Solid Layer Additive",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Que signifie l'acronyme SLS ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Selective Laser Sintering",
+          "correct": true
+        },
+        {
+          "text": "Standard Laser System",
+          "correct": false
+        },
+        {
+          "text": "Solid Layer Sintering",
+          "correct": false
+        },
+        {
+          "text": "Surface Laser Shaping",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans l'impression SLA, quel matériau est utilisé ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Une résine photosensible liquide",
+          "correct": true
+        },
+        {
+          "text": "Un filament plastique solide",
+          "correct": false
+        },
+        {
+          "text": "Une poudre métallique",
+          "correct": false
+        },
+        {
+          "text": "Un gel thermoplastique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans l'impression SLS, quel matériau est utilisé ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Une poudre (plastique ou métal) frittée par laser",
+          "correct": true
+        },
+        {
+          "text": "Un filament fondu",
+          "correct": false
+        },
+        {
+          "text": "Une résine liquide",
+          "correct": false
+        },
+        {
+          "text": "Un filament en carbone",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'impression FDM par extrusion de filament permet généralement d'imprimer sans supports des formes légèrement en surplomb.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle technologie d'impression 3D utilise un laser pour fusionner une poudre couche par couche, permettant souvent de se passer de supports ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Le frittage laser (SLS)",
+          "correct": true
+        },
+        {
+          "text": "La stéréolithographie (SLA)",
+          "correct": false
+        },
+        {
+          "text": "Le dépôt de filament fondu (FDM)",
+          "correct": false
+        },
+        {
+          "text": "L'impression à jet de liant",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pourquoi l'impression SLS ne nécessite-t-elle généralement pas de supports ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "La poudre non frittée soutient naturellement la pièce pendant l'impression",
+          "correct": true
+        },
+        {
+          "text": "Le laser crée automatiquement des structures de soutien invisibles",
+          "correct": false
+        },
+        {
+          "text": "Les pièces SLS sont toujours pleines et n'ont pas de surplombs",
+          "correct": false
+        },
+        {
+          "text": "Le plateau monte au lieu de descendre",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel logiciel en ligne gratuit permet de créer des objets 3D simples sur mesure ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Tinkercad",
+          "correct": true
+        },
+        {
+          "text": "Blender",
+          "correct": false
+        },
+        {
+          "text": "Fusion 360",
+          "correct": false
+        },
+        {
+          "text": "Maya",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Que signifie l'acronyme CAO ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Conception Assistée par Ordinateur",
+          "correct": true
+        },
+        {
+          "text": "Création Automatique d'Objets",
+          "correct": false
+        },
+        {
+          "text": "Contrôle Automatisé des Objets",
+          "correct": false
+        },
+        {
+          "text": "Construction Additive par Ordinateur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le rôle d'un logiciel slicer ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Découper le modèle 3D en couches et générer le G-code pour l'imprimante",
+          "correct": true
+        },
+        {
+          "text": "Créer des modèles 3D à partir de zéro",
+          "correct": false
+        },
+        {
+          "text": "Contrôler l'imprimante en temps réel via Wi-Fi",
+          "correct": false
+        },
+        {
+          "text": "Réparer les fichiers STL endommagés",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce que le G-code dans le contexte de l'impression 3D ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Un langage de commande qui pilote les mouvements de l'imprimante",
+          "correct": true
+        },
+        {
+          "text": "Le format de fichier 3D utilisé pour les modèles",
+          "correct": false
+        },
+        {
+          "text": "Un logiciel de modélisation 3D",
+          "correct": false
+        },
+        {
+          "text": "Un type de filament haute résistance",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le format de fichier standard utilisé pour envoyer un modèle 3D au slicer ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "STL",
+          "correct": true
+        },
+        {
+          "text": "PDF",
+          "correct": false
+        },
+        {
+          "text": "JPG",
+          "correct": false
+        },
+        {
+          "text": "DXF",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Sur quel site peut-on télécharger gratuitement des fichiers STL prêts à imprimer ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Thingiverse",
+          "correct": true
+        },
+        {
+          "text": "YouTube",
+          "correct": false
+        },
+        {
+          "text": "Wikipedia",
+          "correct": false
+        },
+        {
+          "text": "Google Maps",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le slicer génère le G-code à partir d'un fichier STL.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "À quoi servent les supports dans l'impression FDM ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Soutenir les parties en surplomb du modèle pendant l'impression",
+          "correct": true
+        },
+        {
+          "text": "Renforcer définitivement la pièce finale",
+          "correct": false
+        },
+        {
+          "text": "Améliorer l'adhérence du filament sur la buse",
+          "correct": false
+        },
+        {
+          "text": "Réduire la consommation de filament",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Les supports d'impression sont retirés de la pièce une fois l'impression terminée.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle partie de l'imprimante FDM fait fondre le filament ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le bloc chauffant",
+          "correct": true
+        },
+        {
+          "text": "Le plateau chauffant",
+          "correct": false
+        },
+        {
+          "text": "L'extrudeur",
+          "correct": false
+        },
+        {
+          "text": "La buse",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel composant de l'imprimante FDM pousse le filament vers le bloc chauffant ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'extrudeur",
+          "correct": true
+        },
+        {
+          "text": "La buse d'impression",
+          "correct": false
+        },
+        {
+          "text": "Le plateau chauffant",
+          "correct": false
+        },
+        {
+          "text": "Le ventilateur de refroidissement",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Par quel orifice le plastique fondu est-il déposé sur le plateau dans une imprimante FDM ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La buse d'impression",
+          "correct": true
+        },
+        {
+          "text": "L'extrudeur",
+          "correct": false
+        },
+        {
+          "text": "Le bloc chauffant",
+          "correct": false
+        },
+        {
+          "text": "Le bobineau",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est l'intérêt principal du plateau chauffant dans une imprimante FDM ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Améliorer l'adhérence de la première couche et éviter le gauchissement (warping)",
+          "correct": true
+        },
+        {
+          "text": "Faire fondre le filament plus rapidement",
+          "correct": false
+        },
+        {
+          "text": "Refroidir la pièce pour qu'elle durcisse plus vite",
+          "correct": false
+        },
+        {
+          "text": "Détecter les erreurs d'impression automatiquement",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le plateau chauffant permet d'éviter que la pièce se décolle ou se déforme en cours d'impression.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Remets dans l'ordre les étapes de fabrication d'un objet par impression FDM :",
+      "time": 45,
+      "answers": [
+        {
+          "text": "Créer ou télécharger un fichier STL",
+          "correct": true
+        },
+        {
+          "text": "Ouvrir le fichier dans le slicer",
+          "correct": true
+        },
+        {
+          "text": "Générer et envoyer le G-code à l'imprimante",
+          "correct": true
+        },
+        {
+          "text": "Lancer l'impression et récupérer la pièce",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Que signifie le terme 'infill' (remplissage) en impression 3D ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "La quantité de matière déposée à l'intérieur de la pièce",
+          "correct": true
+        },
+        {
+          "text": "Le nombre de couches à la surface de la pièce",
+          "correct": false
+        },
+        {
+          "text": "La vitesse d'impression du slicer",
+          "correct": false
+        },
+        {
+          "text": "Le type de filament utilisé",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un infill de 100% signifie que la pièce est :",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Entièrement pleine (solide)",
+          "correct": true
+        },
+        {
+          "text": "Entièrement creuse",
+          "correct": false
+        },
+        {
+          "text": "Imprimée avec 100 couches",
+          "correct": false
+        },
+        {
+          "text": "Fabriquée à 100% de PLA",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un infill élevé (proche de 100%) rend généralement la pièce plus résistante mécaniquement.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Parmi ces formes d'infill, laquelle offre généralement le meilleur rapport résistance/quantité de matière ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Le motif en nid d'abeilles (gyroïde ou hexagonal)",
+          "correct": true
+        },
+        {
+          "text": "Le motif en lignes droites parallèles",
+          "correct": false
+        },
+        {
+          "text": "Le motif en spirale unique",
+          "correct": false
+        },
+        {
+          "text": "Aucun infill (creux)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La forme géométrique d'un objet imprimé en 3D influence sa résistance mécanique.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pourquoi une arche ou un triangle est-il souvent plus résistant qu'une forme plate dans une pièce imprimée ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Les formes courbes et triangulaires distribuent mieux les contraintes mécaniques",
+          "correct": true
+        },
+        {
+          "text": "L'imprimante dépose plus de matière sur ces formes automatiquement",
+          "correct": false
+        },
+        {
+          "text": "Ces formes utilisent toujours un infill à 100%",
+          "correct": false
+        },
+        {
+          "text": "Elles sont fabriquées dans un matériau différent",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel matériau est le plus couramment utilisé pour débuter l'impression FDM ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "PLA (acide polylactique)",
+          "correct": true
+        },
+        {
+          "text": "ABS",
+          "correct": false
+        },
+        {
+          "text": "Nylon",
+          "correct": false
+        },
+        {
+          "text": "Résine époxy",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Il n'existe qu'un seul type de filament utilisable dans les imprimantes FDM.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Parmi ces matériaux, lequel peut être imprimé en FDM ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le PETG (polyéthylène téréphtalate glycolisé)",
+          "correct": true
+        },
+        {
+          "text": "Le verre trempé",
+          "correct": false
+        },
+        {
+          "text": "L'aluminium massif",
+          "correct": false
+        },
+        {
+          "text": "Le ciment",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce que le PLA ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Un plastique biodégradable dérivé de l'amidon de maïs ou de canne à sucre",
+          "correct": true
+        },
+        {
+          "text": "Un métal léger utilisé en impression 3D industrielle",
+          "correct": false
+        },
+        {
+          "text": "Un type de résine pour imprimante SLA",
+          "correct": false
+        },
+        {
+          "text": "Un logiciel de découpe pour imprimante 3D",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle propriété de l'ABS le distingue principalement du PLA ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "L'ABS supporte mieux les hautes températures et est plus résistant aux chocs",
+          "correct": true
+        },
+        {
+          "text": "L'ABS est biodégradable contrairement au PLA",
+          "correct": false
+        },
+        {
+          "text": "L'ABS ne nécessite pas de plateau chauffant",
+          "correct": false
+        },
+        {
+          "text": "L'ABS est transparent par défaut",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quel nom donne-t-on au fichier de commandes envoyé à l'imprimante 3D par le slicer ?",
+      "time": 30,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "G-code",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "gcode",
+        "g code",
+        "le g-code",
+        "le gcode"
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quel est le nom du logiciel en ligne gratuit d'Autodesk permettant de créer des modèles 3D simples, très utilisé au collège ?",
+      "time": 30,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "Tinkercad",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "tinker cad",
+        "tinkercad.com"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle technologie d'impression 3D utilise un laser UV pour durcir une résine liquide couche par couche ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "La stéréolithographie (SLA)",
+          "correct": true
+        },
+        {
+          "text": "Le frittage laser (SLS)",
+          "correct": false
+        },
+        {
+          "text": "Le dépôt de filament fondu (FDM)",
+          "correct": false
+        },
+        {
+          "text": "Le laminage de feuilles (LOM)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans l'imprimante FDM, où se trouve le filament au début du processus d'impression ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Enroulé sur une bobine",
+          "correct": true
+        },
+        {
+          "text": "Dans un réservoir liquide",
+          "correct": false
+        },
+        {
+          "text": "Dans une cartouche sous pression",
+          "correct": false
+        },
+        {
+          "text": "Sous forme de granulés dans un bac",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la bonne chronologie des trois principales technologies d'impression 3D ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "SLA (1984) → SLS (1987) → FDM (1988)",
+          "correct": true
+        },
+        {
+          "text": "FDM (1984) → SLA (1987) → SLS (1988)",
+          "correct": false
+        },
+        {
+          "text": "SLS (1984) → FDM (1987) → SLA (1988)",
+          "correct": false
+        },
+        {
+          "text": "SLA (1987) → SLS (1988) → FDM (1990)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le frittage laser (SLS) et la stéréolithographie (SLA) ont été inventés la même année.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Parmi ces affirmations sur l'impression FDM sans supports, laquelle est correcte ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Il est possible d'imprimer des surplombs jusqu'à environ 45° sans support",
+          "correct": true
+        },
+        {
+          "text": "On ne peut jamais imprimer sans supports en FDM",
+          "correct": false
+        },
+        {
+          "text": "L'impression sans support est uniquement possible avec du métal",
+          "correct": false
+        },
+        {
+          "text": "Un surplomb de 90° ne nécessite jamais de support en FDM",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle technique permet d'imprimer des ponts (bridges) sans support en FDM ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "La vitesse d'impression est réduite pour que le filament refroidisse avant de s'affaisser",
+          "correct": true
+        },
+        {
+          "text": "On utilise un laser pour solidifier le filament en l'air",
+          "correct": false
+        },
+        {
+          "text": "Un deuxième extrudeur dépose un support temporaire en eau",
+          "correct": false
+        },
+        {
+          "text": "Le plateau se retourne pour imprimer à l'envers",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Lequel de ces objets serait le plus difficile à imprimer en FDM SANS supports ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Une sphère creuse",
+          "correct": true
+        },
+        {
+          "text": "Un cube plein",
+          "correct": false
+        },
+        {
+          "text": "Une pyramide à base carrée",
+          "correct": false
+        },
+        {
+          "text": "Un cylindre vertical",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le FDM (1988) a été inventé un an après le SLS (1987).",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle technologie d'impression 3D utilise des filaments plastiques fondus déposés couche par couche ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "FDM (Fused Deposition Modeling)",
+          "correct": true
+        },
+        {
+          "text": "SLA (Stéréolithographie)",
+          "correct": false
+        },
+        {
+          "text": "SLS (Frittage laser sélectif)",
+          "correct": false
+        },
+        {
+          "text": "Inkjet 3D",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La stéréolithographie (SLA) utilise de la chaleur pour faire fondre un filament plastique.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Parmi les trois technologies (SLA, SLS, FDM), laquelle est la plus répandue chez les particuliers et dans les établissements scolaires ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "FDM",
+          "correct": true
+        },
+        {
+          "text": "SLA",
+          "correct": false
+        },
+        {
+          "text": "SLS",
+          "correct": false
+        },
+        {
+          "text": "Elles sont toutes aussi répandues",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle technologie d'impression 3D produit généralement les pièces avec la meilleure précision de détail ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "La stéréolithographie (SLA)",
+          "correct": true
+        },
+        {
+          "text": "Le dépôt de filament fondu (FDM)",
+          "correct": false
+        },
+        {
+          "text": "Le frittage laser (SLS) avec poudre grossière",
+          "correct": false
+        },
+        {
+          "text": "Toutes les technologies ont la même précision",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans quelle technologie d'impression 3D utilise-t-on une résine qui durcit sous l'effet d'une lumière UV ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "SLA (Stéréolithographie)",
+          "correct": true
+        },
+        {
+          "text": "FDM (Dépôt de filament fondu)",
+          "correct": false
+        },
+        {
+          "text": "SLS (Frittage laser sélectif)",
+          "correct": false
+        },
+        {
+          "text": "LOM (Laminage de feuilles)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans le procédé SLS, la poudre non frittée peut être récupérée et réutilisée pour une prochaine impression.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la principale raison pour laquelle une imprimante SLS est beaucoup plus coûteuse qu'une imprimante FDM grand public ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Elle nécessite un laser puissant, une enceinte chauffée et une gestion précise de la poudre",
+          "correct": true
+        },
+        {
+          "text": "Son filament est vendu très cher",
+          "correct": false
+        },
+        {
+          "text": "Elle consomme beaucoup plus d'électricité",
+          "correct": false
+        },
+        {
+          "text": "Elle est fabriquée en matériaux précieux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment s'appelle l'action d'orienter et de positionner un modèle 3D dans le slicer pour minimiser les supports nécessaires ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "L'optimisation de l'orientation d'impression",
+          "correct": true
+        },
+        {
+          "text": "Le paramétrage du G-code",
+          "correct": false
+        },
+        {
+          "text": "La calibration du plateau",
+          "correct": false
+        },
+        {
+          "text": "Le découpage en couches (slicing)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "En impression FDM, orienter intelligemment la pièce dans le slicer peut permettre de réduire voire d'éliminer les supports.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce que la hauteur de couche (layer height) dans le slicer ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "L'épaisseur de chaque couche de matière déposée lors de l'impression",
+          "correct": true
+        },
+        {
+          "text": "La hauteur totale maximale de la pièce imprimable",
+          "correct": false
+        },
+        {
+          "text": "La hauteur du plateau par rapport à la buse",
+          "correct": false
+        },
+        {
+          "text": "Le nombre total de couches de la pièce",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Une hauteur de couche plus petite (ex. 0,1 mm au lieu de 0,3 mm) a quel effet sur l'impression FDM ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "La surface est plus lisse mais l'impression prend plus de temps",
+          "correct": true
+        },
+        {
+          "text": "La pièce est plus solide et s'imprime plus vite",
+          "correct": false
+        },
+        {
+          "text": "La pièce utilise moins de filament",
+          "correct": false
+        },
+        {
+          "text": "Cela n'a aucun effet visible",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel paramètre du slicer définit le nombre de contours solides sur les parois extérieures de la pièce ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Le nombre de périmètres (walls/shells)",
+          "correct": true
+        },
+        {
+          "text": "Le taux d'infill",
+          "correct": false
+        },
+        {
+          "text": "La hauteur de couche",
+          "correct": false
+        },
+        {
+          "text": "La température de la buse",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Augmenter le nombre de périmètres (parois) d'une pièce imprimée en FDM peut améliorer sa résistance mécanique.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'un filament flexible (comme le TPU) permet de fabriquer en impression 3D ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Des pièces souples et élastiques comme des joints ou des coques de téléphone",
+          "correct": true
+        },
+        {
+          "text": "Des pièces transparentes uniquement",
+          "correct": false
+        },
+        {
+          "text": "Des pièces résistantes aux très hautes températures",
+          "correct": false
+        },
+        {
+          "text": "Des pièces conductrices d'électricité",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'un filament composite bois ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Un filament plastique mélangé à de la poudre de bois qui donne un aspect et une odeur boisés",
+          "correct": true
+        },
+        {
+          "text": "Un filament fabriqué entièrement à partir de copeaux de bois",
+          "correct": false
+        },
+        {
+          "text": "Un filament spécialement conçu pour imprimer des meubles",
+          "correct": false
+        },
+        {
+          "text": "Un filament qui pousse comme du bois après impression",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Il existe des filaments FDM conducteurs d'électricité contenant du graphène ou du carbone.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pourquoi le nylon est-il considéré comme un filament plus difficile à imprimer que le PLA ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Il absorbe l'humidité de l'air, se rétracte beaucoup et nécessite des températures élevées",
+          "correct": true
+        },
+        {
+          "text": "Il fond à une température trop basse pour les imprimantes classiques",
+          "correct": false
+        },
+        {
+          "text": "Il est toxique à toute température",
+          "correct": false
+        },
+        {
+          "text": "Il ne peut s'utiliser qu'avec une buse en or",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel diamètre de filament est le plus courant pour les imprimantes FDM grand public ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "1,75 mm",
+          "correct": true
+        },
+        {
+          "text": "0,4 mm",
+          "correct": false
+        },
+        {
+          "text": "5 mm",
+          "correct": false
+        },
+        {
+          "text": "10 mm",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "À quoi correspond le diamètre de 0,4 mm souvent mentionné pour une imprimante FDM ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Au diamètre standard de la buse d'impression",
+          "correct": true
+        },
+        {
+          "text": "Au diamètre du filament",
+          "correct": false
+        },
+        {
+          "text": "À l'épaisseur minimale d'une couche",
+          "correct": false
+        },
+        {
+          "text": "Au diamètre de la bobine de filament",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel logiciel CAO professionnel (gratuit pour les étudiants) est très utilisé dans l'industrie pour la conception 3D avancée ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Fusion 360",
+          "correct": true
+        },
+        {
+          "text": "Microsoft Word",
+          "correct": false
+        },
+        {
+          "text": "Photoshop",
+          "correct": false
+        },
+        {
+          "text": "VLC",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel logiciel slicer gratuit très populaire est développé par Ultimaker ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Cura",
+          "correct": true
+        },
+        {
+          "text": "PrusaSlicer",
+          "correct": false
+        },
+        {
+          "text": "Simplify3D",
+          "correct": false
+        },
+        {
+          "text": "Blender",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un même fichier STL peut être découpé (slicé) de différentes façons selon les paramètres choisis dans le slicer.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un fichier STL contient des informations sur la couleur de l'objet.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel autre site, en dehors de Thingiverse, permet de télécharger des fichiers STL gratuits ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Printables (anciennement PrusaPrinters)",
+          "correct": true
+        },
+        {
+          "text": "Instagram",
+          "correct": false
+        },
+        {
+          "text": "Wikipédia",
+          "correct": false
+        },
+        {
+          "text": "Google Drive",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans la chaîne numérique de l'impression 3D, dans quel ordre se succèdent ces logiciels ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Logiciel CAO → Slicer → Imprimante (G-code)",
+          "correct": true
+        },
+        {
+          "text": "Slicer → Logiciel CAO → Imprimante (G-code)",
+          "correct": false
+        },
+        {
+          "text": "Imprimante → Slicer → Logiciel CAO",
+          "correct": false
+        },
+        {
+          "text": "Logiciel CAO → Imprimante → Slicer",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle partie de l'imprimante FDM est directement responsable du déplacement dans les axes X et Y pour dessiner chaque couche ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le système de déplacement de la tête d'impression (axes X/Y)",
+          "correct": true
+        },
+        {
+          "text": "L'extrudeur",
+          "correct": false
+        },
+        {
+          "text": "Le plateau chauffant",
+          "correct": false
+        },
+        {
+          "text": "Le bloc chauffant",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans la plupart des imprimantes FDM, c'est le plateau qui descend d'une hauteur de couche après chaque couche imprimée.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pourquoi est-il important de calibrer (niveler) le plateau d'une imprimante FDM avant d'imprimer ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Pour que la distance entre la buse et le plateau soit uniforme et que la première couche adhère bien",
+          "correct": true
+        },
+        {
+          "text": "Pour que le filament fonde à la bonne température",
+          "correct": false
+        },
+        {
+          "text": "Pour éviter que le G-code contienne des erreurs",
+          "correct": false
+        },
+        {
+          "text": "Pour que l'imprimante connaisse le poids du filament",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'un 'brim' dans les paramètres d'un slicer FDM ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Un bord plat autour de la pièce pour améliorer son adhérence au plateau",
+          "correct": true
+        },
+        {
+          "text": "Un support interne pour les creux de la pièce",
+          "correct": false
+        },
+        {
+          "text": "Une couche supplémentaire sur le dessus de la pièce",
+          "correct": false
+        },
+        {
+          "text": "Un paramètre de vitesse pour la première couche",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'un 'raft' dans les paramètres d'un slicer FDM ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Un socle en grille imprimé sous la pièce pour améliorer l'adhérence et compenser un plateau imparfait",
+          "correct": true
+        },
+        {
+          "text": "Une structure de remplissage à l'intérieur de la pièce",
+          "correct": false
+        },
+        {
+          "text": "Un filament de couleur spéciale pour les bordures",
+          "correct": false
+        },
+        {
+          "text": "Un type de buse pour les grandes impressions",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le brim et le raft sont tous les deux supprimés de la pièce après l'impression.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une impression FDM, comment s'appelle le défaut qui crée des fils fins de plastique entre deux parties d'une pièce ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le stringing (filage)",
+          "correct": true
+        },
+        {
+          "text": "Le warping (gauchissement)",
+          "correct": false
+        },
+        {
+          "text": "Le layer shifting (décalage de couche)",
+          "correct": false
+        },
+        {
+          "text": "L'under-extrusion (sous-extrusion)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle propriété mécanique mesure la capacité d'une pièce à résister à une force qui tend à la casser en la pliant ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "La résistance à la flexion",
+          "correct": true
+        },
+        {
+          "text": "La conductivité thermique",
+          "correct": false
+        },
+        {
+          "text": "La densité volumique",
+          "correct": false
+        },
+        {
+          "text": "La transparence optique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment s'appelle le motif d'infill qui ressemble à des lignes diagonales croisées (en losanges) ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Grille (grid)",
+          "correct": true
+        },
+        {
+          "text": "Gyroïde",
+          "correct": false
+        },
+        {
+          "text": "Concentrique",
+          "correct": false
+        },
+        {
+          "text": "Arbre",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel taux d'infill serait le plus adapté pour imprimer une figurine décorative qui n'a pas besoin d'être solide ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "10 à 20%",
+          "correct": true
+        },
+        {
+          "text": "80 à 100%",
+          "correct": false
+        },
+        {
+          "text": "50 à 60%",
+          "correct": false
+        },
+        {
+          "text": "0% (creux total)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel taux d'infill serait le plus adapté pour une pièce mécanique soumise à des contraintes importantes ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "60 à 100%",
+          "correct": true
+        },
+        {
+          "text": "5 à 10%",
+          "correct": false
+        },
+        {
+          "text": "0% (creux total)",
+          "correct": false
+        },
+        {
+          "text": "Le taux d'infill n'a aucun impact sur la solidité",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quel est le nom du type de fichier 3D (extension) universellement utilisé pour envoyer un modèle au slicer ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "STL",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        ".stl",
+        "stl",
+        "fichier stl"
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on le pourcentage de matière déposée à l'intérieur d'une pièce imprimée en 3D (mot anglais utilisé en français) ?",
+      "time": 30,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "infill",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "remplissage",
+        "taux de remplissage",
+        "in fill"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce que le post-traitement d'une pièce imprimée en SLA ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Le nettoyage à l'alcool isopropylique et l'exposition à la lumière UV pour finaliser la polymérisation",
+          "correct": true
+        },
+        {
+          "text": "Le ponçage du filament pour lisser les couches",
+          "correct": false
+        },
+        {
+          "text": "Le recuit de la pièce dans un four classique",
+          "correct": false
+        },
+        {
+          "text": "Le retrait du plateau et le découpage au cutter",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Les pièces imprimées en SLA (résine) nécessitent une étape de finition après l'impression, contrairement aux pièces FDM en PLA qui peuvent être utilisées directement.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la principale application industrielle du frittage laser (SLS) par rapport au FDM ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Fabrication de pièces fonctionnelles complexes sans assemblage ni supports, en séries limitées",
+          "correct": true
+        },
+        {
+          "text": "Impression de maquettes colorées pour la décoration",
+          "correct": false
+        },
+        {
+          "text": "Fabrication exclusive de bijoux en or",
+          "correct": false
+        },
+        {
+          "text": "Reproduction de documents papier en relief",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans quelle décennie les trois grandes technologies d'impression 3D (SLA, SLS, FDM) ont-elles toutes été inventées ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Les années 1980",
+          "correct": true
+        },
+        {
+          "text": "Les années 1970",
+          "correct": false
+        },
+        {
+          "text": "Les années 1990",
+          "correct": false
+        },
+        {
+          "text": "Les années 2000",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la différence de date entre l'invention de la SLA et celle du FDM ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La SLA est antérieure de 4 ans au FDM",
+          "correct": true
+        },
+        {
+          "text": "Le FDM est antérieur de 4 ans à la SLA",
+          "correct": false
+        },
+        {
+          "text": "Elles ont été inventées la même année",
+          "correct": false
+        },
+        {
+          "text": "La SLA est antérieure de 10 ans au FDM",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "En impression FDM, quel est le chemin parcouru par le filament dans l'ordre correct ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Bobine → Extrudeur → Bloc chauffant → Buse → Plateau",
+          "correct": true
+        },
+        {
+          "text": "Bobine → Buse → Extrudeur → Bloc chauffant → Plateau",
+          "correct": false
+        },
+        {
+          "text": "Bloc chauffant → Extrudeur → Bobine → Buse → Plateau",
+          "correct": false
+        },
+        {
+          "text": "Bobine → Bloc chauffant → Extrudeur → Plateau → Buse",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel composant de l'imprimante FDM tire le filament depuis la bobine et le pousse vers la tête d'impression ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'extrudeur (moteur + engrenage pince-filament)",
+          "correct": true
+        },
+        {
+          "text": "Le bloc chauffant",
+          "correct": false
+        },
+        {
+          "text": "Le ventilateur de couche",
+          "correct": false
+        },
+        {
+          "text": "Le capteur de fin de filament",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans une imprimante FDM, le bloc chauffant et la buse font partie de ce qu'on appelle la 'tête d'impression' (hotend).",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pourquoi place-t-on un ventilateur de refroidissement près de la buse d'une imprimante FDM ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Pour solidifier rapidement le plastique extrudé et maintenir la forme de la couche",
+          "correct": true
+        },
+        {
+          "text": "Pour refroidir le moteur de l'extrudeur qui chauffe",
+          "correct": false
+        },
+        {
+          "text": "Pour éviter que le plateau chauffant ne surchauffe",
+          "correct": false
+        },
+        {
+          "text": "Pour sécher le filament qui absorbe l'humidité",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Que se passe-t-il si la buse d'une imprimante FDM est trop loin du plateau lors de la première couche ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Le filament ne colle pas au plateau et la pièce se détache",
+          "correct": true
+        },
+        {
+          "text": "La pièce sera plus solide car il y a plus d'espace pour le plastique",
+          "correct": false
+        },
+        {
+          "text": "L'imprimante s'arrête automatiquement pour corriger",
+          "correct": false
+        },
+        {
+          "text": "Le filament fond trop vite et déborde",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans Tinkercad, comment crée-t-on principalement des formes complexes ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "En combinant, assemblant et soustrayant des formes géométriques de base (booléens)",
+          "correct": true
+        },
+        {
+          "text": "En sculptant une masse de glaise numérique avec un pinceau",
+          "correct": false
+        },
+        {
+          "text": "En important obligatoirement un scan 3D d'un objet réel",
+          "correct": false
+        },
+        {
+          "text": "En traçant des courbes 2D qui sont automatiquement extrudées",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Tinkercad est un logiciel CAO utilisable directement dans un navigateur web, sans installation.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans Tinkercad, à quoi sert la fonction 'trou' (hole) appliquée à une forme ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "À soustraire cette forme d'un autre solide pour créer un évidement ou un trou",
+          "correct": true
+        },
+        {
+          "text": "À rendre la forme transparente dans la vue 3D",
+          "correct": false
+        },
+        {
+          "text": "À agrandir la forme automatiquement",
+          "correct": false
+        },
+        {
+          "text": "À exporter uniquement cette forme en STL",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle unité est généralement utilisée pour définir les dimensions d'un objet dans Tinkercad ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le millimètre (mm)",
+          "correct": true
+        },
+        {
+          "text": "Le centimètre (cm)",
+          "correct": false
+        },
+        {
+          "text": "Le pouce (inch)",
+          "correct": false
+        },
+        {
+          "text": "Le pixel (px)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pourquoi l'impression 3D est-elle intéressante pour fabriquer des pièces 'sur mesure' ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Car on peut modéliser exactement les dimensions souhaitées et imprimer sans moule ni outillage coûteux",
+          "correct": true
+        },
+        {
+          "text": "Car les imprimantes 3D fabriquent toujours des pièces moins chères qu'en magasin",
+          "correct": false
+        },
+        {
+          "text": "Car le plastique est plus solide que tous les autres matériaux",
+          "correct": false
+        },
+        {
+          "text": "Car on peut imprimer n'importe quel matériau avec n'importe quelle imprimante",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Parmi ces objets, lequel est le plus courant à télécharger sur Thingiverse pour s'entraîner à l'impression 3D ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un Benchy (petit bateau-test standardisé)",
+          "correct": true
+        },
+        {
+          "text": "Un avion de chasse fonctionnel",
+          "correct": false
+        },
+        {
+          "text": "Un moteur à combustion complet",
+          "correct": false
+        },
+        {
+          "text": "Une maison habitable",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le fichier STL exporté depuis Tinkercad peut être directement ouvert dans un slicer comme Cura.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est l'avantage principal de l'impression 3D FDM pour un collège ou lycée technologique ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le coût abordable des machines et des matériaux, et la simplicité de mise en œuvre",
+          "correct": true
+        },
+        {
+          "text": "La possibilité d'imprimer des pièces en métal massif",
+          "correct": false
+        },
+        {
+          "text": "La vitesse d'impression supérieure à toutes les autres technologies",
+          "correct": false
+        },
+        {
+          "text": "L'absence totale d'entretien nécessaire",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un surplomb (overhang) en impression FDM désigne :",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Une partie de la pièce qui dépasse sans être soutenue par la couche en dessous",
+          "correct": true
+        },
+        {
+          "text": "Une couche imprimée trop épaisse",
+          "correct": false
+        },
+        {
+          "text": "Un excès de filament déposé sur le périmètre extérieur",
+          "correct": false
+        },
+        {
+          "text": "La partie de la pièce posée sur le plateau",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "En dessous de quel angle par rapport à l'horizontale un surplomb en FDM peut-il généralement être imprimé SANS support ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "45°",
+          "correct": true
+        },
+        {
+          "text": "90°",
+          "correct": false
+        },
+        {
+          "text": "10°",
+          "correct": false
+        },
+        {
+          "text": "75°",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un surplomb à 90° (horizontal parfait) peut être imprimé en FDM sans support.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment appelle-t-on la capacité d'une imprimante FDM à imprimer un 'pont' entre deux points d'appui sans support intermédiaire ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le bridging (pont)",
+          "correct": true
+        },
+        {
+          "text": "Le rafting",
+          "correct": false
+        },
+        {
+          "text": "Le warping",
+          "correct": false
+        },
+        {
+          "text": "Le shimming",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle caractéristique géométrique d'une pièce permet de réduire la matière utilisée tout en conservant une bonne résistance, en s'inspirant de la nature ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "La structure en nid d'abeilles (hexagonale)",
+          "correct": true
+        },
+        {
+          "text": "La forme totalement sphérique pleine",
+          "correct": false
+        },
+        {
+          "text": "La forme en cube massif à 100% d'infill",
+          "correct": false
+        },
+        {
+          "text": "La forme en disque plat uniforme",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle forme de section transversale d'une poutre est connue pour sa très bonne résistance à la flexion tout en économisant de la matière ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "La section en I (poutre en I)",
+          "correct": true
+        },
+        {
+          "text": "La section ronde pleine",
+          "correct": false
+        },
+        {
+          "text": "La section carrée pleine",
+          "correct": false
+        },
+        {
+          "text": "La section triangulaire pleine",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Une pièce creuse avec des parois épaisses peut être plus résistante qu'une pièce pleine de même masse.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle notion mécanique explique pourquoi une feuille de papier pliée en V résiste mieux à la flexion que la même feuille à plat ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "La rigidité est augmentée par la géométrie (moment d'inertie plus élevé)",
+          "correct": true
+        },
+        {
+          "text": "Le pli rend le papier chimiquement plus résistant",
+          "correct": false
+        },
+        {
+          "text": "Le pli augmente la masse de la feuille",
+          "correct": false
+        },
+        {
+          "text": "La chaleur du pli durcit les fibres du papier",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle propriété du PLA le rend plus facile à utiliser que l'ABS en classe ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Il ne nécessite pas de plateau chauffant élevé et ne dégage pas de vapeurs toxiques",
+          "correct": true
+        },
+        {
+          "text": "Il est plus résistant à la chaleur que l'ABS",
+          "correct": false
+        },
+        {
+          "text": "Il peut être imprimé à froid sans chauffer la buse",
+          "correct": false
+        },
+        {
+          "text": "Il est disponible uniquement en blanc, ce qui simplifie les réglages",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le PLA est dit 'biodégradable' : qu'est-ce que cela signifie concrètement ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Il peut se décomposer dans des conditions industrielles de compostage",
+          "correct": true
+        },
+        {
+          "text": "Il disparaît en quelques jours dans la nature",
+          "correct": false
+        },
+        {
+          "text": "Il peut être refondu et réimprimé indéfiniment",
+          "correct": false
+        },
+        {
+          "text": "Il est comestible et non toxique pour les animaux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le PETG (polyéthylène téréphtalate glycolisé) est souvent utilisé pour imprimer des pièces alimentaires car il est considéré comme plus sûr que l'ABS.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle propriété du PETG le distingue principalement du PLA ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le PETG est plus résistant aux chocs et à l'humidité que le PLA",
+          "correct": true
+        },
+        {
+          "text": "Le PETG est biodégradable alors que le PLA ne l'est pas",
+          "correct": false
+        },
+        {
+          "text": "Le PETG s'imprime à une température plus basse que le PLA",
+          "correct": false
+        },
+        {
+          "text": "Le PETG est toujours transparent, le PLA est toujours opaque",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la température d'impression typique du PLA en FDM ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Entre 180°C et 220°C",
+          "correct": true
+        },
+        {
+          "text": "Entre 50°C et 80°C",
+          "correct": false
+        },
+        {
+          "text": "Entre 300°C et 400°C",
+          "correct": false
+        },
+        {
+          "text": "Entre 500°C et 600°C",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pourquoi faut-il conserver les bobines de filament FDM dans des sachets hermétiques avec des dessiccants ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Pour éviter que le filament absorbe l'humidité de l'air, ce qui dégraderait la qualité d'impression",
+          "correct": true
+        },
+        {
+          "text": "Pour éviter que la couleur du filament ne déteigne",
+          "correct": false
+        },
+        {
+          "text": "Pour que le filament reste souple et ne casse pas",
+          "correct": false
+        },
+        {
+          "text": "Pour que le filament ne fond pas à température ambiante",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "En impression 3D FDM, peut-on imprimer un objet en plusieurs couleurs sur une imprimante à une seule buse ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Oui, en changeant manuellement le filament à une hauteur de couche précise",
+          "correct": true
+        },
+        {
+          "text": "Non, il faut obligatoirement une imprimante multi-buses",
+          "correct": false
+        },
+        {
+          "text": "Oui, en mélangeant les couleurs directement dans la buse",
+          "correct": false
+        },
+        {
+          "text": "Non, la couleur est toujours ajoutée après l'impression par peinture",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la fonction principale d'un logiciel de CAO (Conception Assistée par Ordinateur) ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Créer et modifier des modèles numériques 2D ou 3D d'objets",
+          "correct": true
+        },
+        {
+          "text": "Contrôler l'imprimante 3D à distance",
+          "correct": false
+        },
+        {
+          "text": "Analyser la résistance d'une pièce après impression",
+          "correct": false
+        },
+        {
+          "text": "Convertir un G-code en fichier STL",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un slicer peut simuler visuellement à l'écran le trajet de la buse couche par couche avant de lancer l'impression.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Que calcule automatiquement le slicer en plus du G-code ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le temps d'impression estimé et la quantité de filament nécessaire",
+          "correct": true
+        },
+        {
+          "text": "Le prix de revente de la pièce finie",
+          "correct": false
+        },
+        {
+          "text": "La résistance mécanique de la pièce",
+          "correct": false
+        },
+        {
+          "text": "La couleur optimale pour l'objet",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle information le G-code ne contient-il PAS ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "La couleur du filament à utiliser",
+          "correct": true
+        },
+        {
+          "text": "La vitesse de déplacement de la buse",
+          "correct": false
+        },
+        {
+          "text": "La température de la buse",
+          "correct": false
+        },
+        {
+          "text": "Les coordonnées X, Y, Z des déplacements",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le G-code est un format de fichier spécifique à l'impression 3D et n'est pas utilisé dans d'autres machines à commande numérique.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment s'appelle la technique qui consiste à scanner un objet réel pour créer un fichier 3D numérique ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La numérisation 3D (ou scan 3D)",
+          "correct": true
+        },
+        {
+          "text": "La photogrammétrie inversée",
+          "correct": false
+        },
+        {
+          "text": "Le reverse slicing",
+          "correct": false
+        },
+        {
+          "text": "La rétro-conception assistée",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un scanner 3D peut être utilisé pour reproduire une pièce cassée dont on n'a pas le fichier STL d'origine.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est une application concrète de l'impression 3D dans le domaine médical ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "La fabrication de prothèses personnalisées et de modèles anatomiques pour la formation",
+          "correct": true
+        },
+        {
+          "text": "La fabrication de médicaments en comprimés",
+          "correct": false
+        },
+        {
+          "text": "La stérilisation automatique du matériel chirurgical",
+          "correct": false
+        },
+        {
+          "text": "Le diagnostic des maladies par analyse du filament",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel secteur industriel utilise l'impression 3D pour fabriquer des maquettes et tester des formes aérodynamiques rapidement ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "L'aéronautique et l'automobile",
+          "correct": true
+        },
+        {
+          "text": "L'agriculture et l'élevage",
+          "correct": false
+        },
+        {
+          "text": "La pêche et l'aquaculture",
+          "correct": false
+        },
+        {
+          "text": "Le commerce de détail alimentaire",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce que le 'prototypage rapide' ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "La fabrication rapide d'un prototype physique pour tester un concept avant la production en série",
+          "correct": true
+        },
+        {
+          "text": "L'impression d'un objet à vitesse maximale quelle qu'en soit la qualité",
+          "correct": false
+        },
+        {
+          "text": "La création automatique d'un fichier STL sans logiciel CAO",
+          "correct": false
+        },
+        {
+          "text": "Le remplacement d'un filament pendant une impression sans l'arrêter",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Remets dans le bon ordre les étapes de la chaîne numérique complète d'un objet imprimé en 3D :",
+      "time": 45,
+      "answers": [
+        {
+          "text": "Modélisation 3D avec un logiciel CAO (ex. Tinkercad)",
+          "correct": true
+        },
+        {
+          "text": "Export du modèle en fichier STL",
+          "correct": true
+        },
+        {
+          "text": "Paramétrage et découpe dans le slicer (génération du G-code)",
+          "correct": true
+        },
+        {
+          "text": "Impression physique par l'imprimante FDM",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on la technologie d'impression 3D par dépôt de filament fondu, dont les initiales sont F.D.M. ? (répondre en toutes lettres en français)",
+      "time": 35,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "Dépôt de filament fondu",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "fused deposition modeling",
+        "depot de filament fondu",
+        "dépôt de filament fondu",
+        "modelage par dépôt en fusion"
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quel est le nom de la matière première (sous forme de fil enroulé) utilisée par une imprimante FDM ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "filament",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "le filament",
+        "un filament",
+        "fil de filament"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle technologie d'impression 3D est la plus récente parmi les trois principales : SLA, SLS et FDM ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le dépôt de filament fondu (FDM)",
+          "correct": true
+        },
+        {
+          "text": "La stéréolithographie (SLA)",
+          "correct": false
+        },
+        {
+          "text": "Le frittage laser sélectif (SLS)",
+          "correct": false
+        },
+        {
+          "text": "Elles ont toutes été inventées la même année",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle technologie d'impression 3D est la plus ancienne : SLA, SLS ou FDM ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La stéréolithographie (SLA)",
+          "correct": true
+        },
+        {
+          "text": "Le frittage laser sélectif (SLS)",
+          "correct": false
+        },
+        {
+          "text": "Le dépôt de filament fondu (FDM)",
+          "correct": false
+        },
+        {
+          "text": "Toutes ont été inventées en même temps",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le frittage laser (SLS) a été inventé avant le dépôt de filament fondu (FDM).",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Parmi SLA, SLS et FDM, quelle est la technologie inventée entre les deux autres chronologiquement ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le frittage laser sélectif (SLS)",
+          "correct": true
+        },
+        {
+          "text": "La stéréolithographie (SLA)",
+          "correct": false
+        },
+        {
+          "text": "Le dépôt de filament fondu (FDM)",
+          "correct": false
+        },
+        {
+          "text": "Elles ont été inventées dans le même ordre alphabétique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce que la fabrication additive a comme avantage principal par rapport à l'usinage traditionnel (soustractif) ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Elle génère peu de déchets car la matière est ajoutée seulement là où c'est nécessaire",
+          "correct": true
+        },
+        {
+          "text": "Elle est toujours plus rapide que l'usinage traditionnel",
+          "correct": false
+        },
+        {
+          "text": "Elle produit des pièces systématiquement plus solides",
+          "correct": false
+        },
+        {
+          "text": "Elle ne nécessite aucun fichier numérique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est l'intérêt de concevoir une pièce avec des nervures (ribs) plutôt qu'avec des parois épaisses ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Les nervures apportent de la rigidité en utilisant moins de matière",
+          "correct": true
+        },
+        {
+          "text": "Les nervures rendent la pièce plus lourde et donc plus stable",
+          "correct": false
+        },
+        {
+          "text": "Les nervures permettent de chauffer la pièce plus rapidement",
+          "correct": false
+        },
+        {
+          "text": "Les nervures rendent la pièce plus transparente",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Les supports d'impression en FDM consomment du filament supplémentaire et allongent la durée d'impression.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pourquoi est-il préférable de minimiser les supports lors de la conception d'une pièce destinée à l'impression FDM ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Pour réduire la consommation de filament, le temps d'impression et améliorer la surface de contact",
+          "correct": true
+        },
+        {
+          "text": "Parce que les supports rendent la pièce finale trop lourde",
+          "correct": false
+        },
+        {
+          "text": "Parce que le slicer ne peut pas générer de supports automatiquement",
+          "correct": false
+        },
+        {
+          "text": "Pour que la buse ne se bouche pas pendant l'impression",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la principale différence entre un logiciel CAO et un logiciel slicer ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le CAO sert à créer le modèle 3D ; le slicer le prépare pour l'impression en générant le G-code",
+          "correct": true
+        },
+        {
+          "text": "Le slicer crée les modèles 3D et le CAO les découpe en couches",
+          "correct": false
+        },
+        {
+          "text": "Le CAO et le slicer font exactement la même chose",
+          "correct": false
+        },
+        {
+          "text": "Le slicer fonctionne sans ordinateur, le CAO nécessite internet",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le plateau chauffant d'une imprimante FDM est utile uniquement pour le PLA et inutile pour les autres matériaux.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel matériau d'impression FDM est le plus adapté pour fabriquer une pièce qui devra résister à de hautes températures (ex. : près d'un moteur) ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "L'ABS ou des filaments techniques hautes températures (ASA, PC...)",
+          "correct": true
+        },
+        {
+          "text": "Le PLA, qui est le plus résistant à la chaleur",
+          "correct": false
+        },
+        {
+          "text": "Le TPU souple, qui fond moins vite",
+          "correct": false
+        },
+        {
+          "text": "Tous les filaments FDM résistent également à la chaleur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la caractéristique principale du TPU utilisé en impression FDM ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "C'est un filament souple et élastique",
+          "correct": true
+        },
+        {
+          "text": "C'est le filament le plus rigide disponible",
+          "correct": false
+        },
+        {
+          "text": "C'est un filament qui conduit l'électricité",
+          "correct": false
+        },
+        {
+          "text": "C'est un filament transparent à très haute température",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans quel domaine l'impression 3D FDM avec des filaments chargés en fibres de carbone est-elle particulièrement utilisée ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "La fabrication de pièces légères et très résistantes pour l'aéronautique ou le sport",
+          "correct": true
+        },
+        {
+          "text": "La fabrication de jouets colorés pour enfants",
+          "correct": false
+        },
+        {
+          "text": "L'impression de circuits électroniques complets",
+          "correct": false
+        },
+        {
+          "text": "La fabrication de pièces comestibles pour la restauration",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "On peut modéliser une pièce dans Tinkercad, l'exporter en STL, la découper dans Cura et l'envoyer à une imprimante FDM : toute la chaîne numérique peut être réalisée avec des logiciels gratuits.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la bonne définition d'un 'prototype' dans le contexte de la fabrication industrielle ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Un premier exemplaire physique fabriqué pour tester et valider un concept avant la production en série",
+          "correct": true
+        },
+        {
+          "text": "La version finale d'un produit destinée à la vente",
+          "correct": false
+        },
+        {
+          "text": "Un fichier numérique 3D non encore imprimé",
+          "correct": false
+        },
+        {
+          "text": "Une copie d'un objet existant réalisée par moulage",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

@@ -404,10 +404,28 @@
         };
     </script>
     
-    <script src="js/utils.js"></script>
-    <script src="js/sessionManager.js"></script>
-    <script src="js/game.js"></script>
+    <script src="js/config.js?v=20260618e"></script>
+    <!-- SYNCHRO v2 : horloge serveur synchronisée (après config.js, avant sessionManager.js) -->
+    <script src="js/clockSync.js?v=20260618e"></script>
+    <script src="js/utils.js?v=20260618e"></script>
+    <script src="js/sessionManager.js?v=20260618e"></script>
+    <script src="js/game.js?v=20260618e"></script>
     <script>
+        // Sanity check : forceSyncGameState doit être exposé par sessionManager.js.
+        // C'est ce qui permet à control.js (depuis l'opener) de pousser une resync
+        // immédiate lors d'un clic prof, sans attendre le prochain poll.
+        if (typeof window.forceSyncGameState !== 'function') {
+            console.warn('⚠️ TEACHER-PLAY: window.forceSyncGameState non exposé — la latence ne sera pas optimale.');
+        }
+
+        // Fallback : sur certains navigateurs (Safari iOS, retour bfcache),
+        // visibilitychange ne se déclenche pas — pageshow oui.
+        window.addEventListener('pageshow', function() {
+            if (typeof window.forceSyncGameState === 'function') {
+                try { window.forceSyncGameState(); } catch (e) {}
+            }
+        });
+
         let teacherPlayCode = null;
         let teacherTotalQuestions = 0;
         let teacherPollingInterval = null;

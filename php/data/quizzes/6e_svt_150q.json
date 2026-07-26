@@ -1,0 +1,1583 @@
+{
+  "name": "6e_svt_150q",
+  "version": "1.0",
+  "createdAt": "2026-05-06T00:00:00.000Z",
+  "questionsCount": 150,
+  "questions": [
+    {
+      "type": "multiple",
+      "question": "Combien de planètes y a-t-il dans le Système solaire ?",
+      "time": 25,
+      "answers": [
+        {"text": "7", "correct": false},
+        {"text": "8", "correct": true},
+        {"text": "9", "correct": false},
+        {"text": "12", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel astre se trouve au centre du Système solaire ?",
+      "time": 20,
+      "answers": [
+        {"text": "La Terre", "correct": false},
+        {"text": "La Lune", "correct": false},
+        {"text": "Le Soleil", "correct": true},
+        {"text": "Jupiter", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La Terre est la troisième planète en partant du Soleil.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la seule étoile de notre Système solaire ?",
+      "time": 20,
+      "answers": [
+        {"text": "La Lune", "correct": false},
+        {"text": "Vénus", "correct": false},
+        {"text": "Le Soleil", "correct": true},
+        {"text": "Jupiter", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Combien de temps met la Terre pour faire le tour du Soleil (révolution) ?",
+      "time": 25,
+      "answers": [
+        {"text": "24 heures", "correct": false},
+        {"text": "28 jours", "correct": false},
+        {"text": "365 jours environ (1 an)", "correct": true},
+        {"text": "10 ans", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La Lune est une planète du Système solaire.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": false},
+        {"text": "Faux", "correct": true}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces planètes du Système solaire de la plus proche à la plus éloignée du Soleil :",
+      "time": 40,
+      "answers": [
+        {"text": "Mercure", "correct": true},
+        {"text": "Vénus", "correct": true},
+        {"text": "Terre", "correct": true},
+        {"text": "Mars", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Combien de temps met la Terre pour faire une rotation complète sur elle-même (une journée) ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "24 heures", "correct": true}
+      ],
+      "acceptedAnswers": ["24 heures", "un jour", "1 jour", "24h", "une journée", "24"]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'un satellite naturel ?",
+      "time": 30,
+      "answers": [
+        {"text": "Une fusée artificielle", "correct": false},
+        {"text": "Un astre qui tourne autour d'une planète", "correct": true},
+        {"text": "Une étoile proche", "correct": false},
+        {"text": "Un morceau de météorite", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans quelle galaxie se trouve notre Système solaire ?",
+      "time": 25,
+      "answers": [
+        {"text": "Andromède", "correct": false},
+        {"text": "La Voie Lactée", "correct": true},
+        {"text": "Le Grand Nuage de Magellan", "correct": false},
+        {"text": "La Nébuleuse d'Orion", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelles sont les couches internes de la Terre, de la surface vers le centre ?",
+      "time": 30,
+      "answers": [
+        {"text": "Manteau, croûte, noyau", "correct": false},
+        {"text": "Noyau, manteau, croûte", "correct": false},
+        {"text": "Croûte, manteau, noyau", "correct": true},
+        {"text": "Croûte, noyau, manteau", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qui se trouve au centre de la Terre ?",
+      "time": 25,
+      "answers": [
+        {"text": "La croûte terrestre", "correct": false},
+        {"text": "Le manteau", "correct": false},
+        {"text": "Le noyau", "correct": true},
+        {"text": "De l'eau chaude", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La Lune produit sa propre lumière.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": false},
+        {"text": "Faux", "correct": true}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Combien de fois le Soleil est-il plus grand que la Terre (diamètre) ?",
+      "time": 25,
+      "answers": [
+        {"text": "10 fois", "correct": false},
+        {"text": "50 fois", "correct": false},
+        {"text": "109 fois", "correct": true},
+        {"text": "1 000 fois", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Combien de temps met la Lune pour faire le tour de la Terre (révolution lunaire) ?",
+      "time": 25,
+      "answers": [
+        {"text": "24 heures", "correct": false},
+        {"text": "Environ 28 jours (1 mois lunaire)", "correct": true},
+        {"text": "6 mois", "correct": false},
+        {"text": "1 an", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La Terre est une planète rocheuse (tellurique).",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne les couches internes de la Terre de la surface vers le centre :",
+      "time": 40,
+      "answers": [
+        {"text": "Croûte terrestre (la plus externe)", "correct": true},
+        {"text": "Manteau supérieur", "correct": true},
+        {"text": "Manteau inférieur", "correct": true},
+        {"text": "Noyau (le plus profond)", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on un astre naturel qui tourne autour d'une planète (comme la Lune autour de la Terre) ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Satellite naturel", "correct": true}
+      ],
+      "acceptedAnswers": ["satellite", "satellite naturel", "lune", "astre satellite"]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la plus grande planète du Système solaire ?",
+      "time": 25,
+      "answers": [
+        {"text": "Saturne", "correct": false},
+        {"text": "Neptune", "correct": false},
+        {"text": "Jupiter", "correct": true},
+        {"text": "Uranus", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'une comète ?",
+      "time": 30,
+      "answers": [
+        {"text": "Une planète sans atmosphère", "correct": false},
+        {"text": "Un satellite artificiel", "correct": false},
+        {"text": "Un astre composé de glace et de poussière tournant autour du Soleil", "correct": true},
+        {"text": "Une petite étoile", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une chaîne alimentaire, que sont les végétaux (herbe, arbres…) ?",
+      "time": 25,
+      "answers": [
+        {"text": "Des consommateurs", "correct": false},
+        {"text": "Des décomposeurs", "correct": false},
+        {"text": "Des producteurs", "correct": true},
+        {"text": "Des parasites", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment appelle-t-on les animaux qui se nourrissent uniquement de végétaux ?",
+      "time": 20,
+      "answers": [
+        {"text": "Carnivores", "correct": false},
+        {"text": "Omnivores", "correct": false},
+        {"text": "Herbivores", "correct": true},
+        {"text": "Décomposeurs", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans un schéma de chaîne alimentaire, la flèche indique le sens du transfert de matière et d'énergie.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'un décomposeur ?",
+      "time": 25,
+      "answers": [
+        {"text": "Un animal qui mange d'autres animaux", "correct": false},
+        {"text": "Un être vivant qui décompose la matière organique morte", "correct": true},
+        {"text": "Un végétal qui produit de l'énergie", "correct": false},
+        {"text": "Un microbe pathogène", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne cette chaîne alimentaire du producteur au consommateur le plus haut :",
+      "time": 40,
+      "answers": [
+        {"text": "Herbe (producteur)", "correct": true},
+        {"text": "Lapin (herbivore)", "correct": true},
+        {"text": "Renard (carnivore)", "correct": true},
+        {"text": "Aigle (super-prédateur)", "correct": true}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Les champignons sont des végétaux car ils poussent dans la terre.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": false},
+        {"text": "Faux", "correct": true}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne les niveaux d'une chaîne alimentaire de la base vers le sommet :",
+      "time": 40,
+      "answers": [
+        {"text": "Végétaux (producteurs)", "correct": true},
+        {"text": "Herbivores (consommateurs primaires)", "correct": true},
+        {"text": "Carnivores (consommateurs secondaires)", "correct": true},
+        {"text": "Super-prédateurs (consommateurs tertiaires)", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on les animaux qui mangent à la fois des végétaux et des animaux ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Omnivores", "correct": true}
+      ],
+      "acceptedAnswers": ["omnivores", "omnivore"]
+    },
+    {
+      "type": "multiple",
+      "question": "Que fabriquent les végétaux grâce à la photosynthèse ?",
+      "time": 30,
+      "answers": [
+        {"text": "De l'eau", "correct": false},
+        {"text": "De la matière organique (sucres) à partir de CO₂ et lumière", "correct": true},
+        {"text": "De l'azote", "correct": false},
+        {"text": "Du calcium", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Lequel n'est pas un décomposeur ?",
+      "time": 25,
+      "answers": [
+        {"text": "Les bactéries", "correct": false},
+        {"text": "Les champignons", "correct": false},
+        {"text": "Le renard", "correct": true},
+        {"text": "Les vers de terre", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'un écosystème ?",
+      "time": 30,
+      "answers": [
+        {"text": "Un groupe d'animaux de la même espèce", "correct": false},
+        {"text": "L'ensemble d'un milieu de vie et des êtres vivants qui y habitent", "correct": true},
+        {"text": "Une zone géographique protégée", "correct": false},
+        {"text": "Un type de végétation uniquement", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce que le biotope dans un écosystème ?",
+      "time": 25,
+      "answers": [
+        {"text": "L'ensemble des êtres vivants", "correct": false},
+        {"text": "Le milieu physique (sol, eau, air, température, lumière)", "correct": true},
+        {"text": "La flore uniquement", "correct": false},
+        {"text": "Les chaînes alimentaires", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un lac est un écosystème.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment appelle-t-on la relation entre un prédateur et sa proie ?",
+      "time": 25,
+      "answers": [
+        {"text": "La symbiose", "correct": false},
+        {"text": "La prédation", "correct": true},
+        {"text": "Le parasitisme", "correct": false},
+        {"text": "La compétition", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel gaz les végétaux rejettent-ils lors de la photosynthèse ?",
+      "time": 25,
+      "answers": [
+        {"text": "Le dioxyde de carbone (CO₂)", "correct": false},
+        {"text": "L'azote (N₂)", "correct": false},
+        {"text": "Le dioxygène (O₂)", "correct": true},
+        {"text": "La vapeur d'eau uniquement", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un réseau trophique est une seule et unique chaîne alimentaire.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": false},
+        {"text": "Faux", "correct": true}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne les étapes du transfert d'énergie dans un écosystème :",
+      "time": 40,
+      "answers": [
+        {"text": "Énergie lumineuse du Soleil", "correct": true},
+        {"text": "Photosynthèse des végétaux (producteurs)", "correct": true},
+        {"text": "Consommation par les herbivores", "correct": true},
+        {"text": "Consommation par les carnivores", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quel gaz les végétaux rejettent-ils lors de la photosynthèse ? (symbole chimique accepté)",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Dioxygène", "correct": true}
+      ],
+      "acceptedAnswers": ["dioxygène", "dioxygene", "oxygène", "oxygene", "O2", "O₂"]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un écosystème forestier, qui sont les producteurs ?",
+      "time": 25,
+      "answers": [
+        {"text": "Les renards et les lapins", "correct": false},
+        {"text": "Les bactéries du sol", "correct": false},
+        {"text": "Les arbres et les plantes", "correct": true},
+        {"text": "Les champignons", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La photosynthèse se déroule grâce à quel pigment vert dans les feuilles ?",
+      "time": 30,
+      "answers": [
+        {"text": "La kératine", "correct": false},
+        {"text": "La chlorophylle", "correct": true},
+        {"text": "La mélanine", "correct": false},
+        {"text": "L'hémoglobine", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment appelle-t-on la partie de la fleur qui contient les graines après fécondation ?",
+      "time": 25,
+      "answers": [
+        {"text": "Le pétale", "correct": false},
+        {"text": "Le sépale", "correct": false},
+        {"text": "Le fruit", "correct": true},
+        {"text": "Le pistil", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce que la pollinisation ?",
+      "time": 30,
+      "answers": [
+        {"text": "L'union de deux gamètes", "correct": false},
+        {"text": "Le transport du pollen vers le pistil d'une fleur", "correct": true},
+        {"text": "La germination d'une graine", "correct": false},
+        {"text": "La croissance d'une plante", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La graine contient un futur embryon de plante.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment appelle-t-on la reproduction sans fécondation (sans gamètes) ?",
+      "time": 25,
+      "answers": [
+        {"text": "Reproduction sexuée", "correct": false},
+        {"text": "Reproduction asexuée (ou végétative)", "correct": true},
+        {"text": "Fécondation externe", "correct": false},
+        {"text": "Pollinisation", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La bouture est un exemple de reproduction…",
+      "time": 25,
+      "answers": [
+        {"text": "Sexuée", "correct": false},
+        {"text": "Asexuée (végétative)", "correct": true},
+        {"text": "Par pollinisation", "correct": false},
+        {"text": "Par fécondation", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Tous les végétaux possèdent des fleurs pour se reproduire.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": false},
+        {"text": "Faux", "correct": true}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne les étapes de la reproduction sexuée d'une plante à fleurs :",
+      "time": 45,
+      "answers": [
+        {"text": "Pollinisation (transport du pollen vers le pistil)", "correct": true},
+        {"text": "Fécondation (union des gamètes mâle et femelle)", "correct": true},
+        {"text": "Formation du fruit et des graines", "correct": true},
+        {"text": "Dispersion et germination des graines", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on la partie mâle de la fleur qui produit le pollen ?",
+      "time": 30,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Étamine", "correct": true}
+      ],
+      "acceptedAnswers": ["étamine", "etamine", "les étamines", "l'étamine"]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce que la germination d'une graine ?",
+      "time": 25,
+      "answers": [
+        {"text": "La mort de la graine", "correct": false},
+        {"text": "Le processus par lequel une graine se développe en plantule", "correct": true},
+        {"text": "La formation du fruit", "correct": false},
+        {"text": "La pollinisation", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Par quels agents les graines peuvent-elles être dispersées ?",
+      "time": 30,
+      "answers": [
+        {"text": "Uniquement par le vent", "correct": false},
+        {"text": "Uniquement par les animaux", "correct": false},
+        {"text": "Seulement par l'eau", "correct": false},
+        {"text": "Le vent, les animaux, l'eau, et l'explosion du fruit", "correct": true}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment appelle-t-on les animaux qui allaitent leurs petits ?",
+      "time": 20,
+      "answers": [
+        {"text": "Les reptiles", "correct": false},
+        {"text": "Les oiseaux", "correct": false},
+        {"text": "Les mammifères", "correct": true},
+        {"text": "Les amphibiens", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le point commun de tous les vertébrés ?",
+      "time": 20,
+      "answers": [
+        {"text": "Ils ont tous des plumes", "correct": false},
+        {"text": "Ils ont tous une colonne vertébrale", "correct": true},
+        {"text": "Ils pondent tous des œufs", "correct": false},
+        {"text": "Ils vivent tous sur la terre ferme", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Les oiseaux sont des vertébrés.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Parmi ces animaux, lequel est un mammifère ?",
+      "time": 25,
+      "answers": [
+        {"text": "La tortue", "correct": false},
+        {"text": "Le dauphin", "correct": true},
+        {"text": "Le crocodile", "correct": false},
+        {"text": "La grenouille", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces groupes de vertébrés du plus ancien au plus récent apparu sur Terre (évolution) :",
+      "time": 45,
+      "answers": [
+        {"text": "Poissons (premiers vertébrés)", "correct": true},
+        {"text": "Amphibiens (premiers à marcher)", "correct": true},
+        {"text": "Reptiles (peau écailleuse, vie terrestre)", "correct": true},
+        {"text": "Mammifères (poils et allaitement)", "correct": true}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Les reptiles sont des animaux à sang chaud (leur température corporelle est stable).",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": false},
+        {"text": "Faux", "correct": true}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces animaux selon leur groupe de classification (de l'eau vers la terre) :",
+      "time": 40,
+      "answers": [
+        {"text": "Poisson (vit dans l'eau uniquement)", "correct": true},
+        {"text": "Grenouille (amphibien, deux milieux)", "correct": true},
+        {"text": "Lézard (reptile, vie terrestre)", "correct": true},
+        {"text": "Oiseau (ailes et plumes, vole et marche)", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on le groupe d'animaux sans colonne vertébrale ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Invertébrés", "correct": true}
+      ],
+      "acceptedAnswers": ["invertébrés", "invertebres", "invertébré", "les invertébrés"]
+    },
+    {
+      "type": "multiple",
+      "question": "Lequel est un invertébré ?",
+      "time": 25,
+      "answers": [
+        {"text": "Le lézard", "correct": false},
+        {"text": "La grenouille", "correct": false},
+        {"text": "L'araignée", "correct": true},
+        {"text": "Le poisson rouge", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La baleine est un mammifère car elle…",
+      "time": 25,
+      "answers": [
+        {"text": "Vit dans l'eau", "correct": false},
+        {"text": "A des nageoires", "correct": false},
+        {"text": "Allaite ses petits, respire par poumons et est à sang chaud", "correct": true},
+        {"text": "Est très grande", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel critère principal distingue un mammifère d'un oiseau ?",
+      "time": 25,
+      "answers": [
+        {"text": "La taille du corps", "correct": false},
+        {"text": "Les mammifères ont des poils et allaitent ; les oiseaux ont des plumes", "correct": true},
+        {"text": "Les mammifères pondent des œufs", "correct": false},
+        {"text": "Les oiseaux ont une colonne vertébrale", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel groupe d'animaux pond des œufs dans l'eau et a une peau nue sans écailles ?",
+      "time": 25,
+      "answers": [
+        {"text": "Les reptiles", "correct": false},
+        {"text": "Les poissons", "correct": false},
+        {"text": "Les amphibiens (grenouilles, salamandres)", "correct": true},
+        {"text": "Les mammifères", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le serpent est un reptile.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment la classification actuelle des êtres vivants est-elle organisée ?",
+      "time": 30,
+      "answers": [
+        {"text": "Par ordre alphabétique", "correct": false},
+        {"text": "Par taille du plus petit au plus grand", "correct": false},
+        {"text": "En groupes emboîtés partageant des caractères communs", "correct": true},
+        {"text": "Par couleur et forme uniquement", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce que la cellule ?",
+      "time": 25,
+      "answers": [
+        {"text": "Un organe du corps", "correct": false},
+        {"text": "L'unité de base de tous les êtres vivants", "correct": true},
+        {"text": "Un type de bactérie", "correct": false},
+        {"text": "Une molécule chimique", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Les champignons fabriquent leur nourriture par photosynthèse comme les plantes.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": false},
+        {"text": "Faux", "correct": true}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces êtres vivants du moins de cellules au plus de cellules :",
+      "time": 40,
+      "answers": [
+        {"text": "Bactérie (1 seule cellule)", "correct": true},
+        {"text": "Levure (1 seule cellule, plus grosse)", "correct": true},
+        {"text": "Champignon de Paris (millions de cellules)", "correct": true},
+        {"text": "Être humain (environ 37 000 milliards de cellules)", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on les êtres vivants composés d'une seule cellule ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Unicellulaires", "correct": true}
+      ],
+      "acceptedAnswers": ["unicellulaires", "unicellulaire", "être unicellulaire", "organisme unicellulaire"]
+    },
+    {
+      "type": "multiple",
+      "question": "Lequel de ces animaux est un amphibien ?",
+      "time": 25,
+      "answers": [
+        {"text": "Le lézard", "correct": false},
+        {"text": "La grenouille", "correct": true},
+        {"text": "L'alligator", "correct": false},
+        {"text": "Le triton marin (poisson)", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Les baleines, les dauphins et les chauves-souris sont tous…",
+      "time": 25,
+      "answers": [
+        {"text": "Des poissons", "correct": false},
+        {"text": "Des reptiles", "correct": false},
+        {"text": "Des mammifères", "correct": true},
+        {"text": "Des amphibiens", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce que la biodiversité ?",
+      "time": 25,
+      "answers": [
+        {"text": "Le nombre de plantes dans une forêt", "correct": false},
+        {"text": "La diversité de toutes les espèces vivantes sur Terre", "correct": true},
+        {"text": "La taille des écosystèmes", "correct": false},
+        {"text": "Le nombre d'animaux en voie de disparition", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel écosystème est généralement le plus pauvre en espèces vivantes ?",
+      "time": 25,
+      "answers": [
+        {"text": "La forêt tropicale", "correct": false},
+        {"text": "Le fond océanique", "correct": false},
+        {"text": "Le désert de sable", "correct": true},
+        {"text": "La prairie", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La forêt tropicale humide est l'écosystème le plus riche en biodiversité sur Terre.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le rôle des vers de terre dans un écosystème ?",
+      "time": 25,
+      "answers": [
+        {"text": "Ils pollinisent les fleurs", "correct": false},
+        {"text": "Ils chassent les insectes nuisibles", "correct": false},
+        {"text": "Ils aèrent et fertilisent le sol en décomposant la matière organique", "correct": true},
+        {"text": "Ils produisent de l'oxygène", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La disparition d'un maillon d'une chaîne alimentaire peut avoir des effets sur toute la chaîne.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne les milieux de vie de la plus faible à la plus forte biodiversité :",
+      "time": 45,
+      "answers": [
+        {"text": "Désert de sable (très peu d'espèces)", "correct": true},
+        {"text": "Toundra arctique", "correct": true},
+        {"text": "Forêt tempérée", "correct": true},
+        {"text": "Forêt tropicale humide (très riche)", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on le milieu naturel où vit une espèce (son environnement spécifique) ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Habitat", "correct": true}
+      ],
+      "acceptedAnswers": ["habitat", "milieu de vie", "biotope", "milieu naturel"]
+    },
+    {
+      "type": "multiple",
+      "question": "Quels êtres vivants sont à la base de presque toutes les chaînes alimentaires ?",
+      "time": 25,
+      "answers": [
+        {"text": "Les champignons", "correct": false},
+        {"text": "Les bactéries", "correct": false},
+        {"text": "Les végétaux (producteurs)", "correct": true},
+        {"text": "Les herbivores", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un prédateur est un animal qui…",
+      "time": 20,
+      "answers": [
+        {"text": "Se nourrit uniquement de végétaux", "correct": false},
+        {"text": "Chasse et mange d'autres animaux (ses proies)", "correct": true},
+        {"text": "Vit en parasitant d'autres êtres", "correct": false},
+        {"text": "Décompose la matière morte", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Combien faut-il de parents pour la reproduction asexuée ?",
+      "time": 20,
+      "answers": [
+        {"text": "0 parent", "correct": false},
+        {"text": "1 seul parent", "correct": true},
+        {"text": "2 parents", "correct": false},
+        {"text": "3 parents", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quels sont les deux gamètes qui s'unissent lors de la fécondation chez les animaux ?",
+      "time": 25,
+      "answers": [
+        {"text": "Le pollen et la graine", "correct": false},
+        {"text": "L'ovule (gamète femelle) et le spermatozoïde (gamète mâle)", "correct": true},
+        {"text": "L'embryon et la larve", "correct": false},
+        {"text": "La cellule et le noyau", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La reproduction sexuée nécessite l'union de deux gamètes (mâle et femelle).",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment se reproduit une plante de fraisier en plus de la reproduction sexuée (graines) ?",
+      "time": 30,
+      "answers": [
+        {"text": "Par pollinisation uniquement", "correct": false},
+        {"text": "Par des stolons (tiges qui s'enracinent)", "correct": true},
+        {"text": "Par des spores", "correct": false},
+        {"text": "Par bourgeonnement", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne les étapes de la reproduction chez un mammifère, de la fécondation à la naissance :",
+      "time": 45,
+      "answers": [
+        {"text": "Fécondation (union du spermatozoïde et de l'ovule)", "correct": true},
+        {"text": "Formation d'une cellule-œuf (zygote)", "correct": true},
+        {"text": "Développement de l'embryon dans l'utérus", "correct": true},
+        {"text": "Naissance du petit", "correct": true}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La reproduction par bouture donne des individus génétiquement identiques à la plante mère.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne les étapes de la germination d'une graine :",
+      "time": 40,
+      "answers": [
+        {"text": "La graine absorbe de l'eau", "correct": true},
+        {"text": "La graine gonfle et sa coque éclate", "correct": true},
+        {"text": "La radicule (future racine) sort en premier", "correct": true},
+        {"text": "La tigelle (future tige) pousse vers la lumière", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on l'union d'un gamète mâle et d'un gamète femelle ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Fécondation", "correct": true}
+      ],
+      "acceptedAnswers": ["fécondation", "fecondation", "la fécondation"]
+    },
+    {
+      "type": "multiple",
+      "question": "Les abeilles participent à la pollinisation en transportant le…",
+      "time": 20,
+      "answers": [
+        {"text": "Nectar", "correct": false},
+        {"text": "Pollen", "correct": true},
+        {"text": "Pistil", "correct": false},
+        {"text": "Fruit", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un œuf pondu par un oiseau contient un embryon qui se développe…",
+      "time": 25,
+      "answers": [
+        {"text": "À l'intérieur du corps de la mère", "correct": false},
+        {"text": "À l'extérieur du corps de la mère, dans la coquille", "correct": true},
+        {"text": "Dans l'eau uniquement", "correct": false},
+        {"text": "Dans le sol", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Combien de temps met la Terre pour faire une rotation complète sur elle-même ?",
+      "time": 20,
+      "answers": [
+        {"text": "1 heure", "correct": false},
+        {"text": "24 heures", "correct": true},
+        {"text": "30 jours", "correct": false},
+        {"text": "365 jours", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'une année-lumière ?",
+      "time": 30,
+      "answers": [
+        {"text": "Une durée de 365 jours dans l'espace", "correct": false},
+        {"text": "La distance parcourue par la lumière en une année", "correct": true},
+        {"text": "La vitesse de la lumière", "correct": false},
+        {"text": "La luminosité d'une étoile", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le Soleil est une étoile.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle planète est connue pour ses magnifiques anneaux visibles depuis la Terre ?",
+      "time": 25,
+      "answers": [
+        {"text": "Jupiter", "correct": false},
+        {"text": "Mars", "correct": false},
+        {"text": "Saturne", "correct": true},
+        {"text": "Uranus", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'un astéroïde ?",
+      "time": 25,
+      "answers": [
+        {"text": "Une petite étoile", "correct": false},
+        {"text": "Un corps rocheux de petite taille tournant autour du Soleil", "correct": true},
+        {"text": "Un satellite artificiel", "correct": false},
+        {"text": "Une comète sans queue", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Mars est surnommée la « planète rouge » en raison de sa couleur.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces planètes de notre Système solaire de la plus petite à la plus grande :",
+      "time": 40,
+      "answers": [
+        {"text": "Mercure (la plus petite)", "correct": true},
+        {"text": "Mars", "correct": true},
+        {"text": "Terre", "correct": true},
+        {"text": "Jupiter (la plus grande)", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on le mouvement de la Terre autour du Soleil (qui dure 1 an) ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Révolution", "correct": true}
+      ],
+      "acceptedAnswers": ["révolution", "revolution", "révolution terrestre", "translation", "orbite"]
+    },
+    {
+      "type": "multiple",
+      "question": "Combien de planètes du Système solaire sont plus grandes que la Terre ?",
+      "time": 25,
+      "answers": [
+        {"text": "2 (Jupiter, Saturne)", "correct": false},
+        {"text": "3 (Jupiter, Saturne, Uranus)", "correct": false},
+        {"text": "4 (Jupiter, Saturne, Uranus, Neptune)", "correct": true},
+        {"text": "6", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel astre produit de la lumière et de la chaleur dans le Système solaire ?",
+      "time": 20,
+      "answers": [
+        {"text": "La Lune", "correct": false},
+        {"text": "Jupiter", "correct": false},
+        {"text": "Le Soleil (étoile)", "correct": true},
+        {"text": "Venus", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Parmi ces animaux, lequel n'est PAS un vertébré ?",
+      "time": 25,
+      "answers": [
+        {"text": "Le perroquet", "correct": false},
+        {"text": "La tortue", "correct": false},
+        {"text": "L'escargot", "correct": true},
+        {"text": "Le saumon", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quels sont les deux caractères qui définissent les mammifères ?",
+      "time": 25,
+      "answers": [
+        {"text": "Plumes et bec", "correct": false},
+        {"text": "Poils et allaitement des petits", "correct": true},
+        {"text": "Écailles et branchies", "correct": false},
+        {"text": "Nageoires et vie aquatique", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Les oiseaux sont des animaux à sang chaud (température corporelle constante).",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment appelle-t-on les vertébrés couverts d'écailles qui vivent dans l'eau et respirent par branchies ?",
+      "time": 25,
+      "answers": [
+        {"text": "Les amphibiens", "correct": false},
+        {"text": "Les reptiles aquatiques", "correct": false},
+        {"text": "Les poissons", "correct": true},
+        {"text": "Les cétacés", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Ce qui distingue les amphibiens des reptiles, c'est que les amphibiens ont…",
+      "time": 30,
+      "answers": [
+        {"text": "Des écailles et une vie uniquement terrestre", "correct": false},
+        {"text": "Une peau nue et vivent dans deux milieux (eau et terre)", "correct": true},
+        {"text": "Des plumes", "correct": false},
+        {"text": "Du sang chaud", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Les araignées sont des insectes.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": false},
+        {"text": "Faux", "correct": true}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces animaux du moins évolué (apparu en premier) au plus évolué (apparu le plus récemment) :",
+      "time": 40,
+      "answers": [
+        {"text": "Poisson (premiers vertébrés)", "correct": true},
+        {"text": "Grenouille (amphibien)", "correct": true},
+        {"text": "Lézard (reptile)", "correct": true},
+        {"text": "Chien (mammifère)", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on le groupe d'invertébrés qui comprend les insectes, les araignées et les crustacés ?",
+      "time": 30,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Arthropodes", "correct": true}
+      ],
+      "acceptedAnswers": ["arthropodes", "arthropode", "les arthropodes"]
+    },
+    {
+      "type": "multiple",
+      "question": "Combien de pattes possède un insecte ?",
+      "time": 20,
+      "answers": [
+        {"text": "4", "correct": false},
+        {"text": "6", "correct": true},
+        {"text": "8", "correct": false},
+        {"text": "10", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La chauve-souris est…",
+      "time": 25,
+      "answers": [
+        {"text": "Un oiseau (elle vole)", "correct": false},
+        {"text": "Un reptile volant", "correct": false},
+        {"text": "Un mammifère (elle a des poils et allaite ses petits)", "correct": true},
+        {"text": "Un amphibien", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un étang, qui sont les producteurs de la chaîne alimentaire ?",
+      "time": 25,
+      "answers": [
+        {"text": "Les grenouilles", "correct": false},
+        {"text": "Les algues et les plantes aquatiques", "correct": true},
+        {"text": "Les poissons carnivores", "correct": false},
+        {"text": "Les bactéries du fond", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Si les renards disparaissent d'une région, que risque-t-il de se passer ?",
+      "time": 25,
+      "answers": [
+        {"text": "La population de lapins diminue fortement", "correct": false},
+        {"text": "La population de lapins augmente fortement (plus de prédateurs)", "correct": true},
+        {"text": "Les lapins disparaissent aussi", "correct": false},
+        {"text": "Rien ne change dans l'écosystème", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le phytoplancton (algues microscopiques) est à la base des chaînes alimentaires marines.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce que le plancton dans l'océan ?",
+      "time": 25,
+      "answers": [
+        {"text": "Un grand mammifère marin", "correct": false},
+        {"text": "Un ensemble de micro-organismes flottants, base de la chaîne alimentaire marine", "correct": true},
+        {"text": "Une algue géante", "correct": false},
+        {"text": "Une espèce de méduse", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne cette chaîne alimentaire marine du bas vers le haut :",
+      "time": 40,
+      "answers": [
+        {"text": "Phytoplancton (algues microscopiques)", "correct": true},
+        {"text": "Zooplancton (animaux microscopiques herbivores)", "correct": true},
+        {"text": "Sardine (petit poisson carnivore)", "correct": true},
+        {"text": "Thon (grand poisson prédateur)", "correct": true}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Les végétaux sont les seuls êtres vivants capables de fabriquer leur propre matière organique (autotrophes).",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces animaux du plus herbivore au plus carnivore :",
+      "time": 40,
+      "answers": [
+        {"text": "Vache (herbivore strict)", "correct": true},
+        {"text": "Cochon (omnivore)", "correct": true},
+        {"text": "Renard (carnivore opportuniste)", "correct": true},
+        {"text": "Grand requin blanc (carnivore strict)", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on le milieu physique d'un écosystème (sol, eau, air, lumière) indépendamment des êtres vivants ?",
+      "time": 30,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Biotope", "correct": true}
+      ],
+      "acceptedAnswers": ["biotope", "le biotope", "milieu physique", "milieu abiotique"]
+    },
+    {
+      "type": "multiple",
+      "question": "Combien de maillons compte une chaîne alimentaire à 4 niveaux ?",
+      "time": 25,
+      "answers": [
+        {"text": "2", "correct": false},
+        {"text": "3", "correct": false},
+        {"text": "4", "correct": true},
+        {"text": "5", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pourquoi l'énergie diminue-t-elle à chaque maillon d'une chaîne alimentaire ?",
+      "time": 30,
+      "answers": [
+        {"text": "Parce que les animaux ne mangent pas tout", "correct": false},
+        {"text": "Parce que chaque organisme utilise l'énergie pour ses propres besoins (respiration, mouvements…)", "correct": true},
+        {"text": "Parce que le soleil chauffe moins en altitude", "correct": false},
+        {"text": "Parce que les prédateurs gaspillent de la nourriture", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment s'adaptent les ours polaires aux milieux froids ?",
+      "time": 25,
+      "answers": [
+        {"text": "Ils migrent vers le sud en hiver", "correct": false},
+        {"text": "Fourrure blanche et épaisse + couche de graisse sous-cutanée", "correct": true},
+        {"text": "Ils changent de couleur comme les caméléons", "correct": false},
+        {"text": "Ils respirent moins vite pour conserver leur chaleur", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment s'appelle la capacité d'un animal à ressembler à son milieu pour se cacher ?",
+      "time": 25,
+      "answers": [
+        {"text": "La migration", "correct": false},
+        {"text": "L'hibernation", "correct": false},
+        {"text": "Le camouflage (ou mimétisme)", "correct": true},
+        {"text": "La symbiose", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La migration est une adaptation de certains oiseaux aux changements de saisons.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel animal est adapté à la vie dans le désert en stockant des réserves énergétiques dans sa bosse ?",
+      "time": 25,
+      "answers": [
+        {"text": "Le chameau ou le dromadaire", "correct": true},
+        {"text": "Le renard des sables", "correct": false},
+        {"text": "Le lézard du désert", "correct": false},
+        {"text": "Le scorpion", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pourquoi les cactus ont-ils des feuilles transformées en épines ?",
+      "time": 25,
+      "answers": [
+        {"text": "Pour se défendre contre les insectes", "correct": false},
+        {"text": "Pour limiter l'évaporation de l'eau (adaptation à la sécheresse)", "correct": true},
+        {"text": "Pour attraper des proies", "correct": false},
+        {"text": "Pour mieux capter la lumière", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'hibernation permet à certains animaux de survivre à l'hiver sans manger.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces végétaux selon leur milieu de vie, du plus sec au plus humide :",
+      "time": 40,
+      "answers": [
+        {"text": "Cactus (désert très sec)", "correct": true},
+        {"text": "Herbe de prairie (milieu tempéré)", "correct": true},
+        {"text": "Nénuphar (milieu aquatique en surface)", "correct": true},
+        {"text": "Algue verte (milieu totalement immergé)", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on le comportement d'un animal qui quitte sa région en hiver pour revenir au printemps ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Migration", "correct": true}
+      ],
+      "acceptedAnswers": ["migration", "la migration", "migrer", "migratoire"]
+    },
+    {
+      "type": "multiple",
+      "question": "Les poissons utilisent quoi pour respirer dans l'eau ?",
+      "time": 20,
+      "answers": [
+        {"text": "Les poumons", "correct": false},
+        {"text": "La peau", "correct": false},
+        {"text": "Les branchies", "correct": true},
+        {"text": "Les écailles", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce que le mimétisme chez les êtres vivants ?",
+      "time": 25,
+      "answers": [
+        {"text": "La capacité à hiberner", "correct": false},
+        {"text": "La capacité à migrer", "correct": false},
+        {"text": "La capacité à ressembler à son environnement ou à un autre organisme pour se protéger", "correct": true},
+        {"text": "La capacité à changer de régime alimentaire", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Parmi les champignons, lequel est comestible et très courant en cuisine ?",
+      "time": 20,
+      "answers": [
+        {"text": "L'amanite phalloïde (mortelle)", "correct": false},
+        {"text": "Le champignon de Paris", "correct": true},
+        {"text": "La moisissure verte", "correct": false},
+        {"text": "La levure de bière (unicellulaire)", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Les bactéries sont…",
+      "time": 20,
+      "answers": [
+        {"text": "Des champignons microscopiques", "correct": false},
+        {"text": "Des végétaux unicellulaires", "correct": false},
+        {"text": "Des êtres vivants unicellulaires microscopiques (sans noyau)", "correct": true},
+        {"text": "Des virus", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un végétal a besoin de lumière pour réaliser la photosynthèse.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment appelle-t-on les animaux qui naissent directement (sans œuf visible à l'extérieur) ?",
+      "time": 25,
+      "answers": [
+        {"text": "Les ovipares", "correct": false},
+        {"text": "Les ovovivipares", "correct": false},
+        {"text": "Les vivipares", "correct": true},
+        {"text": "Les mammifères pondeurs", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La grenouille est un amphibien. Quand elle est têtard, elle vit…",
+      "time": 25,
+      "answers": [
+        {"text": "Dans l'air uniquement", "correct": false},
+        {"text": "Dans l'eau et respire par branchies", "correct": true},
+        {"text": "Dans le sol", "correct": false},
+        {"text": "Dans les arbres", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Tous les poissons pondent obligatoirement des œufs.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": false},
+        {"text": "Faux", "correct": true}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne le cycle de vie d'une grenouille :",
+      "time": 40,
+      "answers": [
+        {"text": "Œuf pondu dans l'eau", "correct": true},
+        {"text": "Têtard (respirant par branchies)", "correct": true},
+        {"text": "Grenouillette (développement des membres)", "correct": true},
+        {"text": "Grenouille adulte (respirant par poumons et peau)", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on un animal qui pond des œufs ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Ovipare", "correct": true}
+      ],
+      "acceptedAnswers": ["ovipare", "les ovipares", "un ovipare"]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel groupe d'animaux aquatiques possède une colonne vertébrale et des nageoires ?",
+      "time": 20,
+      "answers": [
+        {"text": "Les céphalopodes (pieuvres)", "correct": false},
+        {"text": "Les crustacés", "correct": false},
+        {"text": "Les poissons", "correct": true},
+        {"text": "Les échinodermes", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Les étoiles de mer et les oursins appartiennent au groupe des…",
+      "time": 25,
+      "answers": [
+        {"text": "Mollusques", "correct": false},
+        {"text": "Arthropodes", "correct": false},
+        {"text": "Échinodermes (invertébrés marins)", "correct": true},
+        {"text": "Annélides", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Combien de planètes gazeuses géantes y a-t-il dans notre Système solaire ?",
+      "time": 25,
+      "answers": [
+        {"text": "2 (Jupiter et Saturne)", "correct": false},
+        {"text": "3 (Jupiter, Saturne, Uranus)", "correct": false},
+        {"text": "4 (Jupiter, Saturne, Uranus, Neptune)", "correct": true},
+        {"text": "5", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La Voie Lactée est…",
+      "time": 25,
+      "answers": [
+        {"text": "Une nébuleuse proche de la Terre", "correct": false},
+        {"text": "La galaxie qui contient notre Système solaire", "correct": true},
+        {"text": "L'ensemble des planètes du Système solaire", "correct": false},
+        {"text": "Une traînée de comètes", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La Terre est la seule planète du Système solaire à posséder un satellite naturel.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": false},
+        {"text": "Faux", "correct": true}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'une espèce en voie de disparition ?",
+      "time": 25,
+      "answers": [
+        {"text": "Une espèce qui vient d'être découverte", "correct": false},
+        {"text": "Une espèce dont la population diminue au point de risquer l'extinction", "correct": true},
+        {"text": "Une espèce migrante", "correct": false},
+        {"text": "Une espèce protégée mais abondante", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne les 4 dernières planètes du Système solaire de la plus proche à la plus éloignée du Soleil :",
+      "time": 40,
+      "answers": [
+        {"text": "Jupiter", "correct": true},
+        {"text": "Saturne", "correct": true},
+        {"text": "Uranus", "correct": true},
+        {"text": "Neptune", "correct": true}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Les dinosaures sont des reptiles qui ont disparu il y a environ 66 millions d'années.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne les êtres vivants de cette chaîne alimentaire d'un étang (de la base au sommet) :",
+      "time": 40,
+      "answers": [
+        {"text": "Algues (productrices)", "correct": true},
+        {"text": "Daphnie (petit crustacé herbivore)", "correct": true},
+        {"text": "Petits poissons (consommateurs secondaires)", "correct": true},
+        {"text": "Grand brochet (prédateur final)", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on la couche rocheuse externe de la Terre sur laquelle nous vivons ?",
+      "time": 30,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Croûte terrestre", "correct": true}
+      ],
+      "acceptedAnswers": ["croûte terrestre", "croute terrestre", "la croûte", "croûte", "lithosphère", "lithosphere"]
+    },
+    {
+      "type": "multiple",
+      "question": "Un écosystème est perturbé quand…",
+      "time": 25,
+      "answers": [
+        {"text": "Il y a trop de soleil en été", "correct": false},
+        {"text": "Une espèce disparaît ou qu'une pollution détruit le milieu de vie", "correct": true},
+        {"text": "Il pleut beaucoup", "correct": false},
+        {"text": "Les saisons changent normalement", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la planète la plus proche du Soleil dans notre Système solaire ?",
+      "time": 20,
+      "answers": [
+        {"text": "Vénus", "correct": false},
+        {"text": "La Terre", "correct": false},
+        {"text": "Mercure", "correct": true},
+        {"text": "Mars", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle planète est souvent appelée la « planète bleue » en raison de ses océans ?",
+      "time": 20,
+      "answers": [
+        {"text": "Vénus", "correct": false},
+        {"text": "Neptune", "correct": false},
+        {"text": "La Terre", "correct": true},
+        {"text": "Uranus", "correct": false}
+      ]
+    }
+  ]
+}

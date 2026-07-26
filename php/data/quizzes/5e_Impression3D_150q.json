@@ -1,0 +1,2892 @@
+{
+  "name": "5e_Impression3D_150q",
+  "version": "1.0",
+  "createdAt": "2025-01-29T18:00:00.000Z",
+  "questionsCount": 150,
+  "questions": [
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce que l'impression 3D ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Une technique de fabrication d'objets en ajoutant de la matière couche par couche",
+          "correct": true
+        },
+        {
+          "text": "Une technique pour imprimer des photos en relief",
+          "correct": false
+        },
+        {
+          "text": "Une imprimante qui imprime très vite",
+          "correct": false
+        },
+        {
+          "text": "Un scanner d'objets",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'impression 3D permet de fabriquer des objets en volume.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on la technique de fabrication qui ajoute de la matière couche par couche ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "Fabrication additive",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "impression 3D",
+        "additive manufacturing"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Combien existe-t-il de grands types d'imprimantes 3D ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "3 types principaux",
+          "correct": true
+        },
+        {
+          "text": "1 seul type",
+          "correct": false
+        },
+        {
+          "text": "10 types",
+          "correct": false
+        },
+        {
+          "text": "100 types",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Les 3 grands types d'imprimantes 3D sont :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "FDM (dépôt de fil fondu)",
+          "correct": true
+        },
+        {
+          "text": "SLA (résine et lumière UV)",
+          "correct": true
+        },
+        {
+          "text": "SLS (frittage de poudre laser)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "FDM, SLA et SLS sont les 3 principales technologies d'impression 3D.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Que signifie FDM ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Fused Deposition Modeling (modélisation par dépôt de fil fondu)",
+          "correct": true
+        },
+        {
+          "text": "Fast Digital Manufacturing",
+          "correct": false
+        },
+        {
+          "text": "Filament Delivery Machine",
+          "correct": false
+        },
+        {
+          "text": "Flexible Design Method",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment s'appelle la technologie d'impression 3D qui fait fondre un fil de plastique ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "FDM",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "dépôt de fil fondu",
+        "Fused Deposition Modeling",
+        "FFF"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Cette imprimante avec une bobine de fil est de type :",
+      "time": 25,
+      "answers": [
+        {
+          "text": "FDM (dépôt de fil fondu)",
+          "correct": true
+        },
+        {
+          "text": "SLA (résine)",
+          "correct": false
+        },
+        {
+          "text": "SLS (poudre)",
+          "correct": false
+        },
+        {
+          "text": "Imprimante papier",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'imprimante FDM utilise un fil de plastique qui est chauffé et fondu.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le matériau le plus courant utilisé en impression FDM ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le PLA (plastique biodégradable)",
+          "correct": true
+        },
+        {
+          "text": "Le métal",
+          "correct": false
+        },
+        {
+          "text": "Le verre",
+          "correct": false
+        },
+        {
+          "text": "Le papier",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment s'appelle le fil de plastique utilisé dans une imprimante FDM ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "Filament",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "le filament",
+        "un filament",
+        "bobine"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Cette bobine contient du :",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Filament pour imprimante 3D FDM",
+          "correct": true
+        },
+        {
+          "text": "Câble électrique",
+          "correct": false
+        },
+        {
+          "text": "Fil de pêche",
+          "correct": false
+        },
+        {
+          "text": "Fil de couture",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Dans une imprimante FDM, le filament passe par :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "La bobine de filament",
+          "correct": true
+        },
+        {
+          "text": "L'extrudeur (qui pousse le fil)",
+          "correct": true
+        },
+        {
+          "text": "La buse chauffée (qui fait fondre)",
+          "correct": true
+        },
+        {
+          "text": "Le plateau d'impression",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La buse de l'imprimante FDM chauffe le filament pour le faire fondre.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "À quelle température fond généralement le PLA ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Entre 180°C et 220°C",
+          "correct": true
+        },
+        {
+          "text": "À 50°C",
+          "correct": false
+        },
+        {
+          "text": "À 500°C",
+          "correct": false
+        },
+        {
+          "text": "À température ambiante",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment s'appelle la partie de l'imprimante FDM qui chauffe et dépose le plastique fondu ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "Buse",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "la buse",
+        "tête d'impression",
+        "hotend"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Sur quelle surface l'objet est-il imprimé ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Le plateau d'impression",
+          "correct": true
+        },
+        {
+          "text": "La bobine",
+          "correct": false
+        },
+        {
+          "text": "L'écran",
+          "correct": false
+        },
+        {
+          "text": "Le câble USB",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le plateau d'impression peut être chauffé pour une meilleure adhérence.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Que signifie SLA ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Stéréolithographie (impression par résine et lumière UV)",
+          "correct": true
+        },
+        {
+          "text": "Super Light Assembly",
+          "correct": false
+        },
+        {
+          "text": "Slow Layer Addition",
+          "correct": false
+        },
+        {
+          "text": "Standard Laser Application",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quelle technologie d'impression 3D utilise de la résine liquide durcie par lumière UV ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "SLA",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "stéréolithographie",
+        "résine"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment fonctionne une imprimante SLA ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Un laser UV durcit une résine liquide couche par couche",
+          "correct": true
+        },
+        {
+          "text": "Elle fait fondre du fil plastique",
+          "correct": false
+        },
+        {
+          "text": "Elle utilise de l'encre",
+          "correct": false
+        },
+        {
+          "text": "Elle découpe du papier",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'imprimante SLA utilise de la résine liquide.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Fonctionnement d'une imprimante SLA :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "La résine liquide est dans un bac",
+          "correct": true
+        },
+        {
+          "text": "Un laser UV dessine une couche",
+          "correct": true
+        },
+        {
+          "text": "La résine durcit là où le laser passe",
+          "correct": true
+        },
+        {
+          "text": "Le plateau monte, couche après couche",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est l'avantage principal de l'impression SLA ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Une très grande précision et des détails fins",
+          "correct": true
+        },
+        {
+          "text": "Un coût très bas",
+          "correct": false
+        },
+        {
+          "text": "Une impression très rapide",
+          "correct": false
+        },
+        {
+          "text": "Pas besoin d'électricité",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quel type de lumière durcit la résine en impression SLA ?",
+      "time": 20,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "UV",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "lumière UV",
+        "ultraviolet",
+        "laser UV"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Les pièces imprimées en SLA sont souvent très détaillées.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Que signifie SLS ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Selective Laser Sintering (frittage sélectif par laser)",
+          "correct": true
+        },
+        {
+          "text": "Super Large System",
+          "correct": false
+        },
+        {
+          "text": "Slow Layer Scanning",
+          "correct": false
+        },
+        {
+          "text": "Simple Laser Setup",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quelle technologie d'impression 3D utilise un laser pour fusionner de la poudre ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "SLS",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "frittage laser",
+        "Selective Laser Sintering"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment fonctionne une imprimante SLS ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Un laser chauffe et fusionne de la poudre couche par couche",
+          "correct": true
+        },
+        {
+          "text": "Elle fait fondre du fil plastique",
+          "correct": false
+        },
+        {
+          "text": "Elle utilise de la résine liquide",
+          "correct": false
+        },
+        {
+          "text": "Elle colle des feuilles de papier",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'imprimante SLS utilise de la poudre comme matériau.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Fonctionnement d'une imprimante SLS :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Une couche de poudre est étalée",
+          "correct": true
+        },
+        {
+          "text": "Un laser fusionne la poudre aux bons endroits",
+          "correct": true
+        },
+        {
+          "text": "Une nouvelle couche de poudre est ajoutée",
+          "correct": true
+        },
+        {
+          "text": "L'objet est extrait de la poudre non fusionnée",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est l'avantage principal de l'impression SLS ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Pièces très solides, pas besoin de support",
+          "correct": true
+        },
+        {
+          "text": "Très bon marché",
+          "correct": false
+        },
+        {
+          "text": "Fonctionne sans électricité",
+          "correct": false
+        },
+        {
+          "text": "Imprime en couleur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quel outil chauffe la poudre dans une imprimante SLS ?",
+      "time": 20,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "Laser",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "un laser",
+        "le laser"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "En SLS, la poudre non utilisée peut être recyclée.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle technologie est la plus utilisée dans les écoles et à la maison ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "FDM (dépôt de fil fondu)",
+          "correct": true
+        },
+        {
+          "text": "SLS (frittage laser)",
+          "correct": false
+        },
+        {
+          "text": "SLA (résine)",
+          "correct": false
+        },
+        {
+          "text": "Aucune",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe les technologies du moins cher au plus cher :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "FDM (la moins chère)",
+          "correct": true
+        },
+        {
+          "text": "SLA (prix moyen)",
+          "correct": true
+        },
+        {
+          "text": "SLS (la plus chère)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'imprimante FDM est généralement la moins chère des trois technologies.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pour quelle application l'impression SLA est-elle idéale ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Bijoux, figurines détaillées, dentisterie",
+          "correct": true
+        },
+        {
+          "text": "Pièces de très grande taille",
+          "correct": false
+        },
+        {
+          "text": "Objets sans détails",
+          "correct": false
+        },
+        {
+          "text": "Impressions très rapides",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quelle technologie est utilisée pour fabriquer des pièces industrielles très solides ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "SLS",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "frittage laser",
+        "Selective Laser Sintering"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Cette image montre le principe de quelle technologie ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "SLS (frittage de poudre par laser)",
+          "correct": true
+        },
+        {
+          "text": "FDM (fil fondu)",
+          "correct": false
+        },
+        {
+          "text": "SLA (résine)",
+          "correct": false
+        },
+        {
+          "text": "Imprimante à jet d'encre",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Toutes les imprimantes 3D fonctionnent exactement de la même façon.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Faux",
+          "correct": true
+        },
+        {
+          "text": "Vrai",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le point commun de toutes les imprimantes 3D ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Elles fabriquent des objets couche par couche",
+          "correct": true
+        },
+        {
+          "text": "Elles utilisent toutes du fil plastique",
+          "correct": false
+        },
+        {
+          "text": "Elles coûtent toutes le même prix",
+          "correct": false
+        },
+        {
+          "text": "Elles impriment toutes sur du papier",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on chaque niveau de matière déposé lors de l'impression ?",
+      "time": 20,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "Couche",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "une couche",
+        "layer"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Étapes générales de l'impression 3D :",
+      "time": 40,
+      "answers": [
+        {
+          "text": "Créer ou télécharger un modèle 3D",
+          "correct": true
+        },
+        {
+          "text": "Préparer le fichier pour l'imprimante",
+          "correct": true
+        },
+        {
+          "text": "Lancer l'impression couche par couche",
+          "correct": true
+        },
+        {
+          "text": "Retirer et nettoyer la pièce finie",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'impression 3D permet de fabriquer des objets personnalisés.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel composant pousse le filament dans l'imprimante FDM ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'extrudeur",
+          "correct": true
+        },
+        {
+          "text": "Le plateau",
+          "correct": false
+        },
+        {
+          "text": "L'écran",
+          "correct": false
+        },
+        {
+          "text": "Le câble USB",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment s'appelle le mécanisme qui pousse le filament vers la buse chaude ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "Extrudeur",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "l'extrudeur",
+        "extruder"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Ce mécanisme est :",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un extrudeur d'imprimante FDM",
+          "correct": true
+        },
+        {
+          "text": "Un bac à résine",
+          "correct": false
+        },
+        {
+          "text": "Un réservoir de poudre",
+          "correct": false
+        },
+        {
+          "text": "Une imprimante papier",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'extrudeur contient un petit moteur qui fait avancer le filament.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel matériau plastique est connu pour être biodégradable ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le PLA",
+          "correct": true
+        },
+        {
+          "text": "L'ABS",
+          "correct": false
+        },
+        {
+          "text": "Le PETG",
+          "correct": false
+        },
+        {
+          "text": "Le nylon",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quel plastique biodégradable est souvent utilisé en impression 3D FDM ?",
+      "time": 20,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "PLA",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "le PLA",
+        "acide polylactique"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "À partir de quoi est fabriqué le PLA ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "De l'amidon de maïs ou de canne à sucre",
+          "correct": true
+        },
+        {
+          "text": "Du pétrole uniquement",
+          "correct": false
+        },
+        {
+          "text": "Du métal fondu",
+          "correct": false
+        },
+        {
+          "text": "Du verre recyclé",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le PLA est fabriqué à partir de ressources végétales.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Trajet du filament dans une imprimante FDM :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Bobine",
+          "correct": true
+        },
+        {
+          "text": "Extrudeur",
+          "correct": true
+        },
+        {
+          "text": "Tube PTFE (guide)",
+          "correct": true
+        },
+        {
+          "text": "Bloc de chauffe et buse",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pourquoi le plateau peut-il être chauffé ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Pour que la première couche adhère mieux",
+          "correct": true
+        },
+        {
+          "text": "Pour faire fondre le plastique plus vite",
+          "correct": false
+        },
+        {
+          "text": "Pour sécher l'objet",
+          "correct": false
+        },
+        {
+          "text": "Pour décorer l'imprimante",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment s'appelle la surface sur laquelle l'objet est imprimé ?",
+      "time": 20,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "Plateau",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "le plateau",
+        "plateau d'impression",
+        "bed"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Si la première couche n'adhère pas bien, l'impression peut échouer.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Ce plateau avec une surface texturée sert à :",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Améliorer l'adhérence de la première couche",
+          "correct": true
+        },
+        {
+          "text": "Décorer l'imprimante",
+          "correct": false
+        },
+        {
+          "text": "Refroidir l'objet",
+          "correct": false
+        },
+        {
+          "text": "Rien de spécial",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment se déplace la tête d'impression d'une FDM ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Sur des axes X, Y et Z (3 dimensions)",
+          "correct": true
+        },
+        {
+          "text": "Uniquement de gauche à droite",
+          "correct": false
+        },
+        {
+          "text": "Elle ne bouge pas",
+          "correct": false
+        },
+        {
+          "text": "Uniquement vers le haut",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Combien d'axes de déplacement a une imprimante 3D classique ?",
+      "time": 20,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "3",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "trois",
+        "3 axes"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Les 3 axes de déplacement d'une imprimante 3D :",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Axe X (gauche-droite)",
+          "correct": true
+        },
+        {
+          "text": "Axe Y (avant-arrière)",
+          "correct": true
+        },
+        {
+          "text": "Axe Z (haut-bas)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'axe Z contrôle la hauteur de la tête d'impression.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qui guide les mouvements de l'imprimante 3D ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Des moteurs pas-à-pas contrôlés par un ordinateur",
+          "correct": true
+        },
+        {
+          "text": "Des élastiques",
+          "correct": false
+        },
+        {
+          "text": "La force du vent",
+          "correct": false
+        },
+        {
+          "text": "La gravité uniquement",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quel type de moteur permet des mouvements très précis dans l'imprimante ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "Moteur pas-à-pas",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "pas-à-pas",
+        "stepper",
+        "moteur stepper"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la hauteur typique d'une couche en FDM ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Entre 0,1 mm et 0,3 mm",
+          "correct": true
+        },
+        {
+          "text": "1 cm",
+          "correct": false
+        },
+        {
+          "text": "10 cm",
+          "correct": false
+        },
+        {
+          "text": "1 mètre",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Plus les couches sont fines, plus l'impression est lente mais détaillée.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Cette pièce imprimée montre clairement les :",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Couches d'impression",
+          "correct": true
+        },
+        {
+          "text": "Fils électriques",
+          "correct": false
+        },
+        {
+          "text": "Pièces métalliques",
+          "correct": false
+        },
+        {
+          "text": "Circuits imprimés",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on les lignes visibles sur une pièce imprimée en 3D ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "Couches",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "les couches",
+        "stries",
+        "lignes de couche"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le diamètre standard du filament FDM est généralement de :",
+      "time": 25,
+      "answers": [
+        {
+          "text": "1,75 mm ou 2,85 mm",
+          "correct": true
+        },
+        {
+          "text": "10 cm",
+          "correct": false
+        },
+        {
+          "text": "1 mm",
+          "correct": false
+        },
+        {
+          "text": "5 cm",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le diamètre le plus courant du filament est 1,75 mm.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Éléments principaux d'une imprimante FDM :",
+      "time": 40,
+      "answers": [
+        {
+          "text": "Châssis/structure",
+          "correct": true
+        },
+        {
+          "text": "Bobine de filament",
+          "correct": true
+        },
+        {
+          "text": "Extrudeur et buse",
+          "correct": true
+        },
+        {
+          "text": "Plateau d'impression",
+          "correct": true
+        },
+        {
+          "text": "Électronique de contrôle",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Ce schéma montre le principe d'une imprimante :",
+      "time": 25,
+      "answers": [
+        {
+          "text": "FDM (dépôt de fil fondu)",
+          "correct": true
+        },
+        {
+          "text": "SLA (résine)",
+          "correct": false
+        },
+        {
+          "text": "SLS (poudre)",
+          "correct": false
+        },
+        {
+          "text": "À jet d'encre",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quel est le diamètre typique d'une buse FDM ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "0,4 mm",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "0.4 mm",
+        "0,4mm",
+        "0.4"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Une buse plus fine permet des détails plus précis.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel autre plastique courant est utilisé en FDM (plus résistant que le PLA) ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'ABS",
+          "correct": true
+        },
+        {
+          "text": "Le verre",
+          "correct": false
+        },
+        {
+          "text": "Le papier",
+          "correct": false
+        },
+        {
+          "text": "Le carton",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quel plastique résistant aux chocs est utilisé pour les Lego® ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "ABS",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "l'ABS"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Filaments FDM courants, du plus facile au plus difficile à imprimer :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "PLA (facile)",
+          "correct": true
+        },
+        {
+          "text": "PETG (moyen)",
+          "correct": true
+        },
+        {
+          "text": "ABS (plus difficile)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'ABS nécessite généralement un plateau chauffé et une enceinte fermée.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pourquoi l'impression 3D est-elle appelée 'fabrication additive' ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Car on ajoute de la matière au lieu d'en retirer",
+          "correct": true
+        },
+        {
+          "text": "Car on additionne des nombres",
+          "correct": false
+        },
+        {
+          "text": "Car elle fait des calculs",
+          "correct": false
+        },
+        {
+          "text": "Car elle utilise des additifs chimiques",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quel est le contraire de la fabrication additive (où on retire de la matière) ?",
+      "time": 30,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "Fabrication soustractive",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "soustractive",
+        "usinage"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Cette machine qui sculpte dans un bloc est une fabrication :",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Soustractive (on retire de la matière)",
+          "correct": true
+        },
+        {
+          "text": "Additive (on ajoute de la matière)",
+          "correct": false
+        },
+        {
+          "text": "Ni l'un ni l'autre",
+          "correct": false
+        },
+        {
+          "text": "Les deux à la fois",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'impression 3D produit moins de déchets que l'usinage traditionnel.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle technologie est la plus précise ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "SLA (résine)",
+          "correct": true
+        },
+        {
+          "text": "FDM (fil)",
+          "correct": false
+        },
+        {
+          "text": "Elles sont toutes identiques",
+          "correct": false
+        },
+        {
+          "text": "Aucune n'est précise",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Technologies par ordre de précision croissante :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "FDM (moins précise)",
+          "correct": true
+        },
+        {
+          "text": "SLS (précise)",
+          "correct": true
+        },
+        {
+          "text": "SLA (très précise)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Les imprimantes SLA peuvent créer des détails de l'ordre du micromètre.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est l'inconvénient principal de l'impression SLA ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La résine est toxique et les pièces doivent être nettoyées",
+          "correct": true
+        },
+        {
+          "text": "Elle est gratuite",
+          "correct": false
+        },
+        {
+          "text": "Elle est trop rapide",
+          "correct": false
+        },
+        {
+          "text": "Elle ne fait que des grandes pièces",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Après impression SLA, il faut nettoyer la pièce avec quel produit ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "Alcool isopropylique",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "alcool",
+        "IPA",
+        "isopropanol"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Les pièces SLA doivent être post-traitées (nettoyage et durcissement UV).",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "L'impression SLS est surtout utilisée dans :",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'industrie pour des pièces mécaniques solides",
+          "correct": true
+        },
+        {
+          "text": "Les écoles uniquement",
+          "correct": false
+        },
+        {
+          "text": "La cuisine",
+          "correct": false
+        },
+        {
+          "text": "La peinture",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quel matériau en poudre est souvent utilisé en SLS ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "Nylon",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "polyamide",
+        "PA"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Associe chaque technologie à son matériau :",
+      "time": 40,
+      "answers": [
+        {
+          "text": "FDM → Filament (PLA, ABS...)",
+          "correct": true
+        },
+        {
+          "text": "SLA → Résine liquide",
+          "correct": true
+        },
+        {
+          "text": "SLS → Poudre (nylon...)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Une imprimante FDM peut imprimer en plusieurs couleurs avec plusieurs extrudeurs.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Combien de temps peut durer une impression 3D ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "De quelques minutes à plusieurs jours selon la taille",
+          "correct": true
+        },
+        {
+          "text": "Toujours 1 minute",
+          "correct": false
+        },
+        {
+          "text": "Toujours 1 an",
+          "correct": false
+        },
+        {
+          "text": "Toujours 10 secondes",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Une pièce de grande taille mettra plus ou moins de temps à imprimer ?",
+      "time": 20,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "Plus",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "plus de temps",
+        "plus longtemps"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Ces différents objets imprimés montrent que l'impression 3D peut créer :",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Des formes très variées et complexes",
+          "correct": true
+        },
+        {
+          "text": "Uniquement des cubes",
+          "correct": false
+        },
+        {
+          "text": "Uniquement des sphères",
+          "correct": false
+        },
+        {
+          "text": "Rien de particulier",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'impression 3D permet de fabriquer des prototypes rapidement.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans quel domaine l'impression 3D est-elle utilisée ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Médecine, aéronautique, automobile, bijouterie, éducation...",
+          "correct": true
+        },
+        {
+          "text": "Uniquement pour les jouets",
+          "correct": false
+        },
+        {
+          "text": "Nulle part",
+          "correct": false
+        },
+        {
+          "text": "Uniquement en cuisine",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Applications de l'impression 3D :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Prototypage rapide",
+          "correct": true
+        },
+        {
+          "text": "Pièces de rechange",
+          "correct": true
+        },
+        {
+          "text": "Prothèses médicales",
+          "correct": true
+        },
+        {
+          "text": "Objets personnalisés",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on un modèle d'essai avant la production finale ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "Prototype",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "un prototype",
+        "maquette"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'impression 3D peut fabriquer des prothèses médicales sur mesure.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Cette prothèse de main a été fabriquée par :",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Impression 3D",
+          "correct": true
+        },
+        {
+          "text": "Moulage traditionnel uniquement",
+          "correct": false
+        },
+        {
+          "text": "Découpe laser",
+          "correct": false
+        },
+        {
+          "text": "Peinture à l'huile",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est l'avantage de l'impression 3D pour les pièces de rechange ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "On peut fabriquer une pièce à l'unité, sans stock",
+          "correct": true
+        },
+        {
+          "text": "C'est toujours gratuit",
+          "correct": false
+        },
+        {
+          "text": "Ça prend 1 seconde",
+          "correct": false
+        },
+        {
+          "text": "Il n'y a aucun avantage",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on la fabrication d'un seul objet à la fois ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "Fabrication à l'unité",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "pièce unique",
+        "sur mesure",
+        "personnalisé"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Récapitulatif des 3 technologies principales :",
+      "time": 45,
+      "answers": [
+        {
+          "text": "FDM : fil fondu, abordable, écoles",
+          "correct": true
+        },
+        {
+          "text": "SLA : résine + UV, précision, bijoux",
+          "correct": true
+        },
+        {
+          "text": "SLS : poudre + laser, industrie, solide",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'impression 3D est une technologie de fabrication additive.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel ventilateur refroidit le plastique déposé en FDM ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le ventilateur de refroidissement de la pièce",
+          "correct": true
+        },
+        {
+          "text": "Le ventilateur de la buse",
+          "correct": false
+        },
+        {
+          "text": "Il n'y a pas de ventilateur",
+          "correct": false
+        },
+        {
+          "text": "Le ventilateur de l'ordinateur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Pourquoi refroidit-on le plastique juste après le dépôt ?",
+      "time": 30,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "Pour qu'il durcisse rapidement",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "pour solidifier",
+        "solidification",
+        "durcir"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le refroidissement aide le plastique à garder sa forme.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le principal avantage de l'impression 3D FDM ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Coût abordable et facilité d'utilisation",
+          "correct": true
+        },
+        {
+          "text": "Précision extrême",
+          "correct": false
+        },
+        {
+          "text": "Impression de métal",
+          "correct": false
+        },
+        {
+          "text": "Aucun avantage",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Pour résumer le fonctionnement FDM :",
+      "time": 45,
+      "answers": [
+        {
+          "text": "Le filament est poussé par l'extrudeur",
+          "correct": true
+        },
+        {
+          "text": "Il est chauffé et fondu par la buse",
+          "correct": true
+        },
+        {
+          "text": "Le plastique est déposé couche par couche",
+          "correct": true
+        },
+        {
+          "text": "L'objet se construit sur le plateau",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quelle technologie utilise le principe du fil fondu ?",
+      "time": 20,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "FDM",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "dépôt de fil fondu",
+        "Fused Deposition Modeling"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pour conclure, les 3 types d'imprimantes 3D sont :",
+      "time": 25,
+      "answers": [
+        {
+          "text": "FDM (fil), SLA (résine), SLS (poudre)",
+          "correct": true
+        },
+        {
+          "text": "Jet d'encre, laser, matricielle",
+          "correct": false
+        },
+        {
+          "text": "USB, HDMI, VGA",
+          "correct": false
+        },
+        {
+          "text": "Windows, Mac, Linux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Chaque technologie d'impression 3D a ses avantages et inconvénients.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Que se passe-t-il si le filament est de mauvaise qualité ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'impression peut échouer ou avoir des défauts",
+          "correct": true
+        },
+        {
+          "text": "L'impression sera parfaite",
+          "correct": false
+        },
+        {
+          "text": "L'imprimante ira plus vite",
+          "correct": false
+        },
+        {
+          "text": "Rien de particulier",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le filament doit être stocké au sec pour éviter qu'il absorbe l'humidité.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quel problème cause l'humidité dans le filament ?",
+      "time": 30,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "Bulles",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "défauts",
+        "mauvaise impression",
+        "crépitements"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle couleur de filament est la plus courante pour débuter ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Blanc ou noir",
+          "correct": true
+        },
+        {
+          "text": "Rose fluo uniquement",
+          "correct": false
+        },
+        {
+          "text": "Transparent uniquement",
+          "correct": false
+        },
+        {
+          "text": "Il n'existe qu'une seule couleur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le filament existe en de nombreuses couleurs.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Cette bobine de filament coloré montre que :",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le filament existe en plusieurs couleurs",
+          "correct": true
+        },
+        {
+          "text": "Le filament est toujours noir",
+          "correct": false
+        },
+        {
+          "text": "Ce n'est pas du filament",
+          "correct": false
+        },
+        {
+          "text": "C'est de la peinture",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Avantages de l'impression 3D :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Personnalisation des objets",
+          "correct": true
+        },
+        {
+          "text": "Fabrication à la demande",
+          "correct": true
+        },
+        {
+          "text": "Peu de déchets",
+          "correct": true
+        },
+        {
+          "text": "Prototypage rapide",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on le fait de créer un objet adapté à ses besoins ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "Personnalisation",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "sur mesure",
+        "customisation"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel type d'imprimante utilise un bac de résine liquide ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "SLA",
+          "correct": true
+        },
+        {
+          "text": "FDM",
+          "correct": false
+        },
+        {
+          "text": "SLS",
+          "correct": false
+        },
+        {
+          "text": "Jet d'encre",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La résine SLA est sensible à la lumière UV.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Cette imprimante avec un écran LCD et un bac est de type :",
+      "time": 25,
+      "answers": [
+        {
+          "text": "SLA (résine)",
+          "correct": true
+        },
+        {
+          "text": "FDM (fil)",
+          "correct": false
+        },
+        {
+          "text": "SLS (poudre)",
+          "correct": false
+        },
+        {
+          "text": "Imprimante papier",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quelle technologie utilise la photopolymérisation (durcissement par lumière) ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "SLA",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "stéréolithographie",
+        "résine"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Inconvénients de l'impression SLA :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Résine toxique (porter des gants)",
+          "correct": true
+        },
+        {
+          "text": "Nettoyage nécessaire après impression",
+          "correct": true
+        },
+        {
+          "text": "Durcissement UV supplémentaire",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pourquoi faut-il porter des gants avec la résine SLA ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La résine liquide est irritante pour la peau",
+          "correct": true
+        },
+        {
+          "text": "Pour ne pas salir ses mains",
+          "correct": false
+        },
+        {
+          "text": "Pour avoir plus chaud",
+          "correct": false
+        },
+        {
+          "text": "Ce n'est pas nécessaire",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La résine non durcie est sans danger pour la peau.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Faux",
+          "correct": true
+        },
+        {
+          "text": "Vrai",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle technologie n'a pas besoin de support car la poudre soutient la pièce ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "SLS",
+          "correct": true
+        },
+        {
+          "text": "FDM",
+          "correct": false
+        },
+        {
+          "text": "SLA",
+          "correct": false
+        },
+        {
+          "text": "Aucune",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "En SLS, qu'est-ce qui soutient les parties en suspension pendant l'impression ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "La poudre",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "poudre non fusionnée",
+        "la poudre environnante"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Post-traitement en SLS :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Retirer la pièce du bac de poudre",
+          "correct": true
+        },
+        {
+          "text": "Brosser/souffler la poudre non fusionnée",
+          "correct": true
+        },
+        {
+          "text": "Éventuellement sabler ou teinter",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Cette pièce complexe avec des parties imbriquées a été imprimée en :",
+      "time": 30,
+      "answers": [
+        {
+          "text": "SLS (sans support nécessaire)",
+          "correct": true
+        },
+        {
+          "text": "FDM (fil fondu)",
+          "correct": false
+        },
+        {
+          "text": "Découpe laser",
+          "correct": false
+        },
+        {
+          "text": "Moulage",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le SLS permet de créer des pièces avec des formes impossibles en FDM.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le coût approximatif d'une imprimante FDM d'entrée de gamme ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "100 à 300 euros",
+          "correct": true
+        },
+        {
+          "text": "10 000 euros minimum",
+          "correct": false
+        },
+        {
+          "text": "1 million d'euros",
+          "correct": false
+        },
+        {
+          "text": "Gratuit",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quelle technologie est la plus accessible pour les particuliers ?",
+      "time": 20,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "FDM",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "dépôt de fil",
+        "fil fondu"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Les imprimantes SLS industrielles peuvent coûter plus de 100 000 euros.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Que faut-il vérifier avant de lancer une impression FDM ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Niveau du plateau, filament chargé, buse propre",
+          "correct": true
+        },
+        {
+          "text": "La couleur du câble USB",
+          "correct": false
+        },
+        {
+          "text": "Rien du tout",
+          "correct": false
+        },
+        {
+          "text": "Le prix du filament",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Vérifications avant impression FDM :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Plateau propre et de niveau",
+          "correct": true
+        },
+        {
+          "text": "Filament correctement chargé",
+          "correct": true
+        },
+        {
+          "text": "Buse non bouchée",
+          "correct": true
+        },
+        {
+          "text": "Fichier prêt à imprimer",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on le réglage de l'horizontalité du plateau ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "Nivellement",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "mise à niveau",
+        "leveling",
+        "calibration"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Si la buse est trop loin du plateau, que se passe-t-il ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La première couche n'adhère pas",
+          "correct": true
+        },
+        {
+          "text": "L'impression est parfaite",
+          "correct": false
+        },
+        {
+          "text": "L'imprimante explose",
+          "correct": false
+        },
+        {
+          "text": "Le plateau fond",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le nivellement du plateau est important pour la réussite de l'impression.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Cette buse bouchée va causer :",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Des problèmes d'extrusion et une mauvaise impression",
+          "correct": true
+        },
+        {
+          "text": "Une meilleure qualité",
+          "correct": false
+        },
+        {
+          "text": "Rien",
+          "correct": false
+        },
+        {
+          "text": "Une impression plus rapide",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Que faire si la buse est bouchée ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "La nettoyer",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "déboucher",
+        "changer",
+        "la déboucher"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le PETG est un filament qui combine :",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La facilité du PLA et la résistance de l'ABS",
+          "correct": true
+        },
+        {
+          "text": "Rien de spécial",
+          "correct": false
+        },
+        {
+          "text": "La fragilité du verre",
+          "correct": false
+        },
+        {
+          "text": "Le coût le plus élevé",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le PETG est un bon compromis entre PLA et ABS.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Résistance des filaments courants (du moins au plus résistant) :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "PLA (cassant)",
+          "correct": true
+        },
+        {
+          "text": "PETG (résistant)",
+          "correct": true
+        },
+        {
+          "text": "ABS (très résistant)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pourquoi le PLA est-il recommandé pour débuter ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Facile à imprimer, sans odeur, pas besoin de plateau chauffé",
+          "correct": true
+        },
+        {
+          "text": "Il est gratuit",
+          "correct": false
+        },
+        {
+          "text": "Il est le plus solide",
+          "correct": false
+        },
+        {
+          "text": "Il s'imprime à froid",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quel filament dégage des fumées potentiellement nocives à l'impression ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "ABS",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "l'ABS"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Il est recommandé d'aérer la pièce lors de l'impression d'ABS.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

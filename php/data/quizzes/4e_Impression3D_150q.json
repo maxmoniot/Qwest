@@ -1,0 +1,3153 @@
+{
+  "name": "4e_Impression3D_150q",
+  "version": "1.0",
+  "createdAt": "2026-04-06T21:11:59.000Z",
+  "questionsCount": 150,
+  "questions": [
+    {
+      "type": "multiple",
+      "question": "Quels sont les trois principaux types d'impression 3D étudiés au collège ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "FDM, stéréolithographie (SLA) et frittage laser (SLS)",
+          "correct": true
+        },
+        {
+          "text": "FDM, découpe laser et fraisage CNC",
+          "correct": false
+        },
+        {
+          "text": "SLA, jet d'encre et moulage par injection",
+          "correct": false
+        },
+        {
+          "text": "FDM, thermoformage et extrusion industrielle",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel type d'impression 3D utilise un filament plastique fondu déposé couche par couche ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le FDM (dépôt de filament fondu)",
+          "correct": true
+        },
+        {
+          "text": "La stéréolithographie (SLA)",
+          "correct": false
+        },
+        {
+          "text": "Le frittage laser (SLS)",
+          "correct": false
+        },
+        {
+          "text": "L'impression à jet d'encre",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel type d'impression 3D utilise un laser pour solidifier une résine liquide ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La stéréolithographie (SLA)",
+          "correct": true
+        },
+        {
+          "text": "Le FDM",
+          "correct": false
+        },
+        {
+          "text": "Le frittage laser (SLS)",
+          "correct": false
+        },
+        {
+          "text": "L'impression par jet de matière",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel type d'impression 3D utilise un laser pour fusionner une poudre couche par couche ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le frittage laser sélectif (SLS)",
+          "correct": true
+        },
+        {
+          "text": "La stéréolithographie (SLA)",
+          "correct": false
+        },
+        {
+          "text": "Le FDM",
+          "correct": false
+        },
+        {
+          "text": "Le laminage de feuilles (LOM)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'impression FDM est la technologie d'impression 3D la plus couramment utilisée dans les collèges.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Sur quel type de site peut-on télécharger gratuitement des fichiers STL prêts à imprimer ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Des sites de partage de modèles 3D comme Thingiverse ou Printables",
+          "correct": true
+        },
+        {
+          "text": "Des sites de vente de vêtements en ligne",
+          "correct": false
+        },
+        {
+          "text": "Des plateformes de streaming vidéo",
+          "correct": false
+        },
+        {
+          "text": "Des encyclopédies en ligne comme Wikipédia",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel logiciel en ligne gratuit permet aux élèves de créer des objets 3D simples sur mesure ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Tinkercad",
+          "correct": true
+        },
+        {
+          "text": "Photoshop",
+          "correct": false
+        },
+        {
+          "text": "Excel",
+          "correct": false
+        },
+        {
+          "text": "Minecraft",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Les logiciels de CAO (Conception Assistée par Ordinateur) permettent de créer des modèles numériques 3D.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le rôle d'un logiciel slicer ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Découper le modèle 3D en couches et préparer le fichier de commandes pour l'imprimante",
+          "correct": true
+        },
+        {
+          "text": "Créer des modèles 3D à partir de photos",
+          "correct": false
+        },
+        {
+          "text": "Controler l'imprimante via Bluetooth",
+          "correct": false
+        },
+        {
+          "text": "Convertir des photos en fichiers STL automatiquement",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le slicer est utilisé après la création du modèle 3D et avant de lancer l'impression.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment s'appelle le fichier de commandes envoyé à l'imprimante 3D par le slicer ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le G-code",
+          "correct": true
+        },
+        {
+          "text": "Le fichier STL",
+          "correct": false
+        },
+        {
+          "text": "Le fichier CAO",
+          "correct": false
+        },
+        {
+          "text": "Le fichier BMP",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le G-code contient les instructions de déplacement, de température et de vitesse pour l'imprimante.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le format de fichier 3D standard utilisé pour envoyer un modèle au slicer ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "STL",
+          "correct": true
+        },
+        {
+          "text": "MP3",
+          "correct": false
+        },
+        {
+          "text": "DOCX",
+          "correct": false
+        },
+        {
+          "text": "EXE",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "À quoi servent les supports d'impression en FDM ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "À soutenir les parties de la pièce qui sont en surplomb pendant l'impression",
+          "correct": true
+        },
+        {
+          "text": "À renforcer définitivement la structure de la pièce finale",
+          "correct": false
+        },
+        {
+          "text": "À accélérer l'impression en réduisant les déplacements",
+          "correct": false
+        },
+        {
+          "text": "À coller la pièce définitivement sur le plateau",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Les supports d'impression sont retirés de la pièce une fois l'impression terminée.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel composant de l'imprimante FDM fait fondre le filament ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le bloc chauffant",
+          "correct": true
+        },
+        {
+          "text": "Le plateau chauffant",
+          "correct": false
+        },
+        {
+          "text": "L'extrudeur",
+          "correct": false
+        },
+        {
+          "text": "Le ventilateur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel composant de l'imprimante FDM pousse le filament vers la tête d'impression ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'extrudeur",
+          "correct": true
+        },
+        {
+          "text": "La buse",
+          "correct": false
+        },
+        {
+          "text": "Le bloc chauffant",
+          "correct": false
+        },
+        {
+          "text": "Le plateau",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Par quel orifice le plastique fondu est-il déposé sur le plateau dans une imprimante FDM ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La buse d'impression",
+          "correct": true
+        },
+        {
+          "text": "L'extrudeur",
+          "correct": false
+        },
+        {
+          "text": "Le bloc chauffant",
+          "correct": false
+        },
+        {
+          "text": "Le plateau chauffant",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le rôle principal du plateau chauffant dans une imprimante FDM ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Maintenir la première couche bien collée et éviter que la pièce se déforme en refroidissant",
+          "correct": true
+        },
+        {
+          "text": "Faire fondre le filament plastique",
+          "correct": false
+        },
+        {
+          "text": "Refroidir la pièce plus rapidement",
+          "correct": false
+        },
+        {
+          "text": "Détecter les erreurs dans le G-code",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Sans plateau chauffant, certains matériaux comme l'ABS risquent de se décoller et se déformer pendant l'impression.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Parmi ces matériaux, lesquels peuvent être utilisés comme filament dans une imprimante FDM ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "PLA, ABS, PETG, TPU (et bien d'autres)",
+          "correct": true
+        },
+        {
+          "text": "Uniquement le PLA blanc",
+          "correct": false
+        },
+        {
+          "text": "Uniquement les métaux",
+          "correct": false
+        },
+        {
+          "text": "Uniquement les résines photosensibles",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Il existe une grande variété de matériaux utilisables dans les imprimantes FDM : plastiques standards, souples, composites, etc.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Que signifie le terme 'infill' (remplissage) dans le slicer ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La quantité de matière déposée à l'intérieur de la pièce, exprimée en pourcentage",
+          "correct": true
+        },
+        {
+          "text": "La vitesse de déplacement de la buse",
+          "correct": false
+        },
+        {
+          "text": "Le nombre de couches extérieures de la pièce",
+          "correct": false
+        },
+        {
+          "text": "La température du plateau chauffant",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un infill de 0% produit une pièce :",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Totalement creuse à l'intérieur",
+          "correct": true
+        },
+        {
+          "text": "Totalement pleine et solide",
+          "correct": false
+        },
+        {
+          "text": "Avec seulement 0 couche imprimée",
+          "correct": false
+        },
+        {
+          "text": "Invisible car transparente",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un infill de 100% produit une pièce :",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Entièrement pleine (solide)",
+          "correct": true
+        },
+        {
+          "text": "Entièrement creuse",
+          "correct": false
+        },
+        {
+          "text": "Avec uniquement des parois extérieures",
+          "correct": false
+        },
+        {
+          "text": "Imprimée en 100 secondes",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pour une pièce décorative sans contrainte mécanique, quel taux d'infill est le plus approprié ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "10 à 20 %",
+          "correct": true
+        },
+        {
+          "text": "80 à 100 %",
+          "correct": false
+        },
+        {
+          "text": "Exactement 50 %",
+          "correct": false
+        },
+        {
+          "text": "L'infill n'a aucune importance",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pour une pièce mécanique soumise à des forces importantes, quel taux d'infill est le plus approprié ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "60 à 100 %",
+          "correct": true
+        },
+        {
+          "text": "0 à 10 %",
+          "correct": false
+        },
+        {
+          "text": "Exactement 25 %",
+          "correct": false
+        },
+        {
+          "text": "Le taux d'infill n'influe pas sur la résistance",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Augmenter le taux d'infill d'une pièce augmente généralement sa résistance mécanique mais aussi sa consommation de filament.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel motif d'infill, inspiré des structures naturelles, offre un bon équilibre entre résistance et économie de matière ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le motif en nid d'abeilles (hexagonal)",
+          "correct": true
+        },
+        {
+          "text": "Le motif en lignes parallèles simples",
+          "correct": false
+        },
+        {
+          "text": "Le motif en croix droite",
+          "correct": false
+        },
+        {
+          "text": "Aucun remplissage (0%)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le motif d'infill choisi dans le slicer influence la résistance mécanique de la pièce imprimée.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Deux pièces imprimées avec le même taux d'infill mais des motifs différents auront-elles la même résistance ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Non, le motif influence la répartition des contraintes et donc la résistance",
+          "correct": true
+        },
+        {
+          "text": "Oui, seul le pourcentage d'infill compte",
+          "correct": false
+        },
+        {
+          "text": "Oui, car la matière utilisée est identique",
+          "correct": false
+        },
+        {
+          "text": "Non, mais uniquement si les pièces sont colorées différemment",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pourquoi la forme géométrique d'une pièce influence-t-elle sa résistance mécanique ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Parce que certaines formes répartissent mieux les contraintes et résistent mieux aux forces",
+          "correct": true
+        },
+        {
+          "text": "Parce que les formes rondes sont toujours fabriquées avec plus de matière",
+          "correct": false
+        },
+        {
+          "text": "Parce que le slicer choisit automatiquement un infill plus élevé pour les formes complexes",
+          "correct": false
+        },
+        {
+          "text": "Parce que les formes géométriques changent la couleur du filament",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un triangle est souvent utilisé dans les structures (ponts, tours) car il est :",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Indéformable sous les forces appliquées sur ses sommets",
+          "correct": true
+        },
+        {
+          "text": "La forme qui utilise le plus de matière",
+          "correct": false
+        },
+        {
+          "text": "La seule forme imprimable sans supports",
+          "correct": false
+        },
+        {
+          "text": "La forme la plus légère quelle que soit la matière",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Une arche peut supporter de lourdes charges car elle répartit les forces vers ses deux pieds d'appui.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pourquoi les nervures (ribs) ajoutées à une pièce imprimée en 3D augmentent-elles sa rigidité ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Elles augmentent la résistance à la flexion sans ajouter autant de matière qu'une paroi épaisse",
+          "correct": true
+        },
+        {
+          "text": "Elles ajoutent de la matière uniquement sur la surface visible",
+          "correct": false
+        },
+        {
+          "text": "Elles forcent le slicer à augmenter le taux d'infill automatiquement",
+          "correct": false
+        },
+        {
+          "text": "Elles changent la couleur de la pièce pour indiquer une zone solide",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle modification de conception permet d'augmenter la résistance à la flexion d'une planche plate imprimée en 3D sans doubler sa masse ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Lui donner une section en U ou en I, ou ajouter des nervures en dessous",
+          "correct": true
+        },
+        {
+          "text": "La peindre avec une peinture résistante",
+          "correct": false
+        },
+        {
+          "text": "Réduire sa taille de moitié",
+          "correct": false
+        },
+        {
+          "text": "L'imprimer plus vite",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Une pièce imprimée avec des parois plus épaisses (plus de périmètres) est généralement plus résistante qu'une pièce avec des parois fines.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Parmi ces deux pièces de même masse imprimées en FDM, laquelle résiste le mieux à la flexion ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "La pièce creuse avec des parois épaisses plutôt que la pièce pleine avec des parois fines",
+          "correct": true
+        },
+        {
+          "text": "La pièce pleine à faible infill",
+          "correct": false
+        },
+        {
+          "text": "La pièce avec le plus grand nombre de couleurs",
+          "correct": false
+        },
+        {
+          "text": "Les deux résistent exactement pareil si leur masse est identique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "En conception pour l'impression 3D, que signifie 'DfAM' (Design for Additive Manufacturing) ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Concevoir une pièce en tenant compte des contraintes et avantages de l'impression 3D",
+          "correct": true
+        },
+        {
+          "text": "Utiliser un logiciel propriétaire pour créer des fichiers STL",
+          "correct": false
+        },
+        {
+          "text": "Concevoir uniquement des pièces destinées à être moulées",
+          "correct": false
+        },
+        {
+          "text": "Un format de fichier alternatif au G-code",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la conséquence d'un infill très faible (ex. 5%) sur une pièce destinée à supporter du poids ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "La pièce risque de s'écraser ou de se déformer sous la charge",
+          "correct": true
+        },
+        {
+          "text": "La pièce sera plus résistante car plus légère",
+          "correct": false
+        },
+        {
+          "text": "La pièce sera identique à une pièce à 100% d'infill",
+          "correct": false
+        },
+        {
+          "text": "L'imprimante refusera de démarrer",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces taux d'infill du moins résistant au plus résistant :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "5 %",
+          "correct": true
+        },
+        {
+          "text": "20 %",
+          "correct": true
+        },
+        {
+          "text": "50 %",
+          "correct": true
+        },
+        {
+          "text": "100 %",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel paramètre du slicer permet d'augmenter l'épaisseur des parois extérieures d'une pièce sans modifier l'infill ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le nombre de périmètres (ou shells / walls)",
+          "correct": true
+        },
+        {
+          "text": "La hauteur de couche",
+          "correct": false
+        },
+        {
+          "text": "La température du plateau",
+          "correct": false
+        },
+        {
+          "text": "La vitesse d'impression",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "On peut améliorer la résistance mécanique d'une pièce FDM en combinant un bon taux d'infill ET une forme géométrique adaptée.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pourquoi imprimer une pièce avec un infill élevé est-il parfois inutile malgré le besoin de résistance ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Car une bonne forme géométrique (nervures, arches, épaisseur de paroi) peut suffire en utilisant moins de matière",
+          "correct": true
+        },
+        {
+          "text": "Car au-delà de 50% l'infill affaiblit la pièce",
+          "correct": false
+        },
+        {
+          "text": "Car le slicer plafonne automatiquement l'infill à 50%",
+          "correct": false
+        },
+        {
+          "text": "Car un infill élevé fait fondre la pièce pendant l'impression",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle forme d'infill ressemble aux alvéoles d'une ruche et est reconnue pour son efficacité mécanique ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'infill hexagonal (nid d'abeilles)",
+          "correct": true
+        },
+        {
+          "text": "L'infill en zigzag",
+          "correct": false
+        },
+        {
+          "text": "L'infill en spirale",
+          "correct": false
+        },
+        {
+          "text": "L'infill en points aléatoires",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on le pourcentage de matière déposée à l'intérieur d'une pièce imprimée en 3D ? (un seul mot anglais utilisé couramment en français)",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "infill",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "remplissage",
+        "taux de remplissage",
+        "in fill"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Parmi ces affirmations sur l'infill, laquelle est FAUSSE ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "L'infill n'a aucun impact sur la résistance mécanique d'une pièce",
+          "correct": true
+        },
+        {
+          "text": "Un infill plus élevé consomme plus de filament",
+          "correct": false
+        },
+        {
+          "text": "Le motif d'infill influence la résistance de la pièce",
+          "correct": false
+        },
+        {
+          "text": "Un infill de 100% donne une pièce pleine",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quel logiciel gratuit en ligne, développé par Autodesk, est utilisé au collège pour concevoir des objets 3D simples ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "Tinkercad",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "tinker cad",
+        "tinkercad.com"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans le cadre de l'impression FDM, quel est l'ordre correct de la chaîne numérique de fabrication ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Modélisation CAO → Export STL → Slicer (G-code) → Impression",
+          "correct": true
+        },
+        {
+          "text": "Slicer → Modélisation CAO → STL → Impression",
+          "correct": false
+        },
+        {
+          "text": "Impression → STL → Slicer → Modélisation CAO",
+          "correct": false
+        },
+        {
+          "text": "STL → G-code → CAO → Impression",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle propriété mécanique désigne la capacité d'une pièce à résister à une force qui cherche à la plier ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La résistance à la flexion",
+          "correct": true
+        },
+        {
+          "text": "La conductivité thermique",
+          "correct": false
+        },
+        {
+          "text": "La transparence optique",
+          "correct": false
+        },
+        {
+          "text": "La densité volumique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La stéréolithographie (SLA) utilise un filament plastique fondu pour créer des objets.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans quelle technologie d'impression 3D l'objet est-il construit dans un bac de poudre, sans avoir besoin de supports ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le frittage laser sélectif (SLS)",
+          "correct": true
+        },
+        {
+          "text": "Le dépôt de filament fondu (FDM)",
+          "correct": false
+        },
+        {
+          "text": "La stéréolithographie (SLA)",
+          "correct": false
+        },
+        {
+          "text": "L'impression à jet d'encre 2D",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'impression FDM, SLA et SLS sont toutes les trois des procédés de fabrication additive.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Que signifie 'fabrication additive' ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "On construit l'objet en ajoutant de la matière couche par couche",
+          "correct": true
+        },
+        {
+          "text": "On enlève de la matière dans un bloc comme avec une fraiseuse",
+          "correct": false
+        },
+        {
+          "text": "On mélange plusieurs matériaux ensemble dans un moule",
+          "correct": false
+        },
+        {
+          "text": "On assemble des pièces fabriquées séparément",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le nom du fichier de commandes produit par le slicer et envoyé à l'imprimante ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "G-code",
+          "correct": true
+        },
+        {
+          "text": "Fichier CAO",
+          "correct": false
+        },
+        {
+          "text": "Fichier STL",
+          "correct": false
+        },
+        {
+          "text": "Fichier PNG",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le slicer peut être utilisé sans avoir de modèle 3D au préalable.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans Tinkercad, comment peut-on créer un trou dans un objet ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "En utilisant une forme définie comme 'trou' et en la groupant avec l'objet principal",
+          "correct": true
+        },
+        {
+          "text": "En effaçant des couches dans le slicer",
+          "correct": false
+        },
+        {
+          "text": "En modifiant directement le G-code",
+          "correct": false
+        },
+        {
+          "text": "En utilisant un outil de sculpture numérique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Tinkercad permet de définir précisément les dimensions d'un objet en millimètres.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Après avoir créé un objet dans Tinkercad, quelle est l'étape suivante pour l'imprimer ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Exporter le modèle en fichier STL, puis l'ouvrir dans un slicer",
+          "correct": true
+        },
+        {
+          "text": "L'envoyer directement à l'imprimante sans autre manipulation",
+          "correct": false
+        },
+        {
+          "text": "Le convertir en fichier Word avant de l'imprimer",
+          "correct": false
+        },
+        {
+          "text": "Le scanner avec un scanner 3D pour obtenir le G-code",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel logiciel slicer gratuit et populaire est développé par la société Ultimaker ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Cura",
+          "correct": true
+        },
+        {
+          "text": "Tinkercad",
+          "correct": false
+        },
+        {
+          "text": "Blender",
+          "correct": false
+        },
+        {
+          "text": "Fusion 360",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce que la 'hauteur de couche' (layer height) dans le slicer ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "L'épaisseur de chaque couche de matière déposée lors de l'impression",
+          "correct": true
+        },
+        {
+          "text": "La hauteur totale maximale de la pièce imprimable",
+          "correct": false
+        },
+        {
+          "text": "Le nombre de couches dans la pièce",
+          "correct": false
+        },
+        {
+          "text": "La hauteur du plateau par rapport à la buse",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Une hauteur de couche plus petite donne une surface plus lisse mais allonge le temps d'impression.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pourquoi est-il parfois nécessaire d'ajouter un 'brim' autour d'une pièce dans le slicer ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Pour améliorer l'adhérence de la pièce au plateau et éviter qu'elle se décolle",
+          "correct": true
+        },
+        {
+          "text": "Pour rendre la pièce plus résistante mécaniquement",
+          "correct": false
+        },
+        {
+          "text": "Pour éviter que le filament ne se bouche dans la buse",
+          "correct": false
+        },
+        {
+          "text": "Pour ajouter une couche décorative autour de la pièce",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le phénomène de 'warping' (gauchissement) en FDM correspond à :",
+      "time": 30,
+      "answers": [
+        {
+          "text": "La déformation d'une pièce qui se soulève du plateau en refroidissant",
+          "correct": true
+        },
+        {
+          "text": "Des fils fins de plastique entre deux parties de la pièce",
+          "correct": false
+        },
+        {
+          "text": "Un décalage des couches pendant l'impression",
+          "correct": false
+        },
+        {
+          "text": "Un manque de filament en fin de bobine",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel matériau FDM est le plus susceptible de se gauchir (warping) s'il n'y a pas de plateau chauffant ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'ABS",
+          "correct": true
+        },
+        {
+          "text": "Le PLA",
+          "correct": false
+        },
+        {
+          "text": "Le TPU souple",
+          "correct": false
+        },
+        {
+          "text": "Le PETG",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce que le PLA comme matériau d'impression FDM ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Un plastique biosourcé (issu de végétaux) facile à imprimer",
+          "correct": true
+        },
+        {
+          "text": "Un métal léger utilisé dans les imprimantes industrielles",
+          "correct": false
+        },
+        {
+          "text": "Une résine liquide utilisée en SLA",
+          "correct": false
+        },
+        {
+          "text": "Une poudre utilisée dans le frittage laser",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Il est possible d'imprimer des objets flexibles et élastiques avec une imprimante FDM en utilisant un filament TPU.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle propriété du PLA le rend plus simple à utiliser en classe qu'un filament ABS ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Il s'imprime à basse température sans plateau chauffant élevé et ne dégage pas de vapeurs nocives",
+          "correct": true
+        },
+        {
+          "text": "Il est transparent ce qui facilite le contrôle de l'impression",
+          "correct": false
+        },
+        {
+          "text": "Il est beaucoup plus résistant à la chaleur que l'ABS",
+          "correct": false
+        },
+        {
+          "text": "Il ne nécessite jamais de supports d'impression",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel diamètre de filament est le plus courant dans les imprimantes FDM de collège ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "1,75 mm",
+          "correct": true
+        },
+        {
+          "text": "0,4 mm",
+          "correct": false
+        },
+        {
+          "text": "5 mm",
+          "correct": false
+        },
+        {
+          "text": "3 cm",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "À quoi correspond le diamètre de 0,4 mm souvent indiqué sur les imprimantes FDM ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Au diamètre de la buse d'impression",
+          "correct": true
+        },
+        {
+          "text": "Au diamètre du filament",
+          "correct": false
+        },
+        {
+          "text": "À l'épaisseur minimale d'une couche",
+          "correct": false
+        },
+        {
+          "text": "Au diamètre de la bobine de filament",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment l'infill affecte-t-il le temps d'impression d'une pièce FDM ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Un infill plus élevé allonge le temps d'impression car la buse dépose plus de matière",
+          "correct": true
+        },
+        {
+          "text": "Un infill plus élevé accélère l'impression car la pièce est plus stable",
+          "correct": false
+        },
+        {
+          "text": "L'infill n'a aucune influence sur le temps d'impression",
+          "correct": false
+        },
+        {
+          "text": "Un infill à 100% est toujours plus rapide car la trajectoire est plus simple",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel taux d'infill serait le plus adapté pour une boîte de rangement légère ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "15 à 25 %",
+          "correct": true
+        },
+        {
+          "text": "90 à 100 %",
+          "correct": false
+        },
+        {
+          "text": "0 % (totalement creux)",
+          "correct": false
+        },
+        {
+          "text": "Le taux d'infill ne s'applique pas aux boîtes",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pour imprimer un crochet mural destiné à supporter des objets lourds, quel réglage d'infill choisiras-tu ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un infill élevé, entre 60 et 100 %",
+          "correct": true
+        },
+        {
+          "text": "Un infill très faible, entre 0 et 10 %",
+          "correct": false
+        },
+        {
+          "text": "L'infill ne change rien pour un crochet",
+          "correct": false
+        },
+        {
+          "text": "Un infill de 25 % suffit toujours quelle que soit la pièce",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Pour une même pièce, augmenter le taux d'infill augmente toujours la consommation de filament.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Parmi ces motifs d'infill, lequel ressemble à des lignes droites alternant leur direction à chaque couche ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "L'infill en lignes (lines)",
+          "correct": true
+        },
+        {
+          "text": "L'infill en nid d'abeilles",
+          "correct": false
+        },
+        {
+          "text": "L'infill gyroïde",
+          "correct": false
+        },
+        {
+          "text": "L'infill concentrique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "L'infill gyroïde est un motif complexe en 3D. Quel est son principal avantage ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Il offre une résistance uniforme dans toutes les directions et une bonne flexibilité",
+          "correct": true
+        },
+        {
+          "text": "Il est le plus rapide à imprimer de tous les motifs",
+          "correct": false
+        },
+        {
+          "text": "Il consomme 0 % de filament supplémentaire",
+          "correct": false
+        },
+        {
+          "text": "Il est le seul motif compatible avec le PLA",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Choisir un motif d'infill adapté permet d'optimiser la résistance d'une pièce tout en limitant la consommation de matière.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce que la résistance à la compression d'une pièce imprimée ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Sa capacité à supporter une force qui l'écrase sans se déformer ni se casser",
+          "correct": true
+        },
+        {
+          "text": "Sa capacité à résister à l'eau et à l'humidité",
+          "correct": false
+        },
+        {
+          "text": "Sa capacité à conduire la chaleur sans fondre",
+          "correct": false
+        },
+        {
+          "text": "Sa capacité à être percée sans éclater",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pour résister à une force de compression (écrasement), quel type d'infill est le plus efficace ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Un infill dense avec un taux élevé (80-100%) ou un motif en grille solide",
+          "correct": true
+        },
+        {
+          "text": "Un infill à 5 % en lignes simples",
+          "correct": false
+        },
+        {
+          "text": "Aucun infill (pièce creuse)",
+          "correct": false
+        },
+        {
+          "text": "Un infill uniquement sur la couche du dessus",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pourquoi une voûte en pierre (ou une arche imprimée en 3D) peut-elle supporter de lourdes charges sans colle ni attache ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Les forces de compression se répartissent le long de la courbe jusqu'aux pieds d'appui",
+          "correct": true
+        },
+        {
+          "text": "Le poids des pierres colle les éléments entre eux",
+          "correct": false
+        },
+        {
+          "text": "L'arche utilise toujours un infill à 100 %",
+          "correct": false
+        },
+        {
+          "text": "La forme courbe augmente la masse de la structure",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pourquoi les os longs du corps humain sont-ils creux avec une structure spongieuse à l'intérieur ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Pour être légers tout en restant résistants grâce à leur structure interne en réseau",
+          "correct": true
+        },
+        {
+          "text": "Pour pouvoir se remplir de liquide pendant la croissance",
+          "correct": false
+        },
+        {
+          "text": "Parce qu'ils sont fabriqués par un processus similaire au FDM",
+          "correct": false
+        },
+        {
+          "text": "Pour conduire l'électricité dans le corps humain",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La nature inspire souvent les concepteurs de pièces imprimées en 3D pour trouver des structures légères et résistantes.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Les pièces imprimées avec un motif d'infill en nid d'abeilles montrent une bonne résistance à l'écrasement. À quelle structure naturelle cela est-il comparable ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Aux alvéoles des abeilles qui supportent le poids du miel",
+          "correct": true
+        },
+        {
+          "text": "Aux racines d'un arbre qui s'enfoncent en profondeur",
+          "correct": false
+        },
+        {
+          "text": "Aux écailles d'un poisson qui glissent sur l'eau",
+          "correct": false
+        },
+        {
+          "text": "Aux anneaux de croissance d'un tronc d'arbre",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel paramètre du slicer faut-il augmenter en priorité pour améliorer la résistance aux chocs des parois d'une pièce FDM ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le nombre de périmètres (parois)",
+          "correct": true
+        },
+        {
+          "text": "La vitesse d'impression",
+          "correct": false
+        },
+        {
+          "text": "La température du plateau",
+          "correct": false
+        },
+        {
+          "text": "La hauteur de couche uniquement",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est l'effet d'un nombre de périmètres élevé (ex. 4 ou 5) sur une pièce FDM ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Les parois extérieures sont plus épaisses et la pièce est plus résistante aux impacts",
+          "correct": true
+        },
+        {
+          "text": "La pièce sera plus légère car l'infill sera automatiquement réduit",
+          "correct": false
+        },
+        {
+          "text": "La surface sera plus lisse mais la résistance diminuera",
+          "correct": false
+        },
+        {
+          "text": "L'imprimante refusera d'imprimer car c'est une valeur trop élevée",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Pour une pièce fonctionnelle, il est souvent plus efficace d'augmenter le nombre de périmètres plutôt que de monter l'infill à 100%.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelles sont les deux grandes façons d'améliorer la résistance mécanique d'une pièce FDM dans le slicer ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Augmenter le taux d'infill et/ou augmenter le nombre de périmètres",
+          "correct": true
+        },
+        {
+          "text": "Réduire la hauteur de couche et baisser la température de la buse",
+          "correct": false
+        },
+        {
+          "text": "Imprimer plus vite et avec un plateau plus chaud",
+          "correct": false
+        },
+        {
+          "text": "Changer la langue du slicer et mettre à jour le firmware",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce que la 'résistance à la traction' d'une pièce imprimée ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Sa capacité à supporter une force qui l'étire sans se rompre",
+          "correct": true
+        },
+        {
+          "text": "Sa capacité à résister à la chaleur sans fondre",
+          "correct": false
+        },
+        {
+          "text": "Sa capacité à être percée avec une perceuse",
+          "correct": false
+        },
+        {
+          "text": "Sa capacité à absorber les chocs latéraux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Remets dans le bon ordre la chaîne complète de fabrication d'un objet en impression 3D FDM :",
+      "time": 40,
+      "answers": [
+        {
+          "text": "Modélisation dans Tinkercad (ou autre logiciel CAO)",
+          "correct": true
+        },
+        {
+          "text": "Export en fichier STL",
+          "correct": true
+        },
+        {
+          "text": "Ouverture dans le slicer et paramétrage (infill, supports, hauteur de couche…)",
+          "correct": true
+        },
+        {
+          "text": "Impression par la machine FDM",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est l'avantage de l'impression 3D pour fabriquer une pièce de remplacement cassée ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "On peut concevoir sur mesure la pièce exacte dont on a besoin sans passer par un fabricant",
+          "correct": true
+        },
+        {
+          "text": "L'impression 3D est toujours moins chère qu'acheter une pièce d'origine",
+          "correct": false
+        },
+        {
+          "text": "Les pièces imprimées en 3D sont toujours plus résistantes que les originales",
+          "correct": false
+        },
+        {
+          "text": "On n'a pas besoin de logiciel pour imprimer une pièce de remplacement",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'impression 3D permet de fabriquer des pièces dont la forme interne serait impossible à réaliser avec un moule traditionnel.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Laquelle de ces affirmations sur les supports FDM est VRAIE ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Les supports consomment du filament supplémentaire et laissent des marques sur la pièce",
+          "correct": true
+        },
+        {
+          "text": "Les supports restent définitivement dans la pièce pour la renforcer",
+          "correct": false
+        },
+        {
+          "text": "Les supports ne sont générés que pour les pièces en ABS",
+          "correct": false
+        },
+        {
+          "text": "Les supports augmentent automatiquement le taux d'infill",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on le logiciel qui découpe un modèle 3D en couches et génère le fichier de commandes pour l'imprimante ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "slicer",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "le slicer",
+        "un slicer",
+        "logiciel slicer",
+        "trancheur",
+        "logiciel de découpe"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quels paramètres du slicer ont le plus d'impact sur la résistance mécanique d'une pièce FDM ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Le taux d'infill, le motif d'infill et le nombre de périmètres",
+          "correct": true
+        },
+        {
+          "text": "La vitesse d'impression et la couleur du filament",
+          "correct": false
+        },
+        {
+          "text": "Le nom du fichier STL et la date d'impression",
+          "correct": false
+        },
+        {
+          "text": "La résolution de l'écran de l'ordinateur utilisé pour slicer",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Que se passe-t-il si on imprime une pièce fonctionnelle avec seulement 1 périmètre et 5 % d'infill ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "La pièce sera fragile et risque de se casser facilement sous les contraintes",
+          "correct": true
+        },
+        {
+          "text": "La pièce sera plus solide car elle sera plus légère",
+          "correct": false
+        },
+        {
+          "text": "L'imprimante ne pourra pas exécuter ce G-code",
+          "correct": false
+        },
+        {
+          "text": "La pièce sera identique à une pièce à 50 % d'infill",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quel est le nom du format de fichier 3D (extension en 3 lettres) universellement utilisé pour envoyer un modèle au slicer ?",
+      "time": 20,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "STL",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        ".stl",
+        "stl",
+        "fichier stl"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la différence fondamentale entre la fabrication additive (impression 3D) et la fabrication soustractive (usinage) ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "L'impression 3D ajoute de la matière couche par couche, l'usinage enlève de la matière dans un bloc",
+          "correct": true
+        },
+        {
+          "text": "L'impression 3D est toujours plus rapide que l'usinage",
+          "correct": false
+        },
+        {
+          "text": "L'usinage produit des pièces plus légères car il retire de la matière",
+          "correct": false
+        },
+        {
+          "text": "Il n'y a aucune différence, les deux méthodes utilisent les mêmes matériaux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel avantage l'impression 3D présente-t-elle par rapport au moulage par injection pour fabriquer une pièce unique ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Elle ne nécessite pas de moule coûteux : on imprime directement depuis le fichier numérique",
+          "correct": true
+        },
+        {
+          "text": "Elle produit des pièces en série beaucoup plus rapidement",
+          "correct": false
+        },
+        {
+          "text": "Elle est la seule technique qui permet d'utiliser du plastique",
+          "correct": false
+        },
+        {
+          "text": "Elle ne nécessite aucune compétence en modélisation 3D",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un même fichier STL peut être imprimé avec des paramètres différents (infill, vitesse, matériau) selon les besoins.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pourquoi est-il utile de vérifier l'aperçu en couches dans le slicer avant de lancer l'impression ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Pour repérer des erreurs de paramétrage (supports manquants, infill incorrect) avant de gaspiller du filament",
+          "correct": true
+        },
+        {
+          "text": "Car le slicer ne peut pas générer le G-code sans cette vérification",
+          "correct": false
+        },
+        {
+          "text": "Pour changer la couleur du filament en cours d'impression",
+          "correct": false
+        },
+        {
+          "text": "Car l'aperçu modifie automatiquement les dimensions de la pièce",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Que peut estimer le slicer avant même de lancer l'impression ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La durée d'impression et la quantité de filament consommée",
+          "correct": true
+        },
+        {
+          "text": "La résistance mécanique exacte de la pièce finie",
+          "correct": false
+        },
+        {
+          "text": "Le prix de revente de la pièce terminée",
+          "correct": false
+        },
+        {
+          "text": "La température ambiante idéale de la pièce",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un slicer peut générer automatiquement des supports là où la pièce en a besoin, sans intervention manuelle.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans le slicer, quel paramètre contrôle la densité du remplissage intérieur de la pièce ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le taux d'infill (remplissage)",
+          "correct": true
+        },
+        {
+          "text": "La hauteur de couche",
+          "correct": false
+        },
+        {
+          "text": "La température de la buse",
+          "correct": false
+        },
+        {
+          "text": "La vitesse de déplacement",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel taux d'infill est le meilleur compromis entre résistance correcte et économie de matière pour la plupart des pièces d'usage courant ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "20 à 40 %",
+          "correct": true
+        },
+        {
+          "text": "0 à 5 %",
+          "correct": false
+        },
+        {
+          "text": "95 à 100 %",
+          "correct": false
+        },
+        {
+          "text": "Il n'existe pas de compromis, il faut toujours choisir 100 %",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pour imprimer un pot de fleur décoratif, quel infill est le plus raisonnable ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "10 à 20 %, car la pièce n'est soumise à aucune force importante",
+          "correct": true
+        },
+        {
+          "text": "100 %, pour être sûr qu'il ne se casse pas",
+          "correct": false
+        },
+        {
+          "text": "0 %, pour économiser le maximum de filament",
+          "correct": false
+        },
+        {
+          "text": "L'infill ne s'applique pas aux objets creux comme les pots",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pour imprimer un support de téléphone fixé sous un bureau et soumis à des vibrations, quel infill est le plus adapté ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "50 à 80 %, pour une bonne résistance mécanique",
+          "correct": true
+        },
+        {
+          "text": "5 %, car un support est toujours léger",
+          "correct": false
+        },
+        {
+          "text": "0 %, car les vibrations passent à travers les zones creuses",
+          "correct": false
+        },
+        {
+          "text": "L'infill n'a aucun impact sur la résistance aux vibrations",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Deux pièces identiques imprimées avec des motifs d'infill différents mais le même taux peuvent avoir des résistances différentes.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "L'infill concentrique dépose des lignes en forme de spirales parallèles aux parois. Quel usage lui convient particulièrement ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Les pièces flexibles ou les objets dont la souplesse est recherchée",
+          "correct": true
+        },
+        {
+          "text": "Les pièces qui doivent résister à de très fortes compressions",
+          "correct": false
+        },
+        {
+          "text": "Les pièces métalliques nécessitant un frittage laser",
+          "correct": false
+        },
+        {
+          "text": "Les pièces transparentes en résine SLA",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le rôle de la bobine de filament dans une imprimante FDM ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Elle stocke et déroule le filament plastique qui sera fondu et déposé",
+          "correct": true
+        },
+        {
+          "text": "Elle contrôle la température du plateau chauffant",
+          "correct": false
+        },
+        {
+          "text": "Elle génère le G-code envoyé à la buse",
+          "correct": false
+        },
+        {
+          "text": "Elle refroidit la pièce après impression",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Que se passe-t-il si la bobine de filament est vide en cours d'impression ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'impression s'arrête ou continue avec des couches incomplètes qui fragilisent la pièce",
+          "correct": true
+        },
+        {
+          "text": "L'imprimante change automatiquement de bobine",
+          "correct": false
+        },
+        {
+          "text": "La buse utilise l'air ambiant pour terminer la couche",
+          "correct": false
+        },
+        {
+          "text": "Le slicer repart depuis le début automatiquement",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la fonction du ventilateur de refroidissement placé près de la buse d'une imprimante FDM ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Solidifier rapidement le plastique extrudé pour maintenir la forme de la couche",
+          "correct": true
+        },
+        {
+          "text": "Refroidir le moteur de l'extrudeur",
+          "correct": false
+        },
+        {
+          "text": "Sécher le filament avant qu'il entre dans la buse",
+          "correct": false
+        },
+        {
+          "text": "Répartir uniformément la chaleur du plateau",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le bloc chauffant d'une imprimante FDM doit atteindre une température d'environ 180 à 220 °C pour faire fondre du PLA.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Si la buse d'une imprimante FDM est bouchée, que se passe-t-il pendant l'impression ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le filament ne sort plus correctement : des couches sont manquantes et la pièce est inutilisable",
+          "correct": true
+        },
+        {
+          "text": "L'impression continue normalement mais plus lentement",
+          "correct": false
+        },
+        {
+          "text": "Le slicer détecte le bouchon et change automatiquement de buse",
+          "correct": false
+        },
+        {
+          "text": "Le plateau monte pour compenser le manque de matière",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la différence entre l'extrudeur direct (direct drive) et l'extrudeur Bowden sur une imprimante FDM ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "En direct drive, le moteur est sur la tête ; en Bowden, il est déporté et le filament passe dans un tube",
+          "correct": true
+        },
+        {
+          "text": "L'extrudeur Bowden ne peut utiliser que du PLA",
+          "correct": false
+        },
+        {
+          "text": "Le direct drive est toujours plus lent que le Bowden",
+          "correct": false
+        },
+        {
+          "text": "Il n'y a aucune différence fonctionnelle entre les deux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pourquoi le plateau chauffant est-il particulièrement utile pour imprimer en ABS ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "L'ABS se contracte beaucoup en refroidissant ; le plateau chaud réduit cet écart de température et évite le gauchissement",
+          "correct": true
+        },
+        {
+          "text": "L'ABS fond uniquement si le plateau est chaud",
+          "correct": false
+        },
+        {
+          "text": "Le plateau chaud accélère le durcissement de l'ABS",
+          "correct": false
+        },
+        {
+          "text": "Le plateau chaud empêche la buse de se boucher avec l'ABS",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel matériau est conseillé pour imprimer une pièce destinée à rester en contact avec des aliments ou des boissons ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le PETG, considéré comme plus adapté au contact alimentaire que l'ABS",
+          "correct": true
+        },
+        {
+          "text": "L'ABS, car c'est le matériau le plus solide",
+          "correct": false
+        },
+        {
+          "text": "Le TPU souple, car il est souple et ne casse pas",
+          "correct": false
+        },
+        {
+          "text": "N'importe quel filament, car tous sont alimentaires",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le PETG offre une meilleure résistance à l'humidité et aux chocs que le PLA.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un filament composite bois est composé de :",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Plastique (PLA) mélangé à de la poudre de bois pour donner un aspect et une odeur boisés",
+          "correct": true
+        },
+        {
+          "text": "Copeaux de bois pur qui fondent dans la buse",
+          "correct": false
+        },
+        {
+          "text": "Résine époxy renforcée de fibres de bois",
+          "correct": false
+        },
+        {
+          "text": "Cellulose liquide déposée comme de l'encre",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Il existe des filaments FDM contenant des particules de métal qui donnent à la pièce un aspect et une masse proches du métal.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle propriété rend le filament TPU plus difficile à imprimer que le PLA sur certaines imprimantes ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Sa souplesse peut provoquer des bourrage dans le chemin d'alimentation du filament",
+          "correct": true
+        },
+        {
+          "text": "Il fond à une température trop haute pour les imprimantes classiques",
+          "correct": false
+        },
+        {
+          "text": "Il ne colle jamais au plateau, même avec une colle spéciale",
+          "correct": false
+        },
+        {
+          "text": "Il nécessite une buse en diamant uniquement",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce que la résistance à l'impact d'une pièce imprimée ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Sa capacité à absorber un choc brutal sans se casser",
+          "correct": true
+        },
+        {
+          "text": "Sa capacité à résister à la corrosion de l'eau",
+          "correct": false
+        },
+        {
+          "text": "Sa capacité à supporter une charge lente et continue",
+          "correct": false
+        },
+        {
+          "text": "Sa dureté de surface mesurée par une pointe",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pour une pièce qui doit résister à des chocs répétés (ex. : boîtier de protection), quel matériau FDM est le plus adapté ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Un filament résistant aux chocs comme l'ABS, le PETG ou le TPU",
+          "correct": true
+        },
+        {
+          "text": "Le PLA standard, car c'est le plus courant",
+          "correct": false
+        },
+        {
+          "text": "Un filament métallique, car les métaux ne cassent jamais",
+          "correct": false
+        },
+        {
+          "text": "Le filament bois, car le bois est naturellement élastique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle forme géométrique est la plus rigide et indéformable avec le minimum de matière ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le triangle",
+          "correct": true
+        },
+        {
+          "text": "Le carré",
+          "correct": false
+        },
+        {
+          "text": "Le cercle",
+          "correct": false
+        },
+        {
+          "text": "Le losange",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pourquoi les ponts, les tours de transmission et les structures métalliques utilisent-ils des triangles dans leur charpente ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le triangle est géométriquement indéformable : il ne peut pas changer de forme sans changer de longueur de côté",
+          "correct": true
+        },
+        {
+          "text": "Le triangle est la seule forme que l'on peut dessiner avec des tubes creux",
+          "correct": false
+        },
+        {
+          "text": "Le triangle utilise toujours moins de matière que le carré, quelle que soit la taille",
+          "correct": false
+        },
+        {
+          "text": "Le triangle est esthétiquement plus agréable que les autres formes",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'une nervure (rib) dans la conception d'une pièce imprimée en 3D ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Une saillie fine ajoutée sur la face d'une paroi pour augmenter sa rigidité à la flexion",
+          "correct": true
+        },
+        {
+          "text": "Un motif d'infill spécifique au filament ABS",
+          "correct": false
+        },
+        {
+          "text": "Un paramètre du slicer pour lisser les surfaces extérieures",
+          "correct": false
+        },
+        {
+          "text": "Un type de support imprimé en dessous de la pièce",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est l'intérêt principal de bien orienter une pièce dans le slicer avant d'imprimer ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Réduire les supports nécessaires, améliorer la résistance dans le sens des forces et avoir une meilleure surface visible",
+          "correct": true
+        },
+        {
+          "text": "Changer automatiquement le taux d'infill",
+          "correct": false
+        },
+        {
+          "text": "Modifier la couleur du filament utilisé",
+          "correct": false
+        },
+        {
+          "text": "Réduire la température de la buse pour économiser l'énergie",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Si on imprime un maillon de chaîne à plat sur le plateau, dans quel sens sera-t-il le plus solide ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Dans le plan horizontal (X/Y), dans le sens où les couches sont déposées",
+          "correct": true
+        },
+        {
+          "text": "Verticalement, car les couches sont comprimées les unes contre les autres",
+          "correct": false
+        },
+        {
+          "text": "En diagonale, car le slicer optimise automatiquement cette direction",
+          "correct": false
+        },
+        {
+          "text": "La direction d'impression n'a aucun impact sur la résistance d'un maillon",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Parmi ces formes, laquelle distribue les forces de compression vers ses appuis comme le font les voûtes et les arches ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "La forme en arc (arche)",
+          "correct": true
+        },
+        {
+          "text": "La forme plate horizontale",
+          "correct": false
+        },
+        {
+          "text": "La forme en L",
+          "correct": false
+        },
+        {
+          "text": "La forme en T renversé",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "En impression 3D FDM, il est possible d'obtenir une pièce à la fois légère ET résistante en combinant un infill faible avec une géométrie bien pensée (nervures, parois épaisses).",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un élève veut imprimer une étagère murale en FDM. Quelle combinaison de paramètres est la plus judicieuse ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Infill 60-80 %, 3-4 périmètres, avec des nervures de renfort sous la tablette",
+          "correct": true
+        },
+        {
+          "text": "Infill 5 %, 1 périmètre, sans nervures pour aller plus vite",
+          "correct": false
+        },
+        {
+          "text": "Infill 100 % obligatoire, sinon l'étagère casse toujours",
+          "correct": false
+        },
+        {
+          "text": "Les paramètres n'ont aucune importance si on utilise du PLA",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un élève conçoit une pièce dans Tinkercad. Il veut la rendre plus résistante à la flexion. Quelle modification de forme peut-il faire DANS Tinkercad ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Ajouter des nervures sous la pièce ou lui donner une section en U plutôt que plate",
+          "correct": true
+        },
+        {
+          "text": "Changer la couleur de la pièce en rouge",
+          "correct": false
+        },
+        {
+          "text": "Augmenter directement l'infill dans Tinkercad",
+          "correct": false
+        },
+        {
+          "text": "Réduire la hauteur de couche dans Tinkercad",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces actions dans l'ordre où elles sont réalisées lors d'un projet d'impression 3D au collège :",
+      "time": 40,
+      "answers": [
+        {
+          "text": "Identifier le besoin et les contraintes mécaniques de la pièce",
+          "correct": true
+        },
+        {
+          "text": "Concevoir la forme dans Tinkercad en intégrant nervures ou renforts si nécessaire",
+          "correct": true
+        },
+        {
+          "text": "Régler l'infill et les périmètres dans le slicer selon l'usage",
+          "correct": true
+        },
+        {
+          "text": "Imprimer, retirer les supports et tester la pièce",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Deux élèves impriment la même pièce : l'un avec infill hexagonal à 30 %, l'autre avec infill en lignes à 30 %. Lequel a la pièce la plus résistante dans toutes les directions ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Celui avec l'infill hexagonal, car ce motif distribue mieux les forces dans toutes les directions",
+          "correct": true
+        },
+        {
+          "text": "Celui avec l'infill en lignes, car les lignes droites sont plus solides",
+          "correct": false
+        },
+        {
+          "text": "Les deux pièces sont identiquement résistantes puisque le taux est le même",
+          "correct": false
+        },
+        {
+          "text": "Le motif d'infill n'a aucune influence, seul le taux compte",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle affirmation sur la relation entre infill et résistance est CORRECTE ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "La résistance d'une pièce dépend à la fois du taux d'infill, du motif d'infill ET de la forme géométrique",
+          "correct": true
+        },
+        {
+          "text": "Seul le taux d'infill compte, la forme et le motif n'ont aucun rôle",
+          "correct": false
+        },
+        {
+          "text": "Plus le taux d'infill est bas, plus la pièce est résistante car elle est plus légère",
+          "correct": false
+        },
+        {
+          "text": "La résistance ne dépend que de la couleur du filament",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on une petite saillie fine ajoutée sur la face d'une paroi pour rigidifier une pièce imprimée en 3D sans trop alourdir ? (mot courant en conception mécanique)",
+      "time": 30,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "nervure",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "nervures",
+        "une nervure",
+        "les nervures",
+        "rib",
+        "ribs"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Laquelle de ces affirmations sur les supports FDM est FAUSSE ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Les supports restent dans la pièce pour améliorer sa résistance définitive",
+          "correct": true
+        },
+        {
+          "text": "Les supports peuvent être générés automatiquement par le slicer",
+          "correct": false
+        },
+        {
+          "text": "Les supports consomment du filament supplémentaire",
+          "correct": false
+        },
+        {
+          "text": "Les supports laissent parfois des traces sur la surface de la pièce",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quel est le nom de la technologie d'impression 3D qui utilise un laser pour solidifier une résine liquide couche par couche ? (sigle en 3 lettres)",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "SLA",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "sla",
+        "stéréolithographie",
+        "stereolithographie"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'impression 3D FDM permet de fabriquer des pièces dont certaines zones internes seraient impossibles à réaliser avec un moule classique.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la différence entre la résistance à la flexion et la résistance à la compression d'une pièce imprimée ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "La flexion est une force qui plie la pièce, la compression est une force qui l'écrase",
+          "correct": true
+        },
+        {
+          "text": "La flexion et la compression sont deux mots pour décrire la même force",
+          "correct": false
+        },
+        {
+          "text": "La compression plie la pièce, la flexion l'écrase",
+          "correct": false
+        },
+        {
+          "text": "Ces termes ne s'appliquent qu'aux pièces métalliques, pas aux plastiques",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le choix du motif d'infill influence la direction dans laquelle une pièce FDM est la plus résistante.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel réglage du slicer permet d'améliorer directement l'épaisseur des parois extérieures d'une pièce FDM ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le nombre de périmètres (walls)",
+          "correct": true
+        },
+        {
+          "text": "La vitesse d'impression",
+          "correct": false
+        },
+        {
+          "text": "La température du plateau",
+          "correct": false
+        },
+        {
+          "text": "Le nom du fichier G-code",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est l'effet d'une faible hauteur de couche sur l'apparence de surface d'une pièce FDM ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La surface est plus lisse car les strates sont moins visibles",
+          "correct": true
+        },
+        {
+          "text": "La surface est plus rugueuse car il y a plus de couches",
+          "correct": false
+        },
+        {
+          "text": "La hauteur de couche ne change pas l'aspect de surface",
+          "correct": false
+        },
+        {
+          "text": "La surface devient brillante quelle que soit la hauteur de couche",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel taux d'infill conviendrait le mieux pour imprimer un modèle réduit de bâtiment destiné à un exposé ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "10 à 20 %, car l'objet est décoratif et ne subit pas de contraintes mécaniques",
+          "correct": true
+        },
+        {
+          "text": "100 %, pour que le modèle soit le plus réaliste possible",
+          "correct": false
+        },
+        {
+          "text": "0 %, pour économiser tout le filament",
+          "correct": false
+        },
+        {
+          "text": "50 % obligatoire pour tout objet imprimé en PLA",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un infill en nid d'abeilles à 25 % peut offrir une meilleure résistance qu'un infill en lignes droites à 25 % pour une pièce soumise à des forces dans plusieurs directions.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Parmi ces paramètres du slicer, lequel N'influence PAS directement la résistance mécanique d'une pièce FDM ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le nom du fichier G-code enregistré sur la carte SD",
+          "correct": true
+        },
+        {
+          "text": "Le taux d'infill",
+          "correct": false
+        },
+        {
+          "text": "Le nombre de périmètres",
+          "correct": false
+        },
+        {
+          "text": "Le motif d'infill",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Deux élèves impriment le même objet : l'un avec 2 périmètres et infill 20 %, l'autre avec 4 périmètres et infill 20 %. Quelle pièce sera la plus résistante aux chocs sur les parois ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Celle avec 4 périmètres, car ses parois extérieures sont plus épaisses",
+          "correct": true
+        },
+        {
+          "text": "Celle avec 2 périmètres, car elle est plus légère",
+          "correct": false
+        },
+        {
+          "text": "Elles sont identiques puisque l'infill est le même",
+          "correct": false
+        },
+        {
+          "text": "Cela dépend uniquement de la couleur du filament",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pour une pièce destinée à être portée en extérieur (ex. : clip de vélo), quel matériau FDM est à privilégier par rapport au PLA ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le PETG ou l'ABS, car le PLA se déforme à la chaleur (voiture, soleil) et résiste moins à l'humidité",
+          "correct": true
+        },
+        {
+          "text": "Le PLA, car c'est le seul matériau qui résiste aux UV",
+          "correct": false
+        },
+        {
+          "text": "Le filament bois, car le bois résiste naturellement aux intempéries",
+          "correct": false
+        },
+        {
+          "text": "N'importe quel filament, les conditions extérieures n'ont aucun impact",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le PLA peut se déformer si une pièce est laissée dans un endroit chaud (tableau de bord de voiture en été, par exemple).",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel motif d'infill est le plus adapté pour une pièce qui doit résister uniformément à des forces venant de toutes les directions ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le gyroïde ou le nid d'abeilles, qui distribuent les contraintes dans toutes les directions",
+          "correct": true
+        },
+        {
+          "text": "Les lignes parallèles simples, car elles sont les plus droites",
+          "correct": false
+        },
+        {
+          "text": "L'infill concentrique, car les cercles résistent à tout",
+          "correct": false
+        },
+        {
+          "text": "L'infill à 0 %, car un creux ne peut pas se déformer",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle affirmation résume le mieux la bonne pratique de réglage du slicer pour une pièce fonctionnelle ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Choisir le taux d'infill, le motif et le nombre de périmètres en fonction de l'usage réel de la pièce",
+          "correct": true
+        },
+        {
+          "text": "Toujours utiliser 100 % d'infill pour être sûr que la pièce tienne",
+          "correct": false
+        },
+        {
+          "text": "Utiliser systématiquement les réglages par défaut du slicer sans les modifier",
+          "correct": false
+        },
+        {
+          "text": "Réduire tous les paramètres au minimum pour imprimer le plus vite possible",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

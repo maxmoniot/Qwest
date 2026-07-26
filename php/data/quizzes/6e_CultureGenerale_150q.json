@@ -1,0 +1,3037 @@
+{
+    "name": "6e_CultureGenerale_150q",
+    "modifyCode": "DNUCKWSH",
+    "playCode": "T0N07L",
+    "data": {
+        "name": "6e_CultureGenerale_150q",
+        "version": "1.0",
+        "createdAt": "2026-01-29T06:49:58.008Z",
+        "questionsCount": 150,
+        "questions": [
+            {
+                "type": "multiple",
+                "question": "Quelle est la capitale de la France ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Paris",
+                        "correct": true
+                    },
+                    {
+                        "text": "Lyon",
+                        "correct": false
+                    },
+                    {
+                        "text": "Marseille",
+                        "correct": false
+                    },
+                    {
+                        "text": "Bordeaux",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "truefalse",
+                "question": "Le Soleil est une \u00e9toile.",
+                "time": 15,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Combien y a-t-il de continents sur Terre ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "5",
+                        "correct": false
+                    },
+                    {
+                        "text": "6",
+                        "correct": false
+                    },
+                    {
+                        "text": "7",
+                        "correct": true
+                    },
+                    {
+                        "text": "8",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "freetext",
+                "question": "Comment s'appelle le plus long fleuve de France ?",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "La Loire",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "Loire",
+                    "la loire",
+                    "La loire"
+                ]
+            },
+            {
+                "type": "order",
+                "question": "Classe ces animaux du plus petit au plus grand :",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Fourmi",
+                        "correct": true
+                    },
+                    {
+                        "text": "Chat",
+                        "correct": true
+                    },
+                    {
+                        "text": "Cheval",
+                        "correct": true
+                    },
+                    {
+                        "text": "\u00c9l\u00e9phant",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Quel est le plus grand oc\u00e9an du monde ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "L'oc\u00e9an Atlantique",
+                        "correct": false
+                    },
+                    {
+                        "text": "L'oc\u00e9an Pacifique",
+                        "correct": true
+                    },
+                    {
+                        "text": "L'oc\u00e9an Indien",
+                        "correct": false
+                    },
+                    {
+                        "text": "L'oc\u00e9an Arctique",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "truefalse",
+                "question": "Les dinosaures et les humains ont v\u00e9cu \u00e0 la m\u00eame \u00e9poque.",
+                "time": 15,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": false
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Qui a \u00e9crit les fables 'Le Corbeau et le Renard' et 'La Cigale et la Fourmi' ?",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "Charles Perrault",
+                        "correct": false
+                    },
+                    {
+                        "text": "Jean de La Fontaine",
+                        "correct": true
+                    },
+                    {
+                        "text": "Victor Hugo",
+                        "correct": false
+                    },
+                    {
+                        "text": "Moli\u00e8re",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "freetext",
+                "question": "Quel gaz les plantes rejettent-elles pendant la photosynth\u00e8se ?",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "Oxyg\u00e8ne",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "oxygene",
+                    "l'oxyg\u00e8ne",
+                    "O2",
+                    "dioxyg\u00e8ne"
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Combien de jours y a-t-il dans une ann\u00e9e bissextile ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "364",
+                        "correct": false
+                    },
+                    {
+                        "text": "365",
+                        "correct": false
+                    },
+                    {
+                        "text": "366",
+                        "correct": true
+                    },
+                    {
+                        "text": "367",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "truefalse",
+                "question": "La baleine est un poisson.",
+                "time": 15,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": false
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "type": "order",
+                "question": "Range ces mois dans l'ordre chronologique :",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "Janvier",
+                        "correct": true
+                    },
+                    {
+                        "text": "Mars",
+                        "correct": true
+                    },
+                    {
+                        "text": "Juin",
+                        "correct": true
+                    },
+                    {
+                        "text": "Octobre",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Quel monument parisien a \u00e9t\u00e9 construit pour l'Exposition universelle de 1889 ?",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "L'Arc de Triomphe",
+                        "correct": false
+                    },
+                    {
+                        "text": "La Tour Eiffel",
+                        "correct": true
+                    },
+                    {
+                        "text": "Le Sacr\u00e9-C\u0153ur",
+                        "correct": false
+                    },
+                    {
+                        "text": "Notre-Dame",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "freetext",
+                "question": "Comment appelle-t-on un polygone \u00e0 6 c\u00f4t\u00e9s ?",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "Hexagone",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "hexagone",
+                    "un hexagone",
+                    "l'hexagone"
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Quelle plan\u00e8te est surnomm\u00e9e la 'plan\u00e8te rouge' ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "V\u00e9nus",
+                        "correct": false
+                    },
+                    {
+                        "text": "Jupiter",
+                        "correct": false
+                    },
+                    {
+                        "text": "Mars",
+                        "correct": true
+                    },
+                    {
+                        "text": "Saturne",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "truefalse",
+                "question": "L'eau bout \u00e0 100\u00b0C au niveau de la mer.",
+                "time": 15,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Quel est le plus haut sommet du monde ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Le Mont Blanc",
+                        "correct": false
+                    },
+                    {
+                        "text": "Le K2",
+                        "correct": false
+                    },
+                    {
+                        "text": "L'Everest",
+                        "correct": true
+                    },
+                    {
+                        "text": "Le Kilimandjaro",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "order",
+                "question": "Classe ces nombres du plus petit au plus grand :",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "-5",
+                        "correct": true
+                    },
+                    {
+                        "text": "0",
+                        "correct": true
+                    },
+                    {
+                        "text": "3",
+                        "correct": true
+                    },
+                    {
+                        "text": "10",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Quel animal est le symbole de la France ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "L'aigle",
+                        "correct": false
+                    },
+                    {
+                        "text": "Le lion",
+                        "correct": false
+                    },
+                    {
+                        "text": "Le coq",
+                        "correct": true
+                    },
+                    {
+                        "text": "L'ours",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "freetext",
+                "question": "Comment s'appelle le petit de la vache ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Veau",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "le veau",
+                    "un veau"
+                ]
+            },
+            {
+                "type": "truefalse",
+                "question": "La Terre tourne autour de la Lune.",
+                "time": 15,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": false
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Combien de c\u00f4t\u00e9s a un triangle ?",
+                "time": 15,
+                "answers": [
+                    {
+                        "text": "2",
+                        "correct": false
+                    },
+                    {
+                        "text": "3",
+                        "correct": true
+                    },
+                    {
+                        "text": "4",
+                        "correct": false
+                    },
+                    {
+                        "text": "5",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Quelle est la langue officielle du Br\u00e9sil ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "L'espagnol",
+                        "correct": false
+                    },
+                    {
+                        "text": "Le portugais",
+                        "correct": true
+                    },
+                    {
+                        "text": "L'anglais",
+                        "correct": false
+                    },
+                    {
+                        "text": "Le fran\u00e7ais",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "order",
+                "question": "Classe ces civilisations de la plus ancienne \u00e0 la plus r\u00e9cente :",
+                "time": 35,
+                "answers": [
+                    {
+                        "text": "\u00c9gypte ancienne",
+                        "correct": true
+                    },
+                    {
+                        "text": "Gr\u00e8ce antique",
+                        "correct": true
+                    },
+                    {
+                        "text": "Empire romain",
+                        "correct": true
+                    },
+                    {
+                        "text": "Moyen \u00c2ge",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Quel est l'organe qui pompe le sang dans notre corps ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Le foie",
+                        "correct": false
+                    },
+                    {
+                        "text": "Les poumons",
+                        "correct": false
+                    },
+                    {
+                        "text": "Le c\u0153ur",
+                        "correct": true
+                    },
+                    {
+                        "text": "L'estomac",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "freetext",
+                "question": "Quelle est la couleur obtenue en m\u00e9langeant le bleu et le jaune ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Vert",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "le vert",
+                    "verte",
+                    "du vert"
+                ]
+            },
+            {
+                "type": "truefalse",
+                "question": "Le son voyage plus vite que la lumi\u00e8re.",
+                "time": 15,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": false
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Quel pays a pour capitale Londres ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "L'Allemagne",
+                        "correct": false
+                    },
+                    {
+                        "text": "L'Espagne",
+                        "correct": false
+                    },
+                    {
+                        "text": "Le Royaume-Uni",
+                        "correct": true
+                    },
+                    {
+                        "text": "L'Italie",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Combien y a-t-il de minutes dans une heure ?",
+                "time": 15,
+                "answers": [
+                    {
+                        "text": "30",
+                        "correct": false
+                    },
+                    {
+                        "text": "60",
+                        "correct": true
+                    },
+                    {
+                        "text": "100",
+                        "correct": false
+                    },
+                    {
+                        "text": "45",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "truefalse",
+                "question": "Les araign\u00e9es sont des insectes.",
+                "time": 15,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": false
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "type": "order",
+                "question": "Classe ces fractions de la plus petite \u00e0 la plus grande :",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "1\/4",
+                        "correct": true
+                    },
+                    {
+                        "text": "1\/3",
+                        "correct": true
+                    },
+                    {
+                        "text": "1\/2",
+                        "correct": true
+                    },
+                    {
+                        "text": "3\/4",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Quel instrument de musique poss\u00e8de des touches noires et blanches ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "La guitare",
+                        "correct": false
+                    },
+                    {
+                        "text": "Le violon",
+                        "correct": false
+                    },
+                    {
+                        "text": "Le piano",
+                        "correct": true
+                    },
+                    {
+                        "text": "La fl\u00fbte",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "freetext",
+                "question": "Comment s'appelle le tableau de L\u00e9onard de Vinci repr\u00e9sentant une femme au sourire myst\u00e9rieux ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "La Joconde",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "Joconde",
+                    "Mona Lisa",
+                    "la joconde",
+                    "mona lisa"
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Quel est le r\u00e9sultat de 7 \u00d7 8 ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "54",
+                        "correct": false
+                    },
+                    {
+                        "text": "56",
+                        "correct": true
+                    },
+                    {
+                        "text": "58",
+                        "correct": false
+                    },
+                    {
+                        "text": "64",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "truefalse",
+                "question": "Les pyramides de Gizeh se trouvent en Gr\u00e8ce.",
+                "time": 15,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": false
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Quel est le plus grand d\u00e9sert chaud du monde ?",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "Le Sahara",
+                        "correct": true
+                    },
+                    {
+                        "text": "Le Gobi",
+                        "correct": false
+                    },
+                    {
+                        "text": "Le Kalahari",
+                        "correct": false
+                    },
+                    {
+                        "text": "Le d\u00e9sert d'Arabie",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Dans quel sport utilise-t-on une raquette et un volant ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Le tennis",
+                        "correct": false
+                    },
+                    {
+                        "text": "Le badminton",
+                        "correct": true
+                    },
+                    {
+                        "text": "Le ping-pong",
+                        "correct": false
+                    },
+                    {
+                        "text": "Le squash",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "order",
+                "question": "Range ces unit\u00e9s de mesure de longueur de la plus petite \u00e0 la plus grande :",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "Millim\u00e8tre",
+                        "correct": true
+                    },
+                    {
+                        "text": "Centim\u00e8tre",
+                        "correct": true
+                    },
+                    {
+                        "text": "M\u00e8tre",
+                        "correct": true
+                    },
+                    {
+                        "text": "Kilom\u00e8tre",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "type": "freetext",
+                "question": "Comment appelle-t-on la femelle du cheval ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Jument",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "la jument",
+                    "une jument"
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Combien de pattes a une araign\u00e9e ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "6",
+                        "correct": false
+                    },
+                    {
+                        "text": "8",
+                        "correct": true
+                    },
+                    {
+                        "text": "10",
+                        "correct": false
+                    },
+                    {
+                        "text": "4",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "truefalse",
+                "question": "Christophe Colomb a d\u00e9couvert l'Am\u00e9rique en 1492.",
+                "time": 15,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Quelle est la monnaie utilis\u00e9e en France ?",
+                "time": 15,
+                "answers": [
+                    {
+                        "text": "Le dollar",
+                        "correct": false
+                    },
+                    {
+                        "text": "La livre",
+                        "correct": false
+                    },
+                    {
+                        "text": "L'euro",
+                        "correct": true
+                    },
+                    {
+                        "text": "Le franc",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Dans la mythologie grecque, qui est le dieu des mers ?",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "Zeus",
+                        "correct": false
+                    },
+                    {
+                        "text": "Had\u00e8s",
+                        "correct": false
+                    },
+                    {
+                        "text": "Pos\u00e9idon",
+                        "correct": true
+                    },
+                    {
+                        "text": "Apollon",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "freetext",
+                "question": "Quel astre \u00e9claire la Terre pendant la journ\u00e9e ?",
+                "time": 15,
+                "answers": [
+                    {
+                        "text": "Le Soleil",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "Soleil",
+                    "soleil",
+                    "le soleil"
+                ]
+            },
+            {
+                "type": "order",
+                "question": "Classe ces saisons dans l'ordre, en commen\u00e7ant par le printemps :",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "Printemps",
+                        "correct": true
+                    },
+                    {
+                        "text": "\u00c9t\u00e9",
+                        "correct": true
+                    },
+                    {
+                        "text": "Automne",
+                        "correct": true
+                    },
+                    {
+                        "text": "Hiver",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "type": "truefalse",
+                "question": "Un carr\u00e9 a 4 c\u00f4t\u00e9s \u00e9gaux.",
+                "time": 15,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Quel est le plus petit pays du monde ?",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "Monaco",
+                        "correct": false
+                    },
+                    {
+                        "text": "Le Vatican",
+                        "correct": true
+                    },
+                    {
+                        "text": "Saint-Marin",
+                        "correct": false
+                    },
+                    {
+                        "text": "Le Luxembourg",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Combien de sens poss\u00e8de l'\u00eatre humain ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "4",
+                        "correct": false
+                    },
+                    {
+                        "text": "5",
+                        "correct": true
+                    },
+                    {
+                        "text": "6",
+                        "correct": false
+                    },
+                    {
+                        "text": "7",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "freetext",
+                "question": "Comment appelle-t-on un mot qui a le m\u00eame sens qu'un autre mot ?",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "Synonyme",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "un synonyme",
+                    "synonymes"
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Quel est l'animal terrestre le plus rapide du monde ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Le lion",
+                        "correct": false
+                    },
+                    {
+                        "text": "Le gu\u00e9pard",
+                        "correct": true
+                    },
+                    {
+                        "text": "Le l\u00e9vrier",
+                        "correct": false
+                    },
+                    {
+                        "text": "L'antilope",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "truefalse",
+                "question": "La Lune produit sa propre lumi\u00e8re.",
+                "time": 15,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": false
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "type": "order",
+                "question": "Classe ces plan\u00e8tes du Soleil vers l'ext\u00e9rieur :",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Mercure",
+                        "correct": true
+                    },
+                    {
+                        "text": "Terre",
+                        "correct": true
+                    },
+                    {
+                        "text": "Jupiter",
+                        "correct": true
+                    },
+                    {
+                        "text": "Neptune",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Dans quel pays se trouve la ville de Rome ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "L'Espagne",
+                        "correct": false
+                    },
+                    {
+                        "text": "La Gr\u00e8ce",
+                        "correct": false
+                    },
+                    {
+                        "text": "L'Italie",
+                        "correct": true
+                    },
+                    {
+                        "text": "Le Portugal",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Quel h\u00e9ros de la mythologie grecque a accompli 12 travaux ?",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "Achille",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ulysse",
+                        "correct": false
+                    },
+                    {
+                        "text": "H\u00e9racl\u00e8s",
+                        "correct": true
+                    },
+                    {
+                        "text": "Pers\u00e9e",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "freetext",
+                "question": "Comment s'appelle la ligne imaginaire qui s\u00e9pare la Terre en deux h\u00e9misph\u00e8res ?",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "L'\u00e9quateur",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "\u00c9quateur",
+                    "equateur",
+                    "l'equateur"
+                ]
+            },
+            {
+                "type": "truefalse",
+                "question": "L'Australie est \u00e0 la fois un pays et un continent.",
+                "time": 15,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Quel gaz respirons-nous pour vivre ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Le dioxyde de carbone",
+                        "correct": false
+                    },
+                    {
+                        "text": "L'azote",
+                        "correct": false
+                    },
+                    {
+                        "text": "L'oxyg\u00e8ne",
+                        "correct": true
+                    },
+                    {
+                        "text": "L'hydrog\u00e8ne",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Combien y a-t-il de joueurs dans une \u00e9quipe de football sur le terrain ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "9",
+                        "correct": false
+                    },
+                    {
+                        "text": "10",
+                        "correct": false
+                    },
+                    {
+                        "text": "11",
+                        "correct": true
+                    },
+                    {
+                        "text": "12",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "order",
+                "question": "Classe ces couleurs de l'arc-en-ciel dans l'ordre (de l'ext\u00e9rieur vers l'int\u00e9rieur) :",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Rouge",
+                        "correct": true
+                    },
+                    {
+                        "text": "Jaune",
+                        "correct": true
+                    },
+                    {
+                        "text": "Vert",
+                        "correct": true
+                    },
+                    {
+                        "text": "Violet",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Quel est le plus grand pays du monde en superficie ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "La Chine",
+                        "correct": false
+                    },
+                    {
+                        "text": "Les \u00c9tats-Unis",
+                        "correct": false
+                    },
+                    {
+                        "text": "Le Canada",
+                        "correct": false
+                    },
+                    {
+                        "text": "La Russie",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "type": "freetext",
+                "question": "Quel est le r\u00e9sultat de 100 divis\u00e9 par 4 ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "25",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "vingt-cinq",
+                    "vingt cinq"
+                ]
+            },
+            {
+                "type": "truefalse",
+                "question": "Les manchots peuvent voler.",
+                "time": 15,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": false
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Combien de dents a normalement un adulte ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "28",
+                        "correct": false
+                    },
+                    {
+                        "text": "30",
+                        "correct": false
+                    },
+                    {
+                        "text": "32",
+                        "correct": true
+                    },
+                    {
+                        "text": "34",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Quel fleuve traverse Paris ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Le Rh\u00f4ne",
+                        "correct": false
+                    },
+                    {
+                        "text": "La Seine",
+                        "correct": true
+                    },
+                    {
+                        "text": "La Garonne",
+                        "correct": false
+                    },
+                    {
+                        "text": "La Loire",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "order",
+                "question": "Classe ces animaux du plus l\u00e9ger au plus lourd :",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Souris",
+                        "correct": true
+                    },
+                    {
+                        "text": "Lapin",
+                        "correct": true
+                    },
+                    {
+                        "text": "Cochon",
+                        "correct": true
+                    },
+                    {
+                        "text": "Hippopotame",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "type": "freetext",
+                "question": "Comment appelle-t-on un triangle qui a trois c\u00f4t\u00e9s \u00e9gaux ?",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "\u00c9quilat\u00e9ral",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "triangle \u00e9quilat\u00e9ral",
+                    "equilateral",
+                    "triangle equilateral"
+                ]
+            },
+            {
+                "type": "truefalse",
+                "question": "Un rectangle a 4 angles droits.",
+                "time": 15,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Quelle est la capitale de l'Espagne ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Barcelone",
+                        "correct": false
+                    },
+                    {
+                        "text": "S\u00e9ville",
+                        "correct": false
+                    },
+                    {
+                        "text": "Madrid",
+                        "correct": true
+                    },
+                    {
+                        "text": "Valence",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Quel est le nom du pharaon dont le tombeau a \u00e9t\u00e9 d\u00e9couvert intact en 1922 ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Rams\u00e8s II",
+                        "correct": false
+                    },
+                    {
+                        "text": "Kh\u00e9ops",
+                        "correct": false
+                    },
+                    {
+                        "text": "Tout\u00e2nkhamon",
+                        "correct": true
+                    },
+                    {
+                        "text": "Akhenaton",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "freetext",
+                "question": "Comment s'appelle l'ensemble des os du corps humain ?",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "Le squelette",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "Squelette",
+                    "squelette"
+                ]
+            },
+            {
+                "type": "order",
+                "question": "Classe ces \u00e9tapes du cycle de l'eau dans l'ordre :",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "\u00c9vaporation",
+                        "correct": true
+                    },
+                    {
+                        "text": "Condensation",
+                        "correct": true
+                    },
+                    {
+                        "text": "Pr\u00e9cipitation",
+                        "correct": true
+                    },
+                    {
+                        "text": "Ruissellement",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "type": "truefalse",
+                "question": "Les poissons respirent gr\u00e2ce \u00e0 des poumons.",
+                "time": 15,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": false
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Quel est le plus grand mammif\u00e8re marin ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Le requin blanc",
+                        "correct": false
+                    },
+                    {
+                        "text": "L'orque",
+                        "correct": false
+                    },
+                    {
+                        "text": "La baleine bleue",
+                        "correct": true
+                    },
+                    {
+                        "text": "Le dauphin",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Combien d'heures y a-t-il dans une journ\u00e9e ?",
+                "time": 15,
+                "answers": [
+                    {
+                        "text": "12",
+                        "correct": false
+                    },
+                    {
+                        "text": "24",
+                        "correct": true
+                    },
+                    {
+                        "text": "36",
+                        "correct": false
+                    },
+                    {
+                        "text": "48",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "freetext",
+                "question": "Quel est le contraire du mot 'ancien' ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Nouveau",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "neuf",
+                    "r\u00e9cent",
+                    "moderne",
+                    "jeune"
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Dans quel pays se trouve le Taj Mahal ?",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "La Chine",
+                        "correct": false
+                    },
+                    {
+                        "text": "L'Inde",
+                        "correct": true
+                    },
+                    {
+                        "text": "Le Japon",
+                        "correct": false
+                    },
+                    {
+                        "text": "La Tha\u00eflande",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "truefalse",
+                "question": "Le c\u0153ur est situ\u00e9 du c\u00f4t\u00e9 gauche de la poitrine.",
+                "time": 15,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "order",
+                "question": "Classe ces oc\u00e9ans du plus petit au plus grand :",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Oc\u00e9an Arctique",
+                        "correct": true
+                    },
+                    {
+                        "text": "Oc\u00e9an Indien",
+                        "correct": true
+                    },
+                    {
+                        "text": "Oc\u00e9an Atlantique",
+                        "correct": true
+                    },
+                    {
+                        "text": "Oc\u00e9an Pacifique",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Quel est l'\u00e9l\u00e9ment chimique dont le symbole est 'O' ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "L'or",
+                        "correct": false
+                    },
+                    {
+                        "text": "L'osmium",
+                        "correct": false
+                    },
+                    {
+                        "text": "L'oxyg\u00e8ne",
+                        "correct": true
+                    },
+                    {
+                        "text": "L'argon",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Quel artiste a peint le plafond de la chapelle Sixtine ?",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "Rapha\u00ebl",
+                        "correct": false
+                    },
+                    {
+                        "text": "L\u00e9onard de Vinci",
+                        "correct": false
+                    },
+                    {
+                        "text": "Michel-Ange",
+                        "correct": true
+                    },
+                    {
+                        "text": "Botticelli",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "freetext",
+                "question": "Combien font 15 + 27 ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "42",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "quarante-deux",
+                    "quarante deux"
+                ]
+            },
+            {
+                "type": "truefalse",
+                "question": "Les dauphins sont des mammif\u00e8res.",
+                "time": 15,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Quel pays a la forme d'une botte ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "La Gr\u00e8ce",
+                        "correct": false
+                    },
+                    {
+                        "text": "L'Italie",
+                        "correct": true
+                    },
+                    {
+                        "text": "Le Portugal",
+                        "correct": false
+                    },
+                    {
+                        "text": "La Croatie",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "order",
+                "question": "Classe ces personnages historiques du plus ancien au plus r\u00e9cent :",
+                "time": 35,
+                "answers": [
+                    {
+                        "text": "Jules C\u00e9sar",
+                        "correct": true
+                    },
+                    {
+                        "text": "Charlemagne",
+                        "correct": true
+                    },
+                    {
+                        "text": "Louis XIV",
+                        "correct": true
+                    },
+                    {
+                        "text": "Napol\u00e9on",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Quel est le nom du processus par lequel les plantes fabriquent leur nourriture ?",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "La respiration",
+                        "correct": false
+                    },
+                    {
+                        "text": "La digestion",
+                        "correct": false
+                    },
+                    {
+                        "text": "La photosynth\u00e8se",
+                        "correct": true
+                    },
+                    {
+                        "text": "La fermentation",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "freetext",
+                "question": "Comment appelle-t-on un angle de 90 degr\u00e9s ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Angle droit",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "un angle droit",
+                    "droit"
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Combien de semaines y a-t-il dans une ann\u00e9e ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "48",
+                        "correct": false
+                    },
+                    {
+                        "text": "50",
+                        "correct": false
+                    },
+                    {
+                        "text": "52",
+                        "correct": true
+                    },
+                    {
+                        "text": "54",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "truefalse",
+                "question": "Jules Verne a \u00e9crit 'Vingt mille lieues sous les mers'.",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Quelle est la capitale de l'Allemagne ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Munich",
+                        "correct": false
+                    },
+                    {
+                        "text": "Francfort",
+                        "correct": false
+                    },
+                    {
+                        "text": "Berlin",
+                        "correct": true
+                    },
+                    {
+                        "text": "Hambourg",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Quel est le nom du satellite naturel de la Terre ?",
+                "time": 15,
+                "answers": [
+                    {
+                        "text": "Phobos",
+                        "correct": false
+                    },
+                    {
+                        "text": "Titan",
+                        "correct": false
+                    },
+                    {
+                        "text": "La Lune",
+                        "correct": true
+                    },
+                    {
+                        "text": "Europe",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "order",
+                "question": "Classe ces inventions de la plus ancienne \u00e0 la plus r\u00e9cente :",
+                "time": 35,
+                "answers": [
+                    {
+                        "text": "La roue",
+                        "correct": true
+                    },
+                    {
+                        "text": "L'imprimerie",
+                        "correct": true
+                    },
+                    {
+                        "text": "Le t\u00e9l\u00e9phone",
+                        "correct": true
+                    },
+                    {
+                        "text": "Internet",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "type": "freetext",
+                "question": "Quelle plan\u00e8te est la plus proche du Soleil ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Mercure",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "mercure"
+                ]
+            },
+            {
+                "type": "truefalse",
+                "question": "Le Nil est le plus long fleuve d'Afrique.",
+                "time": 15,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Quel roi de France \u00e9tait surnomm\u00e9 le Roi-Soleil ?",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "Louis XIII",
+                        "correct": false
+                    },
+                    {
+                        "text": "Louis XIV",
+                        "correct": true
+                    },
+                    {
+                        "text": "Louis XV",
+                        "correct": false
+                    },
+                    {
+                        "text": "Louis XVI",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Combien de c\u00f4t\u00e9s a un pentagone ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "4",
+                        "correct": false
+                    },
+                    {
+                        "text": "5",
+                        "correct": true
+                    },
+                    {
+                        "text": "6",
+                        "correct": false
+                    },
+                    {
+                        "text": "7",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "freetext",
+                "question": "Quel m\u00e9tal pr\u00e9cieux a pour symbole chimique 'Au' ?",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "Or",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "l'or",
+                    "L'or"
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Dans quel pays se trouvent les pyramides de Gizeh ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Le Maroc",
+                        "correct": false
+                    },
+                    {
+                        "text": "L'\u00c9gypte",
+                        "correct": true
+                    },
+                    {
+                        "text": "La Tunisie",
+                        "correct": false
+                    },
+                    {
+                        "text": "L'Alg\u00e9rie",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "truefalse",
+                "question": "La tomate est un fruit.",
+                "time": 15,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "order",
+                "question": "Classe ces dur\u00e9es de la plus courte \u00e0 la plus longue :",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "Une seconde",
+                        "correct": true
+                    },
+                    {
+                        "text": "Une minute",
+                        "correct": true
+                    },
+                    {
+                        "text": "Une heure",
+                        "correct": true
+                    },
+                    {
+                        "text": "Un jour",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Quel est l'animal qui a le cou le plus long ?",
+                "time": 15,
+                "answers": [
+                    {
+                        "text": "L'autruche",
+                        "correct": false
+                    },
+                    {
+                        "text": "Le chameau",
+                        "correct": false
+                    },
+                    {
+                        "text": "La girafe",
+                        "correct": true
+                    },
+                    {
+                        "text": "Le lama",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Comment appelle-t-on l'\u00e9tude des \u00e9toiles et des plan\u00e8tes ?",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "La g\u00e9ologie",
+                        "correct": false
+                    },
+                    {
+                        "text": "L'astronomie",
+                        "correct": true
+                    },
+                    {
+                        "text": "La biologie",
+                        "correct": false
+                    },
+                    {
+                        "text": "La m\u00e9t\u00e9orologie",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "freetext",
+                "question": "Comment s'appelle le petit du lion ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Lionceau",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "le lionceau",
+                    "un lionceau"
+                ]
+            },
+            {
+                "type": "truefalse",
+                "question": "Le fer est attir\u00e9 par un aimant.",
+                "time": 15,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Quelle mer borde le sud de la France ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "La mer du Nord",
+                        "correct": false
+                    },
+                    {
+                        "text": "La mer Baltique",
+                        "correct": false
+                    },
+                    {
+                        "text": "La mer M\u00e9diterran\u00e9e",
+                        "correct": true
+                    },
+                    {
+                        "text": "La mer Adriatique",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "order",
+                "question": "Classe ces nombres romains du plus petit au plus grand :",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "V (5)",
+                        "correct": true
+                    },
+                    {
+                        "text": "X (10)",
+                        "correct": true
+                    },
+                    {
+                        "text": "L (50)",
+                        "correct": true
+                    },
+                    {
+                        "text": "C (100)",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Quel est le plus grand volcan actif d'Europe ?",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "Le V\u00e9suve",
+                        "correct": false
+                    },
+                    {
+                        "text": "Le Stromboli",
+                        "correct": false
+                    },
+                    {
+                        "text": "L'Etna",
+                        "correct": true
+                    },
+                    {
+                        "text": "Le Piton de la Fournaise",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "freetext",
+                "question": "Comment appelle-t-on une figure g\u00e9om\u00e9trique \u00e0 4 c\u00f4t\u00e9s ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Quadrilat\u00e8re",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "un quadrilat\u00e8re",
+                    "quadrilatere"
+                ]
+            },
+            {
+                "type": "truefalse",
+                "question": "L'eau g\u00e8le \u00e0 0\u00b0C.",
+                "time": 15,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Quelle est la capitale du Japon ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "P\u00e9kin",
+                        "correct": false
+                    },
+                    {
+                        "text": "S\u00e9oul",
+                        "correct": false
+                    },
+                    {
+                        "text": "Tokyo",
+                        "correct": true
+                    },
+                    {
+                        "text": "Bangkok",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Dans la mythologie grecque, qui est le roi des dieux ?",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "Apollon",
+                        "correct": false
+                    },
+                    {
+                        "text": "Zeus",
+                        "correct": true
+                    },
+                    {
+                        "text": "Herm\u00e8s",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ar\u00e8s",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "order",
+                "question": "Classe ces repas dans l'ordre chronologique d'une journ\u00e9e :",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "Petit-d\u00e9jeuner",
+                        "correct": true
+                    },
+                    {
+                        "text": "D\u00e9jeuner",
+                        "correct": true
+                    },
+                    {
+                        "text": "Go\u00fbter",
+                        "correct": true
+                    },
+                    {
+                        "text": "D\u00eener",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "type": "freetext",
+                "question": "Comment s'appelle l'organe qui nous permet de respirer ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Poumons",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "les poumons",
+                    "poumon",
+                    "le poumon"
+                ]
+            },
+            {
+                "type": "truefalse",
+                "question": "La M\u00e9diterran\u00e9e est un oc\u00e9an.",
+                "time": 15,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": false
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Combien de faces a un cube ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "4",
+                        "correct": false
+                    },
+                    {
+                        "text": "6",
+                        "correct": true
+                    },
+                    {
+                        "text": "8",
+                        "correct": false
+                    },
+                    {
+                        "text": "12",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Quel insecte produit du miel ?",
+                "time": 15,
+                "answers": [
+                    {
+                        "text": "La gu\u00eape",
+                        "correct": false
+                    },
+                    {
+                        "text": "Le bourdon",
+                        "correct": false
+                    },
+                    {
+                        "text": "L'abeille",
+                        "correct": true
+                    },
+                    {
+                        "text": "La mouche",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "freetext",
+                "question": "Comment appelle-t-on une personne qui \u00e9crit des livres ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Auteur",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "un auteur",
+                    "\u00e9crivain",
+                    "un \u00e9crivain",
+                    "auteure",
+                    "une auteure"
+                ]
+            },
+            {
+                "type": "order",
+                "question": "Classe ces p\u00e9riodes historiques de la plus ancienne \u00e0 la plus r\u00e9cente :",
+                "time": 35,
+                "answers": [
+                    {
+                        "text": "Pr\u00e9histoire",
+                        "correct": true
+                    },
+                    {
+                        "text": "Antiquit\u00e9",
+                        "correct": true
+                    },
+                    {
+                        "text": "Moyen \u00c2ge",
+                        "correct": true
+                    },
+                    {
+                        "text": "Temps modernes",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "type": "truefalse",
+                "question": "Le Soleil tourne autour de la Terre.",
+                "time": 15,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": false
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Quelle est la capitale des \u00c9tats-Unis ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "New York",
+                        "correct": false
+                    },
+                    {
+                        "text": "Los Angeles",
+                        "correct": false
+                    },
+                    {
+                        "text": "Washington D.C.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Chicago",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Quel continent est le plus grand ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "L'Afrique",
+                        "correct": false
+                    },
+                    {
+                        "text": "L'Am\u00e9rique du Nord",
+                        "correct": false
+                    },
+                    {
+                        "text": "L'Asie",
+                        "correct": true
+                    },
+                    {
+                        "text": "L'Europe",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "freetext",
+                "question": "Comment s'appelle le plus haut sommet de France ?",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "Le Mont Blanc",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "Mont Blanc",
+                    "mont blanc",
+                    "le mont blanc"
+                ]
+            },
+            {
+                "type": "truefalse",
+                "question": "Les plantes ont besoin de lumi\u00e8re pour vivre.",
+                "time": 15,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Quel animal est le roi de la savane ?",
+                "time": 15,
+                "answers": [
+                    {
+                        "text": "L'\u00e9l\u00e9phant",
+                        "correct": false
+                    },
+                    {
+                        "text": "Le lion",
+                        "correct": true
+                    },
+                    {
+                        "text": "Le gu\u00e9pard",
+                        "correct": false
+                    },
+                    {
+                        "text": "L'hippopotame",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "order",
+                "question": "Classe ces \u00e9tats de l'eau dans l'ordre de temp\u00e9rature croissante :",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Glace (solide)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Eau (liquide)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Vapeur (gaz)",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Comment s'appelle le dieu grec de la guerre ?",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "Apollon",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ar\u00e8s",
+                        "correct": true
+                    },
+                    {
+                        "text": "Herm\u00e8s",
+                        "correct": false
+                    },
+                    {
+                        "text": "H\u00e9pha\u00efstos",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "freetext",
+                "question": "Quel est le nom de l'\u00e9criture des \u00c9gyptiens anciens ?",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "Hi\u00e9roglyphes",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "les hi\u00e9roglyphes",
+                    "hieroglyphes",
+                    "hi\u00e9roglyphe"
+                ]
+            },
+            {
+                "type": "truefalse",
+                "question": "Un triangle peut avoir deux angles droits.",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": false
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Quelle plan\u00e8te poss\u00e8de des anneaux visibles ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Mars",
+                        "correct": false
+                    },
+                    {
+                        "text": "Jupiter",
+                        "correct": false
+                    },
+                    {
+                        "text": "Saturne",
+                        "correct": true
+                    },
+                    {
+                        "text": "Neptune",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Quel pays a pour capitale P\u00e9kin (Beijing) ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Le Japon",
+                        "correct": false
+                    },
+                    {
+                        "text": "La Cor\u00e9e du Sud",
+                        "correct": false
+                    },
+                    {
+                        "text": "La Chine",
+                        "correct": true
+                    },
+                    {
+                        "text": "Le Vietnam",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "order",
+                "question": "Classe ces moyens de transport du plus lent au plus rapide :",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "V\u00e9lo",
+                        "correct": true
+                    },
+                    {
+                        "text": "Voiture",
+                        "correct": true
+                    },
+                    {
+                        "text": "Train \u00e0 grande vitesse",
+                        "correct": true
+                    },
+                    {
+                        "text": "Avion",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "type": "freetext",
+                "question": "Comment appelle-t-on le b\u00e9b\u00e9 du mouton ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Agneau",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "l'agneau",
+                    "un agneau"
+                ]
+            },
+            {
+                "type": "truefalse",
+                "question": "La France est une monarchie.",
+                "time": 15,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": false
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Quel est l'os le plus long du corps humain ?",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "L'hum\u00e9rus",
+                        "correct": false
+                    },
+                    {
+                        "text": "Le tibia",
+                        "correct": false
+                    },
+                    {
+                        "text": "Le f\u00e9mur",
+                        "correct": true
+                    },
+                    {
+                        "text": "Le p\u00e9ron\u00e9",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Quel auteur fran\u00e7ais a \u00e9crit 'Le Petit Prince' ?",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "Victor Hugo",
+                        "correct": false
+                    },
+                    {
+                        "text": "Albert Camus",
+                        "correct": false
+                    },
+                    {
+                        "text": "Antoine de Saint-Exup\u00e9ry",
+                        "correct": true
+                    },
+                    {
+                        "text": "Jules Verne",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "freetext",
+                "question": "Comment s'appelle le continent de glace situ\u00e9 au p\u00f4le Sud ?",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "Antarctique",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "l'antarctique",
+                    "L'Antarctique"
+                ]
+            },
+            {
+                "type": "truefalse",
+                "question": "La chauve-souris est un oiseau.",
+                "time": 15,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": false
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "type": "order",
+                "question": "Classe ces masses de la plus l\u00e9g\u00e8re \u00e0 la plus lourde :",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "1 gramme",
+                        "correct": true
+                    },
+                    {
+                        "text": "100 grammes",
+                        "correct": true
+                    },
+                    {
+                        "text": "1 kilogramme",
+                        "correct": true
+                    },
+                    {
+                        "text": "1 tonne",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Combien de couleurs y a-t-il sur le drapeau fran\u00e7ais ?",
+                "time": 15,
+                "answers": [
+                    {
+                        "text": "2",
+                        "correct": false
+                    },
+                    {
+                        "text": "3",
+                        "correct": true
+                    },
+                    {
+                        "text": "4",
+                        "correct": false
+                    },
+                    {
+                        "text": "5",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Quel instrument de mesure utilise-t-on pour mesurer la temp\u00e9rature ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Un barom\u00e8tre",
+                        "correct": false
+                    },
+                    {
+                        "text": "Un thermom\u00e8tre",
+                        "correct": true
+                    },
+                    {
+                        "text": "Un an\u00e9mom\u00e8tre",
+                        "correct": false
+                    },
+                    {
+                        "text": "Un hygrom\u00e8tre",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "freetext",
+                "question": "Comment appelle-t-on l'habitat de l'ours ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Tani\u00e8re",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "une tani\u00e8re",
+                    "la tani\u00e8re",
+                    "grotte",
+                    "une grotte"
+                ]
+            },
+            {
+                "type": "truefalse",
+                "question": "Le cerveau est prot\u00e9g\u00e9 par le cr\u00e2ne.",
+                "time": 15,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": true
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Quelle est la monnaie du Royaume-Uni ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "L'euro",
+                        "correct": false
+                    },
+                    {
+                        "text": "Le dollar",
+                        "correct": false
+                    },
+                    {
+                        "text": "La livre sterling",
+                        "correct": true
+                    },
+                    {
+                        "text": "Le franc",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "order",
+                "question": "Classe ces lettres dans l'ordre alphab\u00e9tique :",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "A",
+                        "correct": true
+                    },
+                    {
+                        "text": "F",
+                        "correct": true
+                    },
+                    {
+                        "text": "M",
+                        "correct": true
+                    },
+                    {
+                        "text": "Z",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Quel est le plus petit continent ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "L'Europe",
+                        "correct": false
+                    },
+                    {
+                        "text": "L'Oc\u00e9anie",
+                        "correct": true
+                    },
+                    {
+                        "text": "L'Antarctique",
+                        "correct": false
+                    },
+                    {
+                        "text": "L'Am\u00e9rique du Sud",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "freetext",
+                "question": "Comment appelle-t-on le cri du lion ?",
+                "time": 20,
+                "answers": [
+                    {
+                        "text": "Rugissement",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "le rugissement",
+                    "rugir"
+                ]
+            },
+            {
+                "type": "truefalse",
+                "question": "Paris est travers\u00e9 par deux fleuves.",
+                "time": 15,
+                "answers": [
+                    {
+                        "text": "Vrai",
+                        "correct": false
+                    },
+                    {
+                        "text": "Faux",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Quel pays a invent\u00e9 les Jeux Olympiques dans l'Antiquit\u00e9 ?",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "L'Italie",
+                        "correct": false
+                    },
+                    {
+                        "text": "L'\u00c9gypte",
+                        "correct": false
+                    },
+                    {
+                        "text": "La Gr\u00e8ce",
+                        "correct": true
+                    },
+                    {
+                        "text": "La Perse",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "multiple",
+                "question": "Quel est le r\u00e9sultat de 144 \u00f7 12 ?",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "10",
+                        "correct": false
+                    },
+                    {
+                        "text": "11",
+                        "correct": false
+                    },
+                    {
+                        "text": "12",
+                        "correct": true
+                    },
+                    {
+                        "text": "13",
+                        "correct": false
+                    }
+                ]
+            },
+            {
+                "type": "order",
+                "question": "Classe ces capacit\u00e9s de la plus petite \u00e0 la plus grande :",
+                "time": 25,
+                "answers": [
+                    {
+                        "text": "1 millilitre",
+                        "correct": true
+                    },
+                    {
+                        "text": "1 centilitre",
+                        "correct": true
+                    },
+                    {
+                        "text": "1 litre",
+                        "correct": true
+                    },
+                    {
+                        "text": "100 litres",
+                        "correct": true
+                    }
+                ]
+            },
+            {
+                "type": "freetext",
+                "question": "Comment appelle-t-on un mot qui se prononce pareil mais s'\u00e9crit diff\u00e9remment ?",
+                "time": 30,
+                "answers": [
+                    {
+                        "text": "Homophone",
+                        "correct": true
+                    }
+                ],
+                "caseSensitive": false,
+                "acceptedAnswers": [
+                    "un homophone",
+                    "homophones"
+                ]
+            }
+        ]
+    },
+    "lastModified": 1769669397,
+    "questionCount": 150
+}

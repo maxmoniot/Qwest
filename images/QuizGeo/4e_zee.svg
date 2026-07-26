@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 350">
+  <rect width="700" height="350" fill="#e3f2fd"/>
+  <text x="350" y="25" font-size="16" font-weight="bold" text-anchor="middle">Les espaces maritimes : la ZEE</text>
+  <!-- Côte -->
+  <rect x="0" y="100" width="100" height="200" fill="#a5d6a7" stroke="#333"/>
+  <text x="50" y="200" font-size="14" text-anchor="middle" font-weight="bold">TERRE</text>
+  <!-- Mer territoriale -->
+  <rect x="100" y="100" width="80" height="200" fill="#64b5f6" stroke="#333"/>
+  <text x="140" y="190" font-size="10" text-anchor="middle" fill="#333">Mer</text>
+  <text x="140" y="205" font-size="10" text-anchor="middle" fill="#333">territoriale</text>
+  <text x="140" y="220" font-size="9" text-anchor="middle" fill="#666">(12 milles)</text>
+  <!-- Zone contiguë -->
+  <rect x="180" y="100" width="80" height="200" fill="#42a5f5" stroke="#333"/>
+  <text x="220" y="200" font-size="10" text-anchor="middle" fill="white">Zone</text>
+  <text x="220" y="215" font-size="10" text-anchor="middle" fill="white">contiguë</text>
+  <!-- ZEE -->
+  <rect x="260" y="100" width="250" height="200" fill="#1e88e5" stroke="#333"/>
+  <text x="385" y="190" font-size="14" text-anchor="middle" fill="white" font-weight="bold">Z.E.E.</text>
+  <text x="385" y="210" font-size="11" text-anchor="middle" fill="white">Zone Économique Exclusive</text>
+  <text x="385" y="230" font-size="10" text-anchor="middle" fill="#bbdefb">(200 milles = 370 km)</text>
+  <!-- Haute mer -->
+  <rect x="510" y="100" width="190" height="200" fill="#0d47a1" stroke="#333"/>
+  <text x="605" y="200" font-size="14" text-anchor="middle" fill="white" font-weight="bold">Haute mer</text>
+  <text x="605" y="220" font-size="10" text-anchor="middle" fill="#90caf9">(internationale)</text>
+  <!-- Lignes de distance -->
+  <line x1="100" y1="90" x2="510" y2="90" stroke="#333" stroke-width="2"/>
+  <line x1="100" y1="85" x2="100" y2="95" stroke="#333" stroke-width="2"/>
+  <line x1="510" y1="85" x2="510" y2="95" stroke="#333" stroke-width="2"/>
+  <text x="305" y="82" font-size="11" text-anchor="middle">200 milles nautiques (≈370 km)</text>
+  <!-- Question -->
+  <rect x="100" y="310" width="500" height="35" fill="white" stroke="#ddd" rx="5"/>
+  <text x="350" y="332" font-size="11" text-anchor="middle">Dans la ZEE, l'État côtier a des droits exclusifs sur quelles ressources ?</text>
+</svg>

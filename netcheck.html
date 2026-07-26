@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Qwest — Diagnostic réseau (collège)</title>
+<style>
+  :root { --ok:#2e7d32; --bad:#c62828; --warn:#ef6c00; --ink:#222; --muted:#777; }
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, system-ui, Segoe UI, Roboto, sans-serif; margin:0; padding:14px;
+         color:var(--ink); background:#f5f6f8; line-height:1.45; }
+  h1 { font-size:20px; margin:0 0 4px; }
+  p.sub { color:var(--muted); margin:0 0 14px; font-size:13px; }
+  .card { background:#fff; border-radius:10px; padding:14px; margin-bottom:12px; box-shadow:0 1px 4px rgba(0,0,0,.08); }
+  .row { display:flex; align-items:flex-start; gap:8px; padding:6px 0; border-bottom:1px solid #eee; font-size:14px; }
+  .row:last-child { border-bottom:0; }
+  .row .ico { font-size:18px; min-width:22px; }
+  .row .lbl { flex:1; }
+  .row .lbl small { color:var(--muted); display:block; font-size:12px; }
+  .badge { font-weight:700; }
+  .ok { color:var(--ok); } .bad { color:var(--bad); } .warn { color:var(--warn); }
+  button { font-size:15px; font-weight:600; padding:11px 16px; border:0; border-radius:9px;
+           background:#1565c0; color:#fff; cursor:pointer; width:100%; margin-top:6px; }
+  button.secondary { background:#eceff1; color:#333; }
+  button:disabled { opacity:.5; }
+  .warnbox { background:#fff3e0; border-left:4px solid var(--warn); padding:10px 12px; border-radius:6px; font-size:13px; margin:8px 0; }
+  pre#report { white-space:pre-wrap; word-break:break-word; background:#0f1117; color:#d6e2ff; padding:12px;
+               border-radius:8px; font-size:12px; max-height:320px; overflow:auto; }
+  .verdict { font-size:16px; font-weight:700; padding:10px 12px; border-radius:8px; margin-bottom:10px; }
+  .verdict.ok { background:#e8f5e9; } .verdict.bad { background:#ffebee; } .verdict.warn { background:#fff3e0; }
+  input { font-size:15px; padding:8px; border:1px solid #ccc; border-radius:7px; width:70px; }
+  label { font-size:13px; color:#555; }
+</style>
+</head>
+<body>
+  <h1>🔌 Qwest — Diagnostic réseau</h1>
+  <p class="sub">À lancer <strong>depuis un poste élève, AU COLLÈGE</strong>, sur le vrai réseau. Mesure ce que le filtrage/proxy fait réellement aux requêtes de l'app. Aucune partie n'est créée.</p>
+
+  <div id="verdict" class="verdict warn">⏳ Diagnostic en cours…</div>
+
+  <div class="card">
+    <div style="font-weight:700;margin-bottom:6px;">1. Accès aux points d'entrée</div>
+    <div id="probes"></div>
+  </div>
+
+  <div class="card">
+    <div style="font-weight:700;margin-bottom:6px;">2. Stabilité (20 requêtes)</div>
+    <div id="stability">…</div>
+  </div>
+
+  <div class="card">
+    <div style="font-weight:700;margin-bottom:6px;">3. Seuil de bannissement par IP</div>
+    <p class="sub" style="margin-bottom:6px;">Toute la classe sort par une seule IP au collège. Ce test envoie un débit croissant depuis CE poste pour trouver à partir de combien de requêtes/min le réseau bloque (= ce qui bannit la classe).</p>
+    <div class="warnbox">⚠️ Génère du trafic réseau. À faire <strong>hors d'une partie en cours</strong>. Si le réseau bloque, il peut le rester quelques minutes (ça revient seul).</div>
+    <label>Débit max à tester : <input id="maxrate" type="number" value="20" min="5" max="40"> req/s</label>
+    <button id="btnRate" class="secondary">▶️ Lancer le test de seuil (~30 s)</button>
+    <div id="rate" style="margin-top:8px;"></div>
+  </div>
+
+  <div class="card">
+    <div style="font-weight:700;margin-bottom:6px;">Rapport (à copier-coller)</div>
+    <button id="btnCopy" class="secondary">📋 Copier le rapport</button>
+    <pre id="report">…</pre>
+  </div>
+
+<script>
+(function () {
+  'use strict';
+  // Endpoints relatifs : netcheck.html est à la racine de /qwest2, comme index.html.
+  var GAME = 'php/game.php', API = 'php/api.php', CTRL = 'php/control.php';
+  var report = [];
+  function log(line) { report.push(line); var el = document.getElementById('report'); if (el) el.textContent = report.join('\n'); }
+  function nowStr() { try { return new Date().toLocaleTimeString(); } catch (e) { return ''; } }
+
+  log('Qwest netcheck — ' + nowStr());
+  log('URL: ' + location.href);
+  log('UA: ' + navigator.userAgent);
+  log('');
+
+  // Un sondage : renvoie {ok, status, ms, kind, snippet}
+  // kind ∈ ok | non-json (page de blocage) | http (4xx/5xx) | timeout | network
+  async function probe(label, url, opts) {
+    opts = opts || {};
+    var t0 = performance.now();
+    var controller = new AbortController();
+    var to = setTimeout(function () { controller.abort(); }, opts.timeout || 8000);
+    try {
+      var init = { signal: controller.signal, cache: 'no-store' };
+      if (opts.post) { init.method = 'POST'; init.headers = { 'Content-Type': 'application/x-www-form-urlencoded' }; init.body = opts.post; }
+      var r = await fetch(url, init);
+      clearTimeout(to);
+      var ms = Math.round(performance.now() - t0);
+      var ct = (r.headers.get('Content-Type') || '');
+      var text = await r.text();
+      var isJson = false, parsed = null;
+      try { parsed = JSON.parse(text); isJson = true; } catch (e) {}
+      if (!isJson) {
+        // Réponse reçue mais PAS du JSON → page de blocage / portail / filtrage de contenu
+        return { ok:false, status:r.status, ms:ms, kind:'non-json', ct:ct,
+                 snippet:(text || '').replace(/\s+/g, ' ').slice(0, 120) };
+      }
+      if (!r.ok) return { ok:false, status:r.status, ms:ms, kind:'http', json:parsed };
+      return { ok:true, status:r.status, ms:ms, kind:'ok', json:parsed };
+    } catch (e) {
+      clearTimeout(to);
+      var ms2 = Math.round(performance.now() - t0);
+      var kind = (e && e.name === 'AbortError') ? 'timeout' : 'network';
+      return { ok:false, status:0, ms:ms2, kind:kind, err:String(e && e.message || e) };
+    }
+  }
+
+  function rowHtml(res, label, detail) {
+    var ico = res.ok ? '✅' : (res.kind === 'non-json' ? '🚫' : '❌');
+    var cls = res.ok ? 'ok' : 'bad';
+    var status = res.ok ? ('OK ' + res.ms + 'ms')
+               : (res.kind === 'non-json' ? ('BLOQUÉ (réponse non-JSON, HTTP ' + res.status + ')')
+               : res.kind === 'timeout' ? ('TIMEOUT (' + res.ms + 'ms)')
+               : res.kind === 'network' ? 'RÉSEAU KO'
+               : ('HTTP ' + res.status));
+    return '<div class="row"><span class="ico">' + ico + '</span><span class="lbl">' + label +
+           '<small>' + (detail || '') + (res.snippet ? (' — reçu: « ' + res.snippet + ' »') : '') + '</small></span>' +
+           '<span class="badge ' + cls + '">' + status + '</span></div>';
+  }
+
+  var blockedSeen = false, anyFail = false;
+
+  async function runProbes() {
+    var el = document.getElementById('probes');
+    el.innerHTML = '';
+    var tests = [
+      ['Horloge serveur (time_sync)', GAME + '?action=time_sync', {}],
+      ['État de jeu (get_state_readonly)', GAME + '?action=get_state_readonly&playCode=ZZNETCHK&nickname=diag', {}],
+      ['Vérif code (check_game)', API + '?action=check_game&code=ZZNETCHK', {}],
+      ['État pilotage (get_control_state)', CTRL + '?action=get_control_state&playCode=ZZNETCHK', {}],
+      ['Envoi réponse (POST answer)', GAME, { post: 'action=answer&playCode=ZZNETCHK&nickname=diag&questionIndex=0&answer=' + encodeURIComponent('{"index":0}') + '&timeSpent=1000' }]
+    ];
+    for (var i = 0; i < tests.length; i++) {
+      var res = await probe(tests[i][0], tests[i][1], tests[i][2]);
+      el.insertAdjacentHTML('beforeend', rowHtml(res, tests[i][0]));
+      log('[probe] ' + tests[i][0] + ' → ' + res.kind + ' status=' + res.status + ' ' + res.ms + 'ms' + (res.snippet ? ' | ' + res.snippet : ''));
+      if (res.kind === 'non-json') blockedSeen = true;
+      if (!res.ok && res.kind !== 'http') anyFail = true; // http applicatif (ex: session introuvable) = normal
+    }
+  }
+
+  // Stabilité : 20 time_sync séquentiels, mesure latence + pertes
+  async function runStability() {
+    var el = document.getElementById('stability');
+    var n = 20, oks = 0, fails = 0, lats = [];
+    for (var i = 0; i < n; i++) {
+      var res = await probe('s', GAME + '?action=time_sync', { timeout: 6000 });
+      if (res.ok) { oks++; lats.push(res.ms); } else { fails++; if (res.kind === 'non-json') blockedSeen = true; }
+      el.textContent = 'Envoi… ' + (i + 1) + '/' + n + ' (ok=' + oks + ', échecs=' + fails + ')';
+    }
+    lats.sort(function (a, b) { return a - b; });
+    var med = lats.length ? lats[Math.floor(lats.length / 2)] : 0;
+    var p95 = lats.length ? lats[Math.floor(lats.length * 0.95)] : 0;
+    var cls = fails === 0 ? 'ok' : (fails <= 2 ? 'warn' : 'bad');
+    el.innerHTML = '<span class="' + cls + '" style="font-weight:700;">' + oks + '/' + n + ' réussies</span> — latence médiane ' + med + 'ms, p95 ' + p95 + 'ms' + (fails ? (', ' + fails + ' échec(s)') : '');
+    log('[stabilité] ' + oks + '/' + n + ' ok, médiane=' + med + 'ms p95=' + p95 + 'ms échecs=' + fails);
+    if (fails > 2) anyFail = true;
+  }
+
+  // Seuil de ban par IP : on monte le débit de time_sync par paliers et on note où ça casse.
+  async function runRateTest() {
+    var btn = document.getElementById('btnRate'); btn.disabled = true;
+    var maxRate = Math.max(5, Math.min(40, parseInt(document.getElementById('maxrate').value, 10) || 20));
+    var el = document.getElementById('rate');
+    var levels = [], r = 6; while (r <= maxRate) { levels.push(r); r += 6; }
+    if (levels[levels.length - 1] !== maxRate) levels.push(maxRate);
+    log(''); log('[seuil] paliers req/s: ' + levels.join(', '));
+    var banAt = null, totalSent = 0;
+    for (var li = 0; li < levels.length; li++) {
+      var rate = levels[li], durMs = 6000, sent = 0, ok = 0, fail = 0, blocked = 0;
+      var t0 = performance.now();
+      while (performance.now() - t0 < durMs) {
+        var batchT = performance.now();
+        var promises = [];
+        for (var k = 0; k < rate; k++) {
+          promises.push(probe('r', GAME + '?action=time_sync', { timeout: 5000 }).then(function (res) {
+            sent++; totalSent++;
+            if (res.ok) ok++; else { fail++; if (res.kind === 'non-json') blocked++; }
+          }));
+        }
+        await Promise.all(promises);
+        el.innerHTML = 'Palier ' + rate + ' req/s — envoyées ' + sent + ', ok ' + ok + ', échecs ' + fail + (blocked ? (', bloquées ' + blocked) : '');
+        var elapsed = performance.now() - batchT;
+        if (elapsed < 1000) await new Promise(function (rs) { setTimeout(rs, 1000 - elapsed); });
+      }
+      var failPct = sent ? Math.round(100 * fail / sent) : 0;
+      log('[seuil] ' + rate + ' req/s : ' + ok + '/' + sent + ' ok, ' + failPct + '% échecs' + (blocked ? (', ' + blocked + ' non-JSON') : ''));
+      if (failPct >= 30) { banAt = rate; el.innerHTML = '<span class="bad" style="font-weight:700;">⚠️ Blocage détecté vers ' + rate + ' req/s (' + (rate * 60) + ' req/min) — ' + failPct + '% d\'échecs</span>'; break; }
+    }
+    if (banAt === null) {
+      el.innerHTML = '<span class="ok" style="font-weight:700;">✅ Aucun blocage jusqu\'à ' + maxRate + ' req/s (' + (maxRate * 60) + ' req/min) sur ' + totalSent + ' requêtes</span>';
+      log('[seuil] aucun blocage jusqu\'à ' + maxRate + ' req/s (' + totalSent + ' requêtes au total)');
+    } else {
+      log('[seuil] BLOCAGE à ~' + banAt + ' req/s ≈ ' + (banAt * 60) + ' req/min depuis cette IP');
+    }
+    btn.disabled = false;
+    finalVerdict(banAt);
+  }
+
+  function setVerdict(cls, txt) { var v = document.getElementById('verdict'); v.className = 'verdict ' + cls; v.textContent = txt; }
+
+  function finalVerdict(banAt) {
+    if (blockedSeen) {
+      setVerdict('bad', '🚫 FILTRAGE DE CONTENU détecté : le réseau renvoie des pages non-JSON (portail/blocage) à la place des réponses de l\'app. C\'est une cause directe de plantage. → fais remonter l\'URL ' + location.host + ' à débloquer auprès du prestataire.');
+    } else if (banAt !== null && banAt <= 12) {
+      setVerdict('bad', '⚠️ BANNISSEMENT PRÉCOCE : le réseau bloque dès ~' + (banAt * 60) + ' req/min depuis une IP. Une classe entière dépasse vite ce seuil → c\'est la cause probable des « connexion lente » généralisées. Envoie-moi ce chiffre, j\'ajusterai l\'app sous ce seuil.');
+    } else if (banAt !== null) {
+      setVerdict('warn', '⚠️ Blocage réseau vers ~' + (banAt * 60) + ' req/min/IP. À surveiller pour les grandes classes. Envoie-moi le rapport.');
+    } else if (anyFail) {
+      setVerdict('warn', '⚠️ Quelques échecs réseau (instabilité). Pas de filtrage de contenu ni de ban franc détecté. Envoie le rapport.');
+    } else {
+      setVerdict('ok', '✅ Réseau OK depuis ce poste : pas de filtrage de contenu, pas de ban détecté. Si la classe plante quand même, relance ce test PENDANT une partie (charge réelle) et envoie le rapport.');
+    }
+  }
+
+  document.getElementById('btnRate').addEventListener('click', runRateTest);
+  document.getElementById('btnCopy').addEventListener('click', function () {
+    try {
+      navigator.clipboard.writeText(report.join('\n'));
+      this.textContent = '✅ Copié — colle-le dans le message à ton dev';
+    } catch (e) {
+      this.textContent = 'Sélectionne le texte ci-dessous et copie-le';
+    }
+  });
+
+  (async function () {
+    await runProbes();
+    await runStability();
+    finalVerdict(null); // verdict provisoire (sans test de seuil, qui est opt-in)
+    log(''); log('Probes + stabilité terminés. Lance le test de seuil (bouton 3) pour le ban par IP.');
+  })();
+})();
+</script>
+</body>
+</html>

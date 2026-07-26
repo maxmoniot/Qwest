@@ -1,0 +1,2958 @@
+{
+  "name": "3e_ReseauxInformatiques_150q",
+  "version": "1.0",
+  "createdAt": "2026-03-31T10:00:00.000Z",
+  "questionsCount": 150,
+  "questions": [
+    {
+      "type": "multiple",
+      "question": "Quel équipement permet de relier plusieurs ordinateurs dans un réseau local ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le switch",
+          "correct": true
+        },
+        {
+          "text": "Le modem",
+          "correct": false
+        },
+        {
+          "text": "Le serveur",
+          "correct": false
+        },
+        {
+          "text": "L'imprimante réseau",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un routeur permet de relier plusieurs réseaux entre eux.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle commande permet de tester la communication entre deux machines sur un réseau ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "ping",
+          "correct": true
+        },
+        {
+          "text": "ipconfig",
+          "correct": false
+        },
+        {
+          "text": "tracert",
+          "correct": false
+        },
+        {
+          "text": "netstat",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'une adresse IP ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un identifiant unique attribué à chaque appareil sur un réseau",
+          "correct": true
+        },
+        {
+          "text": "Le nom d'un ordinateur sur le réseau",
+          "correct": false
+        },
+        {
+          "text": "Le mot de passe d'accès au réseau Wi-Fi",
+          "correct": false
+        },
+        {
+          "text": "L'adresse physique d'une carte réseau",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La passerelle par défaut est généralement l'adresse IP du routeur.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel protocole est utilisé par la commande ping ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "ICMP",
+          "correct": true
+        },
+        {
+          "text": "TCP",
+          "correct": false
+        },
+        {
+          "text": "UDP",
+          "correct": false
+        },
+        {
+          "text": "HTTP",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'adresse IP publique d'un réseau est unique sur Internet.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel service permet de traduire un nom de domaine en adresse IP ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le DNS",
+          "correct": true
+        },
+        {
+          "text": "Le DHCP",
+          "correct": false
+        },
+        {
+          "text": "Le FTP",
+          "correct": false
+        },
+        {
+          "text": "Le HTTP",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'adresse 192.168.1.10 est une adresse IP privée, utilisée uniquement dans un réseau local.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel équipement est indispensable pour connecter un réseau local à Internet ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un modem/routeur (box)",
+          "correct": true
+        },
+        {
+          "text": "Un switch supplémentaire",
+          "correct": false
+        },
+        {
+          "text": "Un hub",
+          "correct": false
+        },
+        {
+          "text": "Un répéteur Wi-Fi",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel port TCP doit-on ouvrir sur le routeur pour accéder à un site web en HTTP depuis Internet ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "80",
+          "correct": true
+        },
+        {
+          "text": "443",
+          "correct": false
+        },
+        {
+          "text": "53",
+          "correct": false
+        },
+        {
+          "text": "22",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un ping réussi confirme que deux machines communiquent correctement sur le réseau.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Que signifie l'acronyme DNS ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Domain Name System",
+          "correct": true
+        },
+        {
+          "text": "Dynamic Network Server",
+          "correct": false
+        },
+        {
+          "text": "Data Network Service",
+          "correct": false
+        },
+        {
+          "text": "Digital Name System",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quel est le nom de la commande réseau utilisée pour tester la connectivité entre deux machines ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "ping",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "ping",
+        "PING",
+        "Ping"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Remets dans l'ordre les étapes pour configurer un réseau local :",
+      "time": 45,
+      "answers": [
+        {
+          "text": "Connecter les machines au switch",
+          "correct": true
+        },
+        {
+          "text": "Attribuer une adresse IP à chaque machine",
+          "correct": true
+        },
+        {
+          "text": "Configurer la passerelle par défaut",
+          "correct": true
+        },
+        {
+          "text": "Tester la connectivité avec ping",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel protocole de transport est utilisé par le DNS pour ses requêtes habituelles ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "UDP",
+          "correct": true
+        },
+        {
+          "text": "TCP",
+          "correct": false
+        },
+        {
+          "text": "ICMP",
+          "correct": false
+        },
+        {
+          "text": "FTP",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le protocole ICMP possède un numéro de port spécifique comme TCP ou UDP.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pour autoriser les pings depuis Internet vers un serveur local, que faut-il configurer sur le routeur ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "L'ouverture du protocole ICMP avec redirection vers l'IP locale du serveur",
+          "correct": true
+        },
+        {
+          "text": "L'ouverture du port TCP 80",
+          "correct": false
+        },
+        {
+          "text": "L'ouverture du port UDP 53",
+          "correct": false
+        },
+        {
+          "text": "L'ouverture du port TCP 443",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le rôle d'un serveur web ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Héberger des sites web accessibles via un navigateur",
+          "correct": true
+        },
+        {
+          "text": "Relier plusieurs réseaux entre eux",
+          "correct": false
+        },
+        {
+          "text": "Attribuer des adresses IP automatiquement",
+          "correct": false
+        },
+        {
+          "text": "Traduire les noms de domaine en adresses IP",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on l'adresse IP visible depuis Internet (par opposition à l'adresse locale) ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "IP publique",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "ip publique",
+        "adresse publique",
+        "adresse ip publique",
+        "adresse IP publique"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un serveur DNS peut être installé sur un serveur distant d'un réseau local.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel port faut-il ouvrir pour accéder à un site web en HTTPS depuis Internet ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "443",
+          "correct": true
+        },
+        {
+          "text": "80",
+          "correct": false
+        },
+        {
+          "text": "53",
+          "correct": false
+        },
+        {
+          "text": "25",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "À quoi sert la redirection de port sur un routeur ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "À rendre une machine du réseau local accessible depuis Internet",
+          "correct": true
+        },
+        {
+          "text": "À augmenter la vitesse de connexion",
+          "correct": false
+        },
+        {
+          "text": "À changer l'adresse IP publique",
+          "correct": false
+        },
+        {
+          "text": "À filtrer les virus entrants",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Remets dans l'ordre les étapes d'une requête DNS pour accéder à un site web :",
+      "time": 45,
+      "answers": [
+        {
+          "text": "L'utilisateur tape le nom de domaine dans le navigateur",
+          "correct": true
+        },
+        {
+          "text": "Le terminal interroge le serveur DNS configuré",
+          "correct": true
+        },
+        {
+          "text": "Le DNS renvoie l'adresse IP correspondante",
+          "correct": true
+        },
+        {
+          "text": "Le navigateur se connecte au serveur web via l'adresse IP",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "À quoi sert la configuration d'un serveur DNS sur un terminal (ordinateur, smartphone…) ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "À lui indiquer quel serveur interroger pour traduire les noms de domaine en adresses IP",
+          "correct": true
+        },
+        {
+          "text": "À lui attribuer une adresse IP automatiquement",
+          "correct": false
+        },
+        {
+          "text": "À lui indiquer la passerelle par défaut",
+          "correct": false
+        },
+        {
+          "text": "À le connecter directement au switch",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quel protocole de transport (en 3 lettres) est utilisé par le DNS ?",
+      "time": 20,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "UDP",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "udp",
+        "UDP",
+        "Udp"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Que se passe-t-il si la passerelle par défaut est mal configurée sur un ordinateur ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "L'ordinateur ne peut pas communiquer avec des réseaux extérieurs (Internet)",
+          "correct": true
+        },
+        {
+          "text": "L'ordinateur ne peut plus s'allumer",
+          "correct": false
+        },
+        {
+          "text": "L'ordinateur perd son adresse IP",
+          "correct": false
+        },
+        {
+          "text": "L'ordinateur ne peut plus se connecter au switch",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le rôle principal d'un switch dans un réseau local ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Relier plusieurs appareils entre eux dans le même réseau local",
+          "correct": true
+        },
+        {
+          "text": "Connecter le réseau local à Internet",
+          "correct": false
+        },
+        {
+          "text": "Héberger des sites web",
+          "correct": false
+        },
+        {
+          "text": "Traduire les noms de domaine en adresses IP",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Pour accéder à un site web hébergé localement depuis Internet, il faut ouvrir le port TCP 80 sur le routeur et le rediriger vers le serveur.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'un nom de domaine ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un nom lisible qui correspond à une adresse IP",
+          "correct": true
+        },
+        {
+          "text": "Le nom d'un ordinateur dans le réseau local",
+          "correct": false
+        },
+        {
+          "text": "L'identifiant d'un routeur sur Internet",
+          "correct": false
+        },
+        {
+          "text": "Le mot de passe d'accès à un serveur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La commande ping utilise le protocole TCP.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Que signifie HTTP ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "HyperText Transfer Protocol",
+          "correct": true
+        },
+        {
+          "text": "High Transfer Text Protocol",
+          "correct": false
+        },
+        {
+          "text": "HyperText Transmission Program",
+          "correct": false
+        },
+        {
+          "text": "Host Transfer Text Protocol",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quel équipement est utilisé pour créer un serveur distant accessible depuis Internet dans Filius ?",
+      "time": 30,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "modem",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "modem",
+        "Modem",
+        "MODEM",
+        "modem-routeur",
+        "box",
+        "routeur"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans quel cas utilise-t-on un serveur DNS local dans un réseau ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Pour permettre la résolution de noms de domaine sans dépendre d'un DNS externe",
+          "correct": true
+        },
+        {
+          "text": "Pour héberger un site web",
+          "correct": false
+        },
+        {
+          "text": "Pour attribuer des adresses IP automatiquement",
+          "correct": false
+        },
+        {
+          "text": "Pour relier le réseau local à Internet",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un serveur distant est accessible depuis n'importe où sur Internet grâce à son adresse IP publique.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Remets dans l'ordre ces éléments réseau, du plus local au plus global :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Ordinateur",
+          "correct": true
+        },
+        {
+          "text": "Switch",
+          "correct": true
+        },
+        {
+          "text": "Routeur",
+          "correct": true
+        },
+        {
+          "text": "Internet",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel protocole permet d'accéder à un site web de manière sécurisée (données chiffrées) ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "HTTPS",
+          "correct": true
+        },
+        {
+          "text": "HTTP",
+          "correct": false
+        },
+        {
+          "text": "FTP",
+          "correct": false
+        },
+        {
+          "text": "DNS",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Pour qu'un serveur web local soit accessible depuis Internet, il suffit de lui attribuer une adresse IP fixe.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle plage d'adresses est typiquement utilisée dans un réseau local ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "192.168.x.x",
+          "correct": true
+        },
+        {
+          "text": "8.8.x.x",
+          "correct": false
+        },
+        {
+          "text": "216.58.x.x",
+          "correct": false
+        },
+        {
+          "text": "172.217.x.x",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Que signifie l'acronyme IP dans « adresse IP » ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "Internet Protocol",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "internet protocol",
+        "Internet Protocol",
+        "INTERNET PROTOCOL"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel port UDP faut-il ouvrir sur le routeur pour qu'un serveur DNS local soit interrogeable depuis Internet ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "53",
+          "correct": true
+        },
+        {
+          "text": "80",
+          "correct": false
+        },
+        {
+          "text": "443",
+          "correct": false
+        },
+        {
+          "text": "22",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La commande ping peut être utilisée pour vérifier si un serveur distant est accessible depuis Internet.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est l'avantage principal d'un serveur DNS dans un réseau ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Il permet d'accéder aux sites web par leur nom plutôt que par leur adresse IP",
+          "correct": true
+        },
+        {
+          "text": "Il accélère la connexion Internet",
+          "correct": false
+        },
+        {
+          "text": "Il sécurise toutes les communications du réseau",
+          "correct": false
+        },
+        {
+          "text": "Il attribue les adresses IP automatiquement",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quels équipements trouve-t-on typiquement dans un réseau local scolaire ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Ordinateurs, serveur, switch, routeur",
+          "correct": true
+        },
+        {
+          "text": "Modems, imprimantes, scanners, téléphones",
+          "correct": false
+        },
+        {
+          "text": "Antennes, relais, satellites, câbles coaxiaux",
+          "correct": false
+        },
+        {
+          "text": "Disques durs, RAM, processeurs, écrans",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le port UDP 53 est bien le port utilisé par le protocole DNS.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Remets dans l'ordre les étapes pour rendre un serveur web local accessible depuis Internet :",
+      "time": 50,
+      "answers": [
+        {
+          "text": "Installer un serveur web sur une machine du réseau local",
+          "correct": true
+        },
+        {
+          "text": "Attribuer une adresse IP fixe à cette machine",
+          "correct": true
+        },
+        {
+          "text": "Ouvrir le port TCP 80 sur le routeur",
+          "correct": true
+        },
+        {
+          "text": "Rediriger ce port vers l'adresse IP locale du serveur",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le rôle de la passerelle par défaut dans un réseau local ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Elle indique aux machines comment sortir du réseau local vers d'autres réseaux",
+          "correct": true
+        },
+        {
+          "text": "Elle attribue automatiquement les adresses IP aux machines",
+          "correct": false
+        },
+        {
+          "text": "Elle héberge les sites web du réseau local",
+          "correct": false
+        },
+        {
+          "text": "Elle filtre les virus entrants depuis Internet",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans Filius, pour qu'un ordinateur du réseau puisse naviguer sur Internet par nom de domaine, que faut-il configurer sur cet ordinateur ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "L'adresse IP d'un serveur DNS",
+          "correct": true
+        },
+        {
+          "text": "L'adresse MAC du routeur",
+          "correct": false
+        },
+        {
+          "text": "Le numéro de port TCP 80",
+          "correct": false
+        },
+        {
+          "text": "L'adresse IP publique de la box",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans un réseau local, deux machines avec des adresses IP dans des plages différentes (ex: 192.168.1.x et 192.168.2.x) peuvent communiquer directement sans passer par un routeur.",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la différence entre une adresse IP privée et une adresse IP publique ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "L'adresse privée est utilisée dans le réseau local, la publique sur Internet",
+          "correct": true
+        },
+        {
+          "text": "L'adresse publique est plus courte que l'adresse privée",
+          "correct": false
+        },
+        {
+          "text": "L'adresse privée est attribuée par le fournisseur d'accès à Internet",
+          "correct": false
+        },
+        {
+          "text": "Il n'y a aucune différence, les deux sont identiques",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Deux appareils sur le même réseau local peuvent avoir la même adresse IP.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Quand on configure manuellement l'adresse IP d'un ordinateur, on parle d'adresse IP statique.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un ordinateur envoie un ping à 192.168.1.1 mais ne reçoit pas de réponse. Quelle est la cause la plus probable ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "L'adresse IP de la destination est incorrecte ou la machine est éteinte",
+          "correct": true
+        },
+        {
+          "text": "Le câble d'alimentation est débranché",
+          "correct": false
+        },
+        {
+          "text": "L'écran est en veille",
+          "correct": false
+        },
+        {
+          "text": "Le disque dur est plein",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un routeur possède plusieurs interfaces réseau avec des adresses IP différentes.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel protocole de transport utilise des connexions fiables avec accusé de réception ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "TCP",
+          "correct": true
+        },
+        {
+          "text": "UDP",
+          "correct": false
+        },
+        {
+          "text": "ICMP",
+          "correct": false
+        },
+        {
+          "text": "DNS",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel protocole de transport est plus rapide mais sans garantie de réception ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "UDP",
+          "correct": true
+        },
+        {
+          "text": "TCP",
+          "correct": false
+        },
+        {
+          "text": "HTTP",
+          "correct": false
+        },
+        {
+          "text": "FTP",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Que se passe-t-il si deux machines du même réseau local ont la même adresse IP ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Un conflit d'adresses IP se produit et les deux machines ont des problèmes de réseau",
+          "correct": true
+        },
+        {
+          "text": "Les deux machines partagent la même connexion sans problème",
+          "correct": false
+        },
+        {
+          "text": "La machine la plus rapide garde l'adresse et l'autre est déconnectée automatiquement",
+          "correct": false
+        },
+        {
+          "text": "Rien ne se passe, les adresses IP peuvent être identiques",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans Filius, qu'est-ce qu'un serveur distant par rapport au réseau local ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Un serveur situé dans un autre réseau, accessible via Internet",
+          "correct": true
+        },
+        {
+          "text": "Un serveur très éloigné physiquement dans la même salle",
+          "correct": false
+        },
+        {
+          "text": "Un serveur qui communique sans fil",
+          "correct": false
+        },
+        {
+          "text": "Un serveur qui ne répond pas aux requêtes locales",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "On peut héberger à la fois un serveur web et un serveur DNS sur la même machine.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Remets dans l'ordre les étapes pour accéder à un site web par son nom de domaine depuis un réseau local :",
+      "time": 50,
+      "answers": [
+        {
+          "text": "Configurer l'adresse IP du serveur DNS sur les terminaux",
+          "correct": true
+        },
+        {
+          "text": "Ouvrir le port UDP 53 et le rediriger vers le serveur DNS",
+          "correct": true
+        },
+        {
+          "text": "Taper le nom de domaine dans le navigateur",
+          "correct": true
+        },
+        {
+          "text": "Le DNS traduit le nom en IP et le navigateur charge la page",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel outil en ligne de commande permet d'afficher la configuration IP d'un ordinateur sous Windows ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "ipconfig",
+          "correct": true
+        },
+        {
+          "text": "ping",
+          "correct": false
+        },
+        {
+          "text": "tracert",
+          "correct": false
+        },
+        {
+          "text": "netstat",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quel sigle désigne le protocole utilisé pour le transfert sécurisé de pages web (version chiffrée de HTTP) ?",
+      "time": 20,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "HTTPS",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "https",
+        "HTTPS",
+        "Https"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'un port réseau ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Un numéro qui identifie un service ou une application sur une machine",
+          "correct": true
+        },
+        {
+          "text": "La prise physique où l'on branche le câble réseau",
+          "correct": false
+        },
+        {
+          "text": "Le nombre d'appareils connectés au switch",
+          "correct": false
+        },
+        {
+          "text": "L'adresse IP du routeur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le numéro de port 80 est réservé au protocole HTTP.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pourquoi est-il important d'attribuer une adresse IP fixe (statique) à un serveur web local ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Pour que la règle de redirection de port sur le routeur pointe toujours vers la bonne machine",
+          "correct": true
+        },
+        {
+          "text": "Pour que le serveur soit plus rapide",
+          "correct": false
+        },
+        {
+          "text": "Pour que le serveur puisse recevoir des e-mails",
+          "correct": false
+        },
+        {
+          "text": "Pour éviter les coupures d'électricité",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un serveur web peut répondre à des requêtes provenant à la fois du réseau local et d'Internet simultanément.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la signification du résultat « Request timed out » lors d'un ping ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "La machine cible ne répond pas (éteinte, injoignable ou bloquée par un pare-feu)",
+          "correct": true
+        },
+        {
+          "text": "La connexion Internet est trop lente",
+          "correct": false
+        },
+        {
+          "text": "Le câble réseau est débranché de la machine locale",
+          "correct": false
+        },
+        {
+          "text": "L'adresse IP locale est incorrecte",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Remets dans l'ordre les étapes pour diagnostiquer un problème réseau :",
+      "time": 45,
+      "answers": [
+        {
+          "text": "Vérifier que les câbles sont bien branchés",
+          "correct": true
+        },
+        {
+          "text": "Vérifier l'adresse IP et le masque de sous-réseau de la machine",
+          "correct": true
+        },
+        {
+          "text": "Faire un ping vers la passerelle (routeur)",
+          "correct": true
+        },
+        {
+          "text": "Faire un ping vers un serveur distant ou Internet",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Laquelle de ces adresses est une adresse IP publique ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "82.65.134.10",
+          "correct": true
+        },
+        {
+          "text": "192.168.0.5",
+          "correct": false
+        },
+        {
+          "text": "10.0.0.1",
+          "correct": false
+        },
+        {
+          "text": "172.16.5.20",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'adresse IP 10.0.0.1 est une adresse privée, utilisable dans un réseau local.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un même routeur peut avoir une adresse IP privée côté réseau local et une adresse IP publique côté Internet.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Remets dans l'ordre les étapes de la création d'un serveur DNS dans Filius :",
+      "time": 50,
+      "answers": [
+        {
+          "text": "Installer le service serveur DNS sur le serveur distant",
+          "correct": true
+        },
+        {
+          "text": "Ajouter les enregistrements DNS (nom de domaine → adresse IP)",
+          "correct": true
+        },
+        {
+          "text": "Ouvrir le port UDP 53 sur le routeur et rediriger vers le serveur DNS",
+          "correct": true
+        },
+        {
+          "text": "Configurer l'adresse IP du serveur DNS sur chaque terminal",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Pour qu'un ping depuis Internet atteigne un serveur local, le port ICMP doit être ouvert ET redirigé vers l'IP locale de ce serveur sur le routeur.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le rôle d'un serveur dans un réseau local scolaire ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Mettre des ressources (fichiers, applications, connexion Internet) à disposition des postes clients",
+          "correct": true
+        },
+        {
+          "text": "Relier les machines au réseau via des câbles",
+          "correct": false
+        },
+        {
+          "text": "Convertir les adresses IP privées en adresses publiques",
+          "correct": false
+        },
+        {
+          "text": "Gérer l'alimentation électrique des autres équipements",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qui différencie principalement TCP d'UDP ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "TCP garantit la livraison des données grâce à des accusés de réception, UDP ne le fait pas",
+          "correct": true
+        },
+        {
+          "text": "TCP est plus rapide qu'UDP dans tous les cas",
+          "correct": false
+        },
+        {
+          "text": "UDP est uniquement utilisé pour les e-mails",
+          "correct": false
+        },
+        {
+          "text": "TCP est sans connexion, UDP établit une connexion avant d'envoyer",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un serveur web doit obligatoirement avoir accès à Internet pour fonctionner dans un réseau local.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la différence principale entre le rôle d'un switch et celui d'un routeur ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le switch relie des machines dans un même réseau local, le routeur relie différents réseaux entre eux",
+          "correct": true
+        },
+        {
+          "text": "Le switch relie différents réseaux, le routeur relie des machines dans un réseau local",
+          "correct": false
+        },
+        {
+          "text": "Le switch et le routeur ont exactement le même rôle",
+          "correct": false
+        },
+        {
+          "text": "Le switch gère les adresses IP, le routeur gère les connexions physiques",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un ordinateur avec une adresse IP incorrecte peut quand même communiquer normalement sur le réseau local.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un ordinateur parvient à pinguer toutes les machines du réseau local, mais pas Internet. Quel paramètre est probablement mal configuré ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "La passerelle par défaut",
+          "correct": true
+        },
+        {
+          "text": "L'adresse IP de l'ordinateur",
+          "correct": false
+        },
+        {
+          "text": "L'adresse du serveur DNS",
+          "correct": false
+        },
+        {
+          "text": "Le câble reliant l'ordinateur au switch",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un serveur est une machine qui fournit des ressources ou des services aux autres appareils du réseau.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans un réseau local, le serveur est connecté au switch, au même titre que les ordinateurs clients.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel équipement du réseau local permet à plusieurs ordinateurs de partager une même connexion Internet ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le routeur",
+          "correct": true
+        },
+        {
+          "text": "Le switch",
+          "correct": false
+        },
+        {
+          "text": "Le serveur",
+          "correct": false
+        },
+        {
+          "text": "L'ordinateur client",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans Filius, quel équipement faut-il ajouter pour simuler la connexion d'un réseau local à Internet ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un modem",
+          "correct": true
+        },
+        {
+          "text": "Un deuxième switch",
+          "correct": false
+        },
+        {
+          "text": "Un serveur supplémentaire",
+          "correct": false
+        },
+        {
+          "text": "Un deuxième routeur local",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la première action à effectuer pour vérifier qu'un ordinateur est correctement configuré dans un réseau local ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Faire un ping vers la passerelle (routeur)",
+          "correct": true
+        },
+        {
+          "text": "Ouvrir un navigateur et tester un site web",
+          "correct": false
+        },
+        {
+          "text": "Installer un serveur DNS",
+          "correct": false
+        },
+        {
+          "text": "Vérifier l'ouverture des ports sur le routeur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Dans les paramètres réseau d'un ordinateur, comment appelle-t-on l'adresse IP du routeur que l'on saisit pour permettre la sortie du réseau local ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "passerelle",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "passerelle",
+        "passerelle par défaut",
+        "gateway",
+        "Passerelle",
+        "Passerelle par défaut"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quels sont les trois paramètres IP essentiels à configurer sur un ordinateur pour accéder à Internet avec résolution de noms ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Adresse IP, passerelle, serveur DNS",
+          "correct": true
+        },
+        {
+          "text": "Adresse IP, nom de l'ordinateur, mot de passe",
+          "correct": false
+        },
+        {
+          "text": "Adresse IP, numéro de port, protocole",
+          "correct": false
+        },
+        {
+          "text": "Adresse IP, adresse du serveur web, protocole",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Remets dans l'ordre les paramètres à configurer sur un ordinateur pour qu'il accède à Internet avec résolution de noms :",
+      "time": 40,
+      "answers": [
+        {
+          "text": "Attribuer une adresse IP unique dans le réseau local",
+          "correct": true
+        },
+        {
+          "text": "Saisir l'adresse de la passerelle (routeur)",
+          "correct": true
+        },
+        {
+          "text": "Saisir l'adresse du serveur DNS",
+          "correct": true
+        },
+        {
+          "text": "Tester avec ping puis avec un navigateur",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le résultat attendu d'un ping vers la passerelle si le réseau local est correctement configuré ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La machine reçoit une réponse de type \"Reply from...\"",
+          "correct": true
+        },
+        {
+          "text": "La machine affiche \"Request timed out\"",
+          "correct": false
+        },
+        {
+          "text": "La machine redémarre automatiquement",
+          "correct": false
+        },
+        {
+          "text": "Le navigateur web s'ouvre automatiquement",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans Filius, il est possible d'installer un serveur web et un serveur DNS sur deux machines distinctes.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le port TCP à ouvrir sur le routeur pour accéder à un serveur web HTTP est le port 443.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est l'avantage de rediriger le protocole ICMP vers une machine précise plutôt que de l'ouvrir sans destination ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Cela permet de contrôler précisément quelle machine du réseau local répond aux pings venant d'Internet",
+          "correct": true
+        },
+        {
+          "text": "Cela augmente la vitesse des réponses aux pings",
+          "correct": false
+        },
+        {
+          "text": "Cela empêche les pings depuis le réseau local",
+          "correct": false
+        },
+        {
+          "text": "Cela modifie l'adresse IP publique du routeur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le rôle de l'adresse IP publique dans la communication avec un serveur distant ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Elle permet d'identifier et d'atteindre un réseau local depuis Internet",
+          "correct": true
+        },
+        {
+          "text": "Elle identifie chaque machine individuellement dans le réseau local",
+          "correct": false
+        },
+        {
+          "text": "Elle remplace le nom de domaine dans les navigateurs",
+          "correct": false
+        },
+        {
+          "text": "Elle sécurise les échanges entre serveurs",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quel est le nom de l'équipement réseau qui permet de relier plusieurs réseaux différents entre eux ? (en 1 mot)",
+      "time": 20,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "routeur",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "routeur",
+        "Routeur",
+        "ROUTEUR"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quand un élève tape www.monsite.fr dans son navigateur, quelle machine est consultée en premier pour trouver l'adresse IP correspondante ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le serveur DNS configuré sur son ordinateur",
+          "correct": true
+        },
+        {
+          "text": "Le serveur web hébergeant le site",
+          "correct": false
+        },
+        {
+          "text": "Le routeur du réseau local",
+          "correct": false
+        },
+        {
+          "text": "Le switch",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Si aucun serveur DNS n'est renseigné sur un terminal, il est impossible d'accéder à des sites web en tapant leur nom de domaine.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel protocole de transport est associé au port 80 d'un serveur web HTTP ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "TCP",
+          "correct": true
+        },
+        {
+          "text": "UDP",
+          "correct": false
+        },
+        {
+          "text": "ICMP",
+          "correct": false
+        },
+        {
+          "text": "DNS",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Tous les appareils d'un même réseau local partagent la même adresse IP publique lorsqu'ils accèdent à Internet.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Pour qu'un internaute accède à notre site par son nom de domaine, il faut disposer à la fois d'un serveur web ET d'un serveur DNS.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un élève a configuré l'adresse IP et la passerelle de son ordinateur, mais pas le serveur DNS. Que peut-il faire ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Pinguer des machines par leur adresse IP, mais pas accéder aux sites web par leur nom",
+          "correct": true
+        },
+        {
+          "text": "Naviguer normalement sur Internet sans aucune restriction",
+          "correct": false
+        },
+        {
+          "text": "Accéder aux sites web par leur nom mais pas pinguer",
+          "correct": false
+        },
+        {
+          "text": "Rien du tout, le réseau est complètement inutilisable",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Pour qu'un internaute puisse visiter notre serveur web depuis Internet, il est indispensable de lui communiquer notre adresse IP publique ou notre nom de domaine.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel équipement est chargé de router les paquets entre le réseau local et Internet lors d'une communication ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le routeur (la box Internet)",
+          "correct": true
+        },
+        {
+          "text": "Le switch",
+          "correct": false
+        },
+        {
+          "text": "Le serveur web",
+          "correct": false
+        },
+        {
+          "text": "Le serveur DNS",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on le type de serveur qui héberge des pages web et répond aux requêtes des navigateurs ? (2 mots)",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "serveur web",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "serveur web",
+        "Serveur web",
+        "Serveur Web",
+        "serveur http"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Si on ne connaît que l'adresse IP publique d'un réseau, comment le routeur sait-il vers quelle machine du réseau local envoyer une requête HTTP entrante ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Grâce à la règle de redirection du port TCP 80 configurée sur le routeur",
+          "correct": true
+        },
+        {
+          "text": "Le serveur web a toujours l'adresse .1 dans le réseau local",
+          "correct": false
+        },
+        {
+          "text": "Le switch redirige automatiquement vers le bon serveur",
+          "correct": false
+        },
+        {
+          "text": "Le routeur envoie la requête à toutes les machines et attend une réponse",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La commande ping affiche le temps (en millisecondes) que met un paquet pour aller jusqu'à la machine cible et revenir.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle information faut-il saisir dans le champ « serveur DNS » d'un terminal pour qu'il utilise un serveur DNS local ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'adresse IP du serveur DNS local",
+          "correct": true
+        },
+        {
+          "text": "L'adresse IP de la passerelle",
+          "correct": false
+        },
+        {
+          "text": "L'adresse IP du serveur web",
+          "correct": false
+        },
+        {
+          "text": "L'adresse IP publique de la box",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un réseau local comporte un ordinateur (192.168.1.10), un switch et un routeur (192.168.1.1). L'ordinateur peut pinguer ses voisins du réseau local mais pas Internet. Quelle est la cause la plus probable ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "La passerelle n'est pas configurée ou est incorrecte sur l'ordinateur",
+          "correct": true
+        },
+        {
+          "text": "L'adresse IP de l'ordinateur est invalide",
+          "correct": false
+        },
+        {
+          "text": "Le switch est défaillant",
+          "correct": false
+        },
+        {
+          "text": "Le serveur DNS est en panne",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Remets dans l'ordre les étapes d'un ping réussi entre deux machines d'un réseau local :",
+      "time": 40,
+      "answers": [
+        {
+          "text": "La machine A envoie un paquet ICMP « Echo Request » vers la machine B",
+          "correct": true
+        },
+        {
+          "text": "Le switch achemine le paquet vers la machine B",
+          "correct": true
+        },
+        {
+          "text": "La machine B reçoit le paquet et envoie une réponse « Echo Reply »",
+          "correct": true
+        },
+        {
+          "text": "La machine A reçoit la réponse et affiche le temps de trajet",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la différence entre « ouvrir » un port et « rediriger » un port sur un routeur ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Ouvrir autorise le trafic à entrer dans le réseau, rediriger précise vers quelle machine locale l'envoyer",
+          "correct": true
+        },
+        {
+          "text": "Ouvrir et rediriger sont deux termes strictement synonymes",
+          "correct": false
+        },
+        {
+          "text": "Ouvrir bloque le trafic entrant, rediriger le laisse passer",
+          "correct": false
+        },
+        {
+          "text": "Rediriger modifie l'adresse IP publique du routeur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un réseau, comment appelle-t-on un appareil (ordinateur, téléphone…) qui utilise les services fournis par un serveur ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un client",
+          "correct": true
+        },
+        {
+          "text": "Un hôte maître",
+          "correct": false
+        },
+        {
+          "text": "Un routeur secondaire",
+          "correct": false
+        },
+        {
+          "text": "Un nœud passif",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quel numéro de port UDP faut-il ouvrir et rediriger sur le routeur pour rendre un serveur DNS local accessible depuis Internet ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "53",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "53"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans Filius, après avoir installé un serveur web sur une machine du réseau local, ce site est automatiquement accessible depuis Internet sans aucune configuration supplémentaire.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Sur quel équipement configure-t-on les règles de redirection de port pour rendre un serveur local accessible depuis Internet ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Sur le routeur (la box)",
+          "correct": true
+        },
+        {
+          "text": "Sur le serveur lui-même",
+          "correct": false
+        },
+        {
+          "text": "Sur le switch",
+          "correct": false
+        },
+        {
+          "text": "Sur chaque ordinateur client du réseau",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Pour pinguer un serveur distant depuis notre réseau local, on utilise son adresse IP publique.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le serveur DNS est arrêté, mais le serveur web fonctionne. Que se passe-t-il pour les utilisateurs ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Ils ne peuvent plus accéder au site par son nom, mais peuvent y accéder directement via son adresse IP",
+          "correct": true
+        },
+        {
+          "text": "Le site web est complètement inaccessible, même par adresse IP",
+          "correct": false
+        },
+        {
+          "text": "Le serveur web s'arrête également automatiquement",
+          "correct": false
+        },
+        {
+          "text": "Le routeur bloque toutes les connexions entrantes",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Si le protocole ICMP est ouvert sur le routeur sans redirection vers une machine précise, les pings depuis Internet n'atteignent aucun serveur du réseau local.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans un réseau local, seul le routeur connaît l'adresse IP publique attribuée au réseau par le fournisseur d'accès.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "On peut utiliser le port UDP 80 pour héberger un serveur web HTTP standard.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Remets dans l'ordre les étapes pour vérifier qu'un serveur web local est bien accessible depuis Internet :",
+      "time": 45,
+      "answers": [
+        {
+          "text": "Vérifier que le serveur web est bien installé et démarré sur la machine locale",
+          "correct": true
+        },
+        {
+          "text": "Vérifier que le port TCP 80 est ouvert et redirigé vers ce serveur sur le routeur",
+          "correct": true
+        },
+        {
+          "text": "Depuis Internet, pinguer l'adresse IP publique du réseau",
+          "correct": true
+        },
+        {
+          "text": "Depuis Internet, ouvrir un navigateur et saisir l'adresse IP publique",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'adresse IP du serveur DNS doit nécessairement être la même que celle du serveur web.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un réseau local simple, combien de routeurs faut-il pour connecter l'ensemble des machines à Internet ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Un seul routeur suffit",
+          "correct": true
+        },
+        {
+          "text": "Autant de routeurs que de machines",
+          "correct": false
+        },
+        {
+          "text": "Deux routeurs (un pour entrer, un pour sortir)",
+          "correct": false
+        },
+        {
+          "text": "Aucun, le switch suffit",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quel sigle en 3 lettres désigne le service qui traduit les noms de domaine en adresses IP ?",
+      "time": 20,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "DNS",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "dns",
+        "DNS",
+        "Dns"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un réseau local peut être connecté à d'autres réseaux locaux distants via Internet.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est l'avantage principal d'accéder à un serveur par son nom de domaine plutôt que par son adresse IP publique ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le nom est plus facile à retenir et reste utilisable même si l'adresse IP change",
+          "correct": true
+        },
+        {
+          "text": "L'accès par nom est plus rapide qu'avec une adresse IP",
+          "correct": false
+        },
+        {
+          "text": "L'accès par nom de domaine est automatiquement sécurisé",
+          "correct": false
+        },
+        {
+          "text": "Un nom de domaine permet d'accéder à davantage de pages qu'une adresse IP",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le port TCP 80 est ouvert sur le routeur, mais la redirection pointe vers la mauvaise machine locale. Que se passe-t-il quand un internaute tente de visiter le site ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le site est inaccessible car les requêtes n'arrivent pas au bon serveur web",
+          "correct": true
+        },
+        {
+          "text": "Le site s'affiche normalement sans problème",
+          "correct": false
+        },
+        {
+          "text": "Le site s'affiche mais très lentement",
+          "correct": false
+        },
+        {
+          "text": "Le routeur bloque automatiquement toutes les connexions",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Si notre serveur DNS est hébergé localement et doit être interrogeable depuis Internet, il faut ouvrir le port UDP 53 sur notre routeur et le rediriger vers ce serveur.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans Filius, un serveur distant est configuré avec une adresse IP publique. Sur quoi un élève doit-il agir pour que les pings depuis l'extérieur atteignent ce serveur ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Sur le routeur : ouvrir le protocole ICMP et le rediriger vers l'adresse IP locale du serveur",
+          "correct": true
+        },
+        {
+          "text": "Sur le serveur : changer son adresse IP en adresse publique",
+          "correct": false
+        },
+        {
+          "text": "Sur le switch : activer le mode transparent",
+          "correct": false
+        },
+        {
+          "text": "Sur les ordinateurs clients : ajouter l'IP du serveur dans les favoris",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un switch relie les ordinateurs d'un même réseau local entre eux.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "À quoi sert un réseau informatique ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Partager des ressources et communiquer entre machines",
+          "correct": true
+        },
+        {
+          "text": "Uniquement imprimer des documents",
+          "correct": false
+        },
+        {
+          "text": "Augmenter la puissance du processeur",
+          "correct": false
+        },
+        {
+          "text": "Stocker des fichiers sur disque dur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un ordinateur peut faire partie d'un réseau local sans être connecté à Internet.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Laquelle de ces adresses IP est une adresse privée (réseau local) ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "192.168.0.1",
+          "correct": true
+        },
+        {
+          "text": "82.65.10.5",
+          "correct": false
+        },
+        {
+          "text": "216.58.201.14",
+          "correct": false
+        },
+        {
+          "text": "74.125.0.100",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans un réseau local, le serveur et les ordinateurs clients sont tous reliés au switch.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quel est le numéro de port TCP à ouvrir sur le routeur pour accéder à un serveur web HTTP depuis Internet ?",
+      "time": 20,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "80",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "80",
+        "port 80"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Que signifie l'acronyme ICMP ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Internet Control Message Protocol",
+          "correct": true
+        },
+        {
+          "text": "Internal Computer Management Protocol",
+          "correct": false
+        },
+        {
+          "text": "Internet Connection Monitor Program",
+          "correct": false
+        },
+        {
+          "text": "Integrated Circuit Message Protocol",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La commande ping envoie des paquets ICMP vers la machine cible.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Il est possible d'accéder à un serveur web directement par son adresse IP, sans passer par un nom de domaine.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle adresse IP saisit-on dans un navigateur pour tester un serveur web local quand le DNS ne fonctionne pas ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'adresse IP locale du serveur web (ex : 192.168.1.20)",
+          "correct": true
+        },
+        {
+          "text": "L'adresse IP du switch",
+          "correct": false
+        },
+        {
+          "text": "L'adresse IP de la passerelle",
+          "correct": false
+        },
+        {
+          "text": "L'adresse IP du serveur DNS",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Quand on configure un réseau local, chaque machine doit avoir une adresse IP différente.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans Filius, quel est le résultat d'un ping vers une machine dont l'adresse IP n'existe pas dans le réseau ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Aucune réponse (timeout)",
+          "correct": true
+        },
+        {
+          "text": "Le réseau redémarre automatiquement",
+          "correct": false
+        },
+        {
+          "text": "La machine locale change d'adresse IP",
+          "correct": false
+        },
+        {
+          "text": "Le switch bloque toutes les communications",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle adresse IP spéciale permet de tester si la carte réseau d'un ordinateur fonctionne (loopback) ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "127.0.0.1",
+          "correct": true
+        },
+        {
+          "text": "192.168.1.1",
+          "correct": false
+        },
+        {
+          "text": "0.0.0.0",
+          "correct": false
+        },
+        {
+          "text": "255.255.255.255",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans un réseau local, un ordinateur peut communiquer avec tous les autres sans passer par le routeur.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un réseau local 192.168.1.x, quelle adresse IP est généralement attribuée au routeur ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "192.168.1.1",
+          "correct": true
+        },
+        {
+          "text": "192.168.1.254",
+          "correct": false
+        },
+        {
+          "text": "192.168.1.100",
+          "correct": false
+        },
+        {
+          "text": "192.168.1.0",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La commande ping peut échouer même si les câbles sont correctement branchés (par exemple en cas d'adresse IP mal configurée).",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment appelle-t-on le grand réseau mondial qui interconnecte des millions d'ordinateurs ?",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Internet",
+          "correct": true
+        },
+        {
+          "text": "Intranet",
+          "correct": false
+        },
+        {
+          "text": "Le cloud",
+          "correct": false
+        },
+        {
+          "text": "Le réseau local",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un ordinateur mal configuré (mauvaise passerelle) peut pinguer ses voisins du réseau local mais pas une machine sur Internet.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel équipement du réseau local est directement relié au modem (box) pour accéder à Internet ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Le routeur",
+          "correct": true
+        },
+        {
+          "text": "Le switch",
+          "correct": false
+        },
+        {
+          "text": "Le serveur web",
+          "correct": false
+        },
+        {
+          "text": "Le serveur DNS",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un serveur web peut être installé sur n'importe quel ordinateur du réseau local dans Filius.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Combien de machines minimum faut-il pour former un réseau local fonctionnel dans Filius ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Deux machines reliées entre elles",
+          "correct": true
+        },
+        {
+          "text": "Au moins cinq machines",
+          "correct": false
+        },
+        {
+          "text": "Un seul ordinateur suffit",
+          "correct": false
+        },
+        {
+          "text": "Il faut obligatoirement un serveur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans Filius, un ping de 192.168.1.10 vers 192.168.1.20 échoue si les deux machines ne sont pas reliées au même switch.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un élève veut accéder au serveur web du réseau (IP : 192.168.1.30) depuis son ordinateur (IP : 192.168.1.15). Que saisit-il dans son navigateur ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "http://192.168.1.30",
+          "correct": true
+        },
+        {
+          "text": "http://192.168.1.15",
+          "correct": false
+        },
+        {
+          "text": "http://192.168.1.1",
+          "correct": false
+        },
+        {
+          "text": "http://www.serveur.fr",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le port TCP 80 est le port standard d'un serveur web accessible via le protocole HTTP.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

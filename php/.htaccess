@@ -1,0 +1,10 @@
+# Bloquer l'accès direct aux fichiers de log et autres données sensibles depuis HTTP.
+# Le dossier php/ contient error.log (généré par PHP) qui peut contenir des
+# informations de débogage (pseudos, IPs, parfois requêtes brutes). Sans cette
+# règle, lecture publique en cas de déploiement OVH.
+<FilesMatch "\.(log|sql|bak|swp|orig|tmp)$">
+    Require all denied
+</FilesMatch>
+
+# Bloquer aussi le listing du dossier
+Options -Indexes

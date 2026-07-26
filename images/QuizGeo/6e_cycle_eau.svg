@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 400">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2980b9"/>
+    </marker>
+  </defs>
+  <rect width="700" height="400" fill="#87CEEB"/>
+  <text x="350" y="30" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">Le cycle de l'eau</text>
+  <!-- Soleil -->
+  <circle cx="600" cy="80" r="40" fill="#F39C12"/>
+  <line x1="600" y1="30" x2="600" y2="10" stroke="#F39C12" stroke-width="3"/>
+  <line x1="640" y1="50" x2="660" y2="30" stroke="#F39C12" stroke-width="3"/>
+  <line x1="650" y1="80" x2="670" y2="80" stroke="#F39C12" stroke-width="3"/>
+  <!-- Montagne -->
+  <polygon points="50,350 200,150 350,350" fill="#7f8c8d"/>
+  <polygon points="150,200 200,150 250,200" fill="white"/>
+  <!-- Mer -->
+  <ellipse cx="550" cy="350" rx="150" ry="40" fill="#2980b9"/>
+  <text x="550" y="355" font-size="14" text-anchor="middle" fill="white">Mer / Océan</text>
+  <!-- Nuage -->
+  <ellipse cx="300" cy="100" rx="80" ry="40" fill="white" stroke="#bdc3c7"/>
+  <ellipse cx="250" cy="110" rx="40" ry="25" fill="white"/>
+  <ellipse cx="350" cy="110" rx="40" ry="25" fill="white"/>
+  <!-- Flèches du cycle -->
+  <!-- Évaporation -->
+  <path d="M500 320 Q480 200 350 130" fill="none" stroke="#2980b9" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="450" y="220" font-size="14" fill="#2980b9" font-weight="bold">A = ?</text>
+  <!-- Précipitations -->
+  <line x1="280" y1="140" x2="200" y2="250" stroke="#2980b9" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="210" y="200" font-size="14" fill="#2980b9" font-weight="bold">B = ?</text>
+  <!-- Ruissellement -->
+  <path d="M200 300 Q300 340 400 350" fill="none" stroke="#2980b9" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="300" y="310" font-size="14" fill="#2980b9" font-weight="bold">C = ?</text>
+  <!-- Légende -->
+  <rect x="30" y="370" width="640" height="25" fill="rgba(255,255,255,0.8)"/>
+  <text x="350" y="387" font-size="12" text-anchor="middle" fill="#333">A = Évaporation, B = Précipitations, C = Ruissellement - Trouvez la bonne correspondance</text>
+</svg>

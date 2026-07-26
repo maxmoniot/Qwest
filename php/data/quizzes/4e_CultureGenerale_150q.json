@@ -1,0 +1,3029 @@
+{
+  "name": "4e_CultureGenerale_150q",
+  "version": "1.0",
+  "createdAt": "2026-01-29T06:50:44.483Z",
+  "questionsCount": 150,
+  "questions": [
+    {
+      "type": "multiple",
+      "question": "En quelle année a eu lieu la prise de la Bastille ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "1789",
+          "correct": true
+        },
+        {
+          "text": "1792",
+          "correct": false
+        },
+        {
+          "text": "1799",
+          "correct": false
+        },
+        {
+          "text": "1804",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La vitesse de la lumière dans le vide est d'environ 300 000 km/s.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qui a écrit 'L'Encyclopédie' au XVIIIe siècle ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Voltaire",
+          "correct": false
+        },
+        {
+          "text": "Diderot et d'Alembert",
+          "correct": true
+        },
+        {
+          "text": "Montesquieu",
+          "correct": false
+        },
+        {
+          "text": "Rousseau",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on le théorème qui relie les côtés d'un triangle rectangle ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Théorème de Pythagore",
+          "correct": true
+        }
+      ],
+      "caseSensitive": false,
+      "acceptedAnswers": [
+        "Pythagore",
+        "pythagore",
+        "théorème de pythagore"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces événements de la Révolution française dans l'ordre :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Prise de la Bastille (1789)",
+          "correct": true
+        },
+        {
+          "text": "Déclaration des droits de l'homme (1789)",
+          "correct": true
+        },
+        {
+          "text": "Exécution de Louis XVI (1793)",
+          "correct": true
+        },
+        {
+          "text": "Coup d'État de Napoléon (1799)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la formule chimique de l'eau ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "CO₂",
+          "correct": false
+        },
+        {
+          "text": "H₂O",
+          "correct": true
+        },
+        {
+          "text": "O₂",
+          "correct": false
+        },
+        {
+          "text": "NaCl",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Voltaire est un philosophe des Lumières.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le théorème qui permet de calculer des longueurs proportionnelles ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Théorème de Thalès",
+          "correct": true
+        },
+        {
+          "text": "Théorème de Pythagore",
+          "correct": false
+        },
+        {
+          "text": "Théorème des milieux",
+          "correct": false
+        },
+        {
+          "text": "Théorème de l'angle inscrit",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on le mouvement intellectuel du XVIIIe siècle qui prône la raison ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Les Lumières",
+          "correct": true
+        }
+      ],
+      "caseSensitive": false,
+      "acceptedAnswers": [
+        "Lumières",
+        "le siècle des Lumières",
+        "siècle des lumières"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel élément chimique a pour symbole 'Fe' ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Le fluor",
+          "correct": false
+        },
+        {
+          "text": "Le fer",
+          "correct": true
+        },
+        {
+          "text": "Le francium",
+          "correct": false
+        },
+        {
+          "text": "Le phosphore",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'ADN est la molécule qui contient l'information génétique.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces régimes politiques français dans l'ordre chronologique :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Monarchie absolue",
+          "correct": true
+        },
+        {
+          "text": "Première République",
+          "correct": true
+        },
+        {
+          "text": "Premier Empire",
+          "correct": true
+        },
+        {
+          "text": "Monarchie de Juillet",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le résultat de √144 ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "11",
+          "correct": false
+        },
+        {
+          "text": "12",
+          "correct": true
+        },
+        {
+          "text": "13",
+          "correct": false
+        },
+        {
+          "text": "14",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on la figure de style qui consiste à exagérer ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Hyperbole",
+          "correct": true
+        }
+      ],
+      "caseSensitive": false,
+      "acceptedAnswers": [
+        "l'hyperbole",
+        "une hyperbole"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qui a peint 'La Liberté guidant le peuple' ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "David",
+          "correct": false
+        },
+        {
+          "text": "Delacroix",
+          "correct": true
+        },
+        {
+          "text": "Géricault",
+          "correct": false
+        },
+        {
+          "text": "Ingres",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un atome est constitué d'un noyau et d'électrons.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la capitale de l'Australie ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Sydney",
+          "correct": false
+        },
+        {
+          "text": "Melbourne",
+          "correct": false
+        },
+        {
+          "text": "Canberra",
+          "correct": true
+        },
+        {
+          "text": "Brisbane",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces puissances de 10 de la plus petite à la plus grande :",
+      "time": 25,
+      "answers": [
+        {
+          "text": "10⁻³",
+          "correct": true
+        },
+        {
+          "text": "10⁰",
+          "correct": true
+        },
+        {
+          "text": "10²",
+          "correct": true
+        },
+        {
+          "text": "10⁵",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel philosophe a écrit 'Du contrat social' ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Voltaire",
+          "correct": false
+        },
+        {
+          "text": "Montesquieu",
+          "correct": false
+        },
+        {
+          "text": "Rousseau",
+          "correct": true
+        },
+        {
+          "text": "Diderot",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on la période de terreur pendant la Révolution française ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La Terreur",
+          "correct": true
+        }
+      ],
+      "caseSensitive": false,
+      "acceptedAnswers": [
+        "Terreur",
+        "terreur",
+        "période de la Terreur"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La Déclaration des droits de l'homme et du citoyen date de 1789.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est l'équation d'une droite qui passe par l'origine ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "y = ax + b",
+          "correct": false
+        },
+        {
+          "text": "y = ax",
+          "correct": true
+        },
+        {
+          "text": "y = b",
+          "correct": false
+        },
+        {
+          "text": "y = x + b",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel gaz est principalement responsable de l'effet de serre ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "L'oxygène",
+          "correct": false
+        },
+        {
+          "text": "L'azote",
+          "correct": false
+        },
+        {
+          "text": "Le dioxyde de carbone",
+          "correct": true
+        },
+        {
+          "text": "L'hélium",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces écrivains du plus ancien au plus récent :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Molière (1622-1673)",
+          "correct": true
+        },
+        {
+          "text": "Voltaire (1694-1778)",
+          "correct": true
+        },
+        {
+          "text": "Victor Hugo (1802-1885)",
+          "correct": true
+        },
+        {
+          "text": "Émile Zola (1840-1902)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment s'appelle le processus de division cellulaire ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La photosynthèse",
+          "correct": false
+        },
+        {
+          "text": "La mitose",
+          "correct": true
+        },
+        {
+          "text": "La respiration",
+          "correct": false
+        },
+        {
+          "text": "La digestion",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on le régime politique instauré par Napoléon Bonaparte en 1804 ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'Empire",
+          "correct": true
+        }
+      ],
+      "caseSensitive": false,
+      "acceptedAnswers": [
+        "Empire",
+        "Premier Empire",
+        "le Premier Empire"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans un triangle rectangle, le carré de l'hypoténuse égale la somme des carrés des deux autres côtés.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la capitale du Canada ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Toronto",
+          "correct": false
+        },
+        {
+          "text": "Montréal",
+          "correct": false
+        },
+        {
+          "text": "Ottawa",
+          "correct": true
+        },
+        {
+          "text": "Vancouver",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel auteur a écrit 'Les Misérables' ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Balzac",
+          "correct": false
+        },
+        {
+          "text": "Flaubert",
+          "correct": false
+        },
+        {
+          "text": "Victor Hugo",
+          "correct": true
+        },
+        {
+          "text": "Zola",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'esclavage a été définitivement aboli en France en 1848.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces révolutions dans l'ordre chronologique :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Révolution américaine (1776)",
+          "correct": true
+        },
+        {
+          "text": "Révolution française (1789)",
+          "correct": true
+        },
+        {
+          "text": "Révolutions de 1848",
+          "correct": true
+        },
+        {
+          "text": "Révolution russe (1917)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la valeur de cos(60°) ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "0",
+          "correct": false
+        },
+        {
+          "text": "0,5",
+          "correct": true
+        },
+        {
+          "text": "1",
+          "correct": false
+        },
+        {
+          "text": "√3/2",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on la figure de style qui compare deux éléments avec 'comme' ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Comparaison",
+          "correct": true
+        }
+      ],
+      "caseSensitive": false,
+      "acceptedAnswers": [
+        "une comparaison",
+        "la comparaison"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le pH d'une solution neutre ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "0",
+          "correct": false
+        },
+        {
+          "text": "7",
+          "correct": true
+        },
+        {
+          "text": "10",
+          "correct": false
+        },
+        {
+          "text": "14",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Montesquieu est l'auteur de 'De l'esprit des lois'.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel pays n'est pas membre permanent du Conseil de sécurité de l'ONU ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La France",
+          "correct": false
+        },
+        {
+          "text": "L'Allemagne",
+          "correct": true
+        },
+        {
+          "text": "La Chine",
+          "correct": false
+        },
+        {
+          "text": "Le Royaume-Uni",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Combien vaut 2⁴ ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "8",
+          "correct": false
+        },
+        {
+          "text": "16",
+          "correct": true
+        },
+        {
+          "text": "32",
+          "correct": false
+        },
+        {
+          "text": "64",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces scientifiques par ordre chronologique de naissance :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Galilée (1564)",
+          "correct": true
+        },
+        {
+          "text": "Newton (1643)",
+          "correct": true
+        },
+        {
+          "text": "Darwin (1809)",
+          "correct": true
+        },
+        {
+          "text": "Einstein (1879)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on le régime avec séparation des pouvoirs défendu par Montesquieu ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Monarchie constitutionnelle",
+          "correct": true
+        }
+      ],
+      "caseSensitive": false,
+      "acceptedAnswers": [
+        "monarchie parlementaire",
+        "régime parlementaire",
+        "démocratie"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la formule de l'aire d'un disque ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "2πr",
+          "correct": false
+        },
+        {
+          "text": "πr²",
+          "correct": true
+        },
+        {
+          "text": "πd",
+          "correct": false
+        },
+        {
+          "text": "2πr²",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Louis XVI a été guillotiné en 1793.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel organe produit l'insuline ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Le foie",
+          "correct": false
+        },
+        {
+          "text": "Le pancréas",
+          "correct": true
+        },
+        {
+          "text": "Les reins",
+          "correct": false
+        },
+        {
+          "text": "L'estomac",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la capitale de l'Argentine ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Santiago",
+          "correct": false
+        },
+        {
+          "text": "Buenos Aires",
+          "correct": true
+        },
+        {
+          "text": "Montevideo",
+          "correct": false
+        },
+        {
+          "text": "Lima",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces mouvements littéraires du plus ancien au plus récent :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Classicisme (XVIIe siècle)",
+          "correct": true
+        },
+        {
+          "text": "Lumières (XVIIIe siècle)",
+          "correct": true
+        },
+        {
+          "text": "Romantisme (XIXe siècle)",
+          "correct": true
+        },
+        {
+          "text": "Réalisme (XIXe siècle)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment s'appelle la plus petite particule d'un élément chimique ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'atome",
+          "correct": true
+        }
+      ],
+      "caseSensitive": false,
+      "acceptedAnswers": [
+        "atome",
+        "un atome"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La traite négrière a enrichi les ports de Nantes et Bordeaux.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel écrivain est l'auteur de 'Candide' ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Rousseau",
+          "correct": false
+        },
+        {
+          "text": "Voltaire",
+          "correct": true
+        },
+        {
+          "text": "Diderot",
+          "correct": false
+        },
+        {
+          "text": "Montesquieu",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le système solaire compte 8 planètes.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces grandes batailles napoléoniennes dans l'ordre :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Austerlitz (1805)",
+          "correct": true
+        },
+        {
+          "text": "Iéna (1806)",
+          "correct": true
+        },
+        {
+          "text": "Moscou (1812)",
+          "correct": true
+        },
+        {
+          "text": "Waterloo (1815)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la capitale de l'Inde ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Mumbai",
+          "correct": false
+        },
+        {
+          "text": "Calcutta",
+          "correct": false
+        },
+        {
+          "text": "New Delhi",
+          "correct": true
+        },
+        {
+          "text": "Bangalore",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on la figure de style qui attribue des caractéristiques humaines à un objet ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Personnification",
+          "correct": true
+        }
+      ],
+      "caseSensitive": false,
+      "acceptedAnswers": [
+        "la personnification",
+        "une personnification"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le gaz le plus abondant dans l'atmosphère terrestre ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "L'oxygène",
+          "correct": false
+        },
+        {
+          "text": "L'azote",
+          "correct": true
+        },
+        {
+          "text": "Le dioxyde de carbone",
+          "correct": false
+        },
+        {
+          "text": "L'argon",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Napoléon a été exilé sur l'île de Sainte-Hélène après Waterloo.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Si x + 5 = 12, que vaut x ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "5",
+          "correct": false
+        },
+        {
+          "text": "7",
+          "correct": true
+        },
+        {
+          "text": "12",
+          "correct": false
+        },
+        {
+          "text": "17",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces pays par superficie (du plus petit au plus grand) :",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Japon",
+          "correct": true
+        },
+        {
+          "text": "France",
+          "correct": true
+        },
+        {
+          "text": "Inde",
+          "correct": true
+        },
+        {
+          "text": "Brésil",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel philosophe a développé le concept de 'volonté générale' ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Voltaire",
+          "correct": false
+        },
+        {
+          "text": "Montesquieu",
+          "correct": false
+        },
+        {
+          "text": "Rousseau",
+          "correct": true
+        },
+        {
+          "text": "Diderot",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment s'appelle le type de cellule qui n'a pas de noyau ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Procaryote",
+          "correct": true
+        }
+      ],
+      "caseSensitive": false,
+      "acceptedAnswers": [
+        "cellule procaryote",
+        "procaryotes",
+        "bactérie"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le Code civil français a été créé sous Napoléon.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la valeur de sin(30°) ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "0",
+          "correct": false
+        },
+        {
+          "text": "0,5",
+          "correct": true
+        },
+        {
+          "text": "√2/2",
+          "correct": false
+        },
+        {
+          "text": "1",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel peintre est associé à l'impressionnisme ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "David",
+          "correct": false
+        },
+        {
+          "text": "Delacroix",
+          "correct": false
+        },
+        {
+          "text": "Monet",
+          "correct": true
+        },
+        {
+          "text": "Courbet",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces inventions dans l'ordre chronologique :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Machine à vapeur (1769)",
+          "correct": true
+        },
+        {
+          "text": "Locomotive (1804)",
+          "correct": true
+        },
+        {
+          "text": "Télégraphe (1837)",
+          "correct": true
+        },
+        {
+          "text": "Téléphone (1876)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on le commerce entre l'Europe, l'Afrique et l'Amérique au XVIIIe siècle ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Commerce triangulaire",
+          "correct": true
+        }
+      ],
+      "caseSensitive": false,
+      "acceptedAnswers": [
+        "traite négrière",
+        "traite atlantique",
+        "le commerce triangulaire"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est l'unité de mesure de l'intensité électrique ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Le volt",
+          "correct": false
+        },
+        {
+          "text": "L'ampère",
+          "correct": true
+        },
+        {
+          "text": "Le watt",
+          "correct": false
+        },
+        {
+          "text": "L'ohm",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La Révolution industrielle a commencé en Angleterre.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le PPCM de 4 et 6 ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "2",
+          "correct": false
+        },
+        {
+          "text": "12",
+          "correct": true
+        },
+        {
+          "text": "24",
+          "correct": false
+        },
+        {
+          "text": "6",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la capitale de la Thaïlande ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Hanoï",
+          "correct": false
+        },
+        {
+          "text": "Jakarta",
+          "correct": false
+        },
+        {
+          "text": "Bangkok",
+          "correct": true
+        },
+        {
+          "text": "Manille",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces présidents de la Ve République dans l'ordre :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Charles de Gaulle",
+          "correct": true
+        },
+        {
+          "text": "François Mitterrand",
+          "correct": true
+        },
+        {
+          "text": "Jacques Chirac",
+          "correct": true
+        },
+        {
+          "text": "Emmanuel Macron",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment s'appelle le mouvement artistique qui représente la réalité ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le réalisme",
+          "correct": true
+        }
+      ],
+      "caseSensitive": false,
+      "acceptedAnswers": [
+        "réalisme",
+        "Réalisme"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le symbole chimique du sodium ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "So",
+          "correct": false
+        },
+        {
+          "text": "Na",
+          "correct": true
+        },
+        {
+          "text": "Sd",
+          "correct": false
+        },
+        {
+          "text": "S",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Victor Hugo a été exilé sous le Second Empire.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Combien font (-3)² ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "-9",
+          "correct": false
+        },
+        {
+          "text": "9",
+          "correct": true
+        },
+        {
+          "text": "-6",
+          "correct": false
+        },
+        {
+          "text": "6",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle loi relie tension, résistance et intensité ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Loi de Newton",
+          "correct": false
+        },
+        {
+          "text": "Loi d'Ohm",
+          "correct": true
+        },
+        {
+          "text": "Loi de Joule",
+          "correct": false
+        },
+        {
+          "text": "Loi de Coulomb",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces philosophes des Lumières par date de naissance :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Montesquieu (1689)",
+          "correct": true
+        },
+        {
+          "text": "Voltaire (1694)",
+          "correct": true
+        },
+        {
+          "text": "Rousseau (1712)",
+          "correct": true
+        },
+        {
+          "text": "Diderot (1713)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment s'appelle le processus de transformation d'un liquide en gaz ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vaporisation",
+          "correct": true
+        }
+      ],
+      "caseSensitive": false,
+      "acceptedAnswers": [
+        "évaporation",
+        "la vaporisation",
+        "ébullition"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel auteur a écrit 'Germinal' ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Victor Hugo",
+          "correct": false
+        },
+        {
+          "text": "Balzac",
+          "correct": false
+        },
+        {
+          "text": "Émile Zola",
+          "correct": true
+        },
+        {
+          "text": "Flaubert",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Toussaint Louverture est une figure de l'indépendance d'Haïti.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le volume d'un cube de côté 3 cm ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "9 cm³",
+          "correct": false
+        },
+        {
+          "text": "18 cm³",
+          "correct": false
+        },
+        {
+          "text": "27 cm³",
+          "correct": true
+        },
+        {
+          "text": "36 cm³",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la capitale du Brésil ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Rio de Janeiro",
+          "correct": false
+        },
+        {
+          "text": "São Paulo",
+          "correct": false
+        },
+        {
+          "text": "Brasília",
+          "correct": true
+        },
+        {
+          "text": "Salvador",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on le mouvement littéraire qui exalte les sentiments et la nature ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le romantisme",
+          "correct": true
+        }
+      ],
+      "caseSensitive": false,
+      "acceptedAnswers": [
+        "romantisme",
+        "Romantisme"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La formule U = R × I s'appelle la loi d'Ohm.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel événement marque traditionnellement la fin du Moyen Âge ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La découverte de l'Amérique (1492)",
+          "correct": true
+        },
+        {
+          "text": "La Révolution française (1789)",
+          "correct": false
+        },
+        {
+          "text": "La chute de Rome (476)",
+          "correct": false
+        },
+        {
+          "text": "L'invention de l'imprimerie (1450)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces compositeurs par date de naissance :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Bach (1685)",
+          "correct": true
+        },
+        {
+          "text": "Mozart (1756)",
+          "correct": true
+        },
+        {
+          "text": "Beethoven (1770)",
+          "correct": true
+        },
+        {
+          "text": "Chopin (1810)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la valeur de √2 arrondie au dixième ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "1,2",
+          "correct": false
+        },
+        {
+          "text": "1,4",
+          "correct": true
+        },
+        {
+          "text": "1,6",
+          "correct": false
+        },
+        {
+          "text": "1,8",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on l'assemblée qui a voté l'abolition des privilèges le 4 août 1789 ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "L'Assemblée constituante",
+          "correct": true
+        }
+      ],
+      "caseSensitive": false,
+      "acceptedAnswers": [
+        "Assemblée constituante",
+        "Assemblée nationale constituante"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le symbole chimique du potassium ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Po",
+          "correct": false
+        },
+        {
+          "text": "Pt",
+          "correct": false
+        },
+        {
+          "text": "K",
+          "correct": true
+        },
+        {
+          "text": "P",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La IIIe République française a été proclamée en 1870.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la capitale de la Corée du Sud ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Pyongyang",
+          "correct": false
+        },
+        {
+          "text": "Séoul",
+          "correct": true
+        },
+        {
+          "text": "Busan",
+          "correct": false
+        },
+        {
+          "text": "Tokyo",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces tensions électriques de la plus faible à la plus forte :",
+      "time": 30,
+      "answers": [
+        {
+          "text": "1 V",
+          "correct": true
+        },
+        {
+          "text": "12 V",
+          "correct": true
+        },
+        {
+          "text": "230 V",
+          "correct": true
+        },
+        {
+          "text": "400 V",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel philosophe a écrit 'Émile ou De l'éducation' ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Voltaire",
+          "correct": false
+        },
+        {
+          "text": "Diderot",
+          "correct": false
+        },
+        {
+          "text": "Rousseau",
+          "correct": true
+        },
+        {
+          "text": "Montesquieu",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on un nombre qui ne peut s'écrire sous forme de fraction ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Irrationnel",
+          "correct": true
+        }
+      ],
+      "caseSensitive": false,
+      "acceptedAnswers": [
+        "nombre irrationnel",
+        "un nombre irrationnel"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'électron a une charge électrique négative.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel peintre espagnol a peint 'Guernica' ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Dalí",
+          "correct": false
+        },
+        {
+          "text": "Goya",
+          "correct": false
+        },
+        {
+          "text": "Picasso",
+          "correct": true
+        },
+        {
+          "text": "Velázquez",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Si 2x - 4 = 10, que vaut x ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "3",
+          "correct": false
+        },
+        {
+          "text": "5",
+          "correct": false
+        },
+        {
+          "text": "7",
+          "correct": true
+        },
+        {
+          "text": "14",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces guerres dans l'ordre chronologique :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Guerre d'indépendance américaine (1775)",
+          "correct": true
+        },
+        {
+          "text": "Guerres napoléoniennes (1803)",
+          "correct": true
+        },
+        {
+          "text": "Guerre de Sécession (1861)",
+          "correct": true
+        },
+        {
+          "text": "Première Guerre mondiale (1914)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on la figure de style qui dit le contraire de ce qu'on pense ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Ironie",
+          "correct": true
+        }
+      ],
+      "caseSensitive": false,
+      "acceptedAnswers": [
+        "l'ironie",
+        "une ironie",
+        "antiphrase"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la capitale de l'Iran ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Bagdad",
+          "correct": false
+        },
+        {
+          "text": "Téhéran",
+          "correct": true
+        },
+        {
+          "text": "Kaboul",
+          "correct": false
+        },
+        {
+          "text": "Riyad",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un triangle isocèle a deux côtés de même longueur.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le mouvement politique né de la Révolution française qui défend la liberté individuelle ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le socialisme",
+          "correct": false
+        },
+        {
+          "text": "Le libéralisme",
+          "correct": true
+        },
+        {
+          "text": "Le communisme",
+          "correct": false
+        },
+        {
+          "text": "L'absolutisme",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la formule du volume d'un cylindre ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "πr²h",
+          "correct": true
+        },
+        {
+          "text": "2πrh",
+          "correct": false
+        },
+        {
+          "text": "πr²",
+          "correct": false
+        },
+        {
+          "text": "(4/3)πr³",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on le gaz produit par la combustion du carbone ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Dioxyde de carbone",
+          "correct": true
+        }
+      ],
+      "caseSensitive": false,
+      "acceptedAnswers": [
+        "CO2",
+        "gaz carbonique",
+        "le dioxyde de carbone"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces républiques françaises dans l'ordre :",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Ière République (1792)",
+          "correct": true
+        },
+        {
+          "text": "IIe République (1848)",
+          "correct": true
+        },
+        {
+          "text": "IIIe République (1870)",
+          "correct": true
+        },
+        {
+          "text": "Ve République (1958)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Marie Curie a reçu deux prix Nobel.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel mouvement artistique Eugène Delacroix représente-t-il ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le classicisme",
+          "correct": false
+        },
+        {
+          "text": "Le romantisme",
+          "correct": true
+        },
+        {
+          "text": "Le réalisme",
+          "correct": false
+        },
+        {
+          "text": "L'impressionnisme",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le résultat de 5⁰ ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "0",
+          "correct": false
+        },
+        {
+          "text": "1",
+          "correct": true
+        },
+        {
+          "text": "5",
+          "correct": false
+        },
+        {
+          "text": "Indéfini",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on la transformation d'un solide directement en gaz ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Sublimation",
+          "correct": true
+        }
+      ],
+      "caseSensitive": false,
+      "acceptedAnswers": [
+        "la sublimation"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la capitale du Vietnam ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Hô Chi Minh-Ville",
+          "correct": false
+        },
+        {
+          "text": "Hanoï",
+          "correct": true
+        },
+        {
+          "text": "Da Nang",
+          "correct": false
+        },
+        {
+          "text": "Phnom Penh",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La somme des angles d'un quadrilatère est de 360°.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces résistances électriques de la plus faible à la plus forte :",
+      "time": 30,
+      "answers": [
+        {
+          "text": "10 Ω",
+          "correct": true
+        },
+        {
+          "text": "100 Ω",
+          "correct": true
+        },
+        {
+          "text": "1 kΩ",
+          "correct": true
+        },
+        {
+          "text": "10 kΩ",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel texte fondateur commence par 'Les hommes naissent et demeurent libres et égaux en droits' ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "La Constitution américaine",
+          "correct": false
+        },
+        {
+          "text": "La Déclaration des droits de l'homme",
+          "correct": true
+        },
+        {
+          "text": "Le Code civil",
+          "correct": false
+        },
+        {
+          "text": "La Charte de l'ONU",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on l'unité de mesure de la résistance électrique ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Ohm",
+          "correct": true
+        }
+      ],
+      "caseSensitive": false,
+      "acceptedAnswers": [
+        "l'ohm",
+        "ohms",
+        "Ω"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel auteur a écrit 'Madame Bovary' ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Victor Hugo",
+          "correct": false
+        },
+        {
+          "text": "Gustave Flaubert",
+          "correct": true
+        },
+        {
+          "text": "Émile Zola",
+          "correct": false
+        },
+        {
+          "text": "Balzac",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Napoléon III était le neveu de Napoléon Ier.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Si a/b = c/d, alors a × d = ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "b + c",
+          "correct": false
+        },
+        {
+          "text": "b × c",
+          "correct": true
+        },
+        {
+          "text": "b - c",
+          "correct": false
+        },
+        {
+          "text": "b / c",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces événements de l'histoire de France dans l'ordre :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Révolution française (1789)",
+          "correct": true
+        },
+        {
+          "text": "Coup d'État de Napoléon III (1851)",
+          "correct": true
+        },
+        {
+          "text": "Commune de Paris (1871)",
+          "correct": true
+        },
+        {
+          "text": "Affaire Dreyfus (1894)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la capitale de la Norvège ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Stockholm",
+          "correct": false
+        },
+        {
+          "text": "Copenhague",
+          "correct": false
+        },
+        {
+          "text": "Oslo",
+          "correct": true
+        },
+        {
+          "text": "Helsinki",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on un triangle qui n'a aucun côté égal ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Scalène",
+          "correct": true
+        }
+      ],
+      "caseSensitive": false,
+      "acceptedAnswers": [
+        "triangle scalène",
+        "quelconque",
+        "triangle quelconque"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le nom du mouvement politique qui veut abolir la propriété privée ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le libéralisme",
+          "correct": false
+        },
+        {
+          "text": "Le communisme",
+          "correct": true
+        },
+        {
+          "text": "Le nationalisme",
+          "correct": false
+        },
+        {
+          "text": "Le monarchisme",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le proton a une charge électrique positive.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Combien font 3/4 - 1/2 ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "1/4",
+          "correct": true
+        },
+        {
+          "text": "2/4",
+          "correct": false
+        },
+        {
+          "text": "1/2",
+          "correct": false
+        },
+        {
+          "text": "2/6",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces peintres impressionnistes par date de naissance :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Manet (1832)",
+          "correct": true
+        },
+        {
+          "text": "Degas (1834)",
+          "correct": true
+        },
+        {
+          "text": "Monet (1840)",
+          "correct": true
+        },
+        {
+          "text": "Renoir (1841)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on le régime politique où un seul parti détient le pouvoir ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Dictature",
+          "correct": true
+        }
+      ],
+      "caseSensitive": false,
+      "acceptedAnswers": [
+        "régime autoritaire",
+        "totalitarisme",
+        "une dictature"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la capitale de l'Indonésie ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Bangkok",
+          "correct": false
+        },
+        {
+          "text": "Kuala Lumpur",
+          "correct": false
+        },
+        {
+          "text": "Jakarta",
+          "correct": true
+        },
+        {
+          "text": "Manille",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un nombre négatif au carré donne un nombre positif.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel écrivain a créé le personnage de Jean Valjean ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Balzac",
+          "correct": false
+        },
+        {
+          "text": "Victor Hugo",
+          "correct": true
+        },
+        {
+          "text": "Zola",
+          "correct": false
+        },
+        {
+          "text": "Stendhal",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est l'unité de mesure de la puissance électrique ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "L'ampère",
+          "correct": false
+        },
+        {
+          "text": "Le volt",
+          "correct": false
+        },
+        {
+          "text": "Le watt",
+          "correct": true
+        },
+        {
+          "text": "L'ohm",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on le phénomène qui transforme l'énergie lumineuse en énergie chimique chez les plantes ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Photosynthèse",
+          "correct": true
+        }
+      ],
+      "caseSensitive": false,
+      "acceptedAnswers": [
+        "la photosynthèse"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces écrivains réalistes par date de naissance :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Balzac (1799)",
+          "correct": true
+        },
+        {
+          "text": "Flaubert (1821)",
+          "correct": true
+        },
+        {
+          "text": "Zola (1840)",
+          "correct": true
+        },
+        {
+          "text": "Maupassant (1850)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'abolition de la monarchie en France a eu lieu en 1792.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la capitale de l'Égypte ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Alexandrie",
+          "correct": false
+        },
+        {
+          "text": "Le Caire",
+          "correct": true
+        },
+        {
+          "text": "Louxor",
+          "correct": false
+        },
+        {
+          "text": "Gizeh",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le résultat de 10⁻² ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "100",
+          "correct": false
+        },
+        {
+          "text": "0,01",
+          "correct": true
+        },
+        {
+          "text": "-20",
+          "correct": false
+        },
+        {
+          "text": "0,1",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on le mouvement qui revendique l'égalité des droits pour les femmes ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Féminisme",
+          "correct": true
+        }
+      ],
+      "caseSensitive": false,
+      "acceptedAnswers": [
+        "le féminisme",
+        "mouvement féministe"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel personnage historique a mené la campagne d'Égypte en 1798 ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Louis XVI",
+          "correct": false
+        },
+        {
+          "text": "Napoléon Bonaparte",
+          "correct": true
+        },
+        {
+          "text": "Robespierre",
+          "correct": false
+        },
+        {
+          "text": "Lafayette",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La cellule est l'unité de base du vivant.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces droits acquis dans l'ordre chronologique :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Abolition des privilèges (1789)",
+          "correct": true
+        },
+        {
+          "text": "Abolition de l'esclavage (1848)",
+          "correct": true
+        },
+        {
+          "text": "Droit de grève (1864)",
+          "correct": true
+        },
+        {
+          "text": "Droit de vote des femmes (1944)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la capitale de la Colombie ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Bogotá",
+          "correct": true
+        },
+        {
+          "text": "Medellín",
+          "correct": false
+        },
+        {
+          "text": "Caracas",
+          "correct": false
+        },
+        {
+          "text": "Lima",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel événement a déclenché la Première Guerre mondiale ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'invasion de la Pologne",
+          "correct": false
+        },
+        {
+          "text": "L'assassinat de l'archiduc François-Ferdinand",
+          "correct": true
+        },
+        {
+          "text": "Le naufrage du Lusitania",
+          "correct": false
+        },
+        {
+          "text": "La révolution russe",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le naturalisme est un mouvement littéraire créé par Émile Zola.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on un triangle qui a un angle de 90° ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Triangle rectangle",
+          "correct": true
+        }
+      ],
+      "caseSensitive": false,
+      "acceptedAnswers": [
+        "rectangle",
+        "un triangle rectangle"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces régimes politiques français du XIXe siècle dans l'ordre :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Premier Empire (1804)",
+          "correct": true
+        },
+        {
+          "text": "Restauration (1814)",
+          "correct": true
+        },
+        {
+          "text": "Monarchie de Juillet (1830)",
+          "correct": true
+        },
+        {
+          "text": "Second Empire (1852)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la capitale de la Belgique ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Anvers",
+          "correct": false
+        },
+        {
+          "text": "Bruxelles",
+          "correct": true
+        },
+        {
+          "text": "Bruges",
+          "correct": false
+        },
+        {
+          "text": "Liège",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La Tour Eiffel a été construite pour l'Exposition universelle de 1889.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le résultat de 3² + 4² ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "14",
+          "correct": false
+        },
+        {
+          "text": "25",
+          "correct": true
+        },
+        {
+          "text": "49",
+          "correct": false
+        },
+        {
+          "text": "7",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment s'appelle le gaz qui compose environ 21% de l'atmosphère ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Oxygène",
+          "correct": true
+        }
+      ],
+      "caseSensitive": false,
+      "acceptedAnswers": [
+        "l'oxygène",
+        "O2",
+        "dioxygène"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel auteur a écrit 'Le Père Goriot' ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Victor Hugo",
+          "correct": false
+        },
+        {
+          "text": "Honoré de Balzac",
+          "correct": true
+        },
+        {
+          "text": "Émile Zola",
+          "correct": false
+        },
+        {
+          "text": "Stendhal",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces révolutions du XIXe siècle dans l'ordre :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Révolution de 1830",
+          "correct": true
+        },
+        {
+          "text": "Révolution de 1848",
+          "correct": true
+        },
+        {
+          "text": "Commune de Paris (1871)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'unité de mesure de la tension électrique est le volt.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la capitale de la Suède ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Oslo",
+          "correct": false
+        },
+        {
+          "text": "Copenhague",
+          "correct": false
+        },
+        {
+          "text": "Stockholm",
+          "correct": true
+        },
+        {
+          "text": "Helsinki",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on un nombre qui n'a que deux diviseurs : 1 et lui-même ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Nombre premier",
+          "correct": true
+        }
+      ],
+      "caseSensitive": false,
+      "acceptedAnswers": [
+        "premier",
+        "nombres premiers"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel mouvement artistique a été fondé par Claude Monet ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le romantisme",
+          "correct": false
+        },
+        {
+          "text": "Le réalisme",
+          "correct": false
+        },
+        {
+          "text": "L'impressionnisme",
+          "correct": true
+        },
+        {
+          "text": "Le cubisme",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La IIIe République a duré de 1870 à 1940.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

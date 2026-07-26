@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 650">
+  <rect width="600" height="650" fill="#f5f5f5"/>
+  <text x="300" y="25" font-size="16" font-weight="bold" text-anchor="middle">Les régions françaises (depuis 2016)</text>
+  <!-- Contour France simplifié avec régions -->
+  <path d="M200 80 L280 60 L380 70 L450 100 L500 180 L480 280 L450 350 L400 420 L320 470 L250 450 L180 400 L120 320 L100 220 L130 140 Z" fill="#e8f5e9" stroke="#333" stroke-width="2"/>
+  <!-- Régions numérotées -->
+  <!-- Île-de-France -->
+  <circle cx="300" cy="150" r="25" fill="#e74c3c" stroke="#333"/>
+  <text x="300" y="155" font-size="14" text-anchor="middle" fill="white" font-weight="bold">1</text>
+  <!-- Hauts-de-France -->
+  <circle cx="320" cy="90" r="20" fill="#2196f3" stroke="#333"/>
+  <text x="320" y="95" font-size="12" text-anchor="middle" fill="white" font-weight="bold">2</text>
+  <!-- Grand Est -->
+  <circle cx="420" cy="140" r="25" fill="#4caf50" stroke="#333"/>
+  <text x="420" y="145" font-size="14" text-anchor="middle" fill="white" font-weight="bold">3</text>
+  <!-- Normandie -->
+  <circle cx="200" cy="120" r="20" fill="#ff9800" stroke="#333"/>
+  <text x="200" y="125" font-size="12" text-anchor="middle" fill="white" font-weight="bold">4</text>
+  <!-- Bretagne -->
+  <circle cx="130" cy="180" r="22" fill="#9c27b0" stroke="#333"/>
+  <text x="130" y="185" font-size="12" text-anchor="middle" fill="white" font-weight="bold">5</text>
+  <!-- Pays de la Loire -->
+  <circle cx="180" cy="250" r="22" fill="#00bcd4" stroke="#333"/>
+  <text x="180" y="255" font-size="12" text-anchor="middle" fill="white" font-weight="bold">6</text>
+  <!-- Centre-Val de Loire -->
+  <circle cx="280" cy="230" r="22" fill="#795548" stroke="#333"/>
+  <text x="280" y="235" font-size="12" text-anchor="middle" fill="white" font-weight="bold">7</text>
+  <!-- Bourgogne-Franche-Comté -->
+  <circle cx="380" cy="230" r="22" fill="#607d8b" stroke="#333"/>
+  <text x="380" y="235" font-size="12" text-anchor="middle" fill="white" font-weight="bold">8</text>
+  <!-- Nouvelle-Aquitaine -->
+  <circle cx="200" cy="350" r="28" fill="#f44336" stroke="#333"/>
+  <text x="200" y="355" font-size="14" text-anchor="middle" fill="white" font-weight="bold">9</text>
+  <!-- Auvergne-Rhône-Alpes -->
+  <circle cx="380" cy="330" r="28" fill="#3f51b5" stroke="#333"/>
+  <text x="380" y="335" font-size="14" text-anchor="middle" fill="white" font-weight="bold">10</text>
+  <!-- Occitanie -->
+  <circle cx="280" cy="420" r="28" fill="#009688" stroke="#333"/>
+  <text x="280" y="425" font-size="14" text-anchor="middle" fill="white" font-weight="bold">11</text>
+  <!-- Provence-Alpes-Côte d'Azur -->
+  <circle cx="420" cy="400" r="22" fill="#e91e63" stroke="#333"/>
+  <text x="420" y="405" font-size="12" text-anchor="middle" fill="white" font-weight="bold">12</text>
+  <!-- Corse -->
+  <ellipse cx="480" cy="450" rx="18" ry="30" fill="#cddc39" stroke="#333"/>
+  <text x="480" y="455" font-size="12" text-anchor="middle" fill="#333" font-weight="bold">13</text>
+  <!-- Légende partielle -->
+  <rect x="50" y="500" width="500" height="140" fill="white" stroke="#ddd" rx="5"/>
+  <text x="300" y="520" font-size="12" text-anchor="middle" font-weight="bold">Identifiez les régions :</text>
+  <text x="80" y="545" font-size="10">1 = Île-de-France</text>
+  <text x="80" y="565" font-size="10">2 = Hauts-de-France</text>
+  <text x="80" y="585" font-size="10">3 = Grand Est</text>
+  <text x="80" y="605" font-size="10">4 = Normandie</text>
+  <text x="80" y="625" font-size="10">5 = Bretagne</text>
+  <text x="220" y="545" font-size="10">6 = Pays de la Loire</text>
+  <text x="220" y="565" font-size="10">7 = Centre-Val de Loire</text>
+  <text x="220" y="585" font-size="10">8 = Bourgogne-Fr.-Comté</text>
+  <text x="220" y="605" font-size="10">9 = Nouvelle-Aquitaine</text>
+  <text x="380" y="545" font-size="10">10 = Auvergne-Rhône-Alpes</text>
+  <text x="380" y="565" font-size="10">11 = Occitanie</text>
+  <text x="380" y="585" font-size="10">12 = PACA</text>
+  <text x="380" y="605" font-size="10">13 = Corse</text>
+</svg>

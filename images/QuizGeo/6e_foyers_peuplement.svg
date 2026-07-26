@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#e8f4f8"/>
+  <text x="400" y="25" font-size="16" font-weight="bold" text-anchor="middle">Les grands foyers de peuplement</text>
+  <!-- Continents simplifiés -->
+  <path d="M60 80 L160 70 L200 140 L160 200 L80 180 L50 120 Z" fill="#ddd" stroke="#999"/>
+  <path d="M130 210 L180 220 L160 300 L100 290 Z" fill="#ddd" stroke="#999"/>
+  <path d="M250 70 L330 65 L360 110 L340 150 L270 145 Z" fill="#ddd" stroke="#999"/>
+  <path d="M255 160 L340 155 L360 260 L300 290 L240 250 Z" fill="#ddd" stroke="#999"/>
+  <path d="M370 55 L580 45 L620 120 L580 190 L420 180 L370 110 Z" fill="#ddd" stroke="#999"/>
+  <path d="M630 230 L720 220 L750 290 L700 320 L640 300 Z" fill="#ddd" stroke="#999"/>
+  <!-- Foyers de peuplement (cercles rouges) -->
+  <circle cx="310" cy="100" r="25" fill="#e74c3c" opacity="0.8"/>
+  <text x="310" y="105" font-size="16" text-anchor="middle" fill="white" font-weight="bold">A</text>
+  <text x="310" y="140" font-size="10" text-anchor="middle" fill="#333">580 M hab.</text>
+  <circle cx="480" cy="90" r="35" fill="#e74c3c" opacity="0.8"/>
+  <text x="480" y="95" font-size="16" text-anchor="middle" fill="white" font-weight="bold">B</text>
+  <text x="480" y="140" font-size="10" text-anchor="middle" fill="#333">1,4 Md hab.</text>
+  <circle cx="560" cy="110" r="35" fill="#e74c3c" opacity="0.8"/>
+  <text x="560" y="115" font-size="16" text-anchor="middle" fill="white" font-weight="bold">C</text>
+  <text x="580" y="155" font-size="10" text-anchor="middle" fill="#333">1,4 Md hab.</text>
+  <circle cx="680" cy="270" r="15" fill="#e74c3c" opacity="0.8"/>
+  <text x="680" y="275" font-size="14" text-anchor="middle" fill="white" font-weight="bold">D</text>
+  <!-- Légende -->
+  <rect x="100" y="340" width="600" height="50" fill="white" stroke="#ddd" rx="5"/>
+  <text x="400" y="360" font-size="12" text-anchor="middle" font-weight="bold">Identifiez les foyers de peuplement :</text>
+  <text x="400" y="380" font-size="11" text-anchor="middle">A=Europe B=Asie de l'Est C=Asie du Sud D=Asie du Sud-Est</text>
+</svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 350">
+  <rect width="700" height="350" fill="#f0f8ff"/>
+  <text x="350" y="25" font-size="16" font-weight="bold" text-anchor="middle">Structure d'une métropole</text>
+  <!-- Centre-ville -->
+  <rect x="280" y="100" width="140" height="120" fill="#ff6b6b" stroke="#333" stroke-width="2"/>
+  <rect x="300" y="110" width="30" height="60" fill="#333"/>
+  <rect x="340" y="90" width="35" height="80" fill="#333"/>
+  <rect x="385" y="105" width="25" height="65" fill="#333"/>
+  <text x="350" y="250" font-size="12" text-anchor="middle" font-weight="bold">A</text>
+  <!-- Banlieue -->
+  <rect x="120" y="140" width="150" height="80" fill="#90EE90" stroke="#333"/>
+  <rect x="130" y="150" width="20" height="20" fill="#666"/>
+  <rect x="160" y="150" width="20" height="20" fill="#666"/>
+  <rect x="190" y="150" width="20" height="20" fill="#666"/>
+  <rect x="130" y="180" width="20" height="20" fill="#666"/>
+  <rect x="160" y="180" width="20" height="20" fill="#666"/>
+  <text x="195" y="250" font-size="12" text-anchor="middle" font-weight="bold">B</text>
+  <rect x="430" y="140" width="150" height="80" fill="#90EE90" stroke="#333"/>
+  <rect x="440" y="150" width="20" height="20" fill="#666"/>
+  <rect x="470" y="150" width="20" height="20" fill="#666"/>
+  <rect x="500" y="150" width="20" height="20" fill="#666"/>
+  <text x="505" y="250" font-size="12" text-anchor="middle" font-weight="bold">B</text>
+  <!-- Espace périurbain -->
+  <rect x="30" y="160" width="80" height="50" fill="#FFD700" stroke="#333"/>
+  <rect x="40" y="170" width="15" height="15" fill="#8B4513"/>
+  <rect x="60" y="175" width="12" height="12" fill="#8B4513"/>
+  <text x="70" y="250" font-size="12" text-anchor="middle" font-weight="bold">C</text>
+  <rect x="590" y="160" width="80" height="50" fill="#FFD700" stroke="#333"/>
+  <text x="630" y="250" font-size="12" text-anchor="middle" font-weight="bold">C</text>
+  <!-- Légende -->
+  <rect x="150" y="280" width="20" height="15" fill="#ff6b6b"/>
+  <text x="175" y="292" font-size="11">A = ?</text>
+  <rect x="280" y="280" width="20" height="15" fill="#90EE90"/>
+  <text x="305" y="292" font-size="11">B = ?</text>
+  <rect x="410" y="280" width="20" height="15" fill="#FFD700"/>
+  <text x="435" y="292" font-size="11">C = ?</text>
+  <!-- Axes -->
+  <line x1="50" y1="230" x2="650" y2="230" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="350" y="320" font-size="11" text-anchor="middle" fill="#666">Distance au centre →</text>
+</svg>

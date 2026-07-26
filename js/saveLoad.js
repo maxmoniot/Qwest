@@ -231,48 +231,124 @@
     async function loadQuizList() {
         const listDiv = document.getElementById('quiz-list');
         listDiv.innerHTML = '<div class="loading">Chargement...</div>';
-        
+
         try {
             const response = await fetch('php/api.php?action=list_quizzes');
             const result = await response.json();
-            
+
             if (result.success && result.quizzes && result.quizzes.length > 0) {
                 listDiv.innerHTML = '';
-                
+
+                // Trier par nom alphabétique
+                result.quizzes.sort((a, b) => a.name.localeCompare(b.name, 'fr', { sensitivity: 'base' }));
+
+                // Grouper par dossier virtuel (préfixe avant le premier "_")
+                const groups = new Map();
+                const ungrouped = [];
                 result.quizzes.forEach(quiz => {
-                    const quizDiv = document.createElement('div');
-                    quizDiv.className = 'quiz-item';
-                    quizDiv.style.cursor = 'pointer';
-                    quizDiv.innerHTML = `
-                        <div class="quiz-item-header">
-                            <h4>${quiz.name}</h4>
-                            <span class="quiz-count">${quiz.questionCount} questions</span>
-                        </div>
-                        <div class="quiz-item-footer">
-                            <span class="quiz-date">${formatDate(quiz.lastModified)}</span>
-                        </div>
-                    `;
-                    quizDiv.onclick = () => loadQuizByName(quiz.name);
-                    listDiv.appendChild(quizDiv);
+                    const idx = quiz.name.indexOf('_');
+                    if (idx > 0) {
+                        const folder = quiz.name.substring(0, idx);
+                        if (!groups.has(folder)) groups.set(folder, []);
+                        groups.get(folder).push(quiz);
+                    } else {
+                        ungrouped.push(quiz);
+                    }
                 });
-                
+
+                // Trier les noms de dossiers alphabétiquement
+                const folderNames = Array.from(groups.keys()).sort((a, b) =>
+                    a.localeCompare(b, 'fr', { sensitivity: 'base' })
+                );
+
+                folderNames.forEach(folder => {
+                    const quizzes = groups.get(folder);
+                    const folderDiv = document.createElement('div');
+                    folderDiv.className = 'quiz-folder';
+
+                    const header = document.createElement('div');
+                    header.className = 'quiz-folder-header';
+                    header.innerHTML = `
+                        <span class="quiz-folder-toggle">▶</span>
+                        <span class="quiz-folder-name">📁 ${folder}</span>
+                        <span class="quiz-folder-count">${quizzes.length}</span>
+                    `;
+
+                    const content = document.createElement('div');
+                    content.className = 'quiz-folder-content';
+                    content.style.display = 'none';
+
+                    quizzes.forEach(quiz => {
+                        content.appendChild(buildQuizItem(quiz));
+                    });
+
+                    header.onclick = () => {
+                        const open = folderDiv.classList.toggle('open');
+                        content.style.display = open ? '' : 'none';
+                    };
+
+                    folderDiv.appendChild(header);
+                    folderDiv.appendChild(content);
+                    listDiv.appendChild(folderDiv);
+                });
+
+                // Quiz sans préfixe : affichés directement au niveau racine
+                ungrouped.forEach(quiz => {
+                    listDiv.appendChild(buildQuizItem(quiz));
+                });
+
             } else {
                 listDiv.innerHTML = '<div class="empty-list">Aucun questionnaire trouvé</div>';
             }
-            
+
         } catch (error) {
             console.error('Erreur chargement liste:', error);
             listDiv.innerHTML = '<div class="error-list">❌ Erreur de chargement</div>';
         }
     }
 
+    function buildQuizItem(quiz) {
+        const quizDiv = document.createElement('div');
+        quizDiv.className = 'quiz-item';
+        quizDiv.style.cursor = 'pointer';
+        quizDiv.innerHTML = `
+            <div class="quiz-item-header">
+                <h4>${quiz.name}</h4>
+                <span class="quiz-count">${quiz.questionCount} questions</span>
+            </div>
+        `;
+        quizDiv.onclick = () => loadQuizByName(quiz.name);
+        return quizDiv;
+    }
+
     function filterQuizList() {
         const searchValue = document.getElementById('search-quiz-input').value.toLowerCase();
-        const items = document.querySelectorAll('.quiz-item');
-        
+        const items = document.querySelectorAll('#quiz-list .quiz-item');
+
         items.forEach(item => {
             const name = item.querySelector('h4').textContent.toLowerCase();
-            item.style.display = name.includes(searchValue) ? 'block' : 'none';
+            item.style.display = name.includes(searchValue) ? '' : 'none';
+        });
+
+        // Pour chaque dossier : ouvrir si recherche active et au moins un enfant visible,
+        // masquer le dossier si aucun enfant ne correspond
+        document.querySelectorAll('#quiz-list .quiz-folder').forEach(folderDiv => {
+            const content = folderDiv.querySelector('.quiz-folder-content');
+            const visibleItems = content.querySelectorAll('.quiz-item:not([style*="display: none"])');
+            const hasMatch = visibleItems.length > 0;
+
+            if (searchValue === '') {
+                // Recherche vide : restaurer l'état replié et tout afficher
+                folderDiv.style.display = '';
+                folderDiv.classList.remove('open');
+                content.style.display = 'none';
+            } else {
+                folderDiv.style.display = hasMatch ? '' : 'none';
+                if (hasMatch) {
+                    folderDiv.classList.add('open');
+                    content.style.display = '';
+                }
+            }
         });
     }
 

@@ -468,37 +468,66 @@
     function updateWaitingRoom(players) {
         const playersList = document.getElementById('players-list');
         const playerCount = document.getElementById('player-count');
-        
+
         if (!playersList || !playerCount) return;
-        
-        playerCount.textContent = players.length;
-        
-        let html = '';
+
+        if (parseInt(playerCount.textContent, 10) !== players.length) {
+            playerCount.textContent = players.length;
+        }
+
+        // DIFF intelligent : on identifie chaque carte par data-nickname.
+        // Au lieu de réécrire innerHTML (ce qui recréait toutes les cartes,
+        // relançait les animations CSS et donnait l'impression visuelle de
+        // "tout disparaît puis réapparaît" à chaque nouveau joueur), on ne
+        // touche QUE les cartes ajoutées ou retirées.
+        const existing = {};
+        Array.from(playersList.querySelectorAll('.player-card[data-nickname]')).forEach(el => {
+            existing[el.dataset.nickname] = el;
+        });
+
+        const seen = {};
         players.forEach(player => {
+            seen[player.nickname] = true;
+            if (existing[player.nickname]) {
+                // Déjà présent → on laisse le DOM tranquille
+                return;
+            }
+            // Nouveau joueur → on crée et on ajoute (animation jouée 1 seule fois)
             const isMe = player.nickname === SESSION_STATE.playerNickname;
             const parsed = parseNickname(player.nickname);
-            html += `
-                <div class="player-card ${isMe ? 'is-me' : ''} ${parsed.isCustom ? 'custom-nickname' : ''}">
-                    <div class="player-avatar">${parsed.avatar}</div>
-                    <div class="player-name">${parsed.name}</div>
-                    ${isMe ? '<div class="player-badge">Toi</div>' : ''}
-                </div>
+            const card = document.createElement('div');
+            card.className = 'player-card' + (isMe ? ' is-me' : '') + (parsed.isCustom ? ' custom-nickname' : '');
+            card.dataset.nickname = player.nickname;
+            card.innerHTML = `
+                <div class="player-avatar">${parsed.avatar}</div>
+                <div class="player-name">${escapeHtml(parsed.name)}</div>
+                ${isMe ? '<div class="player-badge">Toi</div>' : ''}
             `;
+            playersList.appendChild(card);
         });
-        
-        // Ne mettre à jour que si le contenu a changé (évite le clignotement)
-        if (playersList.innerHTML !== html) {
-            playersList.innerHTML = html;
-        }
+
+        // Retirer les cartes des joueurs qui ne sont plus dans la liste
+        Object.keys(existing).forEach(nick => {
+            if (!seen[nick]) {
+                existing[nick].remove();
+            }
+        });
     }
 
     // ========================================
     // DÉMARRAGE DE LA PARTIE
     // ========================================
     
-    function handleGameStart(data) {
+    function handleGameStart(data, totalMs) {
         const gameContainer = document.querySelector('.game-container');
-        
+        if (!gameContainer) return;
+
+        // Durée totale du compte à rebours = délai (aligné horloge serveur) avant
+        // l'affichage de Q0. On dimensionne le nombre de départ pour que le "GO !" tombe
+        // ~400 ms avant l'affichage de la question (même instant absolu chez tous les
+        // élèves). 0 accepté (entrée tardive → "GO !" direct, la question suit aussitôt).
+        totalMs = (typeof totalMs === 'number' && totalMs >= 0) ? totalMs : 3500;
+
         // Animation de compte à rebours
         gameContainer.innerHTML = `
             <div class="countdown-screen">
@@ -506,10 +535,20 @@
                 <div class="countdown-number" id="countdown">3</div>
             </div>
         `;
-        
-        let count = 3;
+
         const countdownEl = document.getElementById('countdown');
-        
+        if (!countdownEl) return;
+
+        const goDisplayMs = 400; // afficher "GO !" pendant les ~400 dernières ms
+        let count = Math.max(0, Math.round((totalMs - goDisplayMs) / 1000));
+
+        if (count <= 0) {
+            // Délai trop court (client en retard) → "GO !" direct, la question suit.
+            countdownEl.textContent = 'GO ! 🚀';
+            return;
+        }
+
+        countdownEl.textContent = count;
         const interval = setInterval(() => {
             count--;
             if (count > 0) {
@@ -521,9 +560,6 @@
             } else {
                 clearInterval(interval);
                 countdownEl.textContent = 'GO ! 🚀';
-                setTimeout(() => {
-                    // La première question sera affichée par l'événement SSE
-                }, 1000);
             }
         }, 1000);
     }
@@ -540,7 +576,7 @@
         if (countdownState && countdownState.interval) {
             clearInterval(countdownState.interval);
             countdownState.interval = null;
-            countdownState.remaining = 10;
+            countdownState.remaining = 5;
             console.log('⏹️ Compte à rebours des résultats arrêté et réinitialisé');
         }
         
@@ -560,13 +596,15 @@
         const localStartTime = Date.now();
         questionStartTime = localStartTime;
         
-        // Pour le TIMER visuel : utiliser le startTime serveur si disponible
-        // Cela permet d'afficher le temps restant correct lors d'une reconnexion
-        if (data.startTime) {
+        // Pour le TIMER visuel : on se cale sur l'instant ABSOLU d'apparition (revealAt,
+        // ms HORLOGE SERVEUR) et on lit le temps restant via l'horloge synchronisée
+        // (QwestClock). Robuste même si l'horloge de l'appareil est fausse (le bug
+        // historique : on comparait Date.now() local à un timestamp serveur). Repli :
+        // startTime*1000 (ancien schéma), puis heure locale d'affichage.
+        if (typeof data.revealAt === 'number' && data.revealAt > 0) {
+            serverQuestionStartTime = data.revealAt; // ms, horloge serveur
+        } else if (data.startTime) {
             serverQuestionStartTime = data.startTime * 1000;
-            const elapsedOnServer = Math.round((localStartTime - serverQuestionStartTime) / 1000);
-            console.log('⏱️ startTime serveur:', new Date(serverQuestionStartTime).toISOString());
-            console.log('⏱️ Temps déjà écoulé côté serveur:', elapsedOnServer + 's');
         } else {
             serverQuestionStartTime = localStartTime;
         }
@@ -760,11 +798,25 @@
         const timerBar = document.getElementById('timer-bar');
         const timerText = document.getElementById('timer-text');
         
-        // Pour le timer VISUEL : utiliser le temps serveur (important pour reconnexion)
-        // Cela affiche le temps restant réel de la question
-        const elapsedSeconds = Math.floor((Date.now() - serverQuestionStartTime) / 1000);
-        const remainingTime = Math.max(0, duration - elapsedSeconds);
-        
+        // Pour le timer VISUEL : temps écoulé depuis l'apparition, mesuré sur l'HORLOGE
+        // SERVEUR SYNCHRONISÉE (QwestClock) — juste pour tous les postes et lors d'une
+        // reconnexion, indépendamment de l'horloge (éventuellement fausse) de l'appareil.
+        // Repli sur l'heure locale si la synchro n'est pas encore faite (1ᵉʳ instants).
+        const nowServer = (window.QwestClock && window.QwestClock.synced)
+            ? window.QwestClock.now() : Date.now();
+        const elapsedSeconds = Math.floor((nowServer - serverQuestionStartTime) / 1000);
+        let remainingTime = Math.max(0, duration - elapsedSeconds);
+
+        // Anti « temps écoulé » instantané : si la question arrive très en retard (timer
+        // serveur déjà ~écoulé — pause réseau, livraison tardive), accorder une FENÊTRE
+        // MINIMALE pour répondre plutôt qu'auto-soumettre vide aussitôt. Le score est
+        // mesuré en temps LOCAL (depuis l'affichage chez l'élève) et la GRACE serveur
+        // (15 s) valide une réponse rapide → l'élève en retard n'est pas pénalisé.
+        const minWindowSec = Math.max(1, Math.ceil(((window.CONFIG && window.CONFIG.MIN_ANSWER_WINDOW_MS) || 3000) / 1000));
+        if (remainingTime <= 0) {
+            remainingTime = minWindowSec;
+        }
+
         console.log(`⏱️ Timer visuel: durée=${duration}s, écoulé=${elapsedSeconds}s, restant=${remainingTime}s`);
         
         timerState.remaining = remainingTime;
@@ -1199,8 +1251,38 @@
             `;
         }
         
-        // Vérifier si l'élève n'a pas répondu (answered = false du serveur)
+        // Le serveur ne voit pas de réponse pour cet élève. Avant d'afficher
+        // « Temps écoulé », on vérifie si une réponse est encore en cours d'envoi
+        // côté client (buffer localStorage). Si oui, on tente un renvoi immédiat
+        // et on affiche « Envoi en cours » : le polling suivant rafraîchira l'écran
+        // dès que le serveur acceptera (rétroactivement) la réponse.
         if (myStats.answered === false) {
+            let stillSending = false;
+            try {
+                const backupKey = `qwest_answer_${SESSION_STATE.playCode}_${data.questionIndex}`;
+                stillSending = !!localStorage.getItem(backupKey);
+            } catch (e) {}
+
+            if (stillSending) {
+                if (typeof window.retryPendingAnswers === 'function') {
+                    window.retryPendingAnswers().catch(() => {});
+                }
+                return `
+                    <div class="question-stats-container">
+                        <h3 class="section-title">📝 Question précédente</h3>
+                        <div class="question-result-centered">
+                            <div class="question-result neutral">
+                                <div class="result-icon">⏳</div>
+                                <div class="result-text">
+                                    <div class="result-label">Envoi de ta réponse…</div>
+                                    <div class="result-details">Le réseau a été lent, on retente — patiente quelques secondes.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+
             return `
                 <div class="question-stats-container">
                     <h3 class="section-title">📝 Question précédente</h3>
@@ -1272,7 +1354,7 @@
                 html += `
                     <div class="fastest-item ${isMe ? 'is-me' : ''}">
                         <span class="fastest-rank">#${index + 1}</span>
-                        <span class="fastest-name">${player.nickname}</span>
+                        <span class="fastest-name">${escapeHtml(player.nickname)}</span>
                         <span class="fastest-time">⏱️ ${fastTime}s</span>
                         <span class="fastest-points">🎯 ${player.pointsEarned}pts</span>
                     </div>
@@ -1368,8 +1450,8 @@
                             '<p>🏁 En attente du professeur pour le podium final...</p>' :
                             '<p>🎯 En attente du professeur pour la prochaine question...</p>') :
                         (isLastQuestion ?
-                            '<p>🏁 Podium final dans <span id="countdown-next">10</span>s...</p>' :
-                            '<p>⏳ Prochaine question dans <span id="countdown-next">10</span>s...</p>')
+                            '<p>🏁 Podium final dans <span id="countdown-next">5</span>s...</p>' :
+                            '<p>⏳ Prochaine question dans <span id="countdown-next">5</span>s...</p>')
                     }
                     <div class="dots-loader">
                         <span></span><span></span><span></span>
@@ -1394,7 +1476,7 @@
             }
             
             // Initialiser le compte à rebours
-            countdownState.remaining = 10;
+            countdownState.remaining = 5;
             countdownState.isPaused = false;
             
             // Fonction pour mettre à jour l'affichage
@@ -1447,7 +1529,7 @@
                 <div class="ranking-item ${isMe ? 'is-me' : ''} ${parsed.isCustom ? 'custom-nickname' : ''}">
                     <div class="ranking-position">#${index + 1}</div>
                     <div class="ranking-avatar">${parsed.avatar}</div>
-                    <div class="ranking-name">${parsed.name}</div>
+                    <div class="ranking-name">${escapeHtml(parsed.name)}</div>
                     <div class="ranking-score">${player.score || 0} pts</div>
                 </div>
             `;
@@ -1577,7 +1659,7 @@
                     <div class="final-rank">#${rank}</div>
                     <div class="final-medal">${medals[originalIndex]}</div>
                     <div class="final-avatar">${parsed.avatar}</div>
-                    <div class="final-name">${parsed.name}</div>
+                    <div class="final-name">${escapeHtml(parsed.name)}</div>
                     <div class="final-points">${player.score} pts</div>
                 </div>
             `;
@@ -1901,6 +1983,7 @@
     // ========================================
     
     window.showStudentJoinPage = showStudentJoinPage;
+    window.showWaitingRoom = showWaitingRoom;
     window.selectAnimal = selectAnimal;
     window.confirmJoinGame = confirmJoinGame;
     window.showMyRecap = showMyRecap;

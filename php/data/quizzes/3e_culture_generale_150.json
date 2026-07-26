@@ -1,0 +1,3170 @@
+{
+  "name": "3e_culture_generale_150",
+  "version": "1.0",
+  "createdAt": "2026-03-24T10:00:00.000Z",
+  "questionsCount": 150,
+  "questions": [
+    {
+      "type": "multiple",
+      "question": "Quelle est la formule chimique de l'eau ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "H₂O",
+          "correct": true
+        },
+        {
+          "text": "CO₂",
+          "correct": false
+        },
+        {
+          "text": "O₂",
+          "correct": false
+        },
+        {
+          "text": "H₂SO₄",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le plus grand océan du monde ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Pacifique",
+          "correct": true
+        },
+        {
+          "text": "Atlantique",
+          "correct": false
+        },
+        {
+          "text": "Indien",
+          "correct": false
+        },
+        {
+          "text": "Arctique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La Première Guerre mondiale a commencé en 1914.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qui a écrit Les Misérables ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Victor Hugo",
+          "correct": true
+        },
+        {
+          "text": "Émile Zola",
+          "correct": false
+        },
+        {
+          "text": "Gustave Flaubert",
+          "correct": false
+        },
+        {
+          "text": "Honoré de Balzac",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la capitale de l'Allemagne ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Berlin",
+          "correct": true
+        },
+        {
+          "text": "Munich",
+          "correct": false
+        },
+        {
+          "text": "Hambourg",
+          "correct": false
+        },
+        {
+          "text": "Francfort",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le Soleil est une étoile.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Combien de côtés a un hexagone ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "6",
+          "correct": true
+        },
+        {
+          "text": "5",
+          "correct": false
+        },
+        {
+          "text": "7",
+          "correct": false
+        },
+        {
+          "text": "8",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle planète est la plus proche du Soleil ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Mercure",
+          "correct": true
+        },
+        {
+          "text": "Vénus",
+          "correct": false
+        },
+        {
+          "text": "Mars",
+          "correct": false
+        },
+        {
+          "text": "Terre",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le symbole chimique de l'or ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Au",
+          "correct": true
+        },
+        {
+          "text": "Ag",
+          "correct": false
+        },
+        {
+          "text": "Fe",
+          "correct": false
+        },
+        {
+          "text": "Or",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces événements historiques du plus ancien au plus récent :",
+      "time": 45,
+      "answers": [
+        {
+          "text": "Révolution française (1789)",
+          "correct": true
+        },
+        {
+          "text": "Première Guerre mondiale (1914)",
+          "correct": true
+        },
+        {
+          "text": "Deuxième Guerre mondiale (1939)",
+          "correct": true
+        },
+        {
+          "text": "Chute du mur de Berlin (1989)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le fleuve le plus long du monde ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le Nil",
+          "correct": true
+        },
+        {
+          "text": "L'Amazone",
+          "correct": false
+        },
+        {
+          "text": "Le Yangtsé",
+          "correct": false
+        },
+        {
+          "text": "Le Mississippi",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La photosynthèse est réalisée par les animaux.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la langue officielle du Brésil ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Portugais",
+          "correct": true
+        },
+        {
+          "text": "Espagnol",
+          "correct": false
+        },
+        {
+          "text": "Anglais",
+          "correct": false
+        },
+        {
+          "text": "Français",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qui a peint la Joconde ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Léonard de Vinci",
+          "correct": true
+        },
+        {
+          "text": "Michel-Ange",
+          "correct": false
+        },
+        {
+          "text": "Raphaël",
+          "correct": false
+        },
+        {
+          "text": "Botticelli",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la valeur de π (pi) arrondie au centième ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "3,14",
+          "correct": true
+        },
+        {
+          "text": "3,12",
+          "correct": false
+        },
+        {
+          "text": "3,16",
+          "correct": false
+        },
+        {
+          "text": "3,18",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel organe produit l'insuline dans le corps humain ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le pancréas",
+          "correct": true
+        },
+        {
+          "text": "Le foie",
+          "correct": false
+        },
+        {
+          "text": "Le rein",
+          "correct": false
+        },
+        {
+          "text": "La rate",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'ADN se trouve principalement dans le noyau des cellules.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "En quelle année la France a-t-elle adopté la Déclaration des droits de l'homme et du citoyen ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "1789",
+          "correct": true
+        },
+        {
+          "text": "1799",
+          "correct": false
+        },
+        {
+          "text": "1804",
+          "correct": false
+        },
+        {
+          "text": "1815",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le continent le plus grand du monde ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Asie",
+          "correct": true
+        },
+        {
+          "text": "Afrique",
+          "correct": false
+        },
+        {
+          "text": "Amérique",
+          "correct": false
+        },
+        {
+          "text": "Europe",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quel est le résultat de 12 × 12 ?",
+      "time": 20,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "144",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "144"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la vitesse de la lumière (environ) ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "300 000 km/s",
+          "correct": true
+        },
+        {
+          "text": "30 000 km/s",
+          "correct": false
+        },
+        {
+          "text": "3 000 000 km/s",
+          "correct": false
+        },
+        {
+          "text": "150 000 km/s",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qui était le premier président de la Ve République française ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Charles de Gaulle",
+          "correct": true
+        },
+        {
+          "text": "Georges Pompidou",
+          "correct": false
+        },
+        {
+          "text": "François Mitterrand",
+          "correct": false
+        },
+        {
+          "text": "Valéry Giscard d'Estaing",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Les continents bougent très lentement sur le manteau terrestre.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Combien de chromosomes possède une cellule humaine normale ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "46",
+          "correct": true
+        },
+        {
+          "text": "23",
+          "correct": false
+        },
+        {
+          "text": "48",
+          "correct": false
+        },
+        {
+          "text": "36",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces pays du plus peuplé au moins peuplé :",
+      "time": 40,
+      "answers": [
+        {
+          "text": "Chine (~1,4 milliard)",
+          "correct": true
+        },
+        {
+          "text": "États-Unis (~335 millions)",
+          "correct": true
+        },
+        {
+          "text": "France (~68 millions)",
+          "correct": true
+        },
+        {
+          "text": "Belgique (~11 millions)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle figure de style consiste à attribuer des qualités humaines à un objet ou animal ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "La personnification",
+          "correct": true
+        },
+        {
+          "text": "La métaphore",
+          "correct": false
+        },
+        {
+          "text": "L'hyperbole",
+          "correct": false
+        },
+        {
+          "text": "L'allitération",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le carré de 13 ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "169",
+          "correct": true
+        },
+        {
+          "text": "156",
+          "correct": false
+        },
+        {
+          "text": "139",
+          "correct": false
+        },
+        {
+          "text": "196",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La Seconde Guerre mondiale s'est terminée en 1945.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel type d'énergie est produit par une centrale nucléaire ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Électrique",
+          "correct": true
+        },
+        {
+          "text": "Chimique",
+          "correct": false
+        },
+        {
+          "text": "Mécanique",
+          "correct": false
+        },
+        {
+          "text": "Lumineuse",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la capitale de l'Australie ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Canberra",
+          "correct": true
+        },
+        {
+          "text": "Sydney",
+          "correct": false
+        },
+        {
+          "text": "Melbourne",
+          "correct": false
+        },
+        {
+          "text": "Brisbane",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel auteur a écrit Le Rouge et le Noir ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Stendhal",
+          "correct": true
+        },
+        {
+          "text": "Flaubert",
+          "correct": false
+        },
+        {
+          "text": "Zola",
+          "correct": false
+        },
+        {
+          "text": "Maupassant",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quel gaz est principalement responsable de l'effet de serre additionnel lié aux activités humaines ?",
+      "time": 30,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "CO₂",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "co2",
+        "dioxyde de carbone",
+        "gaz carbonique",
+        "CO2"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le théorème qui relie les côtés d'un triangle rectangle ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le théorème de Pythagore",
+          "correct": true
+        },
+        {
+          "text": "Le théorème de Thalès",
+          "correct": false
+        },
+        {
+          "text": "Le théorème de Fermat",
+          "correct": false
+        },
+        {
+          "text": "Le théorème d'Euclide",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La France métropolitaine se situe entièrement dans l'hémisphère Nord.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le symbole chimique du fer ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Fe",
+          "correct": true
+        },
+        {
+          "text": "Fr",
+          "correct": false
+        },
+        {
+          "text": "Fn",
+          "correct": false
+        },
+        {
+          "text": "Ir",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Combien de membres permanents compose le Conseil de sécurité de l'ONU ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "5",
+          "correct": true
+        },
+        {
+          "text": "10",
+          "correct": false
+        },
+        {
+          "text": "15",
+          "correct": false
+        },
+        {
+          "text": "7",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces planètes du Soleil vers l'extérieur du système solaire :",
+      "time": 40,
+      "answers": [
+        {
+          "text": "Vénus",
+          "correct": true
+        },
+        {
+          "text": "Terre",
+          "correct": true
+        },
+        {
+          "text": "Jupiter",
+          "correct": true
+        },
+        {
+          "text": "Saturne",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce que la déforestation ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La destruction des forêts",
+          "correct": true
+        },
+        {
+          "text": "La plantation de nouvelles forêts",
+          "correct": false
+        },
+        {
+          "text": "La protection des forêts",
+          "correct": false
+        },
+        {
+          "text": "L'étude des arbres",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "En quelle année l'homme a-t-il marché sur la Lune pour la première fois ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "1969",
+          "correct": true
+        },
+        {
+          "text": "1965",
+          "correct": false
+        },
+        {
+          "text": "1972",
+          "correct": false
+        },
+        {
+          "text": "1961",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Les artères transportent le sang depuis le cœur vers les organes.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel mouvement littéraire du XIXe siècle voulait décrire la réalité sociale avec exactitude ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le réalisme",
+          "correct": true
+        },
+        {
+          "text": "Le romantisme",
+          "correct": false
+        },
+        {
+          "text": "Le symbolisme",
+          "correct": false
+        },
+        {
+          "text": "Le surréalisme",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la montagne la plus haute du monde ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "L'Everest",
+          "correct": true
+        },
+        {
+          "text": "Le K2",
+          "correct": false
+        },
+        {
+          "text": "Le Mont-Blanc",
+          "correct": false
+        },
+        {
+          "text": "Le Kilimandjaro",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quel est le nom du courant chaud qui réchauffe le climat de l'Europe de l'Ouest ?",
+      "time": 35,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "Gulf Stream",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "gulf stream",
+        "le gulf stream",
+        "Gulf-Stream"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est l'élément chimique le plus abondant dans l'atmosphère terrestre ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'azote (N₂)",
+          "correct": true
+        },
+        {
+          "text": "L'oxygène (O₂)",
+          "correct": false
+        },
+        {
+          "text": "L'argon (Ar)",
+          "correct": false
+        },
+        {
+          "text": "Le dioxyde de carbone (CO₂)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La mondialisation désigne uniquement les échanges économiques entre pays.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le mode de scrutin utilisé pour élire le président de la République française ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Scrutin uninominal majoritaire à deux tours",
+          "correct": true
+        },
+        {
+          "text": "Scrutin proportionnel",
+          "correct": false
+        },
+        {
+          "text": "Scrutin uninominal à un tour",
+          "correct": false
+        },
+        {
+          "text": "Vote par approbation",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel type de roche se forme par refroidissement du magma ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Roche magmatique (ou ignée)",
+          "correct": true
+        },
+        {
+          "text": "Roche sédimentaire",
+          "correct": false
+        },
+        {
+          "text": "Roche métamorphique",
+          "correct": false
+        },
+        {
+          "text": "Roche calcaire",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces étapes de la mitose (division cellulaire) dans l'ordre :",
+      "time": 45,
+      "answers": [
+        {
+          "text": "Prophase",
+          "correct": true
+        },
+        {
+          "text": "Métaphase",
+          "correct": true
+        },
+        {
+          "text": "Anaphase",
+          "correct": true
+        },
+        {
+          "text": "Télophase",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel pays a été le premier à accorder le droit de vote aux femmes ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Nouvelle-Zélande (1893)",
+          "correct": true
+        },
+        {
+          "text": "France (1944)",
+          "correct": false
+        },
+        {
+          "text": "États-Unis (1920)",
+          "correct": false
+        },
+        {
+          "text": "Suisse (1971)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Internet a été inventé dans les années 1990.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel écrivain français a écrit Germinal ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Émile Zola",
+          "correct": true
+        },
+        {
+          "text": "Victor Hugo",
+          "correct": false
+        },
+        {
+          "text": "Honoré de Balzac",
+          "correct": false
+        },
+        {
+          "text": "Guy de Maupassant",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le mont Blanc est le point culminant de l'Union européenne.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le plus petit pays du monde ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le Vatican",
+          "correct": true
+        },
+        {
+          "text": "Monaco",
+          "correct": false
+        },
+        {
+          "text": "Saint-Marin",
+          "correct": false
+        },
+        {
+          "text": "Liechtenstein",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Combien vaut 2⁸ ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "256",
+          "correct": true
+        },
+        {
+          "text": "128",
+          "correct": false
+        },
+        {
+          "text": "512",
+          "correct": false
+        },
+        {
+          "text": "64",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la particule de charge négative dans un atome ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'électron",
+          "correct": true
+        },
+        {
+          "text": "Le proton",
+          "correct": false
+        },
+        {
+          "text": "Le neutron",
+          "correct": false
+        },
+        {
+          "text": "Le photon",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La Russie est le pays qui possède la plus grande superficie du monde.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qui a découvert la pénicilline ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Alexander Fleming",
+          "correct": true
+        },
+        {
+          "text": "Louis Pasteur",
+          "correct": false
+        },
+        {
+          "text": "Marie Curie",
+          "correct": false
+        },
+        {
+          "text": "Robert Koch",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le symbole chimique du sodium ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Na",
+          "correct": true
+        },
+        {
+          "text": "So",
+          "correct": false
+        },
+        {
+          "text": "Sd",
+          "correct": false
+        },
+        {
+          "text": "Nm",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces événements du plus ancien au plus récent :",
+      "time": 45,
+      "answers": [
+        {
+          "text": "Prise de la Bastille (1789)",
+          "correct": true
+        },
+        {
+          "text": "Abolition de l'esclavage en France (1848)",
+          "correct": true
+        },
+        {
+          "text": "Guerre d'Algérie (1954)",
+          "correct": true
+        },
+        {
+          "text": "Construction du mur de Berlin (1961)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la formule de l'aire d'un disque de rayon r ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "π × r²",
+          "correct": true
+        },
+        {
+          "text": "2 × π × r",
+          "correct": false
+        },
+        {
+          "text": "π × r",
+          "correct": false
+        },
+        {
+          "text": "4 × π × r²",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel pays a déclaré son indépendance le 4 juillet 1776 ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Les États-Unis",
+          "correct": true
+        },
+        {
+          "text": "Le Canada",
+          "correct": false
+        },
+        {
+          "text": "Le Mexique",
+          "correct": false
+        },
+        {
+          "text": "L'Argentine",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Les champignons sont des végétaux.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment appelle-t-on la transformation d'un solide en liquide ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "La fusion",
+          "correct": true
+        },
+        {
+          "text": "La vaporisation",
+          "correct": false
+        },
+        {
+          "text": "La solidification",
+          "correct": false
+        },
+        {
+          "text": "La condensation",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le nom de la monnaie unique européenne ?",
+      "time": 15,
+      "answers": [
+        {
+          "text": "L'euro",
+          "correct": true
+        },
+        {
+          "text": "Le mark",
+          "correct": false
+        },
+        {
+          "text": "L'écu",
+          "correct": false
+        },
+        {
+          "text": "Le florin",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quel est le résultat de √225 ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "15",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "15"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Lequel de ces auteurs appartient au mouvement romantique ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Alfred de Musset",
+          "correct": true
+        },
+        {
+          "text": "Molière",
+          "correct": false
+        },
+        {
+          "text": "Voltaire",
+          "correct": false
+        },
+        {
+          "text": "Émile Zola",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est l'organe central du système nerveux humain ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Le cerveau",
+          "correct": true
+        },
+        {
+          "text": "Le cœur",
+          "correct": false
+        },
+        {
+          "text": "La moelle épinière",
+          "correct": false
+        },
+        {
+          "text": "Le thalamus",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le traité de Versailles (1919) a mis fin à la Première Guerre mondiale.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel continent est traversé par l'équateur, le tropique du Cancer et le tropique du Capricorne ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "L'Afrique",
+          "correct": true
+        },
+        {
+          "text": "L'Amérique du Sud",
+          "correct": false
+        },
+        {
+          "text": "L'Asie",
+          "correct": false
+        },
+        {
+          "text": "L'Australie",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la principale source d'énergie de la France ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le nucléaire",
+          "correct": true
+        },
+        {
+          "text": "Le pétrole",
+          "correct": false
+        },
+        {
+          "text": "L'éolien",
+          "correct": false
+        },
+        {
+          "text": "Le charbon",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces régimes politiques français dans l'ordre chronologique :",
+      "time": 45,
+      "answers": [
+        {
+          "text": "Première République (1792)",
+          "correct": true
+        },
+        {
+          "text": "Premier Empire (1804)",
+          "correct": true
+        },
+        {
+          "text": "Troisième République (1870)",
+          "correct": true
+        },
+        {
+          "text": "Cinquième République (1958)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "En géographie, qu'est-ce qu'un méandre ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Un coude d'une rivière",
+          "correct": true
+        },
+        {
+          "text": "Un plateau montagneux",
+          "correct": false
+        },
+        {
+          "text": "Un delta de fleuve",
+          "correct": false
+        },
+        {
+          "text": "Un lac de montagne",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quel est le nom de la force qui attire les objets vers le centre de la Terre ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "La gravité",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "gravité",
+        "gravitation",
+        "pesanteur",
+        "la gravitation",
+        "la pesanteur",
+        "attraction terrestre"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le résultat de (−3) × (−4) ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "12",
+          "correct": true
+        },
+        {
+          "text": "−12",
+          "correct": false
+        },
+        {
+          "text": "7",
+          "correct": false
+        },
+        {
+          "text": "−7",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Nelson Mandela a été président de l'Afrique du Sud.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le constituant principal des os ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le calcium (phosphate de calcium)",
+          "correct": true
+        },
+        {
+          "text": "Le fer",
+          "correct": false
+        },
+        {
+          "text": "Le magnésium",
+          "correct": false
+        },
+        {
+          "text": "Le collagène seul",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle guerre froide oppose les États-Unis et l'URSS après 1945 ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Une rivalité politique et idéologique sans conflit armé direct",
+          "correct": true
+        },
+        {
+          "text": "Une série de batailles navales en Atlantique",
+          "correct": false
+        },
+        {
+          "text": "Un conflit nucléaire limité",
+          "correct": false
+        },
+        {
+          "text": "Une guerre d'indépendance en Europe",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment appelle-t-on le texte narratif court qui met en scène des animaux pour transmettre une morale ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La fable",
+          "correct": true
+        },
+        {
+          "text": "Le conte",
+          "correct": false
+        },
+        {
+          "text": "La nouvelle",
+          "correct": false
+        },
+        {
+          "text": "La parabole",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Les veines transportent le sang vers le cœur.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la capitale du Japon ?",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Tokyo",
+          "correct": true
+        },
+        {
+          "text": "Osaka",
+          "correct": false
+        },
+        {
+          "text": "Kyoto",
+          "correct": false
+        },
+        {
+          "text": "Hiroshima",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel instrument mesure la pression atmosphérique ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le baromètre",
+          "correct": true
+        },
+        {
+          "text": "Le thermomètre",
+          "correct": false
+        },
+        {
+          "text": "L'hygromètre",
+          "correct": false
+        },
+        {
+          "text": "L'anémomètre",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces nombres du plus petit au plus grand :",
+      "time": 30,
+      "answers": [
+        {
+          "text": "−5",
+          "correct": true
+        },
+        {
+          "text": "−1",
+          "correct": true
+        },
+        {
+          "text": "0,5",
+          "correct": true
+        },
+        {
+          "text": "3",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la définition d'un État laïc ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Un État qui ne favorise aucune religion",
+          "correct": true
+        },
+        {
+          "text": "Un État sans constitution",
+          "correct": false
+        },
+        {
+          "text": "Un État dirigé par des religieux",
+          "correct": false
+        },
+        {
+          "text": "Un État qui interdit toute religion",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel type de triangle a tous ses côtés égaux ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Équilatéral",
+          "correct": true
+        },
+        {
+          "text": "Isocèle",
+          "correct": false
+        },
+        {
+          "text": "Rectangle",
+          "correct": false
+        },
+        {
+          "text": "Scalène",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quel est le nom de l'auteur des fables dont les plus connues sont « Le Corbeau et le Renard » et « La Cigale et la Fourmi » ?",
+      "time": 30,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "La Fontaine",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "la fontaine",
+        "jean de la fontaine",
+        "Jean de La Fontaine",
+        "de la fontaine"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'ONU a été fondée après la Seconde Guerre mondiale.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le processus par lequel une plante perd de l'eau par ses feuilles ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "La transpiration",
+          "correct": true
+        },
+        {
+          "text": "La photosynthèse",
+          "correct": false
+        },
+        {
+          "text": "La respiration",
+          "correct": false
+        },
+        {
+          "text": "L'osmose",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le résultat de 3/4 + 1/2 ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "5/4",
+          "correct": true
+        },
+        {
+          "text": "4/6",
+          "correct": false
+        },
+        {
+          "text": "4/8",
+          "correct": false
+        },
+        {
+          "text": "1/4",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle mer sépare l'Europe du continent africain à l'ouest ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La mer Méditerranée",
+          "correct": true
+        },
+        {
+          "text": "La mer Rouge",
+          "correct": false
+        },
+        {
+          "text": "La mer Noire",
+          "correct": false
+        },
+        {
+          "text": "La mer du Nord",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel compositeur allemand est resté sourd et a pourtant composé sa 9e symphonie ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Ludwig van Beethoven",
+          "correct": true
+        },
+        {
+          "text": "Wolfgang Amadeus Mozart",
+          "correct": false
+        },
+        {
+          "text": "Johann Sebastian Bach",
+          "correct": false
+        },
+        {
+          "text": "Franz Schubert",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le génome humain a été entièrement séquencé pour la première fois au XXe siècle.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce que le PIB (Produit Intérieur Brut) ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "La valeur totale des richesses produites dans un pays en un an",
+          "correct": true
+        },
+        {
+          "text": "Le revenu moyen des habitants d'un pays",
+          "correct": false
+        },
+        {
+          "text": "La dette d'un pays envers l'étranger",
+          "correct": false
+        },
+        {
+          "text": "Le budget annuel de l'État",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces couches de la Terre de la plus externe à la plus interne :",
+      "time": 40,
+      "answers": [
+        {
+          "text": "La croûte terrestre",
+          "correct": true
+        },
+        {
+          "text": "Le manteau",
+          "correct": true
+        },
+        {
+          "text": "Le noyau externe",
+          "correct": true
+        },
+        {
+          "text": "Le noyau interne",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le genre littéraire de Roméo et Juliette de Shakespeare ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La tragédie",
+          "correct": true
+        },
+        {
+          "text": "La comédie",
+          "correct": false
+        },
+        {
+          "text": "Le roman",
+          "correct": false
+        },
+        {
+          "text": "L'épopée",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Combien y a-t-il de départements en France métropolitaine ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "96",
+          "correct": true
+        },
+        {
+          "text": "95",
+          "correct": false
+        },
+        {
+          "text": "100",
+          "correct": false
+        },
+        {
+          "text": "101",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quel scientifique a formulé la loi de la gravitation universelle ?",
+      "time": 30,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "Newton",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "newton",
+        "Isaac Newton",
+        "isaac newton",
+        "Sir Isaac Newton"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un virus peut être traité par des antibiotiques.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le nom de la guerre civile espagnole qui opposa républicains et nationalistes de 1936 à 1939 ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "La guerre civile espagnole",
+          "correct": true
+        },
+        {
+          "text": "La Reconquista",
+          "correct": false
+        },
+        {
+          "text": "La révolution ibérique",
+          "correct": false
+        },
+        {
+          "text": "Le conflit catalan",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la définition de la biodiversité ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La variété des espèces vivantes sur Terre",
+          "correct": true
+        },
+        {
+          "text": "L'étude des fossiles",
+          "correct": false
+        },
+        {
+          "text": "La diversité des roches terrestres",
+          "correct": false
+        },
+        {
+          "text": "La répartition des humains sur Terre",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle lettre de l'alphabet grec désigne une inconnue en mathématiques dans les équations du second degré ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Δ (delta)",
+          "correct": true
+        },
+        {
+          "text": "Σ (sigma)",
+          "correct": false
+        },
+        {
+          "text": "Ω (oméga)",
+          "correct": false
+        },
+        {
+          "text": "Λ (lambda)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel scientifique a développé la théorie de la relativité ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Albert Einstein",
+          "correct": true
+        },
+        {
+          "text": "Isaac Newton",
+          "correct": false
+        },
+        {
+          "text": "Niels Bohr",
+          "correct": false
+        },
+        {
+          "text": "Max Planck",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La guerre de Cent Ans a duré exactement 100 ans.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le pays le plus peuplé d'Afrique ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Nigeria",
+          "correct": true
+        },
+        {
+          "text": "Éthiopie",
+          "correct": false
+        },
+        {
+          "text": "Égypte",
+          "correct": false
+        },
+        {
+          "text": "Afrique du Sud",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la fonction principale des globules rouges ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Transporter l'oxygène",
+          "correct": true
+        },
+        {
+          "text": "Lutter contre les infections",
+          "correct": false
+        },
+        {
+          "text": "Coaguler le sang",
+          "correct": false
+        },
+        {
+          "text": "Produire des hormones",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le résultat de 7³ ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "343",
+          "correct": true
+        },
+        {
+          "text": "147",
+          "correct": false
+        },
+        {
+          "text": "49",
+          "correct": false
+        },
+        {
+          "text": "210",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Jeanne d'Arc est née en Angleterre.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la capitale du Canada ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Ottawa",
+          "correct": true
+        },
+        {
+          "text": "Toronto",
+          "correct": false
+        },
+        {
+          "text": "Montréal",
+          "correct": false
+        },
+        {
+          "text": "Vancouver",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel auteur a écrit L'Étranger ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Albert Camus",
+          "correct": true
+        },
+        {
+          "text": "Jean-Paul Sartre",
+          "correct": false
+        },
+        {
+          "text": "André Gide",
+          "correct": false
+        },
+        {
+          "text": "Simone de Beauvoir",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "En physique, quelle est l'unité de mesure de l'intensité électrique ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'ampère (A)",
+          "correct": true
+        },
+        {
+          "text": "Le volt (V)",
+          "correct": false
+        },
+        {
+          "text": "Le watt (W)",
+          "correct": false
+        },
+        {
+          "text": "L'ohm (Ω)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces civilisations de la plus ancienne à la plus récente :",
+      "time": 45,
+      "answers": [
+        {
+          "text": "Mésopotamie (~3500 av. J.-C.)",
+          "correct": true
+        },
+        {
+          "text": "Grèce antique (~800 av. J.-C.)",
+          "correct": true
+        },
+        {
+          "text": "Empire romain (~27 av. J.-C.)",
+          "correct": true
+        },
+        {
+          "text": "Empire carolingien (~800 ap. J.-C.)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le plus grand désert du monde ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'Antarctique",
+          "correct": true
+        },
+        {
+          "text": "Le Sahara",
+          "correct": false
+        },
+        {
+          "text": "Le désert d'Arabie",
+          "correct": false
+        },
+        {
+          "text": "Le Gobi",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le son se propage plus vite que la lumière.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment appelle-t-on le procédé littéraire qui consiste à comparer deux éléments avec « comme » ou « tel » ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "La comparaison",
+          "correct": true
+        },
+        {
+          "text": "La métaphore",
+          "correct": false
+        },
+        {
+          "text": "L'allégorie",
+          "correct": false
+        },
+        {
+          "text": "La métonymie",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le nom du processus par lequel les êtres vivants transforment les aliments en énergie ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "La respiration cellulaire",
+          "correct": true
+        },
+        {
+          "text": "La fermentation",
+          "correct": false
+        },
+        {
+          "text": "La digestion",
+          "correct": false
+        },
+        {
+          "text": "La biosynthèse",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quel est le nom du traité signé en 1957 qui a fondé la Communauté économique européenne (ancêtre de l'UE) ?",
+      "time": 35,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "Traité de Rome",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "traité de rome",
+        "rome",
+        "le traité de rome",
+        "traités de rome"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la formule du volume d'une sphère de rayon r ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "(4/3) × π × r³",
+          "correct": true
+        },
+        {
+          "text": "π × r²",
+          "correct": false
+        },
+        {
+          "text": "4 × π × r²",
+          "correct": false
+        },
+        {
+          "text": "(2/3) × π × r³",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle révolution industrielle est caractérisée par la machine à vapeur ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La première (XVIIIe-XIXe siècle)",
+          "correct": true
+        },
+        {
+          "text": "La deuxième (XIXe-XXe siècle)",
+          "correct": false
+        },
+        {
+          "text": "La troisième (XXe siècle)",
+          "correct": false
+        },
+        {
+          "text": "La quatrième (XXIe siècle)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'apartheid était un régime de ségrégation raciale en Afrique du Sud.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le nom du courant littéraire qui cherche à décrire la réalité au-delà du rationnel, en explorant le rêve et l'inconscient ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le surréalisme",
+          "correct": true
+        },
+        {
+          "text": "Le naturalisme",
+          "correct": false
+        },
+        {
+          "text": "Le dadaïsme",
+          "correct": false
+        },
+        {
+          "text": "Le symbolisme",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans quel pays se trouve le canal de Suez ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Égypte",
+          "correct": true
+        },
+        {
+          "text": "Israël",
+          "correct": false
+        },
+        {
+          "text": "Turquie",
+          "correct": false
+        },
+        {
+          "text": "Maroc",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces découvertes scientifiques de la plus ancienne à la plus récente :",
+      "time": 45,
+      "answers": [
+        {
+          "text": "La loi de la gravitation — Newton (1687)",
+          "correct": true
+        },
+        {
+          "text": "La vaccination — Jenner (1796)",
+          "correct": true
+        },
+        {
+          "text": "La radioactivité — Curie (1898)",
+          "correct": true
+        },
+        {
+          "text": "La structure de l'ADN — Watson & Crick (1953)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Combien de faces a un cube ?",
+      "time": 15,
+      "answers": [
+        {
+          "text": "6",
+          "correct": true
+        },
+        {
+          "text": "8",
+          "correct": false
+        },
+        {
+          "text": "12",
+          "correct": false
+        },
+        {
+          "text": "4",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quel est le nom de la membrane qui entoure les poumons ?",
+      "time": 30,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "la plèvre",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "plèvre",
+        "la plèvre",
+        "plevre",
+        "la plevre"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la définition d'un synonyme ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Un mot de sens proche d'un autre mot",
+          "correct": true
+        },
+        {
+          "text": "Un mot de sens contraire",
+          "correct": false
+        },
+        {
+          "text": "Un mot qui s'écrit pareil mais se prononce différemment",
+          "correct": false
+        },
+        {
+          "text": "Un mot dont le sens a changé avec le temps",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'Empire ottoman s'est effondré à la fin de la Première Guerre mondiale.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le rôle des plaquettes sanguines ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Participer à la coagulation du sang",
+          "correct": true
+        },
+        {
+          "text": "Transporter l'oxygène",
+          "correct": false
+        },
+        {
+          "text": "Détruire les bactéries",
+          "correct": false
+        },
+        {
+          "text": "Produire de l'insuline",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel détroit sépare l'Europe de l'Afrique ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le détroit de Gibraltar",
+          "correct": true
+        },
+        {
+          "text": "Le détroit de Bosphore",
+          "correct": false
+        },
+        {
+          "text": "Le détroit de Magellan",
+          "correct": false
+        },
+        {
+          "text": "Le détroit de Malacca",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le nom de la loi physique qui exprime que la pression et le volume d'un gaz sont inversement proportionnels (à température constante) ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Loi de Boyle-Mariotte",
+          "correct": true
+        },
+        {
+          "text": "Loi d'Ohm",
+          "correct": false
+        },
+        {
+          "text": "Loi de Newton",
+          "correct": false
+        },
+        {
+          "text": "Loi de Joule",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quel est le nom du poème épique grec attribué à Homère qui raconte le voyage d'Ulysse ?",
+      "time": 30,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "L'Odyssée",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "odyssée",
+        "l'odyssée",
+        "odysée",
+        "l odysée",
+        "l'odysée"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce que le suffrage universel ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le droit de vote accordé à tous les citoyens",
+          "correct": true
+        },
+        {
+          "text": "Le vote réservé aux hommes propriétaires",
+          "correct": false
+        },
+        {
+          "text": "L'élection des représentants par tirage au sort",
+          "correct": false
+        },
+        {
+          "text": "Le vote obligatoire sous peine d'amende",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces types d'ondes du son du plus grave au plus aigu :",
+      "time": 40,
+      "answers": [
+        {
+          "text": "Infrasons (< 20 Hz)",
+          "correct": true
+        },
+        {
+          "text": "Sons graves (20 Hz – 300 Hz)",
+          "correct": true
+        },
+        {
+          "text": "Sons aigus (300 Hz – 20 000 Hz)",
+          "correct": true
+        },
+        {
+          "text": "Ultrasons (> 20 000 Hz)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel pharaon égyptien est associé au tombeau découvert intact par Howard Carter en 1922 ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Toutânkhamon",
+          "correct": true
+        },
+        {
+          "text": "Ramsès II",
+          "correct": false
+        },
+        {
+          "text": "Cléopâtre",
+          "correct": false
+        },
+        {
+          "text": "Akhenaton",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le théorème de Thalès permet de calculer des longueurs dans des figures comportant des droites parallèles.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la capitale du Maroc ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Rabat",
+          "correct": true
+        },
+        {
+          "text": "Casablanca",
+          "correct": false
+        },
+        {
+          "text": "Marrakech",
+          "correct": false
+        },
+        {
+          "text": "Fès",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le nom de la figure de style qui consiste à répéter un même son consonantique en début de mots ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "L'allitération",
+          "correct": true
+        },
+        {
+          "text": "L'assonance",
+          "correct": false
+        },
+        {
+          "text": "L'anaphore",
+          "correct": false
+        },
+        {
+          "text": "L'euphémisme",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quel est le nom du processus géologique par lequel deux plaques tectoniques entrent en collision et forment des montagnes ?",
+      "time": 35,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "l'orogenèse",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "orogenèse",
+        "l'orogenèse",
+        "orogenese",
+        "collision tectonique",
+        "subduction"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la particule qui compose les protons et les neutrons ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le quark",
+          "correct": true
+        },
+        {
+          "text": "Le photon",
+          "correct": false
+        },
+        {
+          "text": "Le boson",
+          "correct": false
+        },
+        {
+          "text": "Le lepton",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel peintre espagnol est l'un des fondateurs du cubisme ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Pablo Picasso",
+          "correct": true
+        },
+        {
+          "text": "Salvador Dalí",
+          "correct": false
+        },
+        {
+          "text": "Joan Miró",
+          "correct": false
+        },
+        {
+          "text": "Francisco de Goya",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La décolonisation de l'Afrique s'est produite principalement dans les années 1960.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le type de phrase qui sert à donner un ordre ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "La phrase impérative",
+          "correct": true
+        },
+        {
+          "text": "La phrase interrogative",
+          "correct": false
+        },
+        {
+          "text": "La phrase exclamative",
+          "correct": false
+        },
+        {
+          "text": "La phrase déclarative",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment appelle-t-on l'ensemble des gènes d'un individu ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le génotype",
+          "correct": true
+        },
+        {
+          "text": "Le phénotype",
+          "correct": false
+        },
+        {
+          "text": "Le génome",
+          "correct": false
+        },
+        {
+          "text": "Le chromosome",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Classe ces guerres dans l'ordre chronologique :",
+      "time": 45,
+      "answers": [
+        {
+          "text": "Guerre de Cent Ans (1337–1453)",
+          "correct": true
+        },
+        {
+          "text": "Guerre de Trente Ans (1618–1648)",
+          "correct": true
+        },
+        {
+          "text": "Guerre franco-prussienne (1870–1871)",
+          "correct": true
+        },
+        {
+          "text": "Guerre du Vietnam (1955–1975)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le nom de la loi française de 1905 qui sépare l'Église et l'État ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "La loi de séparation des Églises et de l'État",
+          "correct": true
+        },
+        {
+          "text": "La loi Falloux",
+          "correct": false
+        },
+        {
+          "text": "La loi Jules Ferry",
+          "correct": false
+        },
+        {
+          "text": "La loi Savary",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quel est le nom du satellite naturel de la Terre ?",
+      "time": 15,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "la Lune",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "lune",
+        "la lune",
+        "la Lune"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'hémisphère Sud connaît l'été en décembre.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "En mathématiques, comment s'appelle un polynôme du second degré ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Une trinôme",
+          "correct": true
+        },
+        {
+          "text": "Un binôme",
+          "correct": false
+        },
+        {
+          "text": "Un monôme",
+          "correct": false
+        },
+        {
+          "text": "Un polynôme simple",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel empire dominait la majeure partie de l'Europe au début du XIXe siècle ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'Empire napoléonien",
+          "correct": true
+        },
+        {
+          "text": "L'Empire ottoman",
+          "correct": false
+        },
+        {
+          "text": "Le Saint-Empire romain germanique",
+          "correct": false
+        },
+        {
+          "text": "L'Empire austro-hongrois",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la différence entre une cellule procaryote et une cellule eucaryote ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "La cellule eucaryote possède un noyau délimité par une membrane",
+          "correct": true
+        },
+        {
+          "text": "La cellule procaryote est plus grande",
+          "correct": false
+        },
+        {
+          "text": "La cellule eucaryote n'a pas d'ADN",
+          "correct": false
+        },
+        {
+          "text": "La cellule procaryote possède des mitochondries",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le nom de la bande dessinée franco-belge mettant en scène un petit gaulois résistant aux Romains ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Astérix",
+          "correct": true
+        },
+        {
+          "text": "Tintin",
+          "correct": false
+        },
+        {
+          "text": "Lucky Luke",
+          "correct": false
+        },
+        {
+          "text": "Spirou",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La lumière blanche est composée de toutes les couleurs du spectre visible.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

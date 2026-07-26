@@ -1,0 +1,2921 @@
+{
+  "name": "5e_ReseauxInformatiques_150q",
+  "version": "1.0",
+  "createdAt": "2026-03-31T15:00:00.000Z",
+  "questionsCount": 150,
+  "questions": [
+    {
+      "type": "multiple",
+      "question": "Parmi ces équipements, lequel ne fait PAS partie d'un réseau local classique ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Un satellite",
+          "correct": true
+        },
+        {
+          "text": "Un switch",
+          "correct": false
+        },
+        {
+          "text": "Un serveur",
+          "correct": false
+        },
+        {
+          "text": "Un routeur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un réseau local permet à plusieurs ordinateurs de partager des ressources et de communiquer entre eux.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel équipement relie les ordinateurs entre eux dans un réseau local ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Le switch",
+          "correct": true
+        },
+        {
+          "text": "Le routeur",
+          "correct": false
+        },
+        {
+          "text": "Le serveur",
+          "correct": false
+        },
+        {
+          "text": "L'écran",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le routeur permet de relier le réseau local à d'autres réseaux.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le rôle d'un serveur dans un réseau local ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Fournir des ressources et des services aux autres ordinateurs du réseau",
+          "correct": true
+        },
+        {
+          "text": "Relier les ordinateurs entre eux avec des câbles",
+          "correct": false
+        },
+        {
+          "text": "Afficher les pages web sur les écrans",
+          "correct": false
+        },
+        {
+          "text": "Alimenter les machines en électricité",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans un réseau local, le switch est relié au routeur.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment s'appelle l'identifiant numérique unique attribué à chaque machine d'un réseau ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Une adresse IP",
+          "correct": true
+        },
+        {
+          "text": "Un nom d'utilisateur",
+          "correct": false
+        },
+        {
+          "text": "Un numéro de série",
+          "correct": false
+        },
+        {
+          "text": "Un mot de passe",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans un réseau local, deux ordinateurs peuvent avoir la même adresse IP.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "À quoi ressemble une adresse IP ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "À quatre nombres séparés par des points, par exemple 192.168.1.10",
+          "correct": true
+        },
+        {
+          "text": "À une suite de lettres, par exemple ABC-DEF",
+          "correct": false
+        },
+        {
+          "text": "À un numéro de téléphone à 10 chiffres",
+          "correct": false
+        },
+        {
+          "text": "À une adresse postale avec rue et ville",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'adresse 192.168.1.5 est un exemple d'adresse IP valide.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans les paramètres réseau d'un ordinateur, à quoi sert la passerelle ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "À indiquer l'adresse du routeur pour sortir du réseau local",
+          "correct": true
+        },
+        {
+          "text": "À stocker les fichiers partagés du réseau",
+          "correct": false
+        },
+        {
+          "text": "À protéger l'ordinateur contre les virus",
+          "correct": false
+        },
+        {
+          "text": "À donner un nom à l'ordinateur sur le réseau",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La passerelle par défaut est généralement l'adresse IP du routeur.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quel est le nom de la commande que l'on utilise pour tester si une machine est joignable sur le réseau ?",
+      "time": 20,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "ping",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "ping",
+        "PING",
+        "Ping"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Que permet de vérifier la commande ping ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Que le réseau est bien configuré et que les machines communiquent",
+          "correct": true
+        },
+        {
+          "text": "Que les fichiers du serveur sont à jour",
+          "correct": false
+        },
+        {
+          "text": "Que l'écran de l'ordinateur fonctionne correctement",
+          "correct": false
+        },
+        {
+          "text": "Que le mot de passe réseau est correct",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Si un ping vers une machine voisine réussit, cela signifie que les deux machines communiquent bien.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans Filius, quelle est la première chose à faire pour qu'un ordinateur puisse communiquer sur le réseau local ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Lui attribuer une adresse IP",
+          "correct": true
+        },
+        {
+          "text": "Lui installer un antivirus",
+          "correct": false
+        },
+        {
+          "text": "Le relier directement au serveur",
+          "correct": false
+        },
+        {
+          "text": "Lui attribuer un nom d'utilisateur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans Filius, il faut relier chaque ordinateur au switch avec un câble pour qu'il fasse partie du réseau local.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un ordinateur a l'adresse IP 192.168.1.5. Quelle adresse pourrait avoir son voisin sur le même réseau ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "192.168.1.8",
+          "correct": true
+        },
+        {
+          "text": "192.168.1.5",
+          "correct": false
+        },
+        {
+          "text": "10.0.0.1",
+          "correct": false
+        },
+        {
+          "text": "255.255.255.0",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un ordinateur sans adresse IP configurée ne peut pas communiquer sur le réseau local.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un réseau local, que se passe-t-il quand deux machines ont la même adresse IP ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Les deux machines ont des problèmes de communication (conflit d'adresses)",
+          "correct": true
+        },
+        {
+          "text": "Elles partagent automatiquement la même connexion sans problème",
+          "correct": false
+        },
+        {
+          "text": "La machine la plus puissante garde l'adresse et l'autre est ignorée",
+          "correct": false
+        },
+        {
+          "text": "Rien ne se passe, c'est tout à fait normal",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Remets dans l'ordre les étapes pour créer un réseau local fonctionnel dans Filius :",
+      "time": 40,
+      "answers": [
+        {
+          "text": "Placer les équipements : ordinateurs, serveur, switch, routeur",
+          "correct": true
+        },
+        {
+          "text": "Relier chaque machine au switch avec des câbles",
+          "correct": true
+        },
+        {
+          "text": "Attribuer une adresse IP unique à chaque machine",
+          "correct": true
+        },
+        {
+          "text": "Tester la communication avec la commande ping",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Combien d'équipements différents trouve-t-on dans un réseau local classique étudié en cours ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "4 : ordinateur, serveur, switch, routeur",
+          "correct": true
+        },
+        {
+          "text": "2 : ordinateur et serveur seulement",
+          "correct": false
+        },
+        {
+          "text": "6 : ordinateur, serveur, switch, routeur, modem, imprimante",
+          "correct": false
+        },
+        {
+          "text": "1 : le switch suffit",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le switch est l'équipement central auquel on relie tous les ordinateurs, le serveur et le routeur dans un réseau local.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans Filius, un élève configure l'adresse IP 192.168.1.10 sur son ordinateur. Quelle adresse doit-il saisir comme passerelle si le routeur a l'adresse 192.168.1.1 ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "192.168.1.1",
+          "correct": true
+        },
+        {
+          "text": "192.168.1.10",
+          "correct": false
+        },
+        {
+          "text": "192.168.1.255",
+          "correct": false
+        },
+        {
+          "text": "0.0.0.0",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans Filius, on peut pinguer un ordinateur du réseau local en utilisant son adresse IP.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel résultat indique qu'un ping a échoué ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Aucune réponse reçue (timeout)",
+          "correct": true
+        },
+        {
+          "text": "Une réponse avec le temps en millisecondes",
+          "correct": false
+        },
+        {
+          "text": "Le message 'Connexion établie'",
+          "correct": false
+        },
+        {
+          "text": "Le message 'Transfert terminé'",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un ping réussi entre un ordinateur et son routeur confirme que la passerelle est bien configurée.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pourquoi configure-t-on une passerelle sur chaque ordinateur du réseau local ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Pour que l'ordinateur sache par où passer pour communiquer avec d'autres réseaux",
+          "correct": true
+        },
+        {
+          "text": "Pour que l'ordinateur puisse s'allumer plus vite",
+          "correct": false
+        },
+        {
+          "text": "Pour protéger l'ordinateur des intrusions",
+          "correct": false
+        },
+        {
+          "text": "Pour que l'ordinateur reconnaisse les autres machines par leur nom",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on l'adresse du routeur que l'on saisit dans les paramètres réseau d'un ordinateur pour lui permettre de sortir du réseau local ?",
+      "time": 20,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "passerelle",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "passerelle",
+        "Passerelle",
+        "passerelle par défaut",
+        "Passerelle par défaut",
+        "gateway"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans Filius, un élève pinge la machine 192.168.1.20 depuis son ordinateur (192.168.1.5) mais ne reçoit pas de réponse. Quelle est la cause la plus probable ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La machine 192.168.1.20 n'est pas allumée ou son adresse IP est mal configurée",
+          "correct": true
+        },
+        {
+          "text": "L'ordinateur source n'est pas connecté à Internet",
+          "correct": false
+        },
+        {
+          "text": "Le routeur est éteint",
+          "correct": false
+        },
+        {
+          "text": "La passerelle de l'ordinateur source est incorrecte",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans Filius, si le câble entre un ordinateur et le switch est débranché, cet ordinateur ne peut plus communiquer avec les autres machines.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel équipement doit-on utiliser comme passerelle dans les paramètres réseau d'un ordinateur ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Le routeur",
+          "correct": true
+        },
+        {
+          "text": "Le switch",
+          "correct": false
+        },
+        {
+          "text": "Le serveur",
+          "correct": false
+        },
+        {
+          "text": "Un autre ordinateur du réseau",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans un réseau local, le serveur est connecté au switch comme les autres ordinateurs.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans Filius, un réseau local contient 3 ordinateurs, 1 serveur, 1 switch et 1 routeur. Combien de machines ont besoin d'une adresse IP ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "5 : les 3 ordinateurs, le serveur et le routeur",
+          "correct": true
+        },
+        {
+          "text": "3 : uniquement les ordinateurs",
+          "correct": false
+        },
+        {
+          "text": "6 : toutes les machines y compris le switch",
+          "correct": false
+        },
+        {
+          "text": "1 : seulement le serveur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le switch n'a pas besoin d'adresse IP pour fonctionner dans un réseau local simple.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la bonne description du rôle d'un switch ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Il reçoit les données d'une machine et les envoie à la bonne machine destinataire dans le réseau local",
+          "correct": true
+        },
+        {
+          "text": "Il stocke les fichiers partagés du réseau",
+          "correct": false
+        },
+        {
+          "text": "Il connecte le réseau local à Internet",
+          "correct": false
+        },
+        {
+          "text": "Il attribue les adresses IP à chaque machine",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Remets dans l'ordre les étapes pour vérifier qu'un ordinateur est bien paramétré dans Filius :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Vérifier que l'adresse IP est bien saisie",
+          "correct": true
+        },
+        {
+          "text": "Vérifier que la passerelle pointe vers le routeur",
+          "correct": true
+        },
+        {
+          "text": "Ouvrir le terminal de l'ordinateur",
+          "correct": true
+        },
+        {
+          "text": "Taper la commande ping vers un autre ordinateur du réseau",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Deux ordinateurs sont reliés au même switch avec les adresses 192.168.1.10 et 192.168.1.20. Peuvent-ils communiquer directement ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Oui, ils sont sur le même réseau local",
+          "correct": true
+        },
+        {
+          "text": "Non, ils doivent d'abord passer par le routeur",
+          "correct": false
+        },
+        {
+          "text": "Non, leurs adresses sont trop éloignées",
+          "correct": false
+        },
+        {
+          "text": "Oui, mais uniquement si le serveur est allumé",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans Filius, un ordinateur peut pinguer le serveur du réseau local si les deux sont correctement configurés et reliés au même switch.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Dans Filius, quel équipement relie les ordinateurs, le serveur et le routeur dans un réseau local ? (1 mot)",
+      "time": 20,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "switch",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "switch",
+        "Switch",
+        "SWITCH",
+        "commutateur"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans Filius, qu'arrive-t-il si on oublie de configurer la passerelle sur un ordinateur ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'ordinateur peut communiquer avec les machines du réseau local mais pas avec d'autres réseaux",
+          "correct": true
+        },
+        {
+          "text": "L'ordinateur ne peut plus rien faire du tout",
+          "correct": false
+        },
+        {
+          "text": "L'ordinateur perd aussi son adresse IP",
+          "correct": false
+        },
+        {
+          "text": "Le switch se déconnecte automatiquement",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans Filius, si on attribue la même adresse IP à deux machines différentes, le réseau fonctionne normalement.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est l'avantage d'un réseau local dans une école ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Les ordinateurs peuvent partager des fichiers et utiliser des ressources communes comme une imprimante ou un serveur",
+          "correct": true
+        },
+        {
+          "text": "Les ordinateurs deviennent plus rapides grâce au réseau",
+          "correct": false
+        },
+        {
+          "text": "Les ordinateurs n'ont plus besoin d'alimentation électrique",
+          "correct": false
+        },
+        {
+          "text": "Le réseau empêche les pannes matérielles",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans Filius, un ping réussi entre deux machines prouve que leur configuration réseau (adresse IP et câblage) est correcte.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un réseau local Filius, un élève ne parvient à pinguer aucune machine, même celles à côté. Quelle est la cause la plus probable ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Son adresse IP est mal configurée ou son câble n'est pas branché au switch",
+          "correct": true
+        },
+        {
+          "text": "La passerelle de son ordinateur est incorrecte",
+          "correct": false
+        },
+        {
+          "text": "Le routeur est éteint",
+          "correct": false
+        },
+        {
+          "text": "Le serveur n'a pas d'adresse IP",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Remets dans l'ordre les éléments du réseau local, du terminal vers la sortie du réseau :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Ordinateur",
+          "correct": true
+        },
+        {
+          "text": "Switch",
+          "correct": true
+        },
+        {
+          "text": "Routeur",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans Filius, un ordinateur (192.168.0.5) pinge avec succès le serveur (192.168.0.20). Que peut-on affirmer ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Les deux machines sont bien reliées et leurs adresses IP sont correctes",
+          "correct": true
+        },
+        {
+          "text": "L'ordinateur est connecté à Internet",
+          "correct": false
+        },
+        {
+          "text": "Le routeur fonctionne correctement",
+          "correct": false
+        },
+        {
+          "text": "Le réseau est protégé contre les intrusions",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans Filius, le routeur doit lui aussi avoir une adresse IP dans le réseau local.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quel est le nom de l'identifiant numérique (sous la forme x.x.x.x) que l'on attribue à chaque machine d'un réseau ? (2 mots)",
+      "time": 20,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "adresse IP",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "adresse ip",
+        "adresse IP",
+        "Adresse IP",
+        "Adresse ip"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans Filius, un élève a bien branché tous les câbles et configuré les adresses IP, mais a oublié de relier le switch au routeur. Que peut-il faire ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Faire communiquer les machines entre elles, mais pas sortir du réseau local",
+          "correct": true
+        },
+        {
+          "text": "Tout fonctionne normalement, le routeur n'est pas indispensable en local",
+          "correct": false
+        },
+        {
+          "text": "Rien, le réseau est totalement inutilisable",
+          "correct": false
+        },
+        {
+          "text": "Accéder à Internet quand même via le serveur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel équipement du réseau local est chargé de transmettre les données d'une machine à une autre ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Le switch",
+          "correct": true
+        },
+        {
+          "text": "Le serveur",
+          "correct": false
+        },
+        {
+          "text": "Le routeur",
+          "correct": false
+        },
+        {
+          "text": "L'ordinateur client",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans un réseau local, le routeur est relié au switch.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans Filius, comment relie-t-on un ordinateur au réseau local ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "On le connecte au switch avec un câble",
+          "correct": true
+        },
+        {
+          "text": "On le connecte directement au routeur",
+          "correct": false
+        },
+        {
+          "text": "On le connecte directement au serveur",
+          "correct": false
+        },
+        {
+          "text": "Il se connecte automatiquement sans câble",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un réseau local peut fonctionner sans serveur si les ordinateurs n'ont pas besoin de ressources partagées.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Laquelle de ces adresses IP est valide pour une machine d'un réseau local ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "192.168.1.42",
+          "correct": true
+        },
+        {
+          "text": "192.168.1.300",
+          "correct": false
+        },
+        {
+          "text": "192.168.1",
+          "correct": false
+        },
+        {
+          "text": "192-168-1-42",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Chaque nombre dans une adresse IP est compris entre 0 et 255.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans Filius, un ordinateur a l'adresse 192.168.0.10 et le routeur a l'adresse 192.168.0.1. Que faut-il saisir dans le champ « passerelle » de l'ordinateur ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "192.168.0.1",
+          "correct": true
+        },
+        {
+          "text": "192.168.0.10",
+          "correct": false
+        },
+        {
+          "text": "192.168.0.255",
+          "correct": false
+        },
+        {
+          "text": "0.0.0.0",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La passerelle d'un ordinateur doit avoir une adresse IP qui appartient au même réseau que cet ordinateur.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans Filius, si deux ordinateurs ont respectivement les adresses 192.168.1.5 et 192.168.1.5, que va-t-il se passer ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un conflit d'adresses IP va perturber la communication des deux machines",
+          "correct": true
+        },
+        {
+          "text": "Tout fonctionne normalement",
+          "correct": false
+        },
+        {
+          "text": "Les deux machines fusionnent en une seule",
+          "correct": false
+        },
+        {
+          "text": "Le switch attribue automatiquement une nouvelle adresse à l'une d'elles",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La commande ping affiche le temps de réponse en millisecondes.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans Filius, un élève pinge 192.168.1.15 depuis son ordinateur et reçoit une réponse. Qu'est-ce que cela confirme ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "La machine 192.168.1.15 est bien connectée et joignable",
+          "correct": true
+        },
+        {
+          "text": "L'ordinateur est connecté à Internet",
+          "correct": false
+        },
+        {
+          "text": "Le serveur fonctionne correctement",
+          "correct": false
+        },
+        {
+          "text": "Le routeur est bien paramétré",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "On peut utiliser la commande ping vers l'adresse IP de la passerelle pour vérifier que le routeur est bien joignable.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un réseau local, quel équipement joue le rôle de « porte de sortie » vers d'autres réseaux ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Le routeur",
+          "correct": true
+        },
+        {
+          "text": "Le switch",
+          "correct": false
+        },
+        {
+          "text": "Le serveur",
+          "correct": false
+        },
+        {
+          "text": "Le câble réseau",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans Filius, le routeur a besoin d'une adresse IP dans le réseau local pour que les ordinateurs puissent l'utiliser comme passerelle.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Dans Filius, quel équipement réseau faut-il placer entre les ordinateurs et le routeur pour les relier ? (1 mot)",
+      "time": 20,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "switch",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "switch",
+        "Switch",
+        "SWITCH",
+        "commutateur"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le résultat d'un ping vers une machine dont l'adresse IP n'existe pas dans le réseau ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Pas de réponse (délai dépassé)",
+          "correct": true
+        },
+        {
+          "text": "La machine est créée automatiquement",
+          "correct": false
+        },
+        {
+          "text": "Le switch affiche une erreur",
+          "correct": false
+        },
+        {
+          "text": "Le réseau entier est bloqué",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans Filius, si un ordinateur n'est pas relié au switch, il ne peut pas communiquer avec les autres machines du réseau.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel paramètre réseau manque dans cette configuration : adresse IP = 192.168.1.10, passerelle = (vide) ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "La passerelle, qui doit indiquer l'adresse du routeur",
+          "correct": true
+        },
+        {
+          "text": "Un deuxième câble réseau",
+          "correct": false
+        },
+        {
+          "text": "L'adresse IP du switch",
+          "correct": false
+        },
+        {
+          "text": "Le nom de l'ordinateur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un ordinateur sans passerelle configurée peut quand même pinguer les machines de son propre réseau local.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans Filius, combien d'adresses IP différentes faut-il pour un réseau avec 2 ordinateurs, 1 serveur et 1 routeur (le switch n'en a pas besoin) ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "4 adresses",
+          "correct": true
+        },
+        {
+          "text": "2 adresses",
+          "correct": false
+        },
+        {
+          "text": "5 adresses",
+          "correct": false
+        },
+        {
+          "text": "1 adresse partagée",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans un réseau local, le serveur doit lui aussi avoir une adresse IP unique.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle affirmation est correcte concernant le switch ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Il relie les machines entre elles mais ne leur attribue pas d'adresse IP",
+          "correct": true
+        },
+        {
+          "text": "Il attribue automatiquement une adresse IP à chaque machine",
+          "correct": false
+        },
+        {
+          "text": "Il connecte le réseau local à Internet",
+          "correct": false
+        },
+        {
+          "text": "Il stocke les fichiers partagés du réseau",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on la machine qui fournit des ressources aux autres ordinateurs dans un réseau local ? (1 mot)",
+      "time": 20,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "serveur",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "serveur",
+        "Serveur",
+        "SERVEUR"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans Filius, un élève constate que son ordinateur (192.168.1.10) ne peut pas pinguer le routeur (192.168.1.1). La passerelle est bien renseignée. Quelle est la cause probable ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le câble entre l'ordinateur et le switch est mal branché, ou le routeur n'est pas relié au switch",
+          "correct": true
+        },
+        {
+          "text": "L'adresse IP de l'ordinateur est trop grande",
+          "correct": false
+        },
+        {
+          "text": "Le serveur bloque les communications",
+          "correct": false
+        },
+        {
+          "text": "La passerelle est toujours incorrecte dans ce cas",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans Filius, si on oublie de brancher le câble entre le switch et le routeur, les ordinateurs ne peuvent pas sortir du réseau local.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Remets dans l'ordre les éléments traversés par un message envoyé de l'ordinateur A vers l'ordinateur B dans un réseau local :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Ordinateur A envoie le message",
+          "correct": true
+        },
+        {
+          "text": "Le switch reçoit le message",
+          "correct": true
+        },
+        {
+          "text": "Le switch l'envoie vers l'ordinateur B",
+          "correct": true
+        },
+        {
+          "text": "L'ordinateur B reçoit le message",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est l'intérêt de tester son réseau avec ping après l'avoir configuré dans Filius ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "S'assurer que les adresses IP et les câbles sont bien configurés",
+          "correct": true
+        },
+        {
+          "text": "Accélérer la vitesse du réseau",
+          "correct": false
+        },
+        {
+          "text": "Enregistrer la configuration sur le serveur",
+          "correct": false
+        },
+        {
+          "text": "Activer la connexion Wi-Fi",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans Filius, il est possible de pinguer le serveur depuis un ordinateur client si les deux sont sur le même réseau local.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Lequel de ces équipements n'a PAS besoin d'adresse IP dans un réseau local simple ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Le switch",
+          "correct": true
+        },
+        {
+          "text": "Le routeur",
+          "correct": false
+        },
+        {
+          "text": "Le serveur",
+          "correct": false
+        },
+        {
+          "text": "L'ordinateur client",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans Filius, on peut avoir un réseau local avec seulement deux ordinateurs reliés à un switch, sans serveur ni routeur.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la différence entre un ordinateur client et un serveur dans un réseau local ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le serveur fournit des services, le client les utilise",
+          "correct": true
+        },
+        {
+          "text": "Le serveur est plus petit que le client",
+          "correct": false
+        },
+        {
+          "text": "Le client a une adresse IP, le serveur n'en a pas",
+          "correct": false
+        },
+        {
+          "text": "Le client est relié au switch, le serveur est relié directement au routeur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Dans un réseau local, comment appelle-t-on l'ordinateur qui utilise les ressources du serveur ? (1 mot)",
+      "time": 20,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "client",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "client",
+        "Client",
+        "CLIENT",
+        "ordinateur client"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans Filius, un réseau local a 4 ordinateurs avec les adresses 192.168.1.1, 192.168.1.2, 192.168.1.3 et 192.168.1.2. Quel problème peut-on identifier ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Deux ordinateurs ont la même adresse 192.168.1.2 : conflit d'adresses IP",
+          "correct": true
+        },
+        {
+          "text": "Les adresses sont trop proches les unes des autres",
+          "correct": false
+        },
+        {
+          "text": "Il manque une adresse IP, le réseau ne peut pas fonctionner avec 4 machines",
+          "correct": false
+        },
+        {
+          "text": "Aucun problème, la configuration est correcte",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans Filius, après avoir modifié l'adresse IP d'un ordinateur, il faut relancer un ping pour vérifier que la nouvelle configuration fonctionne.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel câble relie directement un ordinateur au réseau dans Filius ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Le câble entre l'ordinateur et le switch",
+          "correct": true
+        },
+        {
+          "text": "Le câble entre le switch et le routeur",
+          "correct": false
+        },
+        {
+          "text": "Le câble entre le serveur et le routeur",
+          "correct": false
+        },
+        {
+          "text": "Il n'y a pas de câble, tout est sans fil",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans Filius, on configure l'adresse IP directement sur chaque machine en cliquant dessus.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Remets dans l'ordre les étapes pour diagnostiquer pourquoi un ordinateur ne parvient pas à pinguer le serveur dans Filius :",
+      "time": 40,
+      "answers": [
+        {
+          "text": "Vérifier que le câble de l'ordinateur est bien branché au switch",
+          "correct": true
+        },
+        {
+          "text": "Vérifier que l'adresse IP de l'ordinateur est correcte",
+          "correct": true
+        },
+        {
+          "text": "Vérifier que le serveur est bien relié au switch et a une adresse IP",
+          "correct": true
+        },
+        {
+          "text": "Relancer la commande ping vers l'adresse IP du serveur",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pourquoi est-il important que les machines d'un même réseau local aient des adresses IP dans la même plage (ex : toutes en 192.168.1.x) ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Pour que le switch sache qu'elles appartiennent au même réseau et puisse les faire communiquer",
+          "correct": true
+        },
+        {
+          "text": "Pour que les machines aient des noms similaires",
+          "correct": false
+        },
+        {
+          "text": "Pour que le routeur leur attribue la même passerelle automatiquement",
+          "correct": false
+        },
+        {
+          "text": "Il n'y a pas d'obligation, les adresses peuvent être complètement différentes",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans Filius, si le routeur n'a pas d'adresse IP configurée, on ne peut pas l'utiliser comme passerelle.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un réseau local Filius, un élève pinge avec succès toutes les machines sauf le routeur. Quelle est la cause la plus probable ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le câble entre le switch et le routeur est manquant, ou le routeur n'a pas d'adresse IP",
+          "correct": true
+        },
+        {
+          "text": "L'adresse IP de l'élève est incorrecte",
+          "correct": false
+        },
+        {
+          "text": "Le serveur empêche la communication avec le routeur",
+          "correct": false
+        },
+        {
+          "text": "Il y a trop de machines dans le réseau",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans Filius, la commande ping peut être utilisée depuis n'importe quel ordinateur du réseau local.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce que le réseau local permet de faire dans une salle informatique de collège ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Partager des fichiers entre les ordinateurs et accéder aux ressources du serveur",
+          "correct": true
+        },
+        {
+          "text": "Charger les batteries des ordinateurs portables plus rapidement",
+          "correct": false
+        },
+        {
+          "text": "Augmenter la résolution des écrans",
+          "correct": false
+        },
+        {
+          "text": "Installer automatiquement des logiciels depuis Internet",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans Filius, il est possible de vérifier la configuration réseau d'un ordinateur en regardant ses paramètres IP.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un réseau local Filius, quel ping doit-on faire en premier pour vérifier que tout fonctionne ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Ping vers un ordinateur voisin sur le même réseau",
+          "correct": true
+        },
+        {
+          "text": "Ping vers un serveur distant sur Internet",
+          "correct": false
+        },
+        {
+          "text": "Ping vers le switch",
+          "correct": false
+        },
+        {
+          "text": "Ping vers sa propre adresse IP",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans Filius, un ping vers la passerelle qui réussit signifie que l'ordinateur peut communiquer avec le routeur.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Remets dans l'ordre les étapes pour ajouter un nouvel ordinateur dans un réseau local Filius déjà existant :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Placer le nouvel ordinateur dans Filius",
+          "correct": true
+        },
+        {
+          "text": "Le relier au switch avec un câble",
+          "correct": true
+        },
+        {
+          "text": "Lui attribuer une adresse IP libre dans la plage du réseau",
+          "correct": true
+        },
+        {
+          "text": "Renseigner la passerelle et tester avec ping",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans Filius, quelle erreur de configuration empêchera uniquement la communication avec d'autres réseaux mais pas avec les voisins du réseau local ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Une passerelle absente ou incorrecte",
+          "correct": true
+        },
+        {
+          "text": "Une adresse IP incorrecte",
+          "correct": false
+        },
+        {
+          "text": "Un câble débranché du switch",
+          "correct": false
+        },
+        {
+          "text": "Un switch éteint",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans Filius, un serveur sans adresse IP ne peut pas être contacté par les ordinateurs du réseau local.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Dans Filius, quelle adresse IP saisit-on dans le champ passerelle d'un ordinateur du réseau 192.168.0.x si le routeur a l'adresse 192.168.0.1 ?",
+      "time": 20,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "192.168.0.1",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "192.168.0.1"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle image décrit le mieux le rôle du switch dans un réseau local ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Un carrefour qui dirige les données vers la bonne machine",
+          "correct": true
+        },
+        {
+          "text": "Une bibliothèque qui stocke tous les fichiers du réseau",
+          "correct": false
+        },
+        {
+          "text": "Un gardien qui vérifie les mots de passe des utilisateurs",
+          "correct": false
+        },
+        {
+          "text": "Une porte qui s'ouvre uniquement vers Internet",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un réseau local, à quoi peut-on comparer une adresse IP ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "À une adresse postale : elle identifie de façon unique chaque machine sur le réseau",
+          "correct": true
+        },
+        {
+          "text": "À un mot de passe : elle protège l'accès à la machine",
+          "correct": false
+        },
+        {
+          "text": "À un nom de fichier : elle indique les données stockées sur la machine",
+          "correct": false
+        },
+        {
+          "text": "À un câble : elle relie physiquement les machines entre elles",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans Filius, si on supprime le switch d'un réseau local, les ordinateurs ne peuvent plus communiquer entre eux.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Parmi ces configurations, laquelle est correcte pour un ordinateur dans un réseau 192.168.1.x dont le routeur est en 192.168.1.1 ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "IP : 192.168.1.15 — Passerelle : 192.168.1.1",
+          "correct": true
+        },
+        {
+          "text": "IP : 192.168.1.15 — Passerelle : 192.168.1.15",
+          "correct": false
+        },
+        {
+          "text": "IP : 192.168.2.15 — Passerelle : 192.168.1.1",
+          "correct": false
+        },
+        {
+          "text": "IP : 192.168.1.15 — Passerelle : 192.168.2.1",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un ordinateur peut utiliser sa propre adresse IP comme passerelle.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans Filius, un élève configure la passerelle de son ordinateur avec l'adresse IP d'un autre ordinateur au lieu du routeur. Que va-t-il se passer ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'ordinateur ne pourra pas sortir du réseau local correctement",
+          "correct": true
+        },
+        {
+          "text": "L'ordinateur fonctionnera normalement",
+          "correct": false
+        },
+        {
+          "text": "L'autre ordinateur recevra toutes les données à la place du routeur",
+          "correct": false
+        },
+        {
+          "text": "Le switch corrigera automatiquement l'erreur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans Filius, le serveur et les ordinateurs clients peuvent se pinguer mutuellement si tout est bien configuré.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un réseau local contient un switch, trois ordinateurs et un serveur, mais pas de routeur. Que peut-on faire dans ce réseau ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Faire communiquer les ordinateurs et le serveur entre eux, mais pas sortir vers d'autres réseaux",
+          "correct": true
+        },
+        {
+          "text": "Accéder à Internet normalement",
+          "correct": false
+        },
+        {
+          "text": "Rien du tout, un routeur est toujours obligatoire",
+          "correct": false
+        },
+        {
+          "text": "Accéder à Internet, mais très lentement",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans Filius, le routeur doit être relié au switch pour que les ordinateurs du réseau local puissent l'utiliser comme passerelle.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Lequel de ces éléments N'est PAS un équipement réseau que l'on place dans Filius ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Un imprimante 3D",
+          "correct": true
+        },
+        {
+          "text": "Un switch",
+          "correct": false
+        },
+        {
+          "text": "Un routeur",
+          "correct": false
+        },
+        {
+          "text": "Un serveur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans un réseau local Filius, un ordinateur peut pinguer le routeur sans avoir de passerelle configurée.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Dans Filius, quel outil ouvre-t-on sur un ordinateur pour taper la commande ping ? (1 mot)",
+      "time": 20,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "terminal",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "terminal",
+        "Terminal",
+        "TERMINAL",
+        "console",
+        "invite de commandes"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans Filius, quelle est la conséquence si le serveur est éteint et qu'un ordinateur essaie de le pinguer ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Le ping échoue, aucune réponse n'est reçue",
+          "correct": true
+        },
+        {
+          "text": "Le ping réussit quand même grâce au switch",
+          "correct": false
+        },
+        {
+          "text": "Le routeur répond à la place du serveur",
+          "correct": false
+        },
+        {
+          "text": "L'ordinateur redémarre automatiquement",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans Filius, on peut avoir plusieurs switchs dans un même réseau local.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans Filius, un élève construit un réseau avec 2 switchs. Comment les relie-t-il ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Il relie les deux switchs entre eux avec un câble",
+          "correct": true
+        },
+        {
+          "text": "Il relie les deux switchs via le serveur",
+          "correct": false
+        },
+        {
+          "text": "Il branche chaque switch directement à l'ordinateur",
+          "correct": false
+        },
+        {
+          "text": "Les deux switchs se connectent automatiquement sans câble",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Deux machines sur des plages d'adresses IP différentes (ex : 192.168.1.x et 192.168.2.x) peuvent communiquer directement via le switch sans routeur.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans Filius, l'ordinateur A (192.168.1.10) essaie de pinguer l'ordinateur B (192.168.2.10). Ils sont reliés au même switch. Le ping échoue. Pourquoi ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Leurs adresses IP sont sur des plages différentes, il faudrait un routeur pour les relier",
+          "correct": true
+        },
+        {
+          "text": "Le switch est trop lent pour gérer deux adresses différentes",
+          "correct": false
+        },
+        {
+          "text": "Il faut obligatoirement un serveur pour que deux machines communiquent",
+          "correct": false
+        },
+        {
+          "text": "Les deux adresses sont trop proches, il faut plus d'écart",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Dans Filius, si toutes les machines sont en 192.168.1.x, dans quelle plage doit être l'adresse IP d'un nouvel ordinateur qu'on ajoute ? (format : 192.168.1.x)",
+      "time": 20,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "192.168.1.x",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "192.168.1.x",
+        "192.168.1.*",
+        "192.168.1.0",
+        "192.168.1.something"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans Filius, un réseau local fonctionne bien. On ajoute un ordinateur avec l'adresse 10.0.0.5. Ce nouvel ordinateur peut-il pinguer les autres (en 192.168.1.x) ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Non, son adresse n'est pas dans la même plage que les autres",
+          "correct": true
+        },
+        {
+          "text": "Oui, dès qu'il est branché au switch il peut tout pinguer",
+          "correct": false
+        },
+        {
+          "text": "Oui, mais uniquement si la passerelle est bien renseignée",
+          "correct": false
+        },
+        {
+          "text": "Non, parce que le switch refuse les nouvelles connexions",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans un réseau local, il est possible d'avoir plus d'ordinateurs clients que de ports sur le switch en ajoutant un deuxième switch.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pourquoi donne-t-on une adresse IP fixe (toujours la même) au serveur d'un réseau local ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Pour que les ordinateurs clients sachent toujours à quelle adresse le trouver",
+          "correct": true
+        },
+        {
+          "text": "Pour que le serveur soit plus puissant",
+          "correct": false
+        },
+        {
+          "text": "Pour que le switch lui accorde la priorité",
+          "correct": false
+        },
+        {
+          "text": "Pour que le routeur reconnaisse le serveur automatiquement",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans Filius, la passerelle est un paramètre obligatoire pour que deux machines du même réseau local puissent se pinguer.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Remets dans l'ordre les équipements traversés par un paquet allant d'un ordinateur vers le routeur dans un réseau local :",
+      "time": 30,
+      "answers": [
+        {
+          "text": "L'ordinateur envoie le paquet",
+          "correct": true
+        },
+        {
+          "text": "Le switch reçoit le paquet et le dirige",
+          "correct": true
+        },
+        {
+          "text": "Le routeur reçoit le paquet",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans Filius, un élève a bien branché tous les câbles et configuré les IP, mais a mis 192.168.1.50 comme passerelle alors que le routeur est en 192.168.1.1 et qu'il n'y a aucune machine en 192.168.1.50. Que se passe-t-il ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'ordinateur ne peut pas sortir du réseau local car la passerelle est introuvable",
+          "correct": true
+        },
+        {
+          "text": "L'ordinateur fonctionne normalement car la passerelle n'est pas vérifiée",
+          "correct": false
+        },
+        {
+          "text": "Le routeur change automatiquement son adresse en 192.168.1.50",
+          "correct": false
+        },
+        {
+          "text": "Le switch corrige automatiquement la passerelle",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans Filius, il est possible de pinguer le routeur depuis un ordinateur même si le serveur est éteint.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un élève décrit son réseau ainsi : « toutes les machines sont bien branchées au switch, les adresses IP sont correctes, mais aucun ping ne fonctionne. » Quelle vérification a-t-il oublié ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vérifier que le switch est lui-même relié aux machines et que les câbles sont bien connectés dans Filius",
+          "correct": true
+        },
+        {
+          "text": "Vérifier que la passerelle est renseignée",
+          "correct": false
+        },
+        {
+          "text": "Vérifier que le serveur est allumé",
+          "correct": false
+        },
+        {
+          "text": "Vérifier que le routeur a une adresse IP",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans Filius, le nombre de ports d'un switch limite le nombre de machines qu'on peut lui connecter.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle image décrit le mieux le rôle du routeur dans un réseau local ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Une porte de sortie qui permet de communiquer avec d'autres réseaux",
+          "correct": true
+        },
+        {
+          "text": "Un entrepôt qui stocke les données du réseau",
+          "correct": false
+        },
+        {
+          "text": "Un policier qui vérifie les mots de passe des utilisateurs",
+          "correct": false
+        },
+        {
+          "text": "Une prise électrique qui alimente les autres machines",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans Filius, changer l'adresse IP d'un ordinateur ne modifie pas automatiquement sa passerelle.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans Filius, un élève fait un ping de 192.168.1.10 vers 192.168.1.10 (sa propre adresse). Que se passe-t-il ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Il reçoit une réponse car la machine se répond à elle-même",
+          "correct": true
+        },
+        {
+          "text": "Le ping échoue car on ne peut pas se pinguer soi-même",
+          "correct": false
+        },
+        {
+          "text": "Le switch bloque ce type de ping",
+          "correct": false
+        },
+        {
+          "text": "L'ordinateur redémarre",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans Filius, si on retire le câble entre le switch et le routeur, les ordinateurs ne peuvent plus sortir du réseau local mais peuvent encore se pinguer entre eux.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un réseau local Filius à 5 machines, combien de câbles relient directement les machines au switch (sans compter le câble switch-routeur) ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "5 câbles, un par machine",
+          "correct": true
+        },
+        {
+          "text": "1 câble partagé par toutes les machines",
+          "correct": false
+        },
+        {
+          "text": "10 câbles, un aller et un retour par machine",
+          "correct": false
+        },
+        {
+          "text": "4 câbles, le routeur se connecte directement sans switch",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on l'équipement réseau qui permet de relier le réseau local à d'autres réseaux ? (1 mot)",
+      "time": 20,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "routeur",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "routeur",
+        "Routeur",
+        "ROUTEUR"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans Filius, quelle est l'utilité du câble qui relie le switch au routeur ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Il permet aux machines du réseau local de communiquer avec d'autres réseaux via le routeur",
+          "correct": true
+        },
+        {
+          "text": "Il alimente le switch en électricité",
+          "correct": false
+        },
+        {
+          "text": "Il permet au switch d'avoir une adresse IP",
+          "correct": false
+        },
+        {
+          "text": "Il permet au routeur de distribuer les adresses IP",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans Filius, si on efface l'adresse IP d'un ordinateur et qu'on la laisse vide, cet ordinateur ne peut plus pinguer ses voisins.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le nombre minimum d'équipements nécessaires pour créer un réseau local dans Filius où deux ordinateurs peuvent se pinguer ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "3 : deux ordinateurs et un switch",
+          "correct": true
+        },
+        {
+          "text": "5 : ordinateurs, switch, serveur et routeur obligatoires",
+          "correct": false
+        },
+        {
+          "text": "2 : deux ordinateurs suffisent sans aucun autre équipement",
+          "correct": false
+        },
+        {
+          "text": "4 : deux ordinateurs, un switch et un serveur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans Filius, le routeur a besoin d'être relié au switch pour que les ordinateurs du réseau local l'utilisent comme passerelle.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Parmi ces descriptions, laquelle correspond à un réseau local correctement construit dans Filius ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Ordinateurs reliés au switch, switch relié au routeur, adresses IP uniques sur chaque machine",
+          "correct": true
+        },
+        {
+          "text": "Ordinateurs reliés directement au routeur, sans switch",
+          "correct": false
+        },
+        {
+          "text": "Tous les ordinateurs reliés entre eux sans switch ni routeur",
+          "correct": false
+        },
+        {
+          "text": "Un seul câble relie toutes les machines en chaîne",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans Filius, si l'adresse IP du routeur est 192.168.1.1, les ordinateurs du réseau doivent avoir des adresses dans la plage 192.168.1.x pour pouvoir l'utiliser comme passerelle.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Que se passe-t-il dans Filius si on branche un ordinateur directement au routeur sans passer par le switch ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'ordinateur peut communiquer avec le routeur mais sera peut-être isolé des autres machines reliées au switch",
+          "correct": true
+        },
+        {
+          "text": "Le réseau fonctionne exactement pareil",
+          "correct": false
+        },
+        {
+          "text": "L'ordinateur obtient automatiquement une adresse IP",
+          "correct": false
+        },
+        {
+          "text": "Le routeur refuse la connexion d'un ordinateur en direct",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Remets dans l'ordre les vérifications à faire quand un ping échoue dans Filius :",
+      "time": 40,
+      "answers": [
+        {
+          "text": "Vérifier que les câbles sont bien branchés",
+          "correct": true
+        },
+        {
+          "text": "Vérifier que les adresses IP des deux machines sont correctes et dans la même plage",
+          "correct": true
+        },
+        {
+          "text": "Vérifier que les deux machines sont bien reliées au même switch",
+          "correct": true
+        },
+        {
+          "text": "Relancer la commande ping",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans Filius, un élève voit ce résultat après un ping : « Reply from 192.168.1.20 : time=1ms ». Que signifie ce message ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "La machine 192.168.1.20 a répondu en 1 milliseconde : le ping a réussi",
+          "correct": true
+        },
+        {
+          "text": "La machine 192.168.1.20 a mis 1 minute pour répondre",
+          "correct": false
+        },
+        {
+          "text": "Le ping a échoué après 1 tentative",
+          "correct": false
+        },
+        {
+          "text": "La machine 192.168.1.20 est en train de démarrer",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans Filius, un ping vers une machine donne toujours le même temps de réponse à chaque essai.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un élève décrit son réseau local : « J'ai un switch avec 3 ordinateurs branchés dessus. Tout le monde se pinge, mais personne ne peut sortir du réseau. » Quel équipement manque ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Un routeur relié au switch",
+          "correct": true
+        },
+        {
+          "text": "Un serveur relié au switch",
+          "correct": false
+        },
+        {
+          "text": "Un deuxième switch",
+          "correct": false
+        },
+        {
+          "text": "Un câble supplémentaire entre deux ordinateurs",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans Filius, tous les ordinateurs d'un réseau local partagent le même switch.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans Filius, pourquoi vérifie-t-on toujours en premier le ping vers les machines du réseau local avant de tester plus loin ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Pour confirmer que la base du réseau (câblage et adresses IP) fonctionne avant de chercher un problème plus loin",
+          "correct": true
+        },
+        {
+          "text": "Parce que le ping local est plus rapide que le ping distant",
+          "correct": false
+        },
+        {
+          "text": "Parce que le ping local configure automatiquement la passerelle",
+          "correct": false
+        },
+        {
+          "text": "Parce que le switch vérifie les pings locaux avant de les laisser partir",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Dans un réseau local en 192.168.0.x, quelle adresse IP donne-t-on au routeur si on veut l'utiliser comme passerelle ? (répondre sous forme x.x.x.x)",
+      "time": 20,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "192.168.0.1",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "192.168.0.1",
+        "192.168.0.254",
+        "192.168.0.2"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans Filius, un réseau local fonctionne parfaitement. On change l'adresse IP du serveur sans mettre à jour les ordinateurs. Que se passe-t-il ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Les ordinateurs ne trouvent plus le serveur à son ancienne adresse : le ping échoue",
+          "correct": true
+        },
+        {
+          "text": "Les ordinateurs retrouvent automatiquement le serveur à sa nouvelle adresse",
+          "correct": false
+        },
+        {
+          "text": "Le switch informe tous les ordinateurs du changement d'adresse",
+          "correct": false
+        },
+        {
+          "text": "Rien ne change, l'adresse IP du serveur n'a pas d'importance",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans Filius, on peut pinguer une machine en utilisant son adresse IP même si on ne connaît pas son nom.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Remets dans l'ordre les étapes pour construire et tester un réseau local complet dans Filius :",
+      "time": 40,
+      "answers": [
+        {
+          "text": "Placer les équipements (ordinateurs, serveur, switch, routeur)",
+          "correct": true
+        },
+        {
+          "text": "Relier tous les équipements au switch avec des câbles, et le switch au routeur",
+          "correct": true
+        },
+        {
+          "text": "Configurer une adresse IP unique sur chaque machine et la passerelle sur les ordinateurs",
+          "correct": true
+        },
+        {
+          "text": "Ouvrir le terminal d'un ordinateur et taper ping vers une autre machine",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans Filius, quelle est la différence entre le câble qui relie un ordinateur au switch et le câble qui relie le switch au routeur ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Ils jouent des rôles différents : l'un connecte une machine au réseau local, l'autre relie le réseau local au routeur",
+          "correct": true
+        },
+        {
+          "text": "Le câble vers le routeur est plus rapide que celui vers les ordinateurs",
+          "correct": false
+        },
+        {
+          "text": "Il n'y a aucune différence, les deux câbles sont identiques et interchangeables dans leur rôle",
+          "correct": false
+        },
+        {
+          "text": "Le câble vers le routeur transporte des adresses IP, pas le câble vers les ordinateurs",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

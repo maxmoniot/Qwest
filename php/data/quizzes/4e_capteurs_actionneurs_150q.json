@@ -1,0 +1,3310 @@
+{
+  "name": "4e_capteurs_actionneurs_150q",
+  "version": "1.0",
+  "createdAt": "2026-04-05T17:00:00.000Z",
+  "questionsCount": 150,
+  "questions": [
+    {
+      "type": "multiple",
+      "question": "Quelle est la définition exacte d'un capteur ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un composant qui mesure une grandeur physique",
+          "correct": true
+        },
+        {
+          "text": "Un composant qui convertit de l'énergie",
+          "correct": false
+        },
+        {
+          "text": "Un composant qui alimente le système en énergie",
+          "correct": false
+        },
+        {
+          "text": "Un composant qui transmet un mouvement",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la définition exacte d'un actionneur ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un composant qui convertit de l'énergie",
+          "correct": true
+        },
+        {
+          "text": "Un composant qui mesure une grandeur physique",
+          "correct": false
+        },
+        {
+          "text": "Un composant qui stocke de l'information",
+          "correct": false
+        },
+        {
+          "text": "Un composant qui alimente le système",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un bouton poussoir est un capteur car il détecte une action (appui) et transmet une information.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Parmi ces composants, lequel est un actionneur ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Une résistance chauffante",
+          "correct": true
+        },
+        {
+          "text": "Un bouton poussoir",
+          "correct": false
+        },
+        {
+          "text": "Un capteur de température",
+          "correct": false
+        },
+        {
+          "text": "Un interrupteur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La fonction technique d'une bouilloire électrique est :",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Chauffer de l'eau",
+          "correct": true
+        },
+        {
+          "text": "La résistance chauffante et le thermostat",
+          "correct": false
+        },
+        {
+          "text": "Alimenter en électricité",
+          "correct": false
+        },
+        {
+          "text": "Stocker de l'eau chaude",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une bouilloire électrique, quelle est la solution technique pour l'étape 'Alimenter' de la chaîne de l'énergie ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le cordon d'alimentation branché au secteur (230 V)",
+          "correct": true
+        },
+        {
+          "text": "La résistance chauffante",
+          "correct": false
+        },
+        {
+          "text": "Le thermostat bimétallique",
+          "correct": false
+        },
+        {
+          "text": "Le bouton de mise en marche",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une bouilloire électrique, quelle est la solution technique pour l'étape 'Convertir' de la chaîne de l'énergie ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La résistance chauffante (énergie électrique → énergie thermique)",
+          "correct": true
+        },
+        {
+          "text": "Le cordon d'alimentation",
+          "correct": false
+        },
+        {
+          "text": "Le bouton marche/arrêt",
+          "correct": false
+        },
+        {
+          "text": "Le couvercle de la bouilloire",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une bouilloire électrique, quel composant est le capteur de la chaîne de l'information ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le thermostat (détecte quand l'eau bout à 100°C)",
+          "correct": true
+        },
+        {
+          "text": "La résistance chauffante",
+          "correct": false
+        },
+        {
+          "text": "Le cordon électrique",
+          "correct": false
+        },
+        {
+          "text": "La cuve en inox",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Pour une bouilloire électrique, remets les étapes de la chaîne de l'information dans l'ordre :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Le thermostat détecte la température de l'eau",
+          "correct": true
+        },
+        {
+          "text": "Le système électronique compare la température à 100°C",
+          "correct": true
+        },
+        {
+          "text": "L'alimentation est coupée et un signal sonore retentit",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La fonction technique d'un ventilateur de bureau est :",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Brasser l'air",
+          "correct": true
+        },
+        {
+          "text": "Refroidir l'air par climatisation",
+          "correct": false
+        },
+        {
+          "text": "Mesurer la température",
+          "correct": false
+        },
+        {
+          "text": "Convertir l'énergie thermique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un ventilateur de bureau, quelle est la solution technique pour l'étape 'Convertir' de la chaîne de l'énergie ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le moteur électrique (énergie électrique → énergie mécanique)",
+          "correct": true
+        },
+        {
+          "text": "Les pales en plastique",
+          "correct": false
+        },
+        {
+          "text": "Le bouton de vitesse",
+          "correct": false
+        },
+        {
+          "text": "Le câble d'alimentation",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un ventilateur de bureau, quelle est la solution technique pour l'étape 'Transmettre' de la chaîne de l'énergie ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'axe du moteur directement lié aux pales",
+          "correct": true
+        },
+        {
+          "text": "Le moteur électrique",
+          "correct": false
+        },
+        {
+          "text": "Le câble d'alimentation",
+          "correct": false
+        },
+        {
+          "text": "Le bouton marche/arrêt",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans la chaîne de l'énergie d'un ventilateur, les pales sont l'effecteur final qui produit l'effet utile (le flux d'air).",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La fonction technique d'un sèche-cheveux est :",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Sécher les cheveux en projetant de l'air chaud",
+          "correct": true
+        },
+        {
+          "text": "Mesurer la température de l'air",
+          "correct": false
+        },
+        {
+          "text": "Alimenter en énergie électrique",
+          "correct": false
+        },
+        {
+          "text": "Convertir l'énergie mécanique en chaleur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un sèche-cheveux, quelles sont les deux solutions techniques pour l'étape 'Convertir' de la chaîne de l'énergie ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Le moteur (pour le ventilateur) ET la résistance chauffante (pour la chaleur)",
+          "correct": true
+        },
+        {
+          "text": "Le câble et la prise électrique",
+          "correct": false
+        },
+        {
+          "text": "Le bouton de vitesse et le bouton de température",
+          "correct": false
+        },
+        {
+          "text": "L'hélice et le boîtier en plastique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un sèche-cheveux, quel composant est un capteur de la chaîne de l'information ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le thermostat de sécurité (coupe en cas de surchauffe)",
+          "correct": true
+        },
+        {
+          "text": "La résistance chauffante",
+          "correct": false
+        },
+        {
+          "text": "Le moteur du ventilateur",
+          "correct": false
+        },
+        {
+          "text": "Le câble d'alimentation",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La fonction technique d'une sonnette électrique est :",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Signaler acoustiquement la présence d'une personne",
+          "correct": true
+        },
+        {
+          "text": "Ouvrir la porte d'entrée",
+          "correct": false
+        },
+        {
+          "text": "Mesurer la pression exercée sur le bouton",
+          "correct": false
+        },
+        {
+          "text": "Alimenter le circuit électrique de la maison",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une sonnette électrique simple, quel est le capteur de la chaîne de l'information ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le bouton poussoir (détecte l'appui d'une personne)",
+          "correct": true
+        },
+        {
+          "text": "Le carillon sonore",
+          "correct": false
+        },
+        {
+          "text": "Le transformateur d'alimentation",
+          "correct": false
+        },
+        {
+          "text": "Le câble électrique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une sonnette électrique simple, quel est l'actionneur ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Le carillon (buzzer ou haut-parleur) qui produit le son",
+          "correct": true
+        },
+        {
+          "text": "Le bouton poussoir",
+          "correct": false
+        },
+        {
+          "text": "Le câble d'alimentation",
+          "correct": false
+        },
+        {
+          "text": "Le transformateur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Pour une sonnette électrique, remets les étapes de la chaîne de l'information dans l'ordre :",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le bouton poussoir est appuyé par le visiteur",
+          "correct": true
+        },
+        {
+          "text": "Le circuit électronique reçoit le signal",
+          "correct": true
+        },
+        {
+          "text": "Le carillon émet un son",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La fonction technique d'un feu tricolore est :",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Réguler la circulation des véhicules et des piétons",
+          "correct": true
+        },
+        {
+          "text": "Mesurer la vitesse des voitures",
+          "correct": false
+        },
+        {
+          "text": "Alimenter les routes en énergie électrique",
+          "correct": false
+        },
+        {
+          "text": "Transmettre les données de trafic par satellite",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un feu tricolore avec détection de véhicules, quel est le capteur ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La boucle de détection magnétique encastrée dans la chaussée",
+          "correct": true
+        },
+        {
+          "text": "Les ampoules LED de couleur",
+          "correct": false
+        },
+        {
+          "text": "Le boîtier de commande du carrefour",
+          "correct": false
+        },
+        {
+          "text": "Le poteau en métal",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un feu tricolore, quel est l'actionneur ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Les ampoules LED (convertissent l'énergie électrique en lumière)",
+          "correct": true
+        },
+        {
+          "text": "La boucle de détection au sol",
+          "correct": false
+        },
+        {
+          "text": "Le boîtier de commande",
+          "correct": false
+        },
+        {
+          "text": "Le câble d'alimentation souterrain",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans la chaîne de l'énergie, l'étape 'Distribuer' peut être réalisée par un interrupteur ou un contacteur qui commande l'alimentation d'un actionneur.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La fonction technique d'un sèche-mains automatique (dans les toilettes) est :",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Sécher les mains par projection d'air",
+          "correct": true
+        },
+        {
+          "text": "Mesurer la présence d'eau sur les mains",
+          "correct": false
+        },
+        {
+          "text": "Distribuer du savon liquide",
+          "correct": false
+        },
+        {
+          "text": "Alimenter le circuit électrique en courant continu",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un sèche-mains automatique, quel est le capteur de la chaîne de l'information ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le capteur infrarouge de présence des mains",
+          "correct": true
+        },
+        {
+          "text": "Le moteur de la turbine",
+          "correct": false
+        },
+        {
+          "text": "La résistance chauffante",
+          "correct": false
+        },
+        {
+          "text": "Le câble d'alimentation",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un sèche-mains automatique, quelle est la solution technique pour l'étape 'Convertir' de la chaîne de l'énergie ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le moteur de la turbine (énergie électrique → énergie mécanique/air)",
+          "correct": true
+        },
+        {
+          "text": "Le capteur infrarouge",
+          "correct": false
+        },
+        {
+          "text": "Le câble secteur",
+          "correct": false
+        },
+        {
+          "text": "La carte électronique de commande",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La fonction technique d'une barrière automatique de parking est :",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Contrôler l'accès des véhicules",
+          "correct": true
+        },
+        {
+          "text": "Mesurer la vitesse des véhicules entrants",
+          "correct": false
+        },
+        {
+          "text": "Alimenter le parking en énergie électrique",
+          "correct": false
+        },
+        {
+          "text": "Transmettre les données de fréquentation",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une barrière automatique de parking, quelle est la solution technique pour l'étape 'Distribuer' de la chaîne de l'énergie ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le contacteur électrique commandé par l'automate",
+          "correct": true
+        },
+        {
+          "text": "Le moteur de levage de la barrière",
+          "correct": false
+        },
+        {
+          "text": "Le câble d'alimentation secteur",
+          "correct": false
+        },
+        {
+          "text": "Le bras de la barrière",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une barrière automatique de parking, quelle est la solution technique pour l'étape 'Transmettre' de la chaîne de l'énergie ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le système bielle-manivelle ou la courroie qui lève le bras",
+          "correct": true
+        },
+        {
+          "text": "Le moteur électrique",
+          "correct": false
+        },
+        {
+          "text": "Le contacteur de commande",
+          "correct": false
+        },
+        {
+          "text": "Le capteur de présence",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'étape 'Traiter' de la chaîne de l'information peut être réalisée par un être humain qui appuie sur un bouton après avoir observé une information.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La fonction technique d'une perceuse électrique est :",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Percer des matériaux",
+          "correct": true
+        },
+        {
+          "text": "Mesurer la dureté des matériaux",
+          "correct": false
+        },
+        {
+          "text": "Convertir l'énergie chimique en énergie électrique",
+          "correct": false
+        },
+        {
+          "text": "Alimenter les outils en énergie",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une perceuse électrique sans fil, quelle est la solution technique pour l'étape 'Alimenter' de la chaîne de l'énergie ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Une batterie rechargeable (lithium-ion)",
+          "correct": true
+        },
+        {
+          "text": "Le moteur électrique",
+          "correct": false
+        },
+        {
+          "text": "Le mandrin porte-foret",
+          "correct": false
+        },
+        {
+          "text": "La gâchette de vitesse",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une perceuse électrique, quelle est la solution technique pour l'étape 'Transmettre' de la chaîne de l'énergie vers le foret ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le mandrin qui maintient et entraîne le foret",
+          "correct": true
+        },
+        {
+          "text": "Le moteur électrique",
+          "correct": false
+        },
+        {
+          "text": "La batterie rechargeable",
+          "correct": false
+        },
+        {
+          "text": "La gâchette de mise en marche",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une perceuse électrique, quel composant est un capteur de la chaîne de l'information ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La gâchette (capteur de pression qui mesure l'appui du doigt)",
+          "correct": true
+        },
+        {
+          "text": "Le moteur",
+          "correct": false
+        },
+        {
+          "text": "La batterie",
+          "correct": false
+        },
+        {
+          "text": "Le mandrin",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La fonction technique d'une lampe de bureau à détection de présence est :",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Éclairer automatiquement lorsqu'une personne est présente",
+          "correct": true
+        },
+        {
+          "text": "Mesurer l'intensité lumineuse de la pièce",
+          "correct": false
+        },
+        {
+          "text": "Alimenter le réseau électrique de la maison",
+          "correct": false
+        },
+        {
+          "text": "Transmettre des données de présence par Wi-Fi",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une lampe à détection de présence, quel composant réalise l'étape 'Acquérir' de la chaîne de l'information ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le capteur infrarouge passif (PIR) de détection de mouvement",
+          "correct": true
+        },
+        {
+          "text": "L'ampoule LED",
+          "correct": false
+        },
+        {
+          "text": "Le câble d'alimentation",
+          "correct": false
+        },
+        {
+          "text": "Le minuteur électronique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Pour une lampe à détection de présence, remets les étapes de la chaîne de l'information dans l'ordre :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Le capteur PIR détecte un mouvement dans la pièce",
+          "correct": true
+        },
+        {
+          "text": "L'électronique traite le signal et démarre un minuteur",
+          "correct": true
+        },
+        {
+          "text": "La lampe LED s'allume et reste allumée pendant la durée du minuteur",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La fonction technique d'un vélo à assistance électrique (VAE) est :",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Assister le pédalage du cycliste par un moteur électrique",
+          "correct": true
+        },
+        {
+          "text": "Mesurer la vitesse du vélo",
+          "correct": false
+        },
+        {
+          "text": "Stocker de l'énergie solaire pour se déplacer",
+          "correct": false
+        },
+        {
+          "text": "Recharger un smartphone pendant le trajet",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un vélo à assistance électrique, quel capteur mesure la force exercée par le cycliste sur les pédales ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le capteur de couple ou de cadence de pédalage",
+          "correct": true
+        },
+        {
+          "text": "Le moteur du moyeu",
+          "correct": false
+        },
+        {
+          "text": "La batterie lithium",
+          "correct": false
+        },
+        {
+          "text": "Le dérailleur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un vélo à assistance électrique, quelle est la solution technique pour l'étape 'Distribuer' de la chaîne de l'énergie ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le contrôleur électronique qui régule l'alimentation du moteur",
+          "correct": true
+        },
+        {
+          "text": "La batterie lithium-ion",
+          "correct": false
+        },
+        {
+          "text": "Le moteur du moyeu",
+          "correct": false
+        },
+        {
+          "text": "La chaîne de transmission",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans la chaîne de l'énergie, l'actionneur et l'effecteur sont toujours deux composants séparés.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La fonction technique d'un monte-charge (ascenseur de marchandises) est :",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Déplacer verticalement des charges entre différents niveaux",
+          "correct": true
+        },
+        {
+          "text": "Mesurer le poids des marchandises",
+          "correct": false
+        },
+        {
+          "text": "Distribuer l'énergie électrique dans un bâtiment",
+          "correct": false
+        },
+        {
+          "text": "Communiquer les données de livraison",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un monte-charge, quelle est la solution technique pour l'étape 'Convertir' de la chaîne de l'énergie ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le moteur électrique de traction",
+          "correct": true
+        },
+        {
+          "text": "Le câble d'acier",
+          "correct": false
+        },
+        {
+          "text": "Le bouton d'appel",
+          "correct": false
+        },
+        {
+          "text": "Le réseau électrique du bâtiment",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un monte-charge, quel composant est un capteur qui arrête la plateforme au bon niveau ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un détecteur de position (fin de course) à chaque étage",
+          "correct": true
+        },
+        {
+          "text": "Le moteur de traction",
+          "correct": false
+        },
+        {
+          "text": "Le contacteur de commande",
+          "correct": false
+        },
+        {
+          "text": "Le câble de levage",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pour analyser un système technique en 4ème, que faut-il préciser pour chaque étape de la chaîne de l'énergie ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le nom du composant réel (solution technique) qui réalise cette étape",
+          "correct": true
+        },
+        {
+          "text": "Uniquement le nom de l'étape (alimenter, distribuer, etc.)",
+          "correct": false
+        },
+        {
+          "text": "La couleur et la forme du composant",
+          "correct": false
+        },
+        {
+          "text": "Le prix du composant",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La fonction technique d'une brosse à dents électrique est :",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Nettoyer les dents par vibration ou rotation",
+          "correct": true
+        },
+        {
+          "text": "Mesurer la pression exercée sur les dents",
+          "correct": false
+        },
+        {
+          "text": "Détecter la présence de caries",
+          "correct": false
+        },
+        {
+          "text": "Alimenter en énergie la salle de bain",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une brosse à dents électrique, quelle est la solution technique pour l'étape 'Alimenter' de la chaîne de l'énergie ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Une petite batterie rechargeable intégrée au manche",
+          "correct": true
+        },
+        {
+          "text": "Le moteur vibrant",
+          "correct": false
+        },
+        {
+          "text": "La tête de brosse",
+          "correct": false
+        },
+        {
+          "text": "Le bouton on/off",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La fonction technique d'un mixeur de cuisine est :",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Mélanger ou broyer des aliments",
+          "correct": true
+        },
+        {
+          "text": "Mesurer la température des aliments",
+          "correct": false
+        },
+        {
+          "text": "Chauffer les aliments par induction",
+          "correct": false
+        },
+        {
+          "text": "Distribuer l'énergie électrique en cuisine",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un mixeur de cuisine, quelle est la solution technique pour l'étape 'Convertir' de la chaîne de l'énergie ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le moteur électrique (énergie électrique → énergie mécanique de rotation)",
+          "correct": true
+        },
+        {
+          "text": "Le câble d'alimentation",
+          "correct": false
+        },
+        {
+          "text": "Le bol en plastique",
+          "correct": false
+        },
+        {
+          "text": "Le bouton de vitesse",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un mixeur de cuisine, quelle est la solution technique pour l'étape 'Transmettre' de la chaîne de l'énergie vers les lames ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'axe du moteur accouplé directement aux lames",
+          "correct": true
+        },
+        {
+          "text": "Le moteur électrique",
+          "correct": false
+        },
+        {
+          "text": "Le bouton marche/arrêt",
+          "correct": false
+        },
+        {
+          "text": "Le câble d'alimentation",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un mixeur de cuisine, quel composant est un capteur de la chaîne de l'information ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le détecteur de fermeture du bol (sécurité de verrouillage)",
+          "correct": true
+        },
+        {
+          "text": "Le moteur électrique",
+          "correct": false
+        },
+        {
+          "text": "Les lames en inox",
+          "correct": false
+        },
+        {
+          "text": "Le câble secteur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La fonction technique d'un objet s'exprime toujours avec un verbe à l'infinitif.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La fonction technique d'un ouvre-boîte électrique est :",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Ouvrir les boîtes de conserve",
+          "correct": true
+        },
+        {
+          "text": "Mesurer la pression du couvercle",
+          "correct": false
+        },
+        {
+          "text": "Distribuer l'énergie vers le moteur",
+          "correct": false
+        },
+        {
+          "text": "Convertir l'énergie chimique en énergie mécanique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La fonction technique d'un store motorisé extérieur est :",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Protéger du soleil et de la pluie en s'étendant ou se repliant",
+          "correct": true
+        },
+        {
+          "text": "Mesurer la luminosité extérieure",
+          "correct": false
+        },
+        {
+          "text": "Alimenter la maison en énergie solaire",
+          "correct": false
+        },
+        {
+          "text": "Convertir l'énergie du vent",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un store motorisé extérieur, quel est le capteur qui déclenche le repli automatique par vent fort ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Un anémomètre (capteur de vitesse du vent)",
+          "correct": true
+        },
+        {
+          "text": "Le moteur tubulaire",
+          "correct": false
+        },
+        {
+          "text": "La télécommande radio",
+          "correct": false
+        },
+        {
+          "text": "Le contacteur de fin de course",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un store motorisé extérieur, quelle est la solution technique pour l'étape 'Convertir' de la chaîne de l'énergie ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le moteur tubulaire électrique",
+          "correct": true
+        },
+        {
+          "text": "Le câble d'alimentation secteur",
+          "correct": false
+        },
+        {
+          "text": "L'anémomètre",
+          "correct": false
+        },
+        {
+          "text": "La télécommande radio",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Pour un store motorisé avec capteur de vent, remets les étapes de la chaîne de l'information dans l'ordre :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "L'anémomètre mesure la vitesse du vent",
+          "correct": true
+        },
+        {
+          "text": "L'électronique compare la vitesse au seuil de sécurité",
+          "correct": true
+        },
+        {
+          "text": "Le moteur reçoit l'ordre de replier le store",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La fonction technique d'une imprimante de bureau est :",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Reproduire sur papier un document numérique",
+          "correct": true
+        },
+        {
+          "text": "Numériser des documents papier",
+          "correct": false
+        },
+        {
+          "text": "Mesurer la qualité d'impression",
+          "correct": false
+        },
+        {
+          "text": "Alimenter un ordinateur en données",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une imprimante de bureau, quelle est la solution technique pour l'étape 'Alimenter' de la chaîne de l'énergie ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'alimentation à découpage branchée au secteur",
+          "correct": true
+        },
+        {
+          "text": "Le moteur d'avance du papier",
+          "correct": false
+        },
+        {
+          "text": "La tête d'impression",
+          "correct": false
+        },
+        {
+          "text": "La cartouche d'encre",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une imprimante de bureau, quel composant est un capteur de la chaîne de l'information ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le capteur de présence de papier (optique)",
+          "correct": true
+        },
+        {
+          "text": "Le moteur d'avance du papier",
+          "correct": false
+        },
+        {
+          "text": "La tête d'impression à jet d'encre",
+          "correct": false
+        },
+        {
+          "text": "Le câble USB",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une imprimante de bureau, quel est l'actionneur qui déplace la tête d'impression ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le moteur pas à pas du chariot",
+          "correct": true
+        },
+        {
+          "text": "Le capteur de fin de course",
+          "correct": false
+        },
+        {
+          "text": "La carte électronique de commande",
+          "correct": false
+        },
+        {
+          "text": "Le câble d'alimentation",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans la chaîne de l'énergie, il peut y avoir plusieurs actionneurs différents dans un même système.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La fonction technique d'un lave-auto automatique est :",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Laver et sécher un véhicule automatiquement",
+          "correct": true
+        },
+        {
+          "text": "Mesurer la salissure du véhicule",
+          "correct": false
+        },
+        {
+          "text": "Alimenter les pompes en eau courante",
+          "correct": false
+        },
+        {
+          "text": "Distribuer le produit lessivier dans les canalisations",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un lave-auto automatique, quel est le capteur qui détecte l'entrée du véhicule ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un capteur de présence (barrière optique ou inductif au sol)",
+          "correct": true
+        },
+        {
+          "text": "La brosse de lavage rotative",
+          "correct": false
+        },
+        {
+          "text": "La pompe haute pression",
+          "correct": false
+        },
+        {
+          "text": "Le souffleur de séchage",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un lave-auto automatique, quelle est la solution technique pour l'étape 'Convertir' pour le lavage par brosses ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Les moteurs électriques qui entraînent les brosses rotatives",
+          "correct": true
+        },
+        {
+          "text": "La pompe à eau haute pression",
+          "correct": false
+        },
+        {
+          "text": "Le capteur de présence",
+          "correct": false
+        },
+        {
+          "text": "L'alimentation électrique du site",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La fonction technique d'un toboggan aquatique avec pompe est :",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Faire glisser des personnes sur un flux d'eau",
+          "correct": true
+        },
+        {
+          "text": "Mesurer le débit d'eau dans la glissière",
+          "correct": false
+        },
+        {
+          "text": "Alimenter en eau le parc aquatique",
+          "correct": false
+        },
+        {
+          "text": "Convertir l'énergie solaire en eau chaude",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un système de toboggan aquatique, quelle est la solution technique pour l'étape 'Convertir' de la chaîne de l'énergie ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La pompe électrique (convertit l'énergie électrique en énergie hydraulique)",
+          "correct": true
+        },
+        {
+          "text": "Le tuyau d'alimentation en eau",
+          "correct": false
+        },
+        {
+          "text": "Le bassin de réception",
+          "correct": false
+        },
+        {
+          "text": "Le compteur électrique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La solution technique d'un même système peut être différente d'un modèle à l'autre, tout en remplissant la même fonction technique.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La fonction technique d'un monte-escalier (pour personnes à mobilité réduite) est :",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Déplacer une personne le long d'un escalier en toute sécurité",
+          "correct": true
+        },
+        {
+          "text": "Mesurer le poids de la personne assise",
+          "correct": false
+        },
+        {
+          "text": "Alimenter le circuit électrique de l'escalier",
+          "correct": false
+        },
+        {
+          "text": "Distribuer l'énergie entre les différents niveaux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un monte-escalier, quelle est la solution technique pour l'étape 'Alimenter' de la chaîne de l'énergie ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Une batterie rechargeable (fonctionne même en cas de coupure secteur)",
+          "correct": true
+        },
+        {
+          "text": "Le moteur de déplacement",
+          "correct": false
+        },
+        {
+          "text": "Le rail de guidage",
+          "correct": false
+        },
+        {
+          "text": "La télécommande",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un monte-escalier, quelle est la solution technique pour l'étape 'Transmettre' de la chaîne de l'énergie ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un système pignon-crémaillère sur le rail",
+          "correct": true
+        },
+        {
+          "text": "Le moteur électrique",
+          "correct": false
+        },
+        {
+          "text": "La batterie d'alimentation",
+          "correct": false
+        },
+        {
+          "text": "Le contacteur de commande",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un monte-escalier, quel capteur arrête le déplacement en haut ou en bas de l'escalier ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Des fins de course mécaniques aux extrémités du rail",
+          "correct": true
+        },
+        {
+          "text": "Le moteur électrique",
+          "correct": false
+        },
+        {
+          "text": "La télécommande",
+          "correct": false
+        },
+        {
+          "text": "La batterie",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Pour un monte-escalier, remets les étapes de la chaîne de l'énergie dans l'ordre :",
+      "time": 40,
+      "answers": [
+        {
+          "text": "La batterie rechargeable fournit l'énergie électrique",
+          "correct": true
+        },
+        {
+          "text": "Le contacteur commande l'alimentation du moteur",
+          "correct": true
+        },
+        {
+          "text": "Le moteur électrique convertit l'énergie en rotation",
+          "correct": true
+        },
+        {
+          "text": "Le système pignon-crémaillère déplace le siège sur le rail",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La fonction technique d'un détecteur de fumée résidentiel est :",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Alerter les occupants en cas de début d'incendie",
+          "correct": true
+        },
+        {
+          "text": "Éteindre automatiquement un incendie",
+          "correct": false
+        },
+        {
+          "text": "Mesurer la température des pièces",
+          "correct": false
+        },
+        {
+          "text": "Couper l'alimentation électrique du logement",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un détecteur de fumée résidentiel, quelle est la solution technique pour l'étape 'Alimenter' ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Une pile (souvent 9V ou lithium)",
+          "correct": true
+        },
+        {
+          "text": "Le capteur optique de fumée",
+          "correct": false
+        },
+        {
+          "text": "La sirène piezo",
+          "correct": false
+        },
+        {
+          "text": "Le câble secteur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un détecteur de fumée résidentiel, quel est le capteur de la chaîne de l'information ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La chambre optique qui détecte les particules de fumée",
+          "correct": true
+        },
+        {
+          "text": "La sirène piezoélectrique",
+          "correct": false
+        },
+        {
+          "text": "La pile d'alimentation",
+          "correct": false
+        },
+        {
+          "text": "Le bouton test",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un détecteur de fumée résidentiel, quel est l'actionneur ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "La sirène piezoélectrique (énergie électrique → énergie sonore)",
+          "correct": true
+        },
+        {
+          "text": "La chambre optique",
+          "correct": false
+        },
+        {
+          "text": "La pile",
+          "correct": false
+        },
+        {
+          "text": "Le circuit électronique de traitement",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans un détecteur de fumée, le capteur et l'actionneur font tous les deux partie de la chaîne de l'information.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La fonction technique d'une tronçonneuse électrique est :",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Couper du bois",
+          "correct": true
+        },
+        {
+          "text": "Mesurer la dureté du bois",
+          "correct": false
+        },
+        {
+          "text": "Convertir l'énergie thermique en énergie mécanique",
+          "correct": false
+        },
+        {
+          "text": "Distribuer l'énergie vers la chaîne de coupe",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une tronçonneuse électrique sans fil, quelle est la solution technique pour l'étape 'Distribuer' de la chaîne de l'énergie ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "La gâchette (interrupteur) qui commande l'alimentation du moteur",
+          "correct": true
+        },
+        {
+          "text": "La batterie rechargeable",
+          "correct": false
+        },
+        {
+          "text": "Le moteur brushless",
+          "correct": false
+        },
+        {
+          "text": "La chaîne de coupe",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une tronçonneuse électrique, quelle est la solution technique pour l'étape 'Transmettre' vers la chaîne de coupe ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le pignon d'entraînement de la chaîne de coupe",
+          "correct": true
+        },
+        {
+          "text": "Le moteur brushless",
+          "correct": false
+        },
+        {
+          "text": "La batterie",
+          "correct": false
+        },
+        {
+          "text": "La gâchette de commande",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La fonction technique d'un robot tondeuse automatique est :",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Tondre la pelouse automatiquement",
+          "correct": true
+        },
+        {
+          "text": "Mesurer la hauteur de l'herbe",
+          "correct": false
+        },
+        {
+          "text": "Distribuer l'eau sur le gazon",
+          "correct": false
+        },
+        {
+          "text": "Alimenter le jardin en énergie solaire",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un robot tondeuse, quel composant est un capteur qui l'empêche de sortir du jardin ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Un capteur de fil périphérique (détecte le signal du câble enterré)",
+          "correct": true
+        },
+        {
+          "text": "Les moteurs de roues",
+          "correct": false
+        },
+        {
+          "text": "La lame de coupe rotative",
+          "correct": false
+        },
+        {
+          "text": "La batterie lithium",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un robot tondeuse, quel est l'actionneur qui réalise la coupe de l'herbe ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le moteur électrique entraînant la lame de coupe",
+          "correct": true
+        },
+        {
+          "text": "Le capteur de périmètre",
+          "correct": false
+        },
+        {
+          "text": "La batterie rechargeable",
+          "correct": false
+        },
+        {
+          "text": "Le capteur de pluie",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Pour un robot tondeuse, remets les étapes de la chaîne de l'information (détection de la pluie) dans l'ordre :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Le capteur de pluie détecte les gouttes d'eau",
+          "correct": true
+        },
+        {
+          "text": "Le microcontrôleur décide d'arrêter la tonte",
+          "correct": true
+        },
+        {
+          "text": "Les moteurs s'arrêtent et le robot retourne à sa base",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La fonction technique d'un portail coulissant motorisé est :",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Contrôler l'accès à une propriété en ouvrant ou fermant le portail",
+          "correct": true
+        },
+        {
+          "text": "Mesurer la présence de véhicules dans l'entrée",
+          "correct": false
+        },
+        {
+          "text": "Alimenter la maison en énergie",
+          "correct": false
+        },
+        {
+          "text": "Distribuer l'énergie vers les différents moteurs",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un portail coulissant motorisé, quelle est la solution technique pour l'étape 'Convertir' de la chaîne de l'énergie ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le motoréducteur électrique (moteur + réducteur de vitesse)",
+          "correct": true
+        },
+        {
+          "text": "Le câble d'alimentation secteur",
+          "correct": false
+        },
+        {
+          "text": "La crémaillère du portail",
+          "correct": false
+        },
+        {
+          "text": "La télécommande radio",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un portail coulissant motorisé, quelle est la solution technique pour l'étape 'Transmettre' ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le pignon du motoréducteur engagé sur la crémaillère du portail",
+          "correct": true
+        },
+        {
+          "text": "Le motoréducteur électrique",
+          "correct": false
+        },
+        {
+          "text": "Le contacteur de commande",
+          "correct": false
+        },
+        {
+          "text": "La télécommande radio",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un portail coulissant motorisé, quel capteur arrête le portail en position ouverte ou fermée ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un fin de course magnétique ou mécanique",
+          "correct": true
+        },
+        {
+          "text": "Le motoréducteur",
+          "correct": false
+        },
+        {
+          "text": "La télécommande",
+          "correct": false
+        },
+        {
+          "text": "Le câble d'alimentation",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans un portail motorisé, la télécommande radio est à la fois un capteur (elle émet un signal) ET fait partie de la chaîne de l'information (étape acquérir du côté du récepteur).",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La fonction technique d'une machine à laver le linge est :",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Laver et essorer le linge",
+          "correct": true
+        },
+        {
+          "text": "Mesurer la quantité de linge dans le tambour",
+          "correct": false
+        },
+        {
+          "text": "Distribuer l'eau dans les canalisations",
+          "correct": false
+        },
+        {
+          "text": "Convertir l'énergie thermique en énergie mécanique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une machine à laver le linge, quelle est la solution technique pour l'étape 'Distribuer' de la chaîne de l'énergie ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "La carte électronique qui commande les actionneurs selon le programme",
+          "correct": true
+        },
+        {
+          "text": "Le moteur du tambour",
+          "correct": false
+        },
+        {
+          "text": "La résistance de chauffage de l'eau",
+          "correct": false
+        },
+        {
+          "text": "Le câble d'alimentation secteur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une machine à laver le linge, quel capteur permet de ne pas dépasser le niveau d'eau voulu ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le pressostat (capteur de pression qui mesure le niveau d'eau)",
+          "correct": true
+        },
+        {
+          "text": "Le moteur du tambour",
+          "correct": false
+        },
+        {
+          "text": "La résistance chauffante",
+          "correct": false
+        },
+        {
+          "text": "La pompe de vidange",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Pour une machine à laver, remets les étapes de la chaîne de l'énergie (cycle d'essorage) dans l'ordre :",
+      "time": 40,
+      "answers": [
+        {
+          "text": "Le réseau secteur alimente la machine",
+          "correct": true
+        },
+        {
+          "text": "La carte électronique commande le moteur à grande vitesse",
+          "correct": true
+        },
+        {
+          "text": "Le moteur convertit l'énergie électrique en rotation rapide",
+          "correct": true
+        },
+        {
+          "text": "La courroie transmet la rotation au tambour",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La fonction technique d'une caisse enregistreuse automatique (self-checkout) est :",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Permettre au client d'enregistrer et de payer ses achats seul",
+          "correct": true
+        },
+        {
+          "text": "Mesurer le poids des articles dans le panier",
+          "correct": false
+        },
+        {
+          "text": "Alimenter le magasin en énergie électrique",
+          "correct": false
+        },
+        {
+          "text": "Distribuer la monnaie dans les rayons",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une caisse self-checkout, quel composant réalise l'étape 'Acquérir' pour identifier un article ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le scanner laser ou la caméra de lecture de code-barres",
+          "correct": true
+        },
+        {
+          "text": "L'écran tactile",
+          "correct": false
+        },
+        {
+          "text": "Le terminal de paiement",
+          "correct": false
+        },
+        {
+          "text": "La balance de contrôle",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une caisse self-checkout, quel actionneur valide le passage d'un article en émettant un bip sonore ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le buzzer ou le haut-parleur intégré",
+          "correct": true
+        },
+        {
+          "text": "Le scanner laser",
+          "correct": false
+        },
+        {
+          "text": "Le processeur de la caisse",
+          "correct": false
+        },
+        {
+          "text": "L'écran tactile",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La fonction technique d'un grille-pain électrique est :",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Griller des tranches de pain par rayonnement thermique",
+          "correct": true
+        },
+        {
+          "text": "Mesurer la température des résistances",
+          "correct": false
+        },
+        {
+          "text": "Distribuer l'énergie vers la cuisine",
+          "correct": false
+        },
+        {
+          "text": "Convertir l'énergie mécanique en chaleur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un grille-pain électrique, quelle est la solution technique pour l'étape 'Convertir' de la chaîne de l'énergie ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Les résistances chauffantes (énergie électrique → énergie thermique)",
+          "correct": true
+        },
+        {
+          "text": "Le câble d'alimentation secteur",
+          "correct": false
+        },
+        {
+          "text": "Le levier d'abaissement des tranches",
+          "correct": false
+        },
+        {
+          "text": "Le bouton de réglage de dorure",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un grille-pain électrique, quel est le capteur de la chaîne de l'information qui déclenche l'éjection des tartines ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un minuteur ou un thermostat bimétallique (détecte la fin de cuisson)",
+          "correct": true
+        },
+        {
+          "text": "Les résistances chauffantes",
+          "correct": false
+        },
+        {
+          "text": "Le câble d'alimentation",
+          "correct": false
+        },
+        {
+          "text": "Le plateau ramasse-miettes",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un grille-pain électrique, quel est l'actionneur qui éjecte les tartines en fin de cuisson ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un ressort libéré par un électroaimant",
+          "correct": true
+        },
+        {
+          "text": "Les résistances chauffantes",
+          "correct": false
+        },
+        {
+          "text": "Le câble secteur",
+          "correct": false
+        },
+        {
+          "text": "Le bouton de réglage",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans un grille-pain, les résistances chauffantes sont à la fois un actionneur de la chaîne de l'énergie ET un composant qui réalise l'effet utile sur le pain.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La fonction technique d'un aspirateur sans fil est :",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Aspirer les poussières et salissures d'une surface",
+          "correct": true
+        },
+        {
+          "text": "Mesurer la quantité de poussière dans une pièce",
+          "correct": false
+        },
+        {
+          "text": "Distribuer l'énergie électrique dans la maison",
+          "correct": false
+        },
+        {
+          "text": "Convertir l'énergie chimique en énergie de succion",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un aspirateur sans fil, quelle est la solution technique pour l'étape 'Alimenter' de la chaîne de l'énergie ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Une batterie lithium-ion rechargeable",
+          "correct": true
+        },
+        {
+          "text": "Le moteur de la turbine",
+          "correct": false
+        },
+        {
+          "text": "La brosse motorisée",
+          "correct": false
+        },
+        {
+          "text": "Le filtre HEPA",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un aspirateur sans fil, quelle est la solution technique pour l'étape 'Convertir' de la chaîne de l'énergie ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le moteur électrique de la turbine (énergie électrique → aspiration)",
+          "correct": true
+        },
+        {
+          "text": "La batterie lithium-ion",
+          "correct": false
+        },
+        {
+          "text": "Le filtre à poussières",
+          "correct": false
+        },
+        {
+          "text": "Le tuyau flexible",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un aspirateur sans fil, quel capteur peut signaler que le bac à poussière est plein ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un capteur de niveau ou de pression dans le bac",
+          "correct": true
+        },
+        {
+          "text": "Le moteur de la turbine",
+          "correct": false
+        },
+        {
+          "text": "La brosse rotative",
+          "correct": false
+        },
+        {
+          "text": "La batterie",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Pour un aspirateur sans fil, remets les étapes de la chaîne de l'énergie dans l'ordre :",
+      "time": 40,
+      "answers": [
+        {
+          "text": "La batterie lithium-ion fournit l'énergie électrique",
+          "correct": true
+        },
+        {
+          "text": "Le bouton gâchette commande l'alimentation du moteur",
+          "correct": true
+        },
+        {
+          "text": "Le moteur convertit l'énergie électrique en rotation de turbine",
+          "correct": true
+        },
+        {
+          "text": "La turbine génère le flux d'air aspirant les poussières",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La fonction technique d'un radiateur électrique à inertie est :",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Chauffer une pièce par rayonnement et convection",
+          "correct": true
+        },
+        {
+          "text": "Mesurer la température de la pièce",
+          "correct": false
+        },
+        {
+          "text": "Distribuer la chaleur dans les canalisations",
+          "correct": false
+        },
+        {
+          "text": "Stocker l'énergie solaire pour chauffer la nuit",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un radiateur électrique à inertie, quelle est la solution technique pour l'étape 'Distribuer' de la chaîne de l'énergie ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le thermostat électronique qui commande la résistance selon la consigne",
+          "correct": true
+        },
+        {
+          "text": "La résistance chauffante",
+          "correct": false
+        },
+        {
+          "text": "Le câble d'alimentation secteur",
+          "correct": false
+        },
+        {
+          "text": "Le bloc d'inertie en fonte",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un radiateur électrique à inertie, quelle est la solution technique pour l'étape 'Convertir' de la chaîne de l'énergie ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La résistance chauffante (énergie électrique → énergie thermique)",
+          "correct": true
+        },
+        {
+          "text": "Le thermostat de commande",
+          "correct": false
+        },
+        {
+          "text": "Le câble secteur",
+          "correct": false
+        },
+        {
+          "text": "Le bloc d'inertie thermique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un radiateur électrique à inertie, quel est le capteur de la chaîne de l'information ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La sonde de température ambiante du thermostat",
+          "correct": true
+        },
+        {
+          "text": "La résistance chauffante",
+          "correct": false
+        },
+        {
+          "text": "Le câble d'alimentation",
+          "correct": false
+        },
+        {
+          "text": "Le bloc d'inertie en fonte",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans la chaîne de l'énergie d'un radiateur électrique, le câble d'alimentation secteur est la solution technique de l'étape 'Alimenter'.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La fonction technique d'un tapis roulant de fitness est :",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Permettre la marche ou la course en restant sur place",
+          "correct": true
+        },
+        {
+          "text": "Mesurer la fréquence cardiaque de l'utilisateur",
+          "correct": false
+        },
+        {
+          "text": "Distribuer l'énergie vers les équipements sportifs",
+          "correct": false
+        },
+        {
+          "text": "Convertir l'énergie mécanique du coureur en électricité",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un tapis roulant de fitness, quelle est la solution technique pour l'étape 'Convertir' de la chaîne de l'énergie ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le moteur électrique (entraîne la bande du tapis)",
+          "correct": true
+        },
+        {
+          "text": "Le câble d'alimentation secteur",
+          "correct": false
+        },
+        {
+          "text": "Le tableau de bord électronique",
+          "correct": false
+        },
+        {
+          "text": "La ceinture de fréquence cardiaque",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un tapis roulant de fitness, quelle est la solution technique pour l'étape 'Transmettre' de la chaîne de l'énergie vers la bande ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La courroie ou le rouleau d'entraînement de la bande",
+          "correct": true
+        },
+        {
+          "text": "Le moteur électrique",
+          "correct": false
+        },
+        {
+          "text": "Le câble d'alimentation",
+          "correct": false
+        },
+        {
+          "text": "Le variateur de vitesse",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un tapis roulant de fitness, quel capteur arrête immédiatement le tapis en cas de chute de l'utilisateur ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La pince de sécurité magnétique reliée à l'utilisateur (clip d'arrêt d'urgence)",
+          "correct": true
+        },
+        {
+          "text": "Le capteur de fréquence cardiaque",
+          "correct": false
+        },
+        {
+          "text": "Le variateur de vitesse",
+          "correct": false
+        },
+        {
+          "text": "Le moteur électrique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Pour un tapis roulant de fitness, remets les étapes de la chaîne de l'information (arrêt d'urgence) dans l'ordre :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "La pince magnétique est arrachée (chute de l'utilisateur)",
+          "correct": true
+        },
+        {
+          "text": "Le circuit électronique détecte l'absence du signal magnétique",
+          "correct": true
+        },
+        {
+          "text": "L'alimentation du moteur est immédiatement coupée",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La fonction technique d'une cafetière automatique à capsules est :",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Préparer une boisson chaude (café, thé) à partir d'une capsule",
+          "correct": true
+        },
+        {
+          "text": "Mesurer la quantité d'eau dans le réservoir",
+          "correct": false
+        },
+        {
+          "text": "Distribuer l'eau vers la machine",
+          "correct": false
+        },
+        {
+          "text": "Stocker de l'énergie pour chauffer l'eau",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une cafetière automatique, quelle est la solution technique pour l'étape 'Convertir' (chauffage de l'eau) de la chaîne de l'énergie ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La résistance thermoblock (chauffe l'eau à la volée)",
+          "correct": true
+        },
+        {
+          "text": "La pompe à eau",
+          "correct": false
+        },
+        {
+          "text": "Le câble d'alimentation secteur",
+          "correct": false
+        },
+        {
+          "text": "Le levier de perçage de la capsule",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une cafetière automatique, quel capteur détecte la présence d'une capsule dans le porte-capsule ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un micro-interrupteur ou capteur optique dans le compartiment capsule",
+          "correct": true
+        },
+        {
+          "text": "La pompe à eau",
+          "correct": false
+        },
+        {
+          "text": "La résistance chauffante",
+          "correct": false
+        },
+        {
+          "text": "Le câble d'alimentation",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une cafetière automatique, quel est l'actionneur qui propulse l'eau chaude à travers la capsule ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La pompe à eau électrique (péristaltique ou à vibration)",
+          "correct": true
+        },
+        {
+          "text": "La résistance thermoblock",
+          "correct": false
+        },
+        {
+          "text": "Le capteur de présence de capsule",
+          "correct": false
+        },
+        {
+          "text": "Le câble secteur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans une cafetière automatique, la résistance thermoblock et la pompe à eau sont deux actionneurs différents présents dans la même chaîne de l'énergie.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La fonction technique d'une vitre électrique de voiture est :",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Ouvrir ou fermer la vitre de la portière",
+          "correct": true
+        },
+        {
+          "text": "Mesurer la pression de l'air extérieur",
+          "correct": false
+        },
+        {
+          "text": "Alimenter les équipements électriques de la portière",
+          "correct": false
+        },
+        {
+          "text": "Transmettre l'énergie du moteur aux roues",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un lève-vitre électrique de voiture, quelle est la solution technique pour l'étape 'Convertir' de la chaîne de l'énergie ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un petit moteur électrique réversible",
+          "correct": true
+        },
+        {
+          "text": "La batterie du véhicule",
+          "correct": false
+        },
+        {
+          "text": "Le câblage de la portière",
+          "correct": false
+        },
+        {
+          "text": "Le bouton de commande",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un lève-vitre électrique de voiture, quelle est la solution technique pour l'étape 'Transmettre' de la chaîne de l'énergie vers la vitre ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un système câble-tambour ou crémaillère guidant la vitre dans son rail",
+          "correct": true
+        },
+        {
+          "text": "Le moteur électrique réversible",
+          "correct": false
+        },
+        {
+          "text": "Le bouton de commande",
+          "correct": false
+        },
+        {
+          "text": "La batterie du véhicule",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un lève-vitre électrique de voiture, quel capteur arrête le moteur quand la vitre est complètement fermée ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un détecteur de fin de course ou un capteur de couple (anti-pincement)",
+          "correct": true
+        },
+        {
+          "text": "Le moteur électrique",
+          "correct": false
+        },
+        {
+          "text": "La batterie du véhicule",
+          "correct": false
+        },
+        {
+          "text": "Le bouton de commande du conducteur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Pour un lève-vitre électrique, remets les étapes de la chaîne de l'énergie dans l'ordre :",
+      "time": 40,
+      "answers": [
+        {
+          "text": "La batterie du véhicule (12V) fournit l'énergie électrique",
+          "correct": true
+        },
+        {
+          "text": "Le relais commande l'alimentation du moteur",
+          "correct": true
+        },
+        {
+          "text": "Le moteur convertit l'énergie électrique en rotation",
+          "correct": true
+        },
+        {
+          "text": "Le mécanisme câble-tambour déplace la vitre dans son rail",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La fonction technique d'une minuterie d'escalier est :",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Éteindre l'éclairage automatiquement après un délai",
+          "correct": true
+        },
+        {
+          "text": "Mesurer le temps passé dans l'escalier",
+          "correct": false
+        },
+        {
+          "text": "Alimenter l'escalier en énergie électrique",
+          "correct": false
+        },
+        {
+          "text": "Distribuer l'éclairage vers chaque palier",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une minuterie d'escalier, quel est le capteur de la chaîne de l'information ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le bouton poussoir sur chaque palier",
+          "correct": true
+        },
+        {
+          "text": "L'ampoule ou le tube fluorescent",
+          "correct": false
+        },
+        {
+          "text": "Le câble d'alimentation",
+          "correct": false
+        },
+        {
+          "text": "Le boîtier de minuterie lui-même",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une minuterie d'escalier, quel composant réalise l'étape 'Traiter' de la chaîne de l'information ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le boîtier minuterie (démarre le compte à rebours à chaque appui)",
+          "correct": true
+        },
+        {
+          "text": "Le bouton poussoir",
+          "correct": false
+        },
+        {
+          "text": "L'ampoule LED",
+          "correct": false
+        },
+        {
+          "text": "Le câble électrique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une minuterie d'escalier, quel est l'actionneur ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "L'ampoule ou le luminaire (énergie électrique → énergie lumineuse)",
+          "correct": true
+        },
+        {
+          "text": "Le bouton poussoir",
+          "correct": false
+        },
+        {
+          "text": "Le câble d'alimentation",
+          "correct": false
+        },
+        {
+          "text": "Le boîtier minuterie",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans une minuterie d'escalier, le bouton poussoir de chaque palier est un capteur de la chaîne de l'information.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La fonction technique d'une balance numérique de cuisine est :",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Mesurer la masse d'un aliment et afficher sa valeur",
+          "correct": true
+        },
+        {
+          "text": "Convertir l'énergie mécanique en énergie électrique",
+          "correct": false
+        },
+        {
+          "text": "Distribuer les informations vers l'écran",
+          "correct": false
+        },
+        {
+          "text": "Alimenter les ustensiles de cuisine en données",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une balance numérique de cuisine, quel composant est le capteur de la chaîne de l'information ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La jauge de contrainte (mesure la déformation du plateau sous le poids)",
+          "correct": true
+        },
+        {
+          "text": "L'afficheur numérique",
+          "correct": false
+        },
+        {
+          "text": "La pile d'alimentation",
+          "correct": false
+        },
+        {
+          "text": "Le bouton tare",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une balance numérique de cuisine, quel composant réalise l'étape 'Communiquer' de la chaîne de l'information ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'afficheur numérique à cristaux liquides (LCD)",
+          "correct": true
+        },
+        {
+          "text": "La jauge de contrainte",
+          "correct": false
+        },
+        {
+          "text": "Le microcontrôleur de calcul",
+          "correct": false
+        },
+        {
+          "text": "La pile d'alimentation",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Pour une balance numérique, remets les étapes de la chaîne de l'information dans l'ordre :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "La jauge de contrainte mesure la déformation du plateau",
+          "correct": true
+        },
+        {
+          "text": "Le microcontrôleur convertit le signal en valeur de masse",
+          "correct": true
+        },
+        {
+          "text": "L'afficheur LCD indique la masse en grammes",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La fonction technique d'un compresseur d'air de gonflage (pour pneus) est :",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Comprimer l'air pour gonfler des pneumatiques",
+          "correct": true
+        },
+        {
+          "text": "Mesurer la pression dans les pneus",
+          "correct": false
+        },
+        {
+          "text": "Distribuer l'énergie vers le moteur de compression",
+          "correct": false
+        },
+        {
+          "text": "Convertir l'énergie thermique en pression",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un compresseur d'air électrique, quelle est la solution technique pour l'étape 'Convertir' de la chaîne de l'énergie ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le moteur électrique entraînant le piston de compression",
+          "correct": true
+        },
+        {
+          "text": "Le câble d'alimentation secteur",
+          "correct": false
+        },
+        {
+          "text": "Le manomètre de pression",
+          "correct": false
+        },
+        {
+          "text": "Le tuyau de gonflage",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un compresseur d'air électrique, quel capteur coupe automatiquement le moteur quand la pression souhaitée est atteinte ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un pressostat (coupe l'alimentation du moteur à la pression cible)",
+          "correct": true
+        },
+        {
+          "text": "Le moteur électrique",
+          "correct": false
+        },
+        {
+          "text": "Le tuyau de gonflage",
+          "correct": false
+        },
+        {
+          "text": "Le câble d'alimentation",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La fonction technique d'une pompe de filtration de piscine est :",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Faire circuler l'eau dans le circuit de filtration pour la purifier",
+          "correct": true
+        },
+        {
+          "text": "Mesurer le taux de chlore dans l'eau",
+          "correct": false
+        },
+        {
+          "text": "Chauffer l'eau de la piscine",
+          "correct": false
+        },
+        {
+          "text": "Distribuer l'énergie vers les équipements de la piscine",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une pompe de filtration de piscine avec programmateur, quel composant réalise l'étape 'Distribuer' de la chaîne de l'énergie ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le programmateur horaire qui commande la mise en route de la pompe",
+          "correct": true
+        },
+        {
+          "text": "La pompe électrique centrifuge",
+          "correct": false
+        },
+        {
+          "text": "Le filtre à sable",
+          "correct": false
+        },
+        {
+          "text": "Le câble d'alimentation",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une pompe de filtration de piscine, quelle est la solution technique pour l'étape 'Convertir' de la chaîne de l'énergie ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "La pompe centrifuge électrique (énergie électrique → circulation de l'eau)",
+          "correct": true
+        },
+        {
+          "text": "Le filtre à sable",
+          "correct": false
+        },
+        {
+          "text": "Le programmateur",
+          "correct": false
+        },
+        {
+          "text": "Le câble secteur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Pour analyser un système technique, on doit identifier une solution technique pour chaque étape de la chaîne de l'énergie ET de la chaîne de l'information.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La fonction technique d'un scooter électrique est :",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Transporter une personne sur route sans émettre de gaz d'échappement",
+          "correct": true
+        },
+        {
+          "text": "Mesurer la vitesse de déplacement",
+          "correct": false
+        },
+        {
+          "text": "Distribuer l'énergie électrique vers les deux roues",
+          "correct": false
+        },
+        {
+          "text": "Convertir l'énergie solaire en mouvement",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un scooter électrique, quelle est la solution technique pour l'étape 'Distribuer' de la chaîne de l'énergie ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le variateur électronique (contrôleur) qui dose la puissance envoyée au moteur",
+          "correct": true
+        },
+        {
+          "text": "La batterie lithium-ion",
+          "correct": false
+        },
+        {
+          "text": "Le moteur brushless de roue",
+          "correct": false
+        },
+        {
+          "text": "La poignée des gaz",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un scooter électrique, quel capteur informe le variateur de la position de la poignée des gaz ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un capteur à effet Hall ou un potentiomètre sur la poignée des gaz",
+          "correct": true
+        },
+        {
+          "text": "Le moteur brushless",
+          "correct": false
+        },
+        {
+          "text": "La batterie lithium-ion",
+          "correct": false
+        },
+        {
+          "text": "Le variateur électronique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un scooter électrique, quelle est la solution technique pour l'étape 'Transmettre' de la chaîne de l'énergie vers la roue ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le moteur est intégré directement dans le moyeu de la roue arrière",
+          "correct": true
+        },
+        {
+          "text": "Le variateur électronique",
+          "correct": false
+        },
+        {
+          "text": "La batterie",
+          "correct": false
+        },
+        {
+          "text": "La poignée de gaz",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Pour un scooter électrique, remets les étapes de la chaîne de l'énergie dans l'ordre :",
+      "time": 40,
+      "answers": [
+        {
+          "text": "La batterie lithium-ion fournit l'énergie électrique",
+          "correct": true
+        },
+        {
+          "text": "Le variateur dose la puissance selon la position de la poignée",
+          "correct": true
+        },
+        {
+          "text": "Le moteur brushless convertit l'énergie électrique en rotation",
+          "correct": true
+        },
+        {
+          "text": "Le moyeu motorisé entraîne directement la roue arrière",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La fonction technique d'un système de fermeture centralisée de voiture est :",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Verrouiller ou déverrouiller toutes les portes simultanément",
+          "correct": true
+        },
+        {
+          "text": "Mesurer la pression des pneus",
+          "correct": false
+        },
+        {
+          "text": "Alimenter les serrures en énergie",
+          "correct": false
+        },
+        {
+          "text": "Distribuer le signal radio dans le véhicule",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

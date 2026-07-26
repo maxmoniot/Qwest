@@ -1,0 +1,3339 @@
+{
+  "name": "3e_francais_150q",
+  "version": "1.0",
+  "createdAt": "2026-04-19T12:30:00.000Z",
+  "questionsCount": 150,
+  "questions": [
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'une autobiographie ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Un récit où l'auteur raconte sa propre vie",
+          "correct": true
+        },
+        {
+          "text": "Un récit inventé sur la vie de quelqu'un d'autre",
+          "correct": false
+        },
+        {
+          "text": "Un poème sur la nature",
+          "correct": false
+        },
+        {
+          "text": "Une pièce de théâtre comique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans une autobiographie, l'auteur, le narrateur et le personnage principal sont la même personne.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel célèbre auteur français a écrit \"Les Confessions\", une œuvre autobiographique majeure ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Jean-Jacques Rousseau",
+          "correct": true
+        },
+        {
+          "text": "Victor Hugo",
+          "correct": false
+        },
+        {
+          "text": "Molière",
+          "correct": false
+        },
+        {
+          "text": "Voltaire",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'un autoportrait littéraire ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Une description de soi-même par soi-même",
+          "correct": true
+        },
+        {
+          "text": "Un portrait d'un personnage imaginaire",
+          "correct": false
+        },
+        {
+          "text": "Une description d'un paysage",
+          "correct": false
+        },
+        {
+          "text": "Un discours politique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La satire est un texte qui vise principalement à…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Critiquer et dénoncer les travers de la société avec humour",
+          "correct": true
+        },
+        {
+          "text": "Raconter une histoire d'amour triste",
+          "correct": false
+        },
+        {
+          "text": "Décrire un paysage naturel",
+          "correct": false
+        },
+        {
+          "text": "Expliquer un phénomène scientifique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Voltaire est un grand auteur satirique du XVIIIe siècle.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans quel registre littéraire classe-t-on un texte qui cherche à faire rire pour critiquer ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le registre satirique",
+          "correct": true
+        },
+        {
+          "text": "Le registre tragique",
+          "correct": false
+        },
+        {
+          "text": "Le registre épique",
+          "correct": false
+        },
+        {
+          "text": "Le registre lyrique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce que la poésie lyrique ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Une poésie qui exprime les sentiments personnels du poète",
+          "correct": true
+        },
+        {
+          "text": "Une poésie qui raconte les aventures d'un héros",
+          "correct": false
+        },
+        {
+          "text": "Une poésie qui critique la société",
+          "correct": false
+        },
+        {
+          "text": "Une poésie qui décrit des batailles",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Victor Hugo appartient à quel grand mouvement littéraire ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le Romantisme",
+          "correct": true
+        },
+        {
+          "text": "Le Réalisme",
+          "correct": false
+        },
+        {
+          "text": "Le Surréalisme",
+          "correct": false
+        },
+        {
+          "text": "Le Classicisme",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'une métaphore ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Une comparaison sans outil comparatif (comme, tel que…)",
+          "correct": true
+        },
+        {
+          "text": "Une comparaison avec un outil comparatif (comme, tel que…)",
+          "correct": false
+        },
+        {
+          "text": "Une répétition de sons en début de mots",
+          "correct": false
+        },
+        {
+          "text": "Une question sans réponse attendue",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "\"Ses yeux sont des étoiles\" est un exemple de…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Métaphore",
+          "correct": true
+        },
+        {
+          "text": "Comparaison",
+          "correct": false
+        },
+        {
+          "text": "Hyperbole",
+          "correct": false
+        },
+        {
+          "text": "Allitération",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "\"Il court comme le vent\" est un exemple de…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Comparaison",
+          "correct": true
+        },
+        {
+          "text": "Métaphore",
+          "correct": false
+        },
+        {
+          "text": "Personnification",
+          "correct": false
+        },
+        {
+          "text": "Oxymore",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "\"Je meurs de soif\" est un exemple de…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Hyperbole",
+          "correct": true
+        },
+        {
+          "text": "Litote",
+          "correct": false
+        },
+        {
+          "text": "Métaphore",
+          "correct": false
+        },
+        {
+          "text": "Comparaison",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'une allitération ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "La répétition d'un même son consonantique dans plusieurs mots proches",
+          "correct": true
+        },
+        {
+          "text": "La répétition d'un même mot en début de vers",
+          "correct": false
+        },
+        {
+          "text": "L'association de deux termes contradictoires",
+          "correct": false
+        },
+        {
+          "text": "L'attribution de qualités humaines à un objet ou animal",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "\"Cette obscure clarté\" est un exemple de…",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Oxymore",
+          "correct": true
+        },
+        {
+          "text": "Hyperbole",
+          "correct": false
+        },
+        {
+          "text": "Métaphore",
+          "correct": false
+        },
+        {
+          "text": "Anaphore",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'une anaphore ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "La répétition d'un mot ou groupe de mots en début de plusieurs phrases ou vers",
+          "correct": true
+        },
+        {
+          "text": "L'inversion de l'ordre normal des mots dans la phrase",
+          "correct": false
+        },
+        {
+          "text": "Une question dont la réponse est évidente",
+          "correct": false
+        },
+        {
+          "text": "L'utilisation de mots dont le son imite le bruit",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le participe passé employé avec \"avoir\" s'accorde avec le sujet du verbe.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans \"Les pommes que j'ai mangées\", le participe passé \"mangées\" s'accorde parce que…",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Le COD \"que\" (mis pour \"pommes\") est placé avant le verbe",
+          "correct": true
+        },
+        {
+          "text": "Il s'accorde toujours avec le sujet \"je\"",
+          "correct": false
+        },
+        {
+          "text": "Il s'accorde avec le verbe avoir",
+          "correct": false
+        },
+        {
+          "text": "Il ne faut pas l'accorder dans ce cas",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la règle pour le participe passé employé avec \"être\" ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Il s'accorde en genre et en nombre avec le sujet",
+          "correct": true
+        },
+        {
+          "text": "Il s'accorde avec le COD",
+          "correct": false
+        },
+        {
+          "text": "Il est invariable",
+          "correct": false
+        },
+        {
+          "text": "Il s'accorde avec l'auxiliaire",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Lequel de ces mots s'écrit correctement au passé simple (3e personne du singulier) ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Il chanta",
+          "correct": true
+        },
+        {
+          "text": "Il chantait",
+          "correct": false
+        },
+        {
+          "text": "Il chanterait",
+          "correct": false
+        },
+        {
+          "text": "Il chantera",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "L'imparfait est utilisé pour exprimer…",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Une action passée de second plan, habituelle ou qui dure",
+          "correct": true
+        },
+        {
+          "text": "Une action future certaine",
+          "correct": false
+        },
+        {
+          "text": "Un ordre ou une demande",
+          "correct": false
+        },
+        {
+          "text": "Une action ponctuelle et soudaine dans le passé",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel temps est utilisé en littérature pour le récit d'actions principales dans le passé ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le passé simple",
+          "correct": true
+        },
+        {
+          "text": "Le présent",
+          "correct": false
+        },
+        {
+          "text": "L'imparfait",
+          "correct": false
+        },
+        {
+          "text": "Le futur simple",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Remets ces étapes de la structure d'un texte argumentatif dans le bon ordre :",
+      "time": 40,
+      "answers": [
+        {
+          "text": "Introduction avec thèse",
+          "correct": true
+        },
+        {
+          "text": "Argument principal",
+          "correct": true
+        },
+        {
+          "text": "Exemple illustratif",
+          "correct": true
+        },
+        {
+          "text": "Conclusion avec bilan",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'une proposition subordonnée relative ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Une proposition qui complète un nom, introduite par \"qui\", \"que\", \"dont\"…",
+          "correct": true
+        },
+        {
+          "text": "Une proposition qui exprime la cause",
+          "correct": false
+        },
+        {
+          "text": "Une proposition principale qui contient le verbe essentiel",
+          "correct": false
+        },
+        {
+          "text": "Une proposition qui exprime la conséquence",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel genre littéraire est écrit pour être joué sur scène ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Le théâtre",
+          "correct": true
+        },
+        {
+          "text": "Le roman",
+          "correct": false
+        },
+        {
+          "text": "La nouvelle",
+          "correct": false
+        },
+        {
+          "text": "L'essai",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'une didascalie au théâtre ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Une indication scénique donnée par l'auteur (décor, geste, ton…)",
+          "correct": true
+        },
+        {
+          "text": "Un long discours d'un personnage seul sur scène",
+          "correct": false
+        },
+        {
+          "text": "Un échange rapide de répliques entre deux personnages",
+          "correct": false
+        },
+        {
+          "text": "La liste des personnages en début de pièce",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment appelle-t-on un long discours prononcé seul sur scène ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un monologue",
+          "correct": true
+        },
+        {
+          "text": "Un dialogue",
+          "correct": false
+        },
+        {
+          "text": "Une tirade",
+          "correct": false
+        },
+        {
+          "text": "Un prologue",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Molière est un auteur de théâtre du XVIIe siècle.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'un roman réaliste ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Un roman qui représente la société de façon précise et vraisemblable",
+          "correct": true
+        },
+        {
+          "text": "Un roman qui se déroule dans un monde fantastique",
+          "correct": false
+        },
+        {
+          "text": "Un roman qui raconte une histoire d'amour idéalisée",
+          "correct": false
+        },
+        {
+          "text": "Un roman écrit en vers",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Émile Zola appartient à quel mouvement littéraire ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le Naturalisme",
+          "correct": true
+        },
+        {
+          "text": "Le Romantisme",
+          "correct": false
+        },
+        {
+          "text": "Le Surréalisme",
+          "correct": false
+        },
+        {
+          "text": "L'Humanisme",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'un roman épistolaire ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Un roman dont l'histoire est racontée à travers des lettres",
+          "correct": true
+        },
+        {
+          "text": "Un roman dont le héros part en aventure",
+          "correct": false
+        },
+        {
+          "text": "Un roman écrit sous forme de journal intime",
+          "correct": false
+        },
+        {
+          "text": "Un roman historique sur l'époque médiévale",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un texte argumentatif, un \"argument\" est…",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Une raison qui soutient une thèse",
+          "correct": true
+        },
+        {
+          "text": "Un exemple concret",
+          "correct": false
+        },
+        {
+          "text": "Une citation d'auteur",
+          "correct": false
+        },
+        {
+          "text": "Une question rhétorique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La thèse est l'opinion défendue dans un texte argumentatif.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la nature du mot \"rapidement\" dans \"Il court rapidement\" ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un adverbe",
+          "correct": true
+        },
+        {
+          "text": "Un adjectif",
+          "correct": false
+        },
+        {
+          "text": "Un nom",
+          "correct": false
+        },
+        {
+          "text": "Un verbe",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'un homonyme ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Un mot qui se prononce comme un autre mais a un sens différent",
+          "correct": true
+        },
+        {
+          "text": "Un mot qui a le même sens qu'un autre",
+          "correct": false
+        },
+        {
+          "text": "Un mot qui s'écrit pareil mais se prononce différemment",
+          "correct": false
+        },
+        {
+          "text": "Un mot dont le sens est contraire à un autre",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "\"Ver\", \"verre\", \"vert\" et \"vers\" sont des…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Homophones",
+          "correct": true
+        },
+        {
+          "text": "Synonymes",
+          "correct": false
+        },
+        {
+          "text": "Antonymes",
+          "correct": false
+        },
+        {
+          "text": "Paronymes",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "\"Accepter\" et \"excepter\" sont des…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Paronymes",
+          "correct": true
+        },
+        {
+          "text": "Homophones",
+          "correct": false
+        },
+        {
+          "text": "Synonymes",
+          "correct": false
+        },
+        {
+          "text": "Antonymes",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'un préfixe ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un élément ajouté avant le radical pour modifier le sens du mot",
+          "correct": true
+        },
+        {
+          "text": "Un élément ajouté après le radical pour modifier la nature du mot",
+          "correct": false
+        },
+        {
+          "text": "La partie centrale d'un mot qui porte le sens principal",
+          "correct": false
+        },
+        {
+          "text": "Un mot de liaison entre deux propositions",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel préfixe permet d'exprimer le contraire ou la négation ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "in- / im- / il- / ir-",
+          "correct": true
+        },
+        {
+          "text": "re- / ré-",
+          "correct": false
+        },
+        {
+          "text": "pre- / pré-",
+          "correct": false
+        },
+        {
+          "text": "sur- / super-",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Remets ces mouvements littéraires dans l'ordre chronologique (du plus ancien au plus récent) :",
+      "time": 45,
+      "answers": [
+        {
+          "text": "L'Humanisme (XVIe siècle)",
+          "correct": true
+        },
+        {
+          "text": "Le Classicisme (XVIIe siècle)",
+          "correct": true
+        },
+        {
+          "text": "Le Romantisme (XIXe siècle)",
+          "correct": true
+        },
+        {
+          "text": "Le Surréalisme (XXe siècle)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La Première Guerre mondiale a eu lieu…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "De 1914 à 1918",
+          "correct": true
+        },
+        {
+          "text": "De 1939 à 1945",
+          "correct": false
+        },
+        {
+          "text": "De 1870 à 1871",
+          "correct": false
+        },
+        {
+          "text": "De 1900 à 1904",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Guillaume Apollinaire est un poète qui a vécu la Première Guerre mondiale.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un poème, une \"rime embrassée\" suit le schéma…",
+      "time": 35,
+      "answers": [
+        {
+          "text": "ABBA",
+          "correct": true
+        },
+        {
+          "text": "AABB",
+          "correct": false
+        },
+        {
+          "text": "ABAB",
+          "correct": false
+        },
+        {
+          "text": "ABCD",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment s'appelle la ponctuation entre deux répliques au théâtre, indiquant le nom du personnage ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Une didascalie",
+          "correct": false
+        },
+        {
+          "text": "Un aparté",
+          "correct": false
+        },
+        {
+          "text": "Une réplique",
+          "correct": false
+        },
+        {
+          "text": "Un interlocuteur (ou nom de rôle)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'un récit à la première personne ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un récit où le narrateur dit \"je\" et est impliqué dans l'histoire",
+          "correct": true
+        },
+        {
+          "text": "Un récit où le narrateur sait tout des personnages",
+          "correct": false
+        },
+        {
+          "text": "Un récit raconté par un témoin extérieur",
+          "correct": false
+        },
+        {
+          "text": "Un récit dont le héros est imaginaire",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment appelle-t-on le narrateur qui sait tout sur tous les personnages ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Narrateur omniscient",
+          "correct": true
+        },
+        {
+          "text": "Narrateur interne",
+          "correct": false
+        },
+        {
+          "text": "Narrateur absent",
+          "correct": false
+        },
+        {
+          "text": "Narrateur externe",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on la répétition d'un son voyelle dans plusieurs mots proches (ex : \"il fît mille misères\") ?",
+      "time": 35,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "Assonance",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "assonance",
+        "l'assonance",
+        "une assonance"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Lequel de ces genres n'est PAS un genre poétique classique ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le roman-feuilleton",
+          "correct": true
+        },
+        {
+          "text": "Le sonnet",
+          "correct": false
+        },
+        {
+          "text": "L'ode",
+          "correct": false
+        },
+        {
+          "text": "L'élégie",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Combien de vers comporte un sonnet classique ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "14 vers",
+          "correct": true
+        },
+        {
+          "text": "8 vers",
+          "correct": false
+        },
+        {
+          "text": "12 vers",
+          "correct": false
+        },
+        {
+          "text": "16 vers",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quel est le terme désignant un vers de 12 syllabes, très utilisé dans la poésie française classique ?",
+      "time": 30,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "Alexandrin",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "alexandrin",
+        "l'alexandrin",
+        "un alexandrin",
+        "vers alexandrin"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la différence entre une autobiographie et des mémoires ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "L'autobiographie se centre sur la vie intime de l'auteur, les mémoires sur les événements historiques vécus",
+          "correct": true
+        },
+        {
+          "text": "Les mémoires sont toujours fictifs, l'autobiographie est vraie",
+          "correct": false
+        },
+        {
+          "text": "L'autobiographie est écrite en vers, les mémoires en prose",
+          "correct": false
+        },
+        {
+          "text": "Il n'y a aucune différence entre les deux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'un journal intime ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un écrit personnel daté, tenu au jour le jour, non destiné à la publication",
+          "correct": true
+        },
+        {
+          "text": "Un article publié dans un journal chaque jour",
+          "correct": false
+        },
+        {
+          "text": "Un roman dont le héros écrit des lettres",
+          "correct": false
+        },
+        {
+          "text": "Un recueil de poèmes personnels",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Annie Ernaux est connue pour quel type d'écriture ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "L'autofiction et l'écriture autobiographique",
+          "correct": true
+        },
+        {
+          "text": "La science-fiction",
+          "correct": false
+        },
+        {
+          "text": "La poésie surréaliste",
+          "correct": false
+        },
+        {
+          "text": "Le théâtre absurde",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La caricature est une forme de…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Satire visuelle qui exagère les traits d'un personnage pour le critiquer",
+          "correct": true
+        },
+        {
+          "text": "Portrait réaliste très précis",
+          "correct": false
+        },
+        {
+          "text": "Poème épique",
+          "correct": false
+        },
+        {
+          "text": "Texte argumentatif neutre",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce que l'ironie ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Dire le contraire de ce que l'on pense pour critiquer ou se moquer",
+          "correct": true
+        },
+        {
+          "text": "Exagérer une réalité pour frapper les esprits",
+          "correct": false
+        },
+        {
+          "text": "Attribuer des qualités humaines à un animal",
+          "correct": false
+        },
+        {
+          "text": "Répéter un mot en début de phrases",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "\"Candide\" est une œuvre satirique de quel auteur ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Voltaire",
+          "correct": true
+        },
+        {
+          "text": "Rousseau",
+          "correct": false
+        },
+        {
+          "text": "Molière",
+          "correct": false
+        },
+        {
+          "text": "Victor Hugo",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le poème en prose respecte des règles de versification (rimes, nombre de syllabes).",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Charles Baudelaire est l'auteur de quel recueil poétique célèbre ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Les Fleurs du Mal",
+          "correct": true
+        },
+        {
+          "text": "Les Misérables",
+          "correct": false
+        },
+        {
+          "text": "Alcools",
+          "correct": false
+        },
+        {
+          "text": "Les Contemplations",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le thème central du mouvement romantique ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "L'expression des sentiments personnels, la mélancolie, la nature",
+          "correct": true
+        },
+        {
+          "text": "La raison, l'ordre et les règles strictes",
+          "correct": false
+        },
+        {
+          "text": "La description scientifique de la société",
+          "correct": false
+        },
+        {
+          "text": "Le rêve et l'inconscient",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "\"Le vent se lamente dans les arbres\" est un exemple de…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Personnification",
+          "correct": true
+        },
+        {
+          "text": "Comparaison",
+          "correct": false
+        },
+        {
+          "text": "Hyperbole",
+          "correct": false
+        },
+        {
+          "text": "Allitération",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "\"Ce n'est pas mal\" pour dire \"c'est très bien\" est un exemple de…",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Litote",
+          "correct": true
+        },
+        {
+          "text": "Hyperbole",
+          "correct": false
+        },
+        {
+          "text": "Euphémisme",
+          "correct": false
+        },
+        {
+          "text": "Ironie",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Remplacer \"il est mort\" par \"il nous a quittés\" est un exemple de…",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Euphémisme",
+          "correct": true
+        },
+        {
+          "text": "Litote",
+          "correct": false
+        },
+        {
+          "text": "Métaphore",
+          "correct": false
+        },
+        {
+          "text": "Oxymore",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'une antithèse ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "L'opposition de deux idées ou termes contraires dans une même phrase",
+          "correct": true
+        },
+        {
+          "text": "La répétition d'un mot en début de vers",
+          "correct": false
+        },
+        {
+          "text": "L'association de deux termes contradictoires en deux mots",
+          "correct": false
+        },
+        {
+          "text": "Une question sans réponse attendue",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "\"N'est-ce pas là un spectacle magnifique ?\" (sans attendre de réponse) est une…",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Question rhétorique",
+          "correct": true
+        },
+        {
+          "text": "Antithèse",
+          "correct": false
+        },
+        {
+          "text": "Anaphore",
+          "correct": false
+        },
+        {
+          "text": "Litote",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans quelle phrase le subjonctif est-il correctement utilisé ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Il faut que tu viennes demain.",
+          "correct": true
+        },
+        {
+          "text": "Il faut que tu viens demain.",
+          "correct": false
+        },
+        {
+          "text": "Je pense que tu viennes.",
+          "correct": false
+        },
+        {
+          "text": "Il faut que tu es venu.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Transforme au discours indirect : Il dit : \"Je suis fatigué.\" → Il dit que…",
+      "time": 35,
+      "answers": [
+        {
+          "text": "…il était fatigué.",
+          "correct": true
+        },
+        {
+          "text": "…je suis fatigué.",
+          "correct": false
+        },
+        {
+          "text": "…il est fatigué.",
+          "correct": false
+        },
+        {
+          "text": "…tu étais fatigué.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "\"Parce qu'il pleuvait, il a pris son parapluie.\" La proposition soulignée exprime…",
+      "time": 30,
+      "answers": [
+        {
+          "text": "La cause",
+          "correct": true
+        },
+        {
+          "text": "La conséquence",
+          "correct": false
+        },
+        {
+          "text": "Le but",
+          "correct": false
+        },
+        {
+          "text": "La condition",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel connecteur logique exprime la conséquence ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Donc",
+          "correct": true
+        },
+        {
+          "text": "Car",
+          "correct": false
+        },
+        {
+          "text": "Bien que",
+          "correct": false
+        },
+        {
+          "text": "Pourtant",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Les rimes \"suivies\" suivent le schéma…",
+      "time": 30,
+      "answers": [
+        {
+          "text": "AABB",
+          "correct": true
+        },
+        {
+          "text": "ABAB",
+          "correct": false
+        },
+        {
+          "text": "ABBA",
+          "correct": false
+        },
+        {
+          "text": "ABCD",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Les rimes \"croisées\" suivent le schéma…",
+      "time": 30,
+      "answers": [
+        {
+          "text": "ABAB",
+          "correct": true
+        },
+        {
+          "text": "AABB",
+          "correct": false
+        },
+        {
+          "text": "ABBA",
+          "correct": false
+        },
+        {
+          "text": "ABCD",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'une nouvelle littéraire ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un récit de fiction court, centré sur peu de personnages et une seule intrigue",
+          "correct": true
+        },
+        {
+          "text": "Un article de journal rapportant une information récente",
+          "correct": false
+        },
+        {
+          "text": "Un roman très long avec de nombreux personnages",
+          "correct": false
+        },
+        {
+          "text": "Une pièce de théâtre en un acte",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le registre épique est caractérisé par…",
+      "time": 30,
+      "answers": [
+        {
+          "text": "La grandeur, l'héroïsme, des batailles et des exploits extraordinaires",
+          "correct": true
+        },
+        {
+          "text": "La tristesse et la mort des personnages principaux",
+          "correct": false
+        },
+        {
+          "text": "L'humour et les quiproquos",
+          "correct": false
+        },
+        {
+          "text": "L'expression des sentiments amoureux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une tragédie classique, comment se termine généralement l'histoire ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Par la mort ou le malheur irrémédiable du héros",
+          "correct": true
+        },
+        {
+          "text": "Par un mariage heureux",
+          "correct": false
+        },
+        {
+          "text": "Par une réconciliation comique",
+          "correct": false
+        },
+        {
+          "text": "Par une victoire militaire du héros",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans le théâtre classique du XVIIe siècle, la \"règle des trois unités\" impose…",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Une seule action, en un seul lieu, en 24 heures maximum",
+          "correct": true
+        },
+        {
+          "text": "Trois actes, trois décors, trois personnages",
+          "correct": false
+        },
+        {
+          "text": "Trois scènes par acte, trois répliques par scène",
+          "correct": false
+        },
+        {
+          "text": "Un héros, un lieu, une morale",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'un \"aparté\" au théâtre ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Une réplique prononcée par un personnage pour le public, sans être entendue des autres personnages",
+          "correct": true
+        },
+        {
+          "text": "Un long discours d'un seul personnage",
+          "correct": false
+        },
+        {
+          "text": "Une scène sans paroles",
+          "correct": false
+        },
+        {
+          "text": "Le résumé d'une scène par le metteur en scène",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un sonnet classique est composé de…",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Deux quatrains et deux tercets",
+          "correct": true
+        },
+        {
+          "text": "Quatre quatrains",
+          "correct": false
+        },
+        {
+          "text": "Trois quatrains et un distique",
+          "correct": false
+        },
+        {
+          "text": "Deux sizains et un distique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on la moitié d'un alexandrin (6 syllabes), séparée par une césure ?",
+      "time": 35,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "Hémistiche",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "hémistiche",
+        "un hémistiche",
+        "l'hémistiche",
+        "hemistiches"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'un enjambement en poésie ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Quand une phrase dépasse la fin d'un vers et continue sur le vers suivant",
+          "correct": true
+        },
+        {
+          "text": "Quand deux vers ont la même rime",
+          "correct": false
+        },
+        {
+          "text": "Quand un vers est coupé en deux parties égales",
+          "correct": false
+        },
+        {
+          "text": "Quand un poème ne respecte aucune règle",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'un champ lexical ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Un ensemble de mots appartenant à un même thème ou domaine",
+          "correct": true
+        },
+        {
+          "text": "Un dictionnaire de synonymes",
+          "correct": false
+        },
+        {
+          "text": "L'ensemble des mots d'une même famille",
+          "correct": false
+        },
+        {
+          "text": "Une liste de connecteurs logiques",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La connotation d'un mot, c'est…",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le sens subjectif, affectif ou symbolique d'un mot selon son contexte",
+          "correct": true
+        },
+        {
+          "text": "Le sens objectif et neutre que donne le dictionnaire",
+          "correct": false
+        },
+        {
+          "text": "L'ensemble des mots de la même famille",
+          "correct": false
+        },
+        {
+          "text": "Le contraire du mot",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un mot \"polysémique\" est un mot qui…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Possède plusieurs sens différents",
+          "correct": true
+        },
+        {
+          "text": "N'a qu'un seul sens très précis",
+          "correct": false
+        },
+        {
+          "text": "A le même sens qu'un autre mot",
+          "correct": false
+        },
+        {
+          "text": "Se prononce comme un autre mot",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel suffixe permet de former un nom à partir d'un verbe (ex : chanter → chant…) ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "-eur / -tion / -ment",
+          "correct": true
+        },
+        {
+          "text": "-in / -ir / -is",
+          "correct": false
+        },
+        {
+          "text": "-able / -ible / -uble",
+          "correct": false
+        },
+        {
+          "text": "-ement / -issime / -issant",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le registre de langue de cette phrase : \"T'as vu ce truc de ouf ?\"",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Registre familier",
+          "correct": true
+        },
+        {
+          "text": "Registre courant",
+          "correct": false
+        },
+        {
+          "text": "Registre soutenu",
+          "correct": false
+        },
+        {
+          "text": "Registre argotique littéraire",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans \"Le chat de ma voisine dort sur le canapé\", quel est le COD ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Il n'y a pas de COD (\"dort\" est un verbe intransitif)",
+          "correct": true
+        },
+        {
+          "text": "\"le canapé\"",
+          "correct": false
+        },
+        {
+          "text": "\"ma voisine\"",
+          "correct": false
+        },
+        {
+          "text": "\"le chat\"",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans \"Il parle à ses amis\", \"à ses amis\" est…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un complément d'objet indirect (COI)",
+          "correct": true
+        },
+        {
+          "text": "Un complément d'objet direct (COD)",
+          "correct": false
+        },
+        {
+          "text": "Un complément circonstanciel de lieu",
+          "correct": false
+        },
+        {
+          "text": "Un complément du nom",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "\"La souris a été mangée par le chat\" est une phrase à la voix…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Passive",
+          "correct": true
+        },
+        {
+          "text": "Active",
+          "correct": false
+        },
+        {
+          "text": "Pronominale",
+          "correct": false
+        },
+        {
+          "text": "Impersonnelle",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans \"une belle fleur rouge\", les adjectifs s'accordent avec…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le nom \"fleur\" (féminin singulier)",
+          "correct": true
+        },
+        {
+          "text": "Le déterminant \"une\"",
+          "correct": false
+        },
+        {
+          "text": "Le verbe de la phrase",
+          "correct": false
+        },
+        {
+          "text": "Le sujet du verbe principal",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Parmi ces mots, lequel est un pronom relatif ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Dont",
+          "correct": true
+        },
+        {
+          "text": "Donc",
+          "correct": false
+        },
+        {
+          "text": "Quand",
+          "correct": false
+        },
+        {
+          "text": "Ainsi",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce que l'incipit d'un roman ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Le tout début du roman, les premières lignes ou pages",
+          "correct": true
+        },
+        {
+          "text": "La fin du roman",
+          "correct": false
+        },
+        {
+          "text": "Le titre du roman",
+          "correct": false
+        },
+        {
+          "text": "Le résumé au dos du livre",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un texte \"narratif\" a pour but principal de…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Raconter une histoire, des événements",
+          "correct": true
+        },
+        {
+          "text": "Décrire un lieu ou un personnage",
+          "correct": false
+        },
+        {
+          "text": "Convaincre le lecteur d'une opinion",
+          "correct": false
+        },
+        {
+          "text": "Expliquer le fonctionnement de quelque chose",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un portrait \"moral\" d'un personnage décrit…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Son caractère, ses qualités et défauts, sa personnalité",
+          "correct": true
+        },
+        {
+          "text": "Son apparence physique",
+          "correct": false
+        },
+        {
+          "text": "Ses vêtements et sa tenue",
+          "correct": false
+        },
+        {
+          "text": "Ses origines familiales et sociales",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le mouvement surréaliste est né dans quel pays au XXe siècle ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "En France",
+          "correct": true
+        },
+        {
+          "text": "En Allemagne",
+          "correct": false
+        },
+        {
+          "text": "En Italie",
+          "correct": false
+        },
+        {
+          "text": "En Angleterre",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce que l'écriture automatique, pratiquée par les surréalistes ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Écrire sans contrôle de la raison pour libérer l'inconscient",
+          "correct": true
+        },
+        {
+          "text": "Écrire le plus vite possible sans faire de fautes",
+          "correct": false
+        },
+        {
+          "text": "Écrire en respectant strictement les règles classiques",
+          "correct": false
+        },
+        {
+          "text": "Dicter un texte à une machine",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Paul Éluard est un poète surréaliste.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Durant la Seconde Guerre mondiale, certains auteurs ont écrit pour résister. Comment appelle-t-on ce courant ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "La littérature de Résistance",
+          "correct": true
+        },
+        {
+          "text": "La littérature de l'Absurde",
+          "correct": false
+        },
+        {
+          "text": "La littérature naturaliste",
+          "correct": false
+        },
+        {
+          "text": "La littérature romantique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Louis Aragon a écrit des poèmes engagés contre l'Occupation nazie.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Remets ces étapes de lecture d'un poème dans un ordre logique d'analyse :",
+      "time": 45,
+      "answers": [
+        {
+          "text": "Identifier le genre et la forme (sonnet, poème en prose…)",
+          "correct": true
+        },
+        {
+          "text": "Repérer le thème principal",
+          "correct": true
+        },
+        {
+          "text": "Analyser les figures de style",
+          "correct": true
+        },
+        {
+          "text": "Rédiger une interprétation globale",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce que le DNB (Diplôme National du Brevet) évalue en français ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "La compréhension de texte, la maîtrise de la langue et la rédaction",
+          "correct": true
+        },
+        {
+          "text": "Uniquement la dictée et la grammaire",
+          "correct": false
+        },
+        {
+          "text": "La récitation d'un poème appris par cœur",
+          "correct": false
+        },
+        {
+          "text": "La lecture à voix haute d'un texte inconnu",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on un texte dans lequel l'auteur défend une opinion à l'aide d'arguments et d'exemples ?",
+      "time": 30,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "Texte argumentatif",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "texte argumentatif",
+        "un texte argumentatif",
+        "argumentation",
+        "essai argumentatif",
+        "discours argumentatif"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un texte argumentatif, la \"contre-argumentation\" (ou réfutation) sert à…",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Répondre aux arguments opposés pour mieux défendre sa thèse",
+          "correct": true
+        },
+        {
+          "text": "Abandonner sa thèse face aux critiques",
+          "correct": false
+        },
+        {
+          "text": "Résumer les arguments du camp adverse sans répondre",
+          "correct": false
+        },
+        {
+          "text": "Introduire un nouveau thème dans le texte",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce que le \"pacte autobiographique\" selon le théoricien Philippe Lejeune ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "L'engagement implicite de l'auteur envers le lecteur que le récit est vrai et sincère",
+          "correct": true
+        },
+        {
+          "text": "Un contrat signé entre l'auteur et son éditeur",
+          "correct": false
+        },
+        {
+          "text": "Une promesse de ne jamais révéler les noms des personnes citées",
+          "correct": false
+        },
+        {
+          "text": "Un accord entre l'auteur et son personnage principal",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce que l'autofiction ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Un récit qui mêle des éléments autobiographiques réels et des parties inventées",
+          "correct": true
+        },
+        {
+          "text": "Un roman entièrement inventé dont l'auteur est anonyme",
+          "correct": false
+        },
+        {
+          "text": "Une biographie écrite par quelqu'un d'autre",
+          "correct": false
+        },
+        {
+          "text": "Un journal intime publié sans modification",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Marcel Pagnol est connu pour ses récits autobiographiques sur son enfance en Provence. Comment s'intitule le premier tome ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "La Gloire de mon père",
+          "correct": true
+        },
+        {
+          "text": "Le Château de ma mère",
+          "correct": false
+        },
+        {
+          "text": "Le Temps des secrets",
+          "correct": false
+        },
+        {
+          "text": "Jean de Florette",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Une biographie est un texte dans lequel l'auteur raconte sa propre vie.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Les Fables de La Fontaine sont considérées comme une forme de satire car elles…",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Critiquent la société et les comportements humains à travers des animaux",
+          "correct": true
+        },
+        {
+          "text": "Racontent des histoires d'aventures héroïques",
+          "correct": false
+        },
+        {
+          "text": "Décrivent la nature avec précision scientifique",
+          "correct": false
+        },
+        {
+          "text": "Expriment la nostalgie du poète pour son enfance",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une fable, la morale se trouve généralement…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Au début ou à la fin du texte",
+          "correct": true
+        },
+        {
+          "text": "Uniquement au milieu du texte",
+          "correct": false
+        },
+        {
+          "text": "Elle n'est jamais exprimée explicitement",
+          "correct": false
+        },
+        {
+          "text": "Dans le titre uniquement",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'un conte philosophique ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Un récit qui utilise le merveilleux pour transmettre des idées philosophiques et critiquer la société",
+          "correct": true
+        },
+        {
+          "text": "Un traité philosophique très long et sérieux",
+          "correct": false
+        },
+        {
+          "text": "Un conte pour enfants avec une morale simple",
+          "correct": false
+        },
+        {
+          "text": "Une pièce de théâtre sur des thèmes philosophiques",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Arthur Rimbaud a écrit la plupart de ses poèmes à quel âge ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Entre 15 et 20 ans",
+          "correct": true
+        },
+        {
+          "text": "Entre 30 et 40 ans",
+          "correct": false
+        },
+        {
+          "text": "Entre 50 et 60 ans",
+          "correct": false
+        },
+        {
+          "text": "Après sa retraite à 65 ans",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel mouvement poétique de la fin du XIXe siècle, dont font partie Verlaine et Mallarmé, cherche à suggérer des émotions par la musicalité des mots ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Le Symbolisme",
+          "correct": true
+        },
+        {
+          "text": "Le Parnasse",
+          "correct": false
+        },
+        {
+          "text": "Le Dadaïsme",
+          "correct": false
+        },
+        {
+          "text": "Le Naturalisme",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'une périphrase ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Remplacer un mot par une expression plus longue qui le définit ou le décrit (ex : \"l'astre du jour\" pour \"le soleil\")",
+          "correct": true
+        },
+        {
+          "text": "Raccourcir une phrase en supprimant des mots",
+          "correct": false
+        },
+        {
+          "text": "Répéter un mot à la fin de plusieurs phrases",
+          "correct": false
+        },
+        {
+          "text": "Inverser l'ordre normal des mots dans la phrase",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "\"Partir, c'est mourir un peu\" est un exemple de…",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Métaphore",
+          "correct": true
+        },
+        {
+          "text": "Comparaison",
+          "correct": false
+        },
+        {
+          "text": "Antithèse",
+          "correct": false
+        },
+        {
+          "text": "Hyperbole",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'une gradation (figure de style) ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Une succession de termes ou d'idées classés par ordre croissant ou décroissant d'intensité",
+          "correct": true
+        },
+        {
+          "text": "La répétition d'un même mot plusieurs fois dans une phrase",
+          "correct": false
+        },
+        {
+          "text": "L'opposition de deux mots contraires dans une même expression",
+          "correct": false
+        },
+        {
+          "text": "L'attribution de qualités humaines à un objet inanimé",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "\"Un soupir, un sanglot, un cri de désespoir\" est un exemple de…",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Gradation",
+          "correct": true
+        },
+        {
+          "text": "Anaphore",
+          "correct": false
+        },
+        {
+          "text": "Allitération",
+          "correct": false
+        },
+        {
+          "text": "Oxymore",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce que l'ellipse narrative ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Un passage de temps non raconté dans le récit (on saute une période)",
+          "correct": true
+        },
+        {
+          "text": "Un retour en arrière dans l'histoire",
+          "correct": false
+        },
+        {
+          "text": "Une anticipation d'événements futurs dans le récit",
+          "correct": false
+        },
+        {
+          "text": "Un ralentissement du récit avec de nombreux détails",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment appelle-t-on un retour en arrière dans la narration ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un flashback (ou analepse)",
+          "correct": true
+        },
+        {
+          "text": "Une ellipse",
+          "correct": false
+        },
+        {
+          "text": "Une prolepse",
+          "correct": false
+        },
+        {
+          "text": "Un sommaire",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel temps verbal exprime une action future qui sera accomplie avant une autre action future ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Le futur antérieur",
+          "correct": true
+        },
+        {
+          "text": "Le futur simple",
+          "correct": false
+        },
+        {
+          "text": "Le conditionnel présent",
+          "correct": false
+        },
+        {
+          "text": "Le plus-que-parfait",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le conditionnel présent est utilisé pour exprimer…",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Une action hypothétique ou soumise à une condition",
+          "correct": true
+        },
+        {
+          "text": "Une action certaine dans le futur",
+          "correct": false
+        },
+        {
+          "text": "Un ordre poli mais direct",
+          "correct": false
+        },
+        {
+          "text": "Une action passée et achevée",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le plus-que-parfait exprime…",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Une action passée antérieure à une autre action passée",
+          "correct": true
+        },
+        {
+          "text": "Une action en cours au moment présent",
+          "correct": false
+        },
+        {
+          "text": "Une action future hypothétique",
+          "correct": false
+        },
+        {
+          "text": "Une action répétée dans le présent",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on le groupe de vers qui forment une unité dans un poème (ex : groupe de 4 vers) ?",
+      "time": 30,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "Strophe",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "strophe",
+        "une strophe",
+        "la strophe",
+        "des strophes"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment appelle-t-on une strophe de 4 vers ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un quatrain",
+          "correct": true
+        },
+        {
+          "text": "Un tercet",
+          "correct": false
+        },
+        {
+          "text": "Un distique",
+          "correct": false
+        },
+        {
+          "text": "Un sizain",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment appelle-t-on une strophe de 3 vers ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un tercet",
+          "correct": true
+        },
+        {
+          "text": "Un quatrain",
+          "correct": false
+        },
+        {
+          "text": "Un distique",
+          "correct": false
+        },
+        {
+          "text": "Un quintil",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un vers de 8 syllabes s'appelle…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un octosyllabe",
+          "correct": true
+        },
+        {
+          "text": "Un décasyllabe",
+          "correct": false
+        },
+        {
+          "text": "Un alexandrin",
+          "correct": false
+        },
+        {
+          "text": "Un heptasyllabe",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le \"vers libre\" est caractérisé par…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'absence de règles fixes de métrique et de rimes",
+          "correct": true
+        },
+        {
+          "text": "Une liberté de sujet mais des rimes obligatoires",
+          "correct": false
+        },
+        {
+          "text": "Un nombre de syllabes toujours pair",
+          "correct": false
+        },
+        {
+          "text": "L'alternance stricte de vers courts et longs",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Gustave Flaubert est l'auteur de quel roman réaliste célèbre ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Madame Bovary",
+          "correct": true
+        },
+        {
+          "text": "Germinal",
+          "correct": false
+        },
+        {
+          "text": "Le Père Goriot",
+          "correct": false
+        },
+        {
+          "text": "Notre-Dame de Paris",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Honoré de Balzac a regroupé ses romans sous quel titre d'ensemble ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "La Comédie humaine",
+          "correct": true
+        },
+        {
+          "text": "Les Rougon-Macquart",
+          "correct": false
+        },
+        {
+          "text": "À la recherche du temps perdu",
+          "correct": false
+        },
+        {
+          "text": "Les Misérables",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Guy de Maupassant est surtout connu pour ses…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Nouvelles réalistes",
+          "correct": true
+        },
+        {
+          "text": "Poèmes symbolistes",
+          "correct": false
+        },
+        {
+          "text": "Pièces de théâtre absurde",
+          "correct": false
+        },
+        {
+          "text": "Romans autobiographiques",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Albert Camus est l'auteur de quel roman célèbre du XXe siècle ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "L'Étranger",
+          "correct": true
+        },
+        {
+          "text": "La Nausée",
+          "correct": false
+        },
+        {
+          "text": "Huis clos",
+          "correct": false
+        },
+        {
+          "text": "Voyage au bout de la nuit",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le registre fantastique est caractérisé par…",
+      "time": 30,
+      "answers": [
+        {
+          "text": "L'hésitation entre une explication naturelle et surnaturelle d'un événement étrange",
+          "correct": true
+        },
+        {
+          "text": "Un monde entièrement merveilleux où la magie est normale",
+          "correct": false
+        },
+        {
+          "text": "Un récit d'horreur avec beaucoup de violence",
+          "correct": false
+        },
+        {
+          "text": "Une histoire policière avec un crime inexpliqué",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Le registre pathétique vise à…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Émouvoir le lecteur, susciter sa pitié ou sa tristesse",
+          "correct": true
+        },
+        {
+          "text": "Faire rire le lecteur par des situations comiques",
+          "correct": false
+        },
+        {
+          "text": "Impressionner le lecteur par la grandeur des exploits",
+          "correct": false
+        },
+        {
+          "text": "Convaincre le lecteur par des arguments logiques",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'un roman \"d'apprentissage\" (ou Bildungsroman) ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Un roman qui raconte la formation et l'évolution d'un jeune héros vers l'âge adulte",
+          "correct": true
+        },
+        {
+          "text": "Un roman destiné à apprendre à lire aux enfants",
+          "correct": false
+        },
+        {
+          "text": "Un roman historique sur l'éducation au Moyen Âge",
+          "correct": false
+        },
+        {
+          "text": "Un roman dont les personnages sont des élèves",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Lequel de ces éléments fait partie du paratexte d'un livre ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "La couverture, le titre, la préface, la quatrième de couverture",
+          "correct": true
+        },
+        {
+          "text": "Les dialogues entre les personnages",
+          "correct": false
+        },
+        {
+          "text": "Les descriptions de paysages",
+          "correct": false
+        },
+        {
+          "text": "Le dénouement de l'intrigue",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans \"Il fait beau bien qu'il ait plu ce matin\", la proposition soulignée exprime…",
+      "time": 30,
+      "answers": [
+        {
+          "text": "La concession (ou opposition)",
+          "correct": true
+        },
+        {
+          "text": "La cause",
+          "correct": false
+        },
+        {
+          "text": "La conséquence",
+          "correct": false
+        },
+        {
+          "text": "Le but",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel connecteur exprime le but ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Afin que",
+          "correct": true
+        },
+        {
+          "text": "Puisque",
+          "correct": false
+        },
+        {
+          "text": "Cependant",
+          "correct": false
+        },
+        {
+          "text": "Or",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans \"la maison de mon oncle\", \"de mon oncle\" est un…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Complément du nom",
+          "correct": true
+        },
+        {
+          "text": "Complément d'objet indirect",
+          "correct": false
+        },
+        {
+          "text": "Complément circonstanciel de lieu",
+          "correct": false
+        },
+        {
+          "text": "Sujet du verbe",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'un adjectif épithète ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Un adjectif directement placé à côté du nom qu'il qualifie, sans verbe entre eux",
+          "correct": true
+        },
+        {
+          "text": "Un adjectif séparé du nom par un verbe (ex : \"le ciel est bleu\")",
+          "correct": false
+        },
+        {
+          "text": "Un adjectif qui remplace un nom",
+          "correct": false
+        },
+        {
+          "text": "Un adjectif exprimant une quantité",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans \"Fatigué, il s'endormit aussitôt\", \"Fatigué\" est un adjectif…",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Apposé (ou en apposition)",
+          "correct": true
+        },
+        {
+          "text": "Épithète",
+          "correct": false
+        },
+        {
+          "text": "Attribut du sujet",
+          "correct": false
+        },
+        {
+          "text": "Attribut du COD",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans \"Il semble fatigué\", \"fatigué\" est un attribut…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Du sujet",
+          "correct": true
+        },
+        {
+          "text": "Du COD",
+          "correct": false
+        },
+        {
+          "text": "Du COI",
+          "correct": false
+        },
+        {
+          "text": "Épithète du nom",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Laquelle de ces phrases contient une erreur d'orthographe ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "\"Les enfants sont revenue de l'école.\"",
+          "correct": true
+        },
+        {
+          "text": "\"Les enfants sont revenus de l'école.\"",
+          "correct": false
+        },
+        {
+          "text": "\"L'enfant est revenu de l'école.\"",
+          "correct": false
+        },
+        {
+          "text": "\"La fille est revenue de l'école.\"",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Laquelle de ces formes est correcte au subjonctif présent (\"que je…\") pour le verbe \"être\" ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Que je sois",
+          "correct": true
+        },
+        {
+          "text": "Que je suis",
+          "correct": false
+        },
+        {
+          "text": "Que je serai",
+          "correct": false
+        },
+        {
+          "text": "Que j'étais",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Lequel de ces mots est un adverbe de négation ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Ne… jamais",
+          "correct": true
+        },
+        {
+          "text": "Très",
+          "correct": false
+        },
+        {
+          "text": "Pourtant",
+          "correct": false
+        },
+        {
+          "text": "Lorsque",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on la figure de style qui consiste à remplacer le tout par une partie ou une partie par le tout (ex : \"les voiles\" pour \"les bateaux\") ?",
+      "time": 40,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "Synecdoque",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "synecdoque",
+        "une synecdoque",
+        "la synecdoque"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "\"Prendre la poudre d'escampette\" signifie…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "S'enfuir rapidement",
+          "correct": true
+        },
+        {
+          "text": "Se mettre en colère",
+          "correct": false
+        },
+        {
+          "text": "Faire une erreur",
+          "correct": false
+        },
+        {
+          "text": "Prendre un médicament",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Une expression figée dont le sens ne se déduit pas des mots qui la composent s'appelle…",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Une expression idiomatique",
+          "correct": true
+        },
+        {
+          "text": "Un pléonasme",
+          "correct": false
+        },
+        {
+          "text": "Un barbarisme",
+          "correct": false
+        },
+        {
+          "text": "Un néologisme",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un \"néologisme\" est…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Un mot nouveau inventé récemment",
+          "correct": true
+        },
+        {
+          "text": "Un mot qui n'existe plus dans la langue courante",
+          "correct": false
+        },
+        {
+          "text": "Un mot emprunté à une langue étrangère",
+          "correct": false
+        },
+        {
+          "text": "Un mot familier ou argotique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'un pléonasme ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Une redondance inutile (ex : \"monter en haut\")",
+          "correct": true
+        },
+        {
+          "text": "Un mot au sens contraire d'un autre",
+          "correct": false
+        },
+        {
+          "text": "Un mot dont le son imite le bruit qu'il désigne",
+          "correct": false
+        },
+        {
+          "text": "Un mot d'origine étrangère intégré au français",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Remets ces parties d'une rédaction de brevet dans le bon ordre :",
+      "time": 40,
+      "answers": [
+        {
+          "text": "Introduction qui présente le sujet et annonce le plan",
+          "correct": true
+        },
+        {
+          "text": "Premier paragraphe avec argument et exemple",
+          "correct": true
+        },
+        {
+          "text": "Deuxième paragraphe avec argument et exemple",
+          "correct": true
+        },
+        {
+          "text": "Conclusion qui fait le bilan et ouvre sur une réflexion",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pour bien réussir une dictée, il faut en priorité…",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Identifier la nature et la fonction des mots pour appliquer les bons accords",
+          "correct": true
+        },
+        {
+          "text": "Écrire le plus vite possible sans relire",
+          "correct": false
+        },
+        {
+          "text": "Toujours accorder les verbes avec le mot juste avant",
+          "correct": false
+        },
+        {
+          "text": "Ne jamais utiliser la ponctuation",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "À l'épreuve de français du brevet, les élèves peuvent avoir un dictionnaire.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une analyse de texte au brevet, que signifie \"relever et analyser\" une figure de style ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "La citer, la nommer et expliquer son effet sur le lecteur",
+          "correct": true
+        },
+        {
+          "text": "Simplement la recopier sans l'expliquer",
+          "correct": false
+        },
+        {
+          "text": "La corriger si elle est incorrecte",
+          "correct": false
+        },
+        {
+          "text": "Chercher d'autres exemples du même auteur",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le sens du mot \"péripétie\" dans un récit ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Un rebondissement, un événement imprévu qui change le cours de l'histoire",
+          "correct": true
+        },
+        {
+          "text": "La situation initiale et stable au début du récit",
+          "correct": false
+        },
+        {
+          "text": "La résolution finale du problème",
+          "correct": false
+        },
+        {
+          "text": "La description du cadre géographique",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

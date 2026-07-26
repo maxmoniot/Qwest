@@ -1,0 +1,22 @@
+2026-05-21 14:53:35	start_game	FJB92A	teacher	players=17&manual=0&showTop3=1
+2026-05-21 14:53:38	next_question	FJB92A	teacher	from=-1&to=0&customTime=none
+2026-05-21 14:53:56	question_complete_all_answered	fjb92a		q=0&active=15
+2026-05-21 14:54:01	next_question	FJB92A	teacher	from=0&to=1&customTime=none
+2026-05-21 14:54:18	question_complete_all_answered	fjb92a		q=1&active=17
+2026-05-21 14:54:23	next_question	FJB92A	teacher	from=1&to=2&customTime=none
+2026-05-21 14:54:29	end_game	FJB92A	teacher	prevState=playing&lastQ=2&players=18
+2026-05-21 14:54:31	end_game	FJB92A	teacher	prevState=finished&lastQ=2&players=18
+2026-05-21 15:46:15	start_game	NNE9TD	teacher	players=25&manual=0&showTop3=1
+2026-05-21 15:46:18	next_question	NNE9TD	teacher	from=-1&to=0&customTime=none
+2026-05-21 15:46:30	question_complete_all_answered	nne9td		q=0&active=23
+2026-05-21 15:46:36	next_question	NNE9TD	teacher	from=0&to=1&customTime=none
+2026-05-21 15:47:05	next_question	NNE9TD	teacher	from=1&to=2&customTime=none
+2026-05-21 15:47:31	question_complete_all_answered	nne9td		q=2&active=22
+2026-05-21 15:47:37	next_question	NNE9TD	teacher	from=2&to=3&customTime=none
+2026-05-21 15:47:57	question_complete_all_answered	NNE9TD		q=3&active=21
+2026-05-21 15:48:02	next_question	NNE9TD	teacher	from=3&to=4&customTime=none
+2026-05-21 15:48:18	question_complete_all_answered	NNE9TD		q=4&active=22
+2026-05-21 15:48:24	next_question	NNE9TD	teacher	from=4&to=5&customTime=none
+2026-05-21 15:48:53	next_question	NNE9TD	teacher	from=5&to=6&customTime=none
+2026-05-21 15:49:18	end_game	NNE9TD	teacher	prevState=playing&lastQ=6&players=26
+2026-05-21 15:49:25	end_game	NNE9TD	teacher	prevState=finished&lastQ=6&players=26

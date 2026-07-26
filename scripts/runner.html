@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Qwest — Runner de tests</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #f4f6fa;
+    margin: 0;
+    padding: 24px;
+    color: #1a2233;
+  }
+  h1 { margin: 0 0 8px; font-size: 22px; }
+  .lead { color: #5a6478; margin: 0 0 20px; font-size: 14px; }
+  .grid { display: grid; grid-template-columns: 360px 1fr; gap: 20px; max-width: 1400px; }
+  @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
+
+  .card {
+    background: #fff;
+    border: 1px solid #e3e6ed;
+    border-radius: 10px;
+    padding: 16px 18px;
+    margin-bottom: 14px;
+  }
+  .card h2 { margin: 0 0 12px; font-size: 15px; text-transform: uppercase; letter-spacing: 0.5px; color: #344058; }
+
+  label { display: block; font-size: 13px; font-weight: 600; color: #344058; margin-bottom: 4px; margin-top: 10px; }
+  label:first-of-type { margin-top: 0; }
+  input, select {
+    width: 100%; padding: 8px 10px; font: inherit; font-size: 14px;
+    border: 1px solid #cfd4df; border-radius: 6px; background: #fafbfc;
+  }
+  input:focus, select:focus { outline: none; border-color: #4a7bff; background: #fff; }
+  small { display: block; color: #7c8597; font-size: 12px; margin-top: 3px; }
+
+  button {
+    display: block; width: 100%;
+    padding: 10px 14px; margin-top: 10px;
+    font: inherit; font-size: 14px; font-weight: 600;
+    border: none; border-radius: 6px;
+    background: #4a7bff; color: #fff;
+    cursor: pointer; transition: background 0.15s;
+  }
+  button:hover { background: #345fdc; }
+  button:disabled { background: #aab3c6; cursor: wait; }
+  button.secondary { background: #5b6477; }
+  button.secondary:hover { background: #444c5e; }
+  button.success { background: #1f9b56; }
+  button.danger  { background: #d63b3b; }
+
+  .btn-group button { margin-top: 8px; display: flex; align-items: center; justify-content: space-between; gap: 8px; text-align: left; }
+  .btn-group button .when { font-size: 14px; opacity: 0.95; }
+
+  .log-area {
+    background: #0f1117; color: #d4dbe5;
+    border-radius: 8px; padding: 14px;
+    font-family: "JetBrains Mono", "Consolas", "Courier New", monospace;
+    font-size: 12.5px; line-height: 1.5;
+    white-space: pre-wrap; word-break: break-word;
+    min-height: 60vh; max-height: 80vh;
+    overflow: auto;
+  }
+  .log-empty { color: #6b7383; font-style: italic; padding: 20px; }
+  .log-success { color: #5dd682; }
+  .log-error   { color: #ff6b6b; }
+  .toolbar {
+    display: flex; gap: 8px; flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  .toolbar button { width: auto; padding: 6px 12px; font-size: 13px; margin: 0; }
+  .toolbar a {
+    display: inline-block; padding: 6px 12px; font-size: 13px;
+    background: #1f9b56; color: #fff; border-radius: 6px;
+    text-decoration: none; font-weight: 600;
+  }
+  .toolbar a:hover { background: #19834a; }
+  .status {
+    padding: 8px 12px; border-radius: 6px;
+    font-size: 13px; margin-bottom: 10px;
+  }
+  .status.running { background: #fff7d6; color: #806000; border: 1px solid #f0d97a; }
+  .status.done    { background: #d8f5e3; color: #1f6b3e; border: 1px solid #8dd5a6; }
+  .status.error   { background: #fde2e2; color: #8a2222; border: 1px solid #f4a8a8; }
+</style>
+</head>
+<body>
+
+<h1>🧪 Qwest — Runner de tests</h1>
+<p class="lead">
+  Lance les scripts de vérification depuis le navigateur. Crée un fichier de log
+  horodaté dans <code>scripts/logs/</code> à donner pour analyse.
+</p>
+<details class="card" style="margin-bottom:14px;background:#fffbe9;border-color:#e8d97a">
+  <summary style="cursor:pointer;font-weight:600;color:#806000">📖 Quand lancer chaque test ? (clique pour ouvrir)</summary>
+  <ol style="font-size:13px;line-height:1.6;margin:10px 0 0 18px;color:#3a3a3a">
+    <li>Crée une partie de test dans l'interface prof avec un quiz <b>d'au moins 8 questions</b>
+        si tu veux utiliser « Tout lancer ». Pour un seul script à la fois, 1-2 questions suffisent.</li>
+    <li>Note le code de partie ici → <b>Code de partie</b>. <b>NE clique pas encore « Lancer la partie »</b>.</li>
+    <li>🟢 <b>check_server</b> — n'importe quand.</li>
+    <li>🟡 <b>race_test</b> — sur une partie créée mais <b>pas encore lancée</b>. Le script s'occupe du démarrage.</li>
+    <li>🟢 <b>chaos_test</b> — <b>autonome</b> : crée SA PROPRE session, simule une classe de collège
+        (double connexion, vol de pseudo, élève très lent, coupure réseau de 45 s, spam de réponses,
+        recherche de triche dans les payloads, réponse dernière seconde), mesure la synchro d'affichage
+        et vérifie le score de CHAQUE élève au point près, puis nettoie. Durée ≈ 2-3 min.</li>
+    <li>🔴 <b>idempotence_test</b> et <b>load_test</b> — la partie doit être <b>en cours</b> (state=playing, Q0 ou plus).
+        Après race_test, c'est déjà le cas. <b>load_test</b> avance maintenant automatiquement à la question
+        suivante si la précédente est terminée (option <code>auto-prep</code>).</li>
+  </ol>
+  <p style="font-size:13px;line-height:1.5;margin:10px 0 0;color:#806000">
+    💡 <b>Si tu as déjà cliqué « Lancer la partie »</b> : les scripts fonctionnent quand même grâce à
+    l'idempotence côté serveur. Tu peux lancer tous les tests sauf check_server qui n'a pas besoin de partie.
+  </p>
+</details>
+
+<div class="grid">
+  <!-- Panneau gauche : paramètres + boutons -->
+  <div>
+    <div class="card">
+      <h2>⚙️ Paramètres</h2>
+
+      <label for="base-url">Base URL</label>
+      <input id="base-url" value="http://localhost/qwest">
+
+      <label for="play-code">Code de partie (playCode)</label>
+      <input id="play-code" placeholder="Ex: AB12CD" maxlength="12" autocomplete="off">
+      <small>Crée d'abord une partie depuis l'interface prof, puis colle le code ici.</small>
+
+      <label for="players">Élèves simulés</label>
+      <input id="players" type="number" value="20" min="1" max="50">
+
+      <label for="duration">Durée load_test (s)</label>
+      <input id="duration" type="number" value="60" min="10" max="600">
+      <small>Limité à 600 s. Pour un test rapide, 30-60 s suffit.</small>
+
+      <label for="question-time">Temps par question (race_test, s)</label>
+      <input id="question-time" type="number" value="30" min="5" max="300">
+
+      <label for="auto-start">Auto-start race_test</label>
+      <select id="auto-start">
+        <option value="1" selected>Oui — le script lance start_game + Q0</option>
+        <option value="0">Non — démarrer manuellement depuis l'interface prof</option>
+      </select>
+    </div>
+
+    <div class="card">
+      <h2>🚀 Lancer un test</h2>
+      <p style="font-size:12px;color:#5a6478;margin:0 0 10px;background:#f4f6fa;padding:8px;border-radius:6px;line-height:1.45">
+        🟢 <b>n'importe quand</b> &nbsp;·&nbsp;
+        🟡 <b>partie pas encore lancée</b> (recommandé) &nbsp;·&nbsp;
+        🔴 <b>partie déjà lancée + Q0 en cours</b> requis
+      </p>
+
+      <div class="btn-group">
+        <button data-script="check_server" data-when="🟢">1️⃣ check_server <span class="when">🟢</span></button>
+        <button data-script="race_test" data-when="🟡" class="success">2️⃣ race_test (dernière seconde) <span class="when">🟡</span></button>
+        <button data-script="idempotence_test" data-when="🔴" class="success">3️⃣ idempotence_test <span class="when">🔴</span></button>
+        <button data-script="load_test" data-scenario="stable"      data-when="🔴">4a️⃣ load_test — stable <span class="when">🔴</span></button>
+        <button data-script="load_test" data-scenario="last-second" data-when="🔴">4b️⃣ load_test — last-second <span class="when">🔴</span></button>
+        <button data-script="load_test" data-scenario="slow"        data-when="🔴">4c️⃣ load_test — slow <span class="when">🔴</span></button>
+        <button data-script="load_test" data-scenario="oscillating" data-when="🔴">4d️⃣ load_test — oscillating <span class="when">🔴</span></button>
+        <button data-script="load_test" data-scenario="interrupt"   data-when="🔴">4e️⃣ load_test — interrupt <span class="when">🔴</span></button>
+        <button data-script="load_test" data-scenario="stable"      data-when="🔴" data-players="30">4f️⃣ load_test — 30 élèves <span class="when">🔴</span></button>
+        <button data-script="chaos_test" data-when="🟢" class="success">5️⃣ chaos_test — classe de collège <span class="when">🟢</span></button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>🎯 Suite complète</h2>
+      <p style="font-size:13px;color:#5a6478;margin:0 0 8px;line-height:1.45">
+        À lancer sur une partie <b>fraîche, pas encore démarrée</b>, avec un quiz d'au moins
+        <b>8 questions</b> (race→Q0, idempotence→Q1, puis 6 load_test→Q2…Q7).<br>
+        Enchaîne <b>les 9 tests</b> : check_server → race_test → idempotence_test → load_test (stable, last-second, slow, oscillating, interrupt) → load_test 30 élèves.<br>
+        Durée ≈ <b>30 s × race + 6 × durée load_test</b>. Avec durée=30 s : ~4 min. Avec durée=60 s : ~7 min.
+      </p>
+      <label for="run-all-duration" style="margin-top:0">Durée par load_test pendant la suite (s)</label>
+      <input id="run-all-duration" type="number" value="30" min="10" max="300">
+      <small>Override de la durée des load_test pour la suite. 30 s suffit pour valider la mécanique.</small>
+      <button id="btn-run-all" class="danger">▶️ Tout lancer (9 tests)</button>
+    </div>
+  </div>
+
+  <!-- Panneau droit : sortie + téléchargement -->
+  <div>
+    <div class="card">
+      <h2>📋 Sortie</h2>
+      <div id="status"></div>
+      <div class="toolbar">
+        <button id="btn-clear" class="secondary" type="button">🗑 Effacer</button>
+        <button id="btn-copy" class="secondary" type="button">📋 Copier</button>
+        <span id="download-links"></span>
+      </div>
+      <pre id="log" class="log-area"><div class="log-empty">Aucun test lancé pour le moment.</div></pre>
+    </div>
+  </div>
+</div>
+
+<script>
+const $ = (id) => document.getElementById(id);
+const logEl = $('log');
+const statusEl = $('status');
+const downloadEl = $('download-links');
+
+let combinedLog = '';
+let combinedLinks = [];
+
+function setStatus(text, kind) {
+  statusEl.className = 'status ' + (kind || '');
+  statusEl.textContent = text;
+}
+
+function appendLog(text) {
+  // Première sortie : virer le placeholder
+  if (logEl.querySelector('.log-empty')) logEl.innerHTML = '';
+  combinedLog += text + '\n';
+  logEl.textContent = combinedLog;
+  logEl.scrollTop = logEl.scrollHeight;
+}
+
+function addDownloadLink(name, url) {
+  combinedLinks.push({ name, url });
+  const a = document.createElement('a');
+  a.href = url;
+  a.textContent = '⬇️ ' + name;
+  a.download = name;
+  a.style.marginRight = '6px';
+  downloadEl.appendChild(a);
+}
+
+function getParams() {
+  const playCode = $('play-code').value.trim().toUpperCase();
+  return {
+    'base-url':      $('base-url').value.trim(),
+    'play-code':     playCode,
+    'players':       $('players').value,
+    'duration':      $('duration').value,
+    'question-time': $('question-time').value,
+    'auto-start':    $('auto-start').value,
+  };
+}
+
+async function runScript(scriptKey, extra = {}) {
+  const params = { script: scriptKey, ...getParams(), ...extra };
+  // Overrides éventuels (utilisés par les boutons spéciaux et "Tout lancer")
+  if (extra.duration) params.duration = extra.duration;
+  if (extra.players)  params.players  = extra.players;
+
+  // Validation playCode pour les scripts qui en ont besoin
+  // (check_server : optionnel ; chaos_test : crée sa propre session)
+  if (scriptKey !== 'check_server' && scriptKey !== 'chaos_test' && !params['play-code']) {
+    setStatus('⚠️ Renseigne d\'abord le code de partie.', 'error');
+    return null;
+  }
+
+  const label = scriptKey + (extra.scenario ? ` [${extra.scenario}]` : '');
+
+  // Estimation de la durée pour le compteur (en secondes) — juste indicatif
+  const expectedSeconds =
+      scriptKey === 'check_server'     ? 1 :
+      scriptKey === 'idempotence_test' ? 2 :
+      scriptKey === 'race_test'        ? Math.max(5, parseInt(params['question-time']) + 2) :
+      scriptKey === 'load_test'        ? parseInt(params['duration']) + 2 :
+      scriptKey === 'chaos_test'       ? 4 * (Math.max(8, parseInt(params['question-time']) || 10) + 8) + 45 + 20 :
+      30;
+
+  appendLog('\n\n>>> Lancement : ' + label + ' à ' + new Date().toLocaleTimeString()
+            + ' (durée estimée ~' + expectedSeconds + 's)\n');
+
+  // Désactiver tous les boutons
+  document.querySelectorAll('button').forEach(b => b.disabled = true);
+
+  // Compteur de temps écoulé pendant la requête — important pour les load_test (60s+)
+  // Sans ça, l'utilisateur croit que l'interface est figée.
+  const startedAt = Date.now();
+  const updateTicker = () => {
+    const elapsed = Math.floor((Date.now() - startedAt) / 1000);
+    setStatus(`▶️ ${label} — ${elapsed}s écoulées (≈${expectedSeconds}s attendues, ne ferme pas l'onglet)`, 'running');
+  };
+  updateTicker();
+  const tickerId = setInterval(updateTicker, 1000);
+
+  try {
+    const res = await fetch('runner.php', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(params),
+    });
+    const data = await res.json();
+    clearInterval(tickerId);
+
+    if (!data.ok) {
+      setStatus('❌ ' + (data.error || 'erreur inconnue'), 'error');
+      appendLog('❌ ERREUR : ' + (data.error || 'inconnue'));
+      return null;
+    }
+
+    appendLog(data.output);
+    addDownloadLink(data.logName, data.logUrl);
+    setStatus(`✅ ${label} terminé en ${data.durationMs} ms — log : ${data.logName}`, 'done');
+    return data;
+
+  } catch (err) {
+    clearInterval(tickerId);
+    setStatus('❌ Erreur réseau : ' + err.message, 'error');
+    appendLog('❌ ERREUR RÉSEAU : ' + err.message);
+    return null;
+  } finally {
+    clearInterval(tickerId);
+    document.querySelectorAll('button').forEach(b => b.disabled = false);
+  }
+}
+
+// Boutons individuels
+document.querySelectorAll('button[data-script]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const scriptKey = btn.dataset.script;
+    const extra = {};
+    if (btn.dataset.scenario) extra.scenario = btn.dataset.scenario;
+    if (btn.dataset.players)  extra.players  = btn.dataset.players;
+    runScript(scriptKey, extra);
+  });
+});
+
+// Bouton "tout lancer"
+$('btn-run-all').addEventListener('click', async () => {
+  if (!$('play-code').value.trim()) {
+    setStatus('⚠️ Renseigne d\'abord le code de partie.', 'error');
+    return;
+  }
+  combinedLog = '';
+  combinedLinks = [];
+  logEl.innerHTML = '';
+  downloadEl.innerHTML = '';
+
+  const runAllDuration = parseInt($('run-all-duration').value) || 30;
+  const sequence = [
+    { script: 'check_server' },
+    { script: 'race_test' },
+    { script: 'idempotence_test' },
+    { script: 'load_test', scenario: 'stable',      duration: runAllDuration },
+    { script: 'load_test', scenario: 'last-second', duration: runAllDuration },
+    { script: 'load_test', scenario: 'slow',        duration: runAllDuration },
+    { script: 'load_test', scenario: 'oscillating', duration: runAllDuration },
+    { script: 'load_test', scenario: 'interrupt',   duration: runAllDuration },
+    { script: 'load_test', scenario: 'stable',      duration: runAllDuration, players: '30' }, // capacity test
+  ];
+
+  appendLog('═══════════════════════════════════════\n');
+  appendLog('🎯 SUITE COMPLÈTE — ' + sequence.length + ' étapes\n');
+  appendLog('═══════════════════════════════════════\n');
+
+  for (let i = 0; i < sequence.length; i++) {
+    const step = sequence[i];
+    appendLog('\n📍 Étape ' + (i + 1) + '/' + sequence.length + ' — ' + step.script
+              + (step.scenario ? ' [' + step.scenario + ']' : ''));
+    const extra = {};
+    if (step.scenario) extra.scenario = step.scenario;
+    if (step.duration) extra.duration = step.duration;
+    const r = await runScript(step.script, extra);
+    if (!r) {
+      appendLog('\n⛔ Suite interrompue à l\'étape ' + (i + 1) + '/' + sequence.length + '.\n');
+      return;
+    }
+  }
+  setStatus('🏁 Suite complète terminée — ' + combinedLinks.length + ' logs créés. Télécharge-les ci-dessus pour analyse.', 'done');
+  appendLog('\n═══════════════════════════════════════');
+  appendLog('🏁 SUITE COMPLÈTE TERMINÉE');
+  appendLog('═══════════════════════════════════════\n');
+});
+
+// Boutons utilitaires
+$('btn-clear').addEventListener('click', () => {
+  combinedLog = '';
+  combinedLinks = [];
+  logEl.innerHTML = '<div class="log-empty">Aucun test lancé pour le moment.</div>';
+  downloadEl.innerHTML = '';
+  statusEl.className = '';
+  statusEl.textContent = '';
+});
+
+$('btn-copy').addEventListener('click', async () => {
+  if (!combinedLog) return;
+  try {
+    await navigator.clipboard.writeText(combinedLog);
+    setStatus('📋 Log copié dans le presse-papiers.', 'done');
+  } catch (e) {
+    setStatus('❌ Copie impossible : ' + e.message, 'error');
+  }
+});
+
+// Mémoriser le code de partie dans localStorage pour l'avoir d'une session à l'autre
+const playCodeInput = $('play-code');
+playCodeInput.value = localStorage.getItem('qwest_runner_playcode') || '';
+playCodeInput.addEventListener('input', () => {
+  localStorage.setItem('qwest_runner_playcode', playCodeInput.value);
+});
+</script>
+
+</body>
+</html>

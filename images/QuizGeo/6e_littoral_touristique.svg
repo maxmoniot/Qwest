@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 350">
+  <rect width="700" height="350" fill="#87CEEB"/>
+  <text x="350" y="25" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">Aménagement d'un littoral touristique</text>
+  <!-- Mer -->
+  <rect x="0" y="200" width="700" height="150" fill="#3498db"/>
+  <text x="350" y="300" font-size="14" fill="white" text-anchor="middle">MER</text>
+  <!-- Plage -->
+  <rect x="0" y="180" width="700" height="30" fill="#F4D03F"/>
+  <!-- Infrastructures numérotées -->
+  <!-- 1: Port de plaisance -->
+  <rect x="50" y="150" width="80" height="50" fill="#2980b9"/>
+  <rect x="60" y="160" width="15" height="30" fill="white"/>
+  <rect x="85" y="165" width="15" height="25" fill="white"/>
+  <rect x="110" y="160" width="12" height="30" fill="white"/>
+  <circle cx="90" cy="140" r="15" fill="#e74c3c"/>
+  <text x="90" y="145" font-size="14" text-anchor="middle" fill="white" font-weight="bold">1</text>
+  <!-- 2: Hôtels -->
+  <rect x="180" y="100" width="60" height="80" fill="#9b59b6"/>
+  <rect x="250" y="110" width="50" height="70" fill="#9b59b6"/>
+  <rect x="185" y="110" width="10" height="10" fill="#f1c40f"/>
+  <rect x="200" y="110" width="10" height="10" fill="#f1c40f"/>
+  <circle cx="220" cy="90" r="15" fill="#e74c3c"/>
+  <text x="220" y="95" font-size="14" text-anchor="middle" fill="white" font-weight="bold">2</text>
+  <!-- 3: Promenade/Front de mer -->
+  <rect x="320" y="170" width="150" height="15" fill="#95a5a6"/>
+  <circle cx="395" cy="160" r="15" fill="#e74c3c"/>
+  <text x="395" y="165" font-size="14" text-anchor="middle" fill="white" font-weight="bold">3</text>
+  <!-- 4: Parasols/Plage aménagée -->
+  <line x1="500" y1="195" x2="500" y2="175" stroke="#c0392b" stroke-width="3"/>
+  <ellipse cx="500" cy="173" rx="15" ry="8" fill="#e74c3c"/>
+  <line x1="530" y1="195" x2="530" y2="175" stroke="#c0392b" stroke-width="3"/>
+  <ellipse cx="530" cy="173" rx="15" ry="8" fill="#3498db"/>
+  <line x1="560" y1="195" x2="560" y2="175" stroke="#c0392b" stroke-width="3"/>
+  <ellipse cx="560" cy="173" rx="15" ry="8" fill="#e74c3c"/>
+  <circle cx="530" cy="155" r="15" fill="#e74c3c"/>
+  <text x="530" y="160" font-size="14" text-anchor="middle" fill="white" font-weight="bold">4</text>
+  <!-- Légende -->
+  <rect x="50" y="320" width="600" height="25" fill="rgba(255,255,255,0.9)"/>
+  <text x="350" y="337" font-size="11" text-anchor="middle">1=? 2=? 3=? 4=? (Port de plaisance, Hôtels, Promenade, Plage aménagée)</text>
+</svg>

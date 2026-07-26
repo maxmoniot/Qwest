@@ -1,0 +1,1583 @@
+{
+  "name": "6e_geographie_150q",
+  "version": "1.0",
+  "createdAt": "2026-05-06T00:00:00.000Z",
+  "questionsCount": 150,
+  "questions": [
+    {
+      "type": "multiple",
+      "question": "Comment appelle-t-on la représentation plate de la Terre entière sur une feuille ?",
+      "time": 25,
+      "answers": [
+        {"text": "Un atlas", "correct": false},
+        {"text": "Un planisphère", "correct": true},
+        {"text": "Un cadastre", "correct": false},
+        {"text": "Un profil topographique", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'un globe terrestre ?",
+      "time": 20,
+      "answers": [
+        {"text": "Une carte très agrandie d'un pays", "correct": false},
+        {"text": "Une représentation sphérique de la Terre en 3D", "correct": true},
+        {"text": "Un appareil de mesure climatique", "correct": false},
+        {"text": "Un satellite artificiel", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La Terre est une sphère parfaitement ronde.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": false},
+        {"text": "Faux", "correct": true}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment appelle-t-on la ligne horizontale imaginaire qui divise la Terre en deux hémisphères égaux ?",
+      "time": 20,
+      "answers": [
+        {"text": "Le méridien", "correct": false},
+        {"text": "Le tropique du Cancer", "correct": false},
+        {"text": "L'équateur", "correct": true},
+        {"text": "Le cercle polaire", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Que représentent les méridiens sur une carte ou un globe ?",
+      "time": 25,
+      "answers": [
+        {"text": "Des lignes horizontales de latitude", "correct": false},
+        {"text": "Des lignes verticales imaginaires reliant les deux pôles", "correct": true},
+        {"text": "Les frontières entre pays", "correct": false},
+        {"text": "Les courants marins", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'hémisphère Nord abrite environ 90 % de la population mondiale.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces représentations géographiques du plus général au plus précis :",
+      "time": 40,
+      "answers": [
+        {"text": "Planisphère (monde entier)", "correct": true},
+        {"text": "Carte d'un continent", "correct": true},
+        {"text": "Carte d'un pays", "correct": true},
+        {"text": "Plan d'une ville (très détaillé)", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on la ligne de référence de 0° de longitude qui passe par l'observatoire de Greenwich, en Angleterre ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Méridien de Greenwich", "correct": true}
+      ],
+      "acceptedAnswers": ["méridien de Greenwich", "meridien de Greenwich", "méridien 0", "Greenwich", "meridien origine"]
+    },
+    {
+      "type": "multiple",
+      "question": "À quoi sert la légende d'une carte ?",
+      "time": 25,
+      "answers": [
+        {"text": "À indiquer la date de création de la carte", "correct": false},
+        {"text": "À expliquer les symboles et couleurs utilisés sur la carte", "correct": true},
+        {"text": "À nommer le cartographe", "correct": false},
+        {"text": "À donner l'échelle exacte au centimètre", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel outil numérique moderne permet de localiser des lieux grâce à des satellites ?",
+      "time": 20,
+      "answers": [
+        {"text": "La boussole", "correct": false},
+        {"text": "Le GPS", "correct": true},
+        {"text": "Le sextant", "correct": false},
+        {"text": "La loupe", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le milieu naturel le plus chaud et le plus sec sur Terre ?",
+      "time": 20,
+      "answers": [
+        {"text": "La forêt tropicale", "correct": false},
+        {"text": "La toundra", "correct": false},
+        {"text": "Le désert chaud (ex : Sahara)", "correct": true},
+        {"text": "La savane", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le biome le plus froid de la planète ?",
+      "time": 20,
+      "answers": [
+        {"text": "La taïga", "correct": false},
+        {"text": "La steppe", "correct": false},
+        {"text": "Les régions polaires (toundra et calotte glaciaire)", "correct": true},
+        {"text": "La forêt tempérée", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'Amazonie (Brésil) est la plus grande forêt tropicale du monde.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans quel milieu naturel la végétation est-elle la plus dense et la plus riche en espèces ?",
+      "time": 25,
+      "answers": [
+        {"text": "La steppe", "correct": false},
+        {"text": "La toundra", "correct": false},
+        {"text": "La forêt tropicale humide (forêt équatoriale)", "correct": true},
+        {"text": "La prairie tempérée", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment s'appelle la vaste forêt de conifères qui couvre le nord de la Russie et du Canada ?",
+      "time": 25,
+      "answers": [
+        {"text": "La savane", "correct": false},
+        {"text": "La mangrove", "correct": false},
+        {"text": "La taïga (forêt boréale)", "correct": true},
+        {"text": "La garrigue", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Il existe des déserts froids, comme en Antarctique.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces milieux naturels du plus froid au plus chaud :",
+      "time": 40,
+      "answers": [
+        {"text": "Calotte polaire arctique (−30°C en moyenne)", "correct": true},
+        {"text": "Toundra du Canada", "correct": true},
+        {"text": "Forêt tempérée européenne", "correct": true},
+        {"text": "Désert chaud du Sahara (+25°C en moyenne)", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on la forêt de conifères qui couvre une large bande au nord de l'Eurasie et de l'Amérique du Nord ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Taïga", "correct": true}
+      ],
+      "acceptedAnswers": ["taïga", "taiga", "forêt boréale", "foret boreale", "forêt de conifères"]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans quel milieu naturel trouve-t-on des icebergs et des manchots (côté antarctique) ?",
+      "time": 20,
+      "answers": [
+        {"text": "La savane", "correct": false},
+        {"text": "Le milieu polaire (Antarctique)", "correct": true},
+        {"text": "La mangrove", "correct": false},
+        {"text": "Le désert chaud", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce que la steppe ?",
+      "time": 25,
+      "answers": [
+        {"text": "Une forêt de feuillus en zone tempérée", "correct": false},
+        {"text": "Un milieu naturel herbeux et semi-aride, avec peu d'arbres", "correct": true},
+        {"text": "Un littoral tropical", "correct": false},
+        {"text": "Un désert de sable", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La savane africaine est caractérisée par…",
+      "time": 25,
+      "answers": [
+        {"text": "De grandes forêts denses sans arbres isolés", "correct": false},
+        {"text": "Des hautes herbes et quelques arbres isolés, avec une saison sèche", "correct": true},
+        {"text": "Un froid extrême et peu de végétation", "correct": false},
+        {"text": "Des dunes de sable sans végétation", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel milieu naturel couvre la plus grande superficie sur Terre ?",
+      "time": 25,
+      "answers": [
+        {"text": "Les déserts", "correct": false},
+        {"text": "Les forêts tropicales", "correct": false},
+        {"text": "L'océan (71 % de la surface)", "correct": true},
+        {"text": "La toundra", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La savane africaine est caractérisée par de hautes herbes et quelques arbres isolés.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans quel milieu naturel vivent les ours polaires ?",
+      "time": 20,
+      "answers": [
+        {"text": "La toundra et la banquise arctique", "correct": true},
+        {"text": "La taïga canadienne uniquement", "correct": false},
+        {"text": "L'Antarctique", "correct": false},
+        {"text": "Le désert froid du Groenland", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces milieux naturels de l'équateur vers les pôles :",
+      "time": 40,
+      "answers": [
+        {"text": "Forêt équatoriale (à l'équateur)", "correct": true},
+        {"text": "Savane (milieu tropical)", "correct": true},
+        {"text": "Désert chaud (zones subtropicales)", "correct": true},
+        {"text": "Toundra arctique (proche des pôles)", "correct": true}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le milieu méditerranéen (Provence, Espagne, Grèce) est caractérisé par des étés chauds et secs.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces zones climatiques de la plus pluvieuse à la plus sèche :",
+      "time": 40,
+      "answers": [
+        {"text": "Forêt équatoriale (1 500 - 3 000 mm/an)", "correct": true},
+        {"text": "Forêt tempérée (700 mm/an)", "correct": true},
+        {"text": "Steppe (200 - 500 mm/an)", "correct": true},
+        {"text": "Désert chaud (<25 mm/an)", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on les plantes qui poussent dans les zones arides et stockent l'eau dans leurs tiges épaisses ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Cactus", "correct": true}
+      ],
+      "acceptedAnswers": ["cactus", "plantes succulentes", "succulentes", "plantes grasses", "plante cactée"]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'un biome ?",
+      "time": 25,
+      "answers": [
+        {"text": "Un appareil de mesure météorologique", "correct": false},
+        {"text": "Un grand ensemble naturel caractérisé par un climat et une végétation particuliers", "correct": true},
+        {"text": "Un type de carte géographique", "correct": false},
+        {"text": "Une zone urbaine spéciale", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel milieu naturel est menacé par la déforestation en Amérique du Sud et en Asie du Sud-Est ?",
+      "time": 25,
+      "answers": [
+        {"text": "La steppe", "correct": false},
+        {"text": "La toundra", "correct": false},
+        {"text": "La forêt tropicale humide", "correct": true},
+        {"text": "La mangrove uniquement", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment appelle-t-on un espace où les hommes se sont installés et ont organisé leur vie ?",
+      "time": 25,
+      "answers": [
+        {"text": "Un biome", "correct": false},
+        {"text": "Un espace habité (ou territoire)", "correct": true},
+        {"text": "Un écosystème", "correct": false},
+        {"text": "Un biotope", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle ville est la plus peuplée du monde ?",
+      "time": 20,
+      "answers": [
+        {"text": "New York", "correct": false},
+        {"text": "Shanghai", "correct": false},
+        {"text": "Tokyo (Japon)", "correct": true},
+        {"text": "Paris", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Les espaces littoraux (côtes) sont parmi les espaces les plus peuplés sur Terre.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment appelle-t-on une très grande ville qui joue un rôle majeur dans l'économie mondiale ?",
+      "time": 25,
+      "answers": [
+        {"text": "Un village global", "correct": false},
+        {"text": "Une mégapole (ou ville mondiale)", "correct": true},
+        {"text": "Une aire rurale", "correct": false},
+        {"text": "Une zone franche", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le continent le plus peuplé du monde ?",
+      "time": 20,
+      "answers": [
+        {"text": "L'Europe", "correct": false},
+        {"text": "L'Afrique", "correct": false},
+        {"text": "L'Asie", "correct": true},
+        {"text": "L'Amérique", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Plus de 80 % des Français vivent en ville.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces types d'habitat humain du moins peuplé au plus peuplé :",
+      "time": 40,
+      "answers": [
+        {"text": "Ferme isolée", "correct": true},
+        {"text": "Village", "correct": true},
+        {"text": "Ville moyenne (50 000 hab.)", "correct": true},
+        {"text": "Mégapole (10 millions+)", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on l'ensemble formé par une grande ville et les communes qui l'entourent ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Agglomération", "correct": true}
+      ],
+      "acceptedAnswers": ["agglomération", "agglomeration", "aire urbaine", "métropole", "metropole", "grand ensemble"]
+    },
+    {
+      "type": "multiple",
+      "question": "Pourquoi les littoraux (côtes) sont-ils très peuplés dans le monde ?",
+      "time": 25,
+      "answers": [
+        {"text": "Car l'eau de mer est buvable", "correct": false},
+        {"text": "Car ils offrent des ressources (pêche, commerce) et un climat souvent agréable", "correct": true},
+        {"text": "Car les risques naturels y sont inexistants", "correct": false},
+        {"text": "Car les terres y sont gratuites", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'un espace rural ?",
+      "time": 25,
+      "answers": [
+        {"text": "Un espace de forte densité de population", "correct": false},
+        {"text": "Un espace peu densément peuplé, à dominante agricole ou naturelle (campagne)", "correct": true},
+        {"text": "Un quartier d'une grande ville", "correct": false},
+        {"text": "Une zone industrielle", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'un littoral ?",
+      "time": 20,
+      "answers": [
+        {"text": "Une frontière entre deux pays", "correct": false},
+        {"text": "La zone de contact entre la mer et la terre", "correct": true},
+        {"text": "Un fleuve côtier", "correct": false},
+        {"text": "Une forêt en bord de rivière", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel phénomène menace les littoraux bas (comme les atolls du Pacifique) ?",
+      "time": 25,
+      "answers": [
+        {"text": "Les éruptions volcaniques sous-marines", "correct": false},
+        {"text": "La montée du niveau des mers due au réchauffement climatique", "correct": true},
+        {"text": "L'apparition de nouvelles îles", "correct": false},
+        {"text": "La désalinisation de l'eau", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Les ports sont des aménagements humains qui permettent le commerce maritime.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'une dune littorale ?",
+      "time": 20,
+      "answers": [
+        {"text": "Un récif corallien", "correct": false},
+        {"text": "Un relief de sable formé par le vent en bord de mer", "correct": true},
+        {"text": "Une falaise calcaire", "correct": false},
+        {"text": "Un banc de sable sous-marin", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La pêche intensive dans les océans a provoqué une surexploitation des ressources marines.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces activités humaines sur un littoral de la plus ancienne à la plus récente :",
+      "time": 45,
+      "answers": [
+        {"text": "Pêche artisanale (très ancienne)", "correct": true},
+        {"text": "Commerce portuaire maritime", "correct": true},
+        {"text": "Tourisme balnéaire (XIXe-XXe siècle)", "correct": true},
+        {"text": "Parc éolien offshore (XXIe siècle)", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on une longue bande de sable en bord de mer, lieu de baignade ?",
+      "time": 20,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Plage", "correct": true}
+      ],
+      "acceptedAnswers": ["plage", "la plage", "plage de sable", "plage balnéaire"]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'une falaise ?",
+      "time": 20,
+      "answers": [
+        {"text": "Une dune de sable haute", "correct": false},
+        {"text": "Un versant rocheux et abrupt en bord de mer ou de rivière", "correct": true},
+        {"text": "Un banc de sable sous-marin", "correct": false},
+        {"text": "Un delta de fleuve", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pourquoi les villes portuaires se sont-elles développées au cours de l'histoire ?",
+      "time": 25,
+      "answers": [
+        {"text": "Car la pêche était plus facile près de la mer", "correct": false},
+        {"text": "Grâce au commerce maritime permettant d'importer et exporter des marchandises", "correct": true},
+        {"text": "Car les ports offrent de belles plages touristiques", "correct": false},
+        {"text": "Car l'eau de mer est utilisée pour l'irrigation", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la plus haute montagne du monde ?",
+      "time": 20,
+      "answers": [
+        {"text": "Le Mont Blanc (Alpes)", "correct": false},
+        {"text": "Le Kilimandjaro (Afrique)", "correct": false},
+        {"text": "L'Everest (Himalaya, 8 849 m)", "correct": true},
+        {"text": "L'Aconcagua (Andes)", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pourquoi les zones de montagne sont-elles généralement peu peuplées ?",
+      "time": 25,
+      "answers": [
+        {"text": "Parce qu'il fait trop chaud", "correct": false},
+        {"text": "À cause du relief difficile, du froid et du manque de terres arables", "correct": true},
+        {"text": "Parce qu'il y a trop d'animaux dangereux", "correct": false},
+        {"text": "Par manque d'eau", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Les Alpes sont une chaîne de montagnes située en Europe.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle ressource majeure est exploitée dans les zones de montagne (via les barrages) ?",
+      "time": 25,
+      "answers": [
+        {"text": "Le pétrole", "correct": false},
+        {"text": "Le charbon", "correct": false},
+        {"text": "L'eau (énergie hydraulique)", "correct": true},
+        {"text": "Le gaz naturel", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces massifs montagneux de la plus basse à la plus haute altitude maximale :",
+      "time": 40,
+      "answers": [
+        {"text": "Vosges (1 424 m max)", "correct": true},
+        {"text": "Pyrénées (3 404 m max)", "correct": true},
+        {"text": "Alpes (4 808 m max avec le Mont Blanc)", "correct": true},
+        {"text": "Himalaya (8 849 m max avec l'Everest)", "correct": true}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le Sahara est le plus grand désert chaud du monde.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces zones géographiques de la plus froide à la plus chaude en température moyenne :",
+      "time": 40,
+      "answers": [
+        {"text": "Pôle Nord (−30°C environ)", "correct": true},
+        {"text": "Groenland (−10°C environ)", "correct": true},
+        {"text": "Toundra du Canada (−5°C environ)", "correct": true},
+        {"text": "Désert du Sahara (+25°C environ)", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on une zone verdoyante dans un désert, grâce à la présence d'eau souterraine ?",
+      "time": 20,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Oasis", "correct": true}
+      ],
+      "acceptedAnswers": ["oasis", "une oasis", "l'oasis"]
+    },
+    {
+      "type": "multiple",
+      "question": "Pourquoi peu de personnes habitent dans les déserts ?",
+      "time": 25,
+      "answers": [
+        {"text": "Par manque d'animaux à chasser", "correct": false},
+        {"text": "À cause du manque d'eau et des températures extrêmes", "correct": true},
+        {"text": "Car les déserts sont des zones militaires protégées", "correct": false},
+        {"text": "Par manque de lumière", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel peuple nomade vit traditionnellement dans le désert du Sahara ?",
+      "time": 25,
+      "answers": [
+        {"text": "Les Inuits", "correct": false},
+        {"text": "Les Maoris", "correct": false},
+        {"text": "Les Touaregs", "correct": true},
+        {"text": "Les Amérindiens", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Combien d'habitants la Terre comptait-elle environ en 2024 ?",
+      "time": 20,
+      "answers": [
+        {"text": "5 milliards", "correct": false},
+        {"text": "8 milliards", "correct": true},
+        {"text": "10 milliards", "correct": false},
+        {"text": "3 milliards", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel continent est le plus peuplé au monde ?",
+      "time": 15,
+      "answers": [
+        {"text": "L'Europe", "correct": false},
+        {"text": "L'Afrique", "correct": false},
+        {"text": "L'Asie", "correct": true},
+        {"text": "L'Amérique", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La population mondiale augmente d'environ 80 millions de personnes chaque année.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel pays est le plus peuplé du monde en 2024 ?",
+      "time": 20,
+      "answers": [
+        {"text": "La Chine", "correct": false},
+        {"text": "Les États-Unis", "correct": false},
+        {"text": "L'Inde", "correct": true},
+        {"text": "Le Nigeria", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment appelle-t-on les zones où la population est très fortement concentrée ?",
+      "time": 25,
+      "answers": [
+        {"text": "Des déserts humains", "correct": false},
+        {"text": "Des foyers de population (zones de forte densité)", "correct": true},
+        {"text": "Des espaces vides", "correct": false},
+        {"text": "Des zones rurales", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'Afrique est le continent qui connaît actuellement la plus forte croissance démographique.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces continents du moins peuplé au plus peuplé :",
+      "time": 40,
+      "answers": [
+        {"text": "Océanie (~45 millions d'habitants)", "correct": true},
+        {"text": "Amérique du Sud (~450 millions)", "correct": true},
+        {"text": "Europe (~750 millions)", "correct": true},
+        {"text": "Asie (~4,7 milliards)", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on le nombre d'habitants par km² dans une zone géographique ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Densité de population", "correct": true}
+      ],
+      "acceptedAnswers": ["densité de population", "densité", "la densité", "densité démographique"]
+    },
+    {
+      "type": "multiple",
+      "question": "Pourquoi certaines régions du monde sont-elles très peu peuplées ?",
+      "time": 25,
+      "answers": [
+        {"text": "En raison d'une politique d'interdiction d'habiter", "correct": false},
+        {"text": "En raison de conditions naturelles difficiles (désert, montagne, froid extrême)", "correct": true},
+        {"text": "Car la terre y est trop fertile", "correct": false},
+        {"text": "Car ces régions sont toujours inondées", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quels sont les trois grands foyers de population dans le monde ?",
+      "time": 30,
+      "answers": [
+        {"text": "Amérique du Sud, Afrique et Océanie", "correct": false},
+        {"text": "Asie du Sud et de l'Est, Europe, Nord-Est des États-Unis", "correct": true},
+        {"text": "Russie, Canada et Australie", "correct": false},
+        {"text": "Afrique centrale, Moyen-Orient et Scandinavie", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'une mégapole ?",
+      "time": 20,
+      "answers": [
+        {"text": "Un village de plus de 10 000 habitants", "correct": false},
+        {"text": "Une très grande agglomération de plus de 10 millions d'habitants", "correct": true},
+        {"text": "Un État indépendant", "correct": false},
+        {"text": "Un quartier historique", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle proportion de la population mondiale vit en ville (approximativement en 2024) ?",
+      "time": 25,
+      "answers": [
+        {"text": "20 %", "correct": false},
+        {"text": "40 %", "correct": false},
+        {"text": "Plus de 55 %", "correct": true},
+        {"text": "90 %", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'exode rural désigne le mouvement des populations des campagnes vers les villes.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'un bidonville ?",
+      "time": 25,
+      "answers": [
+        {"text": "Un quartier historique d'une grande ville", "correct": false},
+        {"text": "Un quartier d'habitat précaire sans eau ni électricité à la périphérie des villes", "correct": true},
+        {"text": "Un quartier d'affaires moderne", "correct": false},
+        {"text": "Un village de pêcheurs", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La population urbaine mondiale a dépassé la population rurale pour la première fois vers 2007.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces espaces en France du plus rural au plus urbain :",
+      "time": 40,
+      "answers": [
+        {"text": "Hameau (quelques maisons isolées)", "correct": true},
+        {"text": "Village (quelques centaines d'habitants)", "correct": true},
+        {"text": "Ville moyenne (50 000 habitants)", "correct": true},
+        {"text": "Métropole (ex : Paris, Lyon, Marseille)", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on le phénomène d'expansion des villes qui s'étendent en grignotant les espaces ruraux voisins ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Étalement urbain", "correct": true}
+      ],
+      "acceptedAnswers": ["étalement urbain", "etalement urbain", "périurbanisation", "periurbanisation", "expansion urbaine"]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce que la banlieue d'une grande ville ?",
+      "time": 20,
+      "answers": [
+        {"text": "Le centre historique d'une ville", "correct": false},
+        {"text": "La zone qui entoure le centre-ville à la périphérie d'une grande agglomération", "correct": true},
+        {"text": "Un quartier d'affaires", "correct": false},
+        {"text": "Une zone industrielle", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pourquoi des habitants des campagnes migrent-ils vers les villes ?",
+      "time": 25,
+      "answers": [
+        {"text": "Pour fuir le soleil et la chaleur", "correct": false},
+        {"text": "Pour trouver du travail, accéder aux services et améliorer leurs conditions de vie", "correct": true},
+        {"text": "Car les campagnes ont trop de maisons", "correct": false},
+        {"text": "Par obligation légale", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'un risque naturel ?",
+      "time": 25,
+      "answers": [
+        {"text": "Une catastrophe toujours évitable", "correct": false},
+        {"text": "Un événement naturel potentiellement dangereux pour les populations (séisme, volcan, inondation)", "correct": true},
+        {"text": "Une pollution industrielle", "correct": false},
+        {"text": "Un incendie d'origine humaine", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle zone du monde est particulièrement exposée aux séismes et aux volcans ?",
+      "time": 25,
+      "answers": [
+        {"text": "Le bassin méditerranéen", "correct": false},
+        {"text": "La ceinture de feu du Pacifique", "correct": true},
+        {"text": "La plaine sibérienne", "correct": false},
+        {"text": "Le centre de l'Afrique", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un tremblement de terre est causé par le mouvement des plaques tectoniques.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment s'appelle la vague géante provoquée par un tremblement de terre sous-marin ?",
+      "time": 20,
+      "answers": [
+        {"text": "Un ouragan", "correct": false},
+        {"text": "Un cyclone", "correct": false},
+        {"text": "Un tsunami", "correct": true},
+        {"text": "Une tempête de sable", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne les étapes d'une alerte au cyclone :",
+      "time": 40,
+      "answers": [
+        {"text": "Détection du cyclone par satellite météorologique", "correct": true},
+        {"text": "Alerte météorologique émise aux populations", "correct": true},
+        {"text": "Évacuation des zones à risque", "correct": true},
+        {"text": "Passage du cyclone et évaluation des dommages", "correct": true}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Les zones côtières basses sont plus exposées aux risques d'inondation.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces risques naturels du moins fréquent au plus fréquent dans le monde :",
+      "time": 40,
+      "answers": [
+        {"text": "Grande éruption volcanique mondiale (rare)", "correct": true},
+        {"text": "Cyclone tropical (plusieurs dizaines/an)", "correct": true},
+        {"text": "Séisme (plusieurs milliers/an)", "correct": true},
+        {"text": "Inondation locale (très fréquente)", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on une tempête tropicale avec des vents très violents dépassant 120 km/h ? (plusieurs termes acceptés)",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Cyclone", "correct": true}
+      ],
+      "acceptedAnswers": ["cyclone", "ouragan", "typhon", "tempête tropicale", "cyclone tropical"]
+    },
+    {
+      "type": "multiple",
+      "question": "Pourquoi certaines populations habitent-elles près de volcans malgré le danger ?",
+      "time": 30,
+      "answers": [
+        {"text": "Car les volcans fournissent de l'électricité", "correct": false},
+        {"text": "Car les terres volcaniques sont très fertiles et le coût de la vie y est plus bas", "correct": true},
+        {"text": "Car les volcans protègent contre les séismes", "correct": false},
+        {"text": "Par obligation légale", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'une inondation ?",
+      "time": 20,
+      "answers": [
+        {"text": "Une sécheresse prolongée", "correct": false},
+        {"text": "La montée des eaux qui envahit des zones normalement non submergées", "correct": true},
+        {"text": "Un éboulement de terrain", "correct": false},
+        {"text": "Une vague de chaleur", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Combien de continents y a-t-il sur Terre selon le découpage classique ?",
+      "time": 20,
+      "answers": [
+        {"text": "5", "correct": false},
+        {"text": "6 (Europe, Asie, Afrique, Amérique, Océanie, Antarctique)", "correct": true},
+        {"text": "7", "correct": false},
+        {"text": "4", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le plus grand océan du monde ?",
+      "time": 20,
+      "answers": [
+        {"text": "L'Atlantique", "correct": false},
+        {"text": "L'Indien", "correct": false},
+        {"text": "Le Pacifique", "correct": true},
+        {"text": "L'Arctique", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'équateur traverse l'Afrique.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le plus grand continent du monde (en superficie) ?",
+      "time": 20,
+      "answers": [
+        {"text": "L'Afrique", "correct": false},
+        {"text": "L'Amérique", "correct": false},
+        {"text": "L'Asie", "correct": true},
+        {"text": "L'Europe", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel continent est entièrement recouvert de glace ?",
+      "time": 20,
+      "answers": [
+        {"text": "L'Arctique", "correct": false},
+        {"text": "Le Groenland", "correct": false},
+        {"text": "L'Antarctique", "correct": true},
+        {"text": "L'Islande", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'Europe et l'Asie forment en réalité une seule masse continentale appelée Eurasie.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces continents de la superficie la plus petite à la plus grande :",
+      "time": 40,
+      "answers": [
+        {"text": "Océanie (~9 millions km²)", "correct": true},
+        {"text": "Europe (~10 millions km²)", "correct": true},
+        {"text": "Amérique du Sud (~17 millions km²)", "correct": true},
+        {"text": "Asie (~44 millions km²)", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on l'ensemble de l'eau salée qui recouvre environ 71 % de la surface de la Terre ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Océan mondial", "correct": true}
+      ],
+      "acceptedAnswers": ["océan mondial", "les océans", "océan", "océans", "eaux marines"]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le deuxième plus grand continent du monde après l'Asie ?",
+      "time": 20,
+      "answers": [
+        {"text": "L'Amérique", "correct": false},
+        {"text": "L'Antarctique", "correct": false},
+        {"text": "L'Afrique", "correct": true},
+        {"text": "L'Europe", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Combien y a-t-il d'océans sur Terre selon la définition moderne (incluant l'océan Austral) ?",
+      "time": 25,
+      "answers": [
+        {"text": "3", "correct": false},
+        {"text": "4", "correct": false},
+        {"text": "5", "correct": true},
+        {"text": "6", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la capitale de la France ?",
+      "time": 15,
+      "answers": [
+        {"text": "Lyon", "correct": false},
+        {"text": "Marseille", "correct": false},
+        {"text": "Paris", "correct": true},
+        {"text": "Bordeaux", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le plus long fleuve du monde (selon la mesure traditionnelle) ?",
+      "time": 25,
+      "answers": [
+        {"text": "Le Mississippi", "correct": false},
+        {"text": "Le Yangtsé", "correct": false},
+        {"text": "Le Nil (environ 6 650 km)", "correct": true},
+        {"text": "Le Rhin", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'Himalaya est la plus haute chaîne de montagnes du monde.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans quel pays se trouve la majeure partie du fleuve Amazone ?",
+      "time": 20,
+      "answers": [
+        {"text": "En Argentine", "correct": false},
+        {"text": "En Colombie", "correct": false},
+        {"text": "Au Brésil", "correct": true},
+        {"text": "Au Venezuela", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la superficie approximative de la France métropolitaine ?",
+      "time": 25,
+      "answers": [
+        {"text": "Environ 250 000 km²", "correct": false},
+        {"text": "Environ 550 000 km²", "correct": true},
+        {"text": "Environ 1 million de km²", "correct": false},
+        {"text": "Environ 100 000 km²", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La France est le plus grand pays de l'Union européenne par sa superficie.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces fleuves du plus court au plus long :",
+      "time": 40,
+      "answers": [
+        {"text": "Seine (775 km)", "correct": true},
+        {"text": "Rhône (812 km)", "correct": true},
+        {"text": "Loire (1 020 km)", "correct": true},
+        {"text": "Nil (6 650 km)", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on la frontière naturelle montagneuse entre la France et l'Espagne ?",
+      "time": 20,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Pyrénées", "correct": true}
+      ],
+      "acceptedAnswers": ["Pyrénées", "pyrenees", "les Pyrénées", "chaîne des Pyrénées", "massif pyrénéen"]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le plus grand pays du monde en superficie ?",
+      "time": 20,
+      "answers": [
+        {"text": "Le Canada", "correct": false},
+        {"text": "Les États-Unis", "correct": false},
+        {"text": "La Russie", "correct": true},
+        {"text": "La Chine", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le pays le plus peuplé d'Afrique ?",
+      "time": 25,
+      "answers": [
+        {"text": "L'Éthiopie", "correct": false},
+        {"text": "L'Égypte", "correct": false},
+        {"text": "Le Nigeria", "correct": true},
+        {"text": "L'Afrique du Sud", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'un espace à faible densité ?",
+      "time": 25,
+      "answers": [
+        {"text": "Un espace surpeuplé", "correct": false},
+        {"text": "Un espace où peu de personnes habitent par rapport à sa superficie", "correct": true},
+        {"text": "Un quartier de banlieue dense", "correct": false},
+        {"text": "Un désert artificiel créé par l'homme", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pourquoi certains espaces ruraux se dépopulent-ils ?",
+      "time": 25,
+      "answers": [
+        {"text": "Car les campagnes sont surpeuplées", "correct": false},
+        {"text": "Car les jeunes partent vers les villes chercher du travail et des services", "correct": true},
+        {"text": "Car les guerres chassent les habitants", "correct": false},
+        {"text": "Car les villages sont inondés", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'agriculture est la principale activité économique des espaces ruraux.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'une région agricole spécialisée ?",
+      "time": 25,
+      "answers": [
+        {"text": "Une zone où toutes les cultures sont présentes", "correct": false},
+        {"text": "Une zone où les agriculteurs se concentrent sur une seule production (ex : vignoble, céréales)", "correct": true},
+        {"text": "Une région qui exporte tous ses produits", "correct": false},
+        {"text": "Une région sans agriculture", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces transformations du paysage rural en France de la plus ancienne à la plus récente :",
+      "time": 45,
+      "answers": [
+        {"text": "Défrichement des forêts (Moyen Âge)", "correct": true},
+        {"text": "Développement des villages et des bourgs", "correct": true},
+        {"text": "Révolution agricole (mécanisation, XIXe siècle)", "correct": true},
+        {"text": "Agriculture intensive industrielle (XXe siècle)", "correct": true}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le bocage est un paysage rural caractérisé par des champs délimités par des haies.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces types d'agriculture du moins intensif au plus intensif :",
+      "time": 40,
+      "answers": [
+        {"text": "Agriculture de subsistance (pour nourrir sa famille)", "correct": true},
+        {"text": "Agriculture traditionnelle (outils simples)", "correct": true},
+        {"text": "Agriculture mécanisée (tracteurs)", "correct": true},
+        {"text": "Agriculture intensive industrielle (engrais, OGM, grande échelle)", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on un regroupement de quelques maisons en milieu rural, plus petit qu'un village ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Hameau", "correct": true}
+      ],
+      "acceptedAnswers": ["hameau", "un hameau", "écart", "hameaux"]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce que l'exode rural ?",
+      "time": 20,
+      "answers": [
+        {"text": "Le déplacement de touristes vers les campagnes", "correct": false},
+        {"text": "Le déplacement des populations des campagnes vers les villes", "correct": true},
+        {"text": "L'abandon des terres agricoles au profit des forêts", "correct": false},
+        {"text": "L'immigration internationale", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quels services manquent souvent dans les zones rurales très peu peuplées ?",
+      "time": 25,
+      "answers": [
+        {"text": "Les parkings et les supermarchés géants", "correct": false},
+        {"text": "Les hôpitaux, les commerces, les transports en commun et certaines écoles", "correct": true},
+        {"text": "Les places de stationnement", "correct": false},
+        {"text": "Les parcs et les jardins publics", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la plus grande agglomération urbaine de France ?",
+      "time": 20,
+      "answers": [
+        {"text": "Marseille", "correct": false},
+        {"text": "Lyon", "correct": false},
+        {"text": "Paris et son agglomération (Île-de-France)", "correct": true},
+        {"text": "Toulouse", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment appelle-t-on les communes qui entourent une grande ville et font partie de son aire urbaine ?",
+      "time": 25,
+      "answers": [
+        {"text": "Les hameaux", "correct": false},
+        {"text": "Les quartiers", "correct": false},
+        {"text": "Les banlieues (communes périurbaines)", "correct": true},
+        {"text": "Les arrondissements", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Lyon et Marseille sont des métropoles régionales importantes en France.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'un centre-ville ?",
+      "time": 20,
+      "answers": [
+        {"text": "La zone industrielle d'une ville", "correct": false},
+        {"text": "La partie centrale et souvent la plus ancienne d'une ville, animée et commerciale", "correct": true},
+        {"text": "Le quartier résidentiel calme", "correct": false},
+        {"text": "La banlieue nord d'une agglomération", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment s'appellent les grandes barres d'immeubles construites après 1945 pour loger les nouveaux urbains ?",
+      "time": 25,
+      "answers": [
+        {"text": "Les maisons individuelles", "correct": false},
+        {"text": "Les hôtels de luxe", "correct": false},
+        {"text": "Les grands ensembles (HLM, cités)", "correct": true},
+        {"text": "Les villages gaulois", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La ville de Paris intra-muros (dans le périphérique) compte environ 2 millions d'habitants.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces zones d'une agglomération du centre vers la périphérie :",
+      "time": 40,
+      "answers": [
+        {"text": "Centre-ville historique", "correct": true},
+        {"text": "Quartiers résidentiels centraux", "correct": true},
+        {"text": "Banlieues", "correct": true},
+        {"text": "Zone périurbaine et rururbaine", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on un espace vert aménagé au cœur d'une ville pour les habitants ?",
+      "time": 20,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Parc", "correct": true}
+      ],
+      "acceptedAnswers": ["parc", "jardin public", "parc urbain", "espace vert", "jardin"]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce que les transports en commun dans une ville ?",
+      "time": 20,
+      "answers": [
+        {"text": "Des voitures particulières", "correct": false},
+        {"text": "Des moyens de transport partagés (bus, métro, tramway, RER)", "correct": true},
+        {"text": "Des vélos en libre-service uniquement", "correct": false},
+        {"text": "Des navettes privées", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pourquoi les villes ont-elles besoin d'aménagements spéciaux (routes, hôpitaux, gares) ?",
+      "time": 25,
+      "answers": [
+        {"text": "Pour faire plus beau", "correct": false},
+        {"text": "Car elles concentrent beaucoup de personnes qui ont besoin de services", "correct": true},
+        {"text": "Pour attirer les touristes uniquement", "correct": false},
+        {"text": "Pour respecter des normes européennes", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce que le réchauffement climatique ?",
+      "time": 25,
+      "answers": [
+        {"text": "Un phénomène saisonnier normal", "correct": false},
+        {"text": "L'augmentation progressive de la température moyenne de la Terre due aux gaz à effet de serre", "correct": true},
+        {"text": "La disparition de l'hiver dans les pays nordiques", "correct": false},
+        {"text": "Un phénomène uniquement lié aux volcans", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel gaz est principalement responsable du renforcement de l'effet de serre ?",
+      "time": 20,
+      "answers": [
+        {"text": "L'oxygène (O₂)", "correct": false},
+        {"text": "L'azote (N₂)", "correct": false},
+        {"text": "Le dioxyde de carbone (CO₂)", "correct": true},
+        {"text": "L'argon", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La déforestation contribue au réchauffement climatique.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce que le développement durable ?",
+      "time": 25,
+      "answers": [
+        {"text": "Un développement économique rapide sans limite", "correct": false},
+        {"text": "Un développement répondant aux besoins du présent sans compromettre ceux des générations futures", "correct": true},
+        {"text": "Une politique de reforestation uniquement", "correct": false},
+        {"text": "Le recours aux seules énergies fossiles", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel phénomène naturel menace les zones côtières basses à cause du réchauffement climatique ?",
+      "time": 25,
+      "answers": [
+        {"text": "La formation de déserts côtiers", "correct": false},
+        {"text": "La montée du niveau des mers", "correct": true},
+        {"text": "L'augmentation des marées noires", "correct": false},
+        {"text": "L'apparition de nouvelles tempêtes locales uniquement", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Les énergies renouvelables (solaire, éolien) ne rejettent pas de CO₂ lors de leur utilisation.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces sources d'énergie de la plus polluante à la moins polluante en CO₂ :",
+      "time": 40,
+      "answers": [
+        {"text": "Charbon (très polluant)", "correct": true},
+        {"text": "Pétrole", "correct": true},
+        {"text": "Gaz naturel (moins polluant que les deux)", "correct": true},
+        {"text": "Énergie solaire (très peu ou pas de CO₂)", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on l'ensemble des gaz (CO₂, méthane…) qui retiennent la chaleur dans l'atmosphère terrestre ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Gaz à effet de serre", "correct": true}
+      ],
+      "acceptedAnswers": ["gaz à effet de serre", "gaz effet de serre", "GES", "gaz de serre"]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle conférence internationale de 2015 a fixé des objectifs pour limiter le réchauffement climatique ?",
+      "time": 25,
+      "answers": [
+        {"text": "Le sommet de la Terre de Rio (1992)", "correct": false},
+        {"text": "Le protocole de Kyoto (1997)", "correct": false},
+        {"text": "La COP21 (Accord de Paris, 2015)", "correct": true},
+        {"text": "La conférence de Stockholm (1972)", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'une énergie renouvelable ?",
+      "time": 20,
+      "answers": [
+        {"text": "Une énergie qui se recharge lentement sur des millions d'années", "correct": false},
+        {"text": "Une énergie issue de ressources naturelles inépuisables (soleil, vent, eau)", "correct": true},
+        {"text": "Une énergie qui ne coûte rien à produire", "correct": false},
+        {"text": "Une énergie uniquement nucléaire", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quels sont les 4 points cardinaux ?",
+      "time": 15,
+      "answers": [
+        {"text": "Haut, Bas, Gauche, Droite", "correct": false},
+        {"text": "Nord, Sud, Est, Ouest", "correct": true},
+        {"text": "Nord-Est, Nord-Ouest, Sud-Est, Sud-Ouest", "correct": false},
+        {"text": "Arctique, Antarctique, Tropique, Équateur", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Qu'est-ce qu'une île ?",
+      "time": 15,
+      "answers": [
+        {"text": "Une péninsule reliée à la terre", "correct": false},
+        {"text": "Une étendue de terre entourée d'eau de tous côtés", "correct": true},
+        {"text": "Un plateau surélevé", "correct": false},
+        {"text": "Un delta de fleuve", "correct": false}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'Australie est à la fois un pays et un continent.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment appelle-t-on une carte qui montre la répartition d'un seul phénomène (population, végétation) ?",
+      "time": 25,
+      "answers": [
+        {"text": "Une carte topographique", "correct": false},
+        {"text": "Une carte thématique", "correct": true},
+        {"text": "Un planisphère physique", "correct": false},
+        {"text": "Un cadastre", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces niveaux d'organisation géographique du plus général au plus précis :",
+      "time": 40,
+      "answers": [
+        {"text": "Continent", "correct": true},
+        {"text": "Pays", "correct": true},
+        {"text": "Région administrative", "correct": true},
+        {"text": "Ville ou village", "correct": true}
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Les Alpes séparent la France de l'Italie et de la Suisse.",
+      "time": 15,
+      "answers": [
+        {"text": "Vrai", "correct": true},
+        {"text": "Faux", "correct": false}
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces espaces géographiques du plus petit au plus grand :",
+      "time": 40,
+      "answers": [
+        {"text": "Un village (quelques km²)", "correct": true},
+        {"text": "Une région administrative française", "correct": true},
+        {"text": "Un pays", "correct": true},
+        {"text": "Un continent", "correct": true}
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Comment appelle-t-on le point le plus au nord de la Terre ?",
+      "time": 20,
+      "caseSensitive": false,
+      "answers": [
+        {"text": "Pôle Nord", "correct": true}
+      ],
+      "acceptedAnswers": ["pôle Nord", "pole nord", "pôle nord", "Pôle Nord", "pôle arctique", "nord géographique"]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel fleuve traverse Paris ?",
+      "time": 15,
+      "answers": [
+        {"text": "La Loire", "correct": false},
+        {"text": "Le Rhône", "correct": false},
+        {"text": "La Seine", "correct": true},
+        {"text": "La Garonne", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la superficie totale approximative de la Terre ?",
+      "time": 25,
+      "answers": [
+        {"text": "Environ 50 millions de km²", "correct": false},
+        {"text": "Environ 510 millions de km²", "correct": true},
+        {"text": "Environ 1 milliard de km²", "correct": false},
+        {"text": "Environ 10 millions de km²", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Comment appelle-t-on une zone de terre avancée dans la mer, reliée à la terre sur trois côtés par l'eau ?",
+      "time": 25,
+      "answers": [
+        {"text": "Une île", "correct": false},
+        {"text": "Un archipel", "correct": false},
+        {"text": "Une péninsule", "correct": true},
+        {"text": "Un delta", "correct": false}
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le plus grand désert du monde toutes catégories confondues (chaud et froid) ?",
+      "time": 25,
+      "answers": [
+        {"text": "Le Sahara (Afrique)", "correct": false},
+        {"text": "Le désert de Gobi (Asie)", "correct": false},
+        {"text": "L'Antarctique (désert froid)", "correct": true},
+        {"text": "Le désert d'Arabie", "correct": false}
+      ]
+    }
+  ]
+}

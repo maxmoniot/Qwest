@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#e6f3ff"/>
+  <text x="400" y="25" font-size="16" font-weight="bold" text-anchor="middle">Les océans du monde</text>
+  <!-- Continents simplifiés -->
+  <path d="M80 100 L180 90 L200 150 L150 200 L80 180 Z" fill="#c8e6c9" stroke="#333"/>
+  <path d="M150 220 L190 240 L170 320 L120 300 L130 250 Z" fill="#c8e6c9" stroke="#333"/>
+  <path d="M280 80 L350 75 L380 120 L350 160 L290 150 L275 110 Z" fill="#c8e6c9" stroke="#333"/>
+  <path d="M270 170 L340 165 L360 270 L300 300 L260 260 Z" fill="#c8e6c9" stroke="#333"/>
+  <path d="M380 70 L550 60 L600 130 L550 200 L420 190 L380 120 Z" fill="#c8e6c9" stroke="#333"/>
+  <path d="M620 240 L720 230 L740 310 L680 330 L630 300 Z" fill="#c8e6c9" stroke="#333"/>
+  <!-- Océans avec lettres -->
+  <circle cx="200" cy="250" r="30" fill="#2196F3" opacity="0.7"/>
+  <text x="200" y="255" font-size="20" text-anchor="middle" fill="white" font-weight="bold">A</text>
+  <circle cx="650" cy="150" r="35" fill="#1976D2" opacity="0.7"/>
+  <text x="650" y="155" font-size="20" text-anchor="middle" fill="white" font-weight="bold">B</text>
+  <circle cx="480" cy="300" r="30" fill="#0D47A1" opacity="0.7"/>
+  <text x="480" y="305" font-size="20" text-anchor="middle" fill="white" font-weight="bold">C</text>
+  <circle cx="320" cy="60" r="25" fill="#64B5F6" opacity="0.7"/>
+  <text x="320" y="65" font-size="18" text-anchor="middle" fill="white" font-weight="bold">D</text>
+  <ellipse cx="400" cy="380" rx="150" ry="20" fill="#90CAF9" opacity="0.7"/>
+  <text x="400" y="385" font-size="16" text-anchor="middle" fill="#333" font-weight="bold">E</text>
+  <!-- Légende question -->
+  <rect x="50" y="350" width="700" height="40" fill="rgba(255,255,255,0.9)" rx="5"/>
+  <text x="400" y="375" font-size="12" text-anchor="middle">A=Atlantique B=Pacifique C=Indien D=Arctique E=Antarctique - Associez les lettres aux océans</text>
+</svg>

@@ -28,11 +28,17 @@
             </div>
             
             <div class="code-input-container">
-                <input type="text" 
-                       id="quiz-code-input" 
-                       placeholder="Entrer le code..." 
+                <input type="text"
+                       id="quiz-code-input"
+                       placeholder="Entrer le code..."
                        autocomplete="off"
-                       maxlength="20">
+                       autocapitalize="characters"
+                       autocorrect="off"
+                       spellcheck="false"
+                       inputmode="text"
+                       maxlength="20"
+                       style="text-transform: uppercase;"
+                       oninput="this.value = this.value.toUpperCase()">
                 <button id="join-btn" onclick="handleCodeInput()">
                     Rejoindre
                 </button>
@@ -210,6 +216,12 @@
                 <button class="btn-secondary btn-small" onclick="openTeacherPlay()" title="Participer à la partie" style="margin-left: var(--space-md);">
                     🎯 Je participe aussi !
                 </button>
+                <!-- TEMPORAIRE : à retirer une fois l'app stabilisée.
+                     Lien direct (pas via JS) pour ne pas dépendre du cache navigateur sur control.js.
+                     dashboard.html demandera le mot de passe prof si pas déjà connecté. -->
+                <a class="btn-secondary btn-small" href="dashboard.html" target="_blank" rel="noopener" title="Volume de requêtes serveur en temps réel" style="margin-left: var(--space-sm); text-decoration:none;">
+                    📊 Dashboard
+                </a>
                 <div class="modal-header-actions">
                     <div id="control-code-display" class="control-code-header">
                         <!-- Code inséré dynamiquement -->
@@ -311,6 +323,8 @@
                             <span class="tester-name">Léo</span>
                             <span class="tester-name">Les pompiers de St Georges</span>
                             <span class="tester-name">Les élèves du collège de Roquebleue</span>
+                            <span class="tester-name">Gaëtan</span>
+                            <span class="tester-name">Les élèves du collège Le Bocage</span>
                         </div>
                     </div>
                 </div>
@@ -355,21 +369,27 @@
     </div>
 
     <!-- Chargement des scripts -->
-    <script src="js/config.js"></script>
-    <script src="js/utils.js"></script>
-    <script src="js/profanityFilter.js"></script>
-    <script src="js/animals.js"></script>
-    <script src="js/sessionManager.js"></script>
-    <script src="js/auth.js"></script>
-    <script src="js/history.js"></script>
-    <script src="js/questions.js"></script>
-    <script src="js/saveLoad.js"></script>
-    <script src="js/importExport.js"></script>
-    <script src="js/dragDrop.js"></script>
-    <script src="js/help.js"></script>
-    <script src="js/imageGallery.js"></script>
-    <script src="js/game.js"></script>
-    <script src="js/control.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/config.js?v=20260619a"></script>
+    <!-- SYNCHRO v2 : horloge serveur synchronisée (après config.js, avant sessionManager.js) -->
+    <script src="js/clockSync.js?v=20260619a"></script>
+    <script src="js/utils.js?v=20260619a"></script>
+    <script src="js/profanityFilter.js?v=20260619a"></script>
+    <script src="js/animals.js?v=20260619a"></script>
+    <script src="js/sessionManager.js?v=20260619a"></script>
+    <script src="js/auth.js?v=20260619a"></script>
+    <script src="js/history.js?v=20260619a"></script>
+    <script src="js/questions.js?v=20260619a"></script>
+    <script src="js/saveLoad.js?v=20260619a"></script>
+    <script src="js/importExport.js?v=20260619a"></script>
+    <script src="js/dragDrop.js?v=20260619a"></script>
+    <script src="js/help.js?v=20260619a"></script>
+    <script src="js/imageGallery.js?v=20260619a"></script>
+    <script src="js/game.js?v=20260619a"></script>
+    <!-- async : ne JAMAIS bloquer le chargement de l'app (ni la saisie du code) si ce
+         CDN est lent/filtré au collège. qrcodejs ne sert que pour le QR côté prof, et
+         control.js l'utilise avec un garde (typeof QRCode === 'undefined'). -->
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="js/control.js?v=20260619a"></script>
+    <script src="js/main.js?v=20260619a"></script>
 </body>
 </html>

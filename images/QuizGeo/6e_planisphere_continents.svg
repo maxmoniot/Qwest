@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#e6f3ff"/>
+  <!-- Océans -->
+  <text x="150" y="200" font-size="12" fill="#0066cc" font-style="italic">Océan Atlantique</text>
+  <text x="600" y="200" font-size="12" fill="#0066cc" font-style="italic">Océan Pacifique</text>
+  <text x="450" y="350" font-size="12" fill="#0066cc" font-style="italic">Océan Indien</text>
+  <!-- Europe -->
+  <path d="M380 80 L420 70 L450 90 L440 120 L400 130 L380 110 Z" fill="#90EE90" stroke="#333" stroke-width="1"/>
+  <circle cx="410" cy="100" r="12" fill="#ff6b6b" stroke="#333"/>
+  <text x="406" y="105" font-size="14" font-weight="bold" fill="white">1</text>
+  <!-- Afrique -->
+  <path d="M370 140 L420 130 L450 160 L440 250 L400 280 L360 250 L350 180 Z" fill="#FFD700" stroke="#333" stroke-width="1"/>
+  <circle cx="400" cy="200" r="12" fill="#ff6b6b" stroke="#333"/>
+  <text x="396" y="205" font-size="14" font-weight="bold" fill="white">2</text>
+  <!-- Asie -->
+  <path d="M460 60 L580 50 L620 100 L600 180 L520 200 L460 160 L450 100 Z" fill="#87CEEB" stroke="#333" stroke-width="1"/>
+  <circle cx="530" cy="120" r="12" fill="#ff6b6b" stroke="#333"/>
+  <text x="526" y="125" font-size="14" font-weight="bold" fill="white">3</text>
+  <!-- Amérique du Nord -->
+  <path d="M80 60 L180 50 L220 100 L200 180 L120 200 L60 150 L70 90 Z" fill="#DDA0DD" stroke="#333" stroke-width="1"/>
+  <circle cx="140" cy="120" r="12" fill="#ff6b6b" stroke="#333"/>
+  <text x="136" y="125" font-size="14" font-weight="bold" fill="white">4</text>
+  <!-- Amérique du Sud -->
+  <path d="M150 220 L200 210 L220 280 L180 350 L130 330 L120 260 Z" fill="#FFA07A" stroke="#333" stroke-width="1"/>
+  <circle cx="165" cy="280" r="12" fill="#ff6b6b" stroke="#333"/>
+  <text x="161" y="285" font-size="14" font-weight="bold" fill="white">5</text>
+  <!-- Océanie -->
+  <path d="M620 260 L680 250 L720 280 L700 320 L640 330 L610 300 Z" fill="#98FB98" stroke="#333" stroke-width="1"/>
+  <circle cx="665" cy="285" r="12" fill="#ff6b6b" stroke="#333"/>
+  <text x="661" y="290" font-size="14" font-weight="bold" fill="white">6</text>
+  <!-- Antarctique -->
+  <path d="M200 380 L600 380 L580 395 L220 395 Z" fill="white" stroke="#333" stroke-width="1"/>
+  <text x="380" y="392" font-size="10" fill="#333">Antarctique</text>
+</svg>

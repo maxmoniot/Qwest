@@ -1,0 +1,3170 @@
+{
+  "name": "3e_maths_150q",
+  "version": "1.0",
+  "createdAt": "2026-04-13T10:00:00.000Z",
+  "questionsCount": 150,
+  "questions": [
+    {
+      "type": "multiple",
+      "question": "Calcule 2³ × 2⁴.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "2⁷ = 128",
+          "correct": true
+        },
+        {
+          "text": "2⁸ = 256",
+          "correct": false
+        },
+        {
+          "text": "4⁷",
+          "correct": false
+        },
+        {
+          "text": "2⁶ = 64",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la notation scientifique de 0,00045 ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "4,5 × 10⁻⁴",
+          "correct": true
+        },
+        {
+          "text": "45 × 10⁻⁵",
+          "correct": false
+        },
+        {
+          "text": "4,5 × 10⁴",
+          "correct": false
+        },
+        {
+          "text": "0,45 × 10⁻³",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Que vaut 3⁻² ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "1/9",
+          "correct": true
+        },
+        {
+          "text": "-9",
+          "correct": false
+        },
+        {
+          "text": "9",
+          "correct": false
+        },
+        {
+          "text": "-1/9",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "√25 + √16 = √41",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Calcule √196.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "14",
+          "correct": true
+        },
+        {
+          "text": "13",
+          "correct": false
+        },
+        {
+          "text": "15",
+          "correct": false
+        },
+        {
+          "text": "98",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est l'identité remarquable correspondant à (a + b)² ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "a² + 2ab + b²",
+          "correct": true
+        },
+        {
+          "text": "a² + b²",
+          "correct": false
+        },
+        {
+          "text": "a² - 2ab + b²",
+          "correct": false
+        },
+        {
+          "text": "(a + b)(a - b)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Développe (2x - 3)².",
+      "time": 35,
+      "answers": [
+        {
+          "text": "4x² - 12x + 9",
+          "correct": true
+        },
+        {
+          "text": "4x² + 9",
+          "correct": false
+        },
+        {
+          "text": "4x² - 6x + 9",
+          "correct": false
+        },
+        {
+          "text": "4x² + 12x + 9",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Développe et réduis (x + 5)(x - 5).",
+      "time": 25,
+      "answers": [
+        {
+          "text": "x² - 25",
+          "correct": true
+        },
+        {
+          "text": "x² + 25",
+          "correct": false
+        },
+        {
+          "text": "x² - 10x + 25",
+          "correct": false
+        },
+        {
+          "text": "x² + 10x - 25",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces puissances de 2 du plus petit au plus grand résultat :",
+      "time": 30,
+      "answers": [
+        {
+          "text": "2⁻¹ = 0,5",
+          "correct": true
+        },
+        {
+          "text": "2⁰ = 1",
+          "correct": true
+        },
+        {
+          "text": "2¹ = 2",
+          "correct": true
+        },
+        {
+          "text": "2² = 4",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Développe (x + 3)². Le résultat est de la forme x² + ?x + 9. Quel est le coefficient de x ?",
+      "time": 30,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "6",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "6"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Résous l'équation 5x - 15 = 0.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "x = 3",
+          "correct": true
+        },
+        {
+          "text": "x = -3",
+          "correct": false
+        },
+        {
+          "text": "x = 5",
+          "correct": false
+        },
+        {
+          "text": "x = -5",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Résous l'équation x/3 + 2 = 5.",
+      "time": 30,
+      "answers": [
+        {
+          "text": "x = 9",
+          "correct": true
+        },
+        {
+          "text": "x = 3",
+          "correct": false
+        },
+        {
+          "text": "x = 1",
+          "correct": false
+        },
+        {
+          "text": "x = 7",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Si −3x ≤ 9, alors x ≥ −3.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Soit f(x) = 4x − 3. Calcule f(2).",
+      "time": 20,
+      "answers": [
+        {
+          "text": "5",
+          "correct": true
+        },
+        {
+          "text": "4",
+          "correct": false
+        },
+        {
+          "text": "8",
+          "correct": false
+        },
+        {
+          "text": "11",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Pour la fonction affine f(x) = −3x + 7, quelle est l'ordonnée à l'origine ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "7",
+          "correct": true
+        },
+        {
+          "text": "-3",
+          "correct": false
+        },
+        {
+          "text": "3",
+          "correct": false
+        },
+        {
+          "text": "-7",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La droite d'équation y = 5x passe par l'origine du repère.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Soit f(x) = 3x − 9. Quel est l'antécédent de 0 par f ?",
+      "time": 30,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "3",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "x = 3",
+        "3"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Soit f(x) = 2x + 1. Calcule f(−3).",
+      "time": 20,
+      "answers": [
+        {
+          "text": "-5",
+          "correct": true
+        },
+        {
+          "text": "-7",
+          "correct": false
+        },
+        {
+          "text": "7",
+          "correct": false
+        },
+        {
+          "text": "5",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "On lance un dé équilibré à 6 faces. Quelle est la probabilité d'obtenir un multiple de 3 ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "1/3",
+          "correct": true
+        },
+        {
+          "text": "1/6",
+          "correct": false
+        },
+        {
+          "text": "1/2",
+          "correct": false
+        },
+        {
+          "text": "2/3",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un sac contient 4 billes rouges, 3 bleues et 3 vertes. On tire une bille au hasard. Quelle est la probabilité de tirer une bille bleue ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "3/10",
+          "correct": true
+        },
+        {
+          "text": "1/3",
+          "correct": false
+        },
+        {
+          "text": "4/10",
+          "correct": false
+        },
+        {
+          "text": "1/10",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La probabilité d'un événement impossible est égale à 0.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Si P(A) = 0,75, quelle est la probabilité de l'événement contraire P(Ā) ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "0,25",
+          "correct": true
+        },
+        {
+          "text": "0,75",
+          "correct": false
+        },
+        {
+          "text": "0,5",
+          "correct": false
+        },
+        {
+          "text": "1,25",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces probabilités de la plus faible à la plus élevée :",
+      "time": 30,
+      "answers": [
+        {
+          "text": "P = 0 (événement impossible)",
+          "correct": true
+        },
+        {
+          "text": "P = 1/4",
+          "correct": true
+        },
+        {
+          "text": "P = 2/3",
+          "correct": true
+        },
+        {
+          "text": "P = 1 (événement certain)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la moyenne de la série : 10 ; 14 ; 8 ; 16 ; 12 ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "12",
+          "correct": true
+        },
+        {
+          "text": "10",
+          "correct": false
+        },
+        {
+          "text": "14",
+          "correct": false
+        },
+        {
+          "text": "11",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quelle est la médiane de la série suivante (déjà triée) : 3 ; 5 ; 7 ; 9 ; 11 ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "7",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "7"
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces nombres du plus petit au plus grand :",
+      "time": 30,
+      "answers": [
+        {
+          "text": "−5/2",
+          "correct": true
+        },
+        {
+          "text": "−1",
+          "correct": true
+        },
+        {
+          "text": "0",
+          "correct": true
+        },
+        {
+          "text": "√3",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un triangle rectangle, les deux cathètes mesurent 9 cm et 12 cm. Quelle est la longueur de l'hypoténuse ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "15 cm",
+          "correct": true
+        },
+        {
+          "text": "21 cm",
+          "correct": false
+        },
+        {
+          "text": "√105 cm",
+          "correct": false
+        },
+        {
+          "text": "225 cm",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un triangle dont les côtés mesurent 7 cm, 24 cm et 25 cm est un triangle rectangle.",
+      "time": 35,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Dans un triangle rectangle, les deux cathètes mesurent 6 cm et 8 cm. Quelle est la longueur de l'hypoténuse (en cm) ?",
+      "time": 30,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "10",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "10 cm",
+        "10"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans le triangle ABC, la droite DE est parallèle à BC, avec D sur [AB] et E sur [AC]. On sait que AD = 2, DB = 3 et AE = 4. Calcule EC.",
+      "time": 40,
+      "answers": [
+        {
+          "text": "EC = 6",
+          "correct": true
+        },
+        {
+          "text": "EC = 4",
+          "correct": false
+        },
+        {
+          "text": "EC = 3",
+          "correct": false
+        },
+        {
+          "text": "EC = 8",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Si DE // BC dans le triangle ABC (D sur [AB], E sur [AC]), alors AD/AB = AE/AC = DE/BC.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans le triangle ABC, DE // BC avec AD/AB = 3/5 et BC = 20 cm. Quelle est la longueur DE ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "12 cm",
+          "correct": true
+        },
+        {
+          "text": "8 cm",
+          "correct": false
+        },
+        {
+          "text": "15 cm",
+          "correct": false
+        },
+        {
+          "text": "6 cm",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces valeurs trigonométriques du plus petit au plus grand :",
+      "time": 40,
+      "answers": [
+        {
+          "text": "sin(30°) ≈ 0,50",
+          "correct": true
+        },
+        {
+          "text": "cos(30°) ≈ 0,87",
+          "correct": true
+        },
+        {
+          "text": "tan(45°) = 1",
+          "correct": true
+        },
+        {
+          "text": "tan(60°) ≈ 1,73",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un triangle rectangle, comment calcule-t-on le cosinus d'un angle aigu ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "côté adjacent / hypoténuse",
+          "correct": true
+        },
+        {
+          "text": "côté opposé / hypoténuse",
+          "correct": false
+        },
+        {
+          "text": "côté opposé / côté adjacent",
+          "correct": false
+        },
+        {
+          "text": "hypoténuse / côté adjacent",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un triangle rectangle, sin(A) = 0,6 et l'hypoténuse mesure 10 cm. Quelle est la longueur du côté opposé à A ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "6 cm",
+          "correct": true
+        },
+        {
+          "text": "4 cm",
+          "correct": false
+        },
+        {
+          "text": "8 cm",
+          "correct": false
+        },
+        {
+          "text": "16 cm",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quelle est la valeur exacte de tan(45°) ?",
+      "time": 20,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "1",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "1"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Une homothétie de rapport 3 transforme un segment de 4 cm. Quelle est la longueur de l'image ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "12 cm",
+          "correct": true
+        },
+        {
+          "text": "4 cm",
+          "correct": false
+        },
+        {
+          "text": "7 cm",
+          "correct": false
+        },
+        {
+          "text": "1,33 cm",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le volume d'un cube d'arête 5 cm ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "125 cm³",
+          "correct": true
+        },
+        {
+          "text": "25 cm³",
+          "correct": false
+        },
+        {
+          "text": "150 cm³",
+          "correct": false
+        },
+        {
+          "text": "75 cm³",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le volume d'un cylindre de rayon 3 cm et de hauteur 4 cm ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "36π cm³",
+          "correct": true
+        },
+        {
+          "text": "12π cm³",
+          "correct": false
+        },
+        {
+          "text": "24π cm³",
+          "correct": false
+        },
+        {
+          "text": "9π cm³",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la formule du volume d'un cône de rayon r et de hauteur h ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "(1/3)πr²h",
+          "correct": true
+        },
+        {
+          "text": "πr²h",
+          "correct": false
+        },
+        {
+          "text": "(2/3)πr²h",
+          "correct": false
+        },
+        {
+          "text": "πrh",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Décompose 84 en produit de facteurs premiers.",
+      "time": 35,
+      "answers": [
+        {
+          "text": "2² × 3 × 7",
+          "correct": true
+        },
+        {
+          "text": "2 × 3 × 14",
+          "correct": false
+        },
+        {
+          "text": "4 × 21",
+          "correct": false
+        },
+        {
+          "text": "2³ × 3 × 7",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "1 est un nombre premier.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le PGCD de 30 et 45 ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "15",
+          "correct": true
+        },
+        {
+          "text": "5",
+          "correct": false
+        },
+        {
+          "text": "3",
+          "correct": false
+        },
+        {
+          "text": "90",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne les étapes pour appliquer le théorème de Pythagore dans le triangle rectangle ABC rectangle en C, avec AC = 6 cm et BC = 8 cm :",
+      "time": 45,
+      "answers": [
+        {
+          "text": "Identifier l'hypoténuse AB et les cathètes AC et BC",
+          "correct": true
+        },
+        {
+          "text": "Écrire l'égalité : AB² = AC² + BC²",
+          "correct": true
+        },
+        {
+          "text": "Substituer : AB² = 6² + 8² = 36 + 64 = 100",
+          "correct": true
+        },
+        {
+          "text": "Conclure : AB = √100 = 10 cm",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Calcule (3/4) + (1/6).",
+      "time": 35,
+      "answers": [
+        {
+          "text": "11/12",
+          "correct": true
+        },
+        {
+          "text": "4/10",
+          "correct": false
+        },
+        {
+          "text": "2/5",
+          "correct": false
+        },
+        {
+          "text": "1",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Calcule (4/5) × (5/8).",
+      "time": 25,
+      "answers": [
+        {
+          "text": "1/2",
+          "correct": true
+        },
+        {
+          "text": "9/13",
+          "correct": false
+        },
+        {
+          "text": "20/13",
+          "correct": false
+        },
+        {
+          "text": "4/8",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Résous l'équation produit : (x − 4)(x + 2) = 0.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "x = 4 ou x = −2",
+          "correct": true
+        },
+        {
+          "text": "x = −4 ou x = 2",
+          "correct": false
+        },
+        {
+          "text": "x = 4 et x = 2",
+          "correct": false
+        },
+        {
+          "text": "x = −4 et x = −2",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un article coûte 80 €. Il est soldé à −25 %. Quel est le prix final ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "60 €",
+          "correct": true
+        },
+        {
+          "text": "55 €",
+          "correct": false
+        },
+        {
+          "text": "65 €",
+          "correct": false
+        },
+        {
+          "text": "75 €",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Calcule 40 % de 250.",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "100",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "100"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Simplifie : 5⁶ ÷ 5².",
+      "time": 20,
+      "answers": [
+        {
+          "text": "5⁴ = 625",
+          "correct": true
+        },
+        {
+          "text": "5³ = 125",
+          "correct": false
+        },
+        {
+          "text": "1⁴ = 1",
+          "correct": false
+        },
+        {
+          "text": "5⁸",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Donne la notation scientifique de 3 700 000.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "3,7 × 10⁶",
+          "correct": true
+        },
+        {
+          "text": "37 × 10⁵",
+          "correct": false
+        },
+        {
+          "text": "3,7 × 10⁻⁶",
+          "correct": false
+        },
+        {
+          "text": "0,37 × 10⁷",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "(2 × 10⁴) × (3 × 10²) = 6 × 10⁶.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Que vaut 5⁰ ?",
+      "time": 15,
+      "answers": [
+        {
+          "text": "1",
+          "correct": true
+        },
+        {
+          "text": "0",
+          "correct": false
+        },
+        {
+          "text": "5",
+          "correct": false
+        },
+        {
+          "text": "Indéfini",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Calcule √(9 × 25).",
+      "time": 20,
+      "answers": [
+        {
+          "text": "15",
+          "correct": true
+        },
+        {
+          "text": "√34",
+          "correct": false
+        },
+        {
+          "text": "34",
+          "correct": false
+        },
+        {
+          "text": "3 + 5 = 8",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Encadre √50 entre deux entiers consécutifs.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "7 < √50 < 8",
+          "correct": true
+        },
+        {
+          "text": "6 < √50 < 7",
+          "correct": false
+        },
+        {
+          "text": "8 < √50 < 9",
+          "correct": false
+        },
+        {
+          "text": "5 < √50 < 6",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Factorise x² − 9.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "(x − 3)(x + 3)",
+          "correct": true
+        },
+        {
+          "text": "(x − 9)(x + 9)",
+          "correct": false
+        },
+        {
+          "text": "(x − 3)²",
+          "correct": false
+        },
+        {
+          "text": "(x + 3)²",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Développe et réduis (3x + 1)².",
+      "time": 35,
+      "answers": [
+        {
+          "text": "9x² + 6x + 1",
+          "correct": true
+        },
+        {
+          "text": "9x² + 1",
+          "correct": false
+        },
+        {
+          "text": "9x² − 6x + 1",
+          "correct": false
+        },
+        {
+          "text": "6x² + 6x + 2",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Développe et réduis (2x + 5)(2x − 5).",
+      "time": 25,
+      "answers": [
+        {
+          "text": "4x² − 25",
+          "correct": true
+        },
+        {
+          "text": "4x² + 25",
+          "correct": false
+        },
+        {
+          "text": "4x² − 20x + 25",
+          "correct": false
+        },
+        {
+          "text": "4x² + 10x − 25",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Factorise x² − 49. Le résultat est (x − 7)(x + ?). Quel est le nombre manquant ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "7",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "7"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Résous : 3x + 7 = 22.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "x = 5",
+          "correct": true
+        },
+        {
+          "text": "x = 3",
+          "correct": false
+        },
+        {
+          "text": "x = 7",
+          "correct": false
+        },
+        {
+          "text": "x = 9",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Résous : 2(x − 3) = 4x + 6.",
+      "time": 35,
+      "answers": [
+        {
+          "text": "x = −6",
+          "correct": true
+        },
+        {
+          "text": "x = 6",
+          "correct": false
+        },
+        {
+          "text": "x = −3",
+          "correct": false
+        },
+        {
+          "text": "x = 0",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Résous l'inéquation : 2x + 3 > 11.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "x > 4",
+          "correct": true
+        },
+        {
+          "text": "x < 4",
+          "correct": false
+        },
+        {
+          "text": "x > 7",
+          "correct": false
+        },
+        {
+          "text": "x < 7",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'équation (x + 5)² = 0 a pour unique solution x = −5.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Soit f(x) = −2x + 6. Calcule f(−1).",
+      "time": 20,
+      "answers": [
+        {
+          "text": "8",
+          "correct": true
+        },
+        {
+          "text": "4",
+          "correct": false
+        },
+        {
+          "text": "−8",
+          "correct": false
+        },
+        {
+          "text": "7",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Soit f(x) = 5x − 10. Quel est l'antécédent de 0 par f ?",
+      "time": 30,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "2",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "2",
+        "x = 2"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Deux droites dans un repère ont pour équations y = 3x − 1 et y = −x + 7. En quel point se croisent-elles (valeur de x) ?",
+      "time": 45,
+      "answers": [
+        {
+          "text": "x = 2",
+          "correct": true
+        },
+        {
+          "text": "x = 3",
+          "correct": false
+        },
+        {
+          "text": "x = 1",
+          "correct": false
+        },
+        {
+          "text": "x = 4",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La fonction f(x) = 7x est une fonction linéaire.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la pente (coefficient directeur) de la droite y = −4x + 9 ?",
+      "time": 15,
+      "answers": [
+        {
+          "text": "−4",
+          "correct": true
+        },
+        {
+          "text": "9",
+          "correct": false
+        },
+        {
+          "text": "4",
+          "correct": false
+        },
+        {
+          "text": "−9",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "On tire au hasard une carte dans un jeu de 52 cartes. Quelle est la probabilité de tirer un as ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "1/13",
+          "correct": true
+        },
+        {
+          "text": "4/52 simplifié est autre chose",
+          "correct": false
+        },
+        {
+          "text": "1/4",
+          "correct": false
+        },
+        {
+          "text": "1/52",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "On lance deux fois une pièce équilibrée. Quelle est la probabilité d'obtenir deux fois Pile ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "1/4",
+          "correct": true
+        },
+        {
+          "text": "1/2",
+          "correct": false
+        },
+        {
+          "text": "1/8",
+          "correct": false
+        },
+        {
+          "text": "3/4",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "La somme des probabilités de tous les événements élémentaires d'une expérience aléatoire est toujours égale à 1.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Une urne contient 5 boules rouges, 3 boules bleues et 2 boules vertes. On tire une boule. Quelle est la probabilité de NE PAS tirer rouge ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "1/2",
+          "correct": true
+        },
+        {
+          "text": "5/10",
+          "correct": false
+        },
+        {
+          "text": "3/10",
+          "correct": false
+        },
+        {
+          "text": "7/10",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne les étapes pour calculer une probabilité avec un arbre :",
+      "time": 40,
+      "answers": [
+        {
+          "text": "Construire l'arbre des possibles",
+          "correct": true
+        },
+        {
+          "text": "Identifier les branches correspondant à l'événement souhaité",
+          "correct": true
+        },
+        {
+          "text": "Multiplier les probabilités le long de chaque branche retenue",
+          "correct": true
+        },
+        {
+          "text": "Additionner les produits obtenus",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Calcule l'étendue de la série : 4 ; 17 ; 9 ; 3 ; 21 ; 8.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "18",
+          "correct": true
+        },
+        {
+          "text": "17",
+          "correct": false
+        },
+        {
+          "text": "21",
+          "correct": false
+        },
+        {
+          "text": "10,3",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la médiane de la série : 2 ; 5 ; 7 ; 8 ; 10 ; 14 ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "7,5",
+          "correct": true
+        },
+        {
+          "text": "7",
+          "correct": false
+        },
+        {
+          "text": "8",
+          "correct": false
+        },
+        {
+          "text": "7,8",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "La série suivante est : 6 ; 8 ; 10 ; 12 ; 14. Quelle est sa moyenne ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "10",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "10"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un triangle rectangle ABC rectangle en B, on sait que AC = 13 cm et AB = 5 cm. Quelle est la longueur BC ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "12 cm",
+          "correct": true
+        },
+        {
+          "text": "8 cm",
+          "correct": false
+        },
+        {
+          "text": "√194 cm",
+          "correct": false
+        },
+        {
+          "text": "18 cm",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un triangle dont les côtés mesurent 5 cm, 12 cm et 13 cm est un triangle rectangle.",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "La réciproque du théorème de Pythagore sert à :",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Démontrer qu'un triangle est rectangle",
+          "correct": true
+        },
+        {
+          "text": "Calculer l'hypoténuse",
+          "correct": false
+        },
+        {
+          "text": "Calculer une cathète",
+          "correct": false
+        },
+        {
+          "text": "Trouver un angle",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans le triangle ABC, DE // BC avec AD = 4, AB = 10 et AC = 15. Quelle est la longueur AE ?",
+      "time": 40,
+      "answers": [
+        {
+          "text": "6 cm",
+          "correct": true
+        },
+        {
+          "text": "9 cm",
+          "correct": false
+        },
+        {
+          "text": "4 cm",
+          "correct": false
+        },
+        {
+          "text": "12 cm",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Si dans le triangle ABC on a AD/DB = AE/EC, alors la droite DE est parallèle à BC.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans le triangle ABC, DE // BC avec DE = 5 cm et BC = 15 cm. Calcule AD sachant que AB = 12 cm.",
+      "time": 40,
+      "answers": [
+        {
+          "text": "4 cm",
+          "correct": true
+        },
+        {
+          "text": "6 cm",
+          "correct": false
+        },
+        {
+          "text": "5 cm",
+          "correct": false
+        },
+        {
+          "text": "3 cm",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un triangle rectangle, sin(A) = côté opposé / hypoténuse. Si le côté opposé = 8 cm et l'hypoténuse = 17 cm, quelle est la valeur de sin(A) (arrondie à 0,01) ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "0,47",
+          "correct": true
+        },
+        {
+          "text": "0,53",
+          "correct": false
+        },
+        {
+          "text": "0,64",
+          "correct": false
+        },
+        {
+          "text": "0,88",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Dans un triangle rectangle, cos(60°) = 0,5 et l'hypoténuse mesure 20 cm. Quelle est la longueur du côté adjacent à cet angle (en cm) ?",
+      "time": 35,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "10",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "10 cm",
+        "10"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un triangle rectangle, l'angle A a tan(A) = 3/4. En utilisant une calculatrice, l'angle A vaut environ :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "36,9°",
+          "correct": true
+        },
+        {
+          "text": "53,1°",
+          "correct": false
+        },
+        {
+          "text": "30°",
+          "correct": false
+        },
+        {
+          "text": "45°",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Parmi ces expressions, laquelle correspond à tan(A) dans un triangle rectangle ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "côté opposé / côté adjacent",
+          "correct": true
+        },
+        {
+          "text": "côté adjacent / hypoténuse",
+          "correct": false
+        },
+        {
+          "text": "côté opposé / hypoténuse",
+          "correct": false
+        },
+        {
+          "text": "hypoténuse / côté opposé",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne les étapes pour calculer un angle avec la trigonométrie (sin, cos ou tan) :",
+      "time": 40,
+      "answers": [
+        {
+          "text": "Identifier les côtés connus par rapport à l'angle cherché",
+          "correct": true
+        },
+        {
+          "text": "Choisir la formule trigonométrique adaptée (sin, cos ou tan)",
+          "correct": true
+        },
+        {
+          "text": "Calculer le rapport des deux côtés",
+          "correct": true
+        },
+        {
+          "text": "Utiliser la fonction réciproque (arcsin, arccos ou arctan) pour trouver l'angle",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Une homothétie de rapport −2 transforme un segment de 5 cm. Quelle est la longueur de l'image ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "10 cm",
+          "correct": true
+        },
+        {
+          "text": "−10 cm",
+          "correct": false
+        },
+        {
+          "text": "5 cm",
+          "correct": false
+        },
+        {
+          "text": "2,5 cm",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le volume d'une boule de rayon 3 cm ? (formule : V = 4/3 × π × r³)",
+      "time": 30,
+      "answers": [
+        {
+          "text": "36π cm³",
+          "correct": true
+        },
+        {
+          "text": "12π cm³",
+          "correct": false
+        },
+        {
+          "text": "27π cm³",
+          "correct": false
+        },
+        {
+          "text": "9π cm³",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un cône a un rayon de 4 cm et une hauteur de 9 cm. Quel est son volume ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "48π cm³",
+          "correct": true
+        },
+        {
+          "text": "144π cm³",
+          "correct": false
+        },
+        {
+          "text": "36π cm³",
+          "correct": false
+        },
+        {
+          "text": "12π cm³",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Le volume d'une pyramide est égal au tiers du produit de son aire de base par sa hauteur.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Décompose 60 en produit de facteurs premiers.",
+      "time": 30,
+      "answers": [
+        {
+          "text": "2² × 3 × 5",
+          "correct": true
+        },
+        {
+          "text": "2 × 3 × 10",
+          "correct": false
+        },
+        {
+          "text": "2³ × 5",
+          "correct": false
+        },
+        {
+          "text": "4 × 3 × 5",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le PGCD de 48 et 36 ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "12",
+          "correct": true
+        },
+        {
+          "text": "6",
+          "correct": false
+        },
+        {
+          "text": "24",
+          "correct": false
+        },
+        {
+          "text": "4",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Lequel de ces nombres est premier ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "97",
+          "correct": true
+        },
+        {
+          "text": "91",
+          "correct": false
+        },
+        {
+          "text": "87",
+          "correct": false
+        },
+        {
+          "text": "93",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Calcule (5/6) − (1/4).",
+      "time": 30,
+      "answers": [
+        {
+          "text": "7/12",
+          "correct": true
+        },
+        {
+          "text": "4/2",
+          "correct": false
+        },
+        {
+          "text": "1/2",
+          "correct": false
+        },
+        {
+          "text": "5/24",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Calcule (3/8) ÷ (9/4).",
+      "time": 35,
+      "answers": [
+        {
+          "text": "1/6",
+          "correct": true
+        },
+        {
+          "text": "27/32",
+          "correct": false
+        },
+        {
+          "text": "3/2",
+          "correct": false
+        },
+        {
+          "text": "1/3",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un vélo coûte 350 €. Son prix augmente de 8 %. Quel est le nouveau prix ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "378 €",
+          "correct": true
+        },
+        {
+          "text": "358 €",
+          "correct": false
+        },
+        {
+          "text": "392 €",
+          "correct": false
+        },
+        {
+          "text": "322 €",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un article passe de 80 € à 100 €. Quel est le pourcentage d'augmentation ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "25 %",
+          "correct": true
+        },
+        {
+          "text": "20 %",
+          "correct": false
+        },
+        {
+          "text": "80 %",
+          "correct": false
+        },
+        {
+          "text": "10 %",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Une population de 2 000 habitants augmente de 15 %. Combien y a-t-il d'habitants après l'augmentation ?",
+      "time": 35,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "2300",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "2 300",
+        "2300 habitants"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Simplifie (3²)⁴.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "3⁸ = 6561",
+          "correct": true
+        },
+        {
+          "text": "3⁶ = 729",
+          "correct": false
+        },
+        {
+          "text": "6⁴ = 1296",
+          "correct": false
+        },
+        {
+          "text": "9⁴ = 6561 mais pas 3⁸",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Donne la notation scientifique de 0,000072.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "7,2 × 10⁻⁵",
+          "correct": true
+        },
+        {
+          "text": "7,2 × 10⁵",
+          "correct": false
+        },
+        {
+          "text": "72 × 10⁻⁶",
+          "correct": false
+        },
+        {
+          "text": "0,72 × 10⁻⁴",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Que vaut 10⁻³ ?",
+      "time": 15,
+      "answers": [
+        {
+          "text": "0,001",
+          "correct": true
+        },
+        {
+          "text": "0,01",
+          "correct": false
+        },
+        {
+          "text": "−1000",
+          "correct": false
+        },
+        {
+          "text": "1000",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces nombres du plus petit au plus grand :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "2,5 × 10⁻³",
+          "correct": true
+        },
+        {
+          "text": "3,1 × 10⁻¹",
+          "correct": true
+        },
+        {
+          "text": "4,0 × 10¹",
+          "correct": true
+        },
+        {
+          "text": "1,2 × 10³",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Calcule √144.",
+      "time": 15,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "12",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "12"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Encadre √30 entre deux entiers consécutifs.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "5 < √30 < 6",
+          "correct": true
+        },
+        {
+          "text": "4 < √30 < 5",
+          "correct": false
+        },
+        {
+          "text": "6 < √30 < 7",
+          "correct": false
+        },
+        {
+          "text": "3 < √30 < 4",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Pour tous réels a et b positifs, √(a + b) = √a + √b.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Développe et réduis (x − 4)².",
+      "time": 30,
+      "answers": [
+        {
+          "text": "x² − 8x + 16",
+          "correct": true
+        },
+        {
+          "text": "x² + 16",
+          "correct": false
+        },
+        {
+          "text": "x² − 16",
+          "correct": false
+        },
+        {
+          "text": "x² + 8x + 16",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Factorise 9x² − 25.",
+      "time": 30,
+      "answers": [
+        {
+          "text": "(3x − 5)(3x + 5)",
+          "correct": true
+        },
+        {
+          "text": "(9x − 25)(9x + 25)",
+          "correct": false
+        },
+        {
+          "text": "(3x − 5)²",
+          "correct": false
+        },
+        {
+          "text": "3(3x² − 25)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Développe et réduis (x + 2)(x − 3).",
+      "time": 30,
+      "answers": [
+        {
+          "text": "x² − x − 6",
+          "correct": true
+        },
+        {
+          "text": "x² + x − 6",
+          "correct": false
+        },
+        {
+          "text": "x² − 5x + 6",
+          "correct": false
+        },
+        {
+          "text": "x² − 6",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Résous : 4x + 3 = 2x − 7.",
+      "time": 30,
+      "answers": [
+        {
+          "text": "x = −5",
+          "correct": true
+        },
+        {
+          "text": "x = 5",
+          "correct": false
+        },
+        {
+          "text": "x = −2",
+          "correct": false
+        },
+        {
+          "text": "x = 2",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Résous l'équation-produit : (x + 1)(2x − 4) = 0.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "x = −1 ou x = 2",
+          "correct": true
+        },
+        {
+          "text": "x = 1 ou x = −2",
+          "correct": false
+        },
+        {
+          "text": "x = −1 ou x = −2",
+          "correct": false
+        },
+        {
+          "text": "x = 4 ou x = −1",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Résous l'inéquation : 5x − 2 ≥ 3x + 6.",
+      "time": 30,
+      "answers": [
+        {
+          "text": "x ≥ 4",
+          "correct": true
+        },
+        {
+          "text": "x ≤ 4",
+          "correct": false
+        },
+        {
+          "text": "x ≥ 2",
+          "correct": false
+        },
+        {
+          "text": "x ≤ 2",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Si 2x − 6 > 0, alors x > 3.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Soit f(x) = 4x − 8. Pour quelle valeur de x a-t-on f(x) = 0 ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "2",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "x = 2",
+        "2"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Soit f(x) = −2x + 5. Calcule f(3/2).",
+      "time": 30,
+      "answers": [
+        {
+          "text": "2",
+          "correct": true
+        },
+        {
+          "text": "3",
+          "correct": false
+        },
+        {
+          "text": "8",
+          "correct": false
+        },
+        {
+          "text": "0",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Toute fonction affine f(x) = ax + b avec a ≠ 0 est soit strictement croissante, soit strictement décroissante.",
+      "time": 20,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Une droite passe par A(0 ; −3) et B(2 ; 5). Quel est son coefficient directeur ?",
+      "time": 40,
+      "answers": [
+        {
+          "text": "4",
+          "correct": true
+        },
+        {
+          "text": "−3",
+          "correct": false
+        },
+        {
+          "text": "5",
+          "correct": false
+        },
+        {
+          "text": "8",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Laquelle de ces droites est décroissante ?",
+      "time": 15,
+      "answers": [
+        {
+          "text": "y = −3x + 7",
+          "correct": true
+        },
+        {
+          "text": "y = 2x − 1",
+          "correct": false
+        },
+        {
+          "text": "y = 5x",
+          "correct": false
+        },
+        {
+          "text": "y = x + 4",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "On lance un dé à 6 faces numéroté de 1 à 6. Quelle est la probabilité d'obtenir un nombre strictement supérieur à 4 ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "1/3",
+          "correct": true
+        },
+        {
+          "text": "1/2",
+          "correct": false
+        },
+        {
+          "text": "2/3",
+          "correct": false
+        },
+        {
+          "text": "1/6",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "On tire au hasard une lettre dans le mot BREVET. Quelle est la probabilité d'obtenir la lettre E ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "1/3",
+          "correct": true
+        },
+        {
+          "text": "1/6",
+          "correct": false
+        },
+        {
+          "text": "2/5",
+          "correct": false
+        },
+        {
+          "text": "1/2",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un événement A a une probabilité de 1/3. On répète l'expérience deux fois de façon indépendante. Quelle est la probabilité que A se réalise les deux fois ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "1/9",
+          "correct": true
+        },
+        {
+          "text": "2/3",
+          "correct": false
+        },
+        {
+          "text": "2/9",
+          "correct": false
+        },
+        {
+          "text": "1/6",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Dans une expérience aléatoire, si A et B sont deux événements contraires, alors P(A) + P(B) = 1.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "On tire une carte dans un jeu de 52 cartes. Quelle est la probabilité d'obtenir une figure (roi, dame ou valet) ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "3/13",
+          "correct": true
+        },
+        {
+          "text": "1/4",
+          "correct": false
+        },
+        {
+          "text": "1/13",
+          "correct": false
+        },
+        {
+          "text": "4/13",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est la valeur qui apparaît le plus souvent (mode) dans la série : 3 ; 5 ; 3 ; 7 ; 3 ; 9 ; 5 ?",
+      "time": 20,
+      "answers": [
+        {
+          "text": "3",
+          "correct": true
+        },
+        {
+          "text": "5",
+          "correct": false
+        },
+        {
+          "text": "7",
+          "correct": false
+        },
+        {
+          "text": "9",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans une classe, les notes au contrôle sont : 8 ; 11 ; 14 ; 6 ; 15 ; 12 ; 9 ; 13. Quelle est la moyenne ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "11",
+          "correct": true
+        },
+        {
+          "text": "12",
+          "correct": false
+        },
+        {
+          "text": "10,5",
+          "correct": false
+        },
+        {
+          "text": "11,5",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Quelle est l'étendue de la série suivante : 12 ; 7 ; 19 ; 4 ; 15 ; 10 ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "15",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "15"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un triangle rectangle en C, AC = 8 cm et BC = 15 cm. Calcule AB.",
+      "time": 35,
+      "answers": [
+        {
+          "text": "17 cm",
+          "correct": true
+        },
+        {
+          "text": "23 cm",
+          "correct": false
+        },
+        {
+          "text": "√161 cm",
+          "correct": false
+        },
+        {
+          "text": "13 cm",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Un triangle dont les côtés mesurent 3 cm, 4 cm et 6 cm est un triangle rectangle.",
+      "time": 30,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un rectangle mesure 5 cm × 12 cm. Quelle est la longueur de sa diagonale ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "13 cm",
+          "correct": true
+        },
+        {
+          "text": "17 cm",
+          "correct": false
+        },
+        {
+          "text": "√119 cm",
+          "correct": false
+        },
+        {
+          "text": "169 cm",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans le triangle AMB, la droite MN est parallèle à AB, avec M sur [CA] et N sur [CB]. On sait que CM = 5, CA = 15 et CN = 4. Calcule CB.",
+      "time": 40,
+      "answers": [
+        {
+          "text": "12 cm",
+          "correct": true
+        },
+        {
+          "text": "9 cm",
+          "correct": false
+        },
+        {
+          "text": "20 cm",
+          "correct": false
+        },
+        {
+          "text": "8 cm",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans le triangle OAB, la droite CD est parallèle à AB. On sait que OC = 3, OA = 8 et CD = 4,5 cm. Quelle est la longueur AB ?",
+      "time": 40,
+      "answers": [
+        {
+          "text": "12 cm",
+          "correct": true
+        },
+        {
+          "text": "10 cm",
+          "correct": false
+        },
+        {
+          "text": "6 cm",
+          "correct": false
+        },
+        {
+          "text": "9 cm",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "sin(30°) est une valeur exacte connue. Quelle est-elle ? (Écrire sous forme décimale)",
+      "time": 20,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "0,5",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "0.5",
+        "0,5",
+        "1/2"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un triangle rectangle, cos(A) = 0,8 et l'hypoténuse mesure 15 cm. Quelle est la longueur du côté adjacent à A ?",
+      "time": 35,
+      "answers": [
+        {
+          "text": "12 cm",
+          "correct": true
+        },
+        {
+          "text": "9 cm",
+          "correct": false
+        },
+        {
+          "text": "18 cm",
+          "correct": false
+        },
+        {
+          "text": "7 cm",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un triangle rectangle, le côté opposé à l'angle A mesure 6 cm et le côté adjacent mesure 8 cm. Quelle est la valeur de tan(A) ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "3/4",
+          "correct": true
+        },
+        {
+          "text": "4/3",
+          "correct": false
+        },
+        {
+          "text": "3/5",
+          "correct": false
+        },
+        {
+          "text": "6/10",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Dans un triangle rectangle ABC rectangle en B, AB = 10 cm et l'angle A = 30°. Quelle est la longueur BC (arrondie à 0,1 cm) ? (sin 30° = 0,5)",
+      "time": 35,
+      "answers": [
+        {
+          "text": "5 cm",
+          "correct": true
+        },
+        {
+          "text": "8,7 cm",
+          "correct": false
+        },
+        {
+          "text": "20 cm",
+          "correct": false
+        },
+        {
+          "text": "11,5 cm",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le volume d'un prisme droit dont la base est un rectangle de 4 cm × 3 cm et la hauteur est 5 cm ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "60 cm³",
+          "correct": true
+        },
+        {
+          "text": "24 cm³",
+          "correct": false
+        },
+        {
+          "text": "120 cm³",
+          "correct": false
+        },
+        {
+          "text": "35 cm³",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quelle est l'aire totale d'un cylindre de rayon 3 cm et de hauteur 5 cm ? (Aire totale = 2πr² + 2πrh)",
+      "time": 35,
+      "answers": [
+        {
+          "text": "48π cm²",
+          "correct": true
+        },
+        {
+          "text": "30π cm²",
+          "correct": false
+        },
+        {
+          "text": "15π cm²",
+          "correct": false
+        },
+        {
+          "text": "24π cm²",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "L'aire de la surface d'une sphère de rayon r est 4πr².",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": true
+        },
+        {
+          "text": "Faux",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Quel est le PPCM (Plus Petit Commun Multiple) de 4 et 6 ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "12",
+          "correct": true
+        },
+        {
+          "text": "24",
+          "correct": false
+        },
+        {
+          "text": "2",
+          "correct": false
+        },
+        {
+          "text": "6",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Décompose 36 en produit de facteurs premiers.",
+      "time": 25,
+      "answers": [
+        {
+          "text": "2² × 3²",
+          "correct": true
+        },
+        {
+          "text": "6²",
+          "correct": false
+        },
+        {
+          "text": "2 × 3 × 6",
+          "correct": false
+        },
+        {
+          "text": "2³ × 3",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "truefalse",
+      "question": "Tout nombre pair est divisible par 4.",
+      "time": 15,
+      "answers": [
+        {
+          "text": "Vrai",
+          "correct": false
+        },
+        {
+          "text": "Faux",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Calcule (3/4)².",
+      "time": 20,
+      "answers": [
+        {
+          "text": "9/16",
+          "correct": true
+        },
+        {
+          "text": "6/8",
+          "correct": false
+        },
+        {
+          "text": "3/8",
+          "correct": false
+        },
+        {
+          "text": "6/4",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne ces fractions de la plus petite à la plus grande :",
+      "time": 35,
+      "answers": [
+        {
+          "text": "1/4 = 0,25",
+          "correct": true
+        },
+        {
+          "text": "1/3 ≈ 0,33",
+          "correct": true
+        },
+        {
+          "text": "2/5 = 0,40",
+          "correct": true
+        },
+        {
+          "text": "1/2 = 0,50",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "type": "freetext",
+      "question": "Simplifie la fraction 18/24 sous forme irréductible. Numérateur / Dénominateur = ?/4. Quel est le numérateur ?",
+      "time": 25,
+      "caseSensitive": false,
+      "answers": [
+        {
+          "text": "3",
+          "correct": true
+        }
+      ],
+      "acceptedAnswers": [
+        "3"
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un article coûte 120 €. Il subit d'abord une réduction de 10 %, puis encore de 20 %. Quel est le prix final ?",
+      "time": 40,
+      "answers": [
+        {
+          "text": "86,40 €",
+          "correct": true
+        },
+        {
+          "text": "84 €",
+          "correct": false
+        },
+        {
+          "text": "90 €",
+          "correct": false
+        },
+        {
+          "text": "72 €",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un prix hors taxe (HT) est de 200 €. La TVA est de 20 %. Quel est le prix TTC ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "240 €",
+          "correct": true
+        },
+        {
+          "text": "220 €",
+          "correct": false
+        },
+        {
+          "text": "180 €",
+          "correct": false
+        },
+        {
+          "text": "160 €",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un article passe de 120 € à 90 €. Quel est le pourcentage de réduction ?",
+      "time": 30,
+      "answers": [
+        {
+          "text": "25 %",
+          "correct": true
+        },
+        {
+          "text": "30 %",
+          "correct": false
+        },
+        {
+          "text": "33 %",
+          "correct": false
+        },
+        {
+          "text": "20 %",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Factorise : 6x² + 9x.",
+      "time": 30,
+      "answers": [
+        {
+          "text": "3x(2x + 3)",
+          "correct": true
+        },
+        {
+          "text": "3(2x² + 3x)",
+          "correct": false
+        },
+        {
+          "text": "6x(x + 3)",
+          "correct": false
+        },
+        {
+          "text": "9x(6x + 1)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple",
+      "question": "Un algorithme effectue les opérations : « Lire x, calculer 2x + 1, afficher le résultat ». Si on entre x = 4, que s'affiche-t-il ?",
+      "time": 25,
+      "answers": [
+        {
+          "text": "9",
+          "correct": true
+        },
+        {
+          "text": "8",
+          "correct": false
+        },
+        {
+          "text": "10",
+          "correct": false
+        },
+        {
+          "text": "7",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "question": "Ordonne les étapes de résolution d'une équation du type ax + b = cx + d :",
+      "time": 40,
+      "answers": [
+        {
+          "text": "Regrouper les termes en x d'un côté : ax − cx = d − b",
+          "correct": true
+        },
+        {
+          "text": "Factoriser : (a − c)x = d − b",
+          "correct": true
+        },
+        {
+          "text": "Diviser par (a − c) si a ≠ c : x = (d − b)/(a − c)",
+          "correct": true
+        },
+        {
+          "text": "Vérifier la solution en la substituant dans l'équation",
+          "correct": true
+        }
+      ]
+    }
+  ]
+}
